@@ -1,0 +1,122 @@
+#######################
+## Switzerland
+
+Calanda
+Kasernenstr. 36, CH-7007 Chur
+www.calanda.com
+____________________________________________
+- Calanda, Chur
+
+Calanda, 5%, lager
+Ittinger, Klosterbräu, 5.8%, amber_lager
+
+
+Eichhof, 1834
+Obergrundstrasse 110, CH-6005 Lucerne
+www.eichhof.ch
+____________________________________________
+- Eichhof, Lucerne
+
+Bügel Bräu, 4.9%, lager
+Barbara, 5.9%, lager
+
+
+Falken, 1799
+Brauereistrasse 1, CH-8201, Schaffhausen
+www.falken.ch
+____________________________________________
+- Falken, Schaffhausen
+
+First Cool, 4.5%, lager
+Falken Prinz, 5.5%, lager
+
+
+Locher, 1810
+Brauereiplatz 1, 9050 Appenzell
+www.appenzellerbier.ch
+____________________________________________
+- Locher, Appenzell
+
+Vollmond, 5.2%, organic_lager
+Holzfass-Bier, 5.2%, lager
+
+
+Biervision Monstein, 2001
+Hauptstrasse 36, 7278 Davos Monstein
+www.biervision-monstein.ch
+____________________________________________
+- Biervision Monstein, Monstein
+
+Mungga, 3.5%, kölsch
+Royal 11, 6.5%, spiced_beer
+
+
+Rugenbräu, 1866
+Wagnerenstrasse 40, CH-3800 Matten
+www.rugenbraeu.ch
+____________________________________________
+- Rugenbräu, Matten
+
+Alpenperle, 4.8%, lager
+Zwickel Bier, 4.8%, unfiltered_lager
+
+Sonnenbräu, 1891
+Alte Landstrasse 36, 9445 Rebstein
+www.sonnenbraeu.ch
+____________________________________________
+- Sonnenbräu, Rebstein
+
+Rheintaler Maisbier, 5%, lager
+First Swiss Ale, 5.4%, brown_ale
+
+
+Brauhaus Sternen, 1851
+Zürcherstrasse 216, 8500 Frauenfeld
+www.brauhaussternen.ch
+____________________________________________
+- Brauhaus Sternen, Frauenfeld
+
+Wartmann’s Nur Für Freunde No.1, 9.6%, belgian_dubbel
+Honey Brown Ale, 6%, brown_ale
+
+
+######################
+## Luxemburg
+
+Beierhaascht
+Avenue de Luxembourg 240, L-4940 Bascharge
+www.beierhaascht.lu
+____________________________________________
+- Beierhaascht, Bascharge
+
+Bière Meeschterbéier, 5%, lager
+Bière au Froment Claire, 6%, witbier
+
+
+Cornelyshaff
+Maison 37, 9753 Heinerscheid
+____________________________________________
+- Cornelyshaff, Heinerscheid
+
+Ourdaller Waïssen Tarwebier, 4.6%, witbier
+Kornelysbéier, 4.2%, rye_beer
+
+
+Diekirch, 1871
+1 Rue de la Brasserie, 9214 Diekirch
+www.brasseriedeluxembourg.lu
+____________________________________________
+- Diekirch, Diekirch
+
+Diekirch Grand Cru Ambrée, 5.1%, vienna_lager
+Diekirch Exclusive, 5.1%, lager
+
+
+Simon, 1824
+Rue Joseph Simon 14, 9550 Wiltz
+www.brasseriesimon.lu
+____________________________________________
+- Simon, Wiltz
+
+Simon Dinkel, 4.5%, spelt_witbier
+Okult No.1, 5.4%, witbier

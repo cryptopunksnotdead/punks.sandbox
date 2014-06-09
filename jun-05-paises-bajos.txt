@@ -1,0 +1,211 @@
+3 Horne, 1991
+Markstraat 40, 5171 GP Kaatsheuvel
+www.de3horne.nl
+____________________________________________
+- 3 Horne, Kaatsheuvel
+
+Trippelaer, 8.5%, triple_abbey_style
+Dobbelaer, 6.5%, double_abbey_style
+
+
+Alfa, 1870
+Thull 15-19, 6365 AC Schinnen
+www.alfa-bier.nl
+____________________________________________
+- Alfa, Schinnen
+
+Alfa Edel Pils, 5%, pils
+Alfa Super Dortmunder, 7.5%, dortmunder_export
+
+
+
+Bavaria, 1719
+De Stater 1, NL-5737RV Lieshout
+www.bavaria.com
+____________________________________________
+- Bavaria, Lieshout
+
+Bavaria Pils, 5%, pils
+
+
+Brand, 1340
+Brouwerijstraat 2-10, 6321 AG Wijlre
+www.brand.nl
+____________________________________________
+- Brand, Wijlre
+
+Brand Imperator, 6.5%, amber_lager
+Brand Urp, 5%, pils
+
+
+Brouwerij ‘t IJ, 1985
+Funenkade 7, 1018 AL Amsterdam
+www.brouwerijhetij.nl
+____________________________________________
+- Brouwerij ‘t IJ, Amsterdam
+
+Turbock, 9%, doppelbock
+Columbus, 9%, strong_ale
+
+
+Budels, 1870
+Nieuwstraat 9, 6020 AA Budel
+www.budels.nl
+____________________________________________
+- Budels, Budel
+
+Budels Lager, 5%, pils
+Budels Capucijn, 6.5%, double_abbey_style
+
+
+Grolsch, 1615
+Brouwerslaan 1, Boekelo, 7548 XA Enschede
+www.grolsch.nl
+____________________________________________
+- Grolsch, Enschede
+
+Grolsch Premium Weizen, 5.5%, hefeweizen
+Grolsch Premium Pilsner, 5%, pils
+
+
+Grunn, 2000
+Boumaboulevard 55, 9723 ZS Groningen
+www.grunn-speciaalbier.nl
+____________________________________________
+- Grunn, Groningen
+
+Grunn Dreidubbel, 5%, tripel_ale
+Grunn Hoagelwit, 5%, witbier
+
+
+Gulpener, 1825
+Rijksweg 16, 6271 AE Gulpen
+www.gulpener.nl
+____________________________________________
+- Gulpener, Gulpen
+
+Gulpener Korenwolf, 5%, witbier
+Gulpener Gladiator, 10%, strong_lager
+
+
+Heineken, 1864
+Stadhouderskade 78, 1072 AE Amsterdam
+www.heineken.com
+____________________________________________
+- Heineken, Amsterdam
+
+Heineken Pils, 5%, pils
+Heineken Tarwebock, 6.5%, bock
+Amstel Pils, 5%, pils
+Amstel 1870, 5%, pils
+Amstel Bock, 7%, bock
+
+
+Hertog Jan, 1915
+Kruisweg 44, 5944 EN, Arcen
+www.hertogjan.nl
+____________________________________________
+- Hertog Jan, Arcen
+
+Hertog Jan Grand Prestige, 10%, strong_dark_ale
+Hertog Jan Primator, 5%, pils
+
+
+Jopen, 1995
+Minckelersweg 2a, 2031 EM Haarlem
+www.jopen.nl
+____________________________________________
+- Jopen, Haarlem
+
+Jopen Koyt, 8.5%, gruit_beer
+Jopen Hoppenbier, 6.5%, amber_ale
+
+
+Klein Duimpje, 1997
+Hyacintenlaan 2A, 2182 DE Hillegom
+www.kleinduimpje.nl
+____________________________________________
+- Klein Duimpje, Hillegom
+
+Hillegoms Tarwe Bier, 5.5%, witbier
+Porter, 5.5%, porter
+
+
+Lindeboom, 1870
+Engelmanstraat 52-54, 6068 BD Neer
+www.lindeboom.nl
+____________________________________________
+- Lindeboom, Neer
+
+Venloosch, 5%, altbier
+Lindeboom Oud Bruin, 3.5%, oud_bruin
+
+
+De Molen, 2004
+Overtocht 43, 2411 BS Bodegraven
+www.brouwerijdemolen.nl
+____________________________________________
+- De Molen, Bodegraven
+
+Borefts Blond, 6.5%, blond_ale
+Borefts Stout, 7%, stout
+
+Mommeriete, 2004
+Holthonerweg 9, 7779 DE Holthone
+www.mommeriete.nl
+____________________________________________
+- Mommeriete, Holthone
+
+Scheerse Tripel, 9.5%, tripel
+Vrouwe van Gramsbergh, 10%, strong_dark_ale
+
+
+De Prael
+Oudezijds Voorburgwal 30, 1012 GD Amsterdam
+www.deprael.nl
+____________________________________________
+- De Prael, Amsterdam
+
+Heintje, 5.4%, witbier
+Mary, 9.6%, barley_wine
+
+
+De Schans, 1998
+De Schans 17, 1421 BA Uithoorn
+www.schansbier.nl
+____________________________________________
+- De Schans, Uithoorn
+
+Van Vollenhoven’s Stout, 7%, stout
+Schansbier 6, 5.8%, double_abbey_style
+
+
+Scheldebrouwerij, 1994
+Rangeerstraat 1, 4431 NL ’s-Gravenpolder
+www.scheldebrouwerij.nl
+____________________________________________
+- Scheldenbrouwerij, ‘s-Gravenpolder
+
+Schoenlappertje, 6.5%, fruit_beer
+Strandgaper, 6.2%, amber_ale
+
+
+St. Christoffel, 1986
+Metaalweg 10, 6045 JB Roermond
+www.christoffelbier.nl
+____________________________________________
+- St. Christoffel, Roermond
+
+Christoffel Blond, 6%, pils
+Christoffel Robertus, 6%, münchner
+
+
+La Trappe, 1884
+Eindhovenseweg 3, Berkel-Enschot
+www.latrappetrappist.com
+____________________________________________
+- La Trappe, Berkel-Enschot
+
+La Trappe Witte Trappist, 5.5%, witbier
+La Trappe Tripel, 8%, strong_ale
+
