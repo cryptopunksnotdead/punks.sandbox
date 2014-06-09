@@ -1,0 +1,133 @@
+Bucanero S.A., 1997
+Circunvalación Sur Km. 3.5, Holguín, Cuba
+www.cervezacristal.com
+____________________________________________
+- Bucanero S.A., Holguín
+
+Cristal, 4.9%, lager
+
+
+
+Carib, 1957
+Eastern Main Road, Champs Fleurs, Trinidad
+www.caribbrewery.com
+____________________________________________
+- Carib, Champs Fleurs
+
+Carib Lager, 5.2%, lager
+Carib Stag, 5.9%, lager
+
+
+Desnoes and Geddes, 1927
+214, Spanish Town, Kingston, Jamaica
+www.redstripebeer.com
+____________________________________________
+- Desnoes and Geddes, Spanish Town
+
+Dragon Stout, 7.5%, sweet_stout
+Red Stripe, 4.7%, lager
+
+
+Phoenix Beverages Group, 2003 (formerly Mauritius Breweries, 1961)
+The Phoenix House, Pont-Fer, Mauricio
+www.phoenixbeveragesgroup.com
+____________________________________________
+- Phoenix Beverages Group, Pont-Fer
+
+Phoenix Beer, 5%, lager
+Blue Marlin, 6%, lager
+
+
+Cuauhtémoc Moctezuma, 1890
+Alfonso Reyes 2202 Norte, Colonia Bella Vista, Monterrey, Nuevo León, México
+www.cuamoc.com
+____________________________________________
+- Cuauhtémoc Moctezuma, Monterrey
+
+Dos Equis, 4.8%, lager_viena
+Sol, 4.5%, lager
+
+Grupo Modelo, 1925
+Lago Alberto 156, Colonia Anáhuac, Delegación Miguel Hidalgo, México Distrito Federal, 11320, México
+www.gmodelo.com
+____________________________________________
+- Grupo Modelo, Colonia Anáhuac
+
+Corona Extra, 4.6%, lager
+León Negra, 6%, lager_viena
+
+
+Cervesur, 1898 (now part of Backus & Johnston, 2000)
+Variante de Uchumayo No. 1801, Sachaca, Arequipa, Perú
+www.backus.com.pe
+____________________________________________
+- Cervesur, Arequipa
+
+Cusqueña, 5%, lager
+
+
+Antares, 1998
+12 de Octubre 7749, Lijo López 6179, Mar del Plata 7600, Argentina
+www.cervezaantares.com.ar
+____________________________________________
+- Antares, Mar del Plata
+
+Antares Kölsch, 5%, kölsch
+Antares Stout Imperial, 8.5%, imperial_stout
+
+
+Barba Roja, 2001
+Ruta 25 No. 2567, Escobar, 1625, Buenos Aires, Argentina
+www.barbaroja.com.ar
+____________________________________________
+- Barba Roja, Escobar
+
+Barba Roja Negra, 4.5%, dark_lager
+Barba Roja Winner, 4.8%, doppelbock
+
+Quilmes, 1880
+Avenida 12 de Octubre y Gran Canaria 1878, Quilmes, Buenos Aires, Argentina
+www.quilmes.com.ar
+____________________________________________
+- Quilmes, Quilmes
+
+Quilmes Cristal, 4.9%, lager
+Quilmes Stout, 4.8%, stout
+
+
+Buller Brewing Company
+Presidente Roberto M. Ortiz 1827 1014, Recoleta, Buenos Aires, Argentina
+www.bullerpub.com
+____________________________________________
+- Buller Brewing Company, Recoleta
+
+Honey Beer, 8.5%, flavored_beer
+Oktoberfest, 5.5%, german_ale
+
+
+Eisenbahn, 2002
+Cervejaria Sudbrack Ltda, Rua Bahia, 5181 – Salto Weissbach, 89032-001 Blumenau, Santa Catarina, Brazil
+www.eisenbahn.com.br
+____________________________________________
+- Eisenbahn, Blumenau
+
+Eisenbahn Kölsch, 4.8%, kölsch
+Eisenbahn Natural, 4.8%, pilsner
+
+
+Sul Brasileira, 1986
+BR 392, Km 05, Santa Maria – RS, 97000, Brazil
+____________________________________________
+- Sul Brasileira, Santa Maria
+
+Xingu Black Beer, 4.7%, schwarzbier
+
+
+Teresópolis
+BR-040-Km 116, Serra do Capim, Teresópolis, RJ, Brazil
+www.lokalbier.com.br
+____________________________________________
+- Teresópolis, Serra do Capim
+
+Lokal, 4.7%, pilsner
+Teresópolis Black Princess, 4.8%, dark_lager

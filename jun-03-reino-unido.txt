@@ -1,0 +1,1277 @@
+Acorn Brewery, 2003
+Unit 3, Aldham Industrial Estate, Mitchell Rd, Barnsley, England S73 8HA
+www.acorn-brewery.co.uk
+____________________________________________
+- Acorn, Barnsley
+
+Barnsley Bitter, 3.8%, bitter
+Barnsley Gold, 4.3%, strong_bitter
+
+
+Adnams, 1872
+Sole Bay BreweryEast GreenSouthwold, Suffolk, England IP18 6JW
+www.adnams.co.uk
+____________________________________________
+- Adnams Southworld
+
+Adnams Broadside, 4.7%, strong_bitter
+Adnams Bitter, 3.7%, bitter
+
+
+Arkell’s, 1843
+Kingsdown, Upper Stratton, Swindon, Wiltshire, England SN2 7RU
+www.arkells.com
+____________________________________________
+- Arkell’s Swindon
+
+Kingsdown Special Ale, 5%, best_bitter
+Arkell’s JB, 4%, bitter
+
+
+Atlas, 2002
+Kinlochleven, Argyll, Scotland PH50 4SG
+www.scottishbrewing.com/breweries/orkneyandshetland/atlas-range.php
+____________________________________________
+- Atlas, Kinlochleven
+
+Three Sisters Scottish Ale, 4.2%, special_bitter
+Latitude Cask Pilsner, 3.6%, pilsner
+
+
+Banks’s, 1875
+Wolverhampton, West Midlands, England WV1 4NY
+www.bankssbeer.co.uk
+____________________________________________
+- Banks’s, Wolverhampton
+
+Banks’s Original, 3.5%, bitter
+Banks’s Bitter, 3.8%, bitter
+
+
+Bateman, 1874
+Salem Bridge Brewery, Mill Ln, Wainfleet All Saints, Wainfleet, Lincolnshire, United Kingdom PE24 4JE
+www.bateman.co.uk
+____________________________________________
+- Bateman, Wainfleet
+
+Batemans XXXB, 4.8%, strong_bitter
+XB Bitter, 3.7%, bitter
+
+
+Bath Ales, 1995
+Warmley, Bristol, England BS30 8XN
+www.bathales.com
+____________________________________________
+- Bath Ale, Warmley
+
+Bath Ales Gem, 4.1%, best_bitter
+Special Pale Ale (SPA), 3.7%, pale_ale
+
+
+Bathams, 1877
+Brierley Hill, West Midlands, England DY5 2TN
+www.bathams.com
+____________________________________________
+- Bathams, Brierley Hill
+
+Bathams Best Bitter, 4.5%, best_bitter
+Bathams Mild Ale, 3.5%, mild
+
+
+Beamish, 1792
+Cork, Co. Cork, Ireland
+www.beamish.ie
+____________________________________________
+- Beamish, Cork
+
+Beamish Irish Stout, 4.1%, stout
+Beamish Red Ale, 4.2%, irish_red_ale
+
+
+Beartown, 1994
+Congleton, Cheshire, England CW12 3RH
+www.beartownbrewery.co.uk
+____________________________________________
+- Beartown, Congleton
+
+Kodiak Gold, 4%, bitter
+Black Bear, 5%, mild
+
+
+Belhaven, 1719
+Dunbar, East Lothian, Scotland EH42 1RS
+www.belhaven.co.uk
+____________________________________________
+- Belhaven, Dunbar
+
+St. Andrews Ale, 4.9%, strong_bitter
+Belhaven 80 Shilling Ale, 4.2%, scottish_heavy
+
+
+Big Lamp, 1982
+Newburn, Newcastle upon Tyne, England NE15 8NL
+www.biglampbrewers.co.uk
+____________________________________________
+- Big Lamp, Newburn
+
+Prince Bishop Ale, 4.8%, strong_bitter
+Summerhill Stout, 4.4%, stout
+
+
+
+Black Isle, 1998
+Munlochy, Ross-shire, Scotland 1V8 8NZ
+www.blackislebrewery.com
+____________________________________________
+- Black Isle, Munlochy
+
+Yellowhammer IPA, 4%, india_pale_ale
+Organic Blonde; 4.5%, premium_lager
+
+
+Black Sheep, 1992
+Masham, North Yorkshire, England, HG4 4EN
+www.blacksheepbrewery.com
+____________________________________________
+- Black Sheep, Masham
+
+Black Sheep Ale, 4.4%, bitter
+Best Bitter, 3.8%, best_bitter
+Riggwelter, 5.9%, premium_bitter
+Emmerdale Ale, 5%, bitter
+
+
+Brains, 1882
+Crawshay Street, Cardiff, Glamorgan, Wales CF 10 1SP
+www.sabrain.com
+____________________________________________
+- Brains, Cardiff
+
+Brains Sa Gold, 4.2%, best_bitter
+Brains Bitter, 3.7%, bitter
+
+Brakspear, 1711
+Witney, Oxfordshire, England OX28 4DP
+www.brakspear.co.uk
+____________________________________________
+- Brakspear, Witney
+
+Brakspear Bitter, 3.4%, bitter
+Brakspear Special, 4.3%, strong_bitter
+
+
+Broughton, 1979
+Broughton, Biggar, Peeblesshire, Scotland ML12 6HQ
+www.broughtonales.co.uk
+____________________________________________
+- Broughton, Biggar
+
+Greenmantle Ale, 3.9%, bitter
+Black Douglas, 5.2%, premium_bitter
+
+
+Buffy’s, 1993
+Tivetshall St. Mary, Norwich, Norfolk, England NR15 2DO
+www.buffys.co.uk
+____________________________________________
+- Buffy’s, Norwich
+
+Norwich Terrier, 3.6%, bitter
+Buffy’s Bitter, 3.9%, bitter
+
+
+
+Burton Bridge, 1984
+Burton upon Trent, Staffordshire, England DE14 1SY
+www.burtonbridgebrewery.co.uk
+____________________________________________
+- Burton Bridge, Burton upon Trent
+
+Golden Delicious, 3.8%, bitter
+XL Bitter, 4%, best_bitter
+
+
+Butcombe, 1978
+Wrington, Somerset, England BS40 5PA
+www.butcombe.com
+____________________________________________
+- Butcombe, Wrington
+
+Butcombe Blond, 4.3%, bitter
+Butcombe Bitter, 4%, bitter
+
+
+Cains, 1858
+Stanhope Street, Liverpool, England L8 5XJ
+www.cains.co.uk
+____________________________________________
+- Cains, Stanhope Street
+
+Cains Weath Beer, 4%, wheat_beer
+Cains Finest Bitter, 4%, bitter
+
+
+
+Cairngorm, 2001
+Aviemore, Highlands, Scotland PH22 1ST
+www.cairngormbrewery.com
+____________________________________________
+- Cairngorm, Aviemore
+
+Trade Winds, 4.3%, wheat_beer
+Black Gold, 4.4%, stout
+
+
+Caledonian, 1869
+42 Slateford Road, Edinburgh, Scotland EH1 1 1PH
+www.caledonian-brewery.co.uk
+____________________________________________
+- Caledonian, Slateford Road
+
+Caledonian 80 Schilling, 4.2%, scottish_heavy
+Deuchars IPA, 3.8%, india_pale_ale
+
+
+Camerons, 1865
+Hartlepool, County Durham, England TS24 7QS
+www.cameronsbrewery.co.uk
+____________________________________________
+- Camerons, Hartlepool
+
+Strongarm, 4.7%, strong_bitter
+Nimmo’s XXXX, 4.4%, bitter
+
+
+
+City of Cambridge, 1997
+Chittering, Cambridge, England CB5 9PH
+www.cambridge-brewery.co.uk
+____________________________________________
+- City of Cambridge, Chittering
+
+Hobson’s Choice, 4.1%, bitter
+Boathouse Bitter, 3.8%, bitter
+
+
+Coniston, 1995
+Coniston, Cumbria, England LA21 8HL
+www.conistonbrewery.com
+____________________________________________
+- Coniston, Coniston
+
+Bluebird Bitter, 3.6%, bitter
+Old Man Ale, 4.2%, best_bitter
+
+
+Copper Dragon, 2002
+Skipton, North Yorkshire, England BD23 2QR
+www.copperdragon.uk.com
+____________________________________________
+- Copper Dragon, Skipton
+
+Golden Pippin, 3.9%, bitter
+Best Bitter, 3.8%, best_bitter
+
+
+
+Cotleigh, 1979
+Wiveliscombe, Somerset, England TA4 2RE
+www.cotleighbrewery.co.uk
+____________________________________________
+- Cotleigh, Wiveliscombe
+
+Tawny Owl, 3.8%, best_bitter
+Barn Owl Premium Ale, 4.5%, best_bitter
+
+
+Cropton, 1984
+Cropton, North Yorkshire, England YO 18 8HH
+www.croptonbrewery.com
+____________________________________________
+- Cropton, Cropton
+
+Two Pints Bitter, 4%, bitter
+Monkman’s Slaughter, 6%, premium_bitter
+
+
+Crouch Vale, 1981
+South Woodham Ferrers, Essex, England CM3 5ZA
+www.crouch-vale.co.uk
+____________________________________________
+- Crouch Vale, South Woodham Ferrers
+
+Brewers Gold, 4%, bitter
+Essex Boys Bitter, 3.5%, bitter
+
+
+
+Cwmbran, 1999
+Upper Cwmbran, Torfaen, Wales NP44 5AS
+www.cwmbranbrewery.co.uk
+____________________________________________
+- Cwmbran, Upper Cwmbran
+
+Crow Valley Bitter, 4.2%, bitter
+Drayman’s Choice, 3.8%, mild
+
+
+Daleside, 1988
+Harrogate, North Yorkshire, England HG1 4PT
+www.dalesidebrewery.co.uk
+____________________________________________
+- Daleside, Harrogate
+
+Daleside Blonde, 3.9%, bitter
+Old Leg Over, 4.1%, bitter
+
+
+Darwin, 1994
+Sunderland, Tyne & Wear, England SR1 2QE
+www.darwinbrewery.com
+____________________________________________
+- Darwin, Sunderland
+
+Darwin’s Evolution, 4%, bitter
+Ghost Ale, 4.1%, bitter
+
+
+
+Donnington, 1865
+Stow-on-the-World, Gloucestershire, England GL54 1 EP
+www.donnington-brewery.com
+____________________________________________
+- Donnington, Stow-on-the-World
+
+Double Donn, 4.4%, best_bitter
+Donnington XXX, 3.6%, bitter
+
+
+Double Maxim, 1999
+Hughton-le-Spring, Sunderland, England
+www.dmbc.org.uk
+____________________________________________
+- Double Maxim, Hughton-le-Spring
+
+Double Maxim, 4.7%, brown_ale
+Samson, 4.6%, best_bitter
+
+
+Durham, 1994
+Unit 5a, Bowburn North Industrial Estate, Bowburn, County Durham, England DH6 5PF
+www.durham-brewery.co.uk
+____________________________________________
+- Durham, Bowburn
+
+Evensong, 5%, strong_bitter
+Magus, 3.8%, bitter
+
+
+
+Elgood’s, 1795
+Wisbech, Cambridgeshire, England PE13 1 LN
+www.elgoods-brewery.co.uk
+____________________________________________
+- Elgood’s, Wisbech
+
+Black Dog, 3.6%, mild
+Greyhound Strong Bitter, 5.2%, strong_bitter
+
+
+Everards, 1849
+Castle Acres, Narborough, Leicestershire, England LE19 1BY
+www.everards.co.uk
+____________________________________________
+- Everards, Narborough
+
+Tiger, 4.2%, bitter
+Original, 5.2%, strong_bitter
+
+
+Exmoor, 1980
+Wiveliscombe, Somerset, England TA4 2NY
+www.exmoorales.co.uk
+____________________________________________
+- Exmoor, Wiveliscombe
+
+Exmoor Gold, 4.5%, bitter
+Exmoor Ale, 3.8%, bitter
+
+
+
+Felinfoel, 1878
+Lanelli, Carmarthenshire, Wales SA14 8LB
+www.felinfoel-brewery.com
+____________________________________________
+- Felinfoel, Lanelli
+
+Double Dragon, 4.2%, bitter
+Cambrian Bitter, 3.9%, bitter
+
+
+Freeminer, 1992
+Cinderford, Gloucestershire, England GL14 3JA
+www.freeminer.com
+____________________________________________
+- Freeminer, Cinderford
+
+Speculation, 4.8%, strong_bitter
+Freeminer Bitter, 4.8%, strong_bitter
+
+
+Fuller’s, 1845
+Chiswick Lane South, London, England W4 2QB
+www.fullers.co.uk
+____________________________________________
+- Fuller’s, Chiswick
+
+London Pride, 4.1%, bitter
+ESB, 5.5%, extra_strong_bitter
+Vintage Ale, 8.5% (variable), ale_wine
+Chiswick Bitter, 3.5%, bitter
+
+Fyne Ales, 2001
+Cairndow, Argyll, Scotland PA268BJ
+www.fyneales.com
+____________________________________________
+- Fyne Ales, Cairndow
+
+Maverick, 4.2%, best_bitter
+Highlander, 4.8%, scottish_heavy
+
+
+Galway Hooker, 2006
+Roscommon Town, Galway, Ireland
+www.galwayhooker.ie
+____________________________________________
+- Galway Hooker, Roscommon Town
+
+Galway Hooker Irish Pale Ale, 4.4%, pale_ale
+
+
+Goacher’s, 1983
+Maidstone, Kent, England ME15 6TA
+www.goachers.com
+____________________________________________
+- Goacher’s, Maidstone
+
+Goacher’s Best Dark Ale, 4.1%, best_bitter
+Goacher’s Fine Light Ale, 3.7%, bitter
+
+
+Greene King, 1799
+Bury St. Edmunds, Suffolk, England 1P33 1QT
+www.greeneking.co.uk
+____________________________________________
+- Greene King, Bury St. Edmunds
+
+Abbot Ale, 5%, strong_bitter
+IPA, 3.6%, india_pale_ale
+Old Speckled Hen, 5.2%, premium_bitter
+Ruddles’ County, 4.3%, best_bitter
+
+
+Guinness, 1759
+St. James’s Gate, Dublin 8, Ireland
+www.guinness.com
+____________________________________________
+- Guinness, St. James’s Gate
+
+Guinness Original, 4.2%, stout
+Draught Guinness, 4.1%, stout
+Foreign Extra Stout, 7.5%, special_stout
+Guinness Red, 4.1%, irish_red_ale
+
+
+Hadrian & Border, 1994
+Newcastle upon Tyne, England NE6 1 AS
+www.hadrian-border-brewery.co.uk
+____________________________________________
+- Hadrian & Border, Newcastle upon Tyne
+
+Centurion Best Bitter, 4.5%, best_bitter
+Farne Island, 4%, bitter
+
+Hall & Woodhouse, 1777
+Blandford St. Mary, Dorset, England DT11 9LS
+www.hall-woodhouse.co.uk
+____________________________________________
+- Hall & Woodhouse, Blandford St. Mary
+
+Badger First Gold, 4%, bitter
+Tanglefoot, 5%, strong_bitter
+
+
+Hambleton, 1991
+Holme-on-Swale, North Yorkshire, England YO7 4JE
+www.hambletonales.co.uk
+____________________________________________
+- Hambleton, Holme-on-Swale
+
+Stallion, 4.2%, bitter
+Nightmare, 5%, porter
+
+
+Hampshire, 1994
+Romsey, Hampshire, England SO51 0NR
+www.hampshirebrewery.com
+____________________________________________
+- Hampshire, Romsey
+
+Pride of Romsey, 5%, strong_bitter
+Lionheart, 4.5%, lionheart
+
+
+
+Harvey’s, 1790
+Lewes, East Sussex, England BN7 2AH
+www.harveys.org.uk
+____________________________________________
+- Harvey’s, Lewes
+
+Blue Label, 3.6%, pale_ale
+Armada Ale, 4.5%, best_bitter
+
+
+Harviestoun, 1985
+Alva, Clackmannanshire, England FK 12 5DQ
+www.harviestoun-brewery.co.uk
+____________________________________________
+- Harviestoun, Alva
+
+Bitter & Twisted, 3.8%, bitter
+Schiehallion, 4.8%, premium_lager
+
+
+Hawkshead, 2002
+Staveley, Cumbria, England LA8 9LR
+www.hawksheadbrewery.co.uk
+____________________________________________
+- Hawkshead, Staveley
+
+Hawkshead Red, 4.2%, red_ale
+Hawkshead Gold, 4.4%, best_bitter
+
+
+
+Highgate, 1898
+Walsall, West Midlands, England WS1 3AP
+www.highgatebrewery.com
+____________________________________________
+- Highgate, Walsall
+
+Davenports Original, 4%, best_bitter
+Dark Mild, 3.6%, mild
+
+
+High House, 2003
+Matfen, Northumberland, England NE20 0RG
+www.highhousefarmbrewery.co.uk
+____________________________________________
+- High House, Matfen
+
+Nel’s Best, 4.2%, best_bitter
+Auld Hemp, 3.8%, bitter
+
+
+Hilden, 1981
+Lisburn, County Antrim, Ireland BT 27 4TY
+www.hildenbrewery.co.uk
+____________________________________________
+- Hilden, Lisburn
+
+Hilden Ale, 4%, bitter
+Molly Malone Ale, 4.6%, porter
+
+
+
+Hobsons, 1993
+Cleobury Mortimer, Worcestershire, England DY14 8RD
+www.hobsons-brewery.co.uk
+____________________________________________
+- Hobsons, Cleobury Mortimer
+
+Town Crier, 4.5%, best_bitter
+Hobsons Mild, 3.2%, mild
+
+
+Hogs Back, 1992
+Tongham, Surrey, England GU10 1DE
+www.hogsback.co.uk
+____________________________________________
+- Hogs Back, Tongham
+
+Traditional English Ale / Tea, 4.2%, best_bitter
+Hogs Back Bitter, 3.7%, bitter
+
+
+Holden’s, 1915
+Woodsetton, Dudley, West Midlands, England DY1 4LW
+www.holdensbrewery.co.uk
+____________________________________________
+- Holden’s, Woodsetton
+
+Holden’s Golden, 3.9%, bitter
+Black Country Mild, 3.7%, mild
+
+
+
+Holt, 1849
+Cheetham, Manchester, England M3 1JD
+www.joseph-holt.com
+____________________________________________
+- Holt, Cheetham
+
+Holt 1849, 4.5%, best_bitter
+Holt Bitter, 4%, bitter
+
+
+Hook Norton, 1849
+Banbury, Oxfordshire, England OX15 5NY
+www.hooky.co.uk
+____________________________________________
+- Hook Norton, Banbury
+
+Old Hooky, 4.6%, strong_bitter
+Hooky Bitter, 3.6%, bitter
+
+
+Hop Back, 1986
+Downton, Salisbury, Wiltshire, England SP5 3HU
+www.hopback.co.uk
+____________________________________________
+- Hop Back, Salisbury
+
+Summer Lightning, 5%, strong_bitter
+Crop Circle, 4.2%, bitter
+
+
+
+Hurns, 2002
+Unit 3, Century Park, Swansea Enterprise Park, Wales SA6 8RP
+www.hurns.co.uk
+____________________________________________
+- Hurns, Century Park
+
+Tomos Watkin Cwrw Haf, 4.2%, bitter
+Cwrw Braf, 4.5%, bitter
+
+
+Hydes, 1863
+46 Moss Lane West, Manchester, England M15 5PH
+www.hydesbrewery.com
+____________________________________________
+- Hydes, 46 Moss Lane West
+
+Hydes Original, 3.8%, bitter
+Dark Mild, 3.5%, mild
+
+
+Iceni, 1995
+Mundford, Norfolk, England 1P26 5HB
+www.icenibrewery.co.uk
+____________________________________________
+- Iceni, Mundford
+
+Iceni Boadicea Chariot Ale, 3.8%, bitter
+Celtic Queen, 4%, bitter
+
+
+
+Innis & Gunn, 2003
+Canning Street, Edinburgh, Scotland, EH3 8EG
+www.innisandgunn.com
+____________________________________________
+- Innis & Gunn, Canning Street
+
+Innis & Gunn Oak Aged Beer, 6.6%, speciality_strong_bitter
+
+
+Inveralmond, 1997
+Perth, Perthshire, Scotland PH1 3UQ
+www.inveralmond-brewery.co.uk
+____________________________________________
+- Inveralmond, Perth
+
+Ossian, 4.1%, best_bitter
+Independence, 3.8%, bitter
+
+
+Isle of Arran, 2000
+Cladach, Brodick, Isle of Arran, Scotland, KA27 8DE
+www.arranbrewery.com
+____________________________________________
+- Isle of Arran, Brodick
+
+Arran Blonde, 5%, strong_bitter
+Arran Dark, 4.3%, scottish_heavy
+
+
+
+
+Isle of Skye, 1995
+Uig, Isle of Skye, Scotland 1V51 9XP
+www.skyebrewery.co.uk
+____________________________________________
+- Isle of Skye, Uig
+
+Hebridean Gold, 4.3%, best_bitter
+Red Cuillin, 4.2%, bitter
+
+
+Jarrow, 2002
+Primrose Hill, Jarrow, Tyne & Wear, England NE32 5UB
+www.jarrowbrewery.co.uk
+____________________________________________
+- Jarrow, Jarrow
+
+Rivet Catcher, 4%, bitter
+Jobling’s Swinging Gibbet, 4.1%, bitter
+
+
+Jennings, 1874
+Cockermouth, Cumbria, England, CA13 9NE
+www.jenningsbrewery.co.uk
+____________________________________________
+- Jennings, Cockermouth
+
+Cumberland Ale, 4%, bitter
+Sneck Lifter, 5.1%, strong_bitter
+
+
+
+John Smith, 1847
+Tadcaster, North Yorkshire, England LS24 9SA
+www.johnsmiths.co.uk
+____________________________________________
+- John Smith, Tadcaster
+
+John Smith’s Magnet, 4%, bitter
+John Smith’s Original, 3.8%, bitter
+
+
+Kelham Island, 1990
+Sheffield, South Yorkshire, England S3 8SA
+www.kelhambrewery.co.uk
+____________________________________________
+- Kelham Island, Sheffield
+
+Pale Rider, 5.2%, strong_bitter
+Easy Rider, 4.3%, bitter
+
+
+Lees, 1878
+Greengate Brewery, Middleton Junction, Manchester, England M24 2AX
+www.jwlees.co.uk
+____________________________________________
+- Lees, Middleton Junction
+
+Moonraker, 7.5%, barley_wine
+JW Lees Bitter, 4%, bitter
+
+
+
+Little Valley, 2005
+Hebden Bridge, West Yorkshire, England HX7 5TT
+www.littlevalleybrewery.co.uk
+____________________________________________
+- Little Valley, Hebden Bridge
+
+Stoodley Stout, 4.8%, stout
+Cragg Vale Bitter, 4.2%, bitter
+
+
+Marston’s, 1834
+Burton upon Trent, Staffordshire, England DE14 2BW
+www.marstonsbeercompany.co.uk
+____________________________________________
+- Marston’s, Burton upon Trent
+
+Pedigree, 4.4%, best_bitter
+Burton Bitter, 3.8%, bitter
+Old Empire, 5.7%, india_pale_ale
+Draught Bass, 4.4%, premium_bitter
+
+
+McMullen, 1827
+Hertford, Hertfordshire, England SG14 1RD
+www.mcmullens.co.uk
+____________________________________________
+- McMullen, Hertford
+
+AK Mild, 3.7%, mild
+McMullen Country Bitter, 4.3%, best_bitter
+
+Meantime, 2000
+Lawrence Trading Estate, Blackwall Lane, Greenwich, London, England SE10 0AR
+www.meantimebrewing.com
+____________________________________________
+- Meantime, Blackwall Lane
+
+Meantime Chocolate, 6.5%, specialty_strong_bitter
+India Pale Ale, 7.5%, india_pale_ale
+
+
+Melbourn Brothers, 1825
+All Saints Street, Stamford, Lincolnshire, England PE9 2PA
+____________________________________________
+- Melbourn Brothers, Stamford
+
+Strawberry, 3.4%, fruit_beer
+Apricot, 3.4%, fruit_beer
+
+
+Moorhouse’s, 1865
+4 Moorhouse St, Burnley, Lancashire, England BB11 5EN
+www.moorhouses.co.uk
+____________________________________________
+- Moorhouse’s, Burnley
+
+Pendle Witches Brew, 5.1%, strong_bitter
+Black Cat, 3.4%, mild
+
+
+
+
+Mordue, 1995
+Units D1-D2 / Narvik Way, North Shields, Tyne & Wear, England NE29 7XJ
+www.morduebrewery.com
+____________________________________________
+- Mordue, North Shields
+
+Geordie Pride, 4.2%, bitter
+Workie Ticket, 4.5%, best_bitter
+
+
+Murphy’s, 1856
+Lady’s Well, Leitrim Street, Cork, County Cork, Ireland
+www.murphys.com
+____________________________________________
+- Murphy’s, Cork
+
+Murphy’s Irish Stout, 4%, stout
+Murphy’s Irish Red, 5.2%, irish_red_ale
+
+
+Nethergate, 1986
+Pentlow, Essex, England CO10 7JJ
+www.nethergate.co.uk
+____________________________________________
+- Nethergate, Pentlow
+
+Old Growler, 5%, porter
+Umbel Ale, 3.8%, bitter
+
+
+
+Newcastle Federation, 2005
+Dunston, Tyne & Wear, England NE11 9JR
+www.scottish-newcastle.com
+____________________________________________
+- Newcastle Federation, Dunston
+
+Newcastle Brown Ale, 4.7%, brown_ale
+Newcastle Exhibition Ale, 4.3%, bitter
+
+
+North Yorkshire, 1989
+Guisborough, North Yorkshire, England, TS14 8HG
+www.nybrewery.co.uk
+____________________________________________
+- North Yorkshire, Guisborough
+
+Flying Herbert, 4.7%, strong_bitter
+Fool’s Gold, 4.6%, strong_bitter
+
+
+Oakham, 1993
+Peterborough, Cambridgeshire, England PE2 7JB
+www.oakhamales.com
+____________________________________________
+- Oakham, Peterborough
+
+Jeffrey Hudson Bitter / JHB, 3.8%, bitter
+White Dwarf, 4.3%, wheat_beer
+
+
+
+O’Hanlon’s (now Hanlon’s), 1996
+The Brewery, Hill Farm, Half Moon Village Newton St Cyres, Devon, England EX5 5AE 
+www.hanlonsbrewery.com/
+____________________________________________
+- Hanlon’s, Half Moon Village Newton St Cyres
+
+Thomas Hardy’s Ale, 11.7%, barley_wine
+Yellow Hammer, 4.2%, bitter
+
+
+Okell’s, 1874
+Douglas, Isle of Man, England 1M2 1QG
+www.okells.co.uk
+____________________________________________
+- Okell’s, Douglas
+
+Dr Okell’s IPA, 4.4%, india_pale_ale
+Okell’s Bitter, 3.7%, bitter
+
+
+Old Luxters, 1990
+Henley-on-Thames, Oxfordshire, England RG9 6JW
+www.chilternvalley.co.uk
+____________________________________________
+- Old Luxters, Henley-on-Thames
+
+Barn Ale, 4%, strong_bitter
+Barn Ale Special, 4.4%, best_bitter
+
+
+
+Orkney, 1988
+Quoyloo, Sandwick, Stromness, Orkney, Scotland KW16 3LT
+www.sinclairbreweries.co.uk
+____________________________________________
+- Orkney, Stromness
+
+Dark Island, 4.6%, strong_bitter
+Skullsplitter, 8.5%, barley_wine
+
+
+Ossett, 1997
+Ossett, West Yorkshire, England WF5 8ND
+www.ossett-brewery.co.uk
+____________________________________________
+- Ossett, Ossett
+
+Excelsior, 5.2%, strong_bitter
+Pale Gold, 3.8%, bitter
+
+
+Palmer’s, 1794
+Bridport, Dorset, England DT6 4JA
+www.palmersbrewery.com
+____________________________________________
+- Palmer’s, Bridport
+
+Traditional Best Bitter, 4.2%, best_bitter
+Tally Ho!, 5.5%, strong_bitter
+
+
+
+RCH, 1980
+Weston-super-Mare, Somerset, England BS24 6RR
+www.rchbrewery.com
+____________________________________________
+- RCH, Weston-super-Mare
+ 
+PG Steam Bitter, 3.9%, bitter
+Hewish IPA, 3.6%, india_pale_ale
+
+
+Ringwood, 1978
+138 Christchurch Road, Ringwood, Hampshire, England BH24 3AP
+www.ringwoodbrewery.co.uk
+____________________________________________
+- Ringwood, Ringwood
+
+Old Thumper, 5.6%, strong_bitter
+Best Bitter, 3.8%, best_bitter
+
+
+Robinson’s, 1838
+Stockport, Cheshire, England SK1 1JJ
+www.frederic.robinson.co.uk
+____________________________________________
+- Robinson’s, Stockport
+
+Old Tom Strong Ale, 8.5%, barley_wine
+Unicorn Best Bitter, 4.2%, best_bitter
+
+
+
+Rooster’s, 1993
+Knaresborough, North Yorkshire, England HG5 8LJ
+www.roosters.co.uk
+____________________________________________
+- Rooster’s, Knaresborough
+
+Rooster’s Yankee, 4.3%, bitter
+Outlaw Wild Mule, 3.7%, bitter
+
+
+Rudgate, 1992
+Unit 2, Centre Park, Moor Side, Tockwith, York, North Yorkshire, England YO26 7QF
+www.rudgatebrewery.co.uk
+____________________________________________
+- Rudgate, Tockwith
+
+Viking, 3.8%, bitter
+Battleaxe, 4.2%, bitter
+
+
+St Austell, 1851
+63 Trevarthian Rd, St Austell, Cornwall, England PL25 4BY
+www.staustellbrewery.co.uk
+____________________________________________
+- St Austell, St Austell
+
+Tribute, 4.2%, bitter
+St Austell IPA, 3.4%, india_pale_ale
+
+
+
+St Peter’s, 1996
+St Peter South Elmham, Bungay, Suffolk, England NR35 1NQ
+www.stpetersbrewery.co.uk
+____________________________________________
+- St Peter’s, Bungay
+
+Golden Ale, 4.7%, bitter
+Best Bitter, 3.7%, best_bitter
+
+
+Samuel Smith, 1758
+The Old Brewery, High Street, Tadcaster, North Yorkshire, England LS24 9SB
+www.samuelsmithsbrewery.co.uk
+____________________________________________
+- Samuel Smith, Tadcaster
+
+Nut Brown Ale, 5%, brown_ale
+Old Brewery Bitter, 4%, best_bitter
+
+
+Sharp’s, 1994
+Pityme Business Centre, Wadebridge, England PL27 6NU
+www.sharpsbrewery.co.uk
+____________________________________________
+- Sharp’s, Pityme Business Centre
+
+Doom Bar, 4%, bitter
+Atlantic IPA, 4.8%, india_pale_ale
+
+
+
+Shepherd Neame, 1698
+Faversham, Kent, England ME13 7AX
+www.shepherdneame.co.uk
+____________________________________________
+- Shepherd Neame, Faversham
+
+Bishop’s Finger, 5%, strong_bitter
+Spitfire, 4.5%, premium_bitter
+Whitstable Bay Organic Ale, 4.5%, bitter
+Master Brew Bitter, 3.7%, bitter
+
+
+Slater’s, 1995
+Stafford, Staffordshire, England ST16 3DR
+www.slatersales.co.uk
+____________________________________________
+- Slater’s, Stafford
+
+Top Totty, 4%, best_bitter
+Slater’s Original, 4%, bitter
+
+
+Springhead, 1990
+Sutton-on-Trent, Nottinghamshire, England NG23 6QS
+www.springhead.co.uk
+____________________________________________
+- Springhead, Sutton-on-Trent
+
+Puritan’s Porter, 4%, porter
+Springhead Bitter, 4%, bitter
+
+Tetley, 1822
+PO Box 142, Hunslet Road, Leed, West Yorkshire, England LS1 1QG
+www.carlsberg.co.uk
+____________________________________________
+- Tetley, Leed
+
+Tetley Mild, 3.3%, mild
+Tetley Cask Bitter, 3.7%, bitter
+
+
+Theakston, 1827
+Masham, Ripon, North Yorkshire, England HG4 4YD
+www.theakstons.co.uk
+____________________________________________
+- Theakston, Ripon
+
+Old Peculier, 5.6%, strong_bitter
+Black Bull Bitter, 3.9%, bitter
+
+
+Thornbridge, 2005
+Bakewell, Derbyshire, England DE45 1NZ
+www.thornbridgebrewery.co.uk
+____________________________________________
+- Thornbridge, Bakewell
+
+Jaipur, 5.9%, india_pale_ale
+Lord Marples, 4%, bitter
+
+
+
+Thwaites, 1807
+Blackburn, Lancashire, England BB1 5BU
+www.thwaites.co.uk
+____________________________________________
+- Thwaites, Blackburn
+
+Lancaster Bomber, 4.4%, best_bitter
+Thwaites Original, 3.6%, bitter
+
+
+Timothy Taylor, 1858
+Keighley, West Yorkshire, England BD21 1AW
+www.timothy-taylor.co.uk
+____________________________________________
+- Timothy Taylor, Keighley
+
+Landlord, 4.3%, premium_bitter
+Best Bitter, 4%, best_bitter
+
+
+Titanic, 1985
+Burslem, Sttafordshire, England ST6 1JL
+www.titanicbrewery.co.uk
+____________________________________________
+- Titanic, Burslem
+
+Titanic Stout, 4.5%, stout
+Best Bitter, 3.5%, best_bitter
+
+
+
+Traditional Scottish Ales (now Black Wolf Brewery)
+Bandeath Industrial Estate, Throsk, Stirling, Scotland FK7 7NP
+www.blackwolfbrewery.com
+____________________________________________
+- Black Wolf Brewery, Throsk
+
+Ben Nevis Organic, 4%, scottish_heavy
+1488 Whisky Ale, 7%, specialty_strong_bitter
+
+
+Traquair, 1965
+Innerleithen, Peeblesshire, Scotland EH44 6PW
+www.traquair.co.uk
+____________________________________________
+- Traquair, Innerleithen
+
+Traquair House Ale, 7.2%, barley_wine
+Jacobite Ale, 8%, barley_wine
+
+
+Tring, 1992
+Tring, Dacorum District, Hertfordshire, England HP23 6AF
+www.tringbrewery.co.uk
+____________________________________________
+- Tring, Tring
+
+Side Pocket for a Toad, 3.6%, bitter
+Jack O’Legs, 4.2%, best_bitter
+
+
+
+Wadworth, 1875
+Devises, Wiltshire, England SN10 1JW
+www.wadworth.co.uk
+____________________________________________
+- Wadworth, Devises
+
+Wadworth 6X, 4.3%, best_bitter
+JCB, 4.7%, strong_bitter
+
+
+Wells & Young’s, 2006
+The Eagle Brewery, Havelock Street, Bedford, Bedfordshire, England MK40 4LU
+www.charleswells.co.uk
+www.youngs.co.uk
+____________________________________________
+- Wells & Young’s, Bedford
+
+Wells Bombardier, 4.3%, premium_bitter
+Eagle IPA, 3.6%, india_pale_ale
+Young’s Bitter, 3.7%, bitter
+Young’s Special, 4.5%, best_bitter
+
+
+Wentworth, 1999
+Wentworth Brewery, The Power House Gun Park, Wentworth, Rotherham, South Yorkshire, England S62 7TF
+www.wentworth-brewery.co.uk
+____________________________________________
+- Wentworth, Rotherham
+
+WPA (WOPPA), 4%, pale_ale
+Oatmeal Stout, 4.8%, stout
+
+
+Wickwar, 1990
+Station Road, Wickwar, Gloucestershire, England GL12 8NB
+www.wickwarbrewing.co.uk
+____________________________________________
+- Wickwar, Wickwar
+
+Station Porter, 6.1%, porter
+IKB, 4.7%, best_bitter
+
+
+Williams, 1988
+Alloa, Clackmannanshire, Scotland FK10 1NT
+www.heatherale.co.uk
+____________________________________________
+- Williams, Alloa
+
+Fraoch Heather Ale, 4.1%, speciality_bitter
+Kelpie Seaweed Ale, 4.4%, speciality_bitter
+
+
+Woodforde’s, 1981
+Woodbastwick, Norwich, Norfolk, England NR13 6SW
+www.woodfordes.co.uk
+____________________________________________
+- Woodforde’s, Norwich
+
+Wherry Best Bitter, 3.8%, best_bitter
+Norfolk Nog, 4.6%, bitter
+
+
+
+Worthington’s White Shield, 1920
+Burton upon Trent, Staffordshire, England DE14 1YQ
+____________________________________________
+- Worthington’s White Shield, Burton upon Trent
+
+White Shield, 5.6%, india_pale_ale
+
+
+Wychwood, 1983
+Unit 10-12, Eagle Industrial Estate, Eagle Maltings The Crofts, Witney, Oxfordshire, England OX28 4DP
+www.wychwood.co.uk
+____________________________________________
+- Wychwood, Witney
+
+Hobgoblin, 5%, strong_bitter
+Fiddler’s Elbow, 4.5%, best_bitter
+
+
+Wylam, 2000
+South Houghton Farm, Heddon-on-the-Wall, Northumberland, England NE15 0EZ
+www.wylambrewery.co.uk
+____________________________________________
+- Wylam, Heddon-on-the-Wall
+
+Wylam Rocket, 5%, strong_bitter
+Wylam Gold Tankard, 4%, bitter
+
+
+
+York, 1996
+12 Toft Green, York, North Yorkshire, England YO1 6JT
+www.york-brewery.co.uk
+____________________________________________
+- York, York
+
+Yorkshire Terrier, 4.2%, bitter
+Centurion’s Ghost Ale, 5.4%, strong_bitter
+
