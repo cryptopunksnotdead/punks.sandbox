@@ -1,0 +1,145 @@
+#####################
+## Poland
+
+
+Amber, 1994
+Bielkówko, ul. Gregorkiewicza 1, 83-050 Kolbud
+www.browar-amber.pl
+____________________________________________
+- Amber, Kolbud
+
+Koźlak, 6.5%, dunkel_bock
+Zywe, 6.2%, pilsner
+
+
+Browarmia, 2005
+ul. Królewska 1, Warszawa, 00-065
+www.browarmia.pl
+____________________________________________
+- Browarmia, Warszawa
+
+Pszenciczne, 4.8%, pale_ale
+Raspberry Wheat Beer, 5%, wheat_beer
+
+
+Koszalin, 1874
+Koszalin ul. Spoldzielcza 8, Koszalin
+www.royalunibrew.com
+____________________________________________
+- Koszalin, Koszalin
+
+Brok Sambor, 6.2%, pilsner
+Brok Strong, 7.2%, lager
+
+
+Okocim, 1845
+ul. Browarna 14, 32-8-Brzesko
+www.okocim.com.pl
+____________________________________________
+- Okocim, Brzesko
+
+Okocim Porter, 9%, porter
+Zagloba, 4.8%, lager
+
+
+Kompania Piwowarska SA, 1999
+ul. Szwajcarska 11, 61-285 Poznan
+www.kp.pl
+____________________________________________
+- Kompania Piwowarska SA, Poznan
+
+Tyskie Gronie, 5.6%, lager
+Debowe Mocne, 7%, dark_lager
+
+
+Relakspol, 1992
+ul. Borkowska 30.32, 30-438 Cracow
+____________________________________________
+- Relakspol, Cracow
+
+Pils, 5.7%, pilsner
+
+
+
+Warka, 1478
+Gosniewska 655-660 Warka
+www.warka.com.pl
+____________________________________________
+- Warka, Warka
+
+Warka, 5.7%, lager
+Warka Strong, 7%, lager
+
+
+Żywiec, 1852
+ul. Browarna 88, 34-300 Żywiec
+www.zywiec.com.pl
+____________________________________________
+- Żywiec, Żywiec
+
+Żywiec, 5.6%, lager
+Porter, 9.5%, baltic_porter
+
+
+###########################
+## Ukraine
+ 
+Ridna Marka, 1886
+71 Mikgorod, Radomyshl
+____________________________________________
+- Ridna Marka, Radomyshl
+
+Etalon Weissbier, 5%, wheat_beer
+
+
+Оболонь (Obolon), 1980
+3 Bogatyrska, Kiev
+www.obolon.com
+____________________________________________
+- Obolon, Kiev
+
+Obolon Premium, 5.2%, lager
+Weizen, 5%, wheat_beer
+
+
+################
+# Russia
+
+Балтика (Baltika), 1990
+6 Proezd, Parnas 4, Saint Petersburg
+www.baltika.ru
+____________________________________________
+- Baltika, Saint Petersburg
+
+Baltika No. 3 Classic, 4.8%, lager
+Baltika No. 6 Porter, 7%, porter
+
+
+Бочкарев (Bochkarev), 1999
+24 Telmana, Saint Petersburg
+____________________________________________
+- Bochkarev, Saint Petersburg
+
+Bochkovoe, 4.3%, lager
+Krepkoe Osoboe, 8%, lager
+
+
+Очаково (Ochakovo), 1993
+44, Riabinivaya, Moscow
+www.ochakovo.ru
+____________________________________________
+- Ochakovo, Moscow
+
+Ochakovo Classic, 5%, lager
+Ochakovo Ruby, 3.9%, vienna_lager
+
+
+САН ИнБев (Sun Inbev), 1999
+Vorontsovsky Park, 6 Moscow
+www.suninterbrew.ru
+____________________________________________
+- Sun Inbev, Moscow
+
+Tolstiak Dobroye, 5%, lager
+Klinskoye Svetloe, 4.5%, lager
+
