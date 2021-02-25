@@ -150,31 +150,10 @@ And so on.
 ## Usage in Your Scripts
 
 
-Yes, you can mint punks in your own scripts.
-Example:
-
-``` ruby
-require 'cryptopunks'
-
-# step 1: read True Official Genuine CryptoPunks™ composite image
-punks = Punks::Image.read( './punks.png' )
-
-# step 2: start minting
-
-punks[0].save( './punk-0000.png' )
-punks[2890].save( './punk-2890.png' )
-punks[8219].save( './punk-8219.png')
-
-# or change the zoom factor
-punks.zoom = 4   # use x4
-
-punks[0].save( './punk-0000x4.png' )
-punks[2890].save( './punk-2890x4.png' )
-punks[8219].save( './punk-8219x4.png')
-```
-
-and so on. Happy miniting.
-That's all for now.
+Yes, you can mint punks in your own scripts
+and much more.
+See the
+[**Programming CryptoPunks & Copypastas Step-by-Step Booklet / Guide »**](https://github.com/cryptopunksnotdead/programming-cryptopunks)
 
 
 
