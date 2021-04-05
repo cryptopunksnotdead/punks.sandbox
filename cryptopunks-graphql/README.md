@@ -25,7 +25,7 @@ require 'cryptopunks/graphql'
 
 c = Cryptopunks::GraphQL::Client.new
 
-query =<<GRAPHQL
+data = c.query( <<GRAPHQL )
 {
   transactions(first: 10, orderBy: date) {
     id
@@ -34,8 +34,6 @@ query =<<GRAPHQL
   }
 }
 GRAPHQL
-
-data = c.query( query )
 ```
 
 
