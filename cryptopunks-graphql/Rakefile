@@ -18,6 +18,7 @@ Hoe.spec 'cryptopunks-graphql' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
+    ['webclient'],
   ]
 
   self.licenses = ['Public Domain']
