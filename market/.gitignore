@@ -1,0 +1,14 @@
+####
+# add dumped temporary state (txns, etc.)
+state.json
+
+####
+# add output (used for testing)
+/dl/
+/o/
+/o1/
+/o2/
+/o3/
+/o4/
+
+
