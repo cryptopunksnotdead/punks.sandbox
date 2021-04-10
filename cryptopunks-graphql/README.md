@@ -118,5 +118,9 @@ The scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 
 
+## Questions? Comments?
+
+Post them on the [cryptopunks reddit](https://old.reddit.com/r/cryptopunks). Thanks.
+
 
 
