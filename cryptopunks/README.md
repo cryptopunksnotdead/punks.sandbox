@@ -170,9 +170,6 @@ The scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 
 
-<!--
-  r/cryptopunk gone private / censored!?
 ## Questions? Comments?
 
-Post them on the [cryptopunk reddit](https://www.reddit.com/r/cryptopunk). Thanks.
--->
+Post them on the [cryptopunks reddit](https://old.reddit.com/r/cryptopunks). Thanks.
