@@ -145,3 +145,7 @@ Ideas for future improvements:
 - Your ideas here?  Please, tell.
 
 
+## Questions? Comments?
+
+Post them on the [cryptopunks reddit](https://old.reddit.com/r/cryptopunks). Thanks.
+
