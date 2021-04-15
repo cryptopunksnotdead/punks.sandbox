@@ -45,7 +45,6 @@ And let's try three LED Light variants:
 require 'pixelart'
 
 punk = Pixelart::Image.read( './punk-3100.png' )
-puts " #{punk.width}x#{punk.height}"
 
 punk = punk.change_colors( { 0xff => 0x242124ff } )
 
@@ -99,12 +98,37 @@ And let's try three LED Light variants:
 
 
 ``` ruby
-...
+ids.each do |id|
+  name = '%04d' % id
+  punk = Pixelart::Image.read( "./punk-#{name}.png" )
+
+  punk = punk.change_colors( { 0xff => 0x242124ff } )
+
+  punk_led = punk.led( 8, spacing: 2 )
+  punk_led.save( "./punk-#{name}_led8x.png" )
+
+  punk_led = punk.led( 16, spacing: 3 )
+  punk_led.save( "./punk-#{name}_led16x.png" )
+
+  punk_led = punk.led( 16, spacing: 8, round_corner: true )
+  punk_led.save( "./punk-#{name}_led16xr.png" )
+end
 ```
 
 And Voila!
 
 
+![](i/punk-3393_led8x.png)
+![](i/punk-0172_led8x.png)
+![](i/punk-2964_led8x.png)
+
+![](i/punk-3393_led16x.png)
+![](i/punk-0172_led16x.png)
+![](i/punk-2964_led16x.png)
+
+![](i/punk-3393_led16xr.png)
+![](i/punk-0172_led16xr.png)
+![](i/punk-2964_led16xr.png)
 
 
 

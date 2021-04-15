@@ -47,7 +47,6 @@ end # module Pixelart
 
 
 punk = Pixelart::Image.read( './i/punk-3100.png' )
-puts " #{punk.width}x#{punk.height}"
 
 punk_led = punk.led( 8, spacing: 2 )
 punk_led.save( './i/punk-3100_led8x.png' )
@@ -70,7 +69,6 @@ ids = [
 ids.each do |id|
   name = '%04d' % id
   punk = Pixelart::Image.read( "./i/punk-#{name}.png" )
-  puts " #{punk.width}x#{punk.height}"
 
   punk_led = punk.led( 8, spacing: 2 )
   punk_led.save( "./i/punk-#{name}_led8x.png" )
