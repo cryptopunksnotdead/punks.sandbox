@@ -172,4 +172,4 @@ Use it as you please with no restrictions whatsoever.
 
 ## Questions? Comments?
 
-Post them on the [cryptopunks reddit](https://old.reddit.com/r/cryptopunks). Thanks.
+Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
