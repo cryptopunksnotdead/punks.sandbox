@@ -73,7 +73,8 @@ in a single 2400×2400 image (~830 kb) for free.
 See [`punks.png` »](https://github.com/larvalabs/cryptopunks/blob/master/punks.png)
 
 
-![](i/punks-zoom.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punks-zoom.png)
+
 
 
 
@@ -96,9 +97,9 @@ printing:
 
 And voila!
 
-![](i/punk-0000.png)
-![](i/punk-2890.png)
-![](i/punk-8219.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-2890.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-8219.png)
 
 
 
@@ -126,22 +127,22 @@ printing:
 
 And voila!
 
-![](i/punk-0000x2.png)
-![](i/punk-2890x2.png)
-![](i/punk-8219x2.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000x2.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-2890x2.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-8219x2.png)
 
 And x4:
 
-![](i/punk-0000x4.png)
-![](i/punk-2890x4.png)
-![](i/punk-8219x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-2890x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-8219x4.png)
 
 
 And x8:
 
-![](i/punk-0000x8.png)
-![](i/punk-2890x8.png)
-![](i/punk-8219x8.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000x8.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-2890x8.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-8219x8.png)
 
 
 And so on.

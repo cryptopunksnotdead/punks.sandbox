@@ -18,8 +18,7 @@ Hoe.spec 'cryptopunks' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['crypto-lite'],
-    ['chunky_png'],
+    ['pixelart'],
     ['csvreader'],
   ]
 

@@ -1,11 +1,11 @@
 ## 3rd party
-require 'crypto-lite'
-require 'chunky_png'
+require 'pixelart'
 require 'csvreader'
 
 
+
 ## extra stdlibs
-require 'fileutils'
+require 'digest'
 require 'optparse'
 
 
@@ -14,7 +14,7 @@ require 'optparse'
 require 'cryptopunks/version'    # note: let version always go first
 require 'cryptopunks/attributes'
 require 'cryptopunks/structs'
-require 'cryptopunks/image'
+require 'cryptopunks/composite'
 require 'cryptopunks/dataset'
 
 
@@ -59,26 +59,31 @@ class Tool
     pp opts
 
     puts "==> reading >#{opts[:file]}<..."
-    punks = Image.read( opts[:file] )
+    punks = Image::Composite.read( opts[:file] )
 
 
     puts "    setting zoom to #{opts[:zoom]}x"   if opts[:zoom] != 1
-    punks.zoom = opts[:zoom]   ## note: always reset zoom even if 1
 
     ## make sure outdir exits (default is current working dir e.g. .)
     FileUtils.mkdir_p( opts[:outdir] )  unless Dir.exist?( opts[:outdir] )
 
     args.each_with_index do |arg,index|
       punk_index = arg.to_i
+
+      punk = punks[ punk_index ]
+
       punk_name  = "punk-" + "%04d" % punk_index
 
       ##  if zoom - add x2,x4 or such
-      punk_name << "x#{opts[:zoom]}"   if opts[:zoom] != 1
+      if opts[:zoom] != 1
+        punk = punk.zoom( opts[:zoom] )
+        punk_name << "x#{opts[:zoom]}"
+      end
 
       path  = "#{opts[:outdir]}/#{punk_name}.png"
       puts "==> (#{index+1}/#{args.size}) minting punk ##{punk_index}; writing to >#{path}<..."
 
-      punks[ punk_index ].save( path )
+      punk.save( path )
     end
 
     puts "done"

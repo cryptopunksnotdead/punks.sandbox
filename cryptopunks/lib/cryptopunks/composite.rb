@@ -1,12 +1,12 @@
 module Cryptopunks
   class Image
+  class Composite    ## nest Composite inside Image - why? why not?
+
+
     def self.read( path='./punks.png' )
       data = File.open( path, 'rb' ) { |f| f.read }
       new( data )
     end
-
-
-    attr_accessor :zoom
 
     PUNK_ROWS   = 100
     PUNK_COLS   = 100
@@ -16,6 +16,7 @@ module Cryptopunks
     PUNK_WIDTH  = 24
 
     PUNK_HASH   = 'ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b'
+
 
 
     def initialize( data )
@@ -34,8 +35,12 @@ module Cryptopunks
          puts "     Sorry, please download the original."
          exit 1
       end
+    end
 
-      @zoom  = 1
+
+    def sha256( data )
+      ## todo/check: or just use Digest::SHA256.hexdigest - why? why not?
+      Digest::SHA256.digest( data ).unpack( 'H*' )[0]
     end
 
 
@@ -49,36 +54,15 @@ module Cryptopunks
 
     def size() PUNK_COUNT; end
 
-    def []( index )
-      @zoom == 1 ? crop( index ) : scale( index, @zoom )
-    end
 
-
-    def crop( index  )
+    def punk( index )
       y, x = index.divmod( PUNK_ROWS )
-      @punks.crop( x*PUNK_WIDTH, y*PUNK_HEIGHT, PUNK_WIDTH, PUNK_HEIGHT )
+      img = @punks.crop( x*PUNK_WIDTH, y*PUNK_HEIGHT, PUNK_WIDTH, PUNK_HEIGHT )
+      Pixelart::Image.new( img.width, img.height, img )  ## wrap in pixelart image
     end
+    alias_method :[], :punk
 
 
-    def scale( index, zoom )
-      punk = ChunkyPNG::Image.new( PUNK_WIDTH*zoom, PUNK_HEIGHT*zoom,
-                                   ChunkyPNG::Color::WHITE )
-
-      ## (x,y) offset in big all-in-one punks image
-      y, x = index.divmod( PUNK_ROWS )
-
-      ## copy all 24x24 pixels
-      PUNK_WIDTH.times do |i|
-        PUNK_HEIGHT.times do |j|
-          pixel = @punks[i+x*PUNK_WIDTH, j+y*PUNK_HEIGHT]
-          zoom.times do |n|
-            zoom.times do |m|
-              punk[n+zoom*i,m+zoom*j] = pixel
-            end
-          end
-        end
-      end
-      punk
-    end
+  end ## class Composite
   end ## class Image
 end ## module Cryptopunks
