@@ -25,6 +25,7 @@ class Tool
     opts = { zoom: 1,
              outdir: '.',
              file:  './punks.png',
+             offset: 0,
            }
 
     parser = OptionParser.new do |cmd|
@@ -46,6 +47,9 @@ class Tool
         opts[:file] = file
       end
 
+      cmd.on("--offset=NUM", "Start counting at offset (default: #{opts[:offset]})", Integer ) do |offset|
+        opts[:offset] = offset
+      end
 
       cmd.on("-h", "--help", "Prints this help") do
         puts cmd
@@ -72,7 +76,7 @@ class Tool
 
       punk = punks[ punk_index ]
 
-      punk_name  = "punk-" + "%04d" % punk_index
+      punk_name = "punk-" + "%04d" % (punk_index + opts[:offset])
 
       ##  if zoom - add x2,x4 or such
       if opts[:zoom] != 1
@@ -81,7 +85,7 @@ class Tool
       end
 
       path  = "#{opts[:outdir]}/#{punk_name}.png"
-      puts "==> (#{index+1}/#{args.size}) minting punk ##{punk_index}; writing to >#{path}<..."
+      puts "==> (#{index+1}/#{args.size}) minting punk ##{punk_index+opts[:offset]}; writing to >#{path}<..."
 
       punk.save( path )
     end

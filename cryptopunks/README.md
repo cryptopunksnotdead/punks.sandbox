@@ -148,6 +148,67 @@ And x8:
 And so on.
 
 
+
+
+## 10 000 More Punks  - Unauthorized? No Way?!- Fuck the Establishment - Yes, You Can - Do-It-Yourself - Use Your Own Collections
+
+
+Using the `-f, --file=FILE` option
+you can pass along any unauthorized edition.
+Just make sure all punks are lined-up left-to-right, top-to-bottom
+in the 24x24 pixel format in the composite image.
+
+
+Let's try the 10 000 More Punks series housing punks in
+packs of a hundred each. Let's have a looksie at the first 100
+in the series.
+
+
+![](https://github.com/cryptopunksnotdead/awesome-cryptopunks-bubble/raw/master/i/more-punks-1.png)
+
+
+
+Let's mint punk #0, #19, and #50
+and let's add an offset of 10000
+(to start counting at 10000 instead of 0):
+
+```
+$ punk 0 18 40 --file ./more-punks-1.png --offset 10000
+```
+
+printing:
+
+```
+==> reading >./more-punks-1.png<...
+     240x240 (height x width)
+==> (1/3) minting punk #10000; writing to >./punk-10000.png<...
+==> (2/3) minting punk #10018; writing to >./punk-10018.png<...
+==> (3/3) minting punk #10040; writing to >./punk-10040.png<...
+```
+
+And voila!
+
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10000.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10018.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10040.png)
+
+
+And 4x:
+
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10000x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10018x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10040x4.png)
+
+
+And so on.
+
+
+
+
+
+
+
+
 ## Usage in Your Scripts
 
 

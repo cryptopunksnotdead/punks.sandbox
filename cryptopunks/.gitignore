@@ -39,5 +39,7 @@ build/
 #  don't check in punks.png for testing
 o/
 punks.png
+more-punks-*.png
+
 
 
