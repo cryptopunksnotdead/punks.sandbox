@@ -153,9 +153,9 @@ And so on.
 ## 10 000 More Punks  - Unauthorized? No Way?!- Fuck the Establishment - Yes, You Can - Do-It-Yourself - Use Your Own Collections
 
 
-Using the `-f, --file=FILE` option
-you can pass along any unauthorized edition.
-Just make sure all punks are lined-up left-to-right, top-to-bottom
+Use the `-f, --file=FILE` option
+to pass along any unauthorized edition.
+Only make sure all punks are lined-up left-to-right, top-to-bottom
 in the 24x24 pixel format in the composite image.
 
 
@@ -168,12 +168,12 @@ in the series.
 
 
 
-Let's mint punk #0, #19, and #50
+Let's mint punk #0, #19, #50, and #89
 and let's add an offset of 10000
 (to start counting at 10000 instead of 0):
 
 ```
-$ punk 0 18 40 --file ./more-punks-1.png --offset 10000
+$ punk 0 18 40 88 --file ./more-punks-1.png --offset 10000
 ```
 
 printing:
@@ -181,9 +181,10 @@ printing:
 ```
 ==> reading >./more-punks-1.png<...
      240x240 (height x width)
-==> (1/3) minting punk #10000; writing to >./punk-10000.png<...
-==> (2/3) minting punk #10018; writing to >./punk-10018.png<...
-==> (3/3) minting punk #10040; writing to >./punk-10040.png<...
+==> (1/4) minting punk #10000; writing to >./punk-10000.png<...
+==> (2/4) minting punk #10018; writing to >./punk-10018.png<...
+==> (3/4) minting punk #10040; writing to >./punk-10040.png<...
+==> (4/4) minting punk #10040; writing to >./punk-10088.png<...
 ```
 
 And voila!
@@ -191,6 +192,7 @@ And voila!
 ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10000.png)
 ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10018.png)
 ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10040.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10088.png)
 
 
 And 4x:
@@ -198,6 +200,52 @@ And 4x:
 ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10000x4.png)
 ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10018x4.png)
 ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10040x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10088x4.png)
+
+
+
+
+Let's try the second pack - that is, punks 100 to 199 in the series.
+
+
+![](https://github.com/cryptopunksnotdead/awesome-cryptopunks-bubble/raw/master/i/more-punks-2.png)
+
+
+
+Let's mint punk #0, #79, #80, and #90
+and let's add an offset of 10100
+(to start counting at 10000 plus 100 instead of 0):
+
+```
+$ punk 0 79 80 90 --file ./more-punks-2.png --offset 10100
+```
+
+printing:
+
+```
+==> reading >./more-punks-2.png<...
+     240x240 (height x width)
+==> (1/4) minting punk #10100; writing to >./punk-10100.png<...
+==> (2/4) minting punk #10179; writing to >./punk-10179.png<...
+==> (3/4) minting punk #10180; writing to >./punk-10180.png<...
+==> (4/4) minting punk #10190; writing to >./punk-10190.png<...
+```
+
+And voila! Super rare - world's first female alien and much more.
+
+
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10100.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10179.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10180.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10190.png)
+
+
+And 4x:
+
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10100x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10179x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10180x4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-10190x4.png)
 
 
 And so on.
