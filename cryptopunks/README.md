@@ -29,6 +29,7 @@
 > -- [January 2021](https://twitter.com/larvalabs/status/1353915659453870080)
 
 
+
 # Crypto Punks
 
 cryptopunks - mint your own 24×24 pixel punk images off chain from the True Official Genuine CryptoPunks™ sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
@@ -61,6 +62,7 @@ Usage: cryptopunk [options] IDs
     -z, --zoom=ZOOM   Zoom factor x2, x4, x8, etc. (default: 1)
     -d, --dir=DIR     Output directory (default: .)
     -f, --file=FILE   True Official Genuine CryptoPunks™ composite image (default: ./punks.png)
+        --offset=NUM  Start counting at offset (default: 0)
     -h, --help        Prints this help
 ```
 
@@ -249,10 +251,6 @@ And 4x:
 
 
 And so on.
-
-
-
-
 
 
 
