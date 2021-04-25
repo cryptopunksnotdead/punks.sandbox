@@ -27,8 +27,9 @@ Let's try alien punk #3100. Let's mint a fresh 24x24 copy.
 ``` ruby
 require 'cryptopunks'
 
-punks = Punks::Image.read( './punks.png' )
-punks[ 3100 ].save( './punk-3100.png' )
+punks = Punks::Image::Composite.read( './punks.png' )
+punk = punks[ 3100 ]
+punk.save( './punk-3100.png' )
 ```
 
 ![](i/punk-3100.png)
@@ -42,10 +43,6 @@ And let's try three LED Light variants:
 
 
 ``` ruby
-require 'pixelart'
-
-punk = Pixelart::Image.read( './punk-3100.png' )
-
 punk = punk.change_colors( { 0xff => 0x242124ff } )
 
 punk_led = punk.led( 8, spacing: 2 )
@@ -81,7 +78,8 @@ and beanie #2964.
 ids = [3393, 172, 2964]
 ids.each do |id|
   name = '%04d' % id
-  punks[id].save( "./punk-#{name}.png" )
+  punk = punks[id]
+  punk.save( "./punk-#{name}.png" )
 end
 ```
 
@@ -97,10 +95,11 @@ And let's try three LED Light variants:
 3.  LED - 16 pixels, Spacing - 8 pixels, Round Corner - Turned On
 
 
+Let's add inside the loop:
+
 ``` ruby
 ids.each do |id|
-  name = '%04d' % id
-  punk = Pixelart::Image.read( "./punk-#{name}.png" )
+  # ...   see above
 
   punk = punk.change_colors( { 0xff => 0x242124ff } )
 
