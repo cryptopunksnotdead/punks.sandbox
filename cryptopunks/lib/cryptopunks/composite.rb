@@ -57,6 +57,13 @@ module Cryptopunks
     alias_method :[], :punk
 
 
+    ####
+    # more image helpers / delegates
+    def width()   @punks.width; end
+    def height()  @punks.height; end
+
+    def pixels()  @punks.pixels; end
+
   end ## class Composite
   end ## class Image
 end ## module Cryptopunks

@@ -1,5 +1,5 @@
 ## 3rd party
-require 'pixelart'
+require 'pixelart/base'
 require 'csvreader'
 
 
@@ -106,6 +106,12 @@ end ## module Cryptopunks
 CryptoPunks = Cryptopunks
 Punks       = Cryptopunks
 
+
+
+
+###
+# note: for convenience auto include Pixelart namespace!!! - why? why not?
+include Pixelart
 
 
 
