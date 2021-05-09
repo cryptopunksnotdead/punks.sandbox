@@ -1,29 +1,78 @@
 require 'cryptopunks'
 
 
-rootdir = '../../design.punks'
+ROOTDIR = '../../design.punks'
 
-outdir = "#{rootdir}/i"
-# outdir = './tmp'
+OUTDIR = "#{ROOTDIR}/i"
+# OUTDIR = './tmp'
+
+
+def generate( names, colors: )
+
+  names.each do |name|
+
+    path = "#{ROOTDIR}/#{name}.txt"
+    puts "   reading #{name} (#{path})..."
+
+    design = File.open( path, 'r:utf-8' ) { |f| f.read }
+    punk = Image.parse( design, colors: colors )
+
+    name = name.gsub( '/', '_' )  ## flatten dirs in name
+    punk.save( "#{OUTDIR}/#{name}.png" )
+    punk.zoom(4).save( "#{OUTDIR}/#{name}x4.png" )
+  end
+end
+
+
+
+ROBOT_COLORS = [ '000000',    # color 1 - BLACK
+                 '535353',    # color 2 - BASE 2 (DARKER)
+                 'A4A4A4',    # color 3 - BASE 1
+                 'A9F7FF',    # color 4 - BASE 3 (LIGHTER) - eyes
+]
+generate( ['more/robot-male', 'more/robot-female'],
+          colors: ROBOT_COLORS )
+
+
+VAMPIRE_COLORS = [ '000000',    # color 1 - BLACK
+                   '131313',    # color 2 - BASE 4 (DARKEST)
+                   '535353',    # color 3 - BASE 3 (DARKERER) - eyes
+                   'A4A4A4',    # color 4 - BASE 2 (DARKER) - eyes
+                   'E0E0E0',    # color 5 - BASE 1
+                   'F6000B',    # color 6 - BASE 5  - teeth - red
+]
+generate( ['more/vampire-male', 'more/vampire-female'],
+          colors: VAMPIRE_COLORS )
+
+
+MUMMY_COLORS =  [ '000000',    # color 1 - BLACK
+                  '1F1A15',    # color 2 - BASE 5 (DARKEST)
+                  '2A231C',    # color 3 - BASE 4 (DARKERERER)
+                  '5F5147',    # color 4 - BASE 3 (DARKERER)
+                  '927B6A',    # color 5 - BASE 2 (DARKER)
+                  'D9B599',    # color 6 - BASE 1
+                  'F6000B',    # color 7 - BASE 6 - eyes - red
+]
+generate( ['more/mummy-male', 'more/mummy-female'],
+          colors: MUMMY_COLORS )
+
+
+ORC_COLORS = [ '000000',    # color 1 - BLACK
+               '171a08',    # color 2 - BASE 3 (DARKEST)
+               '333F0C',    # color 3 - BASE 2 (DARKER)
+               '50650E',    # color 4 - BASE 1
+               'FFFFFF',    # color 5 - BASE 4 - white
+]
+
+generate( ['more/orc-male', 'more/orc-female'],
+          colors: ORC_COLORS )
 
 
 SKELETON_COLORS = [ '000000',    # color 1 - BLACK
                     'e0e0e0',    # color 2 - BASE 1
 ]
-
-skeletons = ['more/skeleton-male']
-skeletons.each do |name|
-
-  path = "#{rootdir}/#{name}.txt"
-  puts "   reading #{name} (#{path})..."
-
-  design = File.open( path, 'r:utf-8' ) { |f| f.read }
-  punk = Image.parse( design, colors: SKELETON_COLORS )
-
-  name = name.gsub( '/', '_' )  ## flatten dirs in name
-  punk.save( "#{outdir}/#{name}.png" )
-  punk.zoom(4).save( "#{outdir}/#{name}x4.png" )
-end
+generate( ['more/skeleton-male', 'more/skeleton-female'],
+          colors: SKELETON_COLORS )
 
 
 DEMON_COLORS =  [ '000000',    # color 1 - BLACK
@@ -31,22 +80,8 @@ DEMON_COLORS =  [ '000000',    # color 1 - BLACK
                   '630006',    # color 3 - BASE 2  (DARKER) - eyes
                   '850008',    # color 4 - BASE 1
 ]
-
-demons = ['more/demon-female']
-demons.each do |name|
-
-  path = "#{rootdir}/#{name}.txt"
-  puts "   reading #{name} (#{path})..."
-
-  design = File.open( path, 'r:utf-8' ) { |f| f.read }
-  punk = Image.parse( design, colors: DEMON_COLORS )
-
-  name = name.gsub( '/', '_' )  ## flatten dirs in name
-  punk.save( "#{outdir}/#{name}.png" )
-  punk.zoom(4).save( "#{outdir}/#{name}x4.png" )
-end
-
-
+generate( ['more/demon-male', 'more/demon-female'],
+          colors: DEMON_COLORS )
 
 
 ZOMBIE_COLORS = [ '000000',    # color 1 - BLACK
@@ -54,21 +89,10 @@ ZOMBIE_COLORS = [ '000000',    # color 1 - BLACK
                   '7da269',    # color 3 - BASE 1
                   'ff0000',    # color 4 - BASE 3 - red eye
                   '9bbc88',    # color 5 - BASE 4  (LIGHTER)
+                  '4a010d',    # color 6 - BASE 5 - mouth (female only)
 ]
-
-zombies = ['original/zombie-male']
-zombies.each do |name|
-
-  path = "#{rootdir}/#{name}.txt"
-  puts "   reading #{name} (#{path})..."
-
-  design = File.open( path, 'r:utf-8' ) { |f| f.read }
-  punk = Image.parse( design, colors: ZOMBIE_COLORS )
-
-  name = name.gsub( '/', '_' )  ## flatten dirs in name
-  punk.save( "#{outdir}/#{name}.png" )
-  punk.zoom(4).save( "#{outdir}/#{name}x4.png" )
-end
+generate( ['original/zombie-male', 'more/zombie-female'],
+          colors: ZOMBIE_COLORS )
 
 
 APE_COLORS = [ '000000',    # color 1 - BLACK
@@ -77,46 +101,20 @@ APE_COLORS = [ '000000',    # color 1 - BLACK
                '856f56',    # color 4 - BASE 1
                'a98c6b',    # color 5 - BASE 4  (LIGHTER) - eyes
 ]
+generate( ['original/ape-male', 'more/ape-female'],
+          colors: APE_COLORS )
 
-apes = ['original/ape-male']
-apes.each do |name|
-
-  path = "#{rootdir}/#{name}.txt"
-  puts "   reading #{name} (#{path})..."
-
-  design = File.open( path, 'r:utf-8' ) { |f| f.read }
-  punk = Image.parse( design, colors: APE_COLORS )
-
-  name = name.gsub( '/', '_' )  ## flatten dirs in name
-  punk.save( "#{outdir}/#{name}.png" )
-  punk.zoom(4).save( "#{outdir}/#{name}x4.png" )
-end
-
-
-
-
-__END__
 
 ALIEN_COLORS = [ '000000',    # color 1 - BLACK
                  '75bdbd',    # color 2 - BASE 3  (DARKEST)
                  '9be0e0',    # color 3 - BASE 2  (DARKER)
                  'c8fbfb',    # color 4 - BASE 1
                ]
+generate( ['original/alien-male', 'more/alien-female'],
+          colors: ALIEN_COLORS )
 
 
-aliens = ['original/alien-male', 'more/alien-female']
-aliens.each do |name|
 
-  path = "#{rootdir}/#{name}.txt"
-  puts "   reading #{name} (#{path})..."
-
-  design = File.open( path, 'r:utf-8' ) { |f| f.read }
-  punk = Image.parse( design, colors: ALIEN_COLORS )
-
-  name = name.gsub( '/', '_' )  ## flatten dirs in name
-  punk.save( "#{outdir}/#{name}.png" )
-  punk.zoom(4).save( "#{outdir}/#{name}x4.png" )
-end
 
 
 HUMAN_LIGHTER_BASE1 = 'ead9d9'   # rgb(234 217 217) - hsl(  0°  29%  88%)
@@ -179,7 +177,7 @@ HUMAN_COLORS = {
 
 humans = ['original/human-male', 'original/human-female']
 humans.each do |name|
-  path = "#{rootdir}/#{name}.txt"
+  path = "#{ROOTDIR}/#{name}.txt"
   puts "   reading #{name} (#{path})..."
 
   design = File.open( path, 'r:utf-8' ) { |f| f.read }
@@ -187,8 +185,8 @@ humans.each do |name|
     punk = Image.parse( design, colors: colors )
 
     name = name.gsub( '/', '_' )  ## flatten dirs in name
-    punk.save( "#{outdir}/#{name}_#{skin_tone}.png" )
-    punk.zoom(4).save( "#{outdir}/#{name}_#{skin_tone}x4.png" )
+    punk.save( "#{OUTDIR}/#{name}_#{skin_tone}.png" )
+    punk.zoom(4).save( "#{OUTDIR}/#{name}_#{skin_tone}x4.png" )
   end
 end
 
