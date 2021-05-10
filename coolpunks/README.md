@@ -22,9 +22,9 @@ Let's try:
 
 ``` ruby
 shades1 = Image.parse( <<TXT, colors: ['000000'] )
-1 1 1 1 1 1 1 1 1 1 1 1
-0 0 1 1 1 1 0 1 1 1 1 0
-0 0 0 1 1 0 0 0 1 1 0 0
+@ @ @ @ @ @ @ @ @ @ @ @
+. . @ @ @ @ . @ @ @ @ .
+. . . @ @ . . . @ @ . .
 TXT
 
 shades1.save( './shades1.png' )
@@ -135,11 +135,11 @@ Let's draw and try another sunglasses design:
 
 ``` ruby
 shades2 = Image.parse( <<TXT, colors: ['000000', '690C45', '8C0D5B', 'AD2160'] )
-0 1 1 1 1 1 0 1 1 1 1 1
-0 1 2 2 2 1 1 1 2 2 2 1
-1 1 3 3 3 1 0 1 3 3 3 1
-0 1 4 4 4 1 0 1 4 4 4 1
-0 0 1 1 1 0 0 0 1 1 1 0
+. @ @ @ @ @ . @ @ @ @ @
+. @ x x x @ @ @ x x x @
+@ @ o o o @ . @ o o o @
+. @ ^ ^ ^ @ . @ ^ ^ ^ @
+. . @ @ @ . . . @ @ @ .
 TXT
 
 shades2.save( './shades2.png' )
@@ -186,10 +186,10 @@ And let's draw and try another sunglasses design:
 
 ``` ruby
 shades3 = Image.parse( <<TXT, colors: ['000000', '000766', '0010e6'] )
-1 1 1 1 1 1 1 1 1 1 1 1
-0 0 1 2 2 1 0 1 2 2 1 0
-0 0 1 3 3 1 0 1 3 3 1 0
-0 0 0 1 1 0 0 0 1 1 0 0
+@ @ @ @ @ @ @ @ @ @ @ @
+. . @ x x @ . @ x x @ .
+. . @ o o @ . @ o o @ .
+. . . @ @ . . . @ @ . .
 TXT
 
 shades3.save( './shades3.png' )

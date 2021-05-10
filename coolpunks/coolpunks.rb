@@ -35,9 +35,9 @@ end
 
 
 shades1 = Image.parse( <<TXT, colors: ['000000'] )
-1 1 1 1 1 1 1 1 1 1 1 1
-0 0 1 1 1 1 0 1 1 1 1 0
-0 0 0 1 1 0 0 0 1 1 0 0
+@ @ @ @ @ @ @ @ @ @ @ @
+. . @ @ @ @ . @ @ @ @ .
+. . . @ @ . . . @ @ . .
 TXT
 puts "  shades1 (#{shades1.width}x#{shades1.height})"
 
@@ -47,11 +47,11 @@ shades1.zoom(4).save( './i/shades1x4.png' )
 
 
 shades2 = Image.parse( <<TXT, colors: ['000000', '690C45', '8C0D5B', 'AD2160'] )
-0 1 1 1 1 1 0 1 1 1 1 1
-0 1 2 2 2 1 1 1 2 2 2 1
-1 1 3 3 3 1 0 1 3 3 3 1
-0 1 4 4 4 1 0 1 4 4 4 1
-0 0 1 1 1 0 0 0 1 1 1 0
+. @ @ @ @ @ . @ @ @ @ @
+. @ x x x @ @ @ x x x @
+@ @ o o o @ . @ o o o @
+. @ ^ ^ ^ @ . @ ^ ^ ^ @
+. . @ @ @ . . . @ @ @ .
 TXT
 puts "  shades2 (#{shades2.width}x#{shades2.height})"
 
@@ -62,10 +62,10 @@ shades2.zoom(4).save( './i/shades2x4.png' )
 
 
 shades3 = Image.parse( <<TXT, colors: ['000000', '000766', '0010e6'] )
-1 1 1 1 1 1 1 1 1 1 1 1
-0 0 1 2 2 1 0 1 2 2 1 0
-0 0 1 3 3 1 0 1 3 3 1 0
-0 0 0 1 1 0 0 0 1 1 0 0
+@ @ @ @ @ @ @ @ @ @ @ @
+. . @ x x @ . @ x x @ .
+. . @ o o @ . @ o o @ .
+. . . @ @ . . . @ @ . .
 TXT
 puts "  shades3 (#{shades3.width}x#{shades3.height})"
 
