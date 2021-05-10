@@ -12,10 +12,20 @@ require 'optparse'
 
 ## our own code
 require 'cryptopunks/version'    # note: let version always go first
+
+## forward define superclass for image
+module Cryptopunks
+  class Image < Pixelart::Image; end
+end
+
+
 require 'cryptopunks/attributes'
 require 'cryptopunks/structs'
 require 'cryptopunks/composite'
 require 'cryptopunks/dataset'
+
+require 'cryptopunks/colors'
+require 'cryptopunks/image'
 
 
 
@@ -99,6 +109,16 @@ def self.main( args=ARGV )
   Tool.new.run( args )
 end
 end ## module Cryptopunks
+
+
+
+
+### add more built-in (load on demand) design series / collections
+DESIGNS_ORIGINAL = Cryptopunks::DesignSeries.new( "#{Cryptopunks.root}/config/original" )
+DESIGNS_MORE     = Cryptopunks::DesignSeries.new( "#{Cryptopunks.root}/config/more" )
+
+DESIGNS = DESIGNS_ORIGINAL   ## add convenience shortcut for original design (make default design)
+
 
 
 
