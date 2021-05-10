@@ -117,7 +117,9 @@ end ## module Cryptopunks
 DESIGNS_ORIGINAL = Cryptopunks::DesignSeries.new( "#{Cryptopunks.root}/config/original" )
 DESIGNS_MORE     = Cryptopunks::DesignSeries.new( "#{Cryptopunks.root}/config/more" )
 
-DESIGNS = DESIGNS_ORIGINAL   ## add convenience shortcut for original design (make default design)
+## all designs in one collections
+DESIGNS = {}.merge( DESIGNS_ORIGINAL.to_h,
+                    DESIGNS_MORE.to_h )
 
 
 

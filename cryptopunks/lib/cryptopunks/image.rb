@@ -36,6 +36,7 @@ class DesignSeries    ## find a better name for class (just use Series?) - why? 
   def [](key) data[ key ]; end
   def size()    data.size; end
   def keys()    data.keys; end
+  def to_h()    data; end    ## todo/check: use to_hash() - why? why not?
 end   # class DesignSeries
 
 
@@ -65,7 +66,7 @@ def initialize( initial=nil, design: nil,
       ##        human-male!darker ?????
       ##    keep @ as separator too - why? why not?
       parts = design.split( %r{[@/]} )
-      parts.unshift( 'original' )  if parts.size == 1  ## assume original series
+      parts.unshift( '*' )    if parts.size == 1  ## assume "all-in-one" series (use * as name/id/placeholder)
 
       series_key        = parts[0]
       design_composite  = parts[1]
@@ -76,12 +77,15 @@ def initialize( initial=nil, design: nil,
       design_key   = more_parts[0]
       variant_key  = more_parts[1]     ## color variant for now (for humans) e.g. lighter/light/dark/darker
 
-
-      series =  case series_key
-                when 'original' then DESIGNS_ORIGINAL
-                when 'more'     then DESIGNS_MORE
-                else  raise ArgumentError, "unknown design series >#{series_key}<; sorry"
-                end
+      series = if ['*','**','_','__'].include?( series_key )
+                  DESIGNS    ## use all-series-in-one collection
+               else
+                  case series_key
+                  when 'original' then DESIGNS_ORIGINAL
+                  when 'more'     then DESIGNS_MORE
+                  else  raise ArgumentError, "unknown design series >#{series_key}<; sorry"
+                  end
+               end
 
       design = series[ design_key ]
       raise ArgumentError, "unknow design >#{design_key}< in series >#{series_key}<; sorry"  if design.nil?
