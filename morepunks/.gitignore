@@ -20,8 +20,5 @@ build/
 /doc/
 #####
 # exclude all tmp directories
-#   todo/check what's the correct exclude syntax that incl. subprojects too
 /tmp/
-/tmp
-tmp/
 
