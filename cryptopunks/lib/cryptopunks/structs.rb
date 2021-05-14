@@ -143,6 +143,16 @@ end  ## (nested) class Accessory
   def zombie?() @type.name=='Zombie'; end
   def female?() @type.name=='Female'; end
   def male?()   @type.name=='Male'; end
+
+  ## convenience helpers to lookup attributes
+  def has_attribute?( name )
+    accessories.each do |acc|
+      return true  if acc.name == name
+    end
+    false
+  end
+  alias_method :has?,     :has_attribute?
+  alias_method :include?, :has_attribute?
 end # class Metadata
 
 end  # module Cryptopunks
