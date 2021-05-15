@@ -27,8 +27,8 @@ shades1 = Image.parse( <<TXT, colors: ['000000'] )
 . . . @ @ . . . @ @ . .
 TXT
 
-shades1.save( './shades1.png' )
-shades1.zoom(4).save( './shades1x4.png' )
+shades1.save( 'shades1.png' )
+shades1.zoom(4).save( 'shades1x4.png' )
 ```
 
 Resulting in:
@@ -95,8 +95,8 @@ designs.each do |design|
 
   name = design.sub( '!', '_')   ## note: change human-male!lighter to human-male_lighter
 
-  punk.save( "./i/coolpunk-#{name}_1.png" )
-  punk.zoom(4).save( "./i/coolpunk-#{name}_1x4.png" )
+  punk.save( "coolpunk-#{name}_1.png" )
+  punk.zoom(4).save( "coolpunk-#{name}_1x4.png" )
 end
 ```
 
@@ -142,8 +142,8 @@ shades2 = Image.parse( <<TXT, colors: ['000000', '690C45', '8C0D5B', 'AD2160'] )
 . . @ @ @ . . . @ @ @ .
 TXT
 
-shades2.save( './shades2.png' )
-shades2.zoom(4).save( './shades2x4.png' )
+shades2.save( 'shades2.png' )
+shades2.zoom(4).save( 'shades2x4.png' )
 ```
 
 Resulting in:
@@ -192,8 +192,8 @@ shades3 = Image.parse( <<TXT, colors: ['000000', '000766', '0010e6'] )
 . . . @ @ . . . @ @ . .
 TXT
 
-shades3.save( './shades3.png' )
-shades3.zoom(4).save( './shades3x4.png' )
+shades3.save( 'shades3.png' )
+shades3.zoom(4).save( 'shades3x4.png' )
 ```
 
 Resulting in:
