@@ -137,12 +137,15 @@ end  ## (nested) class Accessory
     @birthday    = Date.new( 2017, 6, 23)   ## all 10,000 minted on June 23, 2017
   end
 
-  ## convenience helpers for types (5)
-  def alien?()  @type.name=='Alien'; end
-  def ape?()    @type.name=='Ape'; end
-  def zombie?() @type.name=='Zombie'; end
-  def female?() @type.name=='Female'; end
-  def male?()   @type.name=='Male'; end
+  def is_type?( name ) @type.name == name; end
+  alias_method :is?, :is_type?
+
+  ## convenience helpers for "classic" (5) types
+  def alien?()  is_type?( 'Alien'); end
+  def ape?()    is_type?( 'Ape' ); end
+  def zombie?() is_type?( 'Zombie' ); end
+  def female?() is_type?( 'Female' ); end
+  def male?()   is_type?( 'Male' ); end
 
   ## convenience helpers to lookup attributes
   def has_attribute?( name )
