@@ -40,10 +40,10 @@ designs = [
   'zombie-male',
   'ape-male',
   'alien-male',
-  'demon-male',
   'vampire-male',
   'orc-male',
   'skeleton-male',
+  'mummy-male',
 ]
 
 

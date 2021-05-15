@@ -21,7 +21,7 @@ a ready-to-cut-n-paste pixel matrix.
 Let's try:
 
 ``` ruby
-cap = Image.parse( <<TXT, colors: ['8119b7', 'b261dc'] )
+cap_design = <<TXT
 . . @ @ @ @ @ @ @ . . . . .
 . @ @ @ @ @ @ x @ @ . . . .
 @ @ @ @ @ @ @ @ x @ . . . .
@@ -29,6 +29,7 @@ cap = Image.parse( <<TXT, colors: ['8119b7', 'b261dc'] )
 @ @ @ @ @ @ @ @ @ @ @ @ @ @
 TXT
 
+cap = Image.parse( cap_design, colors: ['8119b7', 'b261dc'] )
 cap.save( './cap.png' )
 cap.zoom(4).save( './capx4.png' )
 ```
@@ -45,7 +46,7 @@ Let's put the cap onto the four archetypes
 (human, zombie, ape, alien)  with the human in the four
 variants (lighter, light, dark, darker)
 and let's add four more archetypes
-(demon, vampire, orc, skeleton) for fun.
+(vampire, orc, skeleton, mummy) for fun.
 
 ![](i/design-human-male_lighter.png)
 ![](i/design-human-male_light.png)
@@ -54,10 +55,10 @@ and let's add four more archetypes
 ![](i/design-zombie-male.png)
 ![](i/design-ape-male.png)
 ![](i/design-alien-male.png)
-![](i/design-demon-male.png)
 ![](i/design-vampire-male.png)
 ![](i/design-orc-male.png)
 ![](i/design-skeleton-male.png)
+![](i/design-mummy-male.png)
 
 ![](i/design-human-male_lighterx4.png)
 ![](i/design-human-male_lightx4.png)
@@ -66,10 +67,10 @@ and let's add four more archetypes
 ![](i/design-zombie-malex4.png)
 ![](i/design-ape-malex4.png)
 ![](i/design-alien-malex4.png)
-![](i/design-demon-malex4.png)
 ![](i/design-vampire-malex4.png)
 ![](i/design-orc-malex4.png)
 ![](i/design-skeleton-malex4.png)
+![](i/design-mummy-malex4.png)
 
 
 ``` ruby
@@ -81,10 +82,10 @@ designs = [
   'zombie-male',
   'ape-male',
   'alien-male',
-  'demon-male',
   'vampire-male',
   'orc-male',
   'skeleton-male',
+  'mummy-male',
 ]
 
 
@@ -111,10 +112,10 @@ Resulting in:
 ![](i/zombie-male_279.png)
 ![](i/ape-male_279.png)
 ![](i/alien-male_279.png)
-![](i/demon-male_279.png)
 ![](i/vampire-male_279.png)
 ![](i/orc-male_279.png)
 ![](i/skeleton-male_279.png)
+![](i/mummy-male_279.png)
 
 ![](i/human-male_lighter_279x4.png)
 ![](i/human-male_light_279x4.png)
@@ -123,13 +124,93 @@ Resulting in:
 ![](i/zombie-male_279x4.png)
 ![](i/ape-male_279x4.png)
 ![](i/alien-male_279x4.png)
-![](i/demon-male_279x4.png)
 ![](i/vampire-male_279x4.png)
 ![](i/orc-male_279x4.png)
 ![](i/skeleton-male_279x4.png)
+![](i/mummy-male_279x4.png)
 
 
 
+Let's try different colors for the (baseball) cap.
+Note the original violet-ish colors are in the
+red / green / blue (rgb) and in the hue / saturation / lightness
+scheme:
+
+-  51 pixel - #8119b7 / rgb(129  25 183) - hsl(279°  76%  41%)
+-   2 pixel - #b261dc / rgb(178  97 220) - hsl(280°  64%  62%)
+
+Let's change the hue 279° from the primary color
+and let's keep all other color scheme settings.
+Let's try:
+
+- 300°  => magenta
+- 330°  => fuchsia
+- 0°    => red
+- 30°   => orange
+- 90°   => chartreuse
+- 120°  => green
+- 240°  => blue
+
+``` ruby
+hues = [279, 300, 330, 0, 30, 90, 120, 240]
+hues.each do |hue|
+  cap  = Image.parse( cap_design, colors: [[hue,         0.76, 0.41],
+                                           [(hue+1)%360, 0.64 ,0.62]] )
+
+  designs.each do |design|
+     punk = Punks::Image.new( design: design )
+
+     head_x, head_y = [6, 4]  ## head offset - x/y start positions
+     punk.compose!( cap, head_x, head_y )
+
+     name = ''
+     name << design.sub( '!', '_')   ## note: change human-male!lighter to human-male_lighter
+     name << '_'
+     name << '%03d' % hue
+
+     punk.save( "./i/#{name}.png" )
+     punk.zoom(4).save( "./i/#{name}x4.png" )
+  end
+end
+
+```
+
+Voila!
+
+![](i/human-male_lighter_279.png)
+![](i/human-male_lighter_300.png)
+![](i/human-male_lighter_330.png)
+![](i/human-male_lighter_000.png)
+![](i/human-male_lighter_030.png)
+![](i/human-male_lighter_090.png)
+![](i/human-male_lighter_120.png)
+![](i/human-male_lighter_240.png)
+![](i/human-male_lighter_279x4.png)
+![](i/human-male_lighter_300x4.png)
+![](i/human-male_lighter_330x4.png)
+![](i/human-male_lighter_000x4.png)
+![](i/human-male_lighter_030x4.png)
+![](i/human-male_lighter_090x4.png)
+![](i/human-male_lighter_120x4.png)
+![](i/human-male_lighter_240x4.png)
+
+
+![](i/mummy-male_279.png)
+![](i/mummy-male_300.png)
+![](i/mummy-male_330.png)
+![](i/mummy-male_000.png)
+![](i/mummy-male_030.png)
+![](i/mummy-male_090.png)
+![](i/mummy-male_120.png)
+![](i/mummy-male_240.png)
+![](i/mummy-male_279x4.png)
+![](i/mummy-male_300x4.png)
+![](i/mummy-male_330x4.png)
+![](i/mummy-male_000x4.png)
+![](i/mummy-male_030x4.png)
+![](i/mummy-male_090x4.png)
+![](i/mummy-male_120x4.png)
+![](i/mummy-male_240x4.png)
 
 
 
