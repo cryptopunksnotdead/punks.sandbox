@@ -30,8 +30,8 @@ cap_design = <<TXT
 TXT
 
 cap = Image.parse( cap_design, colors: ['8119b7', 'b261dc'] )
-cap.save( './cap.png' )
-cap.zoom(4).save( './capx4.png' )
+cap.save( 'cap.png' )
+cap.zoom(4).save( 'capx4.png' )
 ```
 
 Resulting in:
@@ -97,8 +97,8 @@ designs.each do |design|
 
   name = design.sub( '!', '_')   ## note: change human-male!lighter to human-male_lighter
 
-  punk.save( "./#{name}_279.png" )
-  punk.zoom(4).save( "./#{name}_279x4.png" )
+  punk.save( "#{name}_279.png" )
+  punk.zoom(4).save( "#{name}_279x4.png" )
 end
 ```
 
@@ -168,8 +168,8 @@ hues.each do |hue|
      name << '_'
      name << '%03d' % hue
 
-     punk.save( "./#{name}.png" )
-     punk.zoom(4).save( "./#{name}x4.png" )
+     punk.save( "#{name}.png" )
+     punk.zoom(4).save( "#{name}x4.png" )
   end
 end
 
