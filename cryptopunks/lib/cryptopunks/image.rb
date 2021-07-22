@@ -53,7 +53,7 @@ def initialize( initial=nil, design: nil,
                              colors: nil )
     if initial
       ## pass image through as-is
-      img = inital
+      img = initial
     else
 
       ## todo/fix:
