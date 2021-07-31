@@ -13,6 +13,12 @@
 
 
 
+
+## Questions? Comments?
+
+Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
+
+
 ## License
 
 The `cryptopunks` scripts are dedicated to the public domain.
