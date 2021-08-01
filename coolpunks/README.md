@@ -22,9 +22,9 @@ Let's try:
 
 ``` ruby
 shades1 = Image.parse( <<TXT, colors: ['000000'] )
-@ @ @ @ @ @ @ @ @ @ @ @
-. . @ @ @ @ . @ @ @ @ .
-. . . @ @ . . . @ @ . .
+@ @ @ @ @ @ @ @ @ @ @ @ 
+. . @ @ @ @ . . @ @ @ @
+. . . @ @ . . . . @ @ .
 TXT
 
 shades1.save( 'shades1.png' )
