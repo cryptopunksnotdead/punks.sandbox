@@ -36,8 +36,8 @@ end
 
 shades1 = Image.parse( <<TXT, colors: ['000000'] )
 @ @ @ @ @ @ @ @ @ @ @ @
-. . @ @ @ @ . @ @ @ @ .
-. . . @ @ . . . @ @ . .
+. . @ @ @ @ . . @ @ @ @
+. . . @ @ . . . . @ @ .
 TXT
 puts "  shades1 (#{shades1.width}x#{shades1.height})"
 

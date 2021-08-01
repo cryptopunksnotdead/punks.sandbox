@@ -10,6 +10,7 @@
 - [Cool Punks Experiment](coolpunks) - Draw Your Own Sun Glasses (from Scratch), Turn Zero-Attribute "Plain Vanilla" Punk Archetypes into Cool Punks with Shades
 - [LED Light Pixel Art Experiment](led) -  Turn 24x24 Pixelated Punks into LED Light Art
 - [Black & White Sketch Pixel Art Experiment](sketches) - Turn 24x24 Pixelated Punks into Black & White (Pencil Drawing) Sketch Art
+- [Wall Street Bets Experiment](wallstreetbets) - Power to the Punks - Draw Your Own Wall Street Bets Degenerate (from Scratch)
 
 
 
