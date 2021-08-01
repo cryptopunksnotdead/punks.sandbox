@@ -47,6 +47,8 @@ Resulting in:
 
 And let's design the shades:
 
+![](i/pixel-shades.png)
+
 
 ``` ruby
 shades = Image.parse( <<TXT, colors: ['000000'] )
