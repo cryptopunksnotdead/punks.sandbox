@@ -1,6 +1,6 @@
 ###########
 #  to run use:
-#    ruby ./blocks.rb
+#    ruby ./attributes.rb
 
 
 $LOAD_PATH.unshift( "../cryptopunks/lib" )
