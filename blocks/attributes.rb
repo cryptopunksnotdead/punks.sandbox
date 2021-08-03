@@ -51,7 +51,28 @@ pipe:
 . . . . @ @ @ @ . .
 TXT
   },
+
+# note: only works for alien faces - yes, it's a single pixel :-)
+##  todo/fix: add human male face version!!!!
+smile:
+  { colors: ['000000'],
+    offset: [9,17],
+    design: '@',
+  },
+
+cap:
+ { colors: ['8119b7', 'b261dc'],
+   offset: [6,4],
+   design: <<TXT
+. . @ @ @ @ @ @ @ . . . . .
+. @ @ @ @ @ @ x @ @ . . . .
+@ @ @ @ @ @ @ @ x @ . . . .
+@ @ @ @ @ @ @ @ @ @ @ @ @ .
+@ @ @ @ @ @ @ @ @ @ @ @ @ @
+TXT
+  },
 }
+
 
 
 
