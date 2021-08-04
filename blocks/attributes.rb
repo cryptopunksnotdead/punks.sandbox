@@ -55,6 +55,13 @@ TXT
 # note: only works for alien faces - yes, it's a single pixel :-)
 ##  todo/fix: add human male face version!!!!
 smile:
+ {
+   colors: ['000000'],
+   offset: [10,17],
+   design: '@',
+ },
+
+"smile-alien":       # note: diffent offset required for smile
   { colors: ['000000'],
     offset: [9,17],
     design: '@',
