@@ -9,6 +9,51 @@ require 'cryptopunks'
 
 
 attributes = {
+
+headband:  # todo/check: female version smaller?
+  { colors: ['1A6ED5', 'FFFFFF'],
+    offset: [7,7],
+    design: <<TXT,
+  x x x x x x x x x
+  @ @ @ @ @ @ @ @ @
+TXT
+  },
+
+knittedcap:   # note: female version is smaller - width is one pixel less?
+{
+  colors: ['000000', '933709', 'CA4E11'],
+  offset: [5,5],
+  design: <<TXT,
+  . . . @ @ @ @ @ @ @ . . .
+  . . @ o o o o o o o @ . .
+  . @ o o o o o o o o o @ .
+  @ x x x x x x x x x x x @
+  @ x o x o x o x o x o x @
+TXT
+},
+
+crazyhair:    # note: female version is completely different!!!
+{
+  colors: ['E22626'],
+  offset: [2,2],
+  design: <<TXT,
+. . . . . @ . . . . @ . . . . . . .
+. . . . @ @ @ . @ @ @ @ . . @ . . .
+. . . . @ @ @ @ @ @ @ . @ @ @ . . .
+. . @ @ @ @ @ @ @ @ @ @ @ @ @ @ . .
+@ . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ .
+. . @ @ @ @ @ @ . . @ . @ . @ . . .
+. . @ @ . . @ . . . . . . . . . . .
+. @ @ @ . . . . . . . . . . . . . .
+. @ @ . . . . . . . . . . . . . . .
+. . @ . . . . . . . . . . . . . . .
+. . @ . . . . . . . . . . . . . . .
+. @ . . . . . . . . . . . . . . . .
+TXT
+},
+
+
 capforward:
    { colors: ['000000','353535','515151'],
      offset: [6,4],
