@@ -179,9 +179,141 @@ types.each do |key,type|
    dodge.zoom(4).save( "./tmp/#{key}4x.png" )
    dodge.zoom(8).save( "./tmp/#{key}8x.png" )
 
-   dodge = cutoff_top( dodge )
-   dodge.save( "./tmp/#{key}_notop.png" )   ## check: change notop to noears or nohead or such or ???
+   ## dodge = cutoff_top( dodge )
+   ## dodge.save( "./tmp/#{key}_notop.png" )   ## check: change notop to noears or nohead or such or ???
 end
+
+
+
+cowboyhat = Image.parse( <<TXT, colors: ['794B10', '4F2E05'] )
+. . . . . . @ @ . . . @ @ . . . . . .
+. . . . . @ @ @ @ @ @ @ @ @ . . . . .
+. . . . . @ @ @ @ @ @ @ @ @ . . . . .
+. . . . . @ @ @ @ @ @ @ @ @ . . . . .
+@ . . . x x x x x x x x x x x . . . @
+@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+. @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( cowboyhat, 8, 6 )
+dodge.save( "./tmp/cowboyhat-dodge.png" )
+dodge.zoom(4).save( "./tmp/cowboyhat-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/cowboyhat-dodgex8.png" )
+
+
+
+tiara = Image.parse( <<TXT, colors: ['FFBB00', 'FF2100'] )
+@ @ @ @ @ @ . @ @ @
+. . . . . . @ . . .
+. . . . . @ x @ . .
+. . . . . . @ . . .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( tiara, 12, 10 )
+dodge.save( "./tmp/tiara-dodge.png" )
+dodge.zoom(4).save( "./tmp/tiara-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/tiara-dodgex8.png" )
+
+
+
+
+regularshades = Image.parse( <<TXT, colors: ['000000'] )
+@ @ @ @ @ @ @ @ @ @ @ @ @
+. . . @ @ @ @ . @ @ @ @ .
+. . . @ @ @ @ . @ @ @ @ .
+. . . . @ @ . . . @ @ . .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( regularshades, 11, 14 )
+dodge.save( "./tmp/regularshades-dodge.png" )
+dodge.zoom(4).save( "./tmp/regularshades-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/regularshades-dodgex8.png" )
+
+
+
+classicshades = Image.parse( <<TXT, colors: ['000000', '5C390F', 'AC6009'] )
+@ @ @ @ @ @ @ @ @ @ @ @ @
+. . . @ x x @ . @ x x @ .
+. . . @ o o @ . @ o o @ .
+. . . . @ @ . . . @ @ . .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( classicshades, 11, 14 )
+dodge.save( "./tmp/classicshades-dodge.png" )
+dodge.zoom(4).save( "./tmp/classicshades-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/classicshades-dodgex8.png" )
+
+
+eyepatch = Image.parse( <<TXT, colors: ['000000'] )
+@ @ @ @ @ @ @ @ @ @ @ @ @
+. . . . @ @ @ @ . . . . .
+. . . . @ @ @ @ . . . . .
+. . . . . @ @ . . . . . .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( eyepatch, 11, 13 )
+dodge.save( "./tmp/eyepatch-dodge.png" )
+dodge.zoom(4).save( "./tmp/eyepatch-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/eyepatch-dodgex8.png" )
+
+
+
+
+smallshades = Image.parse( <<TXT, colors: ['000000'] )
+@ @ @ @ @ @ @ @ @ @ @ @ @
+. . . . @ @ @ . . @ @ @ .
+. . . . @ @ @ . . @ @ @ .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( smallshades, 11, 14 )
+dodge.save( "./tmp/smallshades-dodge.png" )
+dodge.zoom(4).save( "./tmp/smallshades-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/smallshades-dodgex8.png" )
+
+
+
+
+
+
+nerdglasses = Image.parse( <<TXT, colors: ['000000', '80DCDB'] )
+. . . . @ @ @ @ @ . @ @ @ @ @
+@ @ @ @ @ x x x @ @ @ x x x @
+. . . . @ x x x @ . @ x x x @
+. . . . @ @ @ @ @ . @ @ @ @ @
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( nerdglasses, 10, 14 )
+dodge.save( "./tmp/nerdglasses-dodge.png" )
+dodge.zoom(4).save( "./tmp/nerdglasses-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/nerdglasses-dodgex8.png" )
+
+
+
+
+bigshades = Image.parse( <<TXT, colors: ['000000', '690B45', '8C0C5B', 'AD2160'] )
+. . . @ @ @ @ @ @ . @ @ @ @ @ @
+. . . @ x x x x @ @ @ x x x x @
+@ @ @ @ o o o o @ . @ o o o o @
+. . . @ ^ ^ ^ ^ @ . @ ^ ^ ^ ^ @
+. . . . @ @ @ @ . . . @ @ @ @ .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( bigshades, 10, 13 )
+dodge.save( "./tmp/bigshades-dodge.png" )
+dodge.zoom(4).save( "./tmp/bigshades-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/bigshades-dodgex8.png" )
+
+
+
+
 
 
 beanie = Image.parse( <<TXT, colors: ['000000', '0060C3', 'D60404', '3CC300', 'E4EB17'] )
