@@ -179,9 +179,110 @@ types.each do |key,type|
    dodge.zoom(4).save( "./tmp/#{key}4x.png" )
    dodge.zoom(8).save( "./tmp/#{key}8x.png" )
 
-   ## dodge = cutoff_top( dodge )
-   ## dodge.save( "./tmp/#{key}_notop.png" )   ## check: change notop to noears or nohead or such or ???
+   dodge = cutoff_top( dodge )
+   dodge.save( "./tmp/#{key}_notop.png" )   ## check: change notop to noears or nohead or such or ???
 end
+
+
+
+
+capforward = Image.parse( <<TXT, colors: ['000000', '363535', '515150'] )
+ . . @ @ @ @ @ @ @ @ @ @ . . . . .
+ . @ x o o o o o o o o o @ . . . .
+ @ x o o o o o o o o o o o @ . . .
+ @ o o o o o o @ @ @ @ @ @ @ @ @ .
+ @ o o o o o @ x x x x x x x x x @
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( capforward, 10, 7 )
+dodge.save( "./tmp/capforward-dodge.png" )
+dodge.zoom(4).save( "./tmp/capforward-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/capforward-dodgex8.png" )
+
+
+
+bandana = Image.parse( <<TXT, colors: ['122B7C', '1537A4', '1A43C8'] )
+ . . . . . . . x x x x x x x x x x .
+ . . . . . . x o o o o o o o o o o x
+ . . . . . x o o o o o o o o o o o x
+ . . . . x o o o o o o o o o o o o x
+ o x o x @ o x x x x x x o o o o x .
+ . o x @ . . . . . . . . x x x x . .
+ . o @ . . . . . . . . . . . . . . .
+ . o . . . . . . . . . . . . . . . .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( bandana, 6, 7 )
+dodge.save( "./tmp/bandana-dodge.png" )
+dodge.zoom(4).save( "./tmp/bandana-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/bandana-dodgex8.png" )
+
+
+
+fedora = Image.parse( <<TXT, colors: ['3D2F1E', '000000'] )
+ . . . . . . @ @ @ @ @ @ @ . . . . . .
+ . . . . . @ @ @ @ @ @ @ @ @ . . . . .
+ . . . . . @ @ @ @ @ @ @ @ @ . . . . .
+ . . . . @ @ @ @ @ @ @ @ @ @ @ . . . .
+ . . . x x x x x x x x x x x x x . . .
+ . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ .
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( fedora, 8, 6 )
+dodge.save( "./tmp/fedora-dodge.png" )
+dodge.zoom(4).save( "./tmp/fedora-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/fedora-dodgex8.png" )
+
+
+
+tophat = Image.parse( <<TXT, colors: ['000000', 'DD1C1C'] )
+ . . . . @ @ @ @ @ @ @ @ @ @ @ . . . .
+ . . . @ @ @ @ @ @ @ @ @ @ @ @ @ . . .
+ . . . @ @ @ @ @ @ @ @ @ @ @ @ @ . . .
+ . . . @ @ @ @ @ @ @ @ @ @ @ @ @ . . .
+ . . . @ @ @ @ @ @ @ @ @ @ @ @ @ . . .
+ . . . @ @ @ @ @ @ @ @ @ @ @ @ @ . . .
+ . . x x x x x x x x x x x x x x x . .
+ . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ .
+ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( tophat, 8, 4 )
+dodge.save( "./tmp/tophat-dodge.png" )
+dodge.zoom(4).save( "./tmp/tophat-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/tophat-dodgex8.png" )
+
+
+crazyhair = Image.parse( <<TXT, colors: ['E22626'] )
+. . . . . . @ . . . . @ . . . . . . . . . .
+. . . . . @ @ @ . @ @ @ @ . . . . @ . . . .
+. . . . . @ @ @ @ @ @ @ . @ @ @ @ @ . . . .
+. . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . .
+@ . . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ .
+. . @ @ @ @ @ @ @ . . . . . @ . @ . @ @ @ .
+. . @ @ @ @ . @ . . . . . . . . . . @ . . .
+. @ @ @ @ . . . . . . . . . . . . . . . . .
+. @ @ @ @ . . . . . . . . . . . . . . . . .
+. @ @ @ . . . . . . . . . . . . . . . . . .
+. . @ @ . . . . . . . . . . . . . . . . . .
+. . @ . . . . . . . . . . . . . . . . . . .
+. @ . . . . . . . . . . . . . . . . . . . .
+TXT
+
+dodge = Image.new( 32, 32 )
+dodge.compose!( crazyhair, 5, 5 )
+dodge.save( "./tmp/crazyhair-dodge.png" )
+dodge.zoom(4).save( "./tmp/crazyhair-dodgex4.png" )
+dodge.zoom(8).save( "./tmp/crazyhair-dodgex8.png" )
+
+
 
 
 
