@@ -10,25 +10,6 @@ require 'cryptopunks'
 
 attributes = {
 
-
-"wallstreetbets-hair": {
-  colors: ['000000', 'E8BC0D'],
-  offset: [3,2],
-  design: <<TXT,
-  . . . . @ @ @ @ @ @ @ @ @ @
-  . . . . x x x x x x x x x @
-  . . . @ @ @ @ @ @ @ @ @ x @
-  . . x x x x x x x x x @ x @
-  . @ @ @ @ @ @ @ @ @ x @ x @
-  . x x x x x x x x @ x @ x @
-  . @ @ @ @ @ . . . . . . x @
-  x x x x x . . . . . . . . .
-  @ @ @ @ . . . . . . . . . .
-  . x x . . . . . . . . . . .
-  . @ @ . . . . . . . . . . .
-TXT
-},
-
 eyepatch: {
   colors: ['000000'],
   offset: [6,10],
