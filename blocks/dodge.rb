@@ -1,6 +1,6 @@
 ###########
 #  to run use:
-#    ruby ./attributes.rb
+#    ruby ./dodge.rb
 
 
 $LOAD_PATH.unshift( "../cryptopunks/lib" )
