@@ -86,22 +86,62 @@ eyes_colors.each do |key,color|
 end
 
 
-__END__
 
 ####
-# 7	Lip Colors
+#  7	Lips Colors
 
-lip_colors: {
-  passion_red: 'D03C18',
-  burgundy: '4D010A',
-  purple: '8A1EE6',
-  party_pink: 'E90878',
+lips_design = <<TXT
+@ @ @
+TXT
+
+lips_smile_design = <<TXT
+@ . . .
+. @ @ @
+TXT
+
+lips_smiley_design = <<TXT
+@ . . . @
+. @ @ @ .
+TXT
+
+
+lips_colors =  {
+  passion_red:  'D03C18',
+  burgundy:     '4D010A',
+  purple:       '8A1EE6',
+  party_pink:   'E90878',
   flashy_blue:  '5BE1FC',    ## todo/fix: use two color (upper/lower lips - possible - why?)
-  gold:  'F0BA1D',
-  space: '31003C',
+  gold:         'F0BA1D',
+  space:        '31003C',
 }
 
 
+lips_colors.each do |key,color|
+  lips = Image.parse( lips_design, colors: [color])
+  woman = Image.new( 24, 24 )
+  woman.compose!( lips, 11, 18 )
+  woman.save( "./i/woman-lips-#{key}.png")
+  woman.zoom(4).save( "./i/woman-lips-#{key}4x.png" )
+  woman.zoom(8).save( "./i/woman-lips-#{key}8x.png" )
+end
+
+lips_colors.each do |key,color|
+  lips = Image.parse( lips_smile_design, colors: [color])
+  woman = Image.new( 24, 24 )
+  woman.compose!( lips, 10, 17 )
+  woman.save( "./i/woman-lips-smile-#{key}.png")
+  woman.zoom(4).save( "./i/woman-lips-smile-#{key}4x.png" )
+  woman.zoom(8).save( "./i/woman-lips-smile-#{key}8x.png" )
+end
+
+lips_colors.each do |key,color|
+  lips = Image.parse( lips_smiley_design, colors: [color])
+  woman = Image.new( 24, 24 )
+  woman.compose!( lips, 10, 17 )
+  woman.save( "./i/woman-lips-smiley-#{key}.png")
+  woman.zoom(4).save( "./i/woman-lips-smiley-#{key}4x.png" )
+  woman.zoom(8).save( "./i/woman-lips-smiley-#{key}8x.png" )
+end
 
 
 
