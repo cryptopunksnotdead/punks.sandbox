@@ -304,22 +304,22 @@ woman.zoom(4).save( "./i/woman_i_cx4.png" )
 
 
 
-woman = Image.read( "./i/woman-light_warm_olive.png" )
-woman.compose!( bob_whitesmoke )
+woman = Image.read( "./i/woman-deep_warm_gold.png" )
+woman.compose!( bob_orange )
 woman.save( "./i/woman_ii_a.png" )
 woman.zoom(4).save( "./i/woman_ii_ax4.png" )
 
-woman = Image.read( "./i/woman-light_warm_olive.png" )
-woman.compose!( bob_whitesmoke )
-woman.compose!( Image.read( "./i/woman-eyes-blue.png") )
-woman.compose!( Image.read( "./i/woman-lips-flashy_blue.png") )
+woman = Image.read( "./i/woman-deep_warm_gold.png" )
+woman.compose!( bob_orange )
+woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
+woman.compose!( Image.read( "./i/woman-lips-burgundy.png") )
 woman.save( "./i/woman_ii_b.png" )
 woman.zoom(4).save( "./i/woman_ii_bx4.png" )
 
-woman = Image.read( "./i/woman-light_warm_olive.png" )
-woman.compose!( pigtails_whitesmoke )
-woman.compose!( Image.read( "./i/woman-eyes-purple.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-flashy_blue.png") )
+woman = Image.read( "./i/woman-deep_warm_gold.png" )
+woman.compose!( pigtails_orange )
+woman.compose!( Image.read( "./i/woman-eyes-green.png") )
+woman.compose!( Image.read( "./i/woman-lips-smile-burgundy.png") )
 woman.save( "./i/woman_ii_c.png" )
 woman.zoom(4).save( "./i/woman_ii_cx4.png" )
 
@@ -333,34 +333,34 @@ woman.zoom(4).save( "./i/woman_iii_ax4.png" )
 
 woman = Image.read( "./i/woman-golden.png" )
 woman.compose!( bob_fuchsia )
-woman.compose!( Image.read( "./i/woman-eyes-blue.png") )
+woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
 woman.compose!( Image.read( "./i/woman-lips-purple.png") )
 woman.save( "./i/woman_iii_b.png" )
 woman.zoom(4).save( "./i/woman_iii_bx4.png" )
 
 woman = Image.read( "./i/woman-golden.png" )
 woman.compose!( pigtails_fuchsia )
-woman.compose!( Image.read( "./i/woman-eyes-purple.png") )
+woman.compose!( Image.read( "./i/woman-eyes-green.png") )
 woman.compose!( Image.read( "./i/woman-lips-smile-purple.png") )
 woman.save( "./i/woman_iii_c.png" )
 woman.zoom(4).save( "./i/woman_iii_cx4.png" )
 
 
-woman = Image.read( "./i/woman-golden.png" )
+woman = Image.read( "./i/woman-burning_red.png" )
 woman.compose!( bob_turquoise )
 woman.save( "./i/woman_iiii_a.png" )
 woman.zoom(4).save( "./i/woman_iiii_ax4.png" )
 
-woman = Image.read( "./i/woman-golden.png" )
+woman = Image.read( "./i/woman-burning_red.png" )
 woman.compose!( bob_turquoise )
-woman.compose!( Image.read( "./i/woman-eyes-blue.png") )
+woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
 woman.compose!( Image.read( "./i/woman-lips-space.png") )
 woman.save( "./i/woman_iiii_b.png" )
 woman.zoom(4).save( "./i/woman_iiii_bx4.png" )
 
-woman = Image.read( "./i/woman-golden.png" )
+woman = Image.read( "./i/woman-burning_red.png" )
 woman.compose!( pigtails_turquoise )
-woman.compose!( Image.read( "./i/woman-eyes-purple.png") )
+woman.compose!( Image.read( "./i/woman-eyes-blue.png") )
 woman.compose!( Image.read( "./i/woman-lips-smile-space.png") )
 woman.save( "./i/woman_iiii_c.png" )
 woman.zoom(4).save( "./i/woman_iiii_cx4.png" )
@@ -374,35 +374,35 @@ woman.zoom(4).save( "./i/woman_v_ax4.png" )
 
 woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
 woman.compose!( bob_black )
-woman.compose!( Image.read( "./i/woman-eyes-green.png") )
+woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
 woman.compose!( Image.read( "./i/woman-lips-burgundy.png") )
 woman.save( "./i/woman_v_b.png" )
 woman.zoom(4).save( "./i/woman_v_bx4.png" )
 
 woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
 woman.compose!( pigtails_black )
-woman.compose!( Image.read( "./i/woman-eyes-green.png") )
+woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
 woman.compose!( Image.read( "./i/woman-lips-smile-burgundy.png") )
 woman.save( "./i/woman_v_c.png" )
 woman.zoom(4).save( "./i/woman_v_cx4.png" )
 
 
-woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
+woman = Image.read( "./i/woman-cool_blue.png" )
 woman.compose!( bob_whitesmoke )
 woman.save( "./i/woman_vi_a.png" )
 woman.zoom(4).save( "./i/woman_vi_ax4.png" )
 
-woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
+woman = Image.read( "./i/woman-cool_blue.png" )
 woman.compose!( bob_whitesmoke )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-burgundy.png") )
+#woman.compose!( Image.read( "./i/woman-eyes-green.png") )
+woman.compose!( Image.read( "./i/woman-lips-flashy_blue.png") )
 woman.save( "./i/woman_vi_b.png" )
 woman.zoom(4).save( "./i/woman_vi_bx4.png" )
 
-woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
+woman = Image.read( "./i/woman-cool_blue.png" )
 woman.compose!( pigtails_whitesmoke )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-burgundy.png") )
+# woman.compose!( Image.read( "./i/woman-eyes-purple.png") )
+woman.compose!( Image.read( "./i/woman-lips-smile-flashy_blue.png") )
 woman.save( "./i/woman_vi_c.png" )
 woman.zoom(4).save( "./i/woman_vi_cx4.png" )
 
