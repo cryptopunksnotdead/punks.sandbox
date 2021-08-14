@@ -63,13 +63,13 @@ Lips
 
 4x
 
-![](i/woman-lips-passion_redx4.png)
-![](i/woman-lips-burgundyx4.png)
-![](i/woman-lips-purplex4.png)
-![](i/woman-lips-party_pinkx4.png)
-![](i/woman-lips-flashy_bluex4.png)
-![](i/woman-lips-goldx4.png)
-![](i/woman-lips-spacex4.png)
+![](i/woman-lips-passion_red4x.png)
+![](i/woman-lips-burgundy4x.png)
+![](i/woman-lips-purple4x.png)
+![](i/woman-lips-party_pink4x.png)
+![](i/woman-lips-flashy_blue4x.png)
+![](i/woman-lips-gold4x.png)
+![](i/woman-lips-space4x.png)
 
 
 
@@ -86,10 +86,10 @@ Lips (Smiley)
 
 4x
 
-![](i/woman-lips-smiley-passion_redx4.png)
-![](i/woman-lips-smiley-burgundyx4.png)
-![](i/woman-lips-smiley-purplex4.png)
-![](i/woman-lips-smiley-party_pinkx4.png)
-![](i/woman-lips-smiley-flashy_bluex4.png)
-![](i/woman-lips-smiley-goldx4.png)
-![](i/woman-lips-smiley-spacex4.png)
+![](i/woman-lips-smiley-passion_red4x.png)
+![](i/woman-lips-smiley-burgundy4x.png)
+![](i/woman-lips-smiley-purple4x.png)
+![](i/woman-lips-smiley-party_pink4x.png)
+![](i/woman-lips-smiley-flashy_blue4x.png)
+![](i/woman-lips-smiley-gold4x.png)
+![](i/woman-lips-smiley-space4x.png)
