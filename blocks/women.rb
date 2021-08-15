@@ -1,6 +1,6 @@
 ###########
 #  to run use:
-#    ruby ./dodge.rb
+#    ruby ./women.rb
 
 
 $LOAD_PATH.unshift( "../cryptopunks/lib" )
@@ -40,6 +40,109 @@ design = <<TXT
 TXT
 
 
+##
+# alt design ii
+#   uses extra 2px "high brows"
+#   bigger eyes (2x2)
+
+design_ii =<<TXT
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . @ @ @ @ @ @ . . . . . . . . .
+. . . . . . . . @ x x x x x x @ . . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x ^ ^ x x x ^ ^ @ . . . . . . .
+. . . . . . @ x x o o x x x o o @ . . . . . . .
+. . . . . . @ x x @ o x x x @ o @ . . . . . . .
+. . . . . . @ @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x x @ x x x @ . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x @ @ @ x x @ . . . . . . .
+. . . . . . . . @ x x x x x x @ . . . . . . . .
+. . . . . . . . @ x @ x x x @ . . . . . . . . .
+. . . . . . . . @ x x @ @ @ . . . . . . . . . .
+. . . . . . . . @ x x x @ . . . . . . . . . . .
+. . . . . . . . @ x x x @ . . . . . . . . . . .
+TXT
+
+
+##
+# alt design iii
+#   uses extra "high brows" 3px plus padding line
+#   bigger eyes (2x2)
+#   no black outline
+#    nose and neck in derived color
+
+design_iii = <<TXT
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . x x x x x x . . . . . . . . .
+. . . . . . . . x x x x x x x x . . . . . . . .
+. . . . . . . x x x x x x x x x x . . . . . . .
+. . . . . . . x ^ ^ ^ x x ^ ^ ^ x . . . . . . .
+. . . . . . . x x x x x x x x x x . . . . . . .
+. . . . . . x x x o o x x x o o x . . . . . . .
+. . . . . . x x x @ o x x x @ o x . . . . . . .
+. . . . . . x x x x x x x x x x x . . . . . . .
+. . . . . . . x x x x x x x x x x . . . . . . .
+. . . . . . . x x x x x ^ x x x x . . . . . . .
+. . . . . . . x x x x x x x x x x . . . . . . .
+. . . . . . . x x x x @ @ @ x x x . . . . . . .
+. . . . . . . . x x x x x x x ~ . . . . . . . .
+. . . . . . . . x x ~ x x x ~ . . . . . . . . .
+. . . . . . . . x x x ~ ~ ~ . . . . . . . . . .
+. . . . . . . . x x x x x . . . . . . . . . . .
+. . . . . . . . x x x x x . . . . . . . . . . .
+TXT
+
+
+##
+# alt design iii (b)
+#    like design iii - keeps black outline
+
+design_iiib =<<TXT
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . @ @ @ @ @ @ . . . . . . . . .
+. . . . . . . . @ x x x x x x @ . . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ ^ ^ ^ x x ^ ^ ^ @ . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . @ x x o o x x x o o @ . . . . . . .
+. . . . . . @ x x @ o x x x @ o @ . . . . . . .
+. . . . . . @ @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x x ^ x x x @ . . . . . . .
+. . . . . . . @ x x x x x x x x @ . . . . . . .
+. . . . . . . @ x x x @ @ @ x x @ . . . . . . .
+. . . . . . . . @ x x x x x x @ . . . . . . . .
+. . . . . . . . @ x @ x x x @ . . . . . . . . .
+. . . . . . . . @ x x @ @ @ . . . . . . . . . .
+. . . . . . . . @ x x x @ . . . . . . . . . . .
+. . . . . . . . @ x x x @ . . . . . . . . . . .
+TXT
+
+
+
+
+
 skin_tones = {
   deep_bronze:  '793F11',
   light_warm_olive: 'E2AE72',
@@ -71,12 +174,51 @@ skin_tones.each do |key,color|
   woman = Image.parse( design, colors: [BLACK, color, WHITE, color2])
   woman.save( "./i/woman-#{key}.png")
   woman.zoom(4).save( "./i/woman-#{key}4x.png" )
-  woman.zoom(8).save( "./i/woman-#{key}8x.png" )
 end
 
 
+skin_tones.each do |key,color|
+  h,s,l  = Color.to_hsl( Color.parse(color))
+  color2 = Color.from_hsl( h, [s-0.1,0.0].max, [l-0.20,0.0].max )
+
+  woman = Image.parse( design_ii, colors: [BLACK, color, WHITE, color2])
+  woman.save( "./i/woman-#{key}-ii.png")
+  woman.zoom(4).save( "./i/woman-#{key}-ii4x.png" )
+end
+
+
+skin_tones.each do |key,color|
+  h,s,l  = Color.to_hsl( Color.parse(color))
+  color2 = Color.from_hsl( h, [s-0.1,0.0].max, [l-0.2,0.0].max )
+  color3 = Color.from_hsl( h, [s-0.1,0.0].max, [l-0.05,0.0].max )
+
+  woman = Image.parse( design_iii, colors: [BLACK, color, WHITE, color2, color3])
+  woman.save( "./i/woman-#{key}-iii.png")
+  woman.zoom(4).save( "./i/woman-#{key}-iii4x.png" )
+end
+
+skin_tones.each do |key,color|
+  h,s,l  = Color.to_hsl( Color.parse(color))
+  color2 = Color.from_hsl( h, [s-0.1,0.0].max, [l-0.20,0.0].max )
+
+  woman = Image.parse( design_iiib, colors: [BLACK, color, WHITE, color2])
+  woman.save( "./i/woman-#{key}-iiib.png")
+  woman.zoom(4).save( "./i/woman-#{key}-iiib4x.png" )
+end
+
+
+
+
+
+## todo/check: add big nose - why? why not?
+#  @ .
+#  . @
+#  @ @     instead of simple single pixel @  ???
+
+
+
 eyes_design = <<TXT
- @ x . . . @ x
+ @ . . . . @
 TXT
 
 eyes_colors = {
@@ -87,12 +229,11 @@ eyes_colors = {
 }
 
 eyes_colors.each do |key,color|
-  eyes = Image.parse( eyes_design, colors: [color, WHITE])
+  eyes = Image.parse( eyes_design, colors: [color])
   woman = Image.new( 24, 24 )
   woman.compose!( eyes, 9, 13 )
   woman.save( "./i/woman-eyes-#{key}.png")
   woman.zoom(4).save( "./i/woman-eyes-#{key}4x.png" )
-  woman.zoom(8).save( "./i/woman-eyes-#{key}8x.png" )
 end
 
 
@@ -102,16 +243,6 @@ end
 
 lips_design = <<TXT
 @ @ @
-TXT
-
-lips_smile_design = <<TXT
-@ . . .
-. @ @ @
-TXT
-
-lips_smiley_design = <<TXT
-@ . . . @
-. @ @ @ .
 TXT
 
 
@@ -132,279 +263,34 @@ lips_colors.each do |key,color|
   woman.compose!( lips, 11, 18 )
   woman.save( "./i/woman-lips-#{key}.png")
   woman.zoom(4).save( "./i/woman-lips-#{key}4x.png" )
-  woman.zoom(8).save( "./i/woman-lips-#{key}8x.png" )
-end
-
-lips_colors.each do |key,color|
-  lips = Image.parse( lips_smile_design, colors: [color])
-  woman = Image.new( 24, 24 )
-  woman.compose!( lips, 10, 17 )
-  woman.save( "./i/woman-lips-smile-#{key}.png")
-  woman.zoom(4).save( "./i/woman-lips-smile-#{key}4x.png" )
-  woman.zoom(8).save( "./i/woman-lips-smile-#{key}8x.png" )
-end
-
-lips_colors.each do |key,color|
-  lips = Image.parse( lips_smiley_design, colors: [color])
-  woman = Image.new( 24, 24 )
-  woman.compose!( lips, 10, 17 )
-  woman.save( "./i/woman-lips-smiley-#{key}.png")
-  woman.zoom(4).save( "./i/woman-lips-smiley-#{key}4x.png" )
-  woman.zoom(8).save( "./i/woman-lips-smiley-#{key}8x.png" )
 end
 
 
 
 
-####
-## test some pics with hair
-
-sidehair_design = <<TXT
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . @ @ @ @ . . . . . . . . . .
-. . . . . . . . @ @ @ @ @ @ @ @ . . . . . . . .
-. . . . . . . @ @ @ @ @ @ @ @ @ @ . . . . . . .
-. . . . . . . @ @ @ @ @ @ @ @ @ @ . . . . . . .
-. . . . . . . @ @ . . . . @ . @ @ @ . . . . . .
-. . . . . . @ @ . . . . . . . . @ @ . . . . . .
-. . . . . . @ @ . . . . . . . . @ @ . . . . . .
-. . . . . . @ . . . . . . . . . @ @ . . . . . .
-. . . . . . @ . . . . . . . . . @ @ . . . . . .
-. . . . . . . . . . . . . . . . @ @ @ . . . . .
-. . . . . . . . . . . . . . . . @ @ @ . . . . .
-. . . . . . . . . . . . . . . . @ @ @ . . . . .
-. . . . . . . . . . . . . . . . @ @ @ . . . . .
-. . . . . . . . . . . . . . . . @ @ @ . . . . .
-. . . . . . . . . . . . . . . @ @ @ @ . . . . .
-. . . . . . . . . . . . . . @ @ @ @ @ . . . . .
-. . . . . . . . . . . . . . @ @ @ . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
+## try some alternate lip designs - why? why not?
+lips_smile_design = <<TXT
+@ . . .
+. @ @ @
 TXT
 
-wildhair_design = <<TXT
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . @ @ @ @ . @ . . . . . . . .
-. . . . . . . @ . @ @ @ @ @ @ . . . . . . . . .
-. . . . . . . @ @ @ @ @ @ @ @ @ . @ . . . . . .
-. . . . . @ @ @ @ @ @ @ @ @ @ @ @ . @ . . . . .
-. . . . . . @ @ @ @ . @ @ @ @ @ @ @ @ . . . . .
-. . . . . @ @ @ @ . @ . @ . . @ @ @ . . . . . .
-. . . . @ . @ @ @ . . . @ . . . @ @ @ . . . . .
-. . . . . @ @ @ . . . . @ . . . . @ . @ . . . .
-. . . . @ . @ . . . . . . @ . . . @ @ . . . . .
-. . . @ @ @ @ . . . . . . . . . . @ @ . . . . .
-. . . . . @ @ . . . . . . . . . . @ @ @ . . . .
-. . . . . @ @ . . . . . . . . . . @ . . . . . .
-. . . . @ . . . . . . . . . . . . . @ . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
+lips_smiley_design = <<TXT
+@ . . . @
+. @ @ @ .
 TXT
 
+lips = Image.parse( lips_smile_design, colors: [BLACK])
+woman = Image.new( 24, 24 )
+woman.compose!( lips, 10, 17 )
+woman.save( "./i/woman-lips-smile.png")
+woman.zoom(4).save( "./i/woman-lips-smile4x.png" )
 
-pigtails_design = <<TXT
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . @ @ @ @ @ @ . . . . . . . . .
-. . . . @ @ . . @ @ @ @ @ @ @ @ . . @ @ . . . .
-. . . @ @ @ @ x @ @ @ @ @ @ @ @ x @ @ @ @ . . .
-. . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . .
-. . @ @ @ @ . @ @ @ . . . . . @ @ . @ @ @ @ . .
-. . @ @ @ . . @ @ . . . . . . . @ . . @ @ @ . .
-. . @ @ @ . . @ . . . . . . . . . . . @ @ @ . .
-. . . @ . . . . . . . . . . . . . . . . @ . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-TXT
+lips = Image.parse( lips_smiley_design, colors: [BLACK])
+woman = Image.new( 24, 24 )
+woman.compose!( lips, 10, 17 )
+woman.save( "./i/woman-lips-smiley.png")
+woman.zoom(4).save( "./i/woman-lips-smiley4x.png" )
 
-bob_design = <<TXT
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-. . . . . . . . . @ @ @ @ @ @ . . . . . . . . .
-. . . . . . . @ @ @ @ @ @ @ @ @ . . . . . . . .
-. . . . . . . @ @ @ @ @ @ @ @ @ @ . . . . . . .
-. . . . . . @ @ @ @ @ @ @ @ . @ @ @ . . . . . .
-. . . . . . @ @ . @ @ @ @ . . . @ @ . . . . . .
-. . . . . . @ @ . . . @ . . . . @ @ . . . . . .
-. . . . . @ @ @ . . . . . . . . @ @ . . . . . .
-. . . . . @ @ . . . . . . . . . @ @ . . . . . .
-. . . . . @ @ . . . . . . . . . @ @ . . . . . .
-. . . . . @ @ @ . . . . . . . . @ @ . . . . . .
-. . . . . @ @ @ . . . . . . . . @ @ @ . . . . .
-. . . . . @ @ @ . . . . . . . . @ @ @ . . . . .
-. . . . @ @ @ @ @ . . . . . . . @ @ @ @ . . . .
-. . . . . . @ @ @ @ . . . . . @ @ . . . . . . .
-. . . . . . . . . . . . . . . . . . . . . . . .
-TXT
-
-ORANGE     = 'e65700'
-GREEN      = '28b143'
-BLONDE     = 'fff68e'
-WHITESMOKE = 'f5f5f5'
-
-
-sidehair_black      = Image.parse( sidehair_design, colors: [BLACK] )
-sidehair_blonde     = Image.parse( sidehair_design, colors: [BLONDE] )
-sidehair_whitesmoke = Image.parse( sidehair_design, colors: [WHITESMOKE] )
-sidehair_orange     = Image.parse( sidehair_design, colors: [ORANGE] )
-sidehair_green      = Image.parse( sidehair_design, colors: [GREEN] )
-
-
-pigtails_black      = Image.parse( pigtails_design, colors: [BLACK, 'ffd926'] )
-pigtails_blonde     = Image.parse( pigtails_design, colors: [BLONDE, 'ffd926'] )
-pigtails_whitesmoke = Image.parse( pigtails_design, colors: [WHITESMOKE, 'ffd926'] )
-pigtails_orange     = Image.parse( pigtails_design, colors: [ORANGE, 'ffd926'] )
-pigtails_green      = Image.parse( pigtails_design, colors: [GREEN, 'ffd926'] )
-pigtails_fuchsia    = Image.parse( pigtails_design, colors: ['870057', 'ffd926'] )
-pigtails_turquoise  = Image.parse( pigtails_design, colors: ['06AD93', 'ffd926'] )
-
-
-bob_black      = Image.parse( bob_design, colors: [BLACK] )
-bob_blonde     = Image.parse( bob_design, colors: [BLONDE] )
-bob_whitesmoke = Image.parse( bob_design, colors: [WHITESMOKE] )
-bob_orange     = Image.parse( bob_design, colors: [ORANGE] )
-bob_green      = Image.parse( bob_design, colors: [GREEN] )
-bob_fuchsia    = Image.parse( bob_design, colors: ['870057'] )
-bob_turquoise  = Image.parse( bob_design, colors: ['06AD93'] )
-
-
-wildhair_blonde = Image.parse( wildhair_design, colors: [BLONDE] )
-
-
-woman = Image.read( "./i/woman-light_warm_olive.png" )
-woman.compose!( bob_blonde )
-woman.save( "./i/woman_i_a.png" )
-woman.zoom(4).save( "./i/woman_i_ax4.png" )
-
-woman = Image.read( "./i/woman-light_warm_olive.png" )
-woman.compose!( bob_blonde )
-woman.compose!( Image.read( "./i/woman-eyes-blue.png") )
-woman.compose!( Image.read( "./i/woman-lips-party_pink.png") )
-woman.save( "./i/woman_i_b.png" )
-woman.zoom(4).save( "./i/woman_i_bx4.png" )
-
-woman = Image.read( "./i/woman-light_warm_olive.png" )
-woman.compose!( pigtails_blonde )
-woman.compose!( Image.read( "./i/woman-eyes-purple.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-party_pink.png") )
-woman.save( "./i/woman_i_c.png" )
-woman.zoom(4).save( "./i/woman_i_cx4.png" )
-
-
-
-woman = Image.read( "./i/woman-deep_warm_gold.png" )
-woman.compose!( bob_orange )
-woman.save( "./i/woman_ii_a.png" )
-woman.zoom(4).save( "./i/woman_ii_ax4.png" )
-
-woman = Image.read( "./i/woman-deep_warm_gold.png" )
-woman.compose!( bob_orange )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-burgundy.png") )
-woman.save( "./i/woman_ii_b.png" )
-woman.zoom(4).save( "./i/woman_ii_bx4.png" )
-
-woman = Image.read( "./i/woman-deep_warm_gold.png" )
-woman.compose!( pigtails_orange )
-woman.compose!( Image.read( "./i/woman-eyes-green.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-burgundy.png") )
-woman.save( "./i/woman_ii_c.png" )
-woman.zoom(4).save( "./i/woman_ii_cx4.png" )
-
-
-
-
-woman = Image.read( "./i/woman-golden.png" )
-woman.compose!( bob_fuchsia )
-woman.save( "./i/woman_iii_a.png" )
-woman.zoom(4).save( "./i/woman_iii_ax4.png" )
-
-woman = Image.read( "./i/woman-golden.png" )
-woman.compose!( bob_fuchsia )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-purple.png") )
-woman.save( "./i/woman_iii_b.png" )
-woman.zoom(4).save( "./i/woman_iii_bx4.png" )
-
-woman = Image.read( "./i/woman-golden.png" )
-woman.compose!( pigtails_fuchsia )
-woman.compose!( Image.read( "./i/woman-eyes-green.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-purple.png") )
-woman.save( "./i/woman_iii_c.png" )
-woman.zoom(4).save( "./i/woman_iii_cx4.png" )
-
-
-woman = Image.read( "./i/woman-burning_red.png" )
-woman.compose!( bob_turquoise )
-woman.save( "./i/woman_iiii_a.png" )
-woman.zoom(4).save( "./i/woman_iiii_ax4.png" )
-
-woman = Image.read( "./i/woman-burning_red.png" )
-woman.compose!( bob_turquoise )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-space.png") )
-woman.save( "./i/woman_iiii_b.png" )
-woman.zoom(4).save( "./i/woman_iiii_bx4.png" )
-
-woman = Image.read( "./i/woman-burning_red.png" )
-woman.compose!( pigtails_turquoise )
-woman.compose!( Image.read( "./i/woman-eyes-blue.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-space.png") )
-woman.save( "./i/woman_iiii_c.png" )
-woman.zoom(4).save( "./i/woman_iiii_cx4.png" )
-
-
-
-woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
-woman.compose!( bob_black )
-woman.save( "./i/woman_v_a.png" )
-woman.zoom(4).save( "./i/woman_v_ax4.png" )
-
-woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
-woman.compose!( bob_black )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-burgundy.png") )
-woman.save( "./i/woman_v_b.png" )
-woman.zoom(4).save( "./i/woman_v_bx4.png" )
-
-woman = Image.read( "./i/woman-night_goddess.png" )  ## check: fix typo
-woman.compose!( pigtails_black )
-woman.compose!( Image.read( "./i/woman-eyes-brown.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-burgundy.png") )
-woman.save( "./i/woman_v_c.png" )
-woman.zoom(4).save( "./i/woman_v_cx4.png" )
-
-
-woman = Image.read( "./i/woman-cool_blue.png" )
-woman.compose!( bob_whitesmoke )
-woman.save( "./i/woman_vi_a.png" )
-woman.zoom(4).save( "./i/woman_vi_ax4.png" )
-
-woman = Image.read( "./i/woman-cool_blue.png" )
-woman.compose!( bob_whitesmoke )
-#woman.compose!( Image.read( "./i/woman-eyes-green.png") )
-woman.compose!( Image.read( "./i/woman-lips-flashy_blue.png") )
-woman.save( "./i/woman_vi_b.png" )
-woman.zoom(4).save( "./i/woman_vi_bx4.png" )
-
-woman = Image.read( "./i/woman-cool_blue.png" )
-woman.compose!( pigtails_whitesmoke )
-# woman.compose!( Image.read( "./i/woman-eyes-purple.png") )
-woman.compose!( Image.read( "./i/woman-lips-smile-flashy_blue.png") )
-woman.save( "./i/woman_vi_c.png" )
-woman.zoom(4).save( "./i/woman_vi_cx4.png" )
 
 
 puts "bye"
