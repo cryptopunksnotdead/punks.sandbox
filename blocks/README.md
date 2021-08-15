@@ -64,7 +64,7 @@ Skin Tones II - "Big Eyes" Series
 
 
 
-Skin Tones III
+Skin Tones III - "Natural" Series
 
 ![](i/woman-light_warm_olive-iii.png)
 ![](i/woman-medium_olive-iii.png)
@@ -136,6 +136,7 @@ Lips
 
 Lips (Smile) ![](i/woman-lips-smile.png) 4x
 ![](i/woman-lips-smile4x.png)
+
 Lips (Smiley) ![](i/woman-lips-smiley.png) 4x
 ![](i/woman-lips-smiley4x.png)
 
@@ -178,23 +179,6 @@ Samples
 
 
 
-![](i/woman_i_c.png)
-![](i/woman_ii_c.png)
-![](i/woman_iii_c.png)
-![](i/woman_iiii_c.png)
-![](i/woman_v_c.png)
-![](i/woman_vi_c.png)
-
-4x
-![](i/woman_i_c4x.png)
-![](i/woman_ii_c4x.png)
-![](i/woman_iii_c4x.png)
-![](i/woman_iiii_c4x.png)
-![](i/woman_v_c4x.png)
-![](i/woman_vi_c4x.png)
-
-
-
 
 ![](i/woman_i_d.png)
 ![](i/woman_ii_d.png)
@@ -212,6 +196,57 @@ Samples
 ![](i/woman_vi_d4x.png)
 
 
+
+![](i/woman_i_g.png)
+![](i/woman_ii_g.png)
+![](i/woman_iii_g.png)
+![](i/woman_iiii_g.png)
+![](i/woman_v_g.png)
+![](i/woman_vi_g.png)
+
+4x
+![](i/woman_i_g4x.png)
+![](i/woman_ii_g4x.png)
+![](i/woman_iii_g4x.png)
+![](i/woman_iiii_g4x.png)
+![](i/woman_v_g4x.png)
+![](i/woman_vi_g4x.png)
+
+
+![](i/woman_i_h.png)
+![](i/woman_ii_h.png)
+![](i/woman_iii_h.png)
+![](i/woman_iiii_h.png)
+![](i/woman_v_h.png)
+![](i/woman_vi_h.png)
+
+4x
+![](i/woman_i_h4x.png)
+![](i/woman_ii_h4x.png)
+![](i/woman_iii_h4x.png)
+![](i/woman_iiii_h4x.png)
+![](i/woman_v_h4x.png)
+![](i/woman_vi_h4x.png)
+
+
+
+
+
+
+![](i/woman_i_c.png)
+![](i/woman_ii_c.png)
+![](i/woman_iii_c.png)
+![](i/woman_iiii_c.png)
+![](i/woman_v_c.png)
+![](i/woman_vi_c.png)
+
+4x
+![](i/woman_i_c4x.png)
+![](i/woman_ii_c4x.png)
+![](i/woman_iii_c4x.png)
+![](i/woman_iiii_c4x.png)
+![](i/woman_v_c4x.png)
+![](i/woman_vi_c4x.png)
 
 
 ![](i/woman_i_i.png)
