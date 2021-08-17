@@ -3,11 +3,9 @@
 
 Let's start with a triva quiz:
 
-What's super rarer than an alien?
-Yes, a gemini (twin) alien!
+Q: What's super rarer than an alien?
+A: Yes, a gemini (twin) alien!
 
-What's super rarer than a gemini (twin) alien?
-Yes, a triple alien!
 
 
 
@@ -66,6 +64,11 @@ the twins (geminis) are 10 pixels closer together
 
 
 
+
+Q: What's super rarer than a gemini (twin) alien?
+A: Yes, a triple alien!
+
+
 Let's try never before seen super rare triplets:
 
 ``` ruby
@@ -101,8 +104,8 @@ And 4x:
 
 
 
-What's super rarer than a triple or quadruple alien?
-Yes, a sextuplet alien!
+Q: What's super rarer than a triple or quadruple alien?
+A: Yes, a sextuplet alien!
 
 
 Let's try sextuplets and let's flip
