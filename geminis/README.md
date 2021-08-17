@@ -1,7 +1,7 @@
 # Geminis Experiment - Super Rare Twin, Triple 'n' Quadruple Punks
 
 
-Let's start with a triva quiz:
+Let's start with a trivia quiz:
 
 Q: What's super rarer than an alien?
 A: Yes, a gemini (twin) alien!
