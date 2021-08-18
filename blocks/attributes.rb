@@ -7,8 +7,142 @@ $LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
 
 
+EARRING_COLORS = ['000000', 'FFD926']
+EARRING_DESIGN =<<TXT   ## same design for m/f (different offset)
+. @ .
+@ x @
+. @ .
+TXT
+
+EYESHADOW_DESIGN =<<TXT  ## same design for all colors
+x x . . . x x
+@ o . . . @ o
+TXT
+
 
 attributes = {
+#######
+# Earring | 2459  (24.59 %) | Male (1498) · Female (933) · Zombie (22) · Alien (3) · Ape (3)
+"earring-male": {
+  colors: EARRING_COLORS,
+  offset: [4,13],
+  design: EARRING_DESIGN,
+},
+"earring-female": {
+  colors: EARRING_COLORS,
+  offset: [5,13],
+  design: EARRING_DESIGN,
+},
+
+
+####################
+# Green Eye Shadow |  271  ( 2.71 %) | Female (271)
+#
+# note: fix: different shades of green for skintones!!!
+#                 requires alpha channel/ opacity?
+#    always use colors for medium for now
+# no. 3770 - 5C915F, 6AA06E  (albino)
+#            507C33, 5D8B43  (medium)
+# no. 2022 - 3C6827, 486F2B  (dark)
+greeneyeshadow: {
+  colors: ['000000', '507C33', '5D8B43' ],
+  offset: [9,12],
+  design: EYESHADOW_DESIGN,
+},
+#######################
+# Purple Eye Shadow |  262  ( 2.62 %) | Female (262)
+#   note: see above (use medium for now)
+purpleeyeshadow: {
+  colors: ['000000', 'AF2C7B', 'C13F8F'],
+  offset: [9,12],
+  design: EYESHADOW_DESIGN,
+},
+############
+# Blue Eye Shadow      |  266  ( 2.66 %) | Female (266)
+#   note: see above (use medium for now)
+blueeyeshadow: {
+  colors: ['000000', '506A65', '5D7975'],
+  offset: [9,12],
+  design: EYESHADOW_DESIGN,
+},
+
+
+###########
+#  Blonde Bob |  147  (1.47 %) | Female (147)
+blondebob: {
+  colors: ['FFF68E'],
+  design: <<TXT,
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . @ @ @ @ @ @ . . . . . . . . .
+. . . . . . . @ @ @ @ @ @ @ @ @ . . . . . . . .
+. . . . . . . @ @ @ @ @ @ @ @ @ @ . . . . . . .
+. . . . . . @ @ @ @ @ @ @ @ . @ @ @ . . . . . .
+. . . . . . @ @ . @ @ @ @ . . . @ @ . . . . . .
+. . . . . . @ @ . . . @ . . . . @ @ . . . . . .
+. . . . . @ @ @ . . . . . . . . @ @ . . . . . .
+. . . . . @ @ . . . . . . . . . @ @ . . . . . .
+. . . . . @ @ . . . . . . . . . @ @ . . . . . .
+. . . . . @ @ @ . . . . . . . . @ @ . . . . . .
+. . . . . @ @ @ . . . . . . . . @ @ @ . . . . .
+. . . . . @ @ @ . . . . . . . . @ @ @ . . . . .
+. . . . @ @ @ @ @ . . . . . . . @ @ @ @ . . . .
+. . . . . . @ @ @ @ . . . . . @ @ . . . . . . .
+TXT
+},
+
+
+####
+# Wild Hair |  447  (4.47 %) | Male (296) · Female (144) · Zombie (7)
+"wildhair-male": {
+ colors: ['000000'],
+ design: <<TXT,
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . @ @ . . . . @ @ @ @ @ . . . . . . .
+. . . @ . . @ @ @ @ @ @ @ @ @ @ . . @ @ . . . .
+. . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . . . . .
+. . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . . . .
+. . . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . . . . .
+. . . @ @ @ @ @ @ @ @ @ . . @ @ @ @ @ . . . . .
+. . @ @ @ @ @ @ @ . . @ @ . . @ @ @ . . . . . .
+. . . . @ @ @ @ . . . . . . . . @ @ @ . . . . .
+. . . @ @ @ @ @ . . . . . . . . @ @ @ . . . . .
+. . . @ . @ @ @ . . . . . . . . @ @ . . . . . .
+. . . . @ @ @ @ . . . . . . . . @ @ . . . . . .
+. . . . @ @ @ . . . . . . . . . @ @ . . . . . .
+TXT
+},
+"wildhair-female": {
+  colors: ['000000'],
+  design: <<TXT,
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . @ . . . . . . . . .
+. . . . . . @ . . @ . . . @ . . @ . . . . . . .
+. . . . . @ . @ . @ @ . @ @ @ @ @ . . @ . . . .
+. . . @ . @ @ @ @ @ @ @ @ @ @ @ @ . @ . . . . .
+. . . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . . . . .
+. . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . . . .
+. . . . @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ . . . . .
+. . . @ @ @ @ @ @ @ @ @ . . @ @ @ @ . . . . . .
+. . @ @ @ @ @ @ @ . . @ @ . . @ @ @ @ . . . . .
+. . . . @ @ @ @ . . . . . . . . @ @ @ @ . . . .
+. . . @ @ @ @ @ . . . . . . . . @ @ @ . . . . .
+. . . @ . @ @ @ . . . . . . . . @ @ @ . . . . .
+. . . . @ @ @ @ . . . . . . . . @ @ @ @ . . . .
+. . . . @ . @ @ . . . . . . . . @ @ . . . . . .
+. . . . . . @ @ . . . . . . . . @ @ . . . . . .
+. . . . . @ . @ . . . . . . . . @ @ . . . . . .
+. . . . . . . @ . . . . . . . . @ . @ . . . . .
+TXT
+},
+
+
 
 eyepatch: {
   colors: ['000000'],
@@ -269,7 +403,8 @@ TXT
 attributes.each do |key,attribute|
   img = Image.parse( attribute[:design], colors: attribute[:colors] )
   punk = Image.new( 24, 24 )
-  punk.compose!( img, *attribute[:offset] )
+  offset_x, offset_y = attribute[:offset] || [0,0]
+  punk.compose!( img, offset_x, offset_y )
   punk.save( "./tmp/#{key}.png" )
   punk.zoom(8).save( "./tmp/#{key}x8.png" )
 end
