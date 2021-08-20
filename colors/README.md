@@ -11,16 +11,16 @@ Example 1 - Rarities Only (Alien, Ape, Zombies Only)
 
 
 ![](i/skintones-rarities.png)
-4x ![](i/skintones-raritiesx4.png)
-8x ![](i/skintones-raritiesx8.png)
+4x ![](i/skintones-rarities4x.png)
+8x ![](i/skintones-rarities8x.png)
 
 
 Example 2 - All 10 000 Skin Tones
 
 
 ![](i/skintones.png)
-4x ![](i/skintonesx4.png)
-8x ![](i/skintonesx8.png)
+4x ![](i/skintones4x.png)
+8x ![](i/skintones8x.png)
 
 
 
