@@ -7,21 +7,19 @@ All 10 000 punks in the classic 100 by 100 grid with 1 pixel per punk (and skint
 Visual for punk distribution.
 
 
-Example 1 - Rarities Only (Alien, Ape, Zombies Only)
-
-
-![](i/skintones-rarities.png)
-4x ![](i/skintones-rarities4x.png)
-8x ![](i/skintones-rarities8x.png)
-
-
-Example 2 - All 10 000 Skin Tones
+Example 1 - All 10 000 Skin Tones
 
 
 ![](i/skintones.png)
 4x ![](i/skintones4x.png)
 8x ![](i/skintones8x.png)
 
+
+Example 2 - Rarities Only (Alien, Ape, Zombies Only)
+
+
+![](i/skintones-rarities.png)
+4x ![](i/skintones-rarities4x.png)
 
 
 

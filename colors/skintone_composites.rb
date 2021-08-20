@@ -72,33 +72,8 @@ HUMAN_DARKER_COLOR  = Color.from_hex( '#713f1dff' )   # rgb(113  63  29) - hsl( 
 
 
 
-#########################
-# version 1 - rarities only (alien, ape, zombie)
-
-img = Image.new( 100, 100 )    ## new (empty) image 100x100 pixel
-
-
-recs.each_with_index do |meta,i|
-  print "."
-
-  y,x =  i.divmod( 100 )   ## get x/y coords in 100x100 pixel matrix
-
-  img[x,y] = case meta.type.name
-             when 'Alien'  then ALIEN_COLOR
-             when 'Ape'    then APE_COLOR
-             when 'Zombie' then ZOMBIE_COLOR
-             else    Color::WHITE
-             end
-end
-
-img.save( "i/skintones-rarities.png" )
-img.zoom(4).save( "i/skintones-rarities4x.png" )
-img.zoom(8).save( "i/skintones-rarities8x.png" )
-
-
-
 ####################
-## version 2 - all 10 000 (incl. humans)
+## version 1 - all 10 000 (incl. humans)
 
 img = Image.new( 100, 100 )    ## new (empty) image 100x100 pixel
 
@@ -127,6 +102,31 @@ end
 img.save( "i/skintones.png" )
 img.zoom(4).save( "i/skintones4x.png" )
 img.zoom(8).save( "i/skintones8x.png" )
+
+
+
+#########################
+# version 2 - rarities only (alien, ape, zombie)
+
+img = Image.new( 100, 100 )    ## new (empty) image 100x100 pixel
+
+
+recs.each_with_index do |meta,i|
+  print "."
+
+  y,x =  i.divmod( 100 )   ## get x/y coords in 100x100 pixel matrix
+
+  img[x,y] = case meta.type.name
+             when 'Alien'  then ALIEN_COLOR
+             when 'Ape'    then APE_COLOR
+             when 'Zombie' then ZOMBIE_COLOR
+             else    Color::WHITE
+             end
+end
+
+img.save( "i/skintones-rarities.png" )
+img.zoom(4).save( "i/skintones-rarities4x.png" )
+img.zoom(8).save( "i/skintones-rarities8x.png" )
 
 
 
