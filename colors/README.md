@@ -15,7 +15,7 @@ Example 1 - All 10 000 Skin Tones
 8x ![](i/skintones8x.png)
 
 
-Example 2 - Rarities Only (Alien, Ape, Zombies Only)
+Example 2 - Rarities Only (9 Alien, 24 Ape, 88 Zombie Only)
 
 
 ![](i/skintones-rarities.png)
