@@ -107,7 +107,7 @@ Voila!
 4x: ![](i/aliens-randomized4x.png)
 
 
-Are you a punk connoisseur?  Can you spot the million dollor aliens?
+Are you a punk connoisseur?  Can you spot the million dollar aliens?
 Can you spot the originals? Can you spot the cheapies?
 Can you spot the unminted / yet unsold aliens?
 
