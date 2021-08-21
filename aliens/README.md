@@ -1,4 +1,4 @@
-# New All Star Blue Alien Experirement - 40 Extraterrestrial Humanoid Andorians - Native to the Blue Icy Class M Moon Andoria
+# New All Star Blue Alien Experiment - 40 Extraterrestrial Humanoid Andorians - Native to the Blue Icy Class M Moon Andoria
 
 
 Here's the experiment - let's unite all aliens from all collections (9 in original, 21 in more, 10 in expansion) into a new
