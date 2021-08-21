@@ -100,16 +100,16 @@ img.save( "aliens-randomized.png" )
 img.zoom(4).save("aliens-randomized4x.png")
 ```
 
+Voila!
+
+![](i/aliens-randomized.png)
+
+4x: ![](i/aliens-randomized4x.png)
+
 
 Are you a punk connoisseur?  Can you spot the million dollor aliens?
 Can you spot the originals? Can you spot the cheapies?
 Can you spot the unminted / yet unsold aliens?
-
-
-![](i/aliens-randomized.png)
-
-4x: ![](i/aliens-randomzied4x.png)
-
 
 
 
