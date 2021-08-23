@@ -152,16 +152,16 @@ end
 
 Voila!  In Green-ish
 
-![](i/aliens-green.png)
+![](i/aliens_green.png)
 
-4x: ![](i/aliens-green4x.png)
+4x: ![](i/aliens_green4x.png)
 
 
 In Red-ish
 
-![](i/aliens-red.png)
+![](i/aliens_red.png)
 
-4x: ![](i/aliens-red4x.png)
+4x: ![](i/aliens_red4x.png)
 
 
 
