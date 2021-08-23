@@ -113,6 +113,60 @@ Can you spot the unminted / yet unsold newcomers?
 
 
 
+
+
+
+## Bonus - Let's try some different alien colors. Cyber green? Burning red?
+
+
+Let's change the three alien base colors (
+and let's turn up the saturation by 13%
+and the lightness down by 30%)  using the hsl (hue, saturation, lightness)
+color scheme / wheel:
+
+
+``` ruby
+hues = { green: 90,
+         red:    0 }
+
+saturation =  0.13
+lightness  = -0.30
+
+hues.each do |hue_name, hue|
+
+  base    = [hue, 0.86+saturation, 0.88+lightness]
+  darker  = [hue, 0.52+saturation, 0.74+lightness]
+  darkest = [hue, 0.35+saturation, 0.60+lightness]
+
+  color_map = {
+      '#c8fbfbff' => base,
+      '#9be0e0ff' => darker,
+      '#75bdbdff' => darkest,
+  }
+
+  new_img = img.change_colors( color_map )
+  new_img.save( "aliens_#{hue_name}.png" )
+  new_img.zoom(4).save( "aliens_#{hue_name}4x.png" )
+end
+```
+
+Voila!  In Green-ish
+
+![](i/aliens-green.png)
+
+4x: ![](i/aliens-green4x.png)
+
+
+In Red-ish
+
+![](i/aliens-red.png)
+
+4x: ![](i/aliens-red4x.png)
+
+
+
+
+
 That's it.  Now curate your own collection of collections. Yes, you can.
 
 ## Questions? Comments?

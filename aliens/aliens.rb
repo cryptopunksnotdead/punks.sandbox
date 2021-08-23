@@ -58,6 +58,18 @@ end
 puts "  #{aliens.size} alien(s)"
 
 
+## spoiler - the linear version (9 original -> 21 more -> 10 expansion aliens)
+
+img = ImageComposite.new( 10, 4 )
+aliens.each do |alien|
+  img << alien
+end
+
+img.save( "./i/aliens.png" )
+img.zoom(4).save("./i/aliens4x.png")
+
+
+
 ## note: to be deterministic with readme doc
 ##    use "hardcoded" version for now
 indexes = [18, 23, 37, 26, 36, 21, 34, 39, 17, 4,
@@ -76,15 +88,40 @@ img.zoom(4).save("./i/aliens-randomized4x.png")
 
 
 
-## spoiler - the linear version (9 original -> 21 more -> 10 expansion aliens)
+##################
+# bonus: try different alien colors let's use hue 90 (green-ish) and 0 (red-ish)
+saturation =  0.13
+lightness  = -0.30
 
-img = ImageComposite.new( 10, 4 )
-aliens.each do |alien|
-  img << alien
+hues = { green: 90,
+         red:    0 }
+
+hues.each do |hue_name, hue|
+
+  base    = [hue, 0.86+saturation, 0.88+lightness]
+  darker  = [hue, 0.52+saturation, 0.74+lightness]
+  darkest = [hue, 0.35+saturation, 0.60+lightness]
+
+  color_map = {
+      '#c8fbfbff' => base,
+      '#9be0e0ff' => darker,
+      '#75bdbdff' => darkest,
+      ## more aliens series uses different (alien) colors with up-to-4 variants!!
+      '#B2FBF9FF' =>  base,  # variant 1
+      '#BEFBFAFF' =>  base,  # variant 2
+      '#B3FBF9FF' =>  base,  # variant 3
+      '#B0FBFAFF' =>  base,  # variant 4!
+      '#7CD3CFFF' =>  darker,
+      '#8CDAD8FF' =>  darker,
+      '#79D3D0FF' =>  darker,
+      '#54A29FFF' =>  darkest,
+      '#64B0AFFF' =>  darkest,
+  }
+
+  new_img = img.change_colors( color_map )
+  new_img.save( "./i/aliens_#{hue_name}.png" )
+  new_img.zoom(4).save( "./i/aliens_#{hue_name}4x.png" )
 end
-
-img.save( "./i/aliens.png" )
-img.zoom(4).save("./i/aliens4x.png")
 
 
 puts "bye"
