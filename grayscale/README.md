@@ -6,7 +6,7 @@ Let's have a looksie at the Grey Scale Punks collection or is that greater fools
 
 > RECORD SALE
 >
-> Greyscale Punk #2243 just resold for a whopping 1.2 ETH (~$4000)!  4000% profit!
+> Greyscale Punk #2243 ![](i/punk2243_grayscale.png) just resold for a whopping 1.2 ETH (~$4000)!  4000% profit!
 >
 > -- [August 22, 2021](https://twitter.com/GreyscalePunks/status/1429315962910740481)
 
@@ -15,18 +15,25 @@ Is this a conceptual art parody? Or is this a (get-rich-quick) cash grab? Or a g
 
 
 Let's look at the Greyscale collection on the web, see [**greyscalepunks.com**](https://greyscalepunks.com) - on the Open Sea [digital token market],
-see [**collection/greyscalepunks**](https://opensea.io/collection/greyscalepunks)
-- or follow updates on Twitter, see [**@greyscalepunks**](https://twitter.com/greyscalepunks)
+see [**collection/greyscalepunks**](https://opensea.io/collection/greyscalepunks) - or follow updates on Twitter, see [**@greyscalepunks**](https://twitter.com/greyscalepunks).
 
 
 The blurb reads:
 
-> Greyscale Punks is an art token collection of Punks with a unique twist! Every day, at no specific time, new Greyscale Punks will be created, (with a supply cap of 10,000) starting at a price of just .02 ETH (~$66). Every week, however, the starting price of each Greyscale Punk created will increase by .005 ETH (~$15), raising the floor to protect your previous investments and add value to the project as it grows. This will cap at .05 ETH (~$170), and when that happens the base price of a new Greyscale Punk will no longer rise. Each Greyscale Punk created is a 1 of 1, meaning there will never be any duplicates created!
+> Greyscale Punks is an art token collection of Punks with a unique twist! Every day,
+> at no specific time, new Greyscale Punks will be created,
+> (with a supply cap of 10,000) starting at a price of just .02 ETH (\~$66).
+> Every week, however, the starting price of each Greyscale Punk created
+> will increase by .005 ETH (\~$15),
+> raising the floor to protect your previous investments
+> and add value to the project as it grows. This will cap at .05 ETH (\~$170),
+> and when that happens the base price of a new Greyscale Punk will no longer rise.
+> Each Greyscale Punk created is a 1 of 1, meaning there will never be any duplicates created!
 
 
 As of August/24, 2021  - two days (?) after launching the analytics summary reads:
 
-1 300 / 10 000 Items, 557 Owners, 0.04 ETH (~$130) Floor Price, 60.8 ETH (~$200 000) Traded
+1 300 / 10 000 Items, 557 Owners, 0.04 ETH (\~$130) Floor Price, 60.8 ETH (\~$200 000) Traded
 
 
 

@@ -13,13 +13,15 @@ print "OK\n"
 
 
 ## change all 10 000 punks to grayscale
-# punks_grayscale = punks.grayscale
-# punks_grayscale.save( "i/punks_grayscale.png" )
+punks_grayscale = punks.grayscale
+punks_grayscale.save( "i/punks_grayscale.png" )
 
 
 ## reload as a composite image (with easy tile access via [])
 punks_grayscale =  Punks::Image::Composite.read( 'i/punks_grayscale.png' )
 
+
+punks_grayscale[2243].save( 'i/punk2243_grayscale.png' )
 
 
 
