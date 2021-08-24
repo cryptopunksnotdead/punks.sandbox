@@ -77,15 +77,15 @@ Voila!  A 10x10 preview:
 Download [**punks_grayscale.png**](i/punks_grayscale.png) (~800k) for all 10 000 grayscale punks.
 
 
-And let's have a looksie at the first five grayscale punks and let's generate 8x versions.
+And let's have a looksie at the first four grayscale punks and let's generate 8x versions.
 
 
 ``` ruby
 ## reload as a composite image (with easy tile access via [])
 punks_grayscale =  Punks::Image::Composite.read( 'punks_grayscale.png' )
 
-## let's have a looksie at the first five grayscale punks
-(0..5).each do |id|
+## let's have a looksie at the first four grayscale punks
+(0..4).each do |id|
   punk = punks_grayscale[id]
 
   punk.save( "punk#{id}_grayscale.png" )
@@ -100,7 +100,6 @@ Voila!
 ![](i/punk1_grayscale.png)
 ![](i/punk2_grayscale.png)
 ![](i/punk3_grayscale.png)
-![](i/punk4_grayscale.png)
 
 8x
 
@@ -108,7 +107,6 @@ Voila!
 ![](i/punk1_grayscalex8.png)
 ![](i/punk2_grayscalex8.png)
 ![](i/punk3_grayscalex8.png)
-![](i/punk4_grayscalex8.png)
 
 
 
@@ -129,15 +127,15 @@ Voila!  A 10x10 preview:
 Download [**punks_sepia.png**](i/punks_sepia.png) (~800k) for all ye 10 000 olde' sepia vinatage punks.
 
 
-And again let's have a looksie at the first five sepia punks and let's generate 8x versions.
+And again let's have a looksie at the first four sepia punks and let's generate 8x versions.
 
 
 ``` ruby
 ## reload as a composite image (with easy tile access via [])
 punks_sepia =  Punks::Image::Composite.read( 'punks_sepia.png' )
 
-## let's have a looksie at the first five sepia punks
-(0..5).each do |id|
+## let's have a looksie at the first four sepia punks
+(0..4).each do |id|
   punk = punks_sepia[id]
 
   punk.save( "punk#{id}_sepia.png" )
@@ -152,7 +150,6 @@ Voila!
 ![](i/punk1_sepia.png)
 ![](i/punk2_sepia.png)
 ![](i/punk3_sepia.png)
-![](i/punk4_sepia.png)
 
 8x
 
@@ -160,7 +157,6 @@ Voila!
 ![](i/punk1_sepiax8.png)
 ![](i/punk2_sepiax8.png)
 ![](i/punk3_sepiax8.png)
-![](i/punk4_sepiax8.png)
 
 
 
