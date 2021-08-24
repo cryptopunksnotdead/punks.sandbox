@@ -50,7 +50,7 @@ As of August/24, 2021  - ten days after launching the analytics summary reads:
 
 
 
-So what?  Here's the formula / script to turn all 10 000 original punks into grayscale
+So what?  Here's the formula / script to turn all 10 000 original punks into free grayscales
 in less than ten seconds.
 Let's try:
 
