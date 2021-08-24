@@ -3,7 +3,17 @@
 
 Let's have a looksie at the Grey Scale Punks collection or is that greater fools get-rich-quick fraud?
 
-
+>  AND WE'RE LIVE!
+>
+> 10 Greyscale Punks will be listed for .03 ETH (\~$100) over the span of the next 10 minutes. GOOD LUCK TO YOU ALL!
+>
+>> SOLD OUT
+>>
+>> Absolute MADNESS!
+>>
+>>  -- [August 15, 2021]()
+>
+>
 > RECORD SALE
 >
 > Greyscale Punk #2243 ![](i/punk2243_grayscale.png) just resold for a whopping 1.2 ETH (~$4000)!  4000% profit!
@@ -31,15 +41,16 @@ The blurb reads:
 > Each Greyscale Punk created is a 1 of 1, meaning there will never be any duplicates created!
 
 
-As of August/24, 2021  - two days (?) after launching the analytics summary reads:
+As of August/24, 2021  - ten days after launching the analytics summary reads:
 
-1 300 / 10 000 Items, 557 Owners, 0.04 ETH (\~$130) Floor Price, 60.8 ETH (\~$200 000) Traded
+- 1 300 / 10 000 Items
+- 557 Owners
+- 0.04 ETH (\~$130) Floor Price
+- 60.8 ETH (\~$200 000) Traded
 
 
 
-So what?
-
-Here's the formula / script to turn all 10 000 original punks into grayscale
+So what?  Here's the formula / script to turn all 10 000 original punks into grayscale
 in less than ten seconds.
 Let's try:
 
