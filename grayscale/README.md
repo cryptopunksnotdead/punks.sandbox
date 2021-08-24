@@ -1,7 +1,7 @@
 # Inside the CryptoPunks Bubble - Greyscale / Grayscale Punks Collection Case Study - Conceptual Art (Parody)? (Get-Rich-Quick) Cash Grab? Greater Fools (Financial) Fraud?
 
 
-Let's have a looksie at the Grey Scale Punks collection:
+Let's have a looksie at the Greyscale Punks collection:
 
 >  AND WE'RE LIVE!
 >
