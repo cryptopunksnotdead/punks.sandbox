@@ -1,7 +1,7 @@
 # Inside the CryptoPunks Bubble - Greyscale / Grayscale Punks Collection Case Study - Conceptual Art (Parody)? (Get-Rich-Quick) Cash Grab? Greater Fools (Financial) Fraud?
 
 
-Let's have a looksie at the Grey Scale Punks collection or is that greater fools get-rich-quick fraud?
+Let's have a looksie at the Grey Scale Punks collection:
 
 >  AND WE'RE LIVE!
 >
@@ -24,8 +24,8 @@ Let's have a looksie at the Grey Scale Punks collection or is that greater fools
 Is this a conceptual art parody? Or is this a (get-rich-quick) cash grab? Or a greater fools (financial) fraud?
 
 
-Let's look at the Greyscale collection on the web, see [**greyscalepunks.com**](https://greyscalepunks.com) - on the Open Sea [digital token market],
-see [**collection/greyscalepunks**](https://opensea.io/collection/greyscalepunks) - or follow updates on Twitter, see [**@greyscalepunks**](https://twitter.com/greyscalepunks).
+Find the Greyscale collection on the web - see [**greyscalepunks.com**](https://greyscalepunks.com) - or on the Open Sea [digital token market] -
+see [**collection/greyscalepunks**](https://opensea.io/collection/greyscalepunks) - or follow updates on Twitter - see [**@greyscalepunks**](https://twitter.com/greyscalepunks).
 
 
 The blurb reads:
@@ -41,9 +41,9 @@ The blurb reads:
 > Each Greyscale Punk created is a 1 of 1, meaning there will never be any duplicates created!
 
 
-As of August/24, 2021  - ten days after launching the analytics summary reads:
+As of August/24, 2021  - about ten days after launching the market analytics summary reads:
 
-- 1 300 / 10 000 Items
+- 1 300 / 10 000 Items 
 - 557 Owners
 - 0.04 ETH (\~$130) Floor Price
 - 60.8 ETH (\~$200 000) Traded
