@@ -59,9 +59,11 @@ punks_grayscale = punks.grayscale
 punks_grayscale.save( "punks_grayscale.png" )
 ```
 
-Voila!
+Voila!  A 10x10 preview:
 
-![](i/punks_grayscale_preview.png)  (a 10x10 preview).  Download [**punks_grayscale.png**](i/punks_grayscale.png) (~800k) for all 10 000 grayscale punks.
+![](i/punks_grayscale_preview.png)
+
+Download [**punks_grayscale.png**](i/punks_grayscale.png) (~800k) for all 10 000 grayscale punks.
 
 
 And let's have a looksie at the first five grayscale punks and let's generate 8x versions.
@@ -91,11 +93,11 @@ Voila!
 
 8x
 
-![](i/punk0_grayscale8x.png)
-![](i/punk1_grayscale8x.png)
-![](i/punk2_grayscale8x.png)
-![](i/punk3_grayscale8x.png)
-![](i/punk4_grayscale8x.png)
+![](i/punk0_grayscalex8.png)
+![](i/punk1_grayscalex8.png)
+![](i/punk2_grayscalex8.png)
+![](i/punk3_grayscalex8.png)
+![](i/punk4_grayscalex8.png)
 
 
 
@@ -109,9 +111,11 @@ punks_sepia.save( "punks_sepia.png" )
 ```
 
 
-Voila!
+Voila!  A 10x10 preview:
 
-![](i/punks_sepia_preview.png)  (a 10x10 preview).  Download [**punks_sepia.png**](i/punks_sepia.png) (~800k) for all ye 10 000 olde' sepia vinatage punks.
+![](i/punks_sepia_preview.png)
+
+Download [**punks_sepia.png**](i/punks_sepia.png) (~800k) for all ye 10 000 olde' sepia vinatage punks.
 
 
 And again let's have a looksie at the first five sepia punks and let's generate 8x versions.
@@ -141,16 +145,17 @@ Voila!
 
 8x
 
-![](i/punk0_sepia8x.png)
-![](i/punk1_sepia8x.png)
-![](i/punk2_sepia8x.png)
-![](i/punk3_sepia8x.png)
-![](i/punk4_sepia8x.png)
+![](i/punk0_sepiax8.png)
+![](i/punk1_sepiax8.png)
+![](i/punk2_sepiax8.png)
+![](i/punk3_sepiax8.png)
+![](i/punk4_sepiax8.png)
 
 
 
 What's Next?
-Let's try a blue color scheme or a false color scheme. Yes, you can.
+Let's try a blue color or a false color scheme or any other 8-bit color scheme.
+Yes, you can.
 
 
 
