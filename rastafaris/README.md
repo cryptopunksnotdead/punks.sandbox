@@ -5,23 +5,21 @@ and let's turn zero-attribute "plain vanilla" punk archetypes
 into cool looking rastas with shades.
 
 
-Let's add the new hair building block ![](i/rastafari-hair.png) to the four archetypes
-(human, zombie, ape, alien)  with the human in the four
-variants (lighter, light, dark, darker)
+Let's add the new hair building block ![](i/rastafari-hair.png) to the four archetypes - 
+human (with the four variants, that is, lighter, light, dark, darker)
 ![](i/design-human-male_lighter.png)
 ![](i/design-human-male_light.png)
 ![](i/design-human-male_dark.png)
-![](i/design-human-male_darker.png)
-and let's add four more archetypes
-(demon, vampire, orc, skeleton) 
-![](i/design-zombie-male.png)
-![](i/design-ape-male.png)
-![](i/design-alien-male.png)
-![](i/design-demon-male.png)
-![](i/design-vampire-male.png)
-![](i/design-orc-male.png)
-![](i/design-skeleton-male.png)
-for fun.
+![](i/design-human-male_darker.png),
+ zombie ![](i/design-zombie-male.png), 
+ ape ![](i/design-ape-male.png), 
+ alien ![](i/design-alien-male.png) - 
+and let's add four more archetype - 
+demon ![](i/design-demon-male.png), 
+vampire ![](i/design-vampire-male.png), 
+orc ![](i/design-orc-male.png), 
+skeleton ![](i/design-skeleton-male.png) -  
+for more fun.
 
 
 ``` ruby
