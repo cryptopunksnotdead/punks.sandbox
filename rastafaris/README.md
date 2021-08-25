@@ -1,26 +1,19 @@
 # Rastafaris Experiment - Cool Rasta Punks with Shades
 
-Here's the experiment - let's use a rastafari hair building block
-and add sun glasses
+Here's the experiment - let's use a rastafari hair building block ![](i/rastafari-hair.png)
 and let's turn zero-attribute "plain vanilla" punk archetypes
 into cool looking rastas with shades.
 
 
-Let's use a rastafari hair build blocking:
-
-![](i/rastafari-hair.png)  4x ![](i/rastafari-hair4x.png)
-
-
-Let's add the new hair building block to the four archetypes
+Let's add the new hair building block ![](i/rastafari-hair.png) to the four archetypes
 (human, zombie, ape, alien)  with the human in the four
 variants (lighter, light, dark, darker)
-and let's add four more archetypes
-(demon, vampire, orc, skeleton) for fun.
-
 ![](i/design-human-male_lighter.png)
 ![](i/design-human-male_light.png)
 ![](i/design-human-male_dark.png)
 ![](i/design-human-male_darker.png)
+and let's add four more archetypes
+(demon, vampire, orc, skeleton) 
 ![](i/design-zombie-male.png)
 ![](i/design-ape-male.png)
 ![](i/design-alien-male.png)
@@ -28,20 +21,7 @@ and let's add four more archetypes
 ![](i/design-vampire-male.png)
 ![](i/design-orc-male.png)
 ![](i/design-skeleton-male.png)
-
-4x
-![](i/design-human-male_lighterx4.png)
-![](i/design-human-male_lightx4.png)
-![](i/design-human-male_darkx4.png)
-![](i/design-human-male_darkerx4.png)
-![](i/design-zombie-malex4.png)
-![](i/design-ape-malex4.png)
-![](i/design-alien-malex4.png)
-![](i/design-demon-malex4.png)
-![](i/design-vampire-malex4.png)
-![](i/design-orc-malex4.png)
-![](i/design-skeleton-malex4.png)
-
+for fun.
 
 
 ``` ruby
