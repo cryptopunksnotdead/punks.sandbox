@@ -14,7 +14,7 @@ human (with the four variants, that is, lighter, light, dark, darker)
  zombie ![](i/design-zombie-male.png), 
  ape ![](i/design-ape-male.png), 
  alien ![](i/design-alien-male.png) - 
-and let's add four more archetype - 
+and let's add four more archetypes - 
 demon ![](i/design-demon-male.png), 
 vampire ![](i/design-vampire-male.png), 
 orc ![](i/design-orc-male.png), 
