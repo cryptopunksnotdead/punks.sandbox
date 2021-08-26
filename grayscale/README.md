@@ -25,7 +25,7 @@ Is this a conceptual art parody? Or is this a (get-rich-quick) cash grab? Or a g
 
 
 Find the Greyscale collection on the web - see [**greyscalepunks.com**](https://greyscalepunks.com) - or on the Open Sea [digital token market] -
-see [**collection/greyscalepunks**](https://opensea.io/collection/greyscalepunks) - or follow updates on Twitter - see [**@greyscalepunks**](https://twitter.com/greyscalepunks).
+see [**collection/greyscalepunks**](https://opensea.io/collection/greyscalepunks) - or follow updates on Twitter - see [**@GreyscalePunks**](https://twitter.com/GreyscalePunks).
 
 
 The blurb reads:
@@ -47,6 +47,35 @@ As of August/24, 2021  - about ten days after launching the market analytics sum
 - 557 Owners
 - 0.04 ETH (\~$130) Floor Price
 - 60.8 ETH (\~$200 000) Traded
+
+
+**Update**
+
+> An new collection titled "Grayscale Punks" (with an A not an E in the word "Greyscale") was minted two days ago claiming to be the original. 
+> Obviously, we have no association with them. Be careful!
+>
+> -- [Greyscale Punks, August 28, 2021](https://twitter.com/GreyscalePunks/status/1430752574022500353)
+>
+> The first 10 #GrayscalePunks are SOLD OUT!
+>
+> YOU GUYS ROCK!
+>
+> You will get your FREE 3D Card art token within 24 hours.
+>
+> Next drop today at 12pm.
+>
+> -- [Grayscale Punks, August 24, 2021](https://twitter.com/GrayscalePunks/status/1430034787901743107)
+
+Find the - yes, original! with fresh punk designs in the original 24x24 format - Grayscale collection on the web - see [**grayscalepunks.com**](https://grayscalepunks.com) - or on the Open Sea [digital token market] -
+see [**collection/grayscale-punks**](https://opensea.io/collection/grayscale-punks) - or follow updates on Twitter - see [**@greyscalepunks**](https://twitter.com/GrayscalePunks).
+
+As of August/26, 2021  - about two days after launching the market analytics summary reads:
+
+- 30 / 999 Items
+- 9 Owners
+- 0.01 ETH (\~$30) Floor Price
+- 0.14 ETH (\~$400) Traded
+
 
 
 
