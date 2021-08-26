@@ -49,7 +49,7 @@ As of August/24, 2021  - about ten days after launching the market analytics sum
 - 60.8 ETH (\~$200 000) Traded
 
 
-**Update**
+**Update (August/26, 2021)**
 
 > An new collection titled "Grayscale Punks" (with an A not an E in the word "Greyscale") was minted two days ago claiming to be the original. 
 > Obviously, we have no association with them. Be careful!
