@@ -11,14 +11,14 @@ Let's have a looksie at the Greyscale Punks collection:
 >>
 >> Absolute MADNESS!
 >>
->>  -- [August 15, 2021]()
+>>  -- [Greyscale Punks, August 15, 2021](https://twitter.com/GreyscalePunks/status/1426705561375191040)
 >
 >
 > RECORD SALE
 >
 > Greyscale Punk #2243 ![](i/punk2243_grayscale.png) just resold for a whopping 1.2 ETH (~$4000)!  4000% profit!
 >
-> -- [August 22, 2021](https://twitter.com/GreyscalePunks/status/1429315962910740481)
+> -- [Greyscale Punks, August 22, 2021](https://twitter.com/GreyscalePunks/status/1429315962910740481)
 
 
 Is this a conceptual art parody? Or is this a (get-rich-quick) cash grab? Or a greater fools (financial) fraud?
