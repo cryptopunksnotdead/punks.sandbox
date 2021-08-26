@@ -51,7 +51,7 @@ As of August/24, 2021  - about ten days after launching the market analytics sum
 
 **Update (August/26, 2021)**
 
-> An new collection titled "Grayscale Punks" (with an A not an E in the word "Greyscale") was minted two days ago claiming to be the original. 
+> A new collection titled "Grayscale Punks" (with an A not an E in the word "Greyscale") was minted two days ago claiming to be the original. 
 > Obviously, we have no association with them. Be careful!
 >
 > -- [Greyscale Punks, August 28, 2021](https://twitter.com/GreyscalePunks/status/1430752574022500353)
@@ -67,7 +67,7 @@ As of August/24, 2021  - about ten days after launching the market analytics sum
 > -- [Grayscale Punks, August 24, 2021](https://twitter.com/GrayscalePunks/status/1430034787901743107)
 
 Find the - yes, original! with fresh punk designs in the original 24x24 format - Grayscale collection on the web - see [**grayscalepunks.com**](https://grayscalepunks.com) - or on the Open Sea [digital token market] -
-see [**collection/grayscale-punks**](https://opensea.io/collection/grayscale-punks) - or follow updates on Twitter - see [**@greyscalepunks**](https://twitter.com/GrayscalePunks).
+see [**collection/grayscale-punks**](https://opensea.io/collection/grayscale-punks) - or follow updates on Twitter - see [**@grayscalepunks**](https://twitter.com/GrayscalePunks).
 
 As of August/26, 2021  - about two days after launching the market analytics summary reads:
 
