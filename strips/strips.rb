@@ -19,6 +19,11 @@ def gen_strip( path )
 end
 
 
+strip = gen_strip( "../../punks.starter/i/no1/punks.png" )
+strip.save( "./tmp/dodge-strip.png" )
+
+
+
 
 strip = gen_strip( "../../programming-cryptopunks/punks.png" )
 strip.save( "./tmp/punks-strip.png" )

@@ -154,8 +154,8 @@ types.each do |key,type|
    dodge.zoom(4).save( "./tmp/#{key}4x.png" )
    dodge.zoom(8).save( "./tmp/#{key}8x.png" )
 
-   # dodge = cutoff_top( dodge )
-   # dodge.save( "./tmp/#{key}_notop.png" )   ## check: change notop to noears or nohead or such or ???
+   dodge = cutoff_top( dodge )
+   dodge.save( "./tmp/#{key}_notop.png" )   ## check: change notop to noears or nohead or such or ???
 end
 
 
