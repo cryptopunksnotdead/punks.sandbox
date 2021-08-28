@@ -245,8 +245,8 @@ Voila!
 8x ![](i/shibainu_sketch8x2.png)
 
 ![](i/kawaiidog_sketch.png)
-4x ![](i/kawiidog_sketch4x.png)
-8x ![](i/kawiidog_sketch8x2.png)
+4x ![](i/kawaiidog_sketch4x.png)
+8x ![](i/kawaiidog_sketch8x2.png)
 
 
 
