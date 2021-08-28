@@ -12,12 +12,12 @@ Let's follow along and let's draw a handmade shiba inu on a computer 24x24 canva
 by hand (that is, by mouse clicking to draw pixels).
 
 
-Start with the an all black (one color) outline:
+Start with the all black (one color) outline:
 
 ![](i/shibainu_outline-pixel.png)
 
 
-If you use the [Punk Pixel Drawing Tool](https://cryptopunksnotdead.github.io/), click on the "Print" button to get the
+If you use the [Punk Pixel Drawing Tool](https://cryptopunksnotdead.github.io/), click on the "↓ Print" button to get the
 pixel matrix in the "ascii" text format.
 Let's cut-n-paste into the pixel art drawing script:
 
@@ -81,7 +81,7 @@ the pixel matrix canvas to:
 
 
 
-Again if you use the [Punk Pixel Drawing Tool](https://cryptopunksnotdead.github.io/) click on the "Print" button to get the
+Again if you use the [Punk Pixel Drawing Tool](https://cryptopunksnotdead.github.io/) click on the "↓ Print" button to get the
 pixel matrix in the "ascii" text format.
 Let's again cut-n-paste into the pixel art drawing script:
 
@@ -126,20 +126,19 @@ Voila!
 
 
 
-Day 2  - Let's watch the
-[How To Draw Kawaii Dog - Handmade Pixel Art
-video (7:32)](https://www.youtube.com/c/HelloPixelArt/videos) from the Hello Pixel Art series by Garbi Kw:
+## Day 2 
 
 ![](i/youtube-hellopxielart.png)
 
-
-
+Let's watch the
+[How To Draw Kawaii Dog - Handmade Pixel Art
+video (7:32)](https://www.youtube.com/c/HelloPixelArt/videos) from the Hello Pixel Art series by Garbi Kw.
 Yes, you can.
 Let's again follow along and let's draw a handmade kawaii dog on a computer 24x24 canvas
 by hand (that is, by mouse clicking to draw pixels).
 
 
-If you use the [Punk Pixel Drawing Tool](https://cryptopunksnotdead.github.io/), click on the "Print" button to get the
+If you use the [Punk Pixel Drawing Tool](https://cryptopunksnotdead.github.io/), click on the "↓ Print" button to get the
 pixel matrix in the "ascii" text format.
 Let's cut-n-paste into the pixel art drawing script:
 
