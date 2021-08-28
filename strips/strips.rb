@@ -19,9 +19,20 @@ def gen_strip( path )
 end
 
 
-strip = gen_strip( "../../punks.starter/i/no1/punks.png" )
+
+
+strip = gen_strip( "../../programming-cryptopunks/i/dodge.png" )
 strip.save( "./tmp/dodge-strip.png" )
 
+
+strip = gen_strip( "../../programming-cryptopunks/i/punkrocks.png" )
+strip.save( "./tmp/punkrocks-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/rocks.png" )
+strip.save( "./tmp/rocks-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/tulips.png" )
+strip.save( "./tmp/tulips-strip.png" )
 
 
 
@@ -78,11 +89,6 @@ strip = gen_strip( "../aliens/i/aliens_red.png" )
 strip.save( "./tmp/aliens_red-strip.png" )
 
 
-strip = gen_strip( "../../programming-cryptopunks/i/punkrocks.png" )
-strip.save( "./tmp/punkrocks-strip.png" )
-
-strip = gen_strip( "../../awesome-24px/i/tulips.png" )
-strip.save( "./tmp/tulips-strip.png" )
 
 
 strip = gen_strip( "../../../cryptocopycats/awesome-mooncatrescue-bubble/i/mooncatrescue.png" )
