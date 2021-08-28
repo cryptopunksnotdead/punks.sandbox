@@ -1,15 +1,12 @@
 # How to Draw Shiba Inu or Kawaii Dog - Handmade (24x24) Pixel Art
 
 
-Let's watch the
-the [How to Draw Shiba Inu - Handmade Pixel Art
-video (6:20)](https://www.youtube.com/c/Pixelo/videos) from the Pixel Art series by Pixelo:
-
-
 ![](i/youtube-pixelo.png)
 
 
-
+Let's watch the
+the [How to Draw Shiba Inu - Handmade Pixel Art
+video (6:20)](https://www.youtube.com/c/Pixelo/videos) from the Pixel Art series by Pixelo.
 Yes, you can.
 Let's follow along and let's draw a handmade shiba inu on a computer 24x24 canvas
 by hand (that is, by mouse clicking to draw pixels).
