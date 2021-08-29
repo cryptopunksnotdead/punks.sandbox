@@ -8,16 +8,20 @@ require 'cryptopunks'
 
 
 
-def gen_strip( path )
+def gen_strip( path, offset: 0 )
   punks = Punks::Image::Composite.read( path )
 
   strip = ImageComposite.new( 9, 1 )
-  (0..8).each do |id|
+
+  (offset..offset+8).each do |id|
     strip << punks[id]
   end
   strip
 end
 
+
+strip = gen_strip( "../../awesome-24px/collection/avalanchepunks.png", offset: 13 )
+strip.save( "./tmp/avalanchepunks-strip.png" )
 
 
 
