@@ -61,7 +61,7 @@ designs.each do |design|
 end
 
 
-design = <<TXT
+hair = Image.parse( <<TXT, colors: ['D0AA29'] )
 . . @ @ @ @ @ @ @ . .
 . @ @ @ @ @ @ @ @ @ .
 @ @ @ @ @ @ @ @ @ @ @
@@ -70,8 +70,9 @@ design = <<TXT
 @ . . . . . . . . . @
 TXT
 
-hair_light = Image.parse( design, colors: ['F5C10D'] )
-hair_dark  = Image.parse( design, colors: ['970202'] )
+hair.save( './i/hair.png' )
+hair.zoom(4).save( './i/hair4x.png' )
+
 
 
 
@@ -81,13 +82,6 @@ designs.each do |design|
   punk[4,12] = 0   if design == 'alien-male'   ## quick hack/fix for alien ear
 
   punk.compose!( headphone, 4, 4 )
-
-  hair = if ['human-male!lighter', 'human-male!light', 'alien-male'].include?( design)
-           hair_light
-         else
-           hair_dark
-         end
-
   punk.compose!( hair, 6, 5 )
 
   name = design.sub( '!', '_')   ## note: change human-male!lighter to human-male_lighter

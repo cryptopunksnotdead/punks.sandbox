@@ -93,7 +93,7 @@ Voila!
 
 
 
-Let's add hair (light / dark) ![](i/hair_light.png) ![](i/hair_dark.png).
+Let's add hair ![](i/hair.png).
 Voila!
 
 ![](i/punk_headphone_ii-human-male_lighter.png)
