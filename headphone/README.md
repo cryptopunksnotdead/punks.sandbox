@@ -29,7 +29,7 @@ headphone.zoom(4).save( 'headphone4x.png' )
 
 Voila!
 
-![](i/headphone.png) 4x ![](headpone4x.png)
+![](i/headphone.png) 4x ![](i/headphone4x.png)
 
 
 
@@ -40,9 +40,9 @@ on the punk archetypes
 ![](i/design-human-male_light.png)
 ![](i/design-human-male_dark.png)
 ![](i/design-human-male_darker.png)
-![](i/design-zombie_male.png)
-![](i/design-ape_male.png)
-![](i/design-alien_male.png):
+![](i/design-zombie-male.png)
+![](i/design-ape-male.png)
+![](i/design-alien-male.png):
 
 
 ``` ruby
@@ -77,18 +77,18 @@ Voila!
 ![](i/punk_headphone-human-male_light.png)
 ![](i/punk_headphone-human-male_dark.png)
 ![](i/punk_headphone-human-male_darker.png)
-![](i/punk_headphone-zombie_male.png)
-![](i/punk_headphone-ape_male.png)
-![](i/punk_headphone-alien_male.png)
+![](i/punk_headphone-zombie-male.png)
+![](i/punk_headphone-ape-male.png)
+![](i/punk_headphone-alien-male.png)
 
 4x
 ![](i/punk_headphone-human-male_lighterx4.png)
 ![](i/punk_headphone-human-male_lightv.png)
 ![](i/punk_headphone-human-male_darkx4.png)
 ![](i/punk_headphone-human-male_darkerx4.png)
-![](i/punk_headphone-zombie_malex4.png)
-![](i/punk_headphone-ape_malex4.png)
-![](i/punk_headphone-alien_malex4.png)
+![](i/punk_headphone-zombie-malex4.png)
+![](i/punk_headphone-ape-malex4.png)
+![](i/punk_headphone-alien-malex4.png)
 
 
 
@@ -100,18 +100,18 @@ Voila!
 ![](i/punk_headphone_ii-human-male_light.png)
 ![](i/punk_headphone_ii-human-male_dark.png)
 ![](i/punk_headphone_ii-human-male_darker.png)
-![](i/punk_headphone_ii-zombie_male.png)
-![](i/punk_headphone_ii-ape_male.png)
-![](i/punk_headphone_ii-alien_male.png)
+![](i/punk_headphone_ii-zombie-male.png)
+![](i/punk_headphone_ii-ape-male.png)
+![](i/punk_headphone_ii-alien-male.png)
 
 4x
 ![](i/punk_headphone_ii-human-male_lighterx4.png)
 ![](i/punk_headphone_ii-human-male_lightv.png)
 ![](i/punk_headphone_ii-human-male_darkx4.png)
 ![](i/punk_headphone_ii-human-male_darkerx4.png)
-![](i/punk_headphone_ii-zombie_malex4.png)
-![](i/punk_headphone_ii-ape_malex4.png)
-![](i/punk_headphone_ii-alien_malex4.png)
+![](i/punk_headphone_ii-zombie-malex4.png)
+![](i/punk_headphone_ii-ape-malex4.png)
+![](i/punk_headphone_ii-alien-malex4.png)
 
 
 
