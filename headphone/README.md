@@ -83,7 +83,7 @@ Voila!
 
 4x
 ![](i/punk_headphone-human-male_lighterx4.png)
-![](i/punk_headphone-human-male_lightv.png)
+![](i/punk_headphone-human-male_lightx4.png)
 ![](i/punk_headphone-human-male_darkx4.png)
 ![](i/punk_headphone-human-male_darkerx4.png)
 ![](i/punk_headphone-zombie-malex4.png)
@@ -106,7 +106,7 @@ Voila!
 
 4x
 ![](i/punk_headphone_ii-human-male_lighterx4.png)
-![](i/punk_headphone_ii-human-male_lightv.png)
+![](i/punk_headphone_ii-human-male_lightx4.png)
 ![](i/punk_headphone_ii-human-male_darkx4.png)
 ![](i/punk_headphone_ii-human-male_darkerx4.png)
 ![](i/punk_headphone_ii-zombie-malex4.png)
