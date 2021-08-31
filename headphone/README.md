@@ -115,6 +115,71 @@ Voila!
 
 
 
+
+
+
+Let's try a different design
+inspired by
+[Legion Punks on Solana](https://legionpunks.com/)
+and let's design a headphone and hair all-in-one combo from scratch:
+
+
+
+``` ruby
+headphone_ii = Image.parse( <<TXT, colors: ['292B2E', 'A61121'] )
+. . . . . @ @ @ @ @ . . . . .
+. . . @ @ @ x x x x @ @ . . .
+. . @ @ x x x x x x x x @ . .
+. @ @ x x . . . . . . x x @ .
+. @ x x . . . . . . . . x @ .
+. @ x . . . . . . . . . x @ .
+@ @ x x . . . . . . . . x @ @
+@ @ @ x . . . . . . . . x x @
+@ @ @ x . . . . . . . . x x @
+@ @ @ x . . . . . . . . x x @
+. @ @ . . . . . . . . . . @ .
+TXT
+
+headphone_ii.save( 'headphone_ii.png' )
+headphone_ii.zoom(4).save( 'headphone_ii4x.png' )
+```
+
+Voila!
+
+![](i/headphone_ii.png) 4x ![](i/headphone_ii4x.png)
+
+
+And again let's try the headphone + hair combo ![](i/headphone_ii.png)
+on the punk archetypes
+![](i/design-human-male_lighter.png)
+![](i/design-human-male_light.png)
+![](i/design-human-male_dark.png)
+![](i/design-human-male_darker.png)
+![](i/design-zombie-male.png)
+![](i/design-ape-male.png)
+![](i/design-alien-male.png).
+
+Voila!
+
+![](i/punk_headphone_iii-human-male_lighter.png)
+![](i/punk_headphone_iii-human-male_light.png)
+![](i/punk_headphone_iii-human-male_dark.png)
+![](i/punk_headphone_iii-human-male_darker.png)
+![](i/punk_headphone_iii-zombie-male.png)
+![](i/punk_headphone_iii-ape-male.png)
+![](i/punk_headphone_iii-alien-male.png)
+
+4x
+![](i/punk_headphone_iii-human-male_lighterx4.png)
+![](i/punk_headphone_iii-human-male_lightx4.png)
+![](i/punk_headphone_iii-human-male_darkx4.png)
+![](i/punk_headphone_iii-human-male_darkerx4.png)
+![](i/punk_headphone_iii-zombie-malex4.png)
+![](i/punk_headphone_iii-ape-malex4.png)
+![](i/punk_headphone_iii-alien-malex4.png)
+
+
+
 That's it.  Now design and try your own attributes.
 Yes, you can!
 

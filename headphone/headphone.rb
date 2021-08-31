@@ -91,4 +91,44 @@ designs.each do |design|
 end
 
 
+
+
+
+####
+# design variant - headphone + hair (all-in-one) combo
+
+headphone_ii = Image.parse( <<TXT, colors: ['292B2E', 'A61121'] )
+. . . . . @ @ @ @ @ . . . . .
+. . . @ @ @ x x x x @ @ . . .
+. . @ @ x x x x x x x x @ . .
+. @ @ x x . . . . . . x x @ .
+. @ x x . . . . . . . . x @ .
+. @ x . . . . . . . . . x @ .
+@ @ x x . . . . . . . . x @ @
+@ @ @ x . . . . . . . . x x @
+@ @ @ x . . . . . . . . x x @
+@ @ @ x . . . . . . . . x x @
+. @ @ . . . . . . . . . . @ .
+TXT
+
+headphone_ii.save( './i/headphone_ii.png' )
+headphone_ii.zoom(4).save( './i/headphone_ii4x.png' )
+
+
+
+designs.each do |design|
+  punk = Punks::Image.new( design: design )
+
+  punk.compose!( headphone_ii, 4, 5 )
+
+  name = design.sub( '!', '_')   ## note: change human-male!lighter to human-male_lighter
+
+  punk.save( "./i/punk_headphone_iii-#{name}.png" )
+  punk.zoom(4).save( "./i/punk_headphone_iii-#{name}x4.png" )
+end
+
+
+
+
+
 puts "bye"
