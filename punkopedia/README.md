@@ -80,21 +80,17 @@ Sample Draft Page - Work-In-Progress
 
 
 ![](i/human-male_spec.png)
-
-</td>
-<td markdown="1" style="vertical-align: top;">
-
 ![](i/human-male_sketch.png)
 
 
 
 | 5 Colors | 191 Pixel(s)|
 |------|------|
-| \#1 (`@`) - BLACK | ![](i/human-male_color1.png) (55)  |
-|  \#2 (`x`) | ![](i/human-male_color2.png) (4)   |
-|  \#3 (`o`) | ![](i/human-male_color3.png) (2)   |
-|  \#4 (`^`) | ![](i/human-male_color4.png) (128)   |
-|  \#5 (`~`) | ![](i/human-male_color5.png) (2)  |
+| \#1  - BLACK | ![](i/human-male_color1.png) (55)  |
+|  \#2  | ![](i/human-male_color2.png) (4)   |
+|  \#3  | ![](i/human-male_color3.png) (2)   |
+|  \#4  | ![](i/human-male_color4.png) (128)   |
+|  \#5  | ![](i/human-male_color5.png) (2)  |
 
 ¹: From darkest (black) to lightest (white)
 
