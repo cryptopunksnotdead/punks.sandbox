@@ -221,14 +221,14 @@ end
 ## number colors - by darkness to lightness (color 1, color 2, )
 
 ## note: black - 000, white - fff
-usage_sorted = usage.sort do |l,r|
+COLOR_USAGE_SORTED = usage.sort do |l,r|
                   res =  l[0] <=> r[0]               # first by black-ness/white-ness (darker/lighter)
                   res =  r[1] <=> l[1]  if res == 0  # second by count reversed
                   res
               end
-pp usage_sorted
+pp COLOR_USAGE_SORTED
 
-usage_sorted.each_with_index do |rec,i|
+COLOR_USAGE_SORTED.each_with_index do |rec,i|
     print "   color #{i+1} - #{rec[1]} pixel(s)"
     print  "  (black)"  if rec[0] == 0xff       # note: color includes alpha channel!!!
     print  "  (white)"  if rec[0] == 0xffffffff
@@ -246,6 +246,18 @@ HUMAN_COLORS.each do |key, colors|
   punk = Image.parse( design, colors: colors )
   punk.save( "tmp/human-male_#{key}.png" )
   punk.zoom(4).save( "tmp/human-male_#{key}4x.png" )
+
+
+  puts "colors #{key}:"
+
+  colors.each do |color|
+     puts "  #{Color.format( Color.parse(color))}"
+  end
+
+  COLOR_USAGE_SORTED.each_with_index do |rec,i|
+    bar = pixelbar( colors[i], rec[1] )
+    bar.save( "i/human-male_#{key}_color#{i+1}.png" )
+  end
 end
 
 
