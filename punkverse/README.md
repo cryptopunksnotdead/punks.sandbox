@@ -15,7 +15,7 @@ Sample Draft Page - Work-In-Progress
 ![](i/human-male_spec.png)  ![](i/human-male_sketch.png)
 
 
-|191 Pixel(s)| Color \#¹|
+|191 Pixel(s)| 5 Colors|
 |------|------|
 | ![](i/human-male_color1.png) (55) | \#1 (black) |
 | ![](i/human-male_color2.png) (4)  |  \#2  |
