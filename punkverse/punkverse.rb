@@ -255,7 +255,10 @@ HUMAN_COLORS.each do |key, colors|
   end
 
   COLOR_USAGE_SORTED.each_with_index do |rec,i|
-    bar = pixelbar( Color.parse(colors[i]), rec[1] )
+    color = colors[i]
+    color = Color.parse( color )   if color.is_a?( String )
+    puts "  #{i+1}  #{rec[1]} pixel(s) #{Color.format(color)}"
+    bar = pixelbar( color, rec[1] )
     bar.save( "i/human-male_#{key}_color#{i+1}.png" )
   end
 end
