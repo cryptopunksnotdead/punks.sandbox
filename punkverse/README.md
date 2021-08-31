@@ -32,12 +32,18 @@ Variants
 Lighter  ![](i/human-male_lighter.png) ![](i/human-male_lighter4x.png)
 
 1.  #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%)           - BLACK
+2.  #a58d8d / rgb(165 141 141) - hsl(  0°  12%  60%)
+3.  #c9b2b2 / rgb(201 178 178) - hsl(  0°  18%  74%)
+4.  #ead9d9 / rgb(234 217 217) - hsl(  0°  29%  88%)
+5.  #ffffff / rgb(255 255 255) - hsl(  0°   0% 100%)           - WHITE
+
+Light  ![](i/human-male_light.png) ![](i/human-male_lighter4x.png)
+
+1.  #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%)           - BLACK
 2.  #a66e2c / rgb(166 110  44) - hsl( 32°  58%  41%)
 3.  #d29d60 / rgb(210 157  96) - hsl( 32°  56%  60%)
 4.  #dbb180 / rgb(219 177 128) - hsl( 32°  56%  68%)
 5.  #e7cba9 / rgb(231 203 169) - hsl( 33°  56%  78%)
-
-Light  ![](i/human-male_light.png) ![](i/human-male_lighter4x.png)
 
 Dark   ![](i/human-male_dark.png) ![](i/human-male_dark4x.png)
 
