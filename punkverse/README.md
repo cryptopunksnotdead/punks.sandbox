@@ -29,15 +29,38 @@ Sample Draft Page - Work-In-Progress
 
 Variants
 
-Lighter  ![](i/human-male_lighter.png) ![](i/human-male_lighter4x.png)
+Lighter  ![](i/human-male_lighter.png) 
 
+
+<table width="100%">
+<tr>
+<td markdown="1" style="vertical-align: top;">
+
+![](i/human-male_lighter4x.png)
+
+</td>
+<td markdown="1" style="vertical-align: top;">  
+  
 1.  #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%)           - BLACK
 2.  #a58d8d / rgb(165 141 141) - hsl(  0°  12%  60%)
 3.  #c9b2b2 / rgb(201 178 178) - hsl(  0°  18%  74%)
 4.  #ead9d9 / rgb(234 217 217) - hsl(  0°  29%  88%)
 5.  #ffffff / rgb(255 255 255) - hsl(  0°   0% 100%)           - WHITE
 
-Light  ![](i/human-male_light.png) ![](i/human-male_lighter4x.png)
+</td>
+</tr>  
+
+  
+Light  ![](i/human-male_light.png) 
+
+<table width="100%">
+<tr>
+<td markdown="1" style="vertical-align: top;">
+  
+![](i/human-male_lighter4x.png)
+
+</td>
+<td markdown="1" style="vertical-align: top;">  
 
 1.  #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%)           - BLACK
 2.  #a66e2c / rgb(166 110  44) - hsl( 32°  58%  41%)
@@ -45,6 +68,9 @@ Light  ![](i/human-male_light.png) ![](i/human-male_lighter4x.png)
 4.  #dbb180 / rgb(219 177 128) - hsl( 32°  56%  68%)
 5.  #e7cba9 / rgb(231 203 169) - hsl( 33°  56%  78%)
 
+</td>
+</tr>  
+    
 Dark   ![](i/human-male_dark.png) ![](i/human-male_dark4x.png)
 
 Darker  ![](i/human-male_darker.png) ![](i/human-male_darker4x.png)
