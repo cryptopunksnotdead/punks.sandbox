@@ -117,6 +117,7 @@ Voila!
 
 
 
+## Day 2
 
 Let's try a different design
 inspired by
