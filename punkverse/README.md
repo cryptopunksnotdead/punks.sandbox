@@ -48,7 +48,8 @@ Lighter  ![](i/human-male_lighter.png)
 5.  #ffffff / rgb(255 255 255) - hsl(  0°   0% 100%)           - WHITE
 
 </td>
-</tr>  
+</tr> 
+</table>
 
   
 Light  ![](i/human-male_light.png) 
@@ -70,6 +71,7 @@ Light  ![](i/human-male_light.png)
 
 </td>
 </tr>  
+</table>
     
 Dark   ![](i/human-male_dark.png) ![](i/human-male_dark4x.png)
 
