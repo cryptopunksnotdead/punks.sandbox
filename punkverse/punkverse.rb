@@ -160,10 +160,10 @@ punk.zoom(8).save( "tmp/punk8x.png" )
 
 
 punk_sketch = punk.sketch( 8, line: 2 )
-punk_sketch.save( 'tmp/punk_sketch8x2.png' )
+punk_sketch.save( 'tmp/human-male_sketch.png' )
 
 punk_spec   = punk.design_spec( 8, spacing: 2, transparent: 2 )
-punk_spec.save( 'tmp/punk_spec8x2.png' )
+punk_spec.save( 'tmp/human-male_spec.png' )
 
 
 
@@ -189,18 +189,35 @@ usage = calc_color_usage( punk_grayscale )
 ## note: assume transparent (0) is always present for now
 usage_count = usage.reduce(0) { |total, (color,count)| total += count; total }
 puts  "  #{usage_count} of #{punk.width*punk.height} pixels"
-puts  "  #{usage.size} color(s):"
+puts  "  #{usage.size} color(s) - from darkest (black) to lightest (white):"
 
 
 ## number colors - by darkness to lightness (color 1, color 2, )
 
 ## note: black - 000, white - fff
 usage_sorted = usage.sort do |l,r|
-                               res =  r[1] <=> l[1]               # first by count reversed
-                               res =  r[0] <=> l[0]  if res == 0  # second by black-ness/white-ness (darker/lighter)
-                               res
-                          end
+                  res =  l[0] <=> r[0]               # first by black-ness/white-ness (darker/lighter)
+                  res =  r[1] <=> l[1]  if res == 0  # second by count reversed
+                  res
+              end
 pp usage_sorted
+
+usage_sorted.each_with_index do |rec,i|
+    print "   color #{i+1} - #{rec[1]} pixel(s)"
+    print  "  (black)"  if rec[0] == 0xff       # note: color includes alpha channel!!!
+    print  "  (white)"  if rec[0] == 0xffffffff
+    print "\n"
+end
+
+
+## add variants with color samples
+
+HUMAN_COLORS.each do |key, colors|
+  punk = Image.parse( design, colors: colors )
+  punk.save( "tmp/human-male_#{key}.png" )
+  punk.zoom(4).save( "tmp/human-male_#{key}4x.png" )
+end
+
 
 
 puts
