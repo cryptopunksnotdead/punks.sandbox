@@ -1,10 +1,8 @@
 # Headphone -  Attribute of the Day  -  Punk w/ Headphone
 
 
-Let's get inspired by
-[Bit Punk! #062 on Cardano](https://bitpunkcardano.com/bit/062/)
+Let's get inspired by [Bit Punk! on Cardano](https://bitpunkcardano.com) - see [#062](https://bitpunkcardano.com/bit/062/) - 
 and let's design headphones from scratch:
-
 
 
 ``` ruby
