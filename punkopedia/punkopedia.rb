@@ -1,6 +1,6 @@
 ###
 #  generate pixel matrix (grayscale) and pencil black sketch drawing
-#    for punkverse - punk universe encyclopedia
+#    for punkopedia - punk universe encyclopedia
 
 $LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
