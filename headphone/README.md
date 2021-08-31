@@ -119,8 +119,7 @@ Voila!
 
 ## Day 2
 
-Let's try a different design
-inspired by
+Let's get inspired by
 [Legion Punks on Solana](https://legionpunks.com/)
 and let's design a headphone and hair all-in-one combo from scratch:
 
