@@ -192,6 +192,32 @@ puts  "  #{usage_count} of #{punk.width*punk.height} pixels"
 puts  "  #{usage.size} color(s) - from darkest (black) to lightest (white):"
 
 
+
+def pixelbar( color, count )
+   zoom = 4
+   spacing = 1
+
+   row = count >= 24 ? 24 : count
+   col = (count / 24) + 1
+   width  =   row * zoom + (row-1)*spacing
+   height =   col * zoom + (col-1)*spacing
+
+   img = Image.new( width, height, Color::WHITE )
+
+   count.times do |i|
+     y, x = i.divmod( 24 )
+     zoom.times do |n|
+       zoom.times do |m|
+         img[x*zoom+n + spacing*x,
+             y*zoom+m + spacing*y] = color
+       end
+     end
+   end
+
+  img
+end
+
+
 ## number colors - by darkness to lightness (color 1, color 2, )
 
 ## note: black - 000, white - fff
@@ -207,6 +233,10 @@ usage_sorted.each_with_index do |rec,i|
     print  "  (black)"  if rec[0] == 0xff       # note: color includes alpha channel!!!
     print  "  (white)"  if rec[0] == 0xffffffff
     print "\n"
+
+## create pixelbar in rows of 24
+   bar = pixelbar( rec[0], rec[1] )
+   bar.save( "tmp/human-male_color#{i+1}.png" )
 end
 
 
