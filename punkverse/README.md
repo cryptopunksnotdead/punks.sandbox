@@ -41,7 +41,7 @@ Lighter  ![](i/human-male_lighter.png)
 <td markdown="1" style="vertical-align: top;">
 
 1. ![](i/human-male_lighter_color1.png) (55)   #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%)           - BLACK
-2. ![](i/human-male_lighher_color2.png) (4)  #a58d8d / rgb(165 141 141) - hsl(  0°  12%  60%)
+2. ![](i/human-male_lighter_color2.png) (4)  #a58d8d / rgb(165 141 141) - hsl(  0°  12%  60%)
 3. ![](i/human-male_lighter_color3.png) (2)  #c9b2b2 / rgb(201 178 178) - hsl(  0°  18%  74%)
 4. ![](i/human-male_lighter_color4.png) (128)  #ead9d9 / rgb(234 217 217) - hsl(  0°  29%  88%)
 5. ![](i/human-male_lighter_color5.png) (2)   #ffffff / rgb(255 255 255) - hsl(  0°   0% 100%)           - WHITE
