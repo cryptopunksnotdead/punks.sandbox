@@ -14,15 +14,17 @@ Sample Draft Page - Work-In-Progress
 
 ![](i/human-male_spec.png)  ![](i/human-male_sketch.png)
 
-191 pixels in 5 color(s) - from darkest (black) to lightest (white):
 
-|Pixel(s)| Color \#|
+|191 Pixel(s)| Color \#¹|
 |------|------|
-| ![](i/human-male_color1.png) 55 | \#1 (black) |
-| ![](i/human-male_color2.png) 4  |  \#2  |
-| ![](i/human-male_color3.png) 2  |  \#3  |  
-| ![](i/human-male_color4.png) 128  |  \#4 | 
-| ![](i/human-male_color5.png) 2  |  \#5 |  
+| ![](i/human-male_color1.png) (55) | \#1 (black) |
+| ![](i/human-male_color2.png) (4)  |  \#2  |
+| ![](i/human-male_color3.png) (2)  |  \#3  |  
+| ![](i/human-male_color4.png) (128)  |  \#4 | 
+| ![](i/human-male_color5.png) (2)  |  \#5 |  
+
+¹: From darkest (black) to lightest (white)
+
 
 
 Variants
