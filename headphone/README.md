@@ -128,8 +128,8 @@ and let's design a headphone and hair all-in-one combo from scratch:
 
 ``` ruby
 headphone_ii = Image.parse( <<TXT, colors: ['292B2E', 'A61121'] )
-. . . . . @ @ @ @ @ . . . . .
-. . . @ @ @ x x x x @ @ . . .
+. . . . @ @ @ @ @ @ @ . . . .
+. . . @ @ x x x x x x @ . . .
 . . @ @ x x x x x x x x @ . .
 . @ @ x x . . . . . . x x @ .
 . @ x x . . . . . . . . x @ .

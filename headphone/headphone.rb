@@ -98,8 +98,8 @@ end
 # design variant - headphone + hair (all-in-one) combo
 
 headphone_ii = Image.parse( <<TXT, colors: ['292B2E', 'A61121'] )
-. . . . . @ @ @ @ @ . . . . .
-. . . @ @ @ x x x x @ @ . . .
+. . . . @ @ @ @ @ @ @ . . . .
+. . . @ @ x x x x x x @ . . .
 . . @ @ x x x x x x x x @ . .
 . @ @ x x . . . . . . x x @ .
 . @ x x . . . . . . . . x @ .
