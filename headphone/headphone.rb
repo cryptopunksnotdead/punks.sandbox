@@ -98,8 +98,8 @@ end
 # design variant - headphone + hair (all-in-one) combo
 
 headphone_ii = Image.parse( <<TXT, colors: ['292B2E', 'A61121'] )
-. . . . @ @ @ @ @ @ @ . . . .
-. . . @ @ x x x x x x @ . . .
+. . . . . @ @ @ @ @ . . . . .
+. . . @ @ @ x x x x @ @ . . .
 . . @ @ x x x x x x x x @ . .
 . @ @ x x . . . . . . x x @ .
 . @ x x . . . . . . . . x @ .
@@ -119,7 +119,7 @@ headphone_ii.zoom(4).save( './i/headphone_ii4x.png' )
 designs.each do |design|
   punk = Punks::Image.new( design: design )
 
-  punk.compose!( headphone_ii, 4, 5 )
+  punk.compose!( headphone_ii, 4, 4 )
 
   name = design.sub( '!', '_')   ## note: change human-male!lighter to human-male_lighter
 
