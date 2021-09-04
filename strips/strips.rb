@@ -8,10 +8,13 @@ require 'cryptopunks'
 
 
 
-def gen_strip( path, offset: 0 )
-  punks = Punks::Image::Composite.read( path )
+def gen_strip( path, offset: 0,
+                     width: 24, height: 24 )
+  punks = Punks::Image::Composite.read( path,
+                                        width: width, height: height )
 
-  strip = ImageComposite.new( 9, 1 )
+  strip = ImageComposite.new( 9, 1,
+                              width: width, height: height )
 
   (offset..offset+8).each do |id|
     strip << punks[id]
@@ -20,8 +23,31 @@ def gen_strip( path, offset: 0 )
 end
 
 
-strip = gen_strip( "../../awesome-24px/collection/boredapes.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes_au.png", width: 28, height: 28 )
+strip.save( "./tmp/boredapes_au-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes_red.png", width: 28, height: 28 )
+strip.save( "./tmp/boredapes_red-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes_blue.png", width: 28, height: 28 )
+strip.save( "./tmp/boredapes_blue-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes_acid.png", width: 28, height: 28 )
+strip.save( "./tmp/boredapes_acid-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes_stars_and_stripes.png", width: 28, height: 28 )
+strip.save( "./tmp/boredapes_stars_and_strips-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes_neon_glow.png", width: 28, height: 28 )
+strip.save( "./tmp/boredapes_neon_glow-strip.png" )
+
+
+
+
+strip = gen_strip( "../../awesome-24px/collection/boredapes.png", width: 28, height: 28 )
 strip.save( "./tmp/boredapes-strip.png" )
+
 
 strip = gen_strip( "../../awesome-24px/collection/coolcats.png" )
 strip.save( "./tmp/coolcats-strip.png" )

@@ -9,7 +9,11 @@ module Cryptopunks
       Digest::SHA256.digest( data ).unpack( 'H*' )[0]
     end
 
-    def self.read( path='./punks.png' )
+
+    PUNK_HEIGHT = 24
+    PUNK_WIDTH  = 24
+
+    def self.read( path='./punks.png', width: PUNK_WIDTH, height: PUNK_HEIGHT )
       data = File.open( path, 'rb' ) { |f| f.read }
 
       hexdigest = sha256( data )   ## check sha256 checksum
@@ -21,12 +25,9 @@ module Cryptopunks
       end
 
       img = ChunkyPNG::Image.from_blob( data )
-      new( img )
+      new( img, width: width, height: height )
     end
 
-
-    PUNK_HEIGHT = 24
-    PUNK_WIDTH  = 24
 
     def initialize( *args, width:  PUNK_WIDTH,
                            height: PUNK_HEIGHT )
