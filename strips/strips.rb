@@ -24,6 +24,31 @@ end
 
 
 
+strip = gen_strip( "../../awesome-24px/collection/coolcats_dragons.png" )
+strip.save( "./tmp/coolcats_dragons-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/coolcats_frogs.png" )
+strip.save( "./tmp/coolcats_frogs-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/coolcats_mohawks.png" )
+strip.save( "./tmp/coolcats_mohawks-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/coolcats_ninjas.png" )
+strip.save( "./tmp/coolcats_ninjas-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/coolcats_pirates.png" )
+strip.save( "./tmp/coolcats_pirates-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/coolcats_tvheads.png" )
+strip.save( "./tmp/coolcats_tvheads-strip.png" )
+
+strip = gen_strip( "../../awesome-24px/collection/coolcats_unicorns.png" )
+strip.save( "./tmp/coolcats_unicorns-strip.png" )
+
+
+
+__END__
+
 strip = gen_strip( "../../awesome-24px/collection/boredapes_au.png", width: 28, height: 28 )
 strip.save( "./tmp/boredapes_au-strip.png" )
 
