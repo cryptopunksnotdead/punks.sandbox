@@ -3,10 +3,10 @@
 
 Let's build 8x8 pixel art avatars from scratch
 inspired by the Blockheads [Video] Game (Anno 2013)
-that featured avatars known as - surprise, surprise - blockheads.
+that featured "randomized" avatars known as - surprise, surprise - blockheads.
 
 
-Let's use [Blockheads - The Guide to Boy Skins](https://forums.theblockheads.net/t/the-guide-to-boy-skins/6964)
+Let's use [Blockheads - The Guide to 70 Boy Skins (Anno 2013)](https://forums.theblockheads.net/t/the-guide-to-boy-skins/6964)
 to get started.
 
 
