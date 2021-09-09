@@ -655,6 +655,245 @@ are encoded in 189 bytes, that is, 63 pixel blocks.
 ## Step 2 -  Save the Assets from #1 Male 1 to #133 Silver Chain into Ready-to-(Re)Use 24x24 Images
 
 
+Next let's decode the color palette.
+What's COLOR 1? What's COLOR 38?
+
+
+The very first CryptoPunksData transaction reads:
+
+```
+  setPalette(
+    0x000000ff 713f1dff 8b532cff 562600ff 723709ff...
+      ae8b61ff b69f82ff 86581eff a77c47ff dbb180ff...
+      e7cba9ff a66e2cff d29d60ff ead9d9ff ffffffff...
+      a58d8dff c9b2b2ff 4a1201ff 5f1d09ff 711010ff...
+      7da269ff 9bbc88ff 5e7253ff ff0000ff 352410ff...
+      856f56ff 6a563fff a98c6bff c8fbfbff 9be0e0ff...
+      f1ffffff 75bdbdff d6000033 692f08ff 28b143ff...
+      794b11ff 502f05ff 00000099 d60000ff c6c6c6ff...
+      dedede80 e25b26ff 80dbdaff ca4e11ff 933709ff...
+      0000004d 86581e4d 353535ff 515151ff 221e1766...
+      710cc7ff 00000091 5c390fff c77514ff 595959ff...
+      0040ffff dfdfdfff 8c0d5bff 690c45ff ad2160ff...
+      555555ff 0060c3ff e4eb17ff 3cc300ff d60404ff...
+      8119b7ff b261dcff 2c9541ff 296434ff c9c9c9ff...
+      b1b1b1ff 8d8d8dff b4b4b4ff dc1d1dff 1a43c8ff...
+      1637a4ff 142c7cff c28946ff 2a2a2aff e22626ff...
+      26314aff ffd800ff 4c4c4cff 636363ff 00000040...
+      3d2f1eff ffd926ff cae7fe70 1a6ed5ff 855114ff...
+      bababa80 683c08ff 68461fff ffc926ff d7d7d7ff...
+      f0f0f0ff 328dfdff fd3232ff 2858b1ff 2c5195ff...
+      293e64ff 85561eff 2d6b62ff 005580ff 229000ff...
+      c42110ff 2c779599 fff68eff 8d5b4099 ffba00ff...
+      ff2a00ff e65700ff b500af99 cd00cbff 1c1a00ff...
+      534c00ff ff8ebeff 2c954199 51360cff 96200526
+  )
+```
+
+(source tx: [0xa92ea3630a13abf3a7322043406df32744c8dc3db1107cf8e244506fba8b284c](https://etherscan.io/tx/0xa92ea3630a13abf3a7322043406df32744c8dc3db1107cf8e244506fba8b284c))
+
+
+Yes, that's it.  All 120 colors get passed along in an all-in-one single bytes argument
+to `setPalette` where
+every color in the red/green/blue/alpha (rgba) format
+is made up of four bytes each
+e.g. `000000ff`, that is, rgba(00 00 00 ff) or
+`713f1dff` rgba(71 3f 1d ff) and so on.
+
+
+Let's try a little "off-chain" script to decode
+and pretty print the color palette:
+
+
+``` ruby
+require 'pixelart'
+
+hex = <<TXT
+000000ff 713f1dff 8b532cff 562600ff 723709ff
+ae8b61ff b69f82ff 86581eff a77c47ff dbb180ff
+e7cba9ff a66e2cff d29d60ff ead9d9ff ffffffff
+a58d8dff c9b2b2ff 4a1201ff 5f1d09ff 711010ff
+7da269ff 9bbc88ff 5e7253ff ff0000ff 352410ff
+856f56ff 6a563fff a98c6bff c8fbfbff 9be0e0ff
+f1ffffff 75bdbdff d6000033 692f08ff 28b143ff
+794b11ff 502f05ff 00000099 d60000ff c6c6c6ff
+dedede80 e25b26ff 80dbdaff ca4e11ff 933709ff
+0000004d 86581e4d 353535ff 515151ff 221e1766
+710cc7ff 00000091 5c390fff c77514ff 595959ff
+0040ffff dfdfdfff 8c0d5bff 690c45ff ad2160ff
+555555ff 0060c3ff e4eb17ff 3cc300ff d60404ff
+8119b7ff b261dcff 2c9541ff 296434ff c9c9c9ff
+b1b1b1ff 8d8d8dff b4b4b4ff dc1d1dff 1a43c8ff
+1637a4ff 142c7cff c28946ff 2a2a2aff e22626ff
+26314aff ffd800ff 4c4c4cff 636363ff 00000040
+3d2f1eff ffd926ff cae7fe70 1a6ed5ff 855114ff
+bababa80 683c08ff 68461fff ffc926ff d7d7d7ff
+f0f0f0ff 328dfdff fd3232ff 2858b1ff 2c5195ff
+293e64ff 85561eff 2d6b62ff 005580ff 229000ff
+c42110ff 2c779599 fff68eff 8d5b4099 ffba00ff
+ff2a00ff e65700ff b500af99 cd00cbff 1c1a00ff
+534c00ff ff8ebeff 2c954199 51360cff 96200526
+TXT
+
+# split hexstring into slices of 4 bytes (8 hex chars) each
+palette = hex.gsub( /[ \n]/, '' ).chars.each_slice(8).map { |slice| slice.join('') }
+
+puts "  #{palette.size} color(s)"   #=> 120 color(s)
+
+## pretty print color palette
+palette.each_with_index do |hex,i|
+  color = Color.from_hex( hex )
+
+  print "COLOR #{'%-3d' % i} - "
+  print Color.format( color )
+  print "\n"
+end
+```
+
+resulting in:
+
+```
+COLOR 0   - #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%)           - BLACK
+COLOR 1   - #713f1d / rgb(113  63  29) - hsl( 24°  59%  28%)
+COLOR 2   - #8b532c / rgb(139  83  44) - hsl( 25°  52%  36%)
+COLOR 3   - #562600 / rgb( 86  38   0) - hsl( 27° 100%  17%)
+COLOR 4   - #723709 / rgb(114  55   9) - hsl( 26°  85%  24%)
+COLOR 5   - #ae8b61 / rgb(174 139  97) - hsl( 33°  32%  53%)
+COLOR 6   - #b69f82 / rgb(182 159 130) - hsl( 33°  26%  61%)
+COLOR 7   - #86581e / rgb(134  88  30) - hsl( 33°  63%  32%)
+COLOR 8   - #a77c47 / rgb(167 124  71) - hsl( 33°  40%  47%)
+COLOR 9   - #dbb180 / rgb(219 177 128) - hsl( 32°  56%  68%)
+COLOR 10  - #e7cba9 / rgb(231 203 169) - hsl( 33°  56%  78%)
+COLOR 11  - #a66e2c / rgb(166 110  44) - hsl( 32°  58%  41%)
+COLOR 12  - #d29d60 / rgb(210 157  96) - hsl( 32°  56%  60%)
+COLOR 13  - #ead9d9 / rgb(234 217 217) - hsl(  0°  29%  88%)
+COLOR 14  - #ffffff / rgb(255 255 255) - hsl(  0°   0% 100%)           - WHITE
+COLOR 15  - #a58d8d / rgb(165 141 141) - hsl(  0°  12%  60%)
+COLOR 16  - #c9b2b2 / rgb(201 178 178) - hsl(  0°  18%  74%)
+COLOR 17  - #4a1201 / rgb( 74  18   1) - hsl( 14°  97%  15%)
+COLOR 18  - #5f1d09 / rgb( 95  29   9) - hsl( 14°  83%  20%)
+COLOR 19  - #711010 / rgb(113  16  16) - hsl(  0°  75%  25%)
+COLOR 20  - #7da269 / rgb(125 162 105) - hsl( 99°  23%  52%)
+COLOR 21  - #9bbc88 / rgb(155 188 136) - hsl( 98°  28%  64%)
+COLOR 22  - #5e7253 / rgb( 94 114  83) - hsl( 99°  16%  39%)
+COLOR 23  - #ff0000 / rgb(255   0   0) - hsl(  0° 100%  50%)
+COLOR 24  - #352410 / rgb( 53  36  16) - hsl( 32°  54%  14%)
+COLOR 25  - #856f56 / rgb(133 111  86) - hsl( 32°  21%  43%)
+COLOR 26  - #6a563f / rgb(106  86  63) - hsl( 32°  25%  33%)
+COLOR 27  - #a98c6b / rgb(169 140 107) - hsl( 32°  26%  54%)
+COLOR 28  - #c8fbfb / rgb(200 251 251) - hsl(180°  86%  88%)
+COLOR 29  - #9be0e0 / rgb(155 224 224) - hsl(180°  53%  74%)
+COLOR 30  - #f1ffff / rgb(241 255 255) - hsl(180° 100%  97%)
+COLOR 31  - #75bdbd / rgb(117 189 189) - hsl(180°  35%  60%)
+COLOR 32  - #d60000 / rgb(214   0   0) - hsl(  0° 100%  42%) - α( 20%)
+COLOR 33  - #692f08 / rgb(105  47   8) - hsl( 24°  86%  22%)
+COLOR 34  - #28b143 / rgb( 40 177  67) - hsl(132°  63%  43%)
+COLOR 35  - #794b11 / rgb(121  75  17) - hsl( 33°  75%  27%)
+COLOR 36  - #502f05 / rgb( 80  47   5) - hsl( 34°  88%  17%)
+COLOR 37  - #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%) - α( 60%)
+COLOR 38  - #d60000 / rgb(214   0   0) - hsl(  0° 100%  42%)
+COLOR 39  - #c6c6c6 / rgb(198 198 198) - hsl(  0°   0%  78%)           - 8-BIT GRAYSCALE #198
+COLOR 40  - #dedede / rgb(222 222 222) - hsl(  0°   0%  87%) - α( 50%)
+COLOR 41  - #e25b26 / rgb(226  91  38) - hsl( 17°  76%  52%)
+COLOR 42  - #80dbda / rgb(128 219 218) - hsl(179°  56%  68%)
+COLOR 43  - #ca4e11 / rgb(202  78  17) - hsl( 20°  84%  43%)
+COLOR 44  - #933709 / rgb(147  55   9) - hsl( 20°  88%  31%)
+COLOR 45  - #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%) - α( 30%)
+COLOR 46  - #86581e / rgb(134  88  30) - hsl( 33°  63%  32%) - α( 30%)
+COLOR 47  - #353535 / rgb( 53  53  53) - hsl(  0°   0%  21%)           - 8-BIT GRAYSCALE #53
+COLOR 48  - #515151 / rgb( 81  81  81) - hsl(  0°   0%  32%)           - 8-BIT GRAYSCALE #81
+COLOR 49  - #221e17 / rgb( 34  30  23) - hsl( 38°  19%  11%) - α( 40%)
+COLOR 50  - #710cc7 / rgb(113  12 199) - hsl(272°  89%  41%)
+COLOR 51  - #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%) - α( 56%)
+COLOR 52  - #5c390f / rgb( 92  57  15) - hsl( 33°  72%  21%)
+COLOR 53  - #c77514 / rgb(199 117  20) - hsl( 33°  82%  43%)
+COLOR 54  - #595959 / rgb( 89  89  89) - hsl(  0°   0%  35%)           - 8-BIT GRAYSCALE #89
+COLOR 55  - #0040ff / rgb(  0  64 255) - hsl(225° 100%  50%)
+COLOR 56  - #dfdfdf / rgb(223 223 223) - hsl(  0°   0%  87%)           - 8-BIT GRAYSCALE #223
+COLOR 57  - #8c0d5b / rgb(140  13  91) - hsl(323°  83%  30%)
+COLOR 58  - #690c45 / rgb(105  12  69) - hsl(323°  79%  23%)
+COLOR 59  - #ad2160 / rgb(173  33  96) - hsl(333°  68%  40%)
+COLOR 60  - #555555 / rgb( 85  85  85) - hsl(  0°   0%  33%)           - 8-BIT GRAYSCALE #85
+COLOR 61  - #0060c3 / rgb(  0  96 195) - hsl(210° 100%  38%)
+COLOR 62  - #e4eb17 / rgb(228 235  23) - hsl( 62°  84%  51%)
+COLOR 63  - #3cc300 / rgb( 60 195   0) - hsl(102° 100%  38%)
+COLOR 64  - #d60404 / rgb(214   4   4) - hsl(  0°  96%  43%)
+COLOR 65  - #8119b7 / rgb(129  25 183) - hsl(279°  76%  41%)
+COLOR 66  - #b261dc / rgb(178  97 220) - hsl(280°  64%  62%)
+COLOR 67  - #2c9541 / rgb( 44 149  65) - hsl(132°  54%  38%)
+COLOR 68  - #296434 / rgb( 41 100  52) - hsl(131°  42%  28%)
+COLOR 69  - #c9c9c9 / rgb(201 201 201) - hsl(  0°   0%  79%)           - 8-BIT GRAYSCALE #201
+COLOR 70  - #b1b1b1 / rgb(177 177 177) - hsl(  0°   0%  69%)           - 8-BIT GRAYSCALE #177
+COLOR 71  - #8d8d8d / rgb(141 141 141) - hsl(  0°   0%  55%)           - 8-BIT GRAYSCALE #141
+COLOR 72  - #b4b4b4 / rgb(180 180 180) - hsl(  0°   0%  71%)           - 8-BIT GRAYSCALE #180
+COLOR 73  - #dc1d1d / rgb(220  29  29) - hsl(  0°  77%  49%)
+COLOR 74  - #1a43c8 / rgb( 26  67 200) - hsl(226°  77%  44%)
+COLOR 75  - #1637a4 / rgb( 22  55 164) - hsl(226°  76%  36%)
+COLOR 76  - #142c7c / rgb( 20  44 124) - hsl(226°  72%  28%)
+COLOR 77  - #c28946 / rgb(194 137  70) - hsl( 32°  50%  52%)
+COLOR 78  - #2a2a2a / rgb( 42  42  42) - hsl(  0°   0%  16%)           - 8-BIT GRAYSCALE #42
+COLOR 79  - #e22626 / rgb(226  38  38) - hsl(  0°  76%  52%)
+COLOR 80  - #26314a / rgb( 38  49  74) - hsl(222°  32%  22%)
+COLOR 81  - #ffd800 / rgb(255 216   0) - hsl( 51° 100%  50%)
+COLOR 82  - #4c4c4c / rgb( 76  76  76) - hsl(  0°   0%  30%)           - 8-BIT GRAYSCALE #76
+COLOR 83  - #636363 / rgb( 99  99  99) - hsl(  0°   0%  39%)           - 8-BIT GRAYSCALE #99
+COLOR 84  - #000000 / rgb(  0   0   0) - hsl(  0°   0%   0%) - α( 25%)
+COLOR 85  - #3d2f1e / rgb( 61  47  30) - hsl( 33°  34%  18%)
+COLOR 86  - #ffd926 / rgb(255 217  38) - hsl( 49° 100%  57%)
+COLOR 87  - #cae7fe / rgb(202 231 254) - hsl(207°  96%  89%) - α( 43%)
+COLOR 88  - #1a6ed5 / rgb( 26 110 213) - hsl(213°  78%  47%)
+COLOR 89  - #855114 / rgb(133  81  20) - hsl( 32°  74%  30%)
+COLOR 90  - #bababa / rgb(186 186 186) - hsl(  0°   0%  73%) - α( 50%)
+COLOR 91  - #683c08 / rgb(104  60   8) - hsl( 33°  86%  22%)
+COLOR 92  - #68461f / rgb(104  70  31) - hsl( 32°  54%  26%)
+COLOR 93  - #ffc926 / rgb(255 201  38) - hsl( 45° 100%  57%)
+COLOR 94  - #d7d7d7 / rgb(215 215 215) - hsl(  0°   0%  84%)           - 8-BIT GRAYSCALE #215
+COLOR 95  - #f0f0f0 / rgb(240 240 240) - hsl(  0°   0%  94%)           - 8-BIT GRAYSCALE #240
+COLOR 96  - #328dfd / rgb( 50 141 253) - hsl(213°  98%  59%)
+COLOR 97  - #fd3232 / rgb(253  50  50) - hsl(  0°  98%  59%)
+COLOR 98  - #2858b1 / rgb( 40  88 177) - hsl(219°  63%  43%)
+COLOR 99  - #2c5195 / rgb( 44  81 149) - hsl(219°  54%  38%)
+COLOR 100 - #293e64 / rgb( 41  62 100) - hsl(219°  42%  28%)
+COLOR 101 - #85561e / rgb(133  86  30) - hsl( 33°  63%  32%)
+COLOR 102 - #2d6b62 / rgb( 45 107  98) - hsl(171°  41%  30%)
+COLOR 103 - #005580 / rgb(  0  85 128) - hsl(200° 100%  25%)
+COLOR 104 - #229000 / rgb( 34 144   0) - hsl(106° 100%  28%)
+COLOR 105 - #c42110 / rgb(196  33  16) - hsl(  6°  85%  42%)
+COLOR 106 - #2c7795 / rgb( 44 119 149) - hsl(197°  54%  38%) - α( 60%)
+COLOR 107 - #fff68e / rgb(255 246 142) - hsl( 55° 100%  78%)
+COLOR 108 - #8d5b40 / rgb(141  91  64) - hsl( 21°  38%  40%) - α( 60%)
+COLOR 109 - #ffba00 / rgb(255 186   0) - hsl( 44° 100%  50%)
+COLOR 110 - #ff2a00 / rgb(255  42   0) - hsl( 10° 100%  50%)
+COLOR 111 - #e65700 / rgb(230  87   0) - hsl( 23° 100%  45%)
+COLOR 112 - #b500af / rgb(181   0 175) - hsl(302° 100%  35%) - α( 60%)
+COLOR 113 - #cd00cb / rgb(205   0 203) - hsl(301° 100%  40%)
+COLOR 114 - #1c1a00 / rgb( 28  26   0) - hsl( 56° 100%   5%)
+COLOR 115 - #534c00 / rgb( 83  76   0) - hsl( 55° 100%  16%)
+COLOR 116 - #ff8ebe / rgb(255 142 190) - hsl(335° 100%  78%)
+COLOR 117 - #2c9541 / rgb( 44 149  65) - hsl(132°  54%  38%) - α( 60%)
+COLOR 118 - #51360c / rgb( 81  54  12) - hsl( 37°  74%  18%)
+COLOR 119 - #962005 / rgb(150  32   5) - hsl( 11°  94%  30%) - α( 14%)
+```
+
+
+Now let's answer
+the questions - What's COLOR 1? Let's lookup:
+
+```
+COLOR 1   - #713f1d / rgb(113  63  29) - hsl( 24°  59%  28%)
+```
+
+What's COLOR 38?
+
+```
+COLOR 38  - #d60000 / rgb(214   0   0) - hsl(  0° 100%  42%)
+```
+
+and so on.
+
+
+
+
 
 To be continued
 
