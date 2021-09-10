@@ -5,6 +5,7 @@ How does it work? See [**Inside the CryptoPunksData Contract - Decoding the On-C
 
 |-----------|------|------|-------|
 | 24x24     | No   | Name | 4x    |
+|-----------|------|------|-------|
 | ![](i/001-male_1.png) |  1 | Male 1 | ![](i/001-male_1x4.png) | 
 | ![](i/002-male_2.png) |  2 | Male 2 | ![](i/002-male_2x4.png) | 
 | ![](i/003-male_3.png) |  3 | Male 3 | ![](i/003-male_3x4.png) | 
