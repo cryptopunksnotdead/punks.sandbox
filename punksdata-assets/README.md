@@ -428,8 +428,8 @@ design and somtimes only with a different offset / placement:
 - Clown Nose          =>  [18, 109]  ![](i/018-clown_nose.png) / ![](i/109-clown_nose.png)
 - Cigarette           =>  [19, 115]  ![](i/019-cigarette.png) / ![](i/115-cigarette.png)
 - Nerd Glasses        =>  [20, 89]   ![](i/020-nerd_glasses.png) / ![](i/115-cigarette.png)
-- Regular Shades      =>  [21, 82]   ![](021-regular_shades.png) / ![](i/082-regular_shades.png)
-- Knitted Cap         =>  [22, 113]  ![](022-knitted_cap.png) / ![](i/113-knitted_cap.png)
+- Regular Shades      =>  [21, 82]   ![](i/021-regular_shades.png) / ![](i/082-regular_shades.png)
+- Knitted Cap         =>  [22, 113]  ![](i/022-knitted_cap.png) / ![](i/113-knitted_cap.png)
 - Mole                =>  [27, 85]
 - Classic Shades      =>  [31, 102]  ![](i/031-classic_shades.png) / ![](i/102-classic_shades.png)
 - Vape                =>  [32, 120]
