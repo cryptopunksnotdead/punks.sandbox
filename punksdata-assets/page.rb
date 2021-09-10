@@ -35,17 +35,16 @@ ASSETS_ENCODED.each do |rec|
   ##   Regular Shades  => regular_shades
   slug = name.downcase.gsub( ' ', '_' )
 
-  buf << "#{num} - #{name} ![](i/#{'%03d' % num}-#{slug}.png)\n"
+  buf << "#{num} "
+  buf << %Q{![](i/#{'%03d' % num}-#{slug}.png "#{name}")\n}
 end
-
-
 
 
 
 
 buf += <<TXT
 
-In a Table:
+In a Table
 
 | No   | Name | 24x24  |
 |------|------|--------|
@@ -61,7 +60,7 @@ ASSETS_ENCODED.each do |rec|
   ##   Regular Shades  => regular_shades
   slug = name.downcase.gsub( ' ', '_' )
 
-  buf << "| ![](i/#{'%03d' % num}-#{slug}.png) |  #{num} | #{name} |\n"
+  buf << "| #{num} | #{name} | ![](i/#{'%03d' % num}-#{slug}.png) |\n"
 end
 
 
@@ -73,7 +72,7 @@ ASSETS_ENCODED.each do |rec|
 
   slug = name.downcase.gsub( ' ', '_' )
 
-  buf <<   %Q{#{num} }
+  buf <<   "#{num} "
   buf <<   %Q{![](i/#{'%03d' % num}-#{slug}x4.png "#{name}")\n}
 end
 
