@@ -23,13 +23,32 @@ TXT
 
 
 
+buf = String.new('')
+
+ASSETS_ENCODED.each do |rec|
+  num  = rec[0]
+  name = rec[1]
+
+  ## slugify name e.g.
+  ##   Male 1          => male_1
+  ##   Clown Nose      => clown_nose
+  ##   Regular Shades  => regular_shades
+  slug = name.downcase.gsub( ' ', '_' )
+
+  buf << "#{num} - #{name} ![](i/#{'%03d' % num}-#{slug}.png)\n"
+end
 
 
 
 
-buf = <<TXT
-| 24x24     | No   | Name |
-|-----------|------|------|
+
+
+buf += <<TXT
+
+In a Table:
+
+| No   | Name | 24x24  |
+|------|------|--------|
 TXT
 
 ASSETS_ENCODED.each do |rec|
@@ -70,7 +89,7 @@ Note:  Many attributes have two variants (male / female):
 - Clown Nose          =>  [18, 109]
 - Cigarette           =>  [19, 115]
 - Nerd Glasses        =>  [20, 89]
-- Regular Shades      =>  [21, 82]
+- Regular Shades      =>  [21, 82]   ![](021-regular_shades.png) / ![](082-regular_shades.png)
 - Knitted Cap         =>  [22, 113]
 - Mole                =>  [27, 85]
 - Classic Shades      =>  [31, 102] ![](i/031-classic_shades.png) / ![](i/102-classic_shades.png)
@@ -91,8 +110,8 @@ Note:  Many attributes have two variants (male / female):
 - Earring             =>  [61, 125]
 - Horned Rim Glasses  =>  [62, 132]
 - Headband            =>  [63, 110]  ![](i/063-headband.png) / ![](i/110-headband.png)
-- Pipe                =>  [64, 95]   ![](i/064-pipe.png) / ![](i/95-pipe.png)
-- Messy Hair          =>  [65, 93]   ![](i/065-messy_hair.png) / ![](i/93-messy_hair.png)
+- Pipe                =>  [64, 95]   ![](i/064-pipe.png) / ![](i/095-pipe.png)
+- Messy Hair          =>  [65, 93]   ![](i/065-messy_hair.png) / ![](i/093-messy_hair.png)
 - Gold Chain          =>  [68, 118]
 - Stringy Hair        =>  [70, 98]
 - Eye Mask            =>  [71, 103]
