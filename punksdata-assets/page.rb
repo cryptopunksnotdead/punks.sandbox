@@ -46,8 +46,8 @@ buf += <<TXT
 
 In a Table
 
-| No   | Name | 24x24  |
-|------|------|--------|
+| No   |  24x24  | Name |
+|------|---------|------|
 TXT
 
 ASSETS_ENCODED.each do |rec|
@@ -60,7 +60,7 @@ ASSETS_ENCODED.each do |rec|
   ##   Regular Shades  => regular_shades
   slug = name.downcase.gsub( ' ', '_' )
 
-  buf << "| #{num} | #{name} | ![](i/#{'%03d' % num}-#{slug}.png) |\n"
+  buf << "| #{num} | ![](i/#{'%03d' % num}-#{slug}.png) |  #{name} |\n"
 end
 
 
@@ -79,19 +79,20 @@ end
 
 footer =<<TXT
 
-Note:  Many attributes have two variants (male / female):
+Note:  Many attributes have two variants (male / female) - sometimes with a different
+design and somtimes only with a different offset / placement:
 
 
 - Rosy Cheeks         =>  [12, 128]
 - Clown Hair Green    =>  [14, 104]  ![](i/014-clown_hair_green.png) / ![](i/104-clown_hair_green.png)
-- Mohawk Dark         =>  [15, 130]
-- Clown Nose          =>  [18, 109]
-- Cigarette           =>  [19, 115]
-- Nerd Glasses        =>  [20, 89]
-- Regular Shades      =>  [21, 82]   ![](021-regular_shades.png) / ![](082-regular_shades.png)
-- Knitted Cap         =>  [22, 113]
+- Mohawk Dark         =>  [15, 130]  ![](i/015-mohawk_dark.png) / ![](i/130-mohawk_dark.png)
+- Clown Nose          =>  [18, 109]  ![](i/018-clown_nose.png) / ![](i/109-clown_nose.png)
+- Cigarette           =>  [19, 115]  ![](i/019-cigarette.png) / ![](i/115-cigarette.png)
+- Nerd Glasses        =>  [20, 89]   ![](i/020-nerd_glasses.png) / ![](i/115-cigarette.png)
+- Regular Shades      =>  [21, 82]   ![](021-regular_shades.png) / ![](i/082-regular_shades.png)
+- Knitted Cap         =>  [22, 113]  ![](022-knitted_cap.png) / ![](i/113-knitted_cap.png)
 - Mole                =>  [27, 85]
-- Classic Shades      =>  [31, 102] ![](i/031-classic_shades.png) / ![](i/102-classic_shades.png)
+- Classic Shades      =>  [31, 102]  ![](i/031-classic_shades.png) / ![](i/102-classic_shades.png)
 - Vape                =>  [32, 120]
 - Silver Chain        =>  [33, 133]
 - Big Shades          =>  [35, 124]
