@@ -97,17 +97,12 @@ assets_by_name.each do |name, assets|
    assets.each do |rec|
       num       = rec[:id]
       slug      = rec[:slug]
-      qualifier = rec[:qualifier]
 
       buf <<  "#{num} "
       buf <<  "![](i/#{slug}.png) "
-      buf <<  "(#{qualifier}) "
     end
     buf << "<br>\n"
 end
-
-
-
 
 
 

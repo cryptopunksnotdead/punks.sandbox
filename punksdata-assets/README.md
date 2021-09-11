@@ -420,41 +420,41 @@ In a Table
 Note:  Many attributes have two variants (male / female) - sometimes with a different
 design and somtimes only with a different offset / placement:
 
-Rosy Cheeks        - 12 ![](i/012-rosy_cheeks.png) (m) 128 ![](i/128-rosy_cheeks.png) (f) <br>
-Clown Hair Green   - 14 ![](i/014-clown_hair_green.png) (m) 104 ![](i/104-clown_hair_green.png) (f) <br>
-Mohawk Dark        - 15 ![](i/015-mohawk_dark.png) (m) 130 ![](i/130-mohawk_dark.png) (f) <br>
-Clown Nose         - 18 ![](i/018-clown_nose.png) (m) 109 ![](i/109-clown_nose.png) (f) <br>
-Cigarette          - 19 ![](i/019-cigarette.png) (m) 115 ![](i/115-cigarette.png) (f) <br>
-Nerd Glasses       - 20 ![](i/020-nerd_glasses.png) (m) 89 ![](i/089-nerd_glasses.png) (f) <br>
-Regular Shades     - 21 ![](i/021-regular_shades.png) (m) 82 ![](i/082-regular_shades.png) (f) <br>
-Knitted Cap        - 22 ![](i/022-knitted_cap.png) (m) 113 ![](i/113-knitted_cap.png) (f) <br>
-Mole               - 27 ![](i/027-mole.png) (m) 85 ![](i/085-mole.png) (f) <br>
-Classic Shades     - 31 ![](i/031-classic_shades.png) (m) 102 ![](i/102-classic_shades.png) (f) <br>
-Vape               - 32 ![](i/032-vape.png) (m) 120 ![](i/120-vape.png) (f) <br>
-Silver Chain       - 33 ![](i/033-silver_chain.png) (m) 133 ![](i/133-silver_chain.png) (f) <br>
-Big Shades         - 35 ![](i/035-big_shades.png) (m) 124 ![](i/124-big_shades.png) (f) <br>
-Mohawk Thin        - 36 ![](i/036-mohawk_thin.png) (m) 117 ![](i/117-mohawk_thin.png) (f) <br>
-Cap                - 38 ![](i/038-cap.png) (m) 105 ![](i/105-cap.png) (f) <br>
-Clown Eyes Green   - 39 ![](i/039-clown_eyes_green.png) (m) 114 ![](i/114-clown_eyes_green.png) (f) <br>
-Medical Mask       - 41 ![](i/041-medical_mask.png) (m) 106 ![](i/106-medical_mask.png) (f) <br>
-VR                 - 43 ![](i/043-vr.png) (m) 119 ![](i/119-vr.png) (f) <br>
-Eye Patch          - 44 ![](i/044-eye_patch.png) (m) 100 ![](i/100-eye_patch.png) (f) <br>
-Wild Hair          - 45 ![](i/045-wild_hair.png) (m) 96 ![](i/096-wild_hair.png) (f) <br>
-Bandana            - 47 ![](i/047-bandana.png) (m) 107 ![](i/107-bandana.png) (f) <br>
-Frumpy Hair        - 49 ![](i/049-frumpy_hair.png) (m) 88 ![](i/088-frumpy_hair.png) (f) <br>
-Crazy Hair         - 50 ![](i/050-crazy_hair.png) (m) 81 ![](i/081-crazy_hair.png) (f) <br>
-Spots              - 55 ![](i/055-spots.png) (m) 87 ![](i/087-spots.png) (f) <br>
-Earring            - 61 ![](i/061-earring.png) (m) 125 ![](i/125-earring.png) (f) <br>
-Horned Rim Glasses - 62 ![](i/062-horned_rim_glasses.png) (m) 132 ![](i/132-horned_rim_glasses.png) (f) <br>
-Headband           - 63 ![](i/063-headband.png) (m) 110 ![](i/110-headband.png) (f) <br>
-Pipe               - 64 ![](i/064-pipe.png) (m) 95 ![](i/095-pipe.png) (f) <br>
-Messy Hair         - 65 ![](i/065-messy_hair.png) (m) 93 ![](i/093-messy_hair.png) (f) <br>
-Gold Chain         - 68 ![](i/068-gold_chain.png) (m) 118 ![](i/118-gold_chain.png) (f) <br>
-Stringy Hair       - 70 ![](i/070-stringy_hair.png) (m) 98 ![](i/098-stringy_hair.png) (f) <br>
-Eye Mask           - 71 ![](i/071-eye_mask.png) (m) 103 ![](i/103-eye_mask.png) (f) <br>
-3D Glasses         - 72 ![](i/072-3d_glasses.png) (m) 84 ![](i/084-3d_glasses.png) (f) <br>
-Clown Eyes Blue    - 73 ![](i/073-clown_eyes_blue.png) (m) 94 ![](i/094-clown_eyes_blue.png) (f) <br>
-Mohawk             - 74 ![](i/074-mohawk.png) (m) 123 ![](i/123-mohawk.png) (f) <br>
+Rosy Cheeks        - 12 ![](i/012-rosy_cheeks.png) 128 ![](i/128-rosy_cheeks.png) <br>
+Clown Hair Green   - 14 ![](i/014-clown_hair_green.png) 104 ![](i/104-clown_hair_green.png) <br>
+Mohawk Dark        - 15 ![](i/015-mohawk_dark.png) 130 ![](i/130-mohawk_dark.png) <br>
+Clown Nose         - 18 ![](i/018-clown_nose.png) 109 ![](i/109-clown_nose.png) <br>
+Cigarette          - 19 ![](i/019-cigarette.png) 115 ![](i/115-cigarette.png) <br>
+Nerd Glasses       - 20 ![](i/020-nerd_glasses.png) 89 ![](i/089-nerd_glasses.png) <br>
+Regular Shades     - 21 ![](i/021-regular_shades.png) 82 ![](i/082-regular_shades.png) <br>
+Knitted Cap        - 22 ![](i/022-knitted_cap.png) 113 ![](i/113-knitted_cap.png) <br>
+Mole               - 27 ![](i/027-mole.png) 85 ![](i/085-mole.png) <br>
+Classic Shades     - 31 ![](i/031-classic_shades.png) 102 ![](i/102-classic_shades.png) <br>
+Vape               - 32 ![](i/032-vape.png) 120 ![](i/120-vape.png) <br>
+Silver Chain       - 33 ![](i/033-silver_chain.png) 133 ![](i/133-silver_chain.png) <br>
+Big Shades         - 35 ![](i/035-big_shades.png) 124 ![](i/124-big_shades.png) <br>
+Mohawk Thin        - 36 ![](i/036-mohawk_thin.png) 117 ![](i/117-mohawk_thin.png) <br>
+Cap                - 38 ![](i/038-cap.png) 105 ![](i/105-cap.png) <br>
+Clown Eyes Green   - 39 ![](i/039-clown_eyes_green.png) 114 ![](i/114-clown_eyes_green.png) <br>
+Medical Mask       - 41 ![](i/041-medical_mask.png) 106 ![](i/106-medical_mask.png) <br>
+VR                 - 43 ![](i/043-vr.png) 119 ![](i/119-vr.png) <br>
+Eye Patch          - 44 ![](i/044-eye_patch.png) 100 ![](i/100-eye_patch.png) <br>
+Wild Hair          - 45 ![](i/045-wild_hair.png) 96 ![](i/096-wild_hair.png) <br>
+Bandana            - 47 ![](i/047-bandana.png) 107 ![](i/107-bandana.png) <br>
+Frumpy Hair        - 49 ![](i/049-frumpy_hair.png) 88 ![](i/088-frumpy_hair.png) <br>
+Crazy Hair         - 50 ![](i/050-crazy_hair.png) 81 ![](i/081-crazy_hair.png) <br>
+Spots              - 55 ![](i/055-spots.png) 87 ![](i/087-spots.png) <br>
+Earring            - 61 ![](i/061-earring.png) 125 ![](i/125-earring.png) <br>
+Horned Rim Glasses - 62 ![](i/062-horned_rim_glasses.png) 132 ![](i/132-horned_rim_glasses.png) <br>
+Headband           - 63 ![](i/063-headband.png) 110 ![](i/110-headband.png) <br>
+Pipe               - 64 ![](i/064-pipe.png) 95 ![](i/095-pipe.png) <br>
+Messy Hair         - 65 ![](i/065-messy_hair.png) 93 ![](i/093-messy_hair.png) <br>
+Gold Chain         - 68 ![](i/068-gold_chain.png) 118 ![](i/118-gold_chain.png) <br>
+Stringy Hair       - 70 ![](i/070-stringy_hair.png) 98 ![](i/098-stringy_hair.png) <br>
+Eye Mask           - 71 ![](i/071-eye_mask.png) 103 ![](i/103-eye_mask.png) <br>
+3D Glasses         - 72 ![](i/072-3d_glasses.png) 84 ![](i/084-3d_glasses.png) <br>
+Clown Eyes Blue    - 73 ![](i/073-clown_eyes_blue.png) 94 ![](i/094-clown_eyes_blue.png) <br>
+Mohawk             - 74 ![](i/074-mohawk.png) 123 ![](i/123-mohawk.png) <br>
 
 
 
