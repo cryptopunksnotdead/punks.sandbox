@@ -1024,13 +1024,12 @@ image.zoom(4).save( "001-male_1x4.png" )
 ```
 
 Voila!
-![](i/001-male_1.png.png)
-4x  ![](i/001-male_1.pngx4.png)
+![](i/001-male_1.png)
+4x  ![](i/001-male_1x4.png)
 
 
 That's it. Yes, you can! Save all 133 assets (11 archetypes and 122 attributes)
 and start generating your own do-it-yourself (DIY) punks.
-
 
 
 ## Questions? Comments?
