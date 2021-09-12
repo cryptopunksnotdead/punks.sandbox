@@ -1,4 +1,4 @@
-# Inside the CryptoPunksData Contract - Decoding the On-Chain Assets
+# Inside the CryptoPunksData Contract - Decoding the On-Chain Assets (11 Archetypes and 122 Attributes) and Color Palette for Easy (Re)Use "Off-Chain"
 
 
 >        ____                  _                          _          ____        _
@@ -24,7 +24,8 @@ The code commentary inside the contract reads:
 > plus the rare zombie, ape, and alien types).
 
 
-Note: If you are looking for the on-chain data (attributes or the pixel matrix / bitmap and so on) - the data is NOT in the contract source but in the 266 transaction (txn) inputs. See [punksdata/transactions.txt](https://github.com/cryptopunksnotdead/punks.contracts/blob/master/punksdata/transactions.txt).
+Note: If you are looking for the on-chain data (attributes
+or the hexstring encoded pixel matrix / bitmap and so on) - find the data NOT in the contract source but in the 266 transaction (txn) inputs. See [punksdata/transactions.txt](https://github.com/cryptopunksnotdead/punks.contracts/blob/master/punksdata/transactions.txt).
 
 
 Let's have a looksie - all 133 attribute building blocks (pixel matrix / bimaps)
@@ -74,10 +75,12 @@ or
 
 
 
+
 ## Step 1 -  Decode the Assets from #1 Male 1 to #133 Silver Chain
 
 
-Let's start with the Clown Nose asset. The Clown Nose attribute
+Let's start with the Clown Nose ![](i/018-clown_nose.png) asset.
+The Clown Nose attribute
 is a 2x2 red pixel matrix - how can we decode the "magic" `0x6726f0` hex string?
 
 
@@ -200,7 +203,7 @@ end
 ```
 
 
-Let's try the 2x2 red clown nose:
+Let's try the 2x2 red clown nose ![](i/018-clown_nose.png):
 
 ``` ruby
 # asset #18 - Clown Nose
@@ -228,7 +231,7 @@ and the third byte e.g. `0xf0` or `0b1111 0000` is
 the color mask and the black mask.
 
 
-Let's try the all black regular shades:
+Let's try the all black regular shades ![](i/021-regular_shades.png):
 
 ``` ruby
 # asset #21 - Regular Shades
@@ -304,7 +307,7 @@ all black regular shades
 are encoded in 33 byte, that is, 11 pixel blocks.
 
 
-Let's try the biggie, that is, the male (face) 1 archetype:
+Let's try the biggie, that is, the male (face) 1 ![](i/001-male_1.png) archetype  :
 
 ``` ruby
 # asset #1 - Male 1
@@ -735,16 +738,26 @@ ff2a00ff e65700ff b500af99 cd00cbff 1c1a00ff
 534c00ff ff8ebeff 2c954199 51360cff 96200526
 TXT
 
-# split hexstring into slices of 4 bytes (8 hex chars) each
-palette = hex.gsub( /[ \n]/, '' ).chars.each_slice(8).map { |slice| slice.join('') }
 
-puts "  #{palette.size} color(s)"   #=> 120 color(s)
+def decode_colors( hex )
+  ## note: allow spaces and newlines in hexstring for formatting
+  hex = hex.gsub( /[ \n]/, '' )
 
-## pretty print color palette
-palette.each_with_index do |hex,i|
-  color = Color.from_hex( hex )
+  # split hexstring into slices of 4 bytes (8 hex chars) each
+  palette = hex.chars.each_slice(8).map { |slice| slice.join }
+  pp palette
 
-  print "COLOR #{'%-3d' % i} - "
+  palette.map {|hex| Color.from_hex( hex ) }
+end
+
+
+colors = decode_colors( hex )
+
+## pretty print colors / palette
+puts "  #{colors.size} color(s):"     #=> 120 color(s)
+
+colors.each_with_index do |color,i|
+  print "color #{'%-3d' % i} - "
   print Color.format( color )
   print "\n"
 end
@@ -892,12 +905,131 @@ COLOR 38  - #d60000 / rgb(214   0   0) - hsl(  0° 100%  42%)
 and so on.
 
 
+All together now.
+Let's change `decode( hex )`
+to `decode_image( hex, colors: )` to return - surprise, surprise -
+a 24x24 image ready-to-save:
+
+``` ruby
+def decode_image( hex, colors: )
+  puts "==> decoding #{hex}..."
+
+  ## convert hex string to byte array, that is, array of integer numbers
+  ##   e.g.  0x6726f0    (3 bytes - 0x67 / 0x26 / 0xf0)
+  ##     =>  [103, 38, 240]
+  a = [hex].pack("H*").unpack('C*')
+
+  n = a.length / 3
+  puts "  #{a.size} byte(s), #{n} pixel block(s):"
+
+
+  img = Image.new( 24, 24 )
+
+  n.times do |i|
+
+    bx = (a[i*3] & 0xf0) >> 4
+    by = a[i*3] & 0xf
+
+    color = a[i*3+1]
+
+    color_mask = (a[i*3+2] & 0xf0) >> 4
+    black_mask = a[i*3+2] & 0xf
+
+
+    print "    #{i+1} of #{n} pixel block - "
+    print "block.x: #{bx}, block.y: #{by}, "
+    print "color: #{color}, "
+    print "color?: #{color_mask.to_s(2).rjust(4,'0')}, "
+    print "black?: #{black_mask.to_s(2).rjust(4,'0')}:"
+    print "\n"
+
+
+    2.times do |dx|
+      2.times do |dy|
+        x = 2 * bx + dx
+        y = 2 * by + dy
+
+        print "      x: #{'%2d' % x} / y: #{'%2d' % y}  - "
+
+        if color_mask & (1 << (dx*2+dy)) != 0
+            print " COLOR #{color}"
+            img[x,y] = colors[ color ]
+        elsif black_mask & (1 << (dx*2+dy)) != 0
+            print " BLACK"       # rgba( 00 00 00 FF)
+            img[x,y] = Color::BLACK
+        else
+            print " TRANSPARENT"
+        end
+        print "\n"
+      end
+    end
+  end
+
+  img
+end
+```
+
+And let's test drive the red clown nose:
+
+``` ruby
+## asset #18 - Clown Nose
+
+hex = '6726f0'
+image = decode_image( hex, colors: colors )
+
+image.save( "018-clown_nose.png" )
+image.zoom(4).save( "018-clown_nosex4.png" )
+```
+
+Voila!
+![](i/018-clown_nose.png)
+4x  ![](i/018-clown_nosex4.png)
+
+
+And on to the all-black regular shades:
+
+``` ruby
+## asset #21 - Regular Shades
+
+hex = '25000835000a45000a46000d55000a56000765000a75000a76000d85000a860007'
+image = decode_image( hex, colors: colors )
+
+image.save( "regular_shades.png" )
+image.zoom(4).save( "regular_shadesx4.png" )
+```
+
+Voila!
+![](i/021-regular_shades.png)
+4x  ![](i/021-regular_shadesx4.png)
 
 
 
-To be continued
+And let's wrap up with the "biggie" hexstring that
+encodes the human male 1 archetype:
 
 
+``` ruby
+## asset #1 - Male 1
+
+hex = '26000c2700043301863401c33501c33601f03701c33801c33901c33a01c33b01c342000a4
+       302804301704402104401e04503804501704601b44701f04801f04901f04a01f04b01f052
+       000a5301f05401f05503205501d05604105601e05701f05801f05901b45a015a5b0003620
+       00a6301f06401f06501f06601f067015a6801f06901a56a015a7200027301b47401f07503
+       a07501507604417601a07701f07801f07901f07a011683000284000385000386000387000
+       3880003890003'
+image = decode_image( hex, colors: colors )
+
+image.save( "001-male_1.png" )
+image.zoom(4).save( "001-male_1x4.png" )
+```
+
+Voila!
+![](i/001-male_1.png.png)
+4x  ![](i/001-male_1.pngx4.png)
+
+
+That's it. Yes, you can! Save all 133 assets (11 archetypes and 122 attributes)
+and start generating your own do-it-yourself (DIY) punks.
 
 
 

@@ -35,6 +35,22 @@ ff2a00ff e65700ff b500af99 cd00cbff 1c1a00ff
 534c00ff ff8ebeff 2c954199 51360cff 96200526
 TXT
 
+def decode_colors( hex )   ## check: rename to decode_palette or such - why? why not?
+  ## note: allow spaces and newlines in hexstring for formatting
+  hex = hex.gsub( /[ \n]/, '' )
+  hex = hex.sub( /^0x/i, '' )  #  note allow optional leading 0x | 0X
+
+  # split hexstring into slices of 4 bytes (8 hex chars) each
+  palette = hex.chars.each_slice(8).map { |slice| slice.join('') }
+
+  pp palette
+  puts "  #{palette.size} color(s)"
+
+  palette.map { |hex| Color.from_hex( hex ) }
+end
+
+
+
 
 ASSETS_ENCODED = [
 
@@ -515,24 +531,6 @@ ASSETS_ENCODED.each do |rec|
                slug = "#{'%03d' % num}-#{name.downcase.gsub( ' ', '_' )}"
                rec[ :slug ] = slug
         end
-
-
-
-
-
-def decode_colors( hex )   ## check: rename to decode_palette or such - why? why not?
-  ## note: allow spaces and newlines in hexstring for formatting
-  hex = hex.gsub( /[ \n]/, '' )
-  hex = hex.sub( /^0x/i, '' )  #  note allow optional leading 0x | 0X
-
-  # split hexstring into slices of 4 bytes (8 hex chars) each
-  palette = hex.chars.each_slice(8).map { |slice| slice.join('') }
-
-  pp palette
-  puts "  #{palette.size} color(s)"
-
-  palette.map { |hex| Color.from_hex( hex ) }
-end
 
 
 def decode_image( hex, colors: )

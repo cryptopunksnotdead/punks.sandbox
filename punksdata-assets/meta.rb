@@ -4,7 +4,8 @@
 #  to run use:
 #    ruby ./meta.rb
 
-require_relative 'punksdata-meta'
+
+require_relative '../punksdata/punksdata-meta'
 
 
 hex = META_ENCODED

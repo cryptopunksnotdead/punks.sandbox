@@ -8,7 +8,9 @@
 
 require 'pixelart'
 
-require_relative 'punksdata'
+
+
+require_relative '../punksdata/punksdata'
 
 
 
