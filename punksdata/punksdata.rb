@@ -1,3 +1,4 @@
+require 'pixelart'  # note: auto-require pixelart in punksdata (for convenience) - why? why not?
 
 
 ## todo/check:  namespace CONSTANTS and helpers

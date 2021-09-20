@@ -6,12 +6,7 @@
 
 
 
-require 'pixelart'
-
-
-
 require_relative '../punksdata/punksdata'
-
 
 
 hex = COLORS_ENCODED
