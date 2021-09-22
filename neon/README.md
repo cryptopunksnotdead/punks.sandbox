@@ -12,7 +12,7 @@ on the first one hundred punks.
 
 Green
 
-![](i/neonnpunks_green.png)
+![](i/neonpunks_green.png)
 
 
 Red
