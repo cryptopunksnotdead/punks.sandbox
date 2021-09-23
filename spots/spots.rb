@@ -131,14 +131,14 @@ variants = {
   'spots10_random'    => [10, { center: [-2,2], radius: [3,5] }],
   'spots10+10_random' => [10, { spacing: 10,
                                 center: [-2,2], radius: [5,10] }],
-  'spots10+10+big_random.png' => [10, { spacing: 10,
+  'spots10+10+big_random' => [10, { spacing: 10,
                                         center: [-1,1], radius: [6,12]}],
 
   ## with color lightness +/- variation
-  'l+spots10+10+big_random.png' => [10, { lightness: [-0.03,0.03],
+  'l+spots10+10+big_random' => [10, { lightness: [-0.03,0.03],
                                           spacing: 10,
                                           center: [-1,1], radius: [6,12]}],
-  'odd+l+spots10+10+big_random.png' => [10, { odd: true,
+  'odd+l+spots10+10+big_random' => [10, { odd: true,
                                              lightness: [-0.03,0.03],
                                           spacing: 10,
                                           center: [-1,1], radius: [6,12]}],
@@ -151,13 +151,13 @@ variants = {
                                 center: [-2,2], radius: [3,5] }],
   'bg+spots10+10_random' => [10, { background: '#638596', spacing: 10,
                                 center: [-2,2], radius: [5,10] }],
-  'bg+spots10+10+big_random.png' => [10, { background: '#638596', spacing: 10,
+  'bg+spots10+10+big_random' => [10, { background: '#638596', spacing: 10,
                                 center: [-1,1], radius: [6,12]}],
 
   ## with color lightness +/- variation & background spots
-  'l+bg+spots10+10+big_random.png' => [10, { lightness: [-0.03,0.03], background: '#638596', spacing: 10,
+  'l+bg+spots10+10+big_random' => [10, { lightness: [-0.03,0.03], background: '#638596', spacing: 10,
                                 center: [-1,1], radius: [6,12]}],
-  'odd+l+bg+spots10+10+big_random.png' => [10, { odd: true,
+  'odd+l+bg+spots10+10+big_random' => [10, { odd: true,
                                                lightness: [-0.03,0.03], background: '#638596', spacing: 10,
                                               center: [-1,1], radius: [6,12]}],
 
