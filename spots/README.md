@@ -254,12 +254,53 @@ punk.spots( 5, spacing: 5,
 ![](i/punk-2964@spots3_random_big_(l+odd+bg).png)
 
 
-One more thing - lets a 2x zoom with double the pixel...
+
+One more thing - lets a 2x zoom with quadruple (2×2=4) the pixel.
+
+``` ruby
+punk.spots( 10, zoom: 2 )
+```
+
+![](i/punk-3100@spots1@2x.png)
+![](i/punk-3393@spots1@2x.png)
+![](i/punk-0172@spots1@2x.png)
+![](i/punk-2964@spots1@2x.png)
 
 
+``` ruby
+punk.spots( 10,
+            center: [-2,2], radius: [3,5],
+            zoom: 2 )
+```
+
+![](i/punk-3100@spots1_random@2x.png)
+![](i/punk-3393@spots1_random@2x.png)
+![](i/punk-0172@spots1_random@2x.png)
+![](i/punk-2964@spots1_random@2x.png)
 
 
+``` ruby
+punk.spots( 5, spacing: 5,
+               center: [-2,2], radius: [2,5],
+               zoom: 2 )
+```
 
+![](i/punk-3100@spots3_random@2x.png)
+![](i/punk-3393@spots3_random@2x.png)
+![](i/punk-0172@spots3_random@2x.png)
+![](i/punk-2964@spots3_random@2x.png)
+
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6],
+                zoom: 2 )
+```
+
+![](i/punk-3100@spots3_random_big@2x.png)
+![](i/punk-3393@spots3_random_big@2x.png)
+![](i/punk-0172@spots3_random_big@2x.png)
+![](i/punk-2964@spots3_random_big@2x.png)
 
 
 

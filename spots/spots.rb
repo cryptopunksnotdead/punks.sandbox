@@ -9,6 +9,7 @@ module Pixelart
 
 
 class Image
+  MAGICK_SCRIPT = "./tmp/magick_script.txt"
   MAGICK_INPUT  = "./tmp/magick_input.png"
   MAGICK_OUTPUT = "./tmp/magick_output.png"
 
@@ -19,10 +20,18 @@ def spots( spot=20,
               radius: nil,
               background: nil,
               lightness: nil,
-              odd: false )
+              odd: false,
+              zoom: nil )
 
-  width  = @img.width
-  height = @img.height
+  base_img = if zoom
+               zoom( zoom )
+             else
+               @img
+             end
+
+  width  = base_img.width
+  height = base_img.height
+  puts "  #{width}x#{height}"
 
   canvas = Image.new( width*spot+(width-1)*spacing,
                       height*spot+(height-1)*spacing )
@@ -36,13 +45,12 @@ def spots( spot=20,
   min_lightness, max_lightness = lightness ? lightness : [0.0,0.0]
 
 
-
-  MiniMagick::Tool::Magick.new do |magick|
-      magick << MAGICK_INPUT
+  script = String.new('')
+  script << "#{MAGICK_INPUT} \\\n"
 
     width.times do |x|
       height.times do |y|
-         color = @img[ x, y ]
+         color = base_img[ x, y ]
 
          if color == 0  ## transparent
            if background   ## change transparent to background
@@ -77,7 +85,8 @@ def spots( spot=20,
          # e.g.    0 becomes #00000000
          #        and so on
          color_hex = Color.to_hex( color, include_alpha: true )
-         magick.fill( color_hex )
+         # magick.fill( color_hex )
+         script << "-fill '#{color_hex}' "
 
          cx_offset,
          cy_offset = if center  ## randomize (offset off center +/-)
@@ -107,12 +116,19 @@ def spots( spot=20,
 
          ## circle
          ##  give the center and any point on the perimeter (boundary)
-         magick.draw( "circle #{cx},#{cy},#{px},#{py}" )
+         ## magick.draw( "circle #{cx},#{cy},#{px},#{py}" )
+         script << "-draw 'circle #{cx},#{cy},#{px},#{py}' \\\n"
       end
     end
 
-    magick << MAGICK_OUTPUT
+    script << "-write #{MAGICK_OUTPUT}\n"
+
+   File.open( MAGICK_SCRIPT, 'w:utf-8') { |f| f.write( script ) }
+
+  MiniMagick::Tool::Magick.new do |magick|
+    magick.script( MAGICK_SCRIPT )
   end
+
 
   Image.read( MAGICK_OUTPUT )
 end
@@ -203,8 +219,13 @@ variants = {
   'spots3_random_big_(l+odd+bg)' => args( SPOTS_SPACE_RANDOM_BIG, background: '#638596',
                                               odd: true,
                                                lightness: [-0.03,0.03] ),
-}
 
+  ## with 2x (quadruple pixels)
+  'spots1@2x'            => args( SPOTS, zoom: 2 ),
+  'spots1_random@2x'     => args( SPOTS_RANDOM, zoom: 2 ),
+  'spots3_random@2x'     => args( SPOTS_SPACE_RANDOM, zoom: 2 ),
+  'spots3_random_big@2x' => args( SPOTS_SPACE_RANDOM_BIG, zoom: 2 )
+}
 
 ids = %w[
   0172
