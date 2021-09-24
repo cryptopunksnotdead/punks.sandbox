@@ -44,41 +44,46 @@ blondie ![](i/punk-0172.png) #172 and
 beanie ![](i/punk-2964.png) #2964.
 
 
-Let's start with 10px circles:
+Let's start with 10px circles -
+resulting in a 24*10px = 240×240px format:
+
 
 ``` ruby
 punk.spots( 10 )
 ```
 
-![](i/punk-3100@spots10.png)
-![](i/punk-3393@spots10.png)
-![](i/punk-0172@spots10.png)
-![](i/punk-2964@spots10.png)
+
+![](i/punk-3100@spots1.png)
+![](i/punk-3393@spots1.png)
+![](i/punk-0172@spots1.png)
+![](i/punk-2964@spots1.png)
 
 
-Let's add a spacing of 5px between circles:
+Let's add spacing about ½ between circles -
+resulting in a 24\*7px circles + (24-1)\*3px spacing = 237×237px format:
 
 ``` ruby
-punk.spots( 10, spacing: 5 )
+punk.spots( 7, spacing: 3 )
 ```
 
 
-![](i/punk-3100@spots10+5.png)
-![](i/punk-3393@spots10+5.png)
-![](i/punk-0172@spots10+5.png)
-![](i/punk-2964@spots10+5.png)
+![](i/punk-3100@spots2.png)
+![](i/punk-3393@spots2.png)
+![](i/punk-0172@spots2.png)
+![](i/punk-2964@spots2.png)
 
 
-Let's try 10px:
+Let's try a 1/1 spacing between circles -
+resulting in a 24\*5px circles + (24-1)\*5px spacing = 235×235px format:
 
 ``` ruby
-punk.spots( 10, spacing: 10 )
+punk.spots( 5, spacing: 5 )
 ```
 
-![](i/punk-3100@spots10+10.png)
-![](i/punk-3393@spots10+10.png)
-![](i/punk-0172@spots10+10.png)
-![](i/punk-2964@spots10+10.png)
+![](i/punk-3100@spots3.png)
+![](i/punk-3393@spots3.png)
+![](i/punk-0172@spots3.png)
+![](i/punk-2964@spots3.png)
 
 
 Let's add some randomness. Let's try a random circle radius
@@ -89,42 +94,39 @@ and a random x/y-offset from the circles center by +/-2px:
 punk.spots( 10, center: [-2,2], radius: [3,5] )
 ```
 
-![](i/punk-3100@spots10_random.png)
-![](i/punk-3393@spots10_random.png)
-![](i/punk-0172@spots10_random.png)
-![](i/punk-2964@spots10_random.png)
+![](i/punk-3100@spots1_random.png)
+![](i/punk-3393@spots1_random.png)
+![](i/punk-0172@spots1_random.png)
+![](i/punk-2964@spots1_random.png)
 
 
-Let's add back the 10px spacing
-and let's make the random circle radius bigger
+Let's add back the 1/1 spacing
+and let's try a random circle radius
 between 5px and 10px:
 
 ``` ruby
-punk.spots( 10, spacing: 10,
-                center: [-2,2], radius: [5,10] )
+punk.spots( 5, spacing: 5,
+                center: [-2,2], radius: [2,5] )
 ```
 
+![](i/punk-3100@spots3_random.png)
+![](i/punk-3393@spots3_random.png)
+![](i/punk-0172@spots3_random.png)
+![](i/punk-2964@spots3_random.png)
 
-![](i/punk-3100@spots10+10_random.png)
-![](i/punk-3393@spots10+10_random.png)
-![](i/punk-0172@spots10+10_random.png)
-![](i/punk-2964@spots10+10_random.png)
 
-
-And bigger between 6px and 12px:
+And bigger between 3px and 6px:
 
 
 ``` ruby
-punk.spots( 10, spacing: 10,
-                center: [-1,1], radius: [6,12] )
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6] )
 ```
 
-![](i/punk-3100@spots10+10+big_random.png)
-![](i/punk-3393@spots10+10+big_random.png)
-![](i/punk-0172@spots10+10+big_random.png)
-![](i/punk-2964@spots10+10+big_random.png)
-
-
+![](i/punk-3100@spots3_random_big.png)
+![](i/punk-3393@spots3_random_big.png)
+![](i/punk-0172@spots3_random_big.png)
+![](i/punk-2964@spots3_random_big.png)
 
 
 ...
