@@ -163,7 +163,7 @@ punk.spots( 5, spacing: 5,
 Let's start all over again and let's bring back the background:
 
 ``` ruby
-punk.spots( 10, background: background: '#638596' )
+punk.spots( 10, background: '#638596' )
 ```
 
 ![](i/punk-3100@spots1_(bg).png)
@@ -171,10 +171,20 @@ punk.spots( 10, background: background: '#638596' )
 ![](i/punk-0172@spots1_(bg).png)
 ![](i/punk-2964@spots1_(bg).png)
 
+``` ruby
+punk.spots( 7, spacing: 3,
+               background: '#638596' )
+```
+
 ![](i/punk-3100@spots2_(bg).png)
 ![](i/punk-3393@spots2_(bg).png)
 ![](i/punk-0172@spots2_(bg).png)
 ![](i/punk-2964@spots2_(bg).png)
+
+``` ruby
+punk.spots( 5, spacing: 5,
+               background: '#638596' )
+```
 
 ![](i/punk-3100@spots3_(bg).png)
 ![](i/punk-3393@spots3_(bg).png)
@@ -182,14 +192,78 @@ punk.spots( 10, background: background: '#638596' )
 ![](i/punk-2964@spots3_(bg).png)
 
 
+``` ruby
+punk.spots( 10, center: [-2,2], radius: [3,5],
+                background: '#638596' )
+```
 
-...
+![](i/punk-3100@spots1_random_(bg).png)
+![](i/punk-3393@spots1_random_(bg).png)
+![](i/punk-0172@spots1_random_(bg).png)
+![](i/punk-2964@spots1_random_(bg).png)
+
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-2,2], radius: [2,5],
+                background: '#638596' )
+```
+
+![](i/punk-3100@spots3_random_(bg).png)
+![](i/punk-3393@spots3_random_(bg).png)
+![](i/punk-0172@spots3_random_(bg).png)
+![](i/punk-2964@spots3_random_(bg).png)
+
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6],
+                background: '#638596' )
+```
+
+![](i/punk-3100@spots3_random_big_(bg).png)
+![](i/punk-3393@spots3_random_big_(bg).png)
+![](i/punk-0172@spots3_random_big_(bg).png)
+![](i/punk-2964@spots3_random_big_(bg).png)
+
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6],
+                lightness: [-0.03,0.03],
+                background: '#638596' )
+```
+
+![](i/punk-3100@spots3_random_big_(l+bg).png)
+![](i/punk-3393@spots3_random_big_(l+bg).png)
+![](i/punk-0172@spots3_random_big_(l+bg).png)
+![](i/punk-2964@spots3_random_big_(l+bg).png)
+
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6],
+                lightness: [-0.03,0.03],
+                odd: true,
+                background: '#638596' )
+```
+
+![](i/punk-3100@spots3_random_big_(l+odd+bg).png)
+![](i/punk-3393@spots3_random_big_(l+odd+bg).png)
+![](i/punk-0172@spots3_random_big_(l+odd+bg).png)
+![](i/punk-2964@spots3_random_big_(l+odd+bg).png)
+
+
+One more thing - lets a 2x zoom with double the pixel...
+
+
+
+
 
 
 
 
 That's it for now to get you started.
-
 
 
 
