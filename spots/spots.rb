@@ -1,143 +1,10 @@
 require 'pixelart'
 
-require 'mini_magick'
 
 
-
-module Pixelart
-
-
-
-class Image
-  MAGICK_SCRIPT = "./tmp/magick_script.txt"
-  MAGICK_INPUT  = "./tmp/magick_input.png"
-  MAGICK_OUTPUT = "./tmp/magick_output.png"
-
-
-def spots( spot=20,
-              spacing: 0,
-              center: nil,
-              radius: nil,
-              background: nil,
-              lightness: nil,
-              odd: false,
-              zoom: nil )
-
-  base_img = if zoom
-               zoom( zoom )
-             else
-               @img
-             end
-
-  width  = base_img.width
-  height = base_img.height
-  puts "  #{width}x#{height}"
-
-  canvas = Image.new( width*spot+(width-1)*spacing,
-                      height*spot+(height-1)*spacing )
-  canvas.save( MAGICK_INPUT )
-
-  min_center, max_center = center ? center : [0,0]
-  min_radius, max_radius = radius ? radius : [0,0]
-
-  background_color = background ? Color.parse( background ) : 0
-
-  min_lightness, max_lightness = lightness ? lightness : [0.0,0.0]
-
-
-  script = String.new('')
-  script << "#{MAGICK_INPUT} \\\n"
-
-    width.times do |x|
-      height.times do |y|
-         color = base_img[ x, y ]
-
-         if color == 0  ## transparent
-           if background   ## change transparent to background
-              color = background_color
-           else
-             next ## skip transparent
-           end
-         end
-
-
-         if lightness
-          ## todo/check: make it work with alpha too
-          h,s,l = Color.to_hsl( color, include_alpha: false )
-
-           h = h % 360    ## make sure h(ue) is always positive!!!
-
-           ## note: rand() return between 0.0 and 1.0
-           l_diff = min_lightness +
-                     (max_lightness-min_lightness)*rand()
-
-           lnew = [1.0, l+l_diff].min
-           lnew = [0.0, lnew].max
-
-           ## print " #{l}+#{l_diff}=#{lnew} "
-
-           color = Color.from_hsl( h,
-                                   [1.0, s].min,
-                                   lnew )
-         end
-
-         ## note: return hexstring with leading #
-         # e.g.    0 becomes #00000000
-         #        and so on
-         color_hex = Color.to_hex( color, include_alpha: true )
-         # magick.fill( color_hex )
-         script << "-fill '#{color_hex}' "
-
-         cx_offset,
-         cy_offset = if center  ## randomize (offset off center +/-)
-                       [(spot/2 + min_center) + rand( max_center-min_center ),
-                        (spot/2 + min_center) + rand( max_center-min_center )]
-                     else
-                       [spot/2,   ## center
-                        spot/2]
-                     end
-
-         cx = x*spot + x*spacing + cx_offset
-         cy = y*spot + y*spacing + cx_offset
-
-         px_offset = if radius ## randomize (radius +/-)
-                       min_radius + rand( max_radius-min_radius )
-                     else
-                       spot/2
-                     end
-         px = cx + px_offset
-         py = cy
-
-
-         if odd && (y % 2 == 1)  ## add odd offset
-            cx += spot/2
-            px += spot/2
-         end
-
-         ## circle
-         ##  give the center and any point on the perimeter (boundary)
-         ## magick.draw( "circle #{cx},#{cy},#{px},#{py}" )
-         script << "-draw 'circle #{cx},#{cy},#{px},#{py}' \\\n"
-      end
-    end
-
-    script << "-write #{MAGICK_OUTPUT}\n"
-
-   File.open( MAGICK_SCRIPT, 'w:utf-8') { |f| f.write( script ) }
-
-  MiniMagick::Tool::Magick.new do |magick|
-    magick.script( MAGICK_SCRIPT )
-  end
-
-
-  Image.read( MAGICK_OUTPUT )
-end
-
-
-end # class Image
-end # class Pixelart
-
-
+####
+## little arg(ument)s helper for spots method call arguments
+##   let's us "compose" args
 def args( args, **kwargs )
   args = [args]   if args.is_a?( Integer )
 
@@ -146,6 +13,7 @@ def args( args, **kwargs )
   argsnew[1] = (args[1] || {}).merge( kwargs )
   argsnew
 end
+
 
 
 #####   variant 1 - spots (no space)
@@ -219,13 +87,8 @@ variants = {
   'spots3_random_big_(l+odd+bg)' => args( SPOTS_SPACE_RANDOM_BIG, background: '#638596',
                                               odd: true,
                                                lightness: [-0.03,0.03] ),
-
-  ## with 2x (quadruple pixels)
-  'spots1@2x'            => args( SPOTS, zoom: 2 ),
-  'spots1_random@2x'     => args( SPOTS_RANDOM, zoom: 2 ),
-  'spots3_random@2x'     => args( SPOTS_SPACE_RANDOM, zoom: 2 ),
-  'spots3_random_big@2x' => args( SPOTS_SPACE_RANDOM_BIG, zoom: 2 )
 }
+
 
 ids = %w[
   0172
@@ -251,6 +114,18 @@ ids.each do |id|
 
      punk_spots = punk.spots( size, **opts )
      punk_spots.save( "./i/punk-#{id}@#{slug}.png" )
+
+     ### check for 2x (quadruple pixels) version
+     if ['spots1',
+         'spots1_random',
+         'spots3_random',
+         'spots3_random_big'].include?( slug )
+
+        srand( id.to_i(10) )
+
+        punk_spots = punk.zoom(2).spots( size, **opts )
+        punk_spots.save( "./i/punk-#{id}@#{slug}@2x.png" )
+     end
    end
 end
 

@@ -6,25 +6,11 @@
 $LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
 
-require 'mini_magick'
 
 
 module Pixelart
 
 class Image
-  MAGICK_INPUT  = "./tmp/magick_input.png"
-  MAGICK_OUTPUT = "./tmp/magick_output.png"
-
-  def blur( blur=2 )
-    @img.save( MAGICK_INPUT )
-    MiniMagick::Tool::Magick.new do |magick|
-      magick << MAGICK_INPUT
-      magick.blur( "#{blur}x#{blur}" )
-      magick << MAGICK_OUTPUT
-    end
-    Image.read( MAGICK_OUTPUT )
-  end
-
 
   ## neon glow special effect
   def neon( color='00ffaa' )
