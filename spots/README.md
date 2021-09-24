@@ -129,11 +129,61 @@ punk.spots( 5, spacing: 5,
 ![](i/punk-2964@spots3_random_big.png)
 
 
+
+Let's try a random variation (+/-) of the lightness of the colored pixels:
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6],
+                lightness: [-0.03,0.03] )
+```
+
+![](i/punk-3100@spots3_random_big_(l).png)
+![](i/punk-3393@spots3_random_big_(l).png)
+![](i/punk-0172@spots3_random_big_(l).png)
+![](i/punk-2964@spots3_random_big_(l).png)
+
+
+And let's try an offset variation for odd and even lines:
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6],
+                lightness: [-0.03,0.03],
+                odd: true )
+```
+
+![](i/punk-3100@spots3_random_big_(l+odd).png)
+![](i/punk-3393@spots3_random_big_(l+odd).png)
+![](i/punk-0172@spots3_random_big_(l+odd).png)
+![](i/punk-2964@spots3_random_big_(l+odd).png)
+
+
+
+Let's start all over again and let's bring back the background:
+
+``` ruby
+punk.spots( 10, background: background: '#638596' )
+```
+
+![](i/punk-3100@spots1_(bg).png)
+![](i/punk-3393@spots1_(bg).png)
+![](i/punk-0172@spots1_(bg).png)
+![](i/punk-2964@spots1_(bg).png)
+
+![](i/punk-3100@spots2_(bg).png)
+![](i/punk-3393@spots2_(bg).png)
+![](i/punk-0172@spots2_(bg).png)
+![](i/punk-2964@spots2_(bg).png)
+
+![](i/punk-3100@spots3_(bg).png)
+![](i/punk-3393@spots3_(bg).png)
+![](i/punk-0172@spots3_(bg).png)
+![](i/punk-2964@spots3_(bg).png)
+
+
+
 ...
-
-
-
-
 
 
 
