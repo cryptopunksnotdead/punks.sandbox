@@ -35,18 +35,63 @@ punk.spots( 10 )
 
 
 
-240x240px!?  What about high-definition (hi-def) XXXL?
+240×240px!? High-definition (hi-def) XXXL!?
 
 
+Yes, it's poster-size vector graphics quality!
+Let's look at the
+![**punk-10088_spots1.svg**](i/punk-10088_spots1.svg) image source:
 
-
-
+``` svg
+<circle cx="35" cy="45" r="5" fill="#f6000bff" />
+<circle cx="35" cy="85" r="5" fill="#f6000bff" />
+<circle cx="35" cy="105" r="5" fill="#f6000bff" />
+<circle cx="45" cy="35" r="5" fill="#f6000bff" />
+<circle cx="45" cy="45" r="5" fill="#f6000bff" />
+<circle cx="45" cy="55" r="5" fill="#f6000bff" />
 ...
+```
+
+Yes, it's all text in the scalable vector graphics (svg) format.
+Open up [**punk-10088_spots1.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/spots-hidef/i/punk-10088_spots1.svg) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the
+quality stays hi-definition hi-def!
+
+
+
+
+Let's add 1/1 spacing
+and let's try a random circle radius
+between 3px and 6px:
+
+``` ruby
+punk.spots( 5, spacing: 5,
+                center: [-1,1], radius: [3,6] )
+```
+
+![](i/punk-10088_spots3.svg)
+![](i/punk-10100_spots3.svg)
+![](i/punk-10180_spots3.svg)
+![](i/punk-10190_spots3.svg)
+
+
+
+
+Let's try a 2x zoom with quadruple the pixels:
+
+``` ruby
+punk.zoom(2).spots( 5, spacing: 5,
+                     center: [-1,1], radius: [3,6] )
+```
+
+![](i/punk-10088_spots3@2x.svg)
+![](i/punk-10100_spots3@2x.svg)
+![](i/punk-10180_spots3@2x.svg)
+![](i/punk-10190_spots3@2x.svg)
+
+
 
 
 That's it for now to get you started.
-
-
 
 
 
