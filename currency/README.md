@@ -2,10 +2,8 @@
 
 See
 the [**Punk Art Challenge #1**](https://old.reddit.com/r/CryptoPunksDev/comments/pttf4s/punk_art_challenge_1_10_000_dotty_spotty_currency/)
-for more background.
-
-
-And [**Part I - Spots Experiment**](../spots) and
+for more background
+and [**Part I - Spots Experiment**](../spots) and
 [**Part II - Spots Hi-Def Experiment**](../spots-hidef)
 in the series here.
 
@@ -51,10 +49,10 @@ punk.zoom(2).spots( 5, spacing: 5,
                      background: BACKGROUND_SPOTS )
 ```
 
-![](i/punk-10088_currency-v1@2x.png)
-![](i/punk-10100_currency-v1@2x.png)
-![](i/punk-10180_currency-v1@2x.png)
-![](i/punk-10190_currency-v1@2x.png)
+![](i/punk-10088-currency-v1@2x.png)
+![](i/punk-10100-currency-v1@2x.png)
+![](i/punk-10180-currency-v1@2x.png)
+![](i/punk-10190-currency-v1@2x.png)
 
 
 
@@ -68,10 +66,10 @@ punk.zoom(2).spots( 5, spacing: 5,
                      background: BACKGROUND_SPOTS )
 ```
 
-![](i/punk-10088_currency-v2@2x.png)
-![](i/punk-10100_currency-v2@2x.png)
-![](i/punk-10180_currency-v2@2x.png)
-![](i/punk-10190_currency-v2@2x.png)
+![](i/punk-10088-currency-v2@2x.png)
+![](i/punk-10100-currency-v2@2x.png)
+![](i/punk-10180-currency-v2@2x.png)
+![](i/punk-10190-currency-v2@2x.png)
 
 
 
@@ -88,7 +86,7 @@ punk.zoom(2).spots( 5, spacing: 5,
                      background: BACKGROUND_SPOTS )
 ```
 
-High-definition (hi-def) XXXL!? Yes, it's all text in the scalable vector graphics (svg) format. For example, open up [**punk-10088_currency-v2@2x.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/currency/i/punk-10088_currency-v2@2x.png) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the quality stays hi-definition (hi-def)!
+High-definition (hi-def) XXXL!? Yes, it's all text in the scalable vector graphics (svg) format. For example, open up [**punk-10088-currency-v2@2x.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/currency/i/punk-10088-currency-v2@2x.png) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the quality stays hi-definition (hi-def)!
 
 
 
