@@ -81,12 +81,12 @@ with poster-size quality thanks to vector graphics.
 Let's try:
 
 ``` ruby
-punk.zoom(2).spots( 5, spacing: 5,
+punk.zoom(2).spots_hidef( 5, spacing: 5,
                      center: [-3,3], radius: [2,8],
                      background: BACKGROUND_SPOTS )
 ```
 
-High-definition (hi-def) XXXL!? Yes, it's all text in the scalable vector graphics (svg) format. For example, open up [**punk-10088-currency-v2@2x.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/currency/i/punk-10088-currency-v2@2x.png) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the quality stays hi-definition (hi-def)!
+High-definition (hi-def) XXXL!? Yes, it's all text in the scalable vector graphics (svg) format. For example, open up [**punk-10088-currency-v2@2x.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/currency/i/punk-10088-currency-v2@2x.svg) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the quality stays hi-definition (hi-def)!
 
 
 
