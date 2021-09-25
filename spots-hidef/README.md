@@ -39,8 +39,7 @@ punk.spots( 10 )
 
 
 Yes, it's poster-size vector graphics quality!
-Let's look at the
-![**punk-10088_spots1.svg**](i/punk-10088_spots1.svg) image source:
+Let's look at the [**punk-10088_spots1.svg**](i/punk-10088_spots1.svg) image source:
 
 ``` svg
 <circle cx="35" cy="45" r="5" fill="#f6000bff" />
@@ -54,8 +53,7 @@ Let's look at the
 
 Yes, it's all text in the scalable vector graphics (svg) format.
 Open up [**punk-10088_spots1.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/spots-hidef/i/punk-10088_spots1.svg) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the
-quality stays hi-definition hi-def!
-
+quality stays hi-definition (hi-def)!
 
 
 
