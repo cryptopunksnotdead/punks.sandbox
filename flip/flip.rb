@@ -9,24 +9,6 @@
 require 'cryptopunks'
 
 
-### todo/fix:
-##   more this flip code into pixelart gem!!!
-
-module Pixelart
-class Image
-
-  def flip
-    img = @img.flip
-    Image.new( img.width, img.height, img )
-  end
-  alias_method :flip_horizontally, :flip
-
-end # class Image
-end # module Pixelart
-
-
-
-
 print "==> loading image..."
 punks = Punks::Image::Composite.read( '../../programming-cryptopunks/punks.png' )
 print "OK\n"
