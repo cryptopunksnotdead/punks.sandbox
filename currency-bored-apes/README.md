@@ -77,14 +77,51 @@ get selected randomly.
 Let's try:
 
 
+Let's try a 2x zoom with quadruple the pixels:
+
+``` ruby
+ape.zoom(2).spots( 5, spacing: 5,
+                     center: [-1,1], radius: [3,6],
+                     background: BACKGROUND_SPOTS )
+```
+
+![](i/boredape_au-3-currency-v1@2x.png)
+![](i/boredape_au-8-currency-v1@2x.png)
+![](i/boredape_au-27-currency-v1@2x.png)
+![](i/boredape_au-30-currency-v1@2x.png)
+
+
+Let's make the spots bigger
+with a radius between 2px and 8px
+and the offset more random -/+3px:
+
+``` ruby
+ape.zoom(2).spots( 5, spacing: 5,
+                     center: [-3,3], radius: [2,8],
+                     background: BACKGROUND_SPOTS )
+```
+
+![](i/boredape_au-3-currency-v2@2x.png)
+![](i/boredape_au-8-currency-v2@2x.png)
+![](i/boredape_au-27-currency-v2@2x.png)
+![](i/boredape_au-30-currency-v2@2x.png)
 
 
 
 
-...
+## Bonus - Free High-Definition (Hi-Def) XXXL Poster-Size Quality Edition
 
+One more thing - let's go high definition (hi-def), yes, XXXL
+with poster-size quality thanks to vector graphics.
+Let's try:
 
-That's it for now to get you started.
+``` ruby
+ape.zoom(2).spots_hidef( 5, spacing: 5,
+                     center: [-3,3], radius: [2,8],
+                     background: BACKGROUND_SPOTS )
+```
+
+High-definition (hi-def) XXXL!? Yes, it's all text in the scalable vector graphics (svg) format. For example, open up [**boredape_au-3-currency-v2@2x.svg**](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/currency-bored-apes/i/boredape_au-3-currency-v2@2x.svg) in your browser and zoom in 100%, 200%, 300%, .. and so on and yes, the quality stays hi-definition (hi-def)!
 
 
 
