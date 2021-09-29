@@ -57,7 +57,7 @@ See [**24px/composite**](24px/composite.rb)
 
 Bonus - Step 5 - Generate a Attribute Dataset in the Comma-Separated Values (CSV) Tabular Format from the JSON Meta Datasets (in step 1)
 
-See [**24px/attributes**](24px/atttributes.rb)
+See [**24px/attributes**](24px/attributes.rb)
 
 
 
