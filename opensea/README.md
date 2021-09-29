@@ -14,7 +14,7 @@ a non-blocking fast repsone) and 9 900 seconds -
 that is about 60 minutes x 60 seconds equals 3600 seconds
 thus, about three hours.
 
-If now download in step two the images that's another three hours
+If you now download in step two the images that's another three hours
 and so on.
 
 
