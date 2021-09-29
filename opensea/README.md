@@ -1,6 +1,29 @@
 # Quick & Dirty "One-Off" Scripts to Download Complete Collections (from Open Sea)
 
 
+Yes, you can automate with scripts
+the "right-click and download image"
+for complete collections.
+
+Note: For let's say a 9 900 artworks collection it's not
+instantaneous and **be fair with your request and add a minimum 0.5sec or more wait delay / throttle**
+since, yes, the script will run for hours
+e.g. let's assume one request/per second and a collection with 9 990 artworks,
+that is, about 9 900 seconds for 9 900 requests (if you assume
+a non-blocking fast repsone) and 9 900 seconds -
+that is about 60 minutes x 60 seconds equals 3600 seconds
+thus, about three hours.
+
+If now download in step two the images that's another three hours
+and so on.
+
+
+
+
+
+## 24px (Cool Cats) Collection
+
+
 As an example let's redo the 24px collection (that is, the first 24px collection - 24px Cool Cats).
 
 
