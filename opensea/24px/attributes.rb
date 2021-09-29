@@ -1,3 +1,9 @@
+####
+# to run use:
+#   ruby 24px/attributes.rb
+
+
+
 require 'json'
 require 'csvreader'
 
