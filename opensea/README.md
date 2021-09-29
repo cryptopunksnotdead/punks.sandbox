@@ -10,7 +10,7 @@ instantaneous and **be fair with your request and add a minimum 0.5sec or more w
 since, yes, the script will run for hours
 e.g. let's assume one request/per second and a collection with 9 990 artworks,
 that is, about 9 900 seconds for 9 900 requests (if you assume
-a non-blocking fast repsone) and 9 900 seconds -
+a non-blocking fast response) and 9 900 seconds -
 that is about 60 minutes x 60 seconds equals 3600 seconds
 thus, about three hours.
 
@@ -48,7 +48,7 @@ and try to change the background color to transparent
 See [**24px/pixelate**](24px/pixelate.rb)
 
 
-Step 4 - Profit!  Generate the All-In-One Composite Images
+Step 4 - Profit!  Generate the All-In-One Composite Image
 from the "Pixelated" Originals (from step 3)
 
 See [**24px/composite**](24px/composite.rb)
