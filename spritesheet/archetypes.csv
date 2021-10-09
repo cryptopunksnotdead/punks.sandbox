@@ -1,0 +1,97 @@
+path,      type,  gender,  name,  more_names
+
+###########################
+# basic - archetypes
+
+basic/human-male_darker.png,    Human, m,   Male 1
+basic/human-male_dark.png,      Human, m,   Male 2
+basic/human-male_light.png,     Human, m,   Male 3
+basic/human-male_lighter.png,   Human, m,   Male 4
+
+basic/human-female_darker.png,  Human, f,   Female 1
+basic/human-female_dark.png,    Human, f,   Female 2
+basic/human-female_light.png,   Human, f,   Female 3
+basic/human-female_lighter.png, Human, f,   Female 4
+
+basic/zombie-male.png,          Zombie, m,   Zombie
+basic/zombie-female.png,        Zombie, f,   Zombie Female
+
+basic/ape-male.png,             Ape,    m,   Ape
+basic/ape-female.png,           Ape,    f,   Ape Female
+
+basic/alien-male.png,           Alien,  m,   Alien
+basic/alien-female.png,         Alien,  f,   Alien Female
+
+
+##################################
+# more - archetypes
+
+more/demon-male.png,             Demon,   m, Demon
+more/demon-female.png,           Demon,   f, Demon Female
+
+more/mummy-male.png,             Mummy,   m, Mummy
+more/mummy-female.png,           Mummy,   f, Mummy Female
+
+more/orc-male.png,               Orc,     m, Orc
+more/orc-female.png,             Orc,     f, Orc Female
+
+more/robot-male.png,             Robot,   m, Robot
+more/robot-female.png,           Robot,   f, Robot Female
+
+more/skeleton-male.png,          Skeleton, m, Skeleton
+more/skeleton-female.png,        Skeleton, f, Skeleton Female
+
+more/vampire-male.png,           Vampire,  m, Vampire
+more/vampire-female.png,         Vampire,  f, Vampire Female
+
+
+#####################################
+# planet apes - archetypes
+
+planet-apes/ape-zombie-male.png,   Zombie,  m,  Zombie (Ape)
+planet-apes/ape-alien-male.png,    Alien,   m,  Alien (Ape)
+
+
+
+######################################
+# alien invasion - archetypes
+
+alien-invasion/alien-male_0.png,       Alien, m, Alien 0°
+alien-invasion/alien-male_30.png,     Alien, m, Alien 30°
+alien-invasion/alien-male_60.png,     Alien, m, Alien 60°
+alien-invasion/alien-male_90.png,     Alien, m, Alien 90°
+alien-invasion/alien-male_120.png,     Alien, m, Alien 120°
+alien-invasion/alien-male_150.png,     Alien, m, Alien 150°
+alien-invasion/alien-male_180.png,     Alien, m, Alien 180°
+alien-invasion/alien-male_210.png,     Alien, m, Alien 210°
+alien-invasion/alien-male_240.png,     Alien, m, Alien 240°
+alien-invasion/alien-male_270.png,     Alien, m, Alien 270°
+alien-invasion/alien-male_300.png,     Alien, m, Alien 300°
+alien-invasion/alien-male_330.png,     Alien, m, Alien 330°
+
+alien-invasion/alien-ape-male_0.png,     Alien, m, Alien (Ape) 0°
+alien-invasion/alien-ape-male_30.png,     Alien, m, Alien (Ape) 30°
+alien-invasion/alien-ape-male_60.png,     Alien, m, Alien (Ape) 60°
+alien-invasion/alien-ape-male_90.png,     Alien, m, Alien (Ape) 90°
+alien-invasion/alien-ape-male_120.png,     Alien, m, Alien (Ape) 120°
+alien-invasion/alien-ape-male_150.png,     Alien, m, Alien (Ape) 150°
+alien-invasion/alien-ape-male_180.png,     Alien, m, Alien (Ape) 180°
+alien-invasion/alien-ape-male_210.png,     Alien, m, Alien (Ape) 210°
+alien-invasion/alien-ape-male_240.png,     Alien, m, Alien (Ape) 240°
+alien-invasion/alien-ape-male_270.png,     Alien, m, Alien (Ape) 270°
+alien-invasion/alien-ape-male_300.png,     Alien, m, Alien (Ape) 300°
+alien-invasion/alien-ape-male_330.png,     Alien, m, Alien (Ape) 330°
+
+alien-invasion/alien-female_0.png,      Alien, f, Alien Female 0°
+alien-invasion/alien-female_30.png,      Alien, f, Alien Female 30°
+alien-invasion/alien-female_60.png,      Alien, f, Alien Female 60°
+alien-invasion/alien-female_90.png,      Alien, f, Alien Female 90°
+alien-invasion/alien-female_120.png,      Alien, f, Alien Female 120°
+alien-invasion/alien-female_150.png,      Alien, f, Alien Female 150°
+alien-invasion/alien-female_180.png,      Alien, f, Alien Female 180°
+alien-invasion/alien-female_210.png,      Alien, f, Alien Female 210°
+alien-invasion/alien-female_240.png,      Alien, f, Alien Female 240°
+alien-invasion/alien-female_270.png,      Alien, f, Alien Female 270°
+alien-invasion/alien-female_300.png,      Alien, f, Alien Female 300°
+alien-invasion/alien-female_330.png,      Alien, f, Alien Female 330°
+
