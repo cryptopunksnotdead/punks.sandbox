@@ -50,8 +50,14 @@ punk.zoom(4).save( "./tmp/gen1@4x.png" )
 punk = g.generate( "Female 4", "Birthday Hat", "Big Shades" )
 punk.zoom(4).save( "./tmp/gen2@4x.png" )
 
-punk = g.generate( "Alien 0°", "Sombrero", "Classic Shades" )
+punk = g.generate( "Alien", "Cap Forward", "Laser Eyes", "Pipe" )
 punk.zoom(4).save( "./tmp/gen3@4x.png" )
+
+punk = g.generate( "Ape", "Knitted Cap", "Laser Eyes", "Gold Chain" )
+punk.zoom(4).save( "./tmp/gen4@4x.png" )
+
+punk = g.generate( "Zombie", "Crazy Hair", "Laser Eyes", "Earring" )
+punk.zoom(4).save( "./tmp/gen5@4x.png" )
 
 
 puts
@@ -71,8 +77,14 @@ punk.zoom(4).save( "./tmp/gen1b@4x.png" )
 punk = Punks::Image.generate( "Female 4", "Birthday Hat", "Big Shades" )
 punk.zoom(4).save( "./tmp/gen2b@4x.png" )
 
-punk = Punks::Image.generate( "Alien 0°", "Sombrero", "Classic Shades" )
+punk = Punks::Image.generate( "Alien", "Cap Forward", "Laser Eyes", "Pipe" )
 punk.zoom(4).save( "./tmp/gen3b@4x.png" )
+
+punk = Punks::Image.generate( "Ape", "Knitted Cap", "Laser Eyes", "Gold Chain" )
+punk.zoom(4).save( "./tmp/gen4b@4x.png" )
+
+punk = Punks::Image.generate( "Zombie", "Crazy Hair", "Laser Eyes", "Earring" )
+punk.zoom(4).save( "./tmp/gen5b@4x.png" )
 
 
 puts "bye"
