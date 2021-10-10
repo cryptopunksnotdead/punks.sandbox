@@ -5,7 +5,7 @@ require 'csvreader'
 
 
 ## extra stdlibs
-require 'digest'
+require 'digest'     ## move/add to pixelart upstream - why? why not?
 require 'optparse'
 
 
@@ -26,6 +26,30 @@ require 'cryptopunks/dataset'
 
 require 'cryptopunks/colors'
 require 'cryptopunks/image'
+
+require 'cryptopunks/generator'
+
+###
+## add convenience pre-configurated generatored with build-in spritesheet (see config)
+
+module Cryptopunks
+
+  def self.generator
+    @generator ||= Generator.new(  "#{root}/config/spritesheet.png",
+                                   "#{root}/config/spritesheet.csv" )
+  end
+
+  class Image
+     def self.generate( *values )
+       img = Cryptopunks.generator.generate( *values )
+       ## note: unwrap inner image before passing on to c'tor (requires ChunkyPNG image for now)
+       new( img.image )
+     end
+  end # class Image
+end #  module Cryptopunks
+
+
+
 
 
 
