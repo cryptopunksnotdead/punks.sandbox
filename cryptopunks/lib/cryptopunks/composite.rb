@@ -1,6 +1,6 @@
 module Cryptopunks
-  class Image        ## nest Composite inside Image - why? why not?
-  class Composite  < Pixelart::ImageComposite
+   ## note: was Image::Composite
+  class ImageComposite  < Pixelart::ImageComposite
 
     PUNK_HASH   = 'ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b'
 
@@ -34,6 +34,5 @@ module Cryptopunks
       super
     end
 
-  end ## class Composite
-  end ## class Image
+  end ## class ImageComposite
 end ## module Cryptopunks

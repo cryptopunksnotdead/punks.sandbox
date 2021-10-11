@@ -22,6 +22,15 @@ end
 require 'cryptopunks/attributes'
 require 'cryptopunks/structs'
 require 'cryptopunks/composite'
+## add old backwards compatible alias
+
+module Cryptopunks
+   class Image
+      Composite = ImageComposite
+   end
+end
+
+
 require 'cryptopunks/dataset'
 
 require 'cryptopunks/colors'
@@ -109,7 +118,7 @@ class Tool
     pp opts
 
     puts "==> reading >#{opts[:file]}<..."
-    punks = Image::Composite.read( opts[:file] )
+    punks = ImageComposite.read( opts[:file] )
 
 
     puts "    setting zoom to #{opts[:zoom]}x"   if opts[:zoom] != 1
@@ -145,17 +154,6 @@ def self.main( args=ARGV )
   Tool.new.run( args )
 end
 end ## module Cryptopunks
-
-
-
-
-### add more built-in (load on demand) design series / collections
-DESIGNS_ORIGINAL = Cryptopunks::DesignSeries.new( "#{Cryptopunks.root}/config/original" )
-DESIGNS_MORE     = Cryptopunks::DesignSeries.new( "#{Cryptopunks.root}/config/more" )
-
-## all designs in one collections
-DESIGNS = {}.merge( DESIGNS_ORIGINAL.to_h,
-                    DESIGNS_MORE.to_h )
 
 
 
