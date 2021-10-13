@@ -35,6 +35,14 @@ punk = Punks::Image.generate( "Demon Female", "Heart Shades" )
 punk.zoom(4).save( "./tmp/gen6@4x.png" )
 
 
+punk = Punks::Image.generate( "Vampire Female", "Wild Hair" )
+punk.zoom(4).save( "./tmp/gen7@4x.png" )
+
+punk = Punks::Image.generate( "Vampire", "Wild Hair" )
+punk.zoom(4).save( "./tmp/gen8@4x.png" )
+
+
+
 ## try lookups
 ## -- archetypes lookup
 sprite = Punks::Sheet.find_by( name: 'Male 1' )
