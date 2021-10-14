@@ -116,6 +116,9 @@ module Cryptopunks
  alias_method  :sheet, :spritesheet
 
 
+ def records() @recs; end
+ alias_method :meta, :records
+
 
 
 
