@@ -106,7 +106,7 @@ resulting in:
 
 ![](i/punk-0000.png)
 
-Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.*
+Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.:
 
 ```
 $ punk --zoom 4 generate female_2 earring blonde_bob green_eye_shadow
