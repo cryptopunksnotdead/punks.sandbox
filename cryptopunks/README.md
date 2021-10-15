@@ -96,9 +96,194 @@ COMMANDS
 _Generate punk characters from text attributes (from scratch / zero) via builtin punk spritesheet_
 
 
+Let's try punk #0:
+
+```
+$ punk generate female_2 earring blonde_bob green_eye_shadow
+```
+
+resulting in:
+
+![](i/punk-0000.png)
+
+Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.*
+
+```
+$ punk --zoom 4 generate female_2 earring blonde_bob green_eye_shadow
+# -or-
+$ punk -z2 g female_2 earring blonde_bob green_eye_shadow
+```
+
+resulting in:
+
+2x ![](i/punk-0000x2.png)
+4x ![](i/punk-0000x4.png)
+8x ![](i/punk-0000x8.png)
+
+
+Let's try never-before-seen super-rare punks:
+
+```
+$ punk generate demon heart_shades
+$ punk generate vampire_female wild_hair
+```
+
+resulting in:
+
+![](i/demon.png)
+![](i/vampire-female.png)
+
+
+
+Q: What punk archetypes and attributes can I use?
+
+A:  See the list command.
+
+
 ### List Command
 
 _List all punk archetype and attribute names from builtin punk spritesheet_
+
+
+Let's try:
+
+```
+$ punk list
+# -or-
+$ punk ls
+```
+
+resulting in:
+
+```
+==> Archetypes
+  Male 1 / (m)                   - Archetype - Human
+  Male 2 / (m)                   - Archetype - Human
+  Male 3 / (m)                   - Archetype - Human
+  Male 4 / (m)                   - Archetype - Human
+  Female 1 / (f)                 - Archetype - Human
+  Female 2 / (f)                 - Archetype - Human
+  Female 3 / (f)                 - Archetype - Human
+  Female 4 / (f)                 - Archetype - Human
+  Zombie / (m)                   - Archetype - Zombie
+  Zombie Female / (f)            - Archetype - Zombie
+  Ape / (m)                      - Archetype - Ape
+  Ape Female / (f)               - Archetype - Ape
+  Alien / (m)                    - Archetype - Alien
+  Alien Female / (f)             - Archetype - Alien
+  Demon / (m)                    - Archetype - Demon
+  Demon Female / (f)             - Archetype - Demon
+  Mummy / (m)                    - Archetype - Mummy
+  Mummy Female / (f)             - Archetype - Mummy
+  Orc / (m)                      - Archetype - Orc
+  Orc Female / (f)               - Archetype - Orc
+  Robot / (m)                    - Archetype - Robot
+  Robot Female / (f)             - Archetype - Robot
+  Skeleton / (m)                 - Archetype - Skeleton
+  Skeleton Female / (f)          - Archetype - Skeleton
+  Vampire / (m)                  - Archetype - Vampire
+  Vampire Female / (f)           - Archetype - Vampire
+  Zombie (Ape) / (m)             - Archetype - Zombie
+  Alien (Ape) / (m)              - Archetype - Alien
+  Alien 0° / (m)                 - Archetype - Alien
+  Alien 30° / (m)                - Archetype - Alien
+  Alien 60° / (m)                - Archetype - Alien
+  Alien 90° / (m)                - Archetype - Alien
+  Alien 120° / (m)               - Archetype - Alien
+  Alien 150° / (m)               - Archetype - Alien
+  Alien 180° / (m)               - Archetype - Alien
+  Alien 210° / (m)               - Archetype - Alien
+  Alien 240° / (m)               - Archetype - Alien
+  Alien 270° / (m)               - Archetype - Alien
+  Alien 300° / (m)               - Archetype - Alien
+  Alien 330° / (m)               - Archetype - Alien
+  Alien (Ape) 0° / (m)           - Archetype - Alien
+  Alien (Ape) 30° / (m)          - Archetype - Alien
+  Alien (Ape) 60° / (m)          - Archetype - Alien
+  Alien (Ape) 90° / (m)          - Archetype - Alien
+  Alien (Ape) 120° / (m)         - Archetype - Alien
+  Alien (Ape) 150° / (m)         - Archetype - Alien
+  Alien (Ape) 180° / (m)         - Archetype - Alien
+  Alien (Ape) 210° / (m)         - Archetype - Alien
+  Alien (Ape) 240° / (m)         - Archetype - Alien
+  Alien (Ape) 270° / (m)         - Archetype - Alien
+  Alien (Ape) 300° / (m)         - Archetype - Alien
+  Alien (Ape) 330° / (m)         - Archetype - Alien
+  Alien Female 0° / (f)          - Archetype - Alien
+  Alien Female 30° / (f)         - Archetype - Alien
+  Alien Female 60° / (f)         - Archetype - Alien
+  Alien Female 90° / (f)         - Archetype - Alien
+  Alien Female 120° / (f)        - Archetype - Alien
+  Alien Female 150° / (f)        - Archetype - Alien
+  Alien Female 180° / (f)        - Archetype - Alien
+  Alien Female 210° / (f)        - Archetype - Alien
+  Alien Female 240° / (f)        - Archetype - Alien
+  Alien Female 270° / (f)        - Archetype - Alien
+  Alien Female 300° / (f)        - Archetype - Alien
+  Alien Female 330° / (f)        - Archetype - Alien
+
+==> Attributes
+  3D Glasses / (m)               - Attribute
+  3D Glasses / (f)               - Attribute
+  Bandana / (m)                  - Attribute
+  Bandana / (f)                  - Attribute
+  Beanie / (m)                   - Attribute
+  Beanie / (f)                   - Attribute
+  Big Beard / (m)                - Attribute
+  Big Shades / (m)               - Attribute
+  Big Shades / (f)               - Attribute
+  Black Lipstick / (f)           - Attribute
+  Blonde Bob / (f)               - Attribute
+  Blonde Short / (f)             - Attribute
+  Blue Eye Shadow / (f)          - Attribute
+  Buck Teeth / (m)               - Attribute
+  Cap / (m)                      - Attribute
+  Cap / (f)                      - Attribute
+  Cap Forward / (m)              - Attribute
+  Cap Forward / (f)              - Attribute
+  Chinstrap / (m)                - Attribute
+  Choker / (f)                   - Attribute
+  Cigarette / (m)                - Attribute
+  Cigarette / (f)                - Attribute
+  Classic Shades / (m)           - Attribute
+  Classic Shades / (f)           - Attribute
+  Clown Eyes Blue / (m)          - Attribute
+  Clown Eyes Blue / (f)          - Attribute
+  Clown Eyes Green / (m)         - Attribute
+  Clown Eyes Green / (f)         - Attribute
+  Clown Hair Green / (m)         - Attribute
+  Clown Hair Green / (f)         - Attribute
+  Clown Nose / (m)               - Attribute
+  Clown Nose / (f)               - Attribute
+  Cowboy Hat / (m)               - Attribute
+  Cowboy Hat / (f)               - Attribute
+  Crazy Hair / (m)               - Attribute
+  Crazy Hair / (f)               - Attribute
+  Dark Hair / (f)                - Attribute
+  Do-rag / (m)                   - Attribute
+  Do-rag / (f)                   - Attribute
+  Earring / (m)                  - Attribute
+  Earring / (f)                  - Attribute
+  Eye Mask / (m)                 - Attribute
+  Eye Mask / (f)                 - Attribute
+  Eye Patch / (m)                - Attribute
+  Eye Patch / (f)                - Attribute
+  Fedora / (m)                   - Attribute
+  Fedora / (f)                   - Attribute
+  Front Beard / (m)              - Attribute
+  Front Beard Dark / (m)         - Attribute
+  Frown / (m)                    - Attribute
+  Frumpy Hair / (m)              - Attribute
+  Frumpy Hair / (f)              - Attribute
+  Green Eye Shadow / (f)         - Attribute
+  Goat / (m)                     - Attribute
+  Gold Chain / (m)               - Attribute
+  Gold Chain / (f)               - Attribute
+  ...
+```
+
+See the [**punks.spritesheet**](https://github.com/cryptopunksnotdead/punks.spritesheet) for more.
+
 
 
 
@@ -107,6 +292,45 @@ _List all punk archetype and attribute names from builtin punk spritesheet_
 _Query (builtin off-chain) punk contract for punk text attributes by IDs - use 0 to 9999_
 
 
+Let's try punk #0:
+
+```
+$ punk query 0
+# -or-
+$ punk q 0
+```
+
+resulting in:
+
+```
+==> (1/1) punk #0...
+  female_2  earring  blonde_bob  green_eye_shadow
+```
+
+Let's try some top sellers:
+
+```
+$ punk query 7804 3100 5217 8857
+# -or-
+$ punk q 7804 3100 5217 8857
+```
+
+resulting in:
+
+```
+==> (1/4) punk #7804...
+  alien  cap_forward  pipe  small_shades
+==> (2/4) punk #3100...
+  alien  headband
+==> (3/4) punk #5217...
+  ape  gold_chain  knitted_cap
+==> (4/4) punk #8857...
+  zombie  wild_hair  3d_glasses
+```
+
+Note: Yes, you can pass the text attributes to the generate command
+to get a free "cleanroom" copy built from scratch / zero
+that you own 100% forever.
 
 
 
