@@ -17,8 +17,6 @@ basic/f/blondebob.png,   f,   Blonde Bob
 basic/f/blondeshort.png,   f, Blonde Short
 basic/f/blueeyeshadow.png,   f, Blue Eye Shadow    ## typo - add Eye/Eyes - why? why not??  Blue Eyes
 basic/m/buckteeth.png,    m,  Buck Teeth
-basic/m/cap.png,          m,  Cap
-basic/f/cap.png,   f,         Cap
 basic/m/capforward.png,    m, Cap Forward
 basic/f/capforward.png,   f, Cap Forward
 basic/m/chinstrap.png,    m,  Chinstrap
@@ -182,4 +180,50 @@ more/m/vikinghelmet.png,    m,       Viking Helmet
 more/f/vikinghelmet.png,  f,         Viking Helmet
 more/m/winterhat.png,    m,          Winter Hat
 more/f/winterhat.png,  f,            Winter Hat
+
+
+
+###################
+# all caps - attributes
+
+## note - move cap from basic here
+basic/m/cap.png,        m,  Cap
+basic/f/cap.png,        f,  Cap
+
+
+all-caps/m/cap_0.png,  m,  Cap 0°, Cap Red
+all-caps/f/cap_0.png,  f,  Cap 0°, Cap Red
+
+all-caps/m/cap_30.png, m,  Cap 30°, Cap Orange
+all-caps/f/cap_30.png, f,  Cap 30°, Cap Orange
+
+all-caps/m/cap_60.png, m,  Cap 60°, Cap Yellow
+all-caps/f/cap_60.png, f,  Cap 60°, Cap Yellow
+
+all-caps/m/cap_90.png, m,  Cap 90°, Cap Yellow Green
+all-caps/f/cap_90.png, f,  Cap 90°, Cap Yellow Green
+
+all-caps/m/cap_120.png, m,  Cap 120°, Cap Green
+all-caps/f/cap_120.png, f,  Cap 120°, Cap Green
+
+all-caps/m/cap_150.png, m,  Cap 150°, Cap Cyan Green
+all-caps/f/cap_150.png, f,  Cap 150°, Cap Cyan Green
+
+all-caps/m/cap_180.png, m,  Cap 180°, Cap Cyan
+all-caps/f/cap_180.png, f,  Cap 180°, Cap Cyan
+
+all-caps/m/cap_210.png, m,  Cap 210°, Cap Cyan Blue
+all-caps/f/cap_210.png, f,  Cap 210°, Cap Cyan Blue
+
+all-caps/m/cap_240.png, m,  Cap 240°, Cap Blue
+all-caps/f/cap_240.png, f,  Cap 240°, Cap Blue
+
+all-caps/m/cap_270.png, m,  Cap 270°, Cap Violet
+all-caps/f/cap_270.png, f,  Cap 270°, Cap Violet
+
+all-caps/m/cap_300.png, m,  Cap 300°, Cap Magenta
+all-caps/f/cap_300.png, f,  Cap 300°, Cap Magenta
+
+all-caps/m/cap_330.png, m,  Cap 330°, Cap Red Magenta
+all-caps/f/cap_330.png, f,  Cap 330°, Cap Red Magenta
 

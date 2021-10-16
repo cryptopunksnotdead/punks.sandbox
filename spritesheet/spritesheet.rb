@@ -30,11 +30,57 @@ archetypes.each do |rec|
   sheet << Image.read( "../../punks.blocks/#{path}" )
 
 
+  name_i      = rec['name']
+  names_ii    = (rec['name_ii'] || '').split( '|' )
+  gender     = rec['gender']
+  type       = rec['type']
+  more_names = (rec['more_names'] || '').split( '|' )
+
+  ## note: auto-add more names
+  ##   1)  name_i + gender + name_ii        (e.g.   Human Male 1 | Human 1
+  ##                                             or Human Female 1)
+  ##   2)  name_i + name_ii + gender_symbol (e.g. Human 1 ♂    or Human 1 ♀)
+
+  names = []
+
+  if gender == 'm'
+    if names_ii.size > 0
+      names_ii.each do |name_ii|
+        names << "#{name_i} #{name_ii}"
+        names << "#{name_i} Male #{name_ii}"
+        names << "#{name_i} #{name_ii} ♂"
+      end
+    else
+      names << "#{name_i}"
+      names << "#{name_i} Male"
+      names << "#{name_i} ♂"
+    end
+  elsif gender == 'f'
+    if names_ii.size > 0
+      names_ii.each do |name_ii|
+        names << "#{name_i} Female #{name_ii}"
+        names << "#{name_i} #{name_ii} ♀"
+      end
+    else
+      names << "#{name_i} Female"
+      names << "#{name_i} ♀"
+    end
+  else
+    puts "!! ERROR - unknown gender #{gender}:"
+    pp rec
+    exit 1
+  end
+
+  names += more_names   ## add more_names if any
+  names = names.map {|str| str.strip.gsub(/[ ]{2,}/, ' ' )}  ## normalize spaces in more names
+
+
+
   meta << [meta.size,
-           rec['name'],
-           rec['gender'],
-             "Archetype - #{rec['type']}",
-           rec['more_names'],
+           names[0],
+           gender,
+           "Archetype - #{type}",
+           names[1..-1].join( ' | '),
           ]
 end
 
