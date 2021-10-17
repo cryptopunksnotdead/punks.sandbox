@@ -74,8 +74,16 @@ halloween-skull + hat-beret_red
 4x ![](i/halloween6@4x.png)
 
 
+halloween-jason + hat-beanie_orange
+
+![](i/halloween7.png)
+4x ![](i/halloween7@4x.png)
 
 
+halloween-skull + hat-afro_black
+
+![](i/halloween8.png)
+4x ![](i/halloween8@4x.png)
 
 
 

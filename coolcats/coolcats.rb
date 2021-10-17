@@ -101,6 +101,27 @@ coolcat.zoom(4).save( "i/halloween6@4x.png" )
 halloween << coolcat
 
 
+coolcat = Image.new( 24, 24 )
+coolcat.compose!( base )
+coolcat.compose!( Image.read( "i/hat-beanie_orange.png" ))
+coolcat.compose!( Image.read( "i/halloween-jason.png" ))
+coolcat.save( "i/halloween7.png")
+coolcat.zoom(4).save( "i/halloween7@4x.png" )
+
+halloween << coolcat
+
+
+coolcat = Image.new( 24, 24 )
+coolcat.compose!( base )
+coolcat.compose!( Image.read( "i/hat-afro_black.png" ))
+coolcat.compose!( Image.read( "i/halloween-skull.png" ))
+coolcat.save( "i/halloween8.png")
+coolcat.zoom(4).save( "i/halloween8@4x.png" )
+
+halloween << coolcat
+
+
+
 
 halloween.save( "i/halloween.png" )
 halloween.zoom(4).save( "i/halloween@4x.png")
