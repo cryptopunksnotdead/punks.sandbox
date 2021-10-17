@@ -30,3 +30,52 @@ face-unamused
 4x ![](i/coolcat3@4x.png)
 
 
+### Halloween Theme
+
+halloween-jack
+
+![](i/halloween1.png)
+4x ![](i/halloween1@4x.png)
+
+
+halloween-jason
+
+![](i/halloween2.png)
+4x ![](i/halloween2@4x.png)
+
+
+halloween-skull
+
+![](i/halloween3.png)
+4x ![](i/halloween3@4x.png)
+
+
+halloween-scream
+
+![](i/halloween4.png)
+4x ![](i/halloween4@4x.png)
+
+
+halloween-jason + hat-beret_red
+
+![](i/halloween5.png)
+4x ![](i/halloween5@4x.png)
+
+
+halloween-skull + hat-beret_red
+
+![](i/halloween6.png)
+4x ![](i/halloween6@4x.png)
+
+
+
+
+
+
+
+
+## Questions? Comments?
+
+Post them on the [CryptoPunksDev (and 24px friends) reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
+
+
