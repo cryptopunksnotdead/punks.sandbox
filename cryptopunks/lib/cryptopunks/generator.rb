@@ -5,17 +5,19 @@ module Cryptopunks
     ### todo/fix:
     ##    move into Punks::Metadata or such
     class Sprite
-      attr_reader :id, :name, :type, :gender
+      attr_reader :id, :name, :type, :gender, :more_names
 
 
       def initialize( id:,
                       name:,
                       type:,
-                      gender: )
-         @id     = id      # zero-based index eg. 0,1,2,3, etc.
-         @name   = name
-         @type   = type
-         @gender = gender
+                      gender:,
+                      more_names: [] )
+         @id         = id      # zero-based index eg. 0,1,2,3, etc.
+         @name       = name
+         @type       = type
+         @gender     = gender
+         @more_names = more_names
       end
 
       ## todo/check - find better names for type attribute/archetypes?
@@ -44,22 +46,32 @@ module Cryptopunks
     str.downcase[0]
  end
 
+ def normalize_name( str )
+   ## normalize spaces in more names
+   str.strip.gsub( /[ ]{2,}/, ' ' )
+ end
+
+
 
  def build_attributes_by_name( recs )
     h = {}
     recs.each_with_index do |rec|
-      key = normalize_key( rec.name )
-      key << "_(#{rec.gender})"  if rec.attribute?
+      names = [rec.name] + rec.more_names
+      names.each do |name|
 
-      if h[ key ]
-        puts "!!! ERROR - attribute name is not unique:"
-        pp rec
-        puts "duplicate:"
-        pp h[key]
-        exit 1
+        key = normalize_key( name )
+        key << "_(#{rec.gender})"  if rec.attribute?
+
+        if h[ key ]
+          puts "!!! ERROR - attribute name is not unique:"
+          pp rec
+          puts "duplicate:"
+          pp h[key]
+          exit 1
+        end
+        h[ key ] = rec
       end
-      h[ key ] = rec
-    end
+   end
     ## pp h
     h
  end
@@ -83,16 +95,20 @@ module Cryptopunks
 
     ## convert to "wrapped / immutable" kind-of struct
     recs = recs.map do |rec|
-             id     = rec['id'].to_i( 10 )
-             name   = rec['name']
-             gender = normalize_gender( rec['gender'] )
-             type   = rec['type']
+             id         = rec['id'].to_i( 10 )
+             name       = normalize_name( rec['name'] )
+             gender     = normalize_gender( rec['gender'] )
+             type       = rec['type']
+
+             more_names = (rec['more_names'] || '').split( '|' )
+             more_names = more_names.map {|str| normalize_name( str ) }
 
              Metadata::Sprite.new(
-               id:     id,
-               name:   name,
-               type:   type,
-               gender: gender)
+               id:         id,
+               name:       name,
+               type:       type,
+               gender:     gender,
+               more_names: more_names )
            end
     recs
  end  # method build_recs

@@ -246,14 +246,25 @@ end
 
 
 on_error do |e|
-  puts
-  puts "*** error: #{e.message}"
 
   if opts.verbose?
     puts e.backtrace
   end
 
-  false # skip default error handling
+  if e.is_a?( SystemExit )
+     puts
+     puts "*** error: system exit with status code ( #{e.status} )"
+     exit( e.status )   ## try exit again to make sure error code gets passed along!!!
+  else
+    puts
+    puts "*** error: #{e.message}"
+  end
+
+  ## note: was false    # skip default error handling
+
+  ## note: try true - false WILL SWALLOW exit codes and such
+  ##  - looks like it's still returning 0 (e.g. on unknown option or such)!!!!
+  true
 end
 
 
