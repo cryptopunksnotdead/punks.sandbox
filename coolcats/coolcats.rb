@@ -39,11 +39,19 @@ coolcat.zoom(4).save( "i/coolcat3@4x.png" )
 
 ####
 # try some halloween attributes
+#   plus add to composite (4x2 grid )
+
+halloween = ImageComposite.new( 4, 2 )
+
+
 coolcat = Image.new( 24, 24 )
 coolcat.compose!( base )
 coolcat.compose!( Image.read( "i/halloween-jack.png" ))
 coolcat.save( "i/halloween1.png")
 coolcat.zoom(4).save( "i/halloween1@4x.png" )
+
+halloween << coolcat
+
 
 coolcat = Image.new( 24, 24 )
 coolcat.compose!( base )
@@ -51,17 +59,26 @@ coolcat.compose!( Image.read( "i/halloween-jason.png" ))
 coolcat.save( "i/halloween2.png")
 coolcat.zoom(4).save( "i/halloween2@4x.png" )
 
-coolcat = Image.new( 24, 24 )
-coolcat.compose!( base )
-coolcat.compose!( Image.read( "i/halloween-scream.png" ))
-coolcat.save( "i/halloween3.png")
-coolcat.zoom(4).save( "i/halloween3@4x.png" )
+halloween << coolcat
+
 
 coolcat = Image.new( 24, 24 )
 coolcat.compose!( base )
 coolcat.compose!( Image.read( "i/halloween-skull.png" ))
+coolcat.save( "i/halloween3.png")
+coolcat.zoom(4).save( "i/halloween3@4x.png" )
+
+halloween << coolcat
+
+
+coolcat = Image.new( 24, 24 )
+coolcat.compose!( base )
+coolcat.compose!( Image.read( "i/halloween-scream.png" ))
 coolcat.save( "i/halloween4.png")
 coolcat.zoom(4).save( "i/halloween4@4x.png" )
+
+halloween << coolcat
+
 
 
 coolcat = Image.new( 24, 24 )
@@ -71,6 +88,8 @@ coolcat.compose!( Image.read( "i/halloween-jason.png" ))
 coolcat.save( "i/halloween5.png")
 coolcat.zoom(4).save( "i/halloween5@4x.png" )
 
+halloween << coolcat
+
 
 coolcat = Image.new( 24, 24 )
 coolcat.compose!( base )
@@ -79,7 +98,12 @@ coolcat.compose!( Image.read( "i/halloween-skull.png" ))
 coolcat.save( "i/halloween6.png")
 coolcat.zoom(4).save( "i/halloween6@4x.png" )
 
+halloween << coolcat
 
+
+
+halloween.save( "i/halloween.png" )
+halloween.zoom(4).save( "i/halloween@4x.png")
 
 
 puts "bye"
