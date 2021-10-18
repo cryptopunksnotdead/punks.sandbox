@@ -30,26 +30,19 @@ face-unamused
 4x ![](i/coolcat3@4x.png)
 
 
-
-**TV Heads**
-
-![](i/tvheads.png)
-4x ![](i/tvheads@4x.png)
-
-
-hat-tvhead_white + face-tvface_404
+face-tvface_404 + hat-tvhead_white
 
 ![](i/tvhead_404-white.png)
 4x ![](i/tvhead_404-white@4x.png)
 
 
-hat-tvhead_grey + face-tvface_nosignal
+face-tvface_nosignal + hat-tvhead_grey
 
 ![](i/tvhead_nosignal-grey.png)
 4x ![](i/tvhead_nosignal-grey@4x.png)
 
 
-hat-tvhead_purple + face-tvface_xp
+face-tvface_xp + hat-tvhead_purple
 
 ![](i/tvhead_xp-purple.png)
 4x ![](i/tvhead_xp-purple@4x.png)
