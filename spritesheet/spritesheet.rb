@@ -7,10 +7,11 @@ require 'csvreader'
 
 
 archetypes = CsvHash.read( "./archetypes.csv")
-puts "  #{archetypes.size} record(s)"   #=> 64 records
+puts "  #{archetypes.size} record(s)"   #=> ???  - was: 64 records
 
 attributes = CsvHash.read( "./attributes.csv")
-puts "  #{attributes.size} record(s)"  #=> 133
+puts "  #{attributes.size} record(s)"  #=> ???  - was: 133
+
 
 
 total = archetypes.size + attributes.size
@@ -104,6 +105,7 @@ end
 
 
 sheet.save( "./tmp/spritesheet.png" )
+sheet.zoom(2).save( "./tmp/spritesheet@2x.png" )
 sheet.zoom(4).save( "./tmp/spritesheet@4x.png" )
 
 

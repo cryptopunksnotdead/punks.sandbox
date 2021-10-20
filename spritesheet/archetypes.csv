@@ -16,11 +16,20 @@ basic/human-female_lighter.png, Human, f,   Human, 4,  Female 4 | Woman 4 | Lady
 basic/zombie-male.png,          Zombie, m,   Zombie,,
 basic/zombie-female.png,        Zombie, f,   Zombie,,      Lady Zombie
 
+
 basic/ape-male.png,             Ape,    m,   Ape,,
 basic/ape-female.png,           Ape,    f,   Ape,,         Lady Ape
 
+
 basic/alien-male.png,           Alien,  m,   Alien,,
 basic/alien-female.png,         Alien,  f,   Alien,,       Lady Alien
+
+
+#####################################
+# planet apes - archetypes
+
+planet-apes/ape-zombie-male.png,   Zombie,  m,  Zombie (Ape),,
+planet-apes/ape-alien-male.png,    Alien,   m,  Alien (Ape),,
 
 
 ##################################
@@ -45,12 +54,88 @@ more/vampire-male.png,           Vampire,  m, Vampire,,
 more/vampire-female.png,         Vampire,  f, Vampire,,   Lady Vamp | Lady Vampire
 
 
-#####################################
-# planet apes - archetypes
 
-planet-apes/ape-zombie-male.png,   Zombie,  m,  Zombie (Ape),,
-planet-apes/ape-alien-male.png,    Alien,   m,  Alien (Ape),,
 
+###############################
+# united colors of humanity  - archetypes
+
+united/male_chocolate.png,   Human, m, Human, Chocolate,  Male Chocolate
+united/male_espresso.png,    Human, m, Human, Espresso,   Male Espresso
+united/male_golden.png,      Human, m, Human, Golden,     Male Golden
+united/male_umber.png,       Human, m, Human, Umber,      Male Umber
+united/male_bronze.png,      Human, m, Human, Bronze,     Male Bronze
+united/male_chestnut.png,    Human, m, Human, Chestnut,   Male Chestnut
+
+united/male_almond.png,      Human, m, Human, Almond,     Male Almond
+united/male_band.png,        Human, m, Human, Band,       Male Band
+united/male_honey.png,       Human, m, Human, Honey,      Male Honey
+united/male_sienna.png,      Human, m, Human, Sienna,     Male Sienna
+united/male_beige.png,       Human, m, Human, Beige,      Male Beige
+united/male_limestone.png,   Human, m, Human, Limestone,  Male Limestone
+
+united/male_rose_beige.png,  Human, m, Human, Rose Beige, Male Rose Beige
+united/male_sand.png,        Human, m, Human, Sand,       Male Sand
+united/male_warm_ivory.png,  Human, m, Human, Warm Ivory, Male Warm Ivory
+united/male_pale_ivory.png,  Human, m, Human, Pale Ivory, Male Pale Ivory
+united/male_porcelain.png,   Human, m, Human, Porcelain,  Male Porcelain
+united/male_ivory.png,       Human, m, Human, Ivory,      Male Ivory
+
+
+
+united/male_orange.png,      Human, m, Human, Orange,     Male Orange
+united/male_warm_red.png,    Human, m, Human, Warm Red,   Male Warm Red
+united/male_red.png,         Human, m, Human, Red,        Male Red
+united/male_rubine_red.png,  Human, m, Human, Rubine Red, Male Rubine Red
+united/male_pink.png,        Human, m, Human, Pink | Barbie Pink, Male Pink | Male Barbie Pink
+
+united/male_purple.png,      Human, m, Human, Purple,   Male Purple
+united/male_blue.png,        Human, m, Human, Blue,     Male Blue
+united/male_violet.png,      Human, m, Human, Violet,   Male Violet
+
+united/male_yellow.png,      Human, m, Human, Yellow,   Male Yellow
+
+united/male_gold_1.png,      Human, m, Human, Gold 1 | Gold,   Male Gold 1 | Male Gold
+united/male_gold_2.png,      Human, m, Human, Gold 2 | Goldenrod,  Male Gold 2 | Male Goldenrod
+united/male_gold_3.png,      Human, m, Human, Gold 3 | Dark Goldenrod,  Male Gold 3 | Male Dark Goldenrod
+
+
+united/female_chocolate.png,   Human, f, Human, Chocolate,  Female Chocolate
+united/female_espresso.png,    Human, f, Human, Espresso,   Female Espresso
+united/female_golden.png,      Human, f, Human, Golden,     Female Golden
+united/female_umber.png,       Human, f, Human, Umber,      Female Umber
+united/female_bronze.png,      Human, f, Human, Bronze,     Female Bronze
+united/female_chestnut.png,    Human, f, Human, Chestnut,   Female Chestnut
+
+united/female_almond.png,      Human, f, Human, Almond,     Female Almond
+united/female_band.png,        Human, f, Human, Band,       Female Band
+united/female_honey.png,       Human, f, Human, Honey,      Female Honey
+united/female_sienna.png,      Human, f, Human, Sienna,     Female Sienna
+united/female_beige.png,       Human, f, Human, Beige,      Female Beige
+united/female_limestone.png,   Human, f, Human, Limestone,  Female Limestone
+
+united/female_rose_beige.png,  Human, f, Human, Rose Beige, Female Rose Beige
+united/female_sand.png,        Human, f, Human, Sand,       Female Sand
+united/female_warm_ivory.png,  Human, f, Human, Warm Ivory, Female Warm Ivory
+united/female_pale_ivory.png,  Human, f, Human, Pale Ivory, Female Pale Ivory
+united/female_porcelain.png,   Human, f, Human, Porcelain,  Female Porcelain
+united/female_ivory.png,       Human, f, Human, Ivory,      Female Ivory
+
+
+united/female_orange.png,      Human, f, Human, Orange,     Female Orange
+united/female_warm_red.png,    Human, f, Human, Warm Red,   Female Warm Red
+united/female_red.png,         Human, f, Human, Red,        Female Red
+united/female_rubine_red.png,  Human, f, Human, Rubine Red, Female Rubine Red
+united/female_pink.png,        Human, f, Human, Pink | Barbie Pink, Female Pink | Female Barbie Pink
+
+united/female_purple.png,      Human, f, Human, Purple,   Female Purple
+united/female_blue.png,        Human, f, Human, Blue,     Female Blue
+united/female_violet.png,      Human, f, Human, Violet,   Female Violet
+
+united/female_yellow.png,      Human, f, Human, Yellow,   Female Yellow
+
+united/female_gold_1.png,      Human, f, Human, Gold 1 | Gold,   Female Gold 1 | Female Gold
+united/female_gold_2.png,      Human, f, Human, Gold 2 | Goldenrod,  Female Gold 2 | Female Goldenrod
+united/female_gold_3.png,      Human, f, Human, Gold 3 | Dark Goldenrod,  Female Gold 3 | Female Dark Goldenrod
 
 
 ######################################
