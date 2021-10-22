@@ -94,9 +94,6 @@ united/male_violet.png,      Human, m, Human, Violet,   Male Violet
 
 united/male_yellow.png,      Human, m, Human, Yellow,   Male Yellow
 
-united/male_gold_1.png,      Human, m, Human, Gold 1 | Gold,   Male Gold 1 | Male Gold
-united/male_gold_2.png,      Human, m, Human, Gold 2 | Goldenrod,  Male Gold 2 | Male Goldenrod
-united/male_gold_3.png,      Human, m, Human, Gold 3 | Dark Goldenrod,  Male Gold 3 | Male Dark Goldenrod
 
 
 united/female_chocolate.png,   Human, f, Human, Chocolate,  Female Chocolate
@@ -133,9 +130,64 @@ united/female_violet.png,      Human, f, Human, Violet,   Female Violet
 
 united/female_yellow.png,      Human, f, Human, Yellow,   Female Yellow
 
-united/female_gold_1.png,      Human, f, Human, Gold 1 | Gold,   Female Gold 1 | Female Gold
-united/female_gold_2.png,      Human, f, Human, Gold 2 | Goldenrod,  Female Gold 2 | Female Goldenrod
-united/female_gold_3.png,      Human, f, Human, Gold 3 | Dark Goldenrod,  Female Gold 3 | Female Dark Goldenrod
+
+
+###########################
+# gold(en) - archetypes
+
+gold/male_gold_1.png,      Human, m, Human, Gold 1 | Gold,   Male Gold 1 | Male Gold
+gold/male_gold_2.png,      Human, m, Human, Gold 2 | Goldenrod,  Male Gold 2 | Male Goldenrod
+gold/male_gold_3.png,      Human, m, Human, Gold 3 | Dark Goldenrod,  Male Gold 3 | Male Dark Goldenrod
+
+gold/female_gold_1.png,      Human, f, Human, Gold 1 | Gold,   Female Gold 1 | Female Gold
+gold/female_gold_2.png,      Human, f, Human, Gold 2 | Goldenrod,  Female Gold 2 | Female Goldenrod
+gold/female_gold_3.png,      Human, f, Human, Gold 3 | Dark Goldenrod,  Female Gold 3 | Female Dark Goldenrod
+
+
+gold/zombie-male_gold_1.png,   Zombie, m, Zombie, Gold 1 | Gold,
+gold/zombie-male_gold_2.png,   Zombie, m, Zombie, Gold 2 | Goldenrod,
+gold/zombie-male_gold_3.png,   Zombie, m, Zombie, Gold 3 | Dark Goldenrod,
+
+gold/zombie-female_gold_1.png,   Zombie, f, Zombie, Gold 1 | Gold,
+gold/zombie-female_gold_2.png,   Zombie, f, Zombie, Gold 2 | Goldenrod,
+gold/zombie-female_gold_3.png,   Zombie, f, Zombie, Gold 3 | Dark Goldenrod,
+
+
+gold/ape-male_gold_1.png,   Ape, m, Ape, Gold 1 | Gold,
+gold/ape-male_gold_2.png,   Ape, m, Ape, Gold 2 | Goldenrod,
+gold/ape-male_gold_3.png,   Ape, m, Ape, Gold 3 | Dark Goldenrod,
+
+gold/ape-female_gold_1.png,   Ape, f, Ape, Gold 1 | Gold,
+gold/ape-female_gold_2.png,   Ape, f, Ape, Gold 2 | Goldenrod,
+gold/ape-female_gold_3.png,   Ape, f, Ape, Gold 3 | Dark Goldenrod,
+
+
+gold/alien-male_gold_1.png,   Alien, m, Alien, Gold 1 | Gold,
+gold/alien-male_gold_2.png,   Alien, m, Alien, Gold 2 | Goldenrod,
+gold/alien-male_gold_3.png,   Alien, m, Alien, Gold 3 | Dark Goldenrod,
+
+gold/alien-female_gold_1.png,   Alien, f, Alien, Gold 1 | Gold,
+gold/alien-female_gold_2.png,   Alien, f, Alien, Gold 2 | Goldenrod,
+gold/alien-female_gold_3.png,   Alien, f, Alien, Gold 3 | Dark Goldenrod,
+
+
+gold/demon-male_gold_1.png,   Demon, m, Demon, Gold 1 | Gold,
+gold/demon-male_gold_2.png,   Demon, m, Demon, Gold 2 | Goldenrod,
+gold/demon-male_gold_3.png,   Demon, m, Demon, Gold 3 | Dark Goldenrod,
+
+gold/demon-female_gold_1.png,   Demon, f, Demon, Gold 1 | Gold,
+gold/demon-female_gold_2.png,   Demon, f, Demon, Gold 2 | Goldenrod,
+gold/demon-female_gold_3.png,   Demon, f, Demon, Gold 3 | Dark Goldenrod,
+
+
+gold/skeleton-male_gold_1.png,   Skeleton, m, Skeleton, Gold 1 | Gold,
+gold/skeleton-male_gold_2.png,   Skeleton, m, Skeleton, Gold 2 | Goldenrod,
+gold/skeleton-male_gold_3.png,   Skeleton, m, Skeleton, Gold 3 | Dark Goldenrod,
+
+gold/skeleton-female_gold_1.png,   Skeleton, f, Skeleton, Gold 1 | Gold,
+gold/skeleton-female_gold_2.png,   Skeleton, f, Skeleton, Gold 2 | Goldenrod,
+gold/skeleton-female_gold_3.png,   Skeleton, f, Skeleton, Gold 3 | Dark Goldenrod,
+
 
 
 ######################################

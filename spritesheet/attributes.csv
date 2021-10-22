@@ -151,8 +151,8 @@ basic/m/cowboyhat.png,    m,  Cowboy Hat
 basic/f/cowboyhat.png,   f,   Cowboy Hat
 basic/m/dorag.png,    m,    Do-rag
 basic/f/dorag.png,   f,     Do-rag
-basic/m/fedora.png,    m,    Fedora
-basic/f/fedora.png,   f,      Fedora
+basic/m/fedora.png,    m,    Fedora,   Fedora 1
+basic/f/fedora.png,   f,      Fedora,  Fedora 1
 basic/m/headband.png,    m,        Headband
 basic/f/headband.png,   f,         Headband
 basic/m/hoodie.png,    m,          Hoodie
@@ -164,8 +164,8 @@ basic/m/policecap.png,    m,    Police Cap
 basic/f/policecap.png,   f,     Police Cap
 basic/f/tasslehat.png,   f,           Tassle Hat
 basic/f/tiara.png,   f,              Tiara
-basic/m/tophat.png,    m,            Top Hat
-basic/f/tophat.png,   f,             Top Hat
+basic/m/tophat.png,    m,            Top Hat,  Top Hat 1
+basic/f/tophat.png,   f,             Top Hat,  Top Hat 1
 
 more/m/bearhood.png,    m,  Bear Hood
 more/f/bearhood.png,  f,      Bear Hood
@@ -181,8 +181,8 @@ more/m/jesterhat.png,    m,           Jester Hat
 more/f/jesterhat.png,  f,             Jester Hat
 more/m/santahat.png,    m,            Santa Hat
 more/f/santahat.png,  f,              Santa Hat
-more/m/sombrero.png,    m,           Sombrero
-more/f/sombrero.png,  f,             Sombrero
+more/m/sombrero.png,    m,           Sombrero, Sombrero 1
+more/f/sombrero.png,  f,             Sombrero, Sombrero 1
 more/m/sunhat.png,    m,             Sun Hat
 more/f/sunhat.png,  f,               Sun Hat
 more/f/superherotiara.png,  f,       Superhero Tiara
@@ -190,6 +190,87 @@ more/m/vikinghelmet.png,    m,       Viking Helmet
 more/f/vikinghelmet.png,  f,         Viking Helmet
 more/m/winterhat.png,    m,          Winter Hat
 more/f/winterhat.png,  f,            Winter Hat
+
+
+##########################
+# int'l headwear - attributes
+
+intl/m/australiancorkhat.png,   m,    Australian Cork Hat
+intl/f/australiancorkhat.png,   f,    Australian Cork Hat
+intl/m/ayam.png,                m,    Ayam
+intl/f/ayam.png,                f,    Ayam
+intl/m/bamboohat.png,           m,    Bamboo Hat
+intl/f/bamboohat.png,           f,    Bamboo Hat
+intl/m/baseballcap.png,         m,    Baseball Cap
+intl/f/baseballcap.png,         f,    Baseball Cap
+intl/m/bearskin.png,            m,    Bear Skin
+intl/f/bearskin.png,            f,    Bear Skin
+intl/m/beerbong.png,            m,    Beer Bong
+intl/f/beerbong.png,            f,    Beer Bong
+intl/m/beret.png,               m,    Beret
+intl/f/beret.png,               f,    Beret
+intl/m/boater.png,              m,    Boater
+intl/f/boater.png,              f,    Boater
+intl/m/bororo.png,              m,    Bororo
+intl/f/bororo.png,              f,    Bororo
+intl/m/chichakhelmet.png,       m,    Chichak Helmet
+intl/f/chichakhelmet.png,       f,    Chichak Helmet
+intl/m/chineselandlordshat.png, m,    Chinese Landlords Hat
+intl/f/chineselandlordshat.png, f,    Chinese Landlords Hat
+intl/m/chullo.png,              m,    Chullo
+intl/f/chullo.png,              f,    Chullo
+intl/m/fedora.png,              m,    Fedora 2      # note: alternative to basic
+intl/f/fedora.png,              f,    Fedora 2
+intl/m/fez.png,                 m,    Fez
+intl/f/fez.png,                 f,    Fez
+intl/m/fishermancap.png,        m,    Fisherman Cap
+intl/f/fishermancap.png,        f,    Fisherman Cap
+intl/m/flamencohat.png,         m,    Flamenco Hat
+intl/f/flamencohat.png,         f,    Flamenco Hat
+intl/m/flowercrown.png,         m,    Flower Crown
+intl/f/flowercrown.png,         f,    Flower Crown
+intl/m/gat.png,                 m,    Gat
+intl/f/gat.png,                 f,    Gat
+intl/m/gaucho.png,              m,    Gaucho
+intl/f/gaucho.png,              f,    Gaucho
+intl/m/hennin.png,              m,    Hennin
+intl/f/hennin.png,              f,    Hennin
+intl/m/isicholo.png,            m,    Isicholo
+intl/f/isicholo.png,            f,    Isicholo
+intl/m/jaapi.png,               m,    Jaapi
+intl/f/jaapi.png,               f,    Jaapi
+intl/m/keffiyeh.png,            m,    Keffiyeh
+intl/f/keffiyeh.png,            f,    Keffiyeh
+intl/m/krakowiak.png,           m,    Krakowiak
+intl/f/krakowiak.png,           f,    Krakowiak
+intl/m/misangocap.png,          m,    Misango Cap
+intl/f/misangocap.png,          f,    Misango Cap
+intl/m/newsboycap.png,          m,    Newsboy Cap
+intl/m/panamahat.png,           m,    Panama Hat
+intl/f/panamahat.png,           f,    Panama Hat
+intl/m/rasta.png,               m,    Rasta
+intl/f/rasta.png,               f,    Rasta
+intl/f/royalcocktailhat.png,    f,    Royal Cocktail Hat
+intl/m/sibenik.png,             m,    Sibenik
+intl/f/sibenik.png,             f,    Sibenik
+intl/m/sombrero.png,            m,    Sombrero 2   # note: alternative to more
+intl/f/sombrero.png,            f,    Sombrero 2
+intl/m/tamoshanter.png,         m,    Tam-O-Shanter
+intl/f/tamoshanter.png,         f,    Tam-O-Shanter
+intl/m/tophat.png,              m,    Top Hat 2    # note: alternative to basic
+intl/f/tophat.png,              f,    Top Hat 2
+intl/m/trapperhat.png,          m,    Trapper Hat
+intl/f/trapperhat.png,          f,    Trapper Hat
+intl/m/tuque.png,               m,    Tuque
+intl/f/tuque.png,               f,    Tuque
+intl/m/turban.png,              m,    Turban
+intl/f/turban.png,              f,    Turban
+intl/m/tyrolean.png,            m,    Tyrolean
+intl/f/tyrolean.png,            f,    Tyrolean
+intl/m/ushanka.png,             m,    Ushanka
+intl/f/ushanka.png,             f,    Ushanka
+intl/m/vikinghat.png,           m,    Viking Hat
+intl/f/vikinghat.png,           f,    Viking Hat
 
 
 
