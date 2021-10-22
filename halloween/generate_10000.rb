@@ -9,6 +9,8 @@
 ##
 ##  - remove lipstick attributes ???
 ##    or smile and frown attributes ???
+##
+##  - add flowers to blond haired females ???
 
 
 
@@ -38,7 +40,7 @@ composite = ImageComposite.new( 20, 20 )
 (0..399).each do |id|
    attributes = CryptopunksData.punk_attributes( id )
 
-   ## change archetype to golden variant
+   ## change archetype to halloween variant
    attributes[0] = halloween[ attributes[0] ]
    pp attributes
 
@@ -57,7 +59,7 @@ composite = ImageComposite.new( 100, 100 )
 (0..9999).each do |id|
    attributes = CryptopunksData.punk_attributes( id )
 
-   ## change archetype to golden variant
+   ## change archetype to halloween variant
    attributes[0] = halloween[ attributes[0] ]
    pp attributes
 
