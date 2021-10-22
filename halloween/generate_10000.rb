@@ -5,10 +5,10 @@
 
 ##
 ## todos/fix/checks:
-##  - [ ]  add back colored mouth in (human) females (like in zombies) - why? why not?
+##  - [ ] change black hair color attributes to more colorful or such - why? why not?
 ##
-##  - [ ] change black hair color attributes to silver or such - why? why not?
-##  - [ ] auto-change other attributes to make more "golden" ????
+##  - remove lipstick attributes ???
+##    or smile and frown attributes ???
 
 
 
@@ -16,18 +16,18 @@ $LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
 
 
-golden = {
-  'Male 1'   => 'Male Gold 1',
-  'Male 2'   => 'Male Gold 2',
-  'Male 3'   => 'Male Gold 3',
-  'Male 4'   => 'Male Yellow',
-  'Female 1' => 'Female Gold 1',
-  'Female 2' => 'Female Gold 2',
-  'Female 3' => 'Female Gold 3',
-  'Female 4' => 'Female Yellow',
-  'Zombie'   => 'Zombie Gold 1',
-  'Ape'      => 'Ape Gold 1',
-  'Alien'    => 'Alien Gold 1',
+halloween = {
+  'Male 1'   => 'Skeleton',
+  'Male 2'   => 'Skeleton',
+  'Male 3'   => 'Skeleton Gold 2',
+  'Male 4'   => 'Mummy',
+  'Female 1' => 'Skeleton Female',
+  'Female 2' => 'Skeleton Female',
+  'Female 3' => 'Skeleton Female Gold 2',
+  'Female 4' => 'Mummy Female',
+  'Zombie'   => 'Vampire',
+  'Ape'      => 'Orc',
+  'Alien'    => 'Demon',
 }
 
 
@@ -39,14 +39,14 @@ composite = ImageComposite.new( 20, 20 )
    attributes = CryptopunksData.punk_attributes( id )
 
    ## change archetype to golden variant
-   attributes[0] = golden[ attributes[0] ]
+   attributes[0] = halloween[ attributes[0] ]
    pp attributes
 
    punk = Punks::Image.generate( *attributes )
    composite << punk
 end
 
-composite.save( "./tmp/goldenpunks_preview.png" )
+composite.save( "./tmp/halloweenpunks_preview.png" )
 
 
 
@@ -58,17 +58,15 @@ composite = ImageComposite.new( 100, 100 )
    attributes = CryptopunksData.punk_attributes( id )
 
    ## change archetype to golden variant
-   attributes[0] = golden[ attributes[0] ]
+   attributes[0] = halloween[ attributes[0] ]
    pp attributes
 
    punk = Punks::Image.generate( *attributes )
    composite << punk
 end
 
-composite.save( "./tmp/goldenpunks.png" )
-
-
-
+composite.save( "./tmp/halloweenpunks.png" )
 
 
 puts "bye"
+
