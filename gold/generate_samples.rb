@@ -123,5 +123,30 @@ composite.zoom(4).save( "./tmp/zombies@4x.png" )
 
 
 
+composite = ImageComposite.new( 6, 3 )
+
+names.each do |name|
+  composite << Punks::Image.generate( "Ape #{name}" )
+  composite << Punks::Image.generate( "Ape Female #{name}" )
+
+  composite << Punks::Image.generate( "Ape #{name}",
+                                      'Knitted Cap' )
+  composite << Punks::Image.generate( "Ape Female #{name}",
+                                      'Knitted Cap' )
+
+  composite << Punks::Image.generate( "Ape #{name}",
+                                      'Cap Forward',
+                                      '3D Glasses',
+                                      'Pipe' )
+  composite << Punks::Image.generate( "Ape Female #{name}",
+                                      'Cap Forward',
+                                      '3D Glasses',
+                                      'Pipe' )
+end
+
+composite.save( "./tmp/apes.png" )
+composite.zoom(2).save( "./tmp/apes@2x.png" )
+composite.zoom(4).save( "./tmp/apes@4x.png" )
+
 
 puts "bye"

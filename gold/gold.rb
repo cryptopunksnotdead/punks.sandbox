@@ -299,24 +299,19 @@ end
 
 
 
-__END__
 
 
 base_m = Punks::Sheet.find_by( name: 'Ape' )
 base_f = Punks::Sheet.find_by( name: 'Ape Female' )
 
+base_m.zoom.save( "./tmp/ape-male.png" )
+base_m.zoom( 8 ).save( "./tmp/ape-male@8x.png" )
+
+base_f.zoom.save( "./tmp/ape-female.png" )
+base_f.zoom( 8 ).save( "./tmp/ape-female@8x.png" )
+
 
 dump_colors( base_m )
-
-
-base_m.zoom.save( "./tmp/ape_male.png" )
-base_m.zoom( 8 ).save( "./tmp/ape_male@8x.png" )
-
-base_f.zoom.save( "./tmp/ape_female.png" )
-base_f.zoom( 8 ).save( "./tmp/ape_female@8x.png" )
-
-
-composite = ImageComposite.new( 6, 3 )
 
 
 
@@ -358,61 +353,23 @@ end
 
 
 
-
-
 colors.each do |name, color|
    color_map = derive_ape_color_map( color )
    ape_m = base_m.change_colors( color_map )
 
-   composite << ape_m
-
-   ape_m.save( "./tmp/ape_male_#{name}.png" )
-   ape_m.zoom(4).save( "./tmp/ape_male_#{name}@4x.png" )
+   ape_m.save( "./tmp/ape-male_#{name}.png" )
+   ape_m.zoom(4).save( "./tmp/ape-male_#{name}@4x.png" )
 
 
    ape_f = base_f.change_colors( color_map )
 
-   composite << ape_f
-
-   ape_f.save( "./tmp/ape_female_#{name}.png" )
-   ape_f.zoom(4).save( "./tmp/ape_female_#{name}@4x.png" )
-
-
-   ape = Image.new( 24, 24 )
-   ape.compose!( ape_m )
-   ape.compose!( Punks::Sheet.find_by( name: 'Knitted Cap', gender: 'm' ))
-   composite << ape
-
-   ape = Image.new( 24, 24 )
-   ape.compose!( ape_f )
-   ape.compose!( Punks::Sheet.find_by( name: 'Knitted Cap', gender: 'f' ))
-   composite << ape
-
-
-   ape = Image.new( 24, 24 )
-   ape.compose!( ape_m )
-   ape.compose!( Punks::Sheet.find_by( name: 'Cap Forward', gender: 'm' ))
-   ape.compose!( Punks::Sheet.find_by( name: '3D Glasses', gender: 'm' ))
-   ape.compose!( Punks::Sheet.find_by( name: 'Pipe', gender: 'm' ))
-   composite << ape
-
-   ape = Image.new( 24, 24 )
-   ape.compose!( ape_f )
-   ape.compose!( Punks::Sheet.find_by( name: 'Cap Forward', gender: 'f' ))
-   ape.compose!( Punks::Sheet.find_by( name: '3D Glasses', gender: 'f' ))
-   ape.compose!( Punks::Sheet.find_by( name: 'Pipe', gender: 'f' ))
-   composite << ape
+   ape_f.save( "./tmp/ape-female_#{name}.png" )
+   ape_f.zoom(4).save( "./tmp/ape-female_#{name}@4x.png" )
 end
 
 
-composite.save( "./tmp/apes.png" )
-composite.zoom(2).save( "./tmp/apes@2x.png" )
-composite.zoom(4).save( "./tmp/apes@4x.png" )
-
-
-
-
 puts "bye"
+
 
 
 __END__
