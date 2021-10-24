@@ -34,5 +34,5 @@ Skeletons
 
 ## More
 
-![](i/goldenpunks_preview.png)
+![](i/goldenpunks_preview@2x.png)
 
