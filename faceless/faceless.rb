@@ -47,7 +47,7 @@ GOAT            = Image.read( "./i/attributes/goat.png" )
 punk = Image.new( 24, 24 )
 punk.compose!( HUMAN2_ROUND )
 punk.save( "./i/faceless0a1.png" )
-punk.zoom(4).save( "./i/faceless0a@4x.png" )
+punk.zoom(4).save( "./i/faceless0a1@4x.png" )
 
 punk.compose!( EYES )
 punk.compose!( EYEBROWS )

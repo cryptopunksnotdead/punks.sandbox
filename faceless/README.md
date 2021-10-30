@@ -24,6 +24,37 @@ and mouth with "standard" red-ish color
 
 ## Punk #2
 
+![](i/faceless2a1@4x.png) ->
+![](i/faceless2a2@4x.png) ->
+![](i/faceless2@4x.png)
+
+Try male-style
+
+![](i/faceless2b1@4x.png) ->
+![](i/faceless2b2@4x.png) ->
+![](i/faceless2b@4x.png)
+
+
 ## Punk #3
 
+![](i/faceless3@4x.png)
+
+Try female-style with faceless "round" style and nose "small"
+and mouth with "standard" red-ish color
+
+![](i/faceless3a@4x.png)
+
+
 ## Punk #4
+
+![](i/faceless4@4x.png)
+
+Try female-style with faceless "round" style and nose "small"
+and mouth with "standard" red-ish color
+
+![](i/faceless4a@4x.png)
+
+
+
+
+
