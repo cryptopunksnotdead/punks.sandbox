@@ -1,0 +1,29 @@
+# "Faceless" and Universal/Unisex Archetypes
+
+
+
+## Punk #0
+
+![](i/faceless0a1@4x.png) ->
+![](i/faceless0a2@4x.png) ->
+![](i/faceless0@4x.png)
+
+## Punk #1
+
+![](i/faceless1a1@4x.png) ->
+![](i/faceless1a2@4x.png) ->
+![](i/faceless1@4x.png)
+
+Try female-style with faceless "round" style and nose "small"
+and mouth with "standard" red-ish color
+
+![](i/faceless1b1@4x.png) ->
+![](i/faceless1b2@4x.png) ->
+![](i/faceless1b@4x.png)
+
+
+## Punk #2
+
+## Punk #3
+
+## Punk #4
