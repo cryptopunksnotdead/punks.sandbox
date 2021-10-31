@@ -2,13 +2,13 @@
 
 
 
-## Punk #0
+Punk #0
 
 ![](i/faceless0a1@4x.png) ->
 ![](i/faceless0a2@4x.png) ->
 ![](i/faceless0@4x.png)
 
-## Punk #1
+Punk #1
 
 ![](i/faceless1a1@4x.png) ->
 ![](i/faceless1a2@4x.png) ->
@@ -22,7 +22,7 @@ and mouth with "standard" red-ish color
 ![](i/faceless1b@4x.png)
 
 
-## Punk #2
+Punk #2
 
 ![](i/faceless2a1@4x.png) ->
 ![](i/faceless2a2@4x.png) ->
@@ -35,7 +35,7 @@ Try male-style
 ![](i/faceless2b@4x.png)
 
 
-## Punk #3
+Punk #3
 
 ![](i/faceless3@4x.png)
 
@@ -45,7 +45,7 @@ and mouth with "standard" red-ish color
 ![](i/faceless3a@4x.png)
 
 
-## Punk #4
+Punk #4
 
 ![](i/faceless4@4x.png)
 
@@ -58,3 +58,7 @@ and mouth with "standard" red-ish color
 
 
 
+
+## Questions? Comments?
+
+Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.

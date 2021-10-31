@@ -1,9 +1,6 @@
 require 'cryptopunks'
 
 
-
-
-
 HUMAN1          = Image.read( "./i/attributes/human1.png" )
 HUMAN2          = Image.read( "./i/attributes/human2.png" )
 HUMAN3          = Image.read( "./i/attributes/human3.png" )
@@ -23,22 +20,24 @@ MOUTH2          = Image.read( "./i/attributes/mouth2.png" )
 MOUTH3          = Image.read( "./i/attributes/mouth3.png" )
 
 
-### classic attributes
 EYESHADOW_GREEN = Image.read( "./i/attributes/eyeshadow_green.png" )
-BLONDEBOB       = Image.read( "./i/attributes/blondebob.png" )
-
-SMILE           = Image.read( "./i/attributes/smile.png" )
 SMILE1          = Image.read( "./i/attributes/smile1.png" )
-MOHAWK          = Image.read( "./i/attributes/mohawk.png" )
 
-WILDHAIR        = Image.read( "./i/attributes/wildhair.png" )
+## note: need to "stretch" by 2px female hair-dos/styles
+BLONDEBOB       = Image.read( "./i/attributes/blondebob.png" )
 WILDHAIR_II     = Image.read( "./i/attributes/wildhair_ii.png" )
 
-NERDGLASSES     = Image.read( "./i/attributes/nerdglasses.png" )
-PIPE            = Image.read( "./i/attributes/pipe.png" )
-BIGSHADES       = Image.read( "./i/attributes/bigshades.png" )
-EARRING         = Image.read( "./i/attributes/earring.png" )
-GOAT            = Image.read( "./i/attributes/goat.png" )
+
+
+### classic (male) attributes
+MOHAWK          = Punks::Sheet.find_by( name: 'Mohawk', gender: 'm' )
+WILDHAIR        = Punks::Sheet.find_by( name: 'Wild Hair', gender: 'm' )
+NERDGLASSES     = Punks::Sheet.find_by( name: 'Nerd Glasses', gender: 'm' )
+BIGSHADES       = Punks::Sheet.find_by( name: 'Big Shades', gender: 'm' )
+EARRING         = Punks::Sheet.find_by( name: 'Earring', gender: 'm' )
+GOAT            = Punks::Sheet.find_by( name: 'Goat', gender: 'm' )
+PIPE            = Punks::Sheet.find_by( name: 'Pipe', gender: 'm' )
+SMILE           = Punks::Sheet.find_by( name: 'Smile', gender: 'm' )
 
 
 
