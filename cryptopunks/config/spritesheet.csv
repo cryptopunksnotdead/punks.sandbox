@@ -1,568 +1,575 @@
-id, name, gender, type, more_names
-0, Human 1, m, Archetype - Human, Human Male 1 | Human 1 ♂ | Male 1 | Man 1 | ♂ 1
-1, Human 2, m, Archetype - Human, Human Male 2 | Human 2 ♂ | Male 2 | Man 2 | ♂ 2
-2, Human 3, m, Archetype - Human, Human Male 3 | Human 3 ♂ | Male 3 | Man 3 | ♂ 3
-3, Human 4, m, Archetype - Human, Human Male 4 | Human 4 ♂ | Male 4 | Man 4 | ♂ 4
-4, Human Female 1, f, Archetype - Human, Human 1 ♀ | Female 1 | Woman 1 | Lady 1 | ♀ 1
-5, Human Female 2, f, Archetype - Human, Human 2 ♀ | Female 2 | Woman 2 | Lady 2 | ♀ 2
-6, Human Female 3, f, Archetype - Human, Human 3 ♀ | Female 3 | Woman 3 | Lady 3 | ♀ 3
-7, Human Female 4, f, Archetype - Human, Human 4 ♀ | Female 4 | Woman 4 | Lady 4 | ♀ 4
-8, Zombie, m, Archetype - Zombie, Zombie Male | Zombie ♂
-9, Zombie Female, f, Archetype - Zombie, Zombie ♀ | Lady Zombie
-10, Ape, m, Archetype - Ape, Ape Male | Ape ♂
-11, Ape Female, f, Archetype - Ape, Ape ♀ | Lady Ape
-12, Alien, m, Archetype - Alien, Alien Male | Alien ♂
-13, Alien Female, f, Archetype - Alien, Alien ♀ | Lady Alien
-14, Zombie (Ape), m, Archetype - Zombie, Zombie (Ape) Male | Zombie (Ape) ♂
-15, Alien (Ape), m, Archetype - Alien, Alien (Ape) Male | Alien (Ape) ♂
-16, Demon, m, Archetype - Demon, Demon Male | Demon ♂
-17, Demon Female, f, Archetype - Demon, Demon ♀ | Lady Demon
-18, Mummy, m, Archetype - Mummy, Mummy Male | Mummy ♂
-19, Mummy Female, f, Archetype - Mummy, Mummy ♀ | Lady Mummy
-20, Orc, m, Archetype - Orc, Orc Male | Orc ♂
-21, Orc Female, f, Archetype - Orc, Orc ♀ | Lady Orc
-22, Robot, m, Archetype - Robot, Robot Male | Robot ♂
-23, Robot Female, f, Archetype - Robot, Robot ♀ | Lady Robot
-24, Skeleton, m, Archetype - Skeleton, Skeleton Male | Skeleton ♂
-25, Skeleton Female, f, Archetype - Skeleton, Skeleton ♀ | Lady Skeleton
-26, Vampire, m, Archetype - Vampire, Vampire Male | Vampire ♂
-27, Vampire Female, f, Archetype - Vampire, Vampire ♀ | Lady Vamp | Lady Vampire
-28, Human Chocolate, m, Archetype - Human, Human Male Chocolate | Human Chocolate ♂ | Male Chocolate
-29, Human Espresso, m, Archetype - Human, Human Male Espresso | Human Espresso ♂ | Male Espresso
-30, Human Golden, m, Archetype - Human, Human Male Golden | Human Golden ♂ | Male Golden
-31, Human Umber, m, Archetype - Human, Human Male Umber | Human Umber ♂ | Male Umber
-32, Human Bronze, m, Archetype - Human, Human Male Bronze | Human Bronze ♂ | Male Bronze
-33, Human Chestnut, m, Archetype - Human, Human Male Chestnut | Human Chestnut ♂ | Male Chestnut
-34, Human Almond, m, Archetype - Human, Human Male Almond | Human Almond ♂ | Male Almond
-35, Human Band, m, Archetype - Human, Human Male Band | Human Band ♂ | Male Band
-36, Human Honey, m, Archetype - Human, Human Male Honey | Human Honey ♂ | Male Honey
-37, Human Sienna, m, Archetype - Human, Human Male Sienna | Human Sienna ♂ | Male Sienna
-38, Human Beige, m, Archetype - Human, Human Male Beige | Human Beige ♂ | Male Beige
-39, Human Limestone, m, Archetype - Human, Human Male Limestone | Human Limestone ♂ | Male Limestone
-40, Human Rose Beige, m, Archetype - Human, Human Male Rose Beige | Human Rose Beige ♂ | Male Rose Beige
-41, Human Sand, m, Archetype - Human, Human Male Sand | Human Sand ♂ | Male Sand
-42, Human Warm Ivory, m, Archetype - Human, Human Male Warm Ivory | Human Warm Ivory ♂ | Male Warm Ivory
-43, Human Pale Ivory, m, Archetype - Human, Human Male Pale Ivory | Human Pale Ivory ♂ | Male Pale Ivory
-44, Human Porcelain, m, Archetype - Human, Human Male Porcelain | Human Porcelain ♂ | Male Porcelain
-45, Human Ivory, m, Archetype - Human, Human Male Ivory | Human Ivory ♂ | Male Ivory
-46, Human Orange, m, Archetype - Human, Human Male Orange | Human Orange ♂ | Male Orange
-47, Human Warm Red, m, Archetype - Human, Human Male Warm Red | Human Warm Red ♂ | Male Warm Red
-48, Human Red, m, Archetype - Human, Human Male Red | Human Red ♂ | Male Red
-49, Human Rubine Red, m, Archetype - Human, Human Male Rubine Red | Human Rubine Red ♂ | Male Rubine Red
-50, Human Pink, m, Archetype - Human, Human Male Pink | Human Pink ♂ | Human Barbie Pink | Human Male Barbie Pink | Human Barbie Pink ♂ | Male Pink | Male Barbie Pink
-51, Human Purple, m, Archetype - Human, Human Male Purple | Human Purple ♂ | Male Purple
-52, Human Blue, m, Archetype - Human, Human Male Blue | Human Blue ♂ | Male Blue
-53, Human Violet, m, Archetype - Human, Human Male Violet | Human Violet ♂ | Male Violet
-54, Human Yellow, m, Archetype - Human, Human Male Yellow | Human Yellow ♂ | Male Yellow
-55, Human Female Chocolate, f, Archetype - Human, Human Chocolate ♀ | Female Chocolate
-56, Human Female Espresso, f, Archetype - Human, Human Espresso ♀ | Female Espresso
-57, Human Female Golden, f, Archetype - Human, Human Golden ♀ | Female Golden
-58, Human Female Umber, f, Archetype - Human, Human Umber ♀ | Female Umber
-59, Human Female Bronze, f, Archetype - Human, Human Bronze ♀ | Female Bronze
-60, Human Female Chestnut, f, Archetype - Human, Human Chestnut ♀ | Female Chestnut
-61, Human Female Almond, f, Archetype - Human, Human Almond ♀ | Female Almond
-62, Human Female Band, f, Archetype - Human, Human Band ♀ | Female Band
-63, Human Female Honey, f, Archetype - Human, Human Honey ♀ | Female Honey
-64, Human Female Sienna, f, Archetype - Human, Human Sienna ♀ | Female Sienna
-65, Human Female Beige, f, Archetype - Human, Human Beige ♀ | Female Beige
-66, Human Female Limestone, f, Archetype - Human, Human Limestone ♀ | Female Limestone
-67, Human Female Rose Beige, f, Archetype - Human, Human Rose Beige ♀ | Female Rose Beige
-68, Human Female Sand, f, Archetype - Human, Human Sand ♀ | Female Sand
-69, Human Female Warm Ivory, f, Archetype - Human, Human Warm Ivory ♀ | Female Warm Ivory
-70, Human Female Pale Ivory, f, Archetype - Human, Human Pale Ivory ♀ | Female Pale Ivory
-71, Human Female Porcelain, f, Archetype - Human, Human Porcelain ♀ | Female Porcelain
-72, Human Female Ivory, f, Archetype - Human, Human Ivory ♀ | Female Ivory
-73, Human Female Orange, f, Archetype - Human, Human Orange ♀ | Female Orange
-74, Human Female Warm Red, f, Archetype - Human, Human Warm Red ♀ | Female Warm Red
-75, Human Female Red, f, Archetype - Human, Human Red ♀ | Female Red
-76, Human Female Rubine Red, f, Archetype - Human, Human Rubine Red ♀ | Female Rubine Red
-77, Human Female Pink, f, Archetype - Human, Human Pink ♀ | Human Female Barbie Pink | Human Barbie Pink ♀ | Female Pink | Female Barbie Pink
-78, Human Female Purple, f, Archetype - Human, Human Purple ♀ | Female Purple
-79, Human Female Blue, f, Archetype - Human, Human Blue ♀ | Female Blue
-80, Human Female Violet, f, Archetype - Human, Human Violet ♀ | Female Violet
-81, Human Female Yellow, f, Archetype - Human, Human Yellow ♀ | Female Yellow
-82, Human Gold 1, m, Archetype - Human, Human Male Gold 1 | Human Gold 1 ♂ | Human Gold | Human Male Gold | Human Gold ♂ | Male Gold 1 | Male Gold
-83, Human Gold 2, m, Archetype - Human, Human Male Gold 2 | Human Gold 2 ♂ | Human Goldenrod | Human Male Goldenrod | Human Goldenrod ♂ | Male Gold 2 | Male Goldenrod
-84, Human Gold 3, m, Archetype - Human, Human Male Gold 3 | Human Gold 3 ♂ | Human Dark Goldenrod | Human Male Dark Goldenrod | Human Dark Goldenrod ♂ | Male Gold 3 | Male Dark Goldenrod
-85, Human Female Gold 1, f, Archetype - Human, Human Gold 1 ♀ | Human Female Gold | Human Gold ♀ | Female Gold 1 | Female Gold
-86, Human Female Gold 2, f, Archetype - Human, Human Gold 2 ♀ | Human Female Goldenrod | Human Goldenrod ♀ | Female Gold 2 | Female Goldenrod
-87, Human Female Gold 3, f, Archetype - Human, Human Gold 3 ♀ | Human Female Dark Goldenrod | Human Dark Goldenrod ♀ | Female Gold 3 | Female Dark Goldenrod
-88, Zombie Gold 1, m, Archetype - Zombie, Zombie Male Gold 1 | Zombie Gold 1 ♂ | Zombie Gold | Zombie Male Gold | Zombie Gold ♂
-89, Zombie Gold 2, m, Archetype - Zombie, Zombie Male Gold 2 | Zombie Gold 2 ♂ | Zombie Goldenrod | Zombie Male Goldenrod | Zombie Goldenrod ♂
-90, Zombie Gold 3, m, Archetype - Zombie, Zombie Male Gold 3 | Zombie Gold 3 ♂ | Zombie Dark Goldenrod | Zombie Male Dark Goldenrod | Zombie Dark Goldenrod ♂
-91, Zombie Female Gold 1, f, Archetype - Zombie, Zombie Gold 1 ♀ | Zombie Female Gold | Zombie Gold ♀
-92, Zombie Female Gold 2, f, Archetype - Zombie, Zombie Gold 2 ♀ | Zombie Female Goldenrod | Zombie Goldenrod ♀
-93, Zombie Female Gold 3, f, Archetype - Zombie, Zombie Gold 3 ♀ | Zombie Female Dark Goldenrod | Zombie Dark Goldenrod ♀
-94, Ape Gold 1, m, Archetype - Ape, Ape Male Gold 1 | Ape Gold 1 ♂ | Ape Gold | Ape Male Gold | Ape Gold ♂
-95, Ape Gold 2, m, Archetype - Ape, Ape Male Gold 2 | Ape Gold 2 ♂ | Ape Goldenrod | Ape Male Goldenrod | Ape Goldenrod ♂
-96, Ape Gold 3, m, Archetype - Ape, Ape Male Gold 3 | Ape Gold 3 ♂ | Ape Dark Goldenrod | Ape Male Dark Goldenrod | Ape Dark Goldenrod ♂
-97, Ape Female Gold 1, f, Archetype - Ape, Ape Gold 1 ♀ | Ape Female Gold | Ape Gold ♀
-98, Ape Female Gold 2, f, Archetype - Ape, Ape Gold 2 ♀ | Ape Female Goldenrod | Ape Goldenrod ♀
-99, Ape Female Gold 3, f, Archetype - Ape, Ape Gold 3 ♀ | Ape Female Dark Goldenrod | Ape Dark Goldenrod ♀
-100, Alien Gold 1, m, Archetype - Alien, Alien Male Gold 1 | Alien Gold 1 ♂ | Alien Gold | Alien Male Gold | Alien Gold ♂
-101, Alien Gold 2, m, Archetype - Alien, Alien Male Gold 2 | Alien Gold 2 ♂ | Alien Goldenrod | Alien Male Goldenrod | Alien Goldenrod ♂
-102, Alien Gold 3, m, Archetype - Alien, Alien Male Gold 3 | Alien Gold 3 ♂ | Alien Dark Goldenrod | Alien Male Dark Goldenrod | Alien Dark Goldenrod ♂
-103, Alien Female Gold 1, f, Archetype - Alien, Alien Gold 1 ♀ | Alien Female Gold | Alien Gold ♀
-104, Alien Female Gold 2, f, Archetype - Alien, Alien Gold 2 ♀ | Alien Female Goldenrod | Alien Goldenrod ♀
-105, Alien Female Gold 3, f, Archetype - Alien, Alien Gold 3 ♀ | Alien Female Dark Goldenrod | Alien Dark Goldenrod ♀
-106, Demon Gold 1, m, Archetype - Demon, Demon Male Gold 1 | Demon Gold 1 ♂ | Demon Gold | Demon Male Gold | Demon Gold ♂
-107, Demon Gold 2, m, Archetype - Demon, Demon Male Gold 2 | Demon Gold 2 ♂ | Demon Goldenrod | Demon Male Goldenrod | Demon Goldenrod ♂
-108, Demon Gold 3, m, Archetype - Demon, Demon Male Gold 3 | Demon Gold 3 ♂ | Demon Dark Goldenrod | Demon Male Dark Goldenrod | Demon Dark Goldenrod ♂
-109, Demon Female Gold 1, f, Archetype - Demon, Demon Gold 1 ♀ | Demon Female Gold | Demon Gold ♀
-110, Demon Female Gold 2, f, Archetype - Demon, Demon Gold 2 ♀ | Demon Female Goldenrod | Demon Goldenrod ♀
-111, Demon Female Gold 3, f, Archetype - Demon, Demon Gold 3 ♀ | Demon Female Dark Goldenrod | Demon Dark Goldenrod ♀
-112, Skeleton Gold 1, m, Archetype - Skeleton, Skeleton Male Gold 1 | Skeleton Gold 1 ♂ | Skeleton Gold | Skeleton Male Gold | Skeleton Gold ♂
-113, Skeleton Gold 2, m, Archetype - Skeleton, Skeleton Male Gold 2 | Skeleton Gold 2 ♂ | Skeleton Goldenrod | Skeleton Male Goldenrod | Skeleton Goldenrod ♂
-114, Skeleton Gold 3, m, Archetype - Skeleton, Skeleton Male Gold 3 | Skeleton Gold 3 ♂ | Skeleton Dark Goldenrod | Skeleton Male Dark Goldenrod | Skeleton Dark Goldenrod ♂
-115, Skeleton Female Gold 1, f, Archetype - Skeleton, Skeleton Gold 1 ♀ | Skeleton Female Gold | Skeleton Gold ♀
-116, Skeleton Female Gold 2, f, Archetype - Skeleton, Skeleton Gold 2 ♀ | Skeleton Female Goldenrod | Skeleton Goldenrod ♀
-117, Skeleton Female Gold 3, f, Archetype - Skeleton, Skeleton Gold 3 ♀ | Skeleton Female Dark Goldenrod | Skeleton Dark Goldenrod ♀
-118, Alien 0°, m, Archetype - Alien, Alien Male 0° | Alien 0° ♂ | Alien Red | Alien Male Red | Alien Red ♂
-119, Alien 30°, m, Archetype - Alien, Alien Male 30° | Alien 30° ♂ | Alien Orange | Alien Male Orange | Alien Orange ♂
-120, Alien 60°, m, Archetype - Alien, Alien Male 60° | Alien 60° ♂ | Alien Yellow | Alien Male Yellow | Alien Yellow ♂
-121, Alien 90°, m, Archetype - Alien, Alien Male 90° | Alien 90° ♂ | Alien Yellow Green | Alien Male Yellow Green | Alien Yellow Green ♂
-122, Alien 120°, m, Archetype - Alien, Alien Male 120° | Alien 120° ♂ | Alien Green | Alien Male Green | Alien Green ♂
-123, Alien 150°, m, Archetype - Alien, Alien Male 150° | Alien 150° ♂ | Alien Cyan Green | Alien Male Cyan Green | Alien Cyan Green ♂
-124, Alien 180°, m, Archetype - Alien, Alien Male 180° | Alien 180° ♂ | Alien Cyan | Alien Male Cyan | Alien Cyan ♂
-125, Alien 210°, m, Archetype - Alien, Alien Male 210° | Alien 210° ♂ | Alien Cyan Blue | Alien Male Cyan Blue | Alien Cyan Blue ♂
-126, Alien 240°, m, Archetype - Alien, Alien Male 240° | Alien 240° ♂ | Alien Blue | Alien Male Blue | Alien Blue ♂
-127, Alien 270°, m, Archetype - Alien, Alien Male 270° | Alien 270° ♂ | Alien Violet | Alien Male Violet | Alien Violet ♂
-128, Alien 300°, m, Archetype - Alien, Alien Male 300° | Alien 300° ♂ | Alien Magenta | Alien Male Magenta | Alien Magenta ♂
-129, Alien 330°, m, Archetype - Alien, Alien Male 330° | Alien 330° ♂ | Alien Red Magenta | Alien Male Red Magenta | Alien Red Magenta ♂
-130, Alien (Ape) 0°, m, Archetype - Alien, Alien (Ape) Male 0° | Alien (Ape) 0° ♂ | Alien (Ape) Red | Alien (Ape) Male Red | Alien (Ape) Red ♂
-131, Alien (Ape) 30°, m, Archetype - Alien, Alien (Ape) Male 30° | Alien (Ape) 30° ♂ | Alien (Ape) Orange | Alien (Ape) Male Orange | Alien (Ape) Orange ♂
-132, Alien (Ape) 60°, m, Archetype - Alien, Alien (Ape) Male 60° | Alien (Ape) 60° ♂ | Alien (Ape) Yellow | Alien (Ape) Male Yellow | Alien (Ape) Yellow ♂
-133, Alien (Ape) 90°, m, Archetype - Alien, Alien (Ape) Male 90° | Alien (Ape) 90° ♂ | Alien (Ape) Yellow Green | Alien (Ape) Male Yellow Green | Alien (Ape) Yellow Green ♂
-134, Alien (Ape) 120°, m, Archetype - Alien, Alien (Ape) Male 120° | Alien (Ape) 120° ♂ | Alien (Ape) Green | Alien (Ape) Male Green | Alien (Ape) Green ♂
-135, Alien (Ape) 150°, m, Archetype - Alien, Alien (Ape) Male 150° | Alien (Ape) 150° ♂ | Alien (Ape) Cyan Green | Alien (Ape) Male Cyan Green | Alien (Ape) Cyan Green ♂
-136, Alien (Ape) 180°, m, Archetype - Alien, Alien (Ape) Male 180° | Alien (Ape) 180° ♂ | Alien (Ape) Cyan | Alien (Ape) Male Cyan | Alien (Ape) Cyan ♂
-137, Alien (Ape) 210°, m, Archetype - Alien, Alien (Ape) Male 210° | Alien (Ape) 210° ♂ | Alien (Ape) Cyan Blue | Alien (Ape) Male Cyan Blue | Alien (Ape) Cyan Blue ♂
-138, Alien (Ape) 240°, m, Archetype - Alien, Alien (Ape) Male 240° | Alien (Ape) 240° ♂ | Alien (Ape) Blue | Alien (Ape) Male Blue | Alien (Ape) Blue ♂
-139, Alien (Ape) 270°, m, Archetype - Alien, Alien (Ape) Male 270° | Alien (Ape) 270° ♂ | Alien (Ape) Violet | Alien (Ape) Male Violet | Alien (Ape) Violet ♂
-140, Alien (Ape) 300°, m, Archetype - Alien, Alien (Ape) Male 300° | Alien (Ape) 300° ♂ | Alien (Ape) Magenta | Alien (Ape) Male Magenta | Alien (Ape) Magenta ♂
-141, Alien (Ape) 330°, m, Archetype - Alien, Alien (Ape) Male 330° | Alien (Ape) 330° ♂ | Alien (Ape) Red Magenta | Alien (Ape) Male Red Magenta | Alien (Ape) Red Magenta ♂
-142, Alien Female 0°, f, Archetype - Alien, Alien 0° ♀ | Alien Female Red | Alien Red ♀
-143, Alien Female 30°, f, Archetype - Alien, Alien 30° ♀ | Alien Female Orange | Alien Orange ♀
-144, Alien Female 60°, f, Archetype - Alien, Alien 60° ♀ | Alien Female Yellow | Alien Yellow ♀
-145, Alien Female 90°, f, Archetype - Alien, Alien 90° ♀ | Alien Female Yellow Green | Alien Yellow Green ♀
-146, Alien Female 120°, f, Archetype - Alien, Alien 120° ♀ | Alien Female Green | Alien Green ♀
-147, Alien Female 150°, f, Archetype - Alien, Alien 150° ♀ | Alien Female Cyan Green | Alien Cyan Green ♀
-148, Alien Female 180°, f, Archetype - Alien, Alien 180° ♀ | Alien Female Cyan | Alien Cyan ♀
-149, Alien Female 210°, f, Archetype - Alien, Alien 210° ♀ | Alien Female Cyan Blue | Alien Cyan Blue ♀
-150, Alien Female 240°, f, Archetype - Alien, Alien 240° ♀ | Alien Female Blue | Alien Blue ♀
-151, Alien Female 270°, f, Archetype - Alien, Alien 270° ♀ | Alien Female Violet | Alien Violet ♀
-152, Alien Female 300°, f, Archetype - Alien, Alien 300° ♀ | Alien Female Magenta | Alien Magenta ♀
-153, Alien Female 330°, f, Archetype - Alien, Alien 330° ♀ | Alien Female Red Magenta | Alien Red Magenta ♀
-154, 3D Glasses, m, Attribute, 
-155, 3D Glasses, f, Attribute, 
-156, Big Shades, m, Attribute, 
-157, Big Shades, f, Attribute, 
-158, Classic Shades, m, Attribute, 
-159, Classic Shades, f, Attribute, 
-160, Eye Mask, m, Attribute, 
-161, Eye Mask, f, Attribute, 
-162, Eye Patch, m, Attribute, 
-163, Eye Patch, f, Attribute, 
-164, Horned Rim Glasses, m, Attribute, 
-165, Horned Rim Glasses, f, Attribute, 
-166, Nerd Glasses, m, Attribute, 
-167, Nerd Glasses, f, Attribute, 
-168, Regular Shades, m, Attribute, 
-169, Regular Shades, f, Attribute, 
-170, Small Shades, m, Attribute, 
-171, Small Shades, f, Attribute, 
-172, VR, m, Attribute, 
-173, VR, f, Attribute, 
-174, Welding Goggles, f, Attribute, 
-175, Heart Shades, m, Attribute, 
-176, Heart Shades, f, Attribute, 
-177, Ski Googles, m, Attribute, 
-178, Ski Googles, f, Attribute, 
-179, Laser Eyes, m, Attribute, Laser Eyes Red
-180, Laser Eyes Gold, m, Attribute, 
-181, Tears, m, Attribute, 
-182, Tears, f, Attribute, 
-183, Blue Eye Shadow, f, Attribute, 
-184, Green Eye Shadow, f, Attribute, 
-185, Purple Eye Shadow, f, Attribute, 
-186, Clown Eyes Blue, m, Attribute, 
-187, Clown Eyes Blue, f, Attribute, 
-188, Clown Eyes Green, m, Attribute, 
-189, Clown Eyes Green, f, Attribute, 
-190, Mole, m, Attribute, 
-191, Mole, f, Attribute, 
-192, Rosy Cheeks, m, Attribute, 
-193, Rosy Cheeks, f, Attribute, 
-194, Spots, m, Attribute, 
-195, Spots, f, Attribute, 
-196, Clown Nose, m, Attribute, Clown Nose Red
-197, Clown Nose, f, Attribute, Clown Nose Red
-198, Earring, m, Attribute, Gold Earring
-199, Earring, f, Attribute, Gold Earring
-200, Silver Earring, m, Attribute, 
-201, Silver Earring, f, Attribute, 
-202, Buck Teeth, m, Attribute, 
-203, Frown, m, Attribute, 
-204, Smile, m, Attribute, 
-205, Black Lipstick, f, Attribute, 
-206, Hot Lipstick, f, Attribute, 
-207, Purple Lipstick, f, Attribute, 
-208, Pink Lipstick, f, Attribute, 
-209, Red Lipstick, f, Attribute, 
-210, Cigarette, m, Attribute, 
-211, Cigarette, f, Attribute, 
-212, Medical Mask, m, Attribute, 
-213, Medical Mask, f, Attribute, 
-214, Pipe, m, Attribute, 
-215, Pipe, f, Attribute, 
-216, Vape, m, Attribute, 
-217, Vape, f, Attribute, 
-218, Cigar, m, Attribute, 
-219, Cigar, f, Attribute, 
-220, Choker, f, Attribute, 
-221, Gold Chain, m, Attribute, 
-222, Gold Chain, f, Attribute, 
-223, Silver Chain, m, Attribute, 
-224, Silver Chain, f, Attribute, 
-225, Gold Diamond Chain, m, Attribute, Gold Diamond Necklace
-226, Gold Diamond Chain, f, Attribute, Gold Diamond Necklace
-227, Big Beard, m, Attribute, 
-228, Chinstrap, m, Attribute, 
-229, Front Beard, m, Attribute, 
-230, Front Beard Dark, m, Attribute, 
-231, Goat, m, Attribute, 
-232, Handlebars, m, Attribute, 
-233, Luxurious Beard, m, Attribute, 
-234, Mustache, m, Attribute, 
-235, Muttonchops, m, Attribute, 
-236, Normal Beard, m, Attribute, 
-237, Normal Beard Black, m, Attribute, 
-238, Shadow Beard, m, Attribute, 
-239, Bandana, m, Attribute, 
-240, Bandana, f, Attribute, 
-241, Beanie, m, Attribute, 
-242, Beanie, f, Attribute, 
-243, Cap Forward, m, Attribute, 
-244, Cap Forward, f, Attribute, 
-245, Cowboy Hat, m, Attribute, 
-246, Cowboy Hat, f, Attribute, 
-247, Do-rag, m, Attribute, 
-248, Do-rag, f, Attribute, 
-249, Fedora, m, Attribute, Fedora 1
-250, Fedora, f, Attribute, Fedora 1
-251, Headband, m, Attribute, 
-252, Headband, f, Attribute, 
-253, Hoodie, m, Attribute, 
-254, Hoodie, f, Attribute, 
-255, Knitted Cap, m, Attribute, 
-256, Knitted Cap, f, Attribute, 
-257, Pilot Helmet, f, Attribute, 
-258, Police Cap, m, Attribute, 
-259, Police Cap, f, Attribute, 
-260, Tassle Hat, f, Attribute, 
-261, Tiara, f, Attribute, 
-262, Top Hat, m, Attribute, Top Hat 1
-263, Top Hat, f, Attribute, Top Hat 1
-264, Bear Hood, m, Attribute, 
-265, Bear Hood, f, Attribute, 
-266, Birthday Hat, m, Attribute, 
-267, Birthday Hat, f, Attribute, 
-268, Bow, f, Attribute, 
-269, Crown, m, Attribute, 
-270, Crown, f, Attribute, 
-271, Flowers, f, Attribute, 
-272, Frog Hood, m, Attribute, 
-273, Frog Hood, f, Attribute, 
-274, Jester Hat, m, Attribute, 
-275, Jester Hat, f, Attribute, 
-276, Santa Hat, m, Attribute, 
-277, Santa Hat, f, Attribute, 
-278, Sombrero, m, Attribute, Sombrero 1
-279, Sombrero, f, Attribute, Sombrero 1
-280, Sun Hat, m, Attribute, 
-281, Sun Hat, f, Attribute, 
-282, Superhero Tiara, f, Attribute, 
-283, Viking Helmet, m, Attribute, 
-284, Viking Helmet, f, Attribute, 
-285, Winter Hat, m, Attribute, 
-286, Winter Hat, f, Attribute, 
-287, Australian Cork Hat, m, Attribute, 
-288, Australian Cork Hat, f, Attribute, 
-289, Ayam, m, Attribute, 
-290, Ayam, f, Attribute, 
-291, Bamboo Hat, m, Attribute, 
-292, Bamboo Hat, f, Attribute, 
-293, Baseball Cap, m, Attribute, 
-294, Baseball Cap, f, Attribute, 
-295, Bear Skin, m, Attribute, 
-296, Bear Skin, f, Attribute, 
-297, Beer Bong, m, Attribute, 
-298, Beer Bong, f, Attribute, 
-299, Beret, m, Attribute, 
-300, Beret, f, Attribute, 
-301, Boater, m, Attribute, 
-302, Boater, f, Attribute, 
-303, Bororo, m, Attribute, 
-304, Bororo, f, Attribute, 
-305, Chichak Helmet, m, Attribute, 
-306, Chichak Helmet, f, Attribute, 
-307, Chinese Landlords Hat, m, Attribute, 
-308, Chinese Landlords Hat, f, Attribute, 
-309, Chullo, m, Attribute, 
-310, Chullo, f, Attribute, 
-311, Fedora 2, m, Attribute, 
-312, Fedora 2, f, Attribute, 
-313, Fez, m, Attribute, 
-314, Fez, f, Attribute, 
-315, Fisherman Cap, m, Attribute, 
-316, Fisherman Cap, f, Attribute, 
-317, Flamenco Hat, m, Attribute, 
-318, Flamenco Hat, f, Attribute, 
-319, Flower Crown, m, Attribute, 
-320, Flower Crown, f, Attribute, 
-321, Gat, m, Attribute, 
-322, Gat, f, Attribute, 
-323, Gaucho, m, Attribute, 
-324, Gaucho, f, Attribute, 
-325, Hennin, m, Attribute, 
-326, Hennin, f, Attribute, 
-327, Isicholo, m, Attribute, 
-328, Isicholo, f, Attribute, 
-329, Jaapi, m, Attribute, 
-330, Jaapi, f, Attribute, 
-331, Keffiyeh, m, Attribute, 
-332, Keffiyeh, f, Attribute, 
-333, Krakowiak, m, Attribute, 
-334, Krakowiak, f, Attribute, 
-335, Misango Cap, m, Attribute, 
-336, Misango Cap, f, Attribute, 
-337, Newsboy Cap, m, Attribute, 
-338, Panama Hat, m, Attribute, 
-339, Panama Hat, f, Attribute, 
-340, Rasta, m, Attribute, 
-341, Rasta, f, Attribute, 
-342, Royal Cocktail Hat, f, Attribute, 
-343, Sibenik, m, Attribute, 
-344, Sibenik, f, Attribute, 
-345, Sombrero 2, m, Attribute, 
-346, Sombrero 2, f, Attribute, 
-347, Tam-O-Shanter, m, Attribute, 
-348, Tam-O-Shanter, f, Attribute, 
-349, Top Hat 2, m, Attribute, 
-350, Top Hat 2, f, Attribute, 
-351, Trapper Hat, m, Attribute, 
-352, Trapper Hat, f, Attribute, 
-353, Tuque, m, Attribute, 
-354, Tuque, f, Attribute, 
-355, Turban, m, Attribute, 
-356, Turban, f, Attribute, 
-357, Tyrolean, m, Attribute, 
-358, Tyrolean, f, Attribute, 
-359, Ushanka, m, Attribute, 
-360, Ushanka, f, Attribute, 
-361, Viking Hat, m, Attribute, 
-362, Viking Hat, f, Attribute, 
-363, Cap, m, Attribute, 
-364, Cap, f, Attribute, 
-365, Cap 0°, m, Attribute, Cap Red
-366, Cap 0°, f, Attribute, Cap Red
-367, Cap 30°, m, Attribute, Cap Orange
-368, Cap 30°, f, Attribute, Cap Orange
-369, Cap 60°, m, Attribute, Cap Yellow
-370, Cap 60°, f, Attribute, Cap Yellow
-371, Cap 90°, m, Attribute, Cap Yellow Green
-372, Cap 90°, f, Attribute, Cap Yellow Green
-373, Cap 120°, m, Attribute, Cap Green
-374, Cap 120°, f, Attribute, Cap Green
-375, Cap 150°, m, Attribute, Cap Cyan Green
-376, Cap 150°, f, Attribute, Cap Cyan Green
-377, Cap 180°, m, Attribute, Cap Cyan
-378, Cap 180°, f, Attribute, Cap Cyan
-379, Cap 210°, m, Attribute, Cap Cyan Blue
-380, Cap 210°, f, Attribute, Cap Cyan Blue
-381, Cap 240°, m, Attribute, Cap Blue
-382, Cap 240°, f, Attribute, Cap Blue
-383, Cap 270°, m, Attribute, Cap Violet
-384, Cap 270°, f, Attribute, Cap Violet
-385, Cap 300°, m, Attribute, Cap Magenta
-386, Cap 300°, f, Attribute, Cap Magenta
-387, Cap 330°, m, Attribute, Cap Red Magenta
-388, Cap 330°, f, Attribute, Cap Red Magenta
-389, Blonde Short, f, Attribute, 
-390, Crazy Hair, m, Attribute, 
-391, Crazy Hair, f, Attribute, 
-392, Dark Hair, f, Attribute, 
-393, Frumpy Hair, m, Attribute, 
-394, Frumpy Hair, f, Attribute, 
-395, Half Shaved, f, Attribute, 
-396, Messy Hair, m, Attribute, 
-397, Messy Hair, f, Attribute, 
-398, Mohawk, m, Attribute, 
-399, Mohawk, f, Attribute, 
-400, Mohawk Dark, m, Attribute, 
-401, Mohawk Dark, f, Attribute, 
-402, Mohawk Thin, m, Attribute, 
-403, Mohawk Thin, f, Attribute, 
-404, Orange Side, f, Attribute, 
-405, Peak Spike, m, Attribute, 
-406, Pigtails, f, Attribute, 
-407, Pink with Hat, f, Attribute, 
-408, Purple Hair, m, Attribute, 
-409, Purple Hair, f, Attribute, 
-410, Red Mohawk, f, Attribute, 
-411, Shaved Head, m, Attribute, 
-412, Shaved Head, f, Attribute, 
-413, Straight Hair, f, Attribute, 
-414, Straight Hair Blonde, f, Attribute, 
-415, Straight Hair Dark, f, Attribute, 
-416, Stringy Hair, m, Attribute, 
-417, Stringy Hair, f, Attribute, 
-418, Vampire Hair, m, Attribute, 
-419, Wild Blonde, f, Attribute, 
-420, Wild Hair, m, Attribute, 
-421, Wild Hair, f, Attribute, 
-422, Wild White Hair, f, Attribute, 
-423, Black Afro, m, Attribute, 
-424, Black Afro, f, Attribute, 
-425, Brown Afro, m, Attribute, 
-426, Dark Red Afro, m, Attribute, 
-427, Orange Afro, m, Attribute, 
-428, Red Afro, m, Attribute, 
-429, Pink Afro, m, Attribute, 
-430, Purple Afro, m, Attribute, 
-431, Blue Afro, m, Attribute, 
-432, Periwinkle Afro, m, Attribute, 
-433, Light Blue Afro, m, Attribute, 
-434, Light Green Afro, m, Attribute, 
-435, Green Afro, m, Attribute, 
-436, Teal Afro, m, Attribute, 
-437, Blonde Afro, m, Attribute, 
-438, Silver Afro, m, Attribute, 
-439, White Afro, m, Attribute, 
-440, Brown Afro, f, Attribute, 
-441, Dark Red Afro, f, Attribute, 
-442, Orange Afro, f, Attribute, 
-443, Red Afro, f, Attribute, 
-444, Pink Afro, f, Attribute, 
-445, Purple Afro, f, Attribute, 
-446, Blue Afro, f, Attribute, 
-447, Periwinkle Afro, f, Attribute, 
-448, Light Blue Afro, f, Attribute, 
-449, Light Green Afro, f, Attribute, 
-450, Green Afro, f, Attribute, 
-451, Teal Afro, f, Attribute, 
-452, Blonde Afro, f, Attribute, 
-453, Silver Afro, f, Attribute, 
-454, White Afro, f, Attribute, 
-455, Big Hair Black, m, Attribute, 
-456, Big Hair Black, f, Attribute, 
-457, Big Hair Brown, m, Attribute, 
-458, Big Hair Dark Red, m, Attribute, 
-459, Big Hair Orange, m, Attribute, 
-460, Big Hair Red, m, Attribute, 
-461, Big Hair Pink, m, Attribute, 
-462, Big Hair Purple, m, Attribute, 
-463, Big Hair Blue, m, Attribute, 
-464, Big Hair Periwinkle, m, Attribute, 
-465, Big Hair Light Blue, m, Attribute, 
-466, Big Hair Light Green, m, Attribute, 
-467, Big Hair Green, m, Attribute, 
-468, Big Hair Teal, m, Attribute, 
-469, Big Hair Blonde, m, Attribute, 
-470, Big Hair Silver, m, Attribute, 
-471, Big Hair White, m, Attribute, 
-472, Big Hair Brown, f, Attribute, 
-473, Big Hair Dark Red, f, Attribute, 
-474, Big Hair Orange, f, Attribute, 
-475, Big Hair Red, f, Attribute, 
-476, Big Hair Pink, f, Attribute, 
-477, Big Hair Purple, f, Attribute, 
-478, Big Hair Blue, f, Attribute, 
-479, Big Hair Periwinkle, f, Attribute, 
-480, Big Hair Light Blue, f, Attribute, 
-481, Big Hair Light Green, f, Attribute, 
-482, Big Hair Green, f, Attribute, 
-483, Big Hair Teal, f, Attribute, 
-484, Big Hair Blonde, f, Attribute, 
-485, Big Hair Silver, f, Attribute, 
-486, Big Hair White, f, Attribute, 
-487, Black Bob, f, Attribute, 
-488, Brown Bob, f, Attribute, 
-489, Dark Red Bob, f, Attribute, 
-490, Orange Bob, f, Attribute, 
-491, Red Bob, f, Attribute, 
-492, Pink Bob, f, Attribute, 
-493, Purple Bob, f, Attribute, 
-494, Blue Bob, f, Attribute, 
-495, Periwinkle Bob, f, Attribute, 
-496, Light Blue Bob, f, Attribute, 
-497, Light Green Bob, f, Attribute, 
-498, Green Bob, f, Attribute, 
-499, Teal Bob, f, Attribute, 
-500, Blonde Bob, f, Attribute, 
-501, Silver Bob, f, Attribute, 
-502, White Bob, f, Attribute, 
-503, Black Buzz Cut, m, Attribute, 
-504, Black Buzz Cut, f, Attribute, 
-505, Brown Buzz Cut, m, Attribute, 
-506, Dark Red Buzz Cut, m, Attribute, 
-507, Orange Buzz Cut, m, Attribute, 
-508, Red Buzz Cut, m, Attribute, 
-509, Pink Buzz Cut, m, Attribute, 
-510, Purple Buzz Cut, m, Attribute, 
-511, Blue Buzz Cut, m, Attribute, 
-512, Periwinkle Buzz Cut, m, Attribute, 
-513, Light Blue Buzz Cut, m, Attribute, 
-514, Light Green Buzz Cut, m, Attribute, 
-515, Green Buzz Cut, m, Attribute, 
-516, Teal Buzz Cut, m, Attribute, 
-517, Blonde Buzz Cut, m, Attribute, 
-518, Silver Buzz Cut, m, Attribute, 
-519, White Buzz Cut, m, Attribute, 
-520, Brown Buzz Cut, f, Attribute, 
-521, Dark Red Buzz Cut, f, Attribute, 
-522, Orange Buzz Cut, f, Attribute, 
-523, Red Buzz Cut, f, Attribute, 
-524, Pink Buzz Cut, f, Attribute, 
-525, Purple Buzz Cut, f, Attribute, 
-526, Blue Buzz Cut, f, Attribute, 
-527, Periwinkle Buzz Cut, f, Attribute, 
-528, Light Blue Buzz Cut, f, Attribute, 
-529, Light Green Buzz Cut, f, Attribute, 
-530, Green Buzz Cut, f, Attribute, 
-531, Teal Buzz Cut, f, Attribute, 
-532, Blonde Buzz Cut, f, Attribute, 
-533, Silver Buzz Cut, f, Attribute, 
-534, White Buzz Cut, f, Attribute, 
-535, Clown Hair Black, m, Attribute, 
-536, Clown Hair Black, f, Attribute, 
-537, Clown Hair Brown, m, Attribute, 
-538, Clown Hair Dark Red, m, Attribute, 
-539, Clown Hair Orange, m, Attribute, 
-540, Clown Hair Red, m, Attribute, 
-541, Clown Hair Pink, m, Attribute, 
-542, Clown Hair Purple, m, Attribute, 
-543, Clown Hair Blue, m, Attribute, 
-544, Clown Hair Periwinkle, m, Attribute, 
-545, Clown Hair Light Blue, m, Attribute, 
-546, Clown Hair Light Green, m, Attribute, 
-547, Clown Hair Green, m, Attribute, 
-548, Clown Hair Teal, m, Attribute, 
-549, Clown Hair Blonde, m, Attribute, 
-550, Clown Hair Silver, m, Attribute, 
-551, Clown Hair White, m, Attribute, 
-552, Clown Hair Brown, f, Attribute, 
-553, Clown Hair Dark Red, f, Attribute, 
-554, Clown Hair Orange, f, Attribute, 
-555, Clown Hair Red, f, Attribute, 
-556, Clown Hair Pink, f, Attribute, 
-557, Clown Hair Purple, f, Attribute, 
-558, Clown Hair Blue, f, Attribute, 
-559, Clown Hair Periwinkle, f, Attribute, 
-560, Clown Hair Light Blue, f, Attribute, 
-561, Clown Hair Light Green, f, Attribute, 
-562, Clown Hair Green, f, Attribute, 
-563, Clown Hair Teal, f, Attribute, 
-564, Clown Hair Blonde, f, Attribute, 
-565, Clown Hair Silver, f, Attribute, 
-566, Clown Hair White, f, Attribute, 
+id, name, gender, size, type, more_names
+0, Human 1, m, l, Archetype - Human, Human Male 1 | Human 1 ♂ | Male 1 | Man 1 | ♂ 1
+1, Human 2, m, l, Archetype - Human, Human Male 2 | Human 2 ♂ | Male 2 | Man 2 | ♂ 2
+2, Human 3, m, l, Archetype - Human, Human Male 3 | Human 3 ♂ | Male 3 | Man 3 | ♂ 3
+3, Human 4, m, l, Archetype - Human, Human Male 4 | Human 4 ♂ | Male 4 | Man 4 | ♂ 4
+4, Human Female 1, f, l, Archetype - Human, Human 1 ♀ | Female 1 | Woman 1 | Lady 1 | ♀ 1
+5, Human Female 2, f, l, Archetype - Human, Human 2 ♀ | Female 2 | Woman 2 | Lady 2 | ♀ 2
+6, Human Female 3, f, l, Archetype - Human, Human 3 ♀ | Female 3 | Woman 3 | Lady 3 | ♀ 3
+7, Human Female 4, f, l, Archetype - Human, Human 4 ♀ | Female 4 | Woman 4 | Lady 4 | ♀ 4
+8, Human Female 1, f, s, Archetype - Human, Human 1 ♀ | Female 1 | Woman 1 | Lady 1 | ♀ 1
+9, Human Female 2, f, s, Archetype - Human, Human 2 ♀ | Female 2 | Woman 2 | Lady 2 | ♀ 2
+10, Human Female 3, f, s, Archetype - Human, Human 3 ♀ | Female 3 | Woman 3 | Lady 3 | ♀ 3
+11, Human Female 4, f, s, Archetype - Human, Human 4 ♀ | Female 4 | Woman 4 | Lady 4 | ♀ 4
+12, Zombie, m, l, Archetype - Zombie, Zombie Male | Zombie ♂
+13, Zombie Female, f, l, Archetype - Zombie, Zombie ♀ | Lady Zombie
+14, Zombie Female, f, s, Archetype - Zombie, Zombie ♀ | Lady Zombie
+15, Ape, m, l, Archetype - Ape, Ape Male | Ape ♂
+16, Ape Female, f, l, Archetype - Ape, Ape ♀ | Lady Ape
+17, Ape Female, f, s, Archetype - Ape, Ape ♀ | Lady Ape
+18, Alien, m, l, Archetype - Alien, Alien Male | Alien ♂
+19, Alien Female, f, l, Archetype - Alien, Alien ♀ | Lady Alien
+20, Alien Female, f, s, Archetype - Alien, Alien ♀ | Lady Alien
+21, Zombie (Ape), m, l, Archetype - Zombie, Zombie (Ape) Male | Zombie (Ape) ♂
+22, Alien (Ape), m, l, Archetype - Alien, Alien (Ape) Male | Alien (Ape) ♂
+23, Demon, m, l, Archetype - Demon, Demon Male | Demon ♂
+24, Demon Female, f, s, Archetype - Demon, Demon ♀ | Lady Demon
+25, Mummy, m, l, Archetype - Mummy, Mummy Male | Mummy ♂
+26, Mummy Female, f, s, Archetype - Mummy, Mummy ♀ | Lady Mummy
+27, Orc, m, l, Archetype - Orc, Orc Male | Orc ♂
+28, Orc Female, f, s, Archetype - Orc, Orc ♀ | Lady Orc
+29, Robot, m, l, Archetype - Robot, Robot Male | Robot ♂
+30, Robot Female, f, s, Archetype - Robot, Robot ♀ | Lady Robot
+31, Skeleton, m, l, Archetype - Skeleton, Skeleton Male | Skeleton ♂
+32, Skeleton Female, f, s, Archetype - Skeleton, Skeleton ♀ | Lady Skeleton
+33, Vampire, m, l, Archetype - Vampire, Vampire Male | Vampire ♂
+34, Vampire Female, f, s, Archetype - Vampire, Vampire ♀ | Lady Vamp | Lady Vampire
+35, Human Chocolate, m, l, Archetype - Human, Human Male Chocolate | Human Chocolate ♂ | Male Chocolate
+36, Human Espresso, m, l, Archetype - Human, Human Male Espresso | Human Espresso ♂ | Male Espresso
+37, Human Golden, m, l, Archetype - Human, Human Male Golden | Human Golden ♂ | Male Golden
+38, Human Umber, m, l, Archetype - Human, Human Male Umber | Human Umber ♂ | Male Umber
+39, Human Bronze, m, l, Archetype - Human, Human Male Bronze | Human Bronze ♂ | Male Bronze
+40, Human Chestnut, m, l, Archetype - Human, Human Male Chestnut | Human Chestnut ♂ | Male Chestnut
+41, Human Almond, m, l, Archetype - Human, Human Male Almond | Human Almond ♂ | Male Almond
+42, Human Band, m, l, Archetype - Human, Human Male Band | Human Band ♂ | Male Band
+43, Human Honey, m, l, Archetype - Human, Human Male Honey | Human Honey ♂ | Male Honey
+44, Human Sienna, m, l, Archetype - Human, Human Male Sienna | Human Sienna ♂ | Male Sienna
+45, Human Beige, m, l, Archetype - Human, Human Male Beige | Human Beige ♂ | Male Beige
+46, Human Limestone, m, l, Archetype - Human, Human Male Limestone | Human Limestone ♂ | Male Limestone
+47, Human Rose Beige, m, l, Archetype - Human, Human Male Rose Beige | Human Rose Beige ♂ | Male Rose Beige
+48, Human Sand, m, l, Archetype - Human, Human Male Sand | Human Sand ♂ | Male Sand
+49, Human Warm Ivory, m, l, Archetype - Human, Human Male Warm Ivory | Human Warm Ivory ♂ | Male Warm Ivory
+50, Human Pale Ivory, m, l, Archetype - Human, Human Male Pale Ivory | Human Pale Ivory ♂ | Male Pale Ivory
+51, Human Porcelain, m, l, Archetype - Human, Human Male Porcelain | Human Porcelain ♂ | Male Porcelain
+52, Human Ivory, m, l, Archetype - Human, Human Male Ivory | Human Ivory ♂ | Male Ivory
+53, Human Orange, m, l, Archetype - Human, Human Male Orange | Human Orange ♂ | Male Orange
+54, Human Warm Red, m, l, Archetype - Human, Human Male Warm Red | Human Warm Red ♂ | Male Warm Red
+55, Human Red, m, l, Archetype - Human, Human Male Red | Human Red ♂ | Male Red
+56, Human Rubine Red, m, l, Archetype - Human, Human Male Rubine Red | Human Rubine Red ♂ | Male Rubine Red
+57, Human Pink, m, l, Archetype - Human, Human Male Pink | Human Pink ♂ | Human Barbie Pink | Human Male Barbie Pink | Human Barbie Pink ♂ | Male Pink | Male Barbie Pink
+58, Human Purple, m, l, Archetype - Human, Human Male Purple | Human Purple ♂ | Male Purple
+59, Human Blue, m, l, Archetype - Human, Human Male Blue | Human Blue ♂ | Male Blue
+60, Human Violet, m, l, Archetype - Human, Human Male Violet | Human Violet ♂ | Male Violet
+61, Human Yellow, m, l, Archetype - Human, Human Male Yellow | Human Yellow ♂ | Male Yellow
+62, Human Female Chocolate, f, s, Archetype - Human, Human Chocolate ♀ | Female Chocolate
+63, Human Female Espresso, f, s, Archetype - Human, Human Espresso ♀ | Female Espresso
+64, Human Female Golden, f, s, Archetype - Human, Human Golden ♀ | Female Golden
+65, Human Female Umber, f, s, Archetype - Human, Human Umber ♀ | Female Umber
+66, Human Female Bronze, f, s, Archetype - Human, Human Bronze ♀ | Female Bronze
+67, Human Female Chestnut, f, s, Archetype - Human, Human Chestnut ♀ | Female Chestnut
+68, Human Female Almond, f, s, Archetype - Human, Human Almond ♀ | Female Almond
+69, Human Female Band, f, s, Archetype - Human, Human Band ♀ | Female Band
+70, Human Female Honey, f, s, Archetype - Human, Human Honey ♀ | Female Honey
+71, Human Female Sienna, f, s, Archetype - Human, Human Sienna ♀ | Female Sienna
+72, Human Female Beige, f, s, Archetype - Human, Human Beige ♀ | Female Beige
+73, Human Female Limestone, f, s, Archetype - Human, Human Limestone ♀ | Female Limestone
+74, Human Female Rose Beige, f, s, Archetype - Human, Human Rose Beige ♀ | Female Rose Beige
+75, Human Female Sand, f, s, Archetype - Human, Human Sand ♀ | Female Sand
+76, Human Female Warm Ivory, f, s, Archetype - Human, Human Warm Ivory ♀ | Female Warm Ivory
+77, Human Female Pale Ivory, f, s, Archetype - Human, Human Pale Ivory ♀ | Female Pale Ivory
+78, Human Female Porcelain, f, s, Archetype - Human, Human Porcelain ♀ | Female Porcelain
+79, Human Female Ivory, f, s, Archetype - Human, Human Ivory ♀ | Female Ivory
+80, Human Female Orange, f, s, Archetype - Human, Human Orange ♀ | Female Orange
+81, Human Female Warm Red, f, s, Archetype - Human, Human Warm Red ♀ | Female Warm Red
+82, Human Female Red, f, s, Archetype - Human, Human Red ♀ | Female Red
+83, Human Female Rubine Red, f, s, Archetype - Human, Human Rubine Red ♀ | Female Rubine Red
+84, Human Female Pink, f, s, Archetype - Human, Human Pink ♀ | Human Female Barbie Pink | Human Barbie Pink ♀ | Female Pink | Female Barbie Pink
+85, Human Female Purple, f, s, Archetype - Human, Human Purple ♀ | Female Purple
+86, Human Female Blue, f, s, Archetype - Human, Human Blue ♀ | Female Blue
+87, Human Female Violet, f, s, Archetype - Human, Human Violet ♀ | Female Violet
+88, Human Female Yellow, f, s, Archetype - Human, Human Yellow ♀ | Female Yellow
+89, Human Gold 1, m, l, Archetype - Human, Human Male Gold 1 | Human Gold 1 ♂ | Human Gold | Human Male Gold | Human Gold ♂ | Male Gold 1 | Male Gold
+90, Human Gold 2, m, l, Archetype - Human, Human Male Gold 2 | Human Gold 2 ♂ | Human Goldenrod | Human Male Goldenrod | Human Goldenrod ♂ | Male Gold 2 | Male Goldenrod
+91, Human Gold 3, m, l, Archetype - Human, Human Male Gold 3 | Human Gold 3 ♂ | Human Dark Goldenrod | Human Male Dark Goldenrod | Human Dark Goldenrod ♂ | Male Gold 3 | Male Dark Goldenrod
+92, Human Female Gold 1, f, s, Archetype - Human, Human Gold 1 ♀ | Human Female Gold | Human Gold ♀ | Female Gold 1 | Female Gold
+93, Human Female Gold 2, f, s, Archetype - Human, Human Gold 2 ♀ | Human Female Goldenrod | Human Goldenrod ♀ | Female Gold 2 | Female Goldenrod
+94, Human Female Gold 3, f, s, Archetype - Human, Human Gold 3 ♀ | Human Female Dark Goldenrod | Human Dark Goldenrod ♀ | Female Gold 3 | Female Dark Goldenrod
+95, Zombie Gold 1, m, l, Archetype - Zombie, Zombie Male Gold 1 | Zombie Gold 1 ♂ | Zombie Gold | Zombie Male Gold | Zombie Gold ♂
+96, Zombie Gold 2, m, l, Archetype - Zombie, Zombie Male Gold 2 | Zombie Gold 2 ♂ | Zombie Goldenrod | Zombie Male Goldenrod | Zombie Goldenrod ♂
+97, Zombie Gold 3, m, l, Archetype - Zombie, Zombie Male Gold 3 | Zombie Gold 3 ♂ | Zombie Dark Goldenrod | Zombie Male Dark Goldenrod | Zombie Dark Goldenrod ♂
+98, Zombie Female Gold 1, f, s, Archetype - Zombie, Zombie Gold 1 ♀ | Zombie Female Gold | Zombie Gold ♀
+99, Zombie Female Gold 2, f, s, Archetype - Zombie, Zombie Gold 2 ♀ | Zombie Female Goldenrod | Zombie Goldenrod ♀
+100, Zombie Female Gold 3, f, s, Archetype - Zombie, Zombie Gold 3 ♀ | Zombie Female Dark Goldenrod | Zombie Dark Goldenrod ♀
+101, Ape Gold 1, m, l, Archetype - Ape, Ape Male Gold 1 | Ape Gold 1 ♂ | Ape Gold | Ape Male Gold | Ape Gold ♂
+102, Ape Gold 2, m, l, Archetype - Ape, Ape Male Gold 2 | Ape Gold 2 ♂ | Ape Goldenrod | Ape Male Goldenrod | Ape Goldenrod ♂
+103, Ape Gold 3, m, l, Archetype - Ape, Ape Male Gold 3 | Ape Gold 3 ♂ | Ape Dark Goldenrod | Ape Male Dark Goldenrod | Ape Dark Goldenrod ♂
+104, Ape Female Gold 1, f, s, Archetype - Ape, Ape Gold 1 ♀ | Ape Female Gold | Ape Gold ♀
+105, Ape Female Gold 2, f, s, Archetype - Ape, Ape Gold 2 ♀ | Ape Female Goldenrod | Ape Goldenrod ♀
+106, Ape Female Gold 3, f, s, Archetype - Ape, Ape Gold 3 ♀ | Ape Female Dark Goldenrod | Ape Dark Goldenrod ♀
+107, Alien Gold 1, m, l, Archetype - Alien, Alien Male Gold 1 | Alien Gold 1 ♂ | Alien Gold | Alien Male Gold | Alien Gold ♂
+108, Alien Gold 2, m, l, Archetype - Alien, Alien Male Gold 2 | Alien Gold 2 ♂ | Alien Goldenrod | Alien Male Goldenrod | Alien Goldenrod ♂
+109, Alien Gold 3, m, l, Archetype - Alien, Alien Male Gold 3 | Alien Gold 3 ♂ | Alien Dark Goldenrod | Alien Male Dark Goldenrod | Alien Dark Goldenrod ♂
+110, Alien Female Gold 1, f, s, Archetype - Alien, Alien Gold 1 ♀ | Alien Female Gold | Alien Gold ♀
+111, Alien Female Gold 2, f, s, Archetype - Alien, Alien Gold 2 ♀ | Alien Female Goldenrod | Alien Goldenrod ♀
+112, Alien Female Gold 3, f, s, Archetype - Alien, Alien Gold 3 ♀ | Alien Female Dark Goldenrod | Alien Dark Goldenrod ♀
+113, Demon Gold 1, m, l, Archetype - Demon, Demon Male Gold 1 | Demon Gold 1 ♂ | Demon Gold | Demon Male Gold | Demon Gold ♂
+114, Demon Gold 2, m, l, Archetype - Demon, Demon Male Gold 2 | Demon Gold 2 ♂ | Demon Goldenrod | Demon Male Goldenrod | Demon Goldenrod ♂
+115, Demon Gold 3, m, l, Archetype - Demon, Demon Male Gold 3 | Demon Gold 3 ♂ | Demon Dark Goldenrod | Demon Male Dark Goldenrod | Demon Dark Goldenrod ♂
+116, Demon Female Gold 1, f, s, Archetype - Demon, Demon Gold 1 ♀ | Demon Female Gold | Demon Gold ♀
+117, Demon Female Gold 2, f, s, Archetype - Demon, Demon Gold 2 ♀ | Demon Female Goldenrod | Demon Goldenrod ♀
+118, Demon Female Gold 3, f, s, Archetype - Demon, Demon Gold 3 ♀ | Demon Female Dark Goldenrod | Demon Dark Goldenrod ♀
+119, Skeleton Gold 1, m, l, Archetype - Skeleton, Skeleton Male Gold 1 | Skeleton Gold 1 ♂ | Skeleton Gold | Skeleton Male Gold | Skeleton Gold ♂
+120, Skeleton Gold 2, m, l, Archetype - Skeleton, Skeleton Male Gold 2 | Skeleton Gold 2 ♂ | Skeleton Goldenrod | Skeleton Male Goldenrod | Skeleton Goldenrod ♂
+121, Skeleton Gold 3, m, l, Archetype - Skeleton, Skeleton Male Gold 3 | Skeleton Gold 3 ♂ | Skeleton Dark Goldenrod | Skeleton Male Dark Goldenrod | Skeleton Dark Goldenrod ♂
+122, Skeleton Female Gold 1, f, s, Archetype - Skeleton, Skeleton Gold 1 ♀ | Skeleton Female Gold | Skeleton Gold ♀
+123, Skeleton Female Gold 2, f, s, Archetype - Skeleton, Skeleton Gold 2 ♀ | Skeleton Female Goldenrod | Skeleton Goldenrod ♀
+124, Skeleton Female Gold 3, f, s, Archetype - Skeleton, Skeleton Gold 3 ♀ | Skeleton Female Dark Goldenrod | Skeleton Dark Goldenrod ♀
+125, Alien 0°, m, l, Archetype - Alien, Alien Male 0° | Alien 0° ♂ | Alien Red | Alien Male Red | Alien Red ♂
+126, Alien 30°, m, l, Archetype - Alien, Alien Male 30° | Alien 30° ♂ | Alien Orange | Alien Male Orange | Alien Orange ♂
+127, Alien 60°, m, l, Archetype - Alien, Alien Male 60° | Alien 60° ♂ | Alien Yellow | Alien Male Yellow | Alien Yellow ♂
+128, Alien 90°, m, l, Archetype - Alien, Alien Male 90° | Alien 90° ♂ | Alien Yellow Green | Alien Male Yellow Green | Alien Yellow Green ♂
+129, Alien 120°, m, l, Archetype - Alien, Alien Male 120° | Alien 120° ♂ | Alien Green | Alien Male Green | Alien Green ♂
+130, Alien 150°, m, l, Archetype - Alien, Alien Male 150° | Alien 150° ♂ | Alien Cyan Green | Alien Male Cyan Green | Alien Cyan Green ♂
+131, Alien 180°, m, l, Archetype - Alien, Alien Male 180° | Alien 180° ♂ | Alien Cyan | Alien Male Cyan | Alien Cyan ♂
+132, Alien 210°, m, l, Archetype - Alien, Alien Male 210° | Alien 210° ♂ | Alien Cyan Blue | Alien Male Cyan Blue | Alien Cyan Blue ♂
+133, Alien 240°, m, l, Archetype - Alien, Alien Male 240° | Alien 240° ♂ | Alien Blue | Alien Male Blue | Alien Blue ♂
+134, Alien 270°, m, l, Archetype - Alien, Alien Male 270° | Alien 270° ♂ | Alien Violet | Alien Male Violet | Alien Violet ♂
+135, Alien 300°, m, l, Archetype - Alien, Alien Male 300° | Alien 300° ♂ | Alien Magenta | Alien Male Magenta | Alien Magenta ♂
+136, Alien 330°, m, l, Archetype - Alien, Alien Male 330° | Alien 330° ♂ | Alien Red Magenta | Alien Male Red Magenta | Alien Red Magenta ♂
+137, Alien (Ape) 0°, m, l, Archetype - Alien, Alien (Ape) Male 0° | Alien (Ape) 0° ♂ | Alien (Ape) Red | Alien (Ape) Male Red | Alien (Ape) Red ♂
+138, Alien (Ape) 30°, m, l, Archetype - Alien, Alien (Ape) Male 30° | Alien (Ape) 30° ♂ | Alien (Ape) Orange | Alien (Ape) Male Orange | Alien (Ape) Orange ♂
+139, Alien (Ape) 60°, m, l, Archetype - Alien, Alien (Ape) Male 60° | Alien (Ape) 60° ♂ | Alien (Ape) Yellow | Alien (Ape) Male Yellow | Alien (Ape) Yellow ♂
+140, Alien (Ape) 90°, m, l, Archetype - Alien, Alien (Ape) Male 90° | Alien (Ape) 90° ♂ | Alien (Ape) Yellow Green | Alien (Ape) Male Yellow Green | Alien (Ape) Yellow Green ♂
+141, Alien (Ape) 120°, m, l, Archetype - Alien, Alien (Ape) Male 120° | Alien (Ape) 120° ♂ | Alien (Ape) Green | Alien (Ape) Male Green | Alien (Ape) Green ♂
+142, Alien (Ape) 150°, m, l, Archetype - Alien, Alien (Ape) Male 150° | Alien (Ape) 150° ♂ | Alien (Ape) Cyan Green | Alien (Ape) Male Cyan Green | Alien (Ape) Cyan Green ♂
+143, Alien (Ape) 180°, m, l, Archetype - Alien, Alien (Ape) Male 180° | Alien (Ape) 180° ♂ | Alien (Ape) Cyan | Alien (Ape) Male Cyan | Alien (Ape) Cyan ♂
+144, Alien (Ape) 210°, m, l, Archetype - Alien, Alien (Ape) Male 210° | Alien (Ape) 210° ♂ | Alien (Ape) Cyan Blue | Alien (Ape) Male Cyan Blue | Alien (Ape) Cyan Blue ♂
+145, Alien (Ape) 240°, m, l, Archetype - Alien, Alien (Ape) Male 240° | Alien (Ape) 240° ♂ | Alien (Ape) Blue | Alien (Ape) Male Blue | Alien (Ape) Blue ♂
+146, Alien (Ape) 270°, m, l, Archetype - Alien, Alien (Ape) Male 270° | Alien (Ape) 270° ♂ | Alien (Ape) Violet | Alien (Ape) Male Violet | Alien (Ape) Violet ♂
+147, Alien (Ape) 300°, m, l, Archetype - Alien, Alien (Ape) Male 300° | Alien (Ape) 300° ♂ | Alien (Ape) Magenta | Alien (Ape) Male Magenta | Alien (Ape) Magenta ♂
+148, Alien (Ape) 330°, m, l, Archetype - Alien, Alien (Ape) Male 330° | Alien (Ape) 330° ♂ | Alien (Ape) Red Magenta | Alien (Ape) Male Red Magenta | Alien (Ape) Red Magenta ♂
+149, Alien Female 0°, f, s, Archetype - Alien, Alien 0° ♀ | Alien Female Red | Alien Red ♀
+150, Alien Female 30°, f, s, Archetype - Alien, Alien 30° ♀ | Alien Female Orange | Alien Orange ♀
+151, Alien Female 60°, f, s, Archetype - Alien, Alien 60° ♀ | Alien Female Yellow | Alien Yellow ♀
+152, Alien Female 90°, f, s, Archetype - Alien, Alien 90° ♀ | Alien Female Yellow Green | Alien Yellow Green ♀
+153, Alien Female 120°, f, s, Archetype - Alien, Alien 120° ♀ | Alien Female Green | Alien Green ♀
+154, Alien Female 150°, f, s, Archetype - Alien, Alien 150° ♀ | Alien Female Cyan Green | Alien Cyan Green ♀
+155, Alien Female 180°, f, s, Archetype - Alien, Alien 180° ♀ | Alien Female Cyan | Alien Cyan ♀
+156, Alien Female 210°, f, s, Archetype - Alien, Alien 210° ♀ | Alien Female Cyan Blue | Alien Cyan Blue ♀
+157, Alien Female 240°, f, s, Archetype - Alien, Alien 240° ♀ | Alien Female Blue | Alien Blue ♀
+158, Alien Female 270°, f, s, Archetype - Alien, Alien 270° ♀ | Alien Female Violet | Alien Violet ♀
+159, Alien Female 300°, f, s, Archetype - Alien, Alien 300° ♀ | Alien Female Magenta | Alien Magenta ♀
+160, Alien Female 330°, f, s, Archetype - Alien, Alien 330° ♀ | Alien Female Red Magenta | Alien Red Magenta ♀
+161, 3D Glasses, m, ?, Attribute, 
+162, 3D Glasses, f, ?, Attribute, 
+163, Big Shades, m, ?, Attribute, 
+164, Big Shades, f, ?, Attribute, 
+165, Classic Shades, m, ?, Attribute, 
+166, Classic Shades, f, ?, Attribute, 
+167, Eye Mask, m, ?, Attribute, 
+168, Eye Mask, f, ?, Attribute, 
+169, Eye Patch, m, ?, Attribute, 
+170, Eye Patch, f, ?, Attribute, 
+171, Horned Rim Glasses, m, ?, Attribute, 
+172, Horned Rim Glasses, f, ?, Attribute, 
+173, Nerd Glasses, m, ?, Attribute, 
+174, Nerd Glasses, f, ?, Attribute, 
+175, Regular Shades, m, ?, Attribute, 
+176, Regular Shades, f, ?, Attribute, 
+177, Small Shades, m, ?, Attribute, 
+178, Small Shades, f, ?, Attribute, 
+179, VR, m, ?, Attribute, 
+180, VR, f, ?, Attribute, 
+181, Welding Goggles, f, ?, Attribute, 
+182, Heart Shades, m, ?, Attribute, 
+183, Heart Shades, f, ?, Attribute, 
+184, Ski Googles, m, ?, Attribute, 
+185, Ski Googles, f, ?, Attribute, 
+186, Laser Eyes, m, ?, Attribute, Laser Eyes Red
+187, Laser Eyes Gold, m, ?, Attribute, 
+188, Tears, m, ?, Attribute, 
+189, Tears, f, ?, Attribute, 
+190, Blue Eye Shadow, f, ?, Attribute, 
+191, Green Eye Shadow, f, ?, Attribute, 
+192, Purple Eye Shadow, f, ?, Attribute, 
+193, Clown Eyes Blue, m, ?, Attribute, 
+194, Clown Eyes Blue, f, ?, Attribute, 
+195, Clown Eyes Green, m, ?, Attribute, 
+196, Clown Eyes Green, f, ?, Attribute, 
+197, Mole, m, ?, Attribute, 
+198, Mole, f, ?, Attribute, 
+199, Rosy Cheeks, m, ?, Attribute, 
+200, Rosy Cheeks, f, ?, Attribute, 
+201, Spots, m, ?, Attribute, 
+202, Spots, f, ?, Attribute, 
+203, Clown Nose, m, ?, Attribute, Clown Nose Red
+204, Clown Nose, f, ?, Attribute, Clown Nose Red
+205, Earring, m, ?, Attribute, Gold Earring
+206, Earring, f, ?, Attribute, Gold Earring
+207, Silver Earring, m, ?, Attribute, 
+208, Silver Earring, f, ?, Attribute, 
+209, Buck Teeth, m, ?, Attribute, 
+210, Frown, m, ?, Attribute, 
+211, Smile, m, ?, Attribute, 
+212, Black Lipstick, f, ?, Attribute, 
+213, Hot Lipstick, f, ?, Attribute, 
+214, Purple Lipstick, f, ?, Attribute, 
+215, Pink Lipstick, f, ?, Attribute, 
+216, Red Lipstick, f, ?, Attribute, 
+217, Cigarette, m, ?, Attribute, 
+218, Cigarette, f, ?, Attribute, 
+219, Medical Mask, m, ?, Attribute, 
+220, Medical Mask, f, ?, Attribute, 
+221, Pipe, m, ?, Attribute, 
+222, Pipe, f, ?, Attribute, 
+223, Vape, m, ?, Attribute, 
+224, Vape, f, ?, Attribute, 
+225, Cigar, m, ?, Attribute, 
+226, Cigar, f, ?, Attribute, 
+227, Choker, f, u, Attribute, 
+228, Gold Chain, m, ?, Attribute, 
+229, Gold Chain, f, u, Attribute, 
+230, Silver Chain, m, ?, Attribute, 
+231, Silver Chain, f, u, Attribute, 
+232, Gold Diamond Chain, m, ?, Attribute, Gold Diamond Necklace
+233, Gold Diamond Chain, f, ?, Attribute, Gold Diamond Necklace
+234, Big Beard, m, ?, Attribute, 
+235, Chinstrap, m, ?, Attribute, 
+236, Front Beard, m, ?, Attribute, 
+237, Front Beard Dark, m, ?, Attribute, 
+238, Goat, m, ?, Attribute, 
+239, Handlebars, m, ?, Attribute, 
+240, Luxurious Beard, m, ?, Attribute, 
+241, Mustache, m, ?, Attribute, 
+242, Muttonchops, m, ?, Attribute, 
+243, Normal Beard, m, ?, Attribute, 
+244, Normal Beard Black, m, ?, Attribute, 
+245, Shadow Beard, m, ?, Attribute, 
+246, Bandana, m, ?, Attribute, 
+247, Bandana, f, ?, Attribute, 
+248, Beanie, m, ?, Attribute, 
+249, Beanie, f, ?, Attribute, 
+250, Cap Forward, u, ?, Attribute, 
+251, Cap Forward, f, ?, Attribute, 
+252, Cowboy Hat, m, ?, Attribute, 
+253, Cowboy Hat, f, ?, Attribute, 
+254, Do-rag, m, ?, Attribute, 
+255, Do-rag, f, ?, Attribute, 
+256, Fedora, m, ?, Attribute, Fedora 1
+257, Fedora, f, ?, Attribute, Fedora 1
+258, Headband, u, ?, Attribute, 
+259, Headband, f, ?, Attribute, 
+260, Hoodie, m, ?, Attribute, 
+261, Hoodie, f, ?, Attribute, 
+262, Knitted Cap, u, ?, Attribute, 
+263, Knitted Cap, f, ?, Attribute, 
+264, Pilot Helmet, f, ?, Attribute, 
+265, Police Cap, m, ?, Attribute, 
+266, Police Cap, f, ?, Attribute, 
+267, Tassle Hat, f, ?, Attribute, 
+268, Tiara, f, ?, Attribute, 
+269, Top Hat, m, ?, Attribute, Top Hat 1
+270, Top Hat, f, ?, Attribute, Top Hat 1
+271, Bear Hood, m, ?, Attribute, 
+272, Bear Hood, f, ?, Attribute, 
+273, Birthday Hat, m, ?, Attribute, 
+274, Birthday Hat, f, ?, Attribute, 
+275, Bow, f, ?, Attribute, 
+276, Crown, m, ?, Attribute, 
+277, Crown, f, ?, Attribute, 
+278, Flowers, f, ?, Attribute, 
+279, Frog Hood, m, ?, Attribute, 
+280, Frog Hood, f, ?, Attribute, 
+281, Jester Hat, m, ?, Attribute, 
+282, Jester Hat, f, ?, Attribute, 
+283, Santa Hat, m, ?, Attribute, 
+284, Santa Hat, f, ?, Attribute, 
+285, Sombrero, m, ?, Attribute, Sombrero 1
+286, Sombrero, f, ?, Attribute, Sombrero 1
+287, Sun Hat, m, ?, Attribute, 
+288, Sun Hat, f, ?, Attribute, 
+289, Superhero Tiara, f, ?, Attribute, 
+290, Viking Helmet, m, ?, Attribute, 
+291, Viking Helmet, f, ?, Attribute, 
+292, Winter Hat, m, ?, Attribute, 
+293, Winter Hat, f, ?, Attribute, 
+294, Australian Cork Hat, m, ?, Attribute, 
+295, Australian Cork Hat, f, ?, Attribute, 
+296, Ayam, m, ?, Attribute, 
+297, Ayam, f, ?, Attribute, 
+298, Bamboo Hat, m, ?, Attribute, 
+299, Bamboo Hat, f, ?, Attribute, 
+300, Baseball Cap, m, ?, Attribute, 
+301, Baseball Cap, f, ?, Attribute, 
+302, Bear Skin, m, ?, Attribute, 
+303, Bear Skin, f, ?, Attribute, 
+304, Beer Bong, m, ?, Attribute, 
+305, Beer Bong, f, ?, Attribute, 
+306, Beret, m, ?, Attribute, 
+307, Beret, f, ?, Attribute, 
+308, Boater, m, ?, Attribute, 
+309, Boater, f, ?, Attribute, 
+310, Bororo, m, ?, Attribute, 
+311, Bororo, f, ?, Attribute, 
+312, Chichak Helmet, m, ?, Attribute, 
+313, Chichak Helmet, f, ?, Attribute, 
+314, Chinese Landlords Hat, m, ?, Attribute, 
+315, Chinese Landlords Hat, f, ?, Attribute, 
+316, Chullo, m, ?, Attribute, 
+317, Chullo, f, ?, Attribute, 
+318, Fedora 2, m, ?, Attribute, 
+319, Fedora 2, f, ?, Attribute, 
+320, Fez, m, ?, Attribute, 
+321, Fez, f, ?, Attribute, 
+322, Fisherman Cap, m, ?, Attribute, 
+323, Fisherman Cap, f, ?, Attribute, 
+324, Flamenco Hat, m, ?, Attribute, 
+325, Flamenco Hat, f, ?, Attribute, 
+326, Flower Crown, m, ?, Attribute, 
+327, Flower Crown, f, ?, Attribute, 
+328, Gat, m, ?, Attribute, 
+329, Gat, f, ?, Attribute, 
+330, Gaucho, m, ?, Attribute, 
+331, Gaucho, f, ?, Attribute, 
+332, Hennin, m, ?, Attribute, 
+333, Hennin, f, ?, Attribute, 
+334, Isicholo, m, ?, Attribute, 
+335, Isicholo, f, ?, Attribute, 
+336, Jaapi, m, ?, Attribute, 
+337, Jaapi, f, ?, Attribute, 
+338, Keffiyeh, m, ?, Attribute, 
+339, Keffiyeh, f, ?, Attribute, 
+340, Krakowiak, m, ?, Attribute, 
+341, Krakowiak, f, ?, Attribute, 
+342, Misango Cap, m, ?, Attribute, 
+343, Misango Cap, f, ?, Attribute, 
+344, Newsboy Cap, m, ?, Attribute, 
+345, Panama Hat, m, ?, Attribute, 
+346, Panama Hat, f, ?, Attribute, 
+347, Rasta, m, ?, Attribute, 
+348, Rasta, f, ?, Attribute, 
+349, Royal Cocktail Hat, f, ?, Attribute, 
+350, Sibenik, m, ?, Attribute, 
+351, Sibenik, f, ?, Attribute, 
+352, Sombrero 2, m, ?, Attribute, 
+353, Sombrero 2, f, ?, Attribute, 
+354, Tam-O-Shanter, m, ?, Attribute, 
+355, Tam-O-Shanter, f, ?, Attribute, 
+356, Top Hat 2, m, ?, Attribute, 
+357, Top Hat 2, f, ?, Attribute, 
+358, Trapper Hat, m, ?, Attribute, 
+359, Trapper Hat, f, ?, Attribute, 
+360, Tuque, m, ?, Attribute, 
+361, Tuque, f, ?, Attribute, 
+362, Turban, m, ?, Attribute, 
+363, Turban, f, ?, Attribute, 
+364, Tyrolean, m, ?, Attribute, 
+365, Tyrolean, f, ?, Attribute, 
+366, Ushanka, m, ?, Attribute, 
+367, Ushanka, f, ?, Attribute, 
+368, Viking Hat, m, ?, Attribute, 
+369, Viking Hat, f, ?, Attribute, 
+370, Cap, m, ?, Attribute, 
+371, Cap, f, ?, Attribute, 
+372, Cap 0°, m, ?, Attribute, Cap Red
+373, Cap 0°, f, ?, Attribute, Cap Red
+374, Cap 30°, m, ?, Attribute, Cap Orange
+375, Cap 30°, f, ?, Attribute, Cap Orange
+376, Cap 60°, m, ?, Attribute, Cap Yellow
+377, Cap 60°, f, ?, Attribute, Cap Yellow
+378, Cap 90°, m, ?, Attribute, Cap Yellow Green
+379, Cap 90°, f, ?, Attribute, Cap Yellow Green
+380, Cap 120°, m, ?, Attribute, Cap Green
+381, Cap 120°, f, ?, Attribute, Cap Green
+382, Cap 150°, m, ?, Attribute, Cap Cyan Green
+383, Cap 150°, f, ?, Attribute, Cap Cyan Green
+384, Cap 180°, m, ?, Attribute, Cap Cyan
+385, Cap 180°, f, ?, Attribute, Cap Cyan
+386, Cap 210°, m, ?, Attribute, Cap Cyan Blue
+387, Cap 210°, f, ?, Attribute, Cap Cyan Blue
+388, Cap 240°, m, ?, Attribute, Cap Blue
+389, Cap 240°, f, ?, Attribute, Cap Blue
+390, Cap 270°, m, ?, Attribute, Cap Violet
+391, Cap 270°, f, ?, Attribute, Cap Violet
+392, Cap 300°, m, ?, Attribute, Cap Magenta
+393, Cap 300°, f, ?, Attribute, Cap Magenta
+394, Cap 330°, m, ?, Attribute, Cap Red Magenta
+395, Cap 330°, f, ?, Attribute, Cap Red Magenta
+396, Blonde Short, f, ?, Attribute, 
+397, Crazy Hair, m, ?, Attribute, 
+398, Crazy Hair, f, ?, Attribute, 
+399, Dark Hair, f, ?, Attribute, 
+400, Frumpy Hair, m, ?, Attribute, 
+401, Frumpy Hair, f, ?, Attribute, 
+402, Half Shaved, f, ?, Attribute, 
+403, Messy Hair, m, ?, Attribute, 
+404, Messy Hair, f, ?, Attribute, 
+405, Mohawk, m, ?, Attribute, 
+406, Mohawk, f, ?, Attribute, 
+407, Mohawk Dark, m, ?, Attribute, 
+408, Mohawk Dark, f, ?, Attribute, 
+409, Mohawk Thin, m, ?, Attribute, 
+410, Mohawk Thin, f, ?, Attribute, 
+411, Orange Side, f, ?, Attribute, 
+412, Peak Spike, m, ?, Attribute, 
+413, Pigtails, f, ?, Attribute, 
+414, Pink with Hat, f, ?, Attribute, 
+415, Purple Hair, m, ?, Attribute, 
+416, Purple Hair, f, ?, Attribute, 
+417, Red Mohawk, f, ?, Attribute, 
+418, Shaved Head, m, ?, Attribute, 
+419, Shaved Head, f, ?, Attribute, 
+420, Straight Hair, f, ?, Attribute, 
+421, Straight Hair Blonde, f, ?, Attribute, 
+422, Straight Hair Dark, f, ?, Attribute, 
+423, Stringy Hair, m, ?, Attribute, 
+424, Stringy Hair, f, ?, Attribute, 
+425, Vampire Hair, m, ?, Attribute, 
+426, Wild Blonde, f, ?, Attribute, 
+427, Wild Hair, m, ?, Attribute, 
+428, Wild Hair, f, ?, Attribute, 
+429, Wild White Hair, f, ?, Attribute, 
+430, Black Afro, m, ?, Attribute, 
+431, Black Afro, f, ?, Attribute, 
+432, Brown Afro, m, ?, Attribute, 
+433, Dark Red Afro, m, ?, Attribute, 
+434, Orange Afro, m, ?, Attribute, 
+435, Red Afro, m, ?, Attribute, 
+436, Pink Afro, m, ?, Attribute, 
+437, Purple Afro, m, ?, Attribute, 
+438, Blue Afro, m, ?, Attribute, 
+439, Periwinkle Afro, m, ?, Attribute, 
+440, Light Blue Afro, m, ?, Attribute, 
+441, Light Green Afro, m, ?, Attribute, 
+442, Green Afro, m, ?, Attribute, 
+443, Teal Afro, m, ?, Attribute, 
+444, Blonde Afro, m, ?, Attribute, 
+445, Silver Afro, m, ?, Attribute, 
+446, White Afro, m, ?, Attribute, 
+447, Brown Afro, f, ?, Attribute, 
+448, Dark Red Afro, f, ?, Attribute, 
+449, Orange Afro, f, ?, Attribute, 
+450, Red Afro, f, ?, Attribute, 
+451, Pink Afro, f, ?, Attribute, 
+452, Purple Afro, f, ?, Attribute, 
+453, Blue Afro, f, ?, Attribute, 
+454, Periwinkle Afro, f, ?, Attribute, 
+455, Light Blue Afro, f, ?, Attribute, 
+456, Light Green Afro, f, ?, Attribute, 
+457, Green Afro, f, ?, Attribute, 
+458, Teal Afro, f, ?, Attribute, 
+459, Blonde Afro, f, ?, Attribute, 
+460, Silver Afro, f, ?, Attribute, 
+461, White Afro, f, ?, Attribute, 
+462, Big Hair Black, m, ?, Attribute, 
+463, Big Hair Black, f, ?, Attribute, 
+464, Big Hair Brown, m, ?, Attribute, 
+465, Big Hair Dark Red, m, ?, Attribute, 
+466, Big Hair Orange, m, ?, Attribute, 
+467, Big Hair Red, m, ?, Attribute, 
+468, Big Hair Pink, m, ?, Attribute, 
+469, Big Hair Purple, m, ?, Attribute, 
+470, Big Hair Blue, m, ?, Attribute, 
+471, Big Hair Periwinkle, m, ?, Attribute, 
+472, Big Hair Light Blue, m, ?, Attribute, 
+473, Big Hair Light Green, m, ?, Attribute, 
+474, Big Hair Green, m, ?, Attribute, 
+475, Big Hair Teal, m, ?, Attribute, 
+476, Big Hair Blonde, m, ?, Attribute, 
+477, Big Hair Silver, m, ?, Attribute, 
+478, Big Hair White, m, ?, Attribute, 
+479, Big Hair Brown, f, ?, Attribute, 
+480, Big Hair Dark Red, f, ?, Attribute, 
+481, Big Hair Orange, f, ?, Attribute, 
+482, Big Hair Red, f, ?, Attribute, 
+483, Big Hair Pink, f, ?, Attribute, 
+484, Big Hair Purple, f, ?, Attribute, 
+485, Big Hair Blue, f, ?, Attribute, 
+486, Big Hair Periwinkle, f, ?, Attribute, 
+487, Big Hair Light Blue, f, ?, Attribute, 
+488, Big Hair Light Green, f, ?, Attribute, 
+489, Big Hair Green, f, ?, Attribute, 
+490, Big Hair Teal, f, ?, Attribute, 
+491, Big Hair Blonde, f, ?, Attribute, 
+492, Big Hair Silver, f, ?, Attribute, 
+493, Big Hair White, f, ?, Attribute, 
+494, Black Bob, f, ?, Attribute, 
+495, Brown Bob, f, ?, Attribute, 
+496, Dark Red Bob, f, ?, Attribute, 
+497, Orange Bob, f, ?, Attribute, 
+498, Red Bob, f, ?, Attribute, 
+499, Pink Bob, f, ?, Attribute, 
+500, Purple Bob, f, ?, Attribute, 
+501, Blue Bob, f, ?, Attribute, 
+502, Periwinkle Bob, f, ?, Attribute, 
+503, Light Blue Bob, f, ?, Attribute, 
+504, Light Green Bob, f, ?, Attribute, 
+505, Green Bob, f, ?, Attribute, 
+506, Teal Bob, f, ?, Attribute, 
+507, Blonde Bob, f, ?, Attribute, 
+508, Silver Bob, f, ?, Attribute, 
+509, White Bob, f, ?, Attribute, 
+510, Black Buzz Cut, m, ?, Attribute, 
+511, Black Buzz Cut, f, ?, Attribute, 
+512, Brown Buzz Cut, m, ?, Attribute, 
+513, Dark Red Buzz Cut, m, ?, Attribute, 
+514, Orange Buzz Cut, m, ?, Attribute, 
+515, Red Buzz Cut, m, ?, Attribute, 
+516, Pink Buzz Cut, m, ?, Attribute, 
+517, Purple Buzz Cut, m, ?, Attribute, 
+518, Blue Buzz Cut, m, ?, Attribute, 
+519, Periwinkle Buzz Cut, m, ?, Attribute, 
+520, Light Blue Buzz Cut, m, ?, Attribute, 
+521, Light Green Buzz Cut, m, ?, Attribute, 
+522, Green Buzz Cut, m, ?, Attribute, 
+523, Teal Buzz Cut, m, ?, Attribute, 
+524, Blonde Buzz Cut, m, ?, Attribute, 
+525, Silver Buzz Cut, m, ?, Attribute, 
+526, White Buzz Cut, m, ?, Attribute, 
+527, Brown Buzz Cut, f, ?, Attribute, 
+528, Dark Red Buzz Cut, f, ?, Attribute, 
+529, Orange Buzz Cut, f, ?, Attribute, 
+530, Red Buzz Cut, f, ?, Attribute, 
+531, Pink Buzz Cut, f, ?, Attribute, 
+532, Purple Buzz Cut, f, ?, Attribute, 
+533, Blue Buzz Cut, f, ?, Attribute, 
+534, Periwinkle Buzz Cut, f, ?, Attribute, 
+535, Light Blue Buzz Cut, f, ?, Attribute, 
+536, Light Green Buzz Cut, f, ?, Attribute, 
+537, Green Buzz Cut, f, ?, Attribute, 
+538, Teal Buzz Cut, f, ?, Attribute, 
+539, Blonde Buzz Cut, f, ?, Attribute, 
+540, Silver Buzz Cut, f, ?, Attribute, 
+541, White Buzz Cut, f, ?, Attribute, 
+542, Clown Hair Black, m, ?, Attribute, 
+543, Clown Hair Black, f, ?, Attribute, 
+544, Clown Hair Brown, m, ?, Attribute, 
+545, Clown Hair Dark Red, m, ?, Attribute, 
+546, Clown Hair Orange, m, ?, Attribute, 
+547, Clown Hair Red, m, ?, Attribute, 
+548, Clown Hair Pink, m, ?, Attribute, 
+549, Clown Hair Purple, m, ?, Attribute, 
+550, Clown Hair Blue, m, ?, Attribute, 
+551, Clown Hair Periwinkle, m, ?, Attribute, 
+552, Clown Hair Light Blue, m, ?, Attribute, 
+553, Clown Hair Light Green, m, ?, Attribute, 
+554, Clown Hair Green, m, ?, Attribute, 
+555, Clown Hair Teal, m, ?, Attribute, 
+556, Clown Hair Blonde, m, ?, Attribute, 
+557, Clown Hair Silver, m, ?, Attribute, 
+558, Clown Hair White, m, ?, Attribute, 
+559, Clown Hair Brown, f, ?, Attribute, 
+560, Clown Hair Dark Red, f, ?, Attribute, 
+561, Clown Hair Orange, f, ?, Attribute, 
+562, Clown Hair Red, f, ?, Attribute, 
+563, Clown Hair Pink, f, ?, Attribute, 
+564, Clown Hair Purple, f, ?, Attribute, 
+565, Clown Hair Blue, f, ?, Attribute, 
+566, Clown Hair Periwinkle, f, ?, Attribute, 
+567, Clown Hair Light Blue, f, ?, Attribute, 
+568, Clown Hair Light Green, f, ?, Attribute, 
+569, Clown Hair Green, f, ?, Attribute, 
+570, Clown Hair Teal, f, ?, Attribute, 
+571, Clown Hair Blonde, f, ?, Attribute, 
+572, Clown Hair Silver, f, ?, Attribute, 
+573, Clown Hair White, f, ?, Attribute, 

@@ -5,18 +5,20 @@ module Cryptopunks
     ### todo/fix:
     ##    move into Punks::Metadata or such
     class Sprite
-      attr_reader :id, :name, :type, :gender, :more_names
+      attr_reader :id, :name, :type, :gender, :size, :more_names
 
 
       def initialize( id:,
                       name:,
                       type:,
                       gender:,
+                      size:,
                       more_names: [] )
          @id         = id      # zero-based index eg. 0,1,2,3, etc.
          @name       = name
          @type       = type
          @gender     = gender
+         @size       = size
          @more_names = more_names
       end
 
@@ -24,6 +26,15 @@ module Cryptopunks
       ##     use (alternate name/alias) base or face  for archetypes? any others?
       def attribute?()  @type.downcase.start_with?( 'attribute' ); end
       def archetype?()  @type.downcase.start_with?( 'archetype' ); end
+
+      def small?()     @size == 's'; end
+      def large?()     @size == 'l'; end
+      def universal?() @size == 'u'; end
+      alias_method  :unisize?, :universal?   ## add unisize or allsizes or such - why? why not?
+
+      def male?()      @gender == 'm'; end
+      def female?()    @gender == 'f'; end
+      def unisex?()    @gender == 'u'; end
    end  # class Metadata::Sprite
   end # class Metadata
 
@@ -42,9 +53,18 @@ module Cryptopunks
  def normalize_gender( str )
     ## e.g. Female => f
     ##      F => f
-    ##  always return f or m
+    ##  always return f/m
     str.downcase[0]
  end
+
+ def normalize_size( str )
+    ## e.g. U or Unisize or Univeral => u
+    ##      S or Small               => s
+    ##      L or Large               => l
+    ##   always return u/l/s
+    str.downcase[0]
+ end
+
 
  def normalize_name( str )
    ## normalize spaces in more names
@@ -57,10 +77,17 @@ module Cryptopunks
     h = {}
     recs.each_with_index do |rec|
       names = [rec.name] + rec.more_names
+
+      if rec.archetype? && rec.female? && rec.large?
+         ## hack - always auto-add u (e.g. Female 1 (U) or such)
+         ##          if female AND unisize
+         names = names.map { |name| name + " (U)"  }
+      end
+
       names.each do |name|
 
         key = normalize_key( name )
-        key << "_(#{rec.gender})"  if rec.attribute?
+        key << "_(#{rec.gender}+#{rec.size})"  if rec.attribute?
 
         if h[ key ]
           puts "!!! ERROR - attribute name is not unique:"
@@ -98,6 +125,13 @@ module Cryptopunks
              id         = rec['id'].to_i( 10 )
              name       = normalize_name( rec['name'] )
              gender     = normalize_gender( rec['gender'] )
+
+             size       = normalize_size( rec['size'] )
+             ## auto-fill for now if set to ?
+             ##   for female set to s(mall)
+             ##   and otherwise to l(arge)
+             size = (gender == 'f' ? 's' : 'l')   if size == '?'
+
              type       = rec['type']
 
              more_names = (rec['more_names'] || '').split( '|' )
@@ -108,6 +142,7 @@ module Cryptopunks
                name:       name,
                type:       type,
                gender:     gender,
+               size:       size,
                more_names: more_names )
            end
     recs
@@ -138,24 +173,57 @@ module Cryptopunks
 
 
 
- def find_meta( q, gender: nil )  ## gender (m/f) required for attributes!!!
+ def find_meta( q, gender: nil, size: nil )  ## gender (m/f) required for attributes!!!
 
     key = normalize_key( q )  ## normalize q(uery) string/symbol
-    key << "_(#{normalize_gender( gender )})"  if gender
 
-    rec = @attributes_by_name[ key ]
-    if rec
-       puts " lookup >#{key}< => #{rec.id}: #{rec.name} / #{rec.type} (#{rec.gender})"
-       # pp rec
+    keys = []    ## note allow lookup by more than one keys
+                    ##  e.g. if gender set try   f/m first and than try unisex as fallback
+    if gender
+       gender = normalize_gender( gender )
+       ## auto-fill size if not passed in
+       ##    for f(emale)  =>   s(mall)
+       ##        m(ale)    =>   l(arge)
+       size = if size.nil? || size == '?'
+                 gender == 'f' ?  's' : 'l'
+               else
+                 normalize_size( size )
+               end
+
+       keys << "#{key}_(#{gender}+#{size})"
+
+       if size == 's' || size == 'l'  ## auto-add (u)niversal size as fallback
+         keys << "#{key}_(#{gender}+u)"
+       end
+
+       if gender == 'f' || gender == 'm'
+         keys << "#{key}_(u+#{size})"     ### auto-add u(nisex) as fallback
+       end
     else
-       puts "!! WARN - no lookup found for key >#{key}<"
+       keys << key
     end
+
+
+    rec = nil
+    keys.each do |key|
+       rec = @attributes_by_name[ key ]
+       if rec
+         puts " lookup >#{key}< => #{rec.id}: #{rec.name} / #{rec.type} (#{rec.gender}+#{rec.size})"
+         # pp rec
+         break
+       end
+    end
+
+    if rec.nil?
+       puts "!! WARN - no lookup found for #{keys.size} key(s) >#{keys.inspect}<"
+    end
+
     rec
  end
 
 
- def find( q, gender: nil )  ## gender (m/f) required for attributes!!!
-    rec = find_meta( q, gender: gender )
+ def find( q, gender: nil, size: nil )  ## gender (m/f) required for attributes!!!
+    rec = find_meta( q, gender: gender, size: size )
 
     ## return image if record found
     rec ? @sheet[ rec.id ] : nil
@@ -168,6 +236,7 @@ module Cryptopunks
       archetype_name  = values[0]
 
       ### todo/fix:  check for nil/not found!!!!
+      ## todo/check/fix:  assert meta record returned is archetype NOT attribute!!!!
       archetype  = find_meta( archetype_name )
       if archetype.nil?
         puts "!! ERROR -  archetype >#{archetype}< not found; sorry"
@@ -179,11 +248,14 @@ module Cryptopunks
       attribute_names  = values[1..-1]
       ## note: attribute lookup requires gender from archetype!!!!
       attribute_gender = archetype.gender
+      attribute_size   = archetype.size
 
       attribute_names.each do |attribute_name|
-        attribute = find_meta( attribute_name, gender: attribute_gender )
+        attribute = find_meta( attribute_name,
+                               gender: attribute_gender,
+                               size:   attribute_size )
         if attribute.nil?
-           puts "!! ERROR - attribute >#{attribute_name}< for (#{attribute_gender}) not found; sorry"
+           puts "!! ERROR - attribute >#{attribute_name}< for (#{attribute_gender}+#{attribute_size}) not found; sorry"
            exit 1
         end
         recs << attribute

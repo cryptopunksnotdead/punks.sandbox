@@ -60,9 +60,11 @@ module Cryptopunks
 
   class Spritesheet
     ## note: for now class used for "namespace" only
-    def self.find_by( name:, gender: nil )  ## return archetype/attribute image by name
+    def self.find_by( name:, gender: nil, size: nil )  ## return archetype/attribute image by name
        # note: pass along name as q (query string)
-       Cryptopunks.generator.find( name, gender: gender )
+       Cryptopunks.generator.find( name,
+                                   gender: gender,
+                                   size:   size )
     end
   end  # class Spritesheet
   ## add convenience (alternate spelling) alias - why? why not?

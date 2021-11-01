@@ -93,8 +93,8 @@ puts
 puts "to_recs:"
 pp g.to_recs(  "Male 1", "Beanie", "Smile" )
 
-punk = g.generate( 0, 68, 175 )   # 0=>Male 1, 68=>Beanie (m), 175=>Smile (m)
-punk.zoom(4).save( "./tmp/gen1_iii@4x.png" )
+# punk = g.generate( 0, 68, 175 )   # 0=>Male 1, 68=>Beanie (m), 175=>Smile (m)
+# punk.zoom(4).save( "./tmp/gen1_iii@4x.png" )
 
 
 

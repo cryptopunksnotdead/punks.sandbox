@@ -34,8 +34,19 @@ archetypes.each do |rec|
   name_i      = rec['name']
   names_ii    = (rec['name_ii'] || '').split( '|' )
   gender     = rec['gender']
+  size       = rec['size']
   type       = rec['type']
   more_names = (rec['more_names'] || '').split( '|' )
+
+  ###
+  ## assert required fields
+  ##  size - u (unisize/universal), l (arge), s (small)
+  unless ['u', 'l', 's'].include?( size )
+    puts "!! ERROR - unknown size value - expected u/l/s - got #{size}:"
+    pp rec
+    exit 1
+  end
+
 
   ## note: auto-add more names
   ##   1)  name_i + gender + name_ii        (e.g.   Human Male 1 | Human 1
@@ -80,6 +91,7 @@ archetypes.each do |rec|
   meta << [meta.size,
            names[0],
            gender,
+           size,
            "Archetype - #{type}",
            names[1..-1].join( ' | '),
           ]
@@ -94,9 +106,13 @@ attributes.each do |rec|
   path = rec['path']
   sheet << Image.read( "../../punks.blocks/#{path}" )
 
+  size = rec['size']
+  size = '?'   if size.nil? || size.empty?
+
   meta << [meta.size,
             rec['name'],
             rec['gender'],
+            size,
             "Attribute",     ## add type e.g. Hair, Hat, Glasses, etc later - why? why not?
             rec['more_names'],
           ]
@@ -104,12 +120,7 @@ end
 
 
 
-sheet.save( "./tmp/spritesheet.png" )
-sheet.zoom(2).save( "./tmp/spritesheet@2x.png" )
-sheet.zoom(4).save( "./tmp/spritesheet@4x.png" )
-
-
-headers = ['id', 'name', 'gender', 'type', 'more_names']
+headers = ['id', 'name', 'gender', 'size', 'type', 'more_names']
 File.open( "./tmp/spritesheet.csv", "w:utf-8" ) do |f|
    f.write( headers.join( ', '))
    f.write( "\n")
@@ -118,5 +129,11 @@ File.open( "./tmp/spritesheet.csv", "w:utf-8" ) do |f|
      f.write( "\n" )
    end
 end
+
+
+sheet.save( "./tmp/spritesheet.png" )
+sheet.zoom(2).save( "./tmp/spritesheet@2x.png" )
+sheet.zoom(4).save( "./tmp/spritesheet@4x.png" )
+
 
 puts "bye"
