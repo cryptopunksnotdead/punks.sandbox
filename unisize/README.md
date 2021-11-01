@@ -6,13 +6,13 @@ and Eye/Nose/Mouse Positions as Male Archetypes
 
 4x
 
-![](i/human1_round@4x.png)
-![](i/human2_round@4x.png)
-![](i/human3_round@4x.png)
-![](i/human4_round@4x.png)
-![](i/zombie_round@4x.png)
-![](i/ape_round@4x.png)
-![](i/alien_round@4x.png)
+![](i/human-female_darker@4x.png)
+![](i/human-female_dark@4x.png)
+![](i/human-female_light@4x.png)
+![](i/human-female_lighter@4x.png)
+![](i/zombie-female@4x.png)
+![](i/ape-female@4x.png)
+![](i/alien-female@4x.png)
 
 
 
