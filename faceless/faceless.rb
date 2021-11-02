@@ -153,6 +153,18 @@ punk.save( "./i/faceless2.png" )
 punk.zoom(4).save( "./i/faceless2@4x.png" )
 
 
+## try female on male design
+punk = Image.new( 24, 24 )
+punk.compose!( MALE3 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE_SMALL )
+punk.compose!( MOUTH3 )
+punk.compose!( WILDHAIR_II )
+punk.zoom(4).save( "./i/faceless2(ii)@4x.png" )
+
+
+
 # try "male" style
 punk = Image.new( 24, 24 )
 punk.compose!( MALE3 )
@@ -170,6 +182,17 @@ punk.compose!( WILDHAIR )
 punk.save( "./i/faceless2b.png" )
 punk.zoom(4).save( "./i/faceless2b@4x.png" )
 
+## try male on female
+punk = Image.new( 24, 24 )
+punk.compose!( FEMALE3 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE )
+punk.compose!( MOUTH )
+punk.compose!( WILDHAIR )
+punk.zoom(4).save( "./i/faceless2b(ii)@4x.png" )
+
+
 
 ##############
 ## try punk #3
@@ -185,6 +208,18 @@ punk.compose!( PIPE )
 punk.save( "./i/faceless3.png" )
 punk.zoom(4).save( "./i/faceless3@4x.png" )
 
+## try male on female
+punk = Image.new( 24, 24 )
+punk.compose!( FEMALE1 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE )
+punk.compose!( MOUTH )
+punk.compose!( WILDHAIR )
+punk.compose!( NERDGLASSES )
+punk.compose!( PIPE )
+punk.zoom(4).save( "./i/faceless3(ii)@4x.png" )
+
 
 # try "female" style
 punk = Image.new( 24, 24 )
@@ -199,6 +234,20 @@ punk.compose!( PIPE )
 
 punk.save( "./i/faceless3a.png" )
 punk.zoom(4).save( "./i/faceless3a@4x.png" )
+
+## try female on male design
+punk = Image.new( 24, 24 )
+punk.compose!( MALE1 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE_SMALL )
+punk.compose!( MOUTH1 )
+punk.compose!( WILDHAIR_II )
+punk.compose!( NERDGLASSES )
+punk.compose!( PIPE )
+punk.zoom(4).save( "./i/faceless3a(ii)@4x.png" )
+
+
 
 
 ##########################
@@ -216,6 +265,21 @@ punk.compose!( GOAT)
 punk.save( "./i/faceless4.png" )
 punk.zoom(4).save( "./i/faceless4@4x.png" )
 
+## try male on female design
+punk = Image.new( 24, 24 )
+punk.compose!( FEMALE2 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE )
+punk.compose!( MOUTH )
+punk.compose!( WILDHAIR )
+punk.compose!( BIGSHADES )
+punk.compose!( EARRING )
+punk.compose!( GOAT)
+punk.zoom(4).save( "./i/faceless4(ii)@4x.png" )
+
+
+
 # try "female" style
 punk = Image.new( 24, 24 )
 punk.compose!( FEMALE2 )
@@ -230,8 +294,17 @@ punk.compose!( EARRING )
 punk.save( "./i/faceless4a.png" )
 punk.zoom(4).save( "./i/faceless4a@4x.png" )
 
-
-
+## try female on male design
+punk = Image.new( 24, 24 )
+punk.compose!( MALE2 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE_SMALL )
+punk.compose!( MOUTH2 )
+punk.compose!( WILDHAIR_II )
+punk.compose!( BIGSHADES )
+punk.compose!( EARRING )
+punk.zoom(4).save( "./i/faceless4a(ii)@4x.png" )
 
 
 puts "bye"
