@@ -12,10 +12,21 @@ path,      type,  gender, size,  name,  name_ii,  more_names
 # basic - archetypes
 #   + (female) unisize archetypes
 
+faceless/human-male_darker.png,    Human, m, l,    Human, 1,  Male 1 | Man 1 |  ♂ 1
+faceless/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂ 2
+faceless/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂ 3
+faceless/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
+
 basic/human-male_darker.png,    Human, m, l,    Human, 1,  Male 1 | Man 1 |  ♂ 1
 basic/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂ 2
 basic/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂ 3
 basic/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
+
+
+faceless/human-female_darker.png,   Human, f, l,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
+faceless/human-female_dark.png,     Human, f, l,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
+faceless/human-female_light.png,    Human, f, l,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
+faceless/human-female_lighter.png,  Human, f, l,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
 
 unisize/human-female_darker.png,   Human, f, l,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
 unisize/human-female_dark.png,     Human, f, l,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2

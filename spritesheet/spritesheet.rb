@@ -87,6 +87,21 @@ archetypes.each do |rec|
   names = names.map {|str| str.strip.gsub(/[ ]{2,}/, ' ' )}  ## normalize spaces in more names
 
 
+  ### special case hacks
+  ##   to auto-add qualifiers e.g. (U) for unisize
+  ##                            or (F) for faceless
+  if path.index( 'unisize/' )
+    ## hack - always auto-add u (e.g. Female 1 (U) or such)
+    names = names.map { |name| name + " (U)"  }
+  end
+
+  if path.index( 'faceless/' )
+    ## hack - always auto-add u (e.g. Male 1 (F) or such)
+    names = names.map { |name| name + " (F)"  }
+  end
+
+
+
 
   meta << [meta.size,
            names[0],
@@ -106,12 +121,19 @@ attributes.each do |rec|
   path = rec['path']
   sheet << Image.read( "../../punks.blocks/#{path}" )
 
-  size = rec['size']
-  size = '?'   if size.nil? || size.empty?
+
+  gender = rec['gender']
+  size   = rec['size']
+
+  ## auto-fill for now if set to ?
+  ##   for female set to s(mall)
+  ##   and otherwise to l(arge)
+  size = (gender == 'f' ? 's' : 'l')  if size.nil? || size.empty?
+
 
   meta << [meta.size,
             rec['name'],
-            rec['gender'],
+            gender,
             size,
             "Attribute",     ## add type e.g. Hair, Hat, Glasses, etc later - why? why not?
             rec['more_names'],

@@ -1,12 +1,13 @@
+$LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
 
 
-HUMAN1          = Image.read( "./i/attributes/human1.png" )
-HUMAN2          = Image.read( "./i/attributes/human2.png" )
-HUMAN3          = Image.read( "./i/attributes/human3.png" )
-HUMAN1_ROUND    = Image.read( "./i/attributes/human1_round.png" )
-HUMAN2_ROUND    = Image.read( "./i/attributes/human2_round.png" )
-HUMAN3_ROUND    = Image.read( "./i/attributes/human3_round.png" )
+MALE1          = Image.read( "./i/attributes/human-male_darker.png" )
+MALE2          = Image.read( "./i/attributes/human-male_dark.png" )
+MALE3          = Image.read( "./i/attributes/human-male_light.png" )
+FEMALE1        = Image.read( "./i/attributes/human-female_darker.png" )
+FEMALE2        = Image.read( "./i/attributes/human-female_dark.png" )
+FEMALE3        = Image.read( "./i/attributes/human-female_light.png" )
 
 EYES            = Image.read( "./i/attributes/eyes.png" )
 EYEBROWS        = Image.read( "./i/attributes/eyebrows.png" )
@@ -15,18 +16,19 @@ NOSE            = Image.read( "./i/attributes/nose.png" )
 NOSE_SMALL      = Image.read( "./i/attributes/nose_small.png" )
 
 MOUTH           = Image.read( "./i/attributes/mouth.png" )
-MOUTH1          = Image.read( "./i/attributes/mouth1.png" )
-MOUTH2          = Image.read( "./i/attributes/mouth2.png" )
-MOUTH3          = Image.read( "./i/attributes/mouth3.png" )
+MOUTH1          = Image.read( "./i/attributes/mouth_darker.png" )
+MOUTH2          = Image.read( "./i/attributes/mouth_dark.png" )
+MOUTH3          = Image.read( "./i/attributes/mouth_light.png" )
+
+SMILE1          = Image.read( "./i/attributes/smile_darker.png" )
 
 
-EYESHADOW_GREEN = Image.read( "./i/attributes/eyeshadow_green.png" )
-SMILE1          = Image.read( "./i/attributes/smile1.png" )
 
 ## note: need to "stretch" by 2px female hair-dos/styles
-BLONDEBOB       = Image.read( "./i/attributes/blondebob.png" )
-WILDHAIR_II     = Image.read( "./i/attributes/wildhair_ii.png" )
+EYESHADOW_GREEN = Punks::Sheet.find_by( name: "Green Eye Shadow", gender: 'f', size: 'l' )
 
+BLONDEBOB       = Punks::Sheet.find_by( name: "Blonde Bob", gender: 'f', size: 'l'  )
+WILDHAIR_II     = Punks::Sheet.find_by( name: "Wild Hair",  gender: 'f', size: 'l' )
 
 
 ### classic (male) attributes
@@ -44,7 +46,7 @@ SMILE           = Punks::Sheet.find_by( name: 'Smile', gender: 'm' )
 ############################
 ## try punk(ette) #0
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN2_ROUND )
+punk.compose!( FEMALE2 )
 punk.save( "./i/faceless0a1.png" )
 punk.zoom(4).save( "./i/faceless0a1@4x.png" )
 
@@ -66,7 +68,7 @@ punk.zoom(4).save( "./i/faceless0@4x.png" )
 #############
 ## try punk #1
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN1 )
+punk.compose!( MALE1 )
 punk.save( "./i/faceless1a1.png" )
 punk.zoom(4).save( "./i/faceless1a1@4x.png" )
 
@@ -86,7 +88,7 @@ punk.zoom(4).save( "./i/faceless1@4x.png" )
 
 ## try "female" style  - w/ nose (small) and face (round)
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN1_ROUND )
+punk.compose!( FEMALE1 )
 punk.save( "./i/faceless1b1.png" )
 punk.zoom(4).save( "./i/faceless1b1@4x.png" )
 
@@ -108,7 +110,7 @@ punk.zoom(4).save( "./i/faceless1b@4x.png" )
 #############################
 ## try punk(ette) #2
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN3_ROUND )
+punk.compose!( FEMALE3 )
 punk.save( "./i/faceless2a1.png" )
 punk.zoom(4).save( "./i/faceless2a1@4x.png" )
 
@@ -127,7 +129,7 @@ punk.zoom(4).save( "./i/faceless2@4x.png" )
 
 # try "male" style
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN3 )
+punk.compose!( MALE3 )
 punk.save( "./i/faceless2b1.png" )
 punk.zoom(4).save( "./i/faceless2b1@4x.png" )
 
@@ -146,7 +148,7 @@ punk.zoom(4).save( "./i/faceless2b@4x.png" )
 ##############
 ## try punk #3
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN1 )
+punk.compose!( MALE1 )
 punk.compose!( EYES )
 punk.compose!( EYEBROWS )
 punk.compose!( NOSE )
@@ -160,7 +162,7 @@ punk.zoom(4).save( "./i/faceless3@4x.png" )
 
 # try "female" style
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN1_ROUND )
+punk.compose!( FEMALE1 )
 punk.compose!( EYES )
 punk.compose!( EYEBROWS )
 punk.compose!( NOSE_SMALL )
@@ -176,7 +178,7 @@ punk.zoom(4).save( "./i/faceless3a@4x.png" )
 ##########################
 ## try punk #4
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN2 )
+punk.compose!( MALE2 )
 punk.compose!( EYES )
 punk.compose!( EYEBROWS )
 punk.compose!( NOSE )
@@ -190,7 +192,7 @@ punk.zoom(4).save( "./i/faceless4@4x.png" )
 
 # try "female" style
 punk = Image.new( 24, 24 )
-punk.compose!( HUMAN2_ROUND )
+punk.compose!( FEMALE2 )
 punk.compose!( EYES )
 punk.compose!( EYEBROWS )
 punk.compose!( NOSE_SMALL )

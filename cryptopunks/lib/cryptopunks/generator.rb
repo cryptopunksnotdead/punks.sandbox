@@ -78,14 +78,7 @@ module Cryptopunks
     recs.each_with_index do |rec|
       names = [rec.name] + rec.more_names
 
-      if rec.archetype? && rec.female? && rec.large?
-         ## hack - always auto-add u (e.g. Female 1 (U) or such)
-         ##          if female AND unisize
-         names = names.map { |name| name + " (U)"  }
-      end
-
       names.each do |name|
-
         key = normalize_key( name )
         key << "_(#{rec.gender}+#{rec.size})"  if rec.attribute?
 
@@ -125,13 +118,7 @@ module Cryptopunks
              id         = rec['id'].to_i( 10 )
              name       = normalize_name( rec['name'] )
              gender     = normalize_gender( rec['gender'] )
-
              size       = normalize_size( rec['size'] )
-             ## auto-fill for now if set to ?
-             ##   for female set to s(mall)
-             ##   and otherwise to l(arge)
-             size = (gender == 'f' ? 's' : 'l')   if size == '?'
-
              type       = rec['type']
 
              more_names = (rec['more_names'] || '').split( '|' )
@@ -184,8 +171,8 @@ module Cryptopunks
        ## auto-fill size if not passed in
        ##    for f(emale)  =>   s(mall)
        ##        m(ale)    =>   l(arge)
-       size = if size.nil? || size == '?'
-                 gender == 'f' ?  's' : 'l'
+       size =  if size.nil?
+                 gender == 'f' ? 's' : 'l'
                else
                  normalize_size( size )
                end
