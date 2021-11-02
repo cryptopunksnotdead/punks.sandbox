@@ -12,14 +12,18 @@ Punk #1
 
 ![](i/faceless1a1@4x.png) ->
 ![](i/faceless1a2@4x.png) ->
-![](i/faceless1@4x.png)
+![](i/faceless1@4x.png)   <=>
+![](i/faceless1(ii)@4x.png)
+
 
 Try female-style with faceless "round" style and nose "small"
 and mouth with "standard" red-ish color
 
 ![](i/faceless1b1@4x.png) ->
 ![](i/faceless1b2@4x.png) ->
-![](i/faceless1b@4x.png)
+![](i/faceless1b@4x.png)  <=>
+![](i/faceless1b(ii)@4x.png)
+
 
 
 Punk #2
@@ -27,6 +31,7 @@ Punk #2
 ![](i/faceless2a1@4x.png) ->
 ![](i/faceless2a2@4x.png) ->
 ![](i/faceless2@4x.png)
+
 
 Try male-style
 

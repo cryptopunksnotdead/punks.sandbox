@@ -86,6 +86,19 @@ punk.save( "./i/faceless1.png" )
 punk.zoom(4).save( "./i/faceless1@4x.png" )
 
 
+## try male on female design
+punk = Image.new( 24, 24 )
+punk.compose!( FEMALE1 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE )
+punk.compose!( MOUTH )
+punk.compose!( SMILE )
+punk.compose!( MOHAWK )
+punk.zoom(4).save( "./i/faceless1(ii)@4x.png" )
+
+
+
 ## try "female" style  - w/ nose (small) and face (round)
 punk = Image.new( 24, 24 )
 punk.compose!( FEMALE1 )
@@ -104,6 +117,19 @@ punk.compose!( SMILE1 )
 punk.compose!( MOHAWK )
 punk.save( "./i/faceless1b.png" )
 punk.zoom(4).save( "./i/faceless1b@4x.png" )
+
+
+## try female on male design
+punk = Image.new( 24, 24 )
+punk.compose!( MALE1 )
+punk.compose!( EYES )
+punk.compose!( EYEBROWS )
+punk.compose!( NOSE_SMALL )
+punk.compose!( MOUTH1 )
+punk.compose!( SMILE1 )
+punk.compose!( MOHAWK )
+punk.zoom(4).save( "./i/faceless1b(ii)@4x.png" )
+
 
 
 
