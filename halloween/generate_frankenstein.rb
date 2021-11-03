@@ -58,7 +58,7 @@ EXCLUDE =  MOUTH_EXPRESSION +
      attribute = 'Bow'                  if attribute == 'Pink With Hat'  # female only
 
      attribute = "Beret"                if attribute == 'Bandana'
-     attribute = "Sombrero 2"           if attribute == 'Cap'
+     attribute = "Sombrero"             if attribute == 'Cap'
      attribute = 'Panama Hat'           if attribute == 'Stringy Hair'
 
      attribute = 'Heart Shades'         if attribute == 'Eye Patch'
