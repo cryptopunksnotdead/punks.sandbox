@@ -12,10 +12,11 @@ path,      type,  gender, size,  name,  name_ii,  more_names
 # basic - archetypes
 #   + (female) unisize archetypes
 
-faceless/human-male_darker.png,    Human, m, l,    Human, 1,  Male 1 | Man 1 |  ♂ 1
-faceless/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂ 2
-faceless/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂ 3
-faceless/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
+faceless/human-i_darker.png,    Human, m, l,    Human, 1,  Male 1-I | Male 1 | Man 1 |  ♂ 1
+faceless/human-i_dark.png,      Human, m, l,    Human, 2,  Male 2-I | Male 2 | Man 2 |  ♂ 2
+faceless/human-i_light.png,     Human, m, l,    Human, 3,  Male 3-I | Male 3 | Man 3 |  ♂ 3
+faceless/human-i_lighter.png,   Human, m, l,    Human, 4,  Male 4-I | Male 4 | Man 4 |  ♂ 4
+faceless/human-i_white.png,     Human, m, l,    Human, White,  Male White I | Male White | Man White | ♂ White
 
 basic/human-male_darker.png,    Human, m, l,    Human, 1,  Male 1 | Man 1 |  ♂ 1
 basic/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂ 2
@@ -23,10 +24,11 @@ basic/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂
 basic/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
 
 
-faceless/human-female_darker.png,   Human, f, l,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
-faceless/human-female_dark.png,     Human, f, l,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
-faceless/human-female_light.png,    Human, f, l,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
-faceless/human-female_lighter.png,  Human, f, l,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
+faceless/human-ii_darker.png,   Human, f, l,    Human, 1,  Female 1-I | Female 1 | Woman 1 | Lady 1 | ♀ 1
+faceless/human-ii_dark.png,     Human, f, l,    Human, 2,  Female 2-I | Female 2 | Woman 2 | Lady 2 | ♀ 2
+faceless/human-ii_light.png,    Human, f, l,    Human, 3,  Female 3-I | Female 3 | Woman 3 | Lady 3 | ♀ 3
+faceless/human-ii_lighter.png,  Human, f, l,    Human, 4,  Female 4-I | Female 4 | Woman 4 | Lady 4 | ♀ 4
+faceless/human-ii_white.png,    Human, f, l,    Human, White,  Female White I | Female White | Woman White | ♀ White
 
 unisize/human-female_darker.png,   Human, f, l,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
 unisize/human-female_dark.png,     Human, f, l,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
@@ -264,3 +266,23 @@ alien-invasion/alien-female_270.png,      Alien, f, s, Alien,  270° | Violet
 alien-invasion/alien-female_300.png,      Alien, f, s, Alien,  300° | Magenta
 alien-invasion/alien-female_330.png,      Alien, f, s, Alien,  330° | Red Magenta
 
+
+
+
+##############################
+#  hack for now
+#   make faceless unisex - add again with f/m reversed
+#
+#   find a way to add without duplicating image in spritesheet - why? why not?
+
+faceless/human-ii_darker.png,    Human, m, l,    Human, 1-II,      Male 1-II
+faceless/human-ii_dark.png,      Human, m, l,    Human, 2-II,      Male 2-II
+faceless/human-ii_light.png,     Human, m, l,    Human, 3-II,      Male 3-II
+faceless/human-ii_lighter.png,   Human, m, l,    Human, 4-II,      Male 4-II
+faceless/human-ii_white.png,     Human, m, l,    Human, White II,  Male White II
+
+faceless/human-i_darker.png,     Human, f, l,    Human, 1-II,      Female 1-II
+faceless/human-i_dark.png,       Human, f, l,    Human, 2-II,      Female 2-II
+faceless/human-i_light.png,      Human, f, l,    Human, 3-II,      Female 3-II
+faceless/human-i_lighter.png,    Human, f, l,    Human, 4-II,      Female 4-II
+faceless/human-i_white.png,      Human, f, l,    Human, White II,  Female White II
