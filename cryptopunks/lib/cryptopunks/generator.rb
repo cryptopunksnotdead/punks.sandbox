@@ -47,7 +47,8 @@ module Cryptopunks
  # static helpers  - (turn into "true" static self.class methods - why? why not?)
  #
  def normalize_key( str )
-    str.downcase.gsub(/[ ()°_-]/, '').strip
+   ## add & e.g. B&W
+    str.downcase.gsub(/[ ()&°_-]/, '').strip
  end
 
  def normalize_gender( str )

@@ -201,8 +201,8 @@ basic/m/policecap.png,    m,,    Police Cap
 basic/f/policecap.png,   f,,     Police Cap
 basic/f/tasslehat.png,   f,,           Tassle Hat
 basic/f/tiara.png,   f,,              Tiara
-basic/m/tophat.png,    m,,            Top Hat,  Top Hat 1
-basic/f/tophat.png,   f,,             Top Hat,  Top Hat 1
+basic/m/tophat.png,    m,,            Top Hat
+basic/f/tophat.png,   f,,             Top Hat
 
 more/m/bearhood.png,    m,,  Bear Hood
 more/f/bearhood.png,  f,,      Bear Hood
@@ -296,8 +296,6 @@ intl/m/sombrero.png,            m,,    Sombrero, Sombrero 1    # note: alternati
 intl/f/sombrero.png,            f,,    Sombrero, Sombrero 1
 intl/m/tamoshanter.png,         m,,    Tam-O-Shanter
 intl/f/tamoshanter.png,         f,,    Tam-O-Shanter
-intl/m/tophat.png,              m,,    Top Hat 2    # note: alternative to basic
-intl/f/tophat.png,              f,,    Top Hat 2
 intl/m/trapperhat.png,          m,,    Trapper Hat
 intl/f/trapperhat.png,          f,,    Trapper Hat
 intl/m/tuque.png,               m,,    Tuque
@@ -581,4 +579,52 @@ hair/f/black/clown.png,   f,,  Clown Hair Black
   hair/f/silver/clown.png,  f,, Clown Hair Silver
   hair/f/white/clown.png,  f,, Clown Hair White
 
+
+
+
+
+####################
+# 1-bit black&white series
+
+1bit/u/tophat.png,              u,l,    Top Hat B&W
+1bit/f/tophat.png,              f,s,    Top Hat B&W
+
+1bit/u/3dglasses.png,           u,l,    3D Glasses B&W
+1bit/u/bandana.png,             u,l,    Bandana B&W
+1bit/u/beanie.png,              u,l,    Beanie B&W
+1bit/u/bearhood.png,            u,l,    Bear Hood B&W
+1bit/u/bubblegum.png,           u,l,    Bubble Gum B&W
+1bit/u/cap.png,                 u,l,    Cap B&W
+1bit/u/capforward.png,          u,l,    Cap Forward B&W
+1bit/u/cigarette.png,           u,l,    Cigarette B&W
+1bit/u/clowneyes.png,           u,l,    Clown Eyes B&W
+1bit/u/clownnose.png,           u,l,    Clown Nose B&W
+1bit/u/cowboyhat.png,           u,l,    Cowboy Hat B&W
+1bit/u/crazyhair.png,           u,l,    Crazy Hair B&W
+1bit/u/earring.png,             u,l,    Earring B&W
+1bit/u/eyes.png,                u,l,    Eyes B&W
+1bit/u/eyes_small.png,          u,l,    Eyes Small B&W
+1bit/u/fedora.png,             u,l,     Fedora B&W
+1bit/u/frown.png,           u,l,        Frown B&W
+1bit/u/frumpyhair.png,           u,l,   Frumpy Hair B&W
+1bit/u/headband.png,           u,l,     Headband B&W
+1bit/u/heartshades.png,           u,l,  Heart Shades B&W
+1bit/u/knittedcap.png,           u,l,   Knitted Cap B&W
+1bit/u/lasereyes.png,           u,l,    Laser Eyes B&W
+1bit/u/medicalmask.png,           u,l,  Medical Mask B&W
+1bit/u/messyhair.png,           u,l,    Messy Hair B&W
+1bit/u/mohawk.png,           u,l,       Mohawk B&W
+1bit/u/mouth.png,           u,l,        Mouth B&W
+1bit/u/nose.png,           u,l,         Nose B&W
+1bit/u/nose_small.png,           u,l,   Nose Small B&W
+1bit/u/peakspike.png,           u,l,    Peak Spike B&W
+1bit/u/pipe.png,           u,l,         Pipe B&W
+1bit/u/policecap.png,           u,l,    Police Cap B&W
+1bit/u/regularshades.png,           u,l, Regular Shades B&W
+1bit/u/santahat.png,           u,l,      Santa Hat B&W
+1bit/u/smallshades.png,           u,l,   Small Shades B&W
+1bit/u/smile.png,           u,l,         Smile B&W
+1bit/u/spots.png,           u,l,         Spots B&W
+1bit/u/sunhat.png,           u,l,        Sun Hat B&W
+1bit/u/vr.png,           u,l,            VR B&W
 
