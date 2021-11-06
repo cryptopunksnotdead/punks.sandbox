@@ -4,21 +4,6 @@
 #   $ ruby ./generate.rb
 
 
-###
-# todo/fix:
-#   - change eyes small to eyes !!!  (delete eyes)
-#   - up heart shades (remove  white frame!!!)
-#   - up pipe and cigarette  (add smoke in black!!!)
-#   - up clown eyes (add white pix)
-#
-#  redo skeleton
-#  - add skeleton eyes
-#    add skeleton mouth
-# redo scream
-#  - add scream eyes
-#  - add scream mouth
-#  - add scream nose
-
 
 $LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
@@ -48,30 +33,24 @@ end
 
 
 
+
+composite = ImageComposite.new( 6, 4 )
+
+
+
 punk = generate( "Male 1-Bit",
-                 "Eyes Small",
+                 "Eyes",
                  "Nose",
                  "Mouth" )
 punk.zoom(4).save( "./tmp/bitpunk0@4x.png" )
+composite << punk
 
 punk = generate( "Female 1-Bit",
-                 "Eyes Small",
+                 "Eyes",
                  "Nose Small",
                  "Mouth" )
 punk.zoom(4).save( "./tmp/bitpunk0b@4x.png" )
-
-punk = generate( "Male 1-Bit",
-                 "Eyes",
-                 "Nose",
-                 "Mouth" )
-punk.zoom(4).save( "./tmp/bitpunk0(ii)@4x.png" )
-
-punk = generate( "Female 1-Bit",
-                 "Eyes",
-                 "Nose",
-                 "Mouth" )
-punk.zoom(4).save( "./tmp/bitpunk0b(ii)@4x.png" )
-
+composite << punk
 
 
 
@@ -84,6 +63,7 @@ punk = generate( "Male 1-Bit",
                  "Cap Forward",
                  "Pipe" )
 punk.zoom(4).save( "./tmp/bitpunk1@4x.png" )
+composite << punk
 
 punk = generate( "Female 1-Bit",
                   "Small Shades",
@@ -92,6 +72,7 @@ punk = generate( "Female 1-Bit",
                  "Cap Forward",
                  "Pipe" )
 punk.zoom(4).save( "./tmp/bitpunk1b@4x.png" )
+composite << punk
 
 
 punk = generate( "Male 1-Bit",
@@ -101,6 +82,7 @@ punk = generate( "Male 1-Bit",
                   "Smile",
                   "Top Hat" )
 punk.zoom(4).save( "./tmp/bitpunk2@4x.png" )
+composite << punk
 
 punk = generate( "Female 1-Bit",
                   "Regular Shades",
@@ -109,7 +91,7 @@ punk = generate( "Female 1-Bit",
                   "Smile",
                   "Top Hat" )
 punk.zoom(4).save( "./tmp/bitpunk2b@4x.png" )
-
+composite << punk
 
 
 punk = generate( "Male 1-Bit",
@@ -120,6 +102,7 @@ punk = generate( "Male 1-Bit",
                  "Earring",
                  "Mohawk" )
 punk.zoom(4).save( "./tmp/bitpunk3@4x.png" )
+composite << punk
 
 punk = generate( "Female 1-Bit",
                  "Laser Eyes",
@@ -129,23 +112,26 @@ punk = generate( "Female 1-Bit",
                  "Earring",
                  "Mohawk" )
 punk.zoom(4).save( "./tmp/bitpunk3b@4x.png" )
+composite << punk
 
 
 punk = generate( "Male 1-Bit",
-                 "Eyes Small",
+                 "Eyes",
                  "Nose",
                  "Mouth",
                  "Smile",
                  "Wild Hair" )
 punk.zoom(4).save( "./tmp/bitpunk4@4x.png" )
+composite << punk
 
 punk = generate( "Female 1-Bit",
-                 "Eyes Small",
+                 "Eyes",
                  "Nose Small",
                  "Mouth",
                  "Smile",
                  "Wild Hair" )
 punk.zoom(4).save( "./tmp/bitpunk4b@4x.png" )
+composite << punk
 
 
 punk = generate( "Male 1-Bit",
@@ -156,16 +142,122 @@ punk = generate( "Male 1-Bit",
                  "Clown Hair Black" )
 punk.save( "./tmp/bitpunk5.png" )
 punk.zoom(4).save( "./tmp/bitpunk5@4x.png" )
+composite << punk
 
 punk = generate( "Female 1-Bit",
-                 "Eyes",
-                 "Heart Shades",
+                 "Heart Eyes",
                  "Mouth",
                  "Nose Small",
                  "Smile" )
 punk.zoom(4).save( "./tmp/bitpunk5b@4x.png" )
+composite << punk
 
 
+## try zombie-like
+punk = generate( "Male 1-Bit",
+                 "Zombie Eyes",
+                 "Nose",
+                 "Zombie Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk6@4x.png" )
+composite << punk
+
+punk = generate( "Female 1-Bit",
+                 "Zombie Eyes",
+                 "Nose Small",
+                 "Zombie Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk6b@4x.png" )
+composite << punk
+
+
+## try skeleton-like
+punk = generate( "Male 1-Bit",
+                 "Skeleton Eyes",
+                 "Nose",
+                 "Skeleton Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk7@4x.png" )
+composite << punk
+
+punk = generate( "Female 1-Bit",
+                 "Skeleton Eyes",
+                 "Nose Small",
+                 "Skeleton Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk7b@4x.png" )
+composite << punk
+
+## try scream-like
+punk = generate( "Male 1-Bit",
+                 "Scream Eyes",
+                 "Scream Nose",
+                 "Scream Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk8@4x.png" )
+composite << punk
+
+punk = generate( "Female 1-Bit",
+                 "Scream Eyes",
+                 "Nose Small",
+                 "Scream Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk8b@4x.png" )
+composite << punk
+
+
+## try ape-like
+punk = generate( "Male 1-Bit",
+                 "Ape Front",
+                 "Eyes",
+                 "Ape Nose",
+                 "Ape Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk9@4x.png" )
+composite << punk
+
+punk = generate( "Female 1-Bit",
+                 "Ape Front",
+                 "Eyes",
+                 "Ape Nose",
+                 "Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk9b@4x.png" )
+composite << punk
+
+## try alien-like
+punk = generate( "Male 1-Bit",
+                 "Alien Eyes",
+                 "Alien Nose",
+                 "Alien Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk10@4x.png" )
+composite << punk
+
+punk = generate( "Female 1-Bit",
+                 "Alien Eyes",
+                 "Nose Up",
+                 "Mouth" )
+punk.zoom(4).save( "./tmp/bitpunk10b@4x.png" )
+composite << punk
+
+
+punk = generate( "Male 1-Bit",
+                 "Headband",
+                 "Alien Eyes",
+                 "Alien Nose",
+                 "Alien Mouth",
+                 "Smile Big" )
+punk.zoom(4).save( "./tmp/bitpunk11@4x.png" )
+composite << punk
+
+punk = generate( "Female 1-Bit",
+                 "Headband",
+                 "Alien Eyes",
+                 "Nose Up",
+                 "Mouth",
+                 "Smile" )
+punk.zoom(4).save( "./tmp/bitpunk11b@4x.png" )
+composite << punk
+
+
+
+
+
+
+composite.save( "./tmp/bitpunks.png" )
+composite.zoom(4).save( "./tmp/bitpunks@4x.png" )
 
 
 puts "bye"
