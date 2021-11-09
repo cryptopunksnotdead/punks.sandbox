@@ -46,19 +46,19 @@ module Cryptopunks
  ######
  # static helpers  - (turn into "true" static self.class methods - why? why not?)
  #
- def normalize_key( str )
+ def self.normalize_key( str )
    ## add & e.g. B&W
     str.downcase.gsub(/[ ()&°_-]/, '').strip
  end
 
- def normalize_gender( str )
+ def self.normalize_gender( str )
     ## e.g. Female => f
     ##      F => f
     ##  always return f/m
     str.downcase[0]
  end
 
- def normalize_size( str )
+ def self.normalize_size( str )
     ## e.g. U or Unisize or Univeral => u
     ##      S or Small               => s
     ##      L or Large               => l
@@ -66,11 +66,18 @@ module Cryptopunks
     str.downcase[0]
  end
 
-
- def normalize_name( str )
+ def self.normalize_name( str )
    ## normalize spaces in more names
    str.strip.gsub( /[ ]{2,}/, ' ' )
  end
+
+ def normalize_key( str )     self.class.normalize_key( str ); end
+ def normalize_gender( str )  self.class.normalize_gender( str ); end
+ def normalize_size( str )    self.class.normalize_size( str ); end
+ def normalize_name( str )    self.class.normalize_name( str ); end
+
+
+
 
 
 

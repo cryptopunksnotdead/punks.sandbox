@@ -50,7 +50,32 @@ module Cryptopunks
   end
 
   class Image
-     def self.generate( *values )
+    def self.generate( *values )
+
+###### hack for black&white
+##   auto-add b&w (black&white) to all attribute names e.g.
+##      Eyes   =>  Eyes B&W
+##      Smile  =>  Smile B&W
+##      ....
+
+     archetype_key =  Generator.normalize_key( values[0] )
+     if archetype_key.end_with?( 'bw' ) ||  ## e.g. B&W
+        archetype_key.end_with?( '1bit')    ## e.g. 1-Bit or 1Bit
+
+        values = [values[0]] + values[1..-1].map do |attribute|
+           attribute_key = Generator.normalize_key( attribute )
+           if ['wildhair'].include?( attribute_key )   ## pass through known b&w attributes by "default"
+               attribute
+           elsif attribute_key.index( "black" )
+               attribute ## pass through as-is
+           else
+               "#{attribute} B&W"
+           end
+       end
+
+       pp values
+    end
+
        img = Cryptopunks.generator.generate( *values )
        ## note: unwrap inner image before passing on to c'tor (requires ChunkyPNG image for now)
        new( img.image )
@@ -70,6 +95,7 @@ module Cryptopunks
   ## add convenience (alternate spelling) alias - why? why not?
   SpriteSheet = Spritesheet
   Sheet       = Spritesheet
+  Sprite      = Spritesheet
 end #  module Cryptopunks
 
 
@@ -100,6 +126,12 @@ end ## module Cryptopunks
 ### add some convenience shortcuts
 CryptoPunks = Cryptopunks
 Punks       = Cryptopunks
+## add singular too -why? why not?
+Cryptopunk  = Cryptopunks
+CryptoPunk  = Cryptopunks
+Punk        = Cryptopunks
+
+
 
 
 ###
