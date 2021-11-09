@@ -404,7 +404,7 @@ basic/f/wildwhitehair.png,   f,,    Wild White Hair
 # more hair - attributes
 
 ### -- Afro (m/f)
-hair/m/black/afro.png,  m,,   Black Afro
+hair/m/black/afro.png,  u,l,   Black Afro
 hair/f/black/afro.png, f,, Black Afro
 
   hair/m/brown/afro.png,  m,,   Brown Afro
@@ -442,7 +442,7 @@ hair/f/black/afro.png, f,, Black Afro
 
 
 ### -- Big (m/f)
-hair/m/black/big.png,  m,, Big Hair Black
+hair/m/black/big.png,  u,l, Big Hair Black
 hair/f/black/big.png, f,, Big Hair Black
 
   hair/m/brown/big.png, m,, Big Hair Brown
@@ -503,7 +503,7 @@ hair/f/black/bob.png,  f,, Black Bob
 
 ### -- Buzz Cut (m/f)
 
-hair/m/black/buzzcut.png,  m,, Black Buzz Cut
+hair/m/black/buzzcut.png,  u,l, Black Buzz Cut
 hair/f/black/buzzcut.png,  f,, Black Buzz Cut
 
   hair/m/brown/buzzcut.png,   m,, Brown Buzz Cut
@@ -591,7 +591,7 @@ hair/f/black/clown.png,   f,,  Clown Hair Black
 
 1bit/u/3dglasses.png,           u,l,    3D Glasses B&W
 1bit/u/alien-eyes.png,          u,l,    Alien Eyes B&W
-1bit/u/ape-front.png,           u,l,    Ape Front B&W,  Head Front B&W
+1bit/u/ape-front.png,           u,l,    Ape Front B&W, Frankenstein Front B&W | Head Front B&W
 1bit/u/ape-nose.png,            u,l,    Ape Nose B&W
 1bit/u/bandana.png,             u,l,    Bandana B&W
 1bit/u/beanie.png,              u,l,    Beanie B&W
@@ -622,6 +622,12 @@ hair/f/black/clown.png,   f,,  Clown Hair Black
 1bit/u/nose_small.png,           u,l,   Nose Small B&W
 1bit/u/nose_up.png,              u,l,   Nose Up B&W,  Scream Nose B&W
 1bit/u/nose_up_big.png,         u,l,    Nose Up Big B&W, Alien Nose B&W
+1bit/u/orc-eyes.png,         u,l,        Orc Eyes B&W,    Frankenstein Eyes B&W
+1bit/u/orc-mouth.png,         u,l,       Orc Mouth B&W
+1bit/u/orc-mouth_small.png,    u,l,      Orc Mouth Small B&W
+1bit/u/orc-nose.png,         u,l,        Orc Nose B&W
+1bit/u/robot-eyes.png,         u,l,      Robot Eyes B&W
+1bit/u/robot-mouth.png,         u,l,     Robot Mouth B&W
 1bit/u/peakspike.png,           u,l,    Peak Spike B&W
 1bit/u/pipe.png,           u,l,         Pipe B&W
 1bit/u/policecap.png,           u,l,    Police Cap B&W
@@ -630,12 +636,14 @@ hair/f/black/clown.png,   f,,  Clown Hair Black
 1bit/u/scream-eyes.png,        u,l,      Scream Eyes B&W
 1bit/u/scream-mouth.png,       u,l,      Scream Mouth B&W
 1bit/u/skeleton-eyes.png,      u,l,      Skeleton Eyes B&W
-1bit/u/skeleton-mouth.png,     u,l,      Skeleton Mouth B&W
+1bit/u/skeleton-mouth.png,     u,l,      Skeleton Mouth B&W, Frankenstein Mouth B&W
 1bit/u/smallshades.png,           u,l,   Small Shades B&W
 1bit/u/smile.png,           u,l,         Smile B&W
 1bit/u/smile_big.png,        u,l,         Smile Big B&W
 1bit/u/spots.png,           u,l,         Spots B&W
 1bit/u/sunhat.png,           u,l,        Sun Hat B&W
+1bit/u/vampire-mouth.png,       u,l,     Vampire Mouth B&W
+1bit/u/vampire-mouth_small.png,  u,l,    Vampire Mouth Small B&W
 1bit/u/vr.png,           u,l,            VR B&W
 1bit/u/zombie-eyes.png,  u,l,            Zombie Eyes B&W
 1bit/u/zombie-mouth.png, u,l,            Zombie Mouth B&W

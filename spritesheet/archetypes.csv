@@ -12,11 +12,11 @@ path,      type,  gender, size,  name,  name_ii,  more_names
 # basic - archetypes
 #   + (female) unisize archetypes
 
+1bit/human-i.png,               Human, m, l,    Human, B&W,  Male B&W | Male 1-Bit
 faceless/human-i_darker.png,    Human, m, l,    Human, 1,  Male 1-I | Male 1 | Man 1 |  ♂ 1
 faceless/human-i_dark.png,      Human, m, l,    Human, 2,  Male 2-I | Male 2 | Man 2 |  ♂ 2
 faceless/human-i_light.png,     Human, m, l,    Human, 3,  Male 3-I | Male 3 | Man 3 |  ♂ 3
 faceless/human-i_lighter.png,   Human, m, l,    Human, 4,  Male 4-I | Male 4 | Man 4 |  ♂ 4
-1bit/human-i.png,               Human, m, l,    Human, B&W,  Male B&W | Male 1-Bit
 
 basic/human-male_darker.png,    Human, m, l,    Human, 1,  Male 1 | Man 1 |  ♂ 1
 basic/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂ 2
@@ -24,11 +24,11 @@ basic/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂
 basic/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
 
 
+1bit/human-ii.png,              Human, f, l,    Human, B&W,  Female B&W | Female 1-Bit
 faceless/human-ii_darker.png,   Human, f, l,    Human, 1,  Female 1-I | Female 1 | Woman 1 | Lady 1 | ♀ 1
 faceless/human-ii_dark.png,     Human, f, l,    Human, 2,  Female 2-I | Female 2 | Woman 2 | Lady 2 | ♀ 2
 faceless/human-ii_light.png,    Human, f, l,    Human, 3,  Female 3-I | Female 3 | Woman 3 | Lady 3 | ♀ 3
 faceless/human-ii_lighter.png,  Human, f, l,    Human, 4,  Female 4-I | Female 4 | Woman 4 | Lady 4 | ♀ 4
-1bit/human-ii.png,              Human, f, l,    Human, B&W,  Female B&W | Female 1-Bit
 
 unisize/human-female_darker.png,   Human, f, l,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
 unisize/human-female_dark.png,     Human, f, l,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
@@ -51,7 +51,9 @@ unisize/ape-female.png,         Ape,    f, l,    Ape,,       Lady Ape
 basic/ape-female.png,           Ape,    f, s,    Ape,,       Lady Ape
 
 
+1bit/alien-i.png,               Alien, m, l,     Alien, B&W,  Alien 1-Bit | Alien Male 1-Bit
 basic/alien-male.png,           Alien,  m, l,    Alien,,
+1bit/alien-ii.png,              Alien,  f, l,    Alien, B&W,  Alien Female 1-Bit
 unisize/alien-female.png,       Alien,  f, l,    Alien,,     Lady Alien
 basic/alien-female.png,         Alien,  f, s,    Alien,,     Lady Alien
 
@@ -68,23 +70,60 @@ planet-apes/ape-alien-male.png,    Alien,   m, l, Alien (Ape),,
 ##################################
 # more - archetypes
 
+1bit/demon-i.png,                Demon,   m, l, Demon, B&W,  Demon 1-Bit | Demon Male 1-Bit
 more/demon-male.png,             Demon,   m, l, Demon,,
+1bit/demon-ii.png,               Demon,   f, l, Demon, B&W, Demon Female 1-Bit
+unisize/demon-female.png,        Demon,   f, l, Demon,,   Lady Demon
 more/demon-female.png,           Demon,   f, s, Demon,,   Lady Demon
 
+
 more/mummy-male.png,             Mummy,   m, l, Mummy,,
+unisize/mummy-female.png,        Mummy,   f, l, Mummy,,   Lady Mummy
 more/mummy-female.png,           Mummy,   f, s, Mummy,,   Lady Mummy
 
+
+1bit/orc-i.png,                  Orc,     m, l, Orc, B&W,  Orc 1-Bit | Orc Male 1-Bit
 more/orc-male.png,               Orc,     m, l, Orc,,
+1bit/orc-ii.png,                 Orc,     f, l, Orc, B&W, Orc Female 1-Bit
+unisize/orc-female.png,          Orc,     f, l, Orc,,     Lady Orc
 more/orc-female.png,             Orc,     f, s, Orc,,     Lady Orc
 
+
+1bit/robot-i.png,                Robot,   m, l, Robot, B&W,  Robot 1-Bit | Robot Male 1-Bit
 more/robot-male.png,             Robot,   m, l, Robot,,
+1bit/robot-ii.png,               Robot,   f, l, Robot, B&W, Robot Female 1-Bit
+unisize/robot-female.png,        Robot,   f, l, Robot,,   Lady Robot
 more/robot-female.png,           Robot,   f, s, Robot,,   Lady Robot
 
+
 more/skeleton-male.png,          Skeleton, m, l, Skeleton,,
+unisize/skeleton-female.png,     Skeleton, f, l, Skeleton,,  Lady Skeleton
 more/skeleton-female.png,        Skeleton, f, s, Skeleton,,  Lady Skeleton
 
+
+1bit/vampire-i.png,              Vampire,  m, l, Vampire, B&W,  Vampire 1-Bit | Vampire Male 1-Bit
 more/vampire-male.png,           Vampire,  m, l, Vampire,,
+1bit/vampire-ii.png,              Vampire,  f, l, Vampire, B&W, Vampire Female 1-Bit
+unisize/vampire-female.png,      Vampire,  f, l, Vampire,,   Lady Vamp | Lady Vampire
 more/vampire-female.png,         Vampire,  f, s, Vampire,,   Lady Vamp | Lady Vampire
+
+1bit/frankenstein-i.png,        Frankenstein,  m, l, Frankenstein, B&W,  Frankenstein 1-Bit | Frankenstein Male 1-Bit
+more/frankenstein-male.png,      Frankenstein, m, l,  Frankenstein,,
+1bit/frankenstein-ii.png,        Frankenstein,  f, l, Frankenstein, B&W, Frankenstein Female 1-Bit
+unisize/frankenstein-female.png,   Frankenstein, f, l,  Frankenstein,,
+more/frankenstein-female.png,     Frankenstein, f, s,  Frankenstein,,
+
+more/jack-o-lantern-male.png,      Jack-O-Lantern, m, l,  Jack-O-Lantern,,
+unisize/jack-o-lantern-female.png,     Jack-O-Lantern, f, l,  Jack-O-Lantern,,
+more/jack-o-lantern-female.png,     Jack-O-Lantern, f, s,  Jack-O-Lantern,,
+
+more/joker-male.png,         Joker, m, l,  Joker,,
+unisize/joker-female.png,     Joker, f, l,  Joker,,
+more/joker-female.png,        Joker, f, s,  Joker,,
+
+more/scream-male.png,      Scream, m, l,  Scream,,
+unisize/scream-female.png,  Scream, f, l,  Scream,,
+more/scream-female.png,     Scream, f, s,  Scream,,
 
 
 
