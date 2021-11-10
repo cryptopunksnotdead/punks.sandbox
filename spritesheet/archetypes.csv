@@ -77,6 +77,11 @@ unisize/demon-female.png,        Demon,   f, l, Demon,,   Lady Demon
 more/demon-female.png,           Demon,   f, s, Demon,,   Lady Demon
 
 
+more/ghost-male.png,             Ghost,   m, l, Ghost,,
+unisize/ghost-female.png,        Ghost,   f, l, Ghost,,   Lady Ghost
+more/ghost-female.png,           Ghost,   f, s, Ghost,,   Lady Ghost
+
+
 more/mummy-male.png,             Mummy,   m, l, Mummy,,
 unisize/mummy-female.png,        Mummy,   f, l, Mummy,,   Lady Mummy
 more/mummy-female.png,           Mummy,   f, s, Mummy,,   Lady Mummy

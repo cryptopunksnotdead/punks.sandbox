@@ -204,29 +204,35 @@ basic/f/tiara.png,   f,,              Tiara
 basic/m/tophat.png,    m,,            Top Hat
 basic/f/tophat.png,   f,,             Top Hat
 
+
+
+more/demon-male_horns.png,    u,l,   Demon Horns
+more/demon-female_horns.png,  f,s,   Demon Horns
+
 more/m/bearhood.png,    m,,  Bear Hood
 more/f/bearhood.png,  f,,      Bear Hood
-more/m/birthdayhat.png,    m,,    Birthday Hat
-more/f/birthdayhat.png,  f,,      Birthday Hat
-more/f/bow.png,  f,,              Bow
-more/m/crown.png,    m,,          Crown
-more/f/crown.png,  f,,            Crown
-more/f/flowers.png,  f,,          Flowers
+more/m/birthdayhat.png,    u,l,    Birthday Hat
+more/f/birthdayhat.png,  f,s,      Birthday Hat
+more/f/bow.png,  f,s,              Bow
+more/m/crown.png,    u,l,          Crown
+more/f/crown.png,  f,s,            Crown
+more/f/flowers.png,  f,s,          Flowers
 more/m/froghood.png,    m,,       Frog Hood
 more/f/froghood.png,  f,,           Frog Hood
-more/m/jesterhat.png,    m,,           Jester Hat
-more/f/jesterhat.png,  f,,             Jester Hat
-more/m/santahat.png,    m,,            Santa Hat
-more/f/santahat.png,  f,,              Santa Hat
-more/m/sombrero.png,    m,,           Sombrero 2
-more/f/sombrero.png,  f,,             Sombrero 2
-more/m/sunhat.png,    m,,             Sun Hat
-more/f/sunhat.png,  f,,               Sun Hat
-more/f/superherotiara.png,  f,,       Superhero Tiara
-more/m/vikinghelmet.png,    m,,       Viking Helmet
-more/f/vikinghelmet.png,  f,,         Viking Helmet
-more/m/winterhat.png,    m,,          Winter Hat
-more/f/winterhat.png,  f,,            Winter Hat
+more/m/jesterhat.png,    u,l,           Jester Hat
+more/f/jesterhat.png,  f,s,             Jester Hat
+more/m/santahat.png,    u,l,            Santa Hat
+more/f/santahat.png,  f,s,              Santa Hat
+more/m/sombrero.png,    u,l,           Sombrero, Sombrero 1
+more/f/sombrero.png,  f,s,             Sombrero, Sombrero 1
+more/m/sunhat.png,    u,l,             Sun Hat
+more/f/sunhat.png,  f,s,               Sun Hat
+more/f/superherotiara.png,  f,s,       Superhero Tiara
+more/m/vikinghelmet.png,    u,l,       Viking Helmet
+more/f/vikinghelmet.png,  f,s,         Viking Helmet
+more/m/winterhat.png,    u,l,          Winter Hat
+more/f/winterhat.png,  f,s,            Winter Hat
+more/m/wizardhat.png,    u,l,          Wizard Hat
 
 
 
@@ -292,8 +298,8 @@ intl/f/rasta.png,               f,,    Rasta
 intl/f/royalcocktailhat.png,    f,,    Royal Cocktail Hat
 intl/m/sibenik.png,             m,,    Sibenik
 intl/f/sibenik.png,             f,,    Sibenik
-intl/m/sombrero.png,            m,,    Sombrero, Sombrero 1    # note: alternative to more
-intl/f/sombrero.png,            f,,    Sombrero, Sombrero 1
+intl/m/sombrero.png,            m,,    Sombrero 2     # note: alternative to more
+intl/f/sombrero.png,            f,,    Sombrero 2
 intl/m/tamoshanter.png,         m,,    Tam-O-Shanter
 intl/f/tamoshanter.png,         f,,    Tam-O-Shanter
 intl/m/trapperhat.png,          m,,    Trapper Hat
@@ -407,21 +413,21 @@ basic/f/wildwhitehair.png,   f,,    Wild White Hair
 hair/m/black/afro.png,  u,l,   Black Afro
 hair/f/black/afro.png, f,, Black Afro
 
-  hair/m/brown/afro.png,  m,,   Brown Afro
-  hair/m/darkred/afro.png, m,,  Dark Red Afro
-  hair/m/orange/afro.png, m,, Orange Afro
-  hair/m/red/afro.png, m,, Red Afro
-  hair/m/pink/afro.png, m,, Pink Afro
-  hair/m/purple/afro.png, m,,  Purple Afro
-  hair/m/blue/afro.png, m,,  Blue Afro
-  hair/m/periwinkle/afro.png, m,, Periwinkle Afro
-  hair/m/lightblue/afro.png, m,, Light Blue Afro
-  hair/m/lightgreen/afro.png, m,, Light Green Afro
-  hair/m/green/afro.png, m,,  Green Afro
-  hair/m/teal/afro.png, m,,  Teal Afro
-  hair/m/blonde/afro.png, m,,  Blonde Afro
-  hair/m/silver/afro.png, m,,  Silver Afro
-  hair/m/white/afro.png, m,,  White Afro
+  hair/m/brown/afro.png,  u,l,   Brown Afro
+  hair/m/darkred/afro.png, u,l,  Dark Red Afro
+  hair/m/orange/afro.png, u,l, Orange Afro
+  hair/m/red/afro.png, u,l, Red Afro
+  hair/m/pink/afro.png, u,l, Pink Afro
+  hair/m/purple/afro.png, u,l,  Purple Afro
+  hair/m/blue/afro.png, u,l,  Blue Afro
+  hair/m/periwinkle/afro.png, u,l, Periwinkle Afro
+  hair/m/lightblue/afro.png, u,l, Light Blue Afro
+  hair/m/lightgreen/afro.png, u,l, Light Green Afro
+  hair/m/green/afro.png, u,l,  Green Afro
+  hair/m/teal/afro.png, u,l,  Teal Afro
+  hair/m/blonde/afro.png, u,l,  Blonde Afro
+  hair/m/silver/afro.png, u,l,  Silver Afro
+  hair/m/white/afro.png, u,l,  White Afro
 
   hair/f/brown/afro.png, f,, Brown Afro
   hair/f/darkred/afro.png, f,, Dark Red Afro
@@ -445,21 +451,21 @@ hair/f/black/afro.png, f,, Black Afro
 hair/m/black/big.png,  u,l, Big Hair Black
 hair/f/black/big.png, f,, Big Hair Black
 
-  hair/m/brown/big.png, m,, Big Hair Brown
-  hair/m/darkred/big.png, m,, Big Hair Dark Red
-  hair/m/orange/big.png, m,, Big Hair Orange
-  hair/m/red/big.png, m,, Big Hair Red
-  hair/m/pink/big.png, m,, Big Hair Pink
-  hair/m/purple/big.png, m,,  Big Hair Purple
-  hair/m/blue/big.png, m,,  Big Hair Blue
-  hair/m/periwinkle/big.png, m,,  Big Hair Periwinkle
-  hair/m/lightblue/big.png, m,,  Big Hair Light Blue
-  hair/m/lightgreen/big.png, m,, Big Hair Light Green
-  hair/m/green/big.png, m,,  Big Hair Green
-  hair/m/teal/big.png, m,,  Big Hair Teal
-  hair/m/blonde/big.png, m,,  Big Hair Blonde
-  hair/m/silver/big.png, m,, Big Hair Silver
-  hair/m/white/big.png, m,, Big Hair White
+  hair/m/brown/big.png, u,l, Big Hair Brown
+  hair/m/darkred/big.png, u,l, Big Hair Dark Red
+  hair/m/orange/big.png, u,l, Big Hair Orange
+  hair/m/red/big.png, u,l, Big Hair Red
+  hair/m/pink/big.png, u,l, Big Hair Pink
+  hair/m/purple/big.png, u,l,  Big Hair Purple
+  hair/m/blue/big.png, u,l,  Big Hair Blue
+  hair/m/periwinkle/big.png, u,l,  Big Hair Periwinkle
+  hair/m/lightblue/big.png, u,l,  Big Hair Light Blue
+  hair/m/lightgreen/big.png, u,l, Big Hair Light Green
+  hair/m/green/big.png, u,l,  Big Hair Green
+  hair/m/teal/big.png, u,l,  Big Hair Teal
+  hair/m/blonde/big.png, u,l,  Big Hair Blonde
+  hair/m/silver/big.png, u,l, Big Hair Silver
+  hair/m/white/big.png, u,l, Big Hair White
 
   hair/f/brown/big.png, f,, Big Hair Brown
   hair/f/darkred/big.png, f,,  Big Hair Dark Red
@@ -506,21 +512,21 @@ hair/f/black/bob.png,  f,, Black Bob
 hair/m/black/buzzcut.png,  u,l, Black Buzz Cut
 hair/f/black/buzzcut.png,  f,, Black Buzz Cut
 
-  hair/m/brown/buzzcut.png,   m,, Brown Buzz Cut
-  hair/m/darkred/buzzcut.png,   m,, Dark Red Buzz Cut
-  hair/m/orange/buzzcut.png,   m,, Orange Buzz Cut
-  hair/m/red/buzzcut.png,   m,, Red Buzz Cut
-  hair/m/pink/buzzcut.png,   m,, Pink Buzz Cut
-  hair/m/purple/buzzcut.png,   m,, Purple Buzz Cut
-  hair/m/blue/buzzcut.png,   m,, Blue Buzz Cut
-  hair/m/periwinkle/buzzcut.png,   m,, Periwinkle Buzz Cut
-  hair/m/lightblue/buzzcut.png,   m,, Light Blue Buzz Cut
-  hair/m/lightgreen/buzzcut.png,   m,, Light Green Buzz Cut
-  hair/m/green/buzzcut.png,   m,, Green Buzz Cut
-  hair/m/teal/buzzcut.png,   m,, Teal Buzz Cut
-  hair/m/blonde/buzzcut.png,   m,, Blonde Buzz Cut
-  hair/m/silver/buzzcut.png,   m,, Silver Buzz Cut
-  hair/m/white/buzzcut.png,   m,, White Buzz Cut
+  hair/m/brown/buzzcut.png,   u,l, Brown Buzz Cut
+  hair/m/darkred/buzzcut.png,   u,l, Dark Red Buzz Cut
+  hair/m/orange/buzzcut.png,   u,l, Orange Buzz Cut
+  hair/m/red/buzzcut.png,   u,l, Red Buzz Cut
+  hair/m/pink/buzzcut.png,   u,l, Pink Buzz Cut
+  hair/m/purple/buzzcut.png,   u,l, Purple Buzz Cut
+  hair/m/blue/buzzcut.png,   u,l, Blue Buzz Cut
+  hair/m/periwinkle/buzzcut.png,   u,l, Periwinkle Buzz Cut
+  hair/m/lightblue/buzzcut.png,   u,l, Light Blue Buzz Cut
+  hair/m/lightgreen/buzzcut.png,   u,l, Light Green Buzz Cut
+  hair/m/green/buzzcut.png,   u,l, Green Buzz Cut
+  hair/m/teal/buzzcut.png,   u,l, Teal Buzz Cut
+  hair/m/blonde/buzzcut.png,   u,l, Blonde Buzz Cut
+  hair/m/silver/buzzcut.png,   u,l, Silver Buzz Cut
+  hair/m/white/buzzcut.png,   u,l, White Buzz Cut
 
   hair/f/brown/buzzcut.png,   f,,  Brown Buzz Cut
   hair/f/darkred/buzzcut.png,   f,,  Dark Red Buzz Cut
