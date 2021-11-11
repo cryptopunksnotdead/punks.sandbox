@@ -486,8 +486,6 @@ hair/f/black/big.png, f,, Big Hair Black
 
 ### -- Bob (f)
 
-# basic/f/blondebob.png,   f,,   Blonde Bob     ## fix: Blonde Bob changed to Hair Style II
-unisize/f/blondebob.png,   f,l,   Blonde Bob
 
 hair/f/black/bob.png,  f,, Black Bob
   hair/f/brown/bob.png, f,, Brown Bob
@@ -502,9 +500,16 @@ hair/f/black/bob.png,  f,, Black Bob
   hair/f/lightgreen/bob.png, f,, Light Green Bob
   hair/f/green/bob.png, f,, Green Bob
   hair/f/teal/bob.png, f,, Teal Bob
-  hair/f/blonde/bob.png, f,, Blonde Bob   ## note: overwrites basic/f/blondebob !!!!
   hair/f/silver/bob.png, f,, Silver Bob
   hair/f/white/bob.png, f,, White Bob
+
+
+  unisize/f/blondebob.png,   f,l,   Blonde Bob
+
+  ## note: for easy "pixel perfect" copies keep the "old" attribute for blonde blond for now - why? why not?
+  basic/f/blondebob.png,   f,s,   Blonde Bob     ## todo/check/fix - change Blonde Bob to Hair Style II
+  hair/f/blonde/bob.png, f,s,  Blonder Bob,     ## note: changed for now to "Blonder bob" to not overwrite basic/f/blondebob!!!! - find a better/alt name -why? why not?
+
 
 
 ### -- Buzz Cut (m/f)
