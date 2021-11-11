@@ -66,9 +66,6 @@
 > (Source: [The 10,000 Faces That Launched an NFT Revolution](https://www.wired.com/story/the-10000-faces-that-launched-an-nft-revolution/), Wired)
 
 
-4x  ![](i/wired@4x.png)
-
-
 Original 24x24px Format
 
 ![](i/wired0.png)
@@ -116,11 +113,6 @@ Original 24x24px Format
 > (Source: [10 Things to Know About CryptoPunks]( https://www.christies.com/features/10-things-to-know-about-CryptoPunks-11569-1.aspx), Christie's)
 
 
-
-
-4x  ![](i/christies@4x.png)
-
-
 Original 24x24px Format
 
 ![](i/christies0.png)
@@ -166,7 +158,6 @@ Original 24x24px Format
 > (Source:  [CryptoPunks Top Sales](https://www.larvalabs.com/cryptopunks/topsales))
 
 
-4x  ![](i/top@4x.png)
 
 Original 24x24px Format
 
