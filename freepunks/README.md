@@ -26,7 +26,7 @@
 > Right-clicking a JPEG, saving it, and displaying it back
 > to the non-fungible [art] token owner a way to point out the Emperor has no clothes.
 >
-> (Source:  [What's the Hell is Right-Clicker (and Save) Mentality!?](https://www.vice.com/en/article/5dgzed/what-the-hell-is-right-clicker-mentality))
+> (Source:  [What the Hell is Right-Clicker (and Save) Mentality!?](https://www.vice.com/en/article/5dgzed/what-the-hell-is-right-clicker-mentality))
 
 
 
@@ -58,7 +58,7 @@
 > (Source: [The 10,000 Faces That Launched an NFT Revolution](https://www.wired.com/story/the-10000-faces-that-launched-an-nft-revolution/), Wired)
 
 
-4x  ![](i/wired.png)
+4x  ![](i/wired@4x.png)
 
 
 Original 24x24px Format
@@ -84,20 +84,33 @@ Original 24x24px Format
 ![](i/wired7@4x.png)
 
 
-(Image Credits:  Yes, Free (Pixel) Punks - Courtesy of Crypto Punk's Not Dead)
+
+(Image Credits: [Free (Pixel) Punks Generate Script](generate.rb) - Courtesy of Crypto Punk's Not Dead)
 
 
 
 
-## Christie's Auction (21st Century Evening Sale) on May 11st, 2021
 
+## Christie's Auction (21st Century Evening Sale) May 2021
 
+> For the first time, 5,184 pixels' worth of a revolutionary
+> non-fungible [art] token project will go up for auction
+> at a traditional auction house, courtesy of the project
+> creators and pioneers themselves.
+>
+> [...]
+>
+> Larva Labs (2005), CryptoPunks, 2017. Non-fungible token (jpg).
+> 24 x 24 pixels each, 9 'CryptoPunks' total.
+> Estimate: $7,000,000-9,000,0000.
+> Offered in 21st Century Evening Sale on 11 May at Christie's in New York
+>
 > (Source: [10 Things to Know About CryptoPunks]( https://www.christies.com/features/10-things-to-know-about-CryptoPunks-11569-1.aspx), Christie's)
 
 
 
 
-4x  ![](i/christies.png)
+4x  ![](i/christies@4x.png)
 
 
 Original 24x24px Format
@@ -126,16 +139,26 @@ Original 24x24px Format
 
 
 
-(Image Credits:  Yes, Free (Pixel) Punks - Courtesy of Crypto Punk's Not Dead)
+(Image Credits: [Free (Pixel) Punks Generate Script](generate.rb) - Courtesy of Crypto Punk's Not Dead)
 
 
 
 ## Top Sales
 
+> 1.  Punk #3100  - 4.2KΞ ($7.58M) - March 11st, 2021
+> 2.  Punk #7804 - 4.2KΞ ($7.57M) - March 11st, 2021
+> 3.  Punk #5217  - 2.25KΞ ($5.45M) - July 30th, 2021
+> 4.  Punk #8857 - 2KΞ ($6.63M) - September 11st, 2021
+> 5.  Punk #7252 - 1.6KΞ ($5.33M) - August 24th, 2021
+> 6.  Punk #2140 - 1.6KΞ ($3.76M) - July 30th, 2021
+> 7.  Punk #2338  - 1.5KΞ ($4.32M) - August 6th, 2021
+> 8.  Punk #6275  - 1.32KΞ ($5.12M) - September 4th, 2021
+> 9.  Punk #7252  -  1KΞ ($2.53M)  - August 4th, 2021
+>
 > (Source:  [CryptoPunks Top Sales](https://www.larvalabs.com/cryptopunks/topsales))
 
 
-4x  ![](i/top.png)
+4x  ![](i/top@4x.png)
 
 Original 24x24px Format
 
@@ -163,7 +186,7 @@ Original 24x24px Format
 
 
 
-(Image Credits:  Yes, Free (Pixel) Punks - Courtesy of Crypto Punk's Not Dead)
+(Image Credits: [Free (Pixel) Punks Generate Script](generate.rb) - Courtesy of Crypto Punk's Not Dead)
 
 
 
