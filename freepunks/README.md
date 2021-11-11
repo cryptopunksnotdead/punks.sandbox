@@ -1,6 +1,14 @@
 # Free (Pixel) Punks - Famous Top Exclusive Legendary Premium Art Collections - Right-Click and Save to Own 100% Forever
 
+
+[Wired (Magazine) December 2021/January 2022](#wired-magazine-december-2021january-2022) •
+[Christie's Auction (21st Century Evening Sale) May 2021](christies-auction-21st-century-evening-sale-may-2021) •
+[Top Sales](#top-sale)
+
+
+
 "Pixel Perfect" Pixel Punk Public Domain "Clean-Room" Generation from Scratch / Zero
+
 
 
 > What is the "right-clicker mentality"?
@@ -26,7 +34,7 @@
 > Right-clicking a JPEG, saving it, and displaying it back
 > to the non-fungible [art] token owner a way to point out the Emperor has no clothes.
 >
-> (Source:  [What the Hell is Right-Clicker (and Save) Mentality!?](https://www.vice.com/en/article/5dgzed/what-the-hell-is-right-clicker-mentality))
+> (Source:  [What the Hell is Right-Clicker (and Save) Mentality!?](https://www.vice.com/en/article/5dgzed/what-the-hell-is-right-clicker-mentality), Vice)
 
 
 
