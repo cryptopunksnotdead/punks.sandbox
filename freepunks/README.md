@@ -1,18 +1,17 @@
+_"Pixel Perfect" Pixel Punk Public Domain "Clean-Room" Generation from Scratch / Zero_
+
 # Free (Pixel) Punks - Famous Top Exclusive Legendary Premium Art Collections - Right-Click and Save to Own 100% Forever
 
 
-[Wired (Magazine) December 2021/January 2022](#wired-magazine-december-2021january-2022) •
-[Christie's Auction (21st Century Evening Sale) May 2021](christies-auction-21st-century-evening-sale-may-2021) •
-[Top Sales](#top-sale)
+Art Collections
+
+- [Wired (Magazine) December 2021/January 2022](#wired-magazine-december-2021january-2022) •
+- [Christie's Auction (21st Century Evening Sale) May 2021](christies-auction-21st-century-evening-sale-may-2021) •
+- [Top Sales](#top-sale)
 
 
+## What is the "right-clicker mentality"!?
 
-"Pixel Perfect" Pixel Punk Public Domain "Clean-Room" Generation from Scratch / Zero
-
-
-
-> What is the "right-clicker mentality"?
->
 > Quite literally, it is referring to one's ability to right-click
 > on any image you see online to bring up a menu
 > and select the "save" option in order to save a copy of the image
@@ -192,5 +191,5 @@ Original 24x24px Format
 
 ## Questions? Comments?
 
-Post them on the [CryptoPunksDe reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
+Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
 
