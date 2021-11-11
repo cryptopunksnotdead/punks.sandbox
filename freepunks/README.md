@@ -5,8 +5,8 @@ _"Pixel Perfect" Pixel Punk Public Domain "Clean-Room" Generation from Scratch /
 
 Art Collections
 
-- [Wired (Magazine) December 2021/January 2022](#wired-magazine-december-2021january-2022) •
-- [Christie's Auction (21st Century Evening Sale) May 2021](christies-auction-21st-century-evening-sale-may-2021) •
+- [Wired (Magazine) December 2021/January 2022](#wired-magazine-december-2021january-2022)
+- [Christie's Auction (21st Century Evening Sale) May 2021](christies-auction-21st-century-evening-sale-may-2021)
 - [Top Sales](#top-sale)
 
 
