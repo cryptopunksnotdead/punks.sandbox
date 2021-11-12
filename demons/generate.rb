@@ -10,32 +10,35 @@ require 'cryptopunks'
 
 
 
+## read/parse punk attributes in comma-separated values (.csv) format
 
-punks = [
-  ["Demon"],
-  ["Demon Female"],
-  ["Demon Female (U)"],
-  ["Demon", "Big Hair Orange", "Demon Horns" ],
-  ["Demon Female", "Big Hair Orange", "Demon Horns", "Red Lipstick", "Earring" ],
-  ["Demon Female (U)", "Big Hair Orange", "Demon Horns", "Red Lipstick", "Earring" ],
+punks = Csv.parse( <<TXT )
+  Demon
+  Demon Female
+  Demon Female (U)
+  Demon, Big Hair Orange, Demon Horns
+  Demon Female, Big Hair Orange, Demon Horns, Red Lipstick, Earring
+  Demon Female (U), Big Hair Orange, Demon Horns, Red Lipstick, Earring
 
-  ["Demon Female", "Orange Side", "Demon Horns", "Big Shades", "Pink Lipstick", "Earring"],
-  ["Demon", "Crazy Hair", "Demon Horns", "Bubble Gum"],
-  ["Demon Female", "Pink Bob", "Demon Horns", "Silver Earring", "Choker", "Cigarette" ],
+  Demon Female, Orange Side, Demon Horns, Big Shades, Pink Lipstick, Earring
+  Demon, Crazy Hair, Demon Horns, Bubble Gum
+  Demon Female, Pink Bob, Demon Horns, Silver Earring, Choker, Cigarette
 
-  ["Demon", "Purple Hair", "Demon Horns", "Spots", "3D Glasses"],
-  ["Demon Female", "Periwinkle Afro", "Demon Horns", "Gold Chain", "Purple Lipstick", "Earring" ],
-  ["Demon Female (U)", "Periwinkle Afro", "Demon Horns", "Gold Chain", "Purple Lipstick", "Earring" ],
+  Demon, Purple Hair, Demon Horns, Spots, 3D Glasses
+  Demon Female, Periwinkle Afro, Demon Horns, Gold Chain, Purple Lipstick, Earring
+  Demon Female (U), Periwinkle Afro, Demon Horns, Gold Chain, Purple Lipstick, Earring
 
-  ["Demon", "Big Hair Light Blue", "Demon Horns", "Heart Shades"],
-  ["Demon Female", "Light Blue Bob", "Demon Horns", "Heart Shades"],
+  Demon, Big Hair Light Blue, Demon Horns, Heart Shades
+  Demon Female, Light Blue Bob, Demon Horns, Heart Shades
 
-  ["Demon", "Vampire Hair", "Demon Horns", "Spots", "Smile", "Pipe"],
-]
+  Demon, Vampire Hair, Demon Horns, Spots, Smile, Pipe
+TXT
 
 
 
-composite = ImageComposite.new( 3, 5 )
+
+composite = ImageComposite.new( 3, 5 )  ## 3x5 grid (=15 punks)
+
 
 
 punks.each_with_index do |attributes,i|
