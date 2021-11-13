@@ -40,17 +40,15 @@ composite     = ImageComposite.new( 6, 5 )  ## 6x5 grid (=30 punks)
 
 
 punkettes.each_with_index do |attributes,i|
-  punk = Punks::Image.generate( *attributes )
-
   name = "punkette" + ('%02d' % i)
+
+  punk = Punks::Image.generate( *attributes )
 
   punk.zoom(4).save( "./tmp/#{name}@4x.png" )
 
-  composite    << punk
+  composite << punk
 
-  ## auto-add (N) for Natural to archetype
-  attributes_natural = ["#{attributes[0]} (N)"] + attributes[1..-1]
-  punk = Punks::Image.generate( *attributes_natural )
+  punk = Punks::Image.generate( *attributes, style: 'natural' )
 
   punk.zoom(4).save( "./tmp/#{name}(ii)@4x.png" )
 
@@ -82,21 +80,19 @@ composite  = ImageComposite.new( 6, 3 )  ## 6x3 grid (=18 punks)
 
 
 tops.each_with_index do |attributes,i|
-  punk = Punks::Image.generate( *attributes )
-
   name = "top" + ('%02d' % i)
+
+  punk = Punks::Image.generate( *attributes )
 
   punk.zoom(4).save( "./tmp/#{name}@4x.png" )
 
-  composite    << punk
+  composite << punk
 
-  ## auto-add (N) for Natural to archetype
-  attributes_natural = ["#{attributes[0]} (N)"] + attributes[1..-1]
-  punk = Punks::Image.generate( *attributes_natural )
+  punk = Punks::Image.generate( *attributes, style: 'natural' )
 
   punk.zoom(4).save( "./tmp/#{name}(ii)@4x.png" )
 
-  composite    << punk
+  composite << punk
 end
 
 

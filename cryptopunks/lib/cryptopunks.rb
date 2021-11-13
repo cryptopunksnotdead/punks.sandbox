@@ -50,7 +50,19 @@ module Cryptopunks
   end
 
   class Image
-    def self.generate( *values )
+    def self.generate( *values, style: nil )
+
+#####  add style option / hack - why? why not?
+  if style
+    if style.downcase[0] == 'n'  ## starting with n - always assume natural(s)
+      ## auto-add (N) for Natural to archetype
+      values = ["#{values[0]} (N)"] + values[1..-1]
+    else
+      puts "!! ERROR - unknown punk style #{style}; sorry"
+      exit 1
+    end
+  end
+
 
 ###### hack for black&white
 ##   auto-add b&w (black&white) to all attribute names e.g.
