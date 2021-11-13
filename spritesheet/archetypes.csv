@@ -48,17 +48,20 @@ natural/big/human-female_lighter.png, Human, f, s,    Human, 4,  Female 4 | Woma
 
 
 basic/zombie-male.png,          Zombie, m, l,   Zombie,,
+natural/big/zombie-male.png,    Zombie, m, l,   Zombie,,
 unisize/zombie-female.png,      Zombie, f, l,   Zombie,,    Lady Zombie
 basic/zombie-female.png,        Zombie, f, s,   Zombie,,    Lady Zombie
 
 
 basic/ape-male.png,             Ape,    m, l,    Ape,,
+natural/big/ape-male.png,       Ape,    m, l,    Ape,,
 unisize/ape-female.png,         Ape,    f, l,    Ape,,       Lady Ape
 basic/ape-female.png,           Ape,    f, s,    Ape,,       Lady Ape
 
 
 1bit/alien-i.png,               Alien, m, l,     Alien, B&W,  Alien 1-Bit | Alien Male 1-Bit
 basic/alien-male.png,           Alien,  m, l,    Alien,,
+natural/big/alien-male.png,     Alien,  m, l,    Alien,,
 1bit/alien-ii.png,              Alien,  f, l,    Alien, B&W,  Alien Female 1-Bit
 unisize/alien-female.png,       Alien,  f, l,    Alien,,     Lady Alien
 basic/alien-female.png,         Alien,  f, s,    Alien,,     Lady Alien

@@ -12,7 +12,7 @@ require 'cryptopunks'
 
 ## read/parse punk attributes in comma-separated values (.csv) format
 
-punks = Csv.parse( <<TXT )
+punkettes = Csv.parse( <<TXT )
 Female 1, Mohawk Dark
 Female 1, Purple Lipstick,    Earring,     Messy Hair
 Female 1, Purple Lipstick, Headband
@@ -39,10 +39,10 @@ TXT
 composite     = ImageComposite.new( 6, 5 )  ## 6x5 grid (=30 punks)
 
 
-punks.each_with_index do |attributes,i|
+punkettes.each_with_index do |attributes,i|
   punk = Punks::Image.generate( *attributes )
 
-  name = "punk" + ('%02d' % i)
+  name = "punkette" + ('%02d' % i)
 
   punk.zoom(4).save( "./tmp/#{name}@4x.png" )
 
@@ -59,8 +59,52 @@ end
 
 
 
-composite.save( "./tmp/punks.png" )
-composite.zoom(4).save( "./tmp/punks@4x.png" )
+composite.save( "./tmp/punkettes.png" )
+composite.zoom(4).save( "./tmp/punkettes@4x.png" )
+
+
+
+
+tops = Csv.parse( <<TXT )
+Alien,  Headband
+Alien,  Cap Forward, Pipe
+Ape,    Gold Chain,  Knitted Cap
+Zombie, Wild Hair
+Zombie, Chinstrap,   Earring,    Crazy Hair
+Ape,    Knitted Cap
+Zombie, Mohawk Thin
+Zombie, Shadow Beard, Mohawk Dark
+Zombie, Chinstrap,    Earring,    Crazy Hair
+TXT
+
+
+composite  = ImageComposite.new( 6, 3 )  ## 6x3 grid (=18 punks)
+
+
+tops.each_with_index do |attributes,i|
+  punk = Punks::Image.generate( *attributes )
+
+  name = "top" + ('%02d' % i)
+
+  punk.zoom(4).save( "./tmp/#{name}@4x.png" )
+
+  composite    << punk
+
+  ## auto-add (N) for Natural to archetype
+  attributes_natural = ["#{attributes[0]} (N)"] + attributes[1..-1]
+  punk = Punks::Image.generate( *attributes_natural )
+
+  punk.zoom(4).save( "./tmp/#{name}(ii)@4x.png" )
+
+  composite    << punk
+end
+
+
+
+composite.save( "./tmp/tops.png" )
+composite.zoom(4).save( "./tmp/tops@4x.png" )
+
+
 
 
 puts "bye"
