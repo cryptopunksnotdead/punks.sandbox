@@ -96,10 +96,14 @@ archetypes.each do |rec|
   end
 
   if path.index( 'faceless/' )
-    ## hack - always auto-add u (e.g. Male 1 (F) or such)
+    ## hack - always auto-add f (e.g. Male 1 (F) or such)
     names = names.map { |name| name + " (F)"  }
   end
 
+  if path.index( 'natural/' )
+    ## hack - always auto-add n (e.g. Female 1 (N) or such)
+    names = names.map { |name| name + " (N)"  }
+  end
 
 
 

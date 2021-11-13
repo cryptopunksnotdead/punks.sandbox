@@ -40,6 +40,12 @@ basic/human-female_dark.png,    Human, f, s,    Human, 2,  Female 2 | Woman 2 | 
 basic/human-female_light.png,   Human, f, s,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
 basic/human-female_lighter.png, Human, f, s,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
 
+natural/big/human-female_darker.png,  Human, f, s,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
+natural/big/human-female_dark.png,    Human, f, s,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
+natural/big/human-female_light.png,   Human, f, s,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
+natural/big/human-female_lighter.png, Human, f, s,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
+
+
 
 basic/zombie-male.png,          Zombie, m, l,   Zombie,,
 unisize/zombie-female.png,      Zombie, f, l,   Zombie,,    Lady Zombie
