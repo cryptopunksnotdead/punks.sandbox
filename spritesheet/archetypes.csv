@@ -23,6 +23,11 @@ basic/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂
 basic/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂ 3
 basic/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
 
+natural/human-male_darker.png,    Human, m, l,    Human, 1,  Male 1 | Man 1 |  ♂ 1
+natural/human-male_dark.png,      Human, m, l,    Human, 2,  Male 2 | Man 2 |  ♂ 2
+natural/human-male_light.png,     Human, m, l,    Human, 3,  Male 3 | Man 3 |  ♂ 3
+natural/human-male_lighter.png,   Human, m, l,    Human, 4,  Male 4 | Man 4 |  ♂ 4
+
 
 1bit/human-ii.png,              Human, f, l,    Human, B&W,  Female B&W | Female 1-Bit
 faceless/human-ii_darker.png,   Human, f, l,    Human, 1,  Female 1-I | Female 1 | Woman 1 | Lady 1 | ♀ 1
@@ -40,28 +45,31 @@ basic/human-female_dark.png,    Human, f, s,    Human, 2,  Female 2 | Woman 2 | 
 basic/human-female_light.png,   Human, f, s,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
 basic/human-female_lighter.png, Human, f, s,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
 
-natural/big/human-female_darker.png,  Human, f, s,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
-natural/big/human-female_dark.png,    Human, f, s,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
-natural/big/human-female_light.png,   Human, f, s,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
-natural/big/human-female_lighter.png, Human, f, s,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
+natural/human-female_darker.png,  Human, f, s,    Human, 1,  Female 1 | Woman 1 | Lady 1 | ♀ 1
+natural/human-female_dark.png,    Human, f, s,    Human, 2,  Female 2 | Woman 2 | Lady 2 | ♀ 2
+natural/human-female_light.png,   Human, f, s,    Human, 3,  Female 3 | Woman 3 | Lady 3 | ♀ 3
+natural/human-female_lighter.png, Human, f, s,    Human, 4,  Female 4 | Woman 4 | Lady 4 | ♀ 4
 
 
 
 basic/zombie-male.png,          Zombie, m, l,   Zombie,,
-natural/big/zombie-male.png,    Zombie, m, l,   Zombie,,
+natural/zombie-male.png,        Zombie, m, l,   Zombie,,
+natural/zombie-male_v2.png,     Zombie, m, l,   Zombie,,
 unisize/zombie-female.png,      Zombie, f, l,   Zombie,,    Lady Zombie
 basic/zombie-female.png,        Zombie, f, s,   Zombie,,    Lady Zombie
 
 
 basic/ape-male.png,             Ape,    m, l,    Ape,,
-natural/big/ape-male.png,       Ape,    m, l,    Ape,,
+natural/ape-male.png,           Ape,    m, l,    Ape,,
+natural/ape-male_v2.png,        Ape,    m, l,    Ape,,
 unisize/ape-female.png,         Ape,    f, l,    Ape,,       Lady Ape
 basic/ape-female.png,           Ape,    f, s,    Ape,,       Lady Ape
 
 
 1bit/alien-i.png,               Alien, m, l,     Alien, B&W,  Alien 1-Bit | Alien Male 1-Bit
 basic/alien-male.png,           Alien,  m, l,    Alien,,
-natural/big/alien-male.png,     Alien,  m, l,    Alien,,
+natural/alien-male.png,         Alien,  m, l,    Alien,,
+natural/alien-male_v2.png,      Alien,  m, l,    Alien,,
 1bit/alien-ii.png,              Alien,  f, l,    Alien, B&W,  Alien Female 1-Bit
 unisize/alien-female.png,       Alien,  f, l,    Alien,,     Lady Alien
 basic/alien-female.png,         Alien,  f, s,    Alien,,     Lady Alien
@@ -73,7 +81,10 @@ basic/alien-female.png,         Alien,  f, s,    Alien,,     Lady Alien
 # planet apes - archetypes
 
 planet-apes/ape-zombie-male.png,   Zombie,  m, l,  Zombie (Ape),,
+natural/zombie-male_(ape).png,     Zombie,  m, l,  Zombie (Ape),,
+
 planet-apes/ape-alien-male.png,    Alien,   m, l, Alien (Ape),,
+natural/alien-male_(ape).png,      Alien,   m, l, Alien (Ape),,
 
 
 ##################################
@@ -81,6 +92,7 @@ planet-apes/ape-alien-male.png,    Alien,   m, l, Alien (Ape),,
 
 1bit/demon-i.png,                Demon,   m, l, Demon, B&W,  Demon 1-Bit | Demon Male 1-Bit
 more/demon-male.png,             Demon,   m, l, Demon,,
+natural/demon-male.png,          Demon,   m, l, Demon,,
 1bit/demon-ii.png,               Demon,   f, l, Demon, B&W, Demon Female 1-Bit
 unisize/demon-female.png,        Demon,   f, l, Demon,,   Lady Demon
 more/demon-female.png,           Demon,   f, s, Demon,,   Lady Demon
@@ -111,6 +123,7 @@ more/robot-female.png,           Robot,   f, s, Robot,,   Lady Robot
 
 
 more/skeleton-male.png,          Skeleton, m, l, Skeleton,,
+natural/skeleton-male.png,       Skeleton, m, l, Skeleton,,
 unisize/skeleton-female.png,     Skeleton, f, l, Skeleton,,  Lady Skeleton
 more/skeleton-female.png,        Skeleton, f, s, Skeleton,,  Lady Skeleton
 

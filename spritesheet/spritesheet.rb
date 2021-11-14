@@ -101,8 +101,12 @@ archetypes.each do |rec|
   end
 
   if path.index( 'natural/' )
+    ## note:  use (N2) marker for v2 archetypes
+    ##         and (N)  for "regular"
+    key = path.index( "v2" ) ? 'N2' : 'N'
+
     ## hack - always auto-add n (e.g. Female 1 (N) or such)
-    names = names.map { |name| name + " (N)"  }
+    names = names.map { |name| name + " (#{key})"  }
   end
 
 

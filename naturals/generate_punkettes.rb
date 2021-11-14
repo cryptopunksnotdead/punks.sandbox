@@ -1,7 +1,7 @@
 #####################
 #  generate "natural" punks; to run use:
 #
-#   $ ruby ./generate.rb
+#   $ ruby ./generate_punkettes.rb
 
 
 
@@ -59,47 +59,6 @@ end
 
 composite.save( "./tmp/punkettes.png" )
 composite.zoom(4).save( "./tmp/punkettes@4x.png" )
-
-
-
-
-tops = Csv.parse( <<TXT )
-Alien,  Headband
-Alien,  Cap Forward, Pipe
-Ape,    Gold Chain,  Knitted Cap
-Zombie, Wild Hair
-Zombie, Chinstrap,   Earring,    Crazy Hair
-Ape,    Knitted Cap
-Zombie, Mohawk Thin
-Zombie, Shadow Beard, Mohawk Dark
-Zombie, Chinstrap,    Earring,    Crazy Hair
-TXT
-
-
-composite  = ImageComposite.new( 6, 3 )  ## 6x3 grid (=18 punks)
-
-
-tops.each_with_index do |attributes,i|
-  name = "top" + ('%02d' % i)
-
-  punk = Punks::Image.generate( *attributes )
-
-  punk.zoom(4).save( "./tmp/#{name}@4x.png" )
-
-  composite << punk
-
-  punk = Punks::Image.generate( *attributes, style: 'natural' )
-
-  punk.zoom(4).save( "./tmp/#{name}(ii)@4x.png" )
-
-  composite << punk
-end
-
-
-
-composite.save( "./tmp/tops.png" )
-composite.zoom(4).save( "./tmp/tops@4x.png" )
-
 
 
 

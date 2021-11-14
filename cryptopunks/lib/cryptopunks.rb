@@ -54,13 +54,15 @@ module Cryptopunks
 
 #####  add style option / hack - why? why not?
   if style
-    if style.downcase[0] == 'n'  ## starting with n - always assume natural(s)
-      ## auto-add (N) for Natural to archetype
-      values = ["#{values[0]} (N)"] + values[1..-1]
-    else
-      puts "!! ERROR - unknown punk style #{style}; sorry"
-      exit 1
-    end
+    values =  if style.downcase.index( 'natural') && style.downcase.index( '2')
+                 ["#{values[0]} (N2)"] + values[1..-1]
+              elsif style.downcase[0] == 'n'  ## starting with n - always assume natural(s)
+                 ## auto-add (N) for Natural to archetype
+                 ["#{values[0]} (N)"] + values[1..-1]
+              else
+                puts "!! ERROR - unknown punk style #{style}; sorry"
+                exit 1
+              end
   end
 
 
