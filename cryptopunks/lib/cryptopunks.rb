@@ -90,7 +90,7 @@ module Cryptopunks
        pp values
     end
 
-       img = Cryptopunks.generator.generate( *values )
+       img = Cryptopunks.generator.generate( *values, style: style )
        ## note: unwrap inner image before passing on to c'tor (requires ChunkyPNG image for now)
        new( img.image )
      end

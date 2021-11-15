@@ -168,7 +168,9 @@ module Cryptopunks
 
 
 
- def find_meta( q, gender: nil, size: nil )  ## gender (m/f) required for attributes!!!
+ def find_meta( q, gender: nil,
+                   size: nil,
+                   style: nil )   ## note: gender (m/f) required for attributes!!!
 
     key = normalize_key( q )  ## normalize q(uery) string/symbol
 
@@ -185,15 +187,30 @@ module Cryptopunks
                  normalize_size( size )
                end
 
+       ###
+       #  try (auto-add) style-specific version first (fallback to "regular" if not found)
+       if style
+         ## for now only support natural series
+         style_key =  if style.downcase.start_with?( 'natural' )
+                          'natural'
+                      else
+                        puts "!! ERROR - unknown attribute style #{style}; sorry"
+                        exit 1
+                      end
+
+         keys << "#{key}#{style_key}_(#{gender}+#{size})"
+         ## auto-add (u)niversal size as fallback
+         keys << "#{key}#{style_key}_(#{gender}+u)"  if size == 's' || size == 'l'
+         ## auto-add u(nisex) as fallback
+         keys << "#{key}#{style_key}_(u+#{size})"    if gender == 'f' || gender == 'm'
+       end
+
+
        keys << "#{key}_(#{gender}+#{size})"
-
-       if size == 's' || size == 'l'  ## auto-add (u)niversal size as fallback
-         keys << "#{key}_(#{gender}+u)"
-       end
-
-       if gender == 'f' || gender == 'm'
-         keys << "#{key}_(u+#{size})"     ### auto-add u(nisex) as fallback
-       end
+       ## auto-add (u)niversal size as fallback
+       keys << "#{key}_(#{gender}+u)"  if size == 's' || size == 'l'
+       ## auto-add u(nisex) as fallback
+       keys << "#{key}_(u+#{size})"    if gender == 'f' || gender == 'm'
     else
        keys << key
     end
@@ -217,8 +234,8 @@ module Cryptopunks
  end
 
 
- def find( q, gender: nil, size: nil )  ## gender (m/f) required for attributes!!!
-    rec = find_meta( q, gender: gender, size: size )
+ def find( q, gender: nil, size: nil, style: nil )  ## gender (m/f) required for attributes!!!
+    rec = find_meta( q, gender: gender, size: size, style: style )
 
     ## return image if record found
     rec ? @sheet[ rec.id ] : nil
@@ -227,7 +244,7 @@ module Cryptopunks
 
 
 
- def to_recs( *values )
+ def to_recs( *values, style: nil )
       archetype_name  = values[0]
 
       ### todo/fix:  check for nil/not found!!!!
@@ -248,7 +265,8 @@ module Cryptopunks
       attribute_names.each do |attribute_name|
         attribute = find_meta( attribute_name,
                                gender: attribute_gender,
-                               size:   attribute_size )
+                               size:   attribute_size,
+                               style:  style )
         if attribute.nil?
            puts "!! ERROR - attribute >#{attribute_name}< for (#{attribute_gender}+#{attribute_size}) not found; sorry"
            exit 1
@@ -262,12 +280,13 @@ module Cryptopunks
 
 
 
- def generate_image( *values, background: nil )
+ def generate_image( *values, style: nil,
+                              background: nil )
 
     ids = if values[0].is_a?( Integer )  ## assume integer number (indexes)
               values
           else ## assume strings (names)
-              to_recs( *values ).map { |rec| rec.id }
+              to_recs( *values, style: style ).map { |rec| rec.id }
           end
 
 

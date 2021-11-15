@@ -26,7 +26,7 @@ Zombie, Chinstrap,    Earring,    Crazy Hair
 TXT
 
 
-composite  = ImageComposite.new( 9, 3 )  ## 9x3 grid (=27 punks)
+composite  = ImageComposite.new( 6, 3 )  ## 6x3 grid (=18 punks)
 
 
 tops.each_with_index do |attributes,i|
@@ -47,8 +47,6 @@ tops.each_with_index do |attributes,i|
   punk = Punks::Image.generate( *attributes, style: 'natural_v2' )
 
   punk.zoom(4).save( "./tmp/#{name}(iii)@4x.png" )
-
-  composite << punk
 end
 
 

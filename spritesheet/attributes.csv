@@ -659,3 +659,30 @@ hair/f/black/clown.png,   f,,  Clown Hair Black
 1bit/u/zombie-eyes.png,  u,l,            Zombie Eyes B&W
 1bit/u/zombie-mouth.png, u,l,            Zombie Mouth B&W
 
+
+######
+# All natural "border-less/outline-less" series
+
+natural/m/bigbeard.png,      m,l,  Big Beard (Natural)
+natural/m/goat.png,          m,l,  Goat (Natural)
+
+natural/m/capforward.png,    u,l,  Cap Forward (Natural)
+natural/m/cigarette.png,     u,l,  Cigarette (Natural)
+natural/m/dorag.png,         u,l,  Do-rag (Natural)
+natural/m/earring.png,       u,l,  Earring (Natural),  Gold Earring (Natural)
+natural/m/headband.png,      u,l,  Headband (Natural)
+natural/m/knittedcap.png,    u,l,  Knitted Cap (Natural)
+natural/m/mohawk.png,        u,l,  Mohawk (Natural)
+natural/m/mohawkthin.png,    u,l,  Mohawk Thin (Natural)
+natural/m/pipe.png,          u,l,  Pipe (Natural)
+natural/m/policecap.png,     u,l,  Police Cap (Natural)
+natural/m/shavedhead.png,    u,l,  Shaved Head (Natural)
+natural/m/vr.png,            u,l,  VR (Natural)
+
+natural/f/cigarette.png,     f,s,  Cigarette (Natural)
+natural/f/earring.png,       f,s,  Earring (Natural),  Gold Earring (Natural)
+natural/f/mohawk.png,        f,s,  Mohawk (Natural)
+natural/f/mohawkthin.png,    f,s,  Mohawk Thin (Natural)
+natural/f/pipe.png,          f,s,  Pipe (Natural)
+
+
