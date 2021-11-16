@@ -81,12 +81,13 @@ more/f/clowneyes_purple.png,  f,s,  Clown Eyes Purple
 
 ## - Blemishes
 
-basic/m/mole.png,    m,,          Mole
+basic/m/mole.png,    u,l,          Mole
 basic/f/mole.png,   f,,           Mole
-basic/m/rosycheeks.png,    m,,        Rosy Cheeks
+basic/m/rosycheeks.png,    u,l,        Rosy Cheeks
 basic/f/rosycheeks.png,   f,,         Rosy Cheeks
-basic/m/spots.png,    m,,             Spots
+basic/m/spots.png,    u,l,             Spots
 basic/f/spots.png,   f,,              Spots
+
 
 ## - Nose
 
@@ -178,30 +179,31 @@ basic/m/shadowbeard.png,    m,,       Shadow Beard
 
 ## - Hat & More
 
-basic/m/bandana.png,      m,,  Bandana
-basic/f/bandana.png,   f,,    Bandana
-basic/m/beanie.png,       m,,  Beanie
-basic/f/beanie.png,   f,,   Beanie
-basic/m/capforward.png,    u,, Cap Forward
+basic/m/bandana.png,      u,l,  Bandana
+basic/f/bandana.png,      f,,    Bandana
+basic/m/beanie.png,       u,l,  Beanie
+basic/f/beanie.png,        f,,   Beanie
+basic/m/capforward.png,    u,l, Cap Forward
 basic/f/capforward.png,   f,, Cap Forward
-basic/m/cowboyhat.png,    m,,  Cowboy Hat
-basic/f/cowboyhat.png,   f,,   Cowboy Hat
-basic/m/dorag.png,    m,,    Do-rag
-basic/f/dorag.png,   f,,     Do-rag
-basic/m/fedora.png,    m,,    Fedora,   Fedora 1
-basic/f/fedora.png,   f,,      Fedora,  Fedora 1
-basic/m/headband.png,    u,,        Headband
-basic/f/headband.png,   f,,         Headband
-basic/m/hoodie.png,    m,,          Hoodie
-basic/f/hoodie.png,   f,,           Hoodie
-basic/m/knittedcap.png,    u,,    Knitted Cap
+basic/m/cowboyhat.png,    u,l,  Cowboy Hat
+basic/f/cowboyhat.png,    f,,   Cowboy Hat
+basic/m/dorag.png,        u,l,    Do-rag
+basic/f/dorag.png,         f,,     Do-rag
+basic/m/fedora.png,        u,l,    Fedora,   Fedora 1
+basic/f/fedora.png,        f,,      Fedora,  Fedora 1
+basic/m/headband.png,       u,l,        Headband
+basic/f/headband.png,       f,,         Headband
+basic/m/hoodie.png,         m,,          Hoodie
+unisize/f/hoodie.png,       f,l,         Hoodie
+basic/f/hoodie.png,         f,s,           Hoodie
+basic/m/knittedcap.png,    u,l,    Knitted Cap
 basic/f/knittedcap.png,   f,,     Knitted Cap
 basic/f/pilothelmet.png,   f,,  Pilot Helmet
-basic/m/policecap.png,    m,,    Police Cap
+basic/m/policecap.png,    u,l,    Police Cap
 basic/f/policecap.png,   f,,     Police Cap
 basic/f/tasslehat.png,   f,,           Tassle Hat
 basic/f/tiara.png,   f,,              Tiara
-basic/m/tophat.png,    m,,            Top Hat
+basic/m/tophat.png,    u,l,            Top Hat
 basic/f/tophat.png,   f,,             Top Hat
 
 
@@ -390,12 +392,12 @@ basic/f/pinkwithhat.png,   f,,  Pink with Hat
 basic/m/purplehair.png,    m,,       Purple Hair
 basic/f/purplehair.png,   f,,        Purple Hair
 basic/f/redmohawk.png,   f,,          Red Mohawk
-basic/m/shavedhead.png,    m,,        Shaved Head
+basic/m/shavedhead.png,    u,l,        Shaved Head
 basic/f/shavedhead.png,   f,,         Shaved Head
 basic/f/straighthair.png,   f,,        Straight Hair
 basic/f/straighthairblonde.png,   f,,  Straight Hair Blonde
 basic/f/straighthairdark.png,   f,,    Straight Hair Dark
-basic/m/stringyhair.png,    m,,         Stringy Hair
+basic/m/stringyhair.png,    u,l,         Stringy Hair
 basic/f/stringyhair.png,   f,,          Stringy Hair
 basic/m/vampirehair.png,    m,,     Vampire Hair
 basic/f/wildblonde.png,   f,,        Wild Blonde
