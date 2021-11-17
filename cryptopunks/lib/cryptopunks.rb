@@ -90,10 +90,47 @@ module Cryptopunks
        pp values
     end
 
+
+    # note: female mouth by default has "custom" colors (not black)
+    #          for every 1/2/3/4 (human) skin tone and for zombie
+    #   auto-"magically" add mapping
+    #
+    #  todo/check/fix - add more "contraints"
+    #    for mapping to only kick-in for "basic" versions
+    #      and not "colored" e.g. golden and such - why? why not?
+    #
+    #    move this mapping here to "post-lookup" processing
+    #   to get/incl. more "meta" attribute info  - why? why not?
+    if archetype_key.index( 'female1' ) ||
+       archetype_key.index( 'female2' ) ||
+       archetype_key.index( 'female3' ) ||
+       archetype_key.index( 'female4' ) ||
+       archetype_key.index( 'zombiefemale' )
+
+      values = [values[0]] + values[1..-1].map do |attribute|
+        attribute_key = Generator.normalize_key( attribute )
+
+        if attribute_key == 'smile' || attribute_key == 'frown'
+          attribute +=   if    archetype_key.index( 'zombiefemale' ) then ' Zombie'
+                         elsif archetype_key.index( 'female1' )      then ' 1'
+                         elsif archetype_key.index( 'female2' )      then ' 2'
+                         elsif archetype_key.index( 'female3' )      then ' 3'
+                         elsif archetype_key.index( 'female4' )      then ' 4'
+                         else
+                           puts "!! ERROR - smile or frown (mouth expression) not supported for archetype:"
+                           pp values
+                           exit 1
+                         end
+        end
+        attribute
+      end
+    end
+
        img = Cryptopunks.generator.generate( *values, style: style )
        ## note: unwrap inner image before passing on to c'tor (requires ChunkyPNG image for now)
        new( img.image )
-     end
+     end # method Image.generate
+
   end # class Image
 
 

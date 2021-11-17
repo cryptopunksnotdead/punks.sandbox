@@ -10,12 +10,24 @@ faceless/u/mouth.png,        u, l,  Mouth
 faceless/u/nose.png,         u, l,  Nose
 faceless/u/nose_small.png,   u, l,  Nose Small, Small Nose
 
-faceless/f/mouth_darker.png,   f, l,  Mouth Darker, Mouth 1
-faceless/f/mouth_dark.png,     f, l,  Mouth Dark,   Mouth 2
-faceless/f/mouth_light.png,    f, l,  Mouth Light,  Mouth 3
-faceless/f/smile_darker.png,   f, l,  Smile Darker, Smile 1
-faceless/f/smile_dark.png,     f, l,  Smile Dark,   Smile 2
-faceless/f/smile_light.png,    f, l,  Smile Light,  Smile 3
+
+faceless/f/mouth_darker.png,   f, u,  Mouth Darker,   Mouth 1
+faceless/f/mouth_dark.png,     f, u,  Mouth Dark,     Mouth 2
+faceless/f/mouth_light.png,    f, u,  Mouth Light,    Mouth 3
+faceless/f/mouth_lighter.png,  f, u,  Mouth Lighter,  Mouth 4
+
+faceless/f/smile_darker.png,   f, u,  Smile Darker,   Smile 1
+faceless/f/smile_dark.png,     f, u,  Smile Dark,     Smile 2
+faceless/f/smile_light.png,    f, u,  Smile Light,    Smile 3
+faceless/f/smile_lighter.png,  f, u,  Smile Lighter,  Smile 4
+faceless/f/smile_zombie.png,   f, u,  Smile Zombie
+
+faceless/f/frown_darker.png,   f, u,  Frown Darker,   Frown 1
+faceless/f/frown_dark.png,     f, u,  Frown Dark,     Frown 2
+faceless/f/frown_light.png,    f, u,  Frown Light,    Frown 3
+faceless/f/frown_lighter.png,  f, u,  Frown Lighter,  Frown 4
+faceless/f/frown_zombie.png,   f, u,  Frown Zombie
+
 
 
 ###########################
@@ -192,7 +204,8 @@ basic/f/dorag.png,         f,,     Do-rag
 basic/m/fedora.png,        u,l,    Fedora,   Fedora 1
 basic/f/fedora.png,        f,,      Fedora,  Fedora 1
 basic/m/headband.png,       u,l,        Headband
-basic/f/headband.png,       f,,         Headband
+basic/f/blackwithheadband.png,  f,s,         Headband, Headband 1 | Black with Headband
+basic/f/headband.png,           f,s,         Headband 2
 basic/m/hoodie.png,         m,,          Hoodie
 unisize/f/hoodie.png,       f,l,         Hoodie
 basic/f/hoodie.png,         f,s,           Hoodie
