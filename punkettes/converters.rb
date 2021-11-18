@@ -9,7 +9,7 @@ BEARD =  [ 'Big Beard', 'Front Beard Dark', 'Handlebars', 'Front Beard',
               'Shadow Beard' ]
 
 
-def convert_to_punkette( *attributes )
+def convert_to_punkette( *attributes, size: 's' )
 
   attributes_new = []
   if attributes[0].index( 'Male' )
@@ -29,17 +29,22 @@ def convert_to_punkette( *attributes )
   end
 
 
+  attributes_new[0] += ' (U)'    if size == 'l'    ## (l)arge / unisize female?
+
+
   attributes[1..-1].each do |attribute|
 
     ## note: remove all beard (facial hair) attributes
     next if BEARD.include?( attribute )
 
     # note: "standard headband is black (hair) w/ headband really
-    attribute = 'Headband 2'       if attribute == 'Headband'
+    attribute = 'Headband 2'       if attribute == 'Headband' && size == 's'
 
     ## male-only hair-dos/sytles  - pick a female alternative for now
-    attribute = 'Red Mohawk'       if attribute == 'Peak Spike'
     attribute = 'Black Afro'       if attribute == 'Vampire Hair'
+    ## -- note for now red mohawk not available in unisize (change/fix later!!!)
+    attribute = (size == 's' ? 'Red Mohawk' : 'Mohawk Dark')    if attribute == 'Peak Spike'
+
 
     attributes_new << attribute
   end

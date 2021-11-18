@@ -2,6 +2,8 @@
 # exclude all tmp directories
 /tmp/
 /tmp2/
+/tmp3/
+
 
 
 

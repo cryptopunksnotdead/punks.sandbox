@@ -11,7 +11,7 @@ require_relative 'converters'
 
 
 #####################################
-## generate preview 10x10
+#  generate preview 10x10
 composite = ImageComposite.new( 10, 10 )
 
 
@@ -45,9 +45,9 @@ count = 0
 end
 
 
-composite.save( "./tmp2/punkettes.png" )
-composite.zoom(2).save( "./tmp2/punkettes@2x.png" )
-composite.zoom(4).save( "./tmp2/punkettes@4x.png" )
+composite.save( "./tmp2/punkettes_superrare.png" )
+composite.zoom(2).save( "./tmp2/punkettes_superrare@2x.png" )
+composite.zoom(4).save( "./tmp2/punkettes_superrare@4x.png" )
 
 
 puts "  #{count} super rare(s)"      #  121 super rare(s)

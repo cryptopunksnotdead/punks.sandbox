@@ -11,7 +11,7 @@ require_relative 'converters'
 
 
 #####################################
-## generate preview 10x10
+#  generate preview 10x10
 composite = ImageComposite.new( 10, 10 )
 
 
