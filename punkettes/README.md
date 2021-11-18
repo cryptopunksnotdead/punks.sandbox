@@ -20,7 +20,7 @@ Punks & Punkettes, The Brother & Sister Edition Side-by-Side
 
 
 
-## 10 000 Punkettes - All Female Edition Incl. Female Aliens (9) / Apes (24) / Zombies (88)
+## 10 000 Punkettes - All Female Edition Incl. Aliens (9) / Apes (24) / Zombies (88)
 
 Preview - 24x24
 ![](i/punkettes_preview.png)
