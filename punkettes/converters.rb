@@ -9,6 +9,9 @@ BEARD =  [ 'Big Beard', 'Front Beard Dark', 'Handlebars', 'Front Beard',
               'Shadow Beard' ]
 
 
+EXCLUDE = BEARD + ['Buck Teeth']
+
+
 def convert_to_punkette( *attributes, size: 's' )
 
   attributes_new = []
@@ -34,8 +37,8 @@ def convert_to_punkette( *attributes, size: 's' )
 
   attributes[1..-1].each do |attribute|
 
-    ## note: remove all beard (facial hair) attributes
-    next if BEARD.include?( attribute )
+    ## note: remove all beard (facial hair) + buck teeth attributes
+    next if EXCLUDE.include?( attribute )
 
     # note: "standard headband is black (hair) w/ headband really
     attribute = 'Headband 2'       if attribute == 'Headband' && size == 's'
