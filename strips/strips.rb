@@ -23,6 +23,10 @@ def gen_strip( path, offset: 0,
 end
 
 
+strip = gen_strip( "../../awesome-24px/collection/punkettes.png" )
+strip.save( "./tmp/punkettes-strip.png" )
+
+
 strip = gen_strip( "../../awesome-24px/collection/goldenpunks.png" )
 strip.save( "./tmp/goldenpunks-strip.png" )
 
