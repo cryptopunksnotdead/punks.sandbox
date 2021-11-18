@@ -19,8 +19,8 @@ count = 0
 (0..399).each do |id|
    attributes = CryptopunksData.punk_attributes( id )
 
-   ## convert all male to female
-   attributes = convert_to_punkette( *attributes )    unless attributes[0].index( 'Female' )
+   ## convert all male to female (will drop beard and buck teeth) & keep female as is
+   attributes = convert_to_punkette( *attributes )
 
    puts "==> #{id}:"
    pp attributes
@@ -46,7 +46,7 @@ count = 0
    attributes = CryptopunksData.punk_attributes( id )
 
    ## convert all male to female
-   attributes = convert_to_punkette( *attributes )    unless attributes[0].index( 'Female' )
+   attributes = convert_to_punkette( *attributes )
 
    puts "==> #{id}:"
    pp attributes
