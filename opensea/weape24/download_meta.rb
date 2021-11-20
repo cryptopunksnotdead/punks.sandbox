@@ -1,9 +1,9 @@
 #####
 # to run use:
-#   $ ruby 24px/download_meta.rb
+#   $ ruby weape24/download_meta.rb
 
 
-require_relative './helper'
+require_relative '../helper'
 
 
 

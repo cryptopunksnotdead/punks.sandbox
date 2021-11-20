@@ -3,7 +3,7 @@
 #    $ ruby 24px/download_images.rb
 
 
-require_relative 'helper'
+require_relative '../helper'
 
 
 

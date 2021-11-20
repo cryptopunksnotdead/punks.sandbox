@@ -1,0 +1,9 @@
+#####
+# exclude all cache (image, meta) directories
+
+/thecryptogenius/i
+/thecryptogenius/i_jpg
+/thecryptogenius/ii
+/thecryptogenius/meta
+
+

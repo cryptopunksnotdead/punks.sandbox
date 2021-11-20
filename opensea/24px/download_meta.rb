@@ -3,7 +3,7 @@
 #   $ ruby 24px/download_meta.rb
 
 
-require_relative './helper'
+require_relative '../helper'
 
 
 
