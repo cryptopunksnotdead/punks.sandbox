@@ -12,8 +12,8 @@ require 'cryptopunks'
 
 genius = ImageComposite.read( "../../awesome-24px/collection/genius.png" )
 
-## change left-looking to right-looking (mirror image)
-shakespeare = genius[24].mirror   ## start counting at zero (no. 25 is 25-1= 24)
+
+shakespeare = genius[24]   ## start counting at zero (no. 25 is 25-1= 24)
 
 
 shakespeare.save( "./tmp/shakespeare.png" )
@@ -43,7 +43,10 @@ EARRING            = Punks::Sheet.find_by( name: 'Earring', gender: 'm' )
 ##         to allow "overflow" place into 26x26 frame
 composite = ImageComposite.new( 3, 3, width: 26, height: 26 )
 
-composite << shakespeare
+punk = Image.new( 26, 26 )
+punk.compose!( shakespeare, 1, 1 )
+
+composite << punk
 
 
 punk = Image.new( 26, 26 )
