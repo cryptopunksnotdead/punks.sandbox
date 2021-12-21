@@ -1,19 +1,18 @@
 # Frame Your Punks (24x24px) - Free Golden Pixel Art Frame (36x36px) & More
 
 
-Let's frame punks (24x24px). Let's try the free golden pixel art frame (36x36).
-
-![](i/frame24x24.png)
-
-4x <br> ![](i/frame24x24@4x.png)
-
-
-
-Let's try the frameless punks
+Let's try the frameless punks (24x24px)
 \#2890 ![](i/punk-2890.png),
 \#8219 ![](i/punk-8219.png),
 \#10180 ![](i/punk-10180.png),
 \#10190 ![](i/punk-10190.png).
+
+
+Let's try the free golden pixel art frame (36x36).
+
+![](i/frame24x24.png)
+
+4x <br> ![](i/frame24x24@4x.png)
 
 
 Here we go:
@@ -38,11 +37,14 @@ Here we go:
 
 
 
+## "Oil Painting" Punks by Leonardo da Vinci, Johannes Vermeer van Delft, Vincent van Gogh, Edvard Munch  
+
+
 Let's try the frameless "oil painting" punks
-![](i/mona_lisa.png),
-![](i/girl_with_a_pearl_earring.png),
-![](i/van_gogh_self-portrait.png),
-![](i/the_scream.png).
+![](i/mona_lisa.png)
+![](i/girl_with_a_pearl_earring.png)
+![](i/van_gogh_self-portrait.png)
+![](i/the_scream.png)
 
 Here we go:
 
