@@ -30,23 +30,24 @@ EARRING            = Punks::Sheet.find_by( name: 'Earring', gender: 'm' )
 
 
 
+BACKGROUND = '#97C24E'
 
 composite = ImageComposite.new( 3, 3 )
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( HEART_SHADES )
 
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( HEART_SHADES )
 punk.compose!( BUBBLE_GUM )
@@ -54,13 +55,13 @@ punk.compose!( BUBBLE_GUM )
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( MEDICAL_MASK )
 
 composite << punk
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( PIPE )
 punk.compose!( _3D_GLASSES )
@@ -68,14 +69,14 @@ punk.compose!( _3D_GLASSES )
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( NERD_GLASSES )
 
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( CLASSIC_SHADES )
 punk.compose!( EARRING )
@@ -84,14 +85,14 @@ punk.compose!( CIGAR )
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( HORNED_RIM_GLASSES )
 
 composite << punk
 
 
-punk = Image.new( 24, 24 )
+punk = Image.new( 24, 24, BACKGROUND )
 punk.compose!( grinch )
 punk.compose!( VR )
 composite << punk
