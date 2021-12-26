@@ -55,6 +55,9 @@
 > -- [Chantal](https://twitter.com/chantal_cmbarce/status/1475204786630774785)
 
 
+
+>> CryptoPunksBot: Punk [Token] #8305 bought for 250 ETH ($1,017,224.98 USD) by 0x1919db from 0x7f3aff.
+> 
 > Amazing elite AAA hoodie Cryptopunks savvy investors are scooping up all the best 
 > blue chip [non-fungible] tokens in the market! great [non-fungible] token investment.
 
