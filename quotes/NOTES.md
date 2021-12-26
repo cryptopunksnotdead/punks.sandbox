@@ -46,3 +46,15 @@
 >
 > B: the centralized community that builds nothing and pays famous people to pretend that they care about their ponzi jpegs.
 
+
+
+
+> Crypto Punk [tokens] has one thing the majority of [non-fungible] tokens don't..
+> it's called provenance. Others' value prop is utility. We’re comparing apples to oranges here.
+>
+> -- [Chantal](https://twitter.com/chantal_cmbarce/status/1475204786630774785)
+
+
+> Amazing elite AAA hoodie Cryptopunks savvy investors are scooping up all the best 
+> blue chip [non-fungible] tokens in the market! great [non-fungible] token investment.
+
