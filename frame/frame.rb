@@ -10,6 +10,14 @@ frame = Image.read( "./i/frame24x24.png" )
 
 frame.zoom( 4 ).save( "./i/frame24x24@4x.png" )
 
+##
+# add a logo version with padding
+logo = Image.new( 48, 48 )
+logo.compose!( frame, 6, 6 )
+logo.zoom( 4 ).save( "./i/frame-logo@4x.png" )
+
+
+
 
 composite = ImageComposite.new( 2, 2, width: 36, height: 36 )  # 2x2 = 4
 
