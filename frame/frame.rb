@@ -1,6 +1,9 @@
+$LOAD_PATH.unshift( "../cryptopunks/lib" )
+require 'cryptopunks'
 
 
-require 'pixelart'
+
+
 
 
 
@@ -10,10 +13,20 @@ frame = Image.read( "./i/frame24x24.png" )
 
 frame.zoom( 4 ).save( "./i/frame24x24@4x.png" )
 
+
+
 ##
 # add a logo version with padding
+frameless = Image.read( "./i/mona_lisa.png" ).mirror
+
+VR  = Punks::Sheet.find_by( name: 'VR',      gender: 'f', size: 's' )
+CAP = Punks::Sheet.find_by( name: 'Cap Red', gender: 'f', size: 's' )
+
 logo = Image.new( 48, 48 )
 logo.compose!( frame, 6, 6 )
+logo.compose!( frameless, 6+6, 6+6 )
+logo.compose!( VR, 6+6, 6+6 )
+logo.compose!( CAP, 6+5, 6+6 )
 logo.zoom( 4 ).save( "./i/frame-logo@4x.png" )
 
 
