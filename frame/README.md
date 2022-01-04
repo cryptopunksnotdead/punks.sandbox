@@ -110,9 +110,9 @@ Here we go:
 
 Let's try the free ye olde wood pixel art frame (32x32).
 
-![](i/frame_24x24_(2).png)
+![](i/frame24x24_(2).png)
 
-4x <br> ![](i/frame_24x24_(2)@4x.png)
+4x <br> ![](i/frame24x24_(2)@4x.png)
 
 
 Here we go:
@@ -141,9 +141,9 @@ Here we go:
 
 Let's try the free art nouveau pixel art frame (34x32).
 
-![](i/frame_24x24_(3).png)
+![](i/frame24x24_(3).png)
 
-4x <br> ![](i/frame_24x24_(3)@4x.png)
+4x <br> ![](i/frame24x24_(3)@4x.png)
 
 
 Here we go:
