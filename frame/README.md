@@ -37,7 +37,7 @@ Here we go:
 
 
 
-## "Oil Painting" Punks by Leonardo da Vinci, Johannes Vermeer van Delft, Vincent van Gogh, Edvard Munch  
+## "Oil Painting" Punks by Leonardo da Vinci, Johannes Vermeer van Delft, Vincent van Gogh, Edvard Munch
 
 
 Let's try the frameless "oil painting" punks
@@ -66,6 +66,40 @@ Here we go:
 ![](i/framed-girl_with_a_pearl_earring@8x.png)
 ![](i/framed-van_gogh_self-portrait@8x.png)
 ![](i/framed-the_scream@8x.png)
+
+
+
+
+
+## Bonus - Classic Modern Black Frame
+
+Let's try the free classic modern black pixel art frame (38x38).
+
+![](i/frame_black24x24.png)
+
+4x <br> ![](i/frame_black24x24@4x.png)
+
+
+Here we go:
+
+![](i/framedpunk_black-2890.png)
+![](i/framedpunk_black-8219.png)
+![](i/framedpunk_black-10180.png)
+![](i/framedpunk_black-10190.png)
+
+4x <br>
+![](i/framedpunk_black-2890@4x.png)
+![](i/framedpunk_black-8219@4x.png)
+![](i/framedpunk_black-10180@4x.png)
+![](i/framedpunk_black-10190@4x.png)
+
+8x <br>
+![](i/framedpunk_black-2890@8x.png)
+![](i/framedpunk_black-8219@8x.png)
+![](i/framedpunk_black-10180@8x.png)
+![](i/framedpunk_black-10190@8x.png)
+
+
 
 
 
