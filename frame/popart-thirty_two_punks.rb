@@ -18,8 +18,6 @@ composite = ImageComposite.new( 8, 4, width: 38+4, height: 38+4 )  # 8x4 = 32
   frameless = Image.read( "./i/punk-#{id}.png" )
 
   ## add 4px (2p on each side transparent padding/border)
-  punk_with_padding = Image.new( 38+4, 38+4 )
-
   punk = Image.new( 38+4, 38+4 )
   punk.compose!( frame, 2, 2 )
   punk.compose!( Image.new( 24,24, '#638596' ), 7+2, 7+2 )  ## add non-trasparent / opaque background first
