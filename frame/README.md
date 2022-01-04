@@ -105,6 +105,55 @@ Here we go:
 
 
 
+Or try the smaller
+modern black pixel art frame (30x30) variant without the white padding.
+
+![](i/frame_black24x24_(2).png)
+
+4x <br> ![](i/frame_black24x24_(2)@4x.png)
+
+
+Here we go:
+
+![](i/framedpunk_black_(2)-2890.png)
+![](i/framedpunk_black_(2)-8219.png)
+![](i/framedpunk_black_(2)-10180.png)
+![](i/framedpunk_black_(2)-10190.png)
+
+4x <br>
+![](i/framedpunk_black_(2)-2890@4x.png)
+![](i/framedpunk_black_(2)-8219@4x.png)
+![](i/framedpunk_black_(2)-10180@4x.png)
+![](i/framedpunk_black_(2)-10190@4x.png)
+
+8x <br>
+![](i/framedpunk_black_(2)-2890@8x.png)
+![](i/framedpunk_black_(2)-8219@8x.png)
+![](i/framedpunk_black_(2)-10180@8x.png)
+![](i/framedpunk_black_(2)-10190@8x.png)
+
+Or with all-white background:
+
+![](i/framedpunk_black_(2)_ii-2890.png)
+![](i/framedpunk_black_(2)_ii-8219.png)
+![](i/framedpunk_black_(2)_ii-10180.png)
+![](i/framedpunk_black_(2)_ii-10190.png)
+
+4x <br>
+![](i/framedpunk_black_(2)_ii-2890@4x.png)
+![](i/framedpunk_black_(2)_ii-8219@4x.png)
+![](i/framedpunk_black_(2)_ii-10180@4x.png)
+![](i/framedpunk_black_(2)_ii-10190@4x.png)
+
+8x <br>
+![](i/framedpunk_black_(2)_ii-2890@8x.png)
+![](i/framedpunk_black_(2)_ii-8219@8x.png)
+![](i/framedpunk_black_(2)_ii-10180@8x.png)
+![](i/framedpunk_black_(2)_ii-10190@8x.png)
+
+
+
+
 
 ### Ye Olde Wood Frame
 
