@@ -22,7 +22,7 @@ composite = ImageComposite.new( 2, 2, width: 36, height: 36 )  # 2x2 = 4
 
   punk = Image.new( 36, 36 )
   punk.compose!( frame )
-  punk.compose!( Image.new( 24,24, '#638596' ), 6, 6 )  ## add non-trasparent / opaque background first
+  punk.compose!( Image.new( 24,24, '#afcaa1' ), 6, 6 )  ## add non-trasparent / opaque background first
   punk.compose!( frameless, 6, 6 )
 
   punk.save( "./i/framedpunk-#{id}.png" )

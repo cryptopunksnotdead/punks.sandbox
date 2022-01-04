@@ -71,7 +71,11 @@ Here we go:
 
 
 
-## Bonus - Classic Modern Black Frame
+## Bonus - More Frames - Classic Modern, Ye Olde Wood, Art Nouveau & More
+
+
+
+### Classic Modern Black Frame
 
 Let's try the free classic modern black pixel art frame (38x38).
 
@@ -98,6 +102,70 @@ Here we go:
 ![](i/framedpunk_black-8219@8x.png)
 ![](i/framedpunk_black-10180@8x.png)
 ![](i/framedpunk_black-10190@8x.png)
+
+
+
+
+### Ye Olde Wood Frame
+
+Let's try the free ye olde wood pixel art frame (32x32).
+
+![](i/frame_24x24_(2).png)
+
+4x <br> ![](i/frame_24x24_(2)@4x.png)
+
+
+Here we go:
+
+![](i/framedpunk_(2)-2890.png)
+![](i/framedpunk_(2)-8219.png)
+![](i/framedpunk_(2)-10180.png)
+![](i/framedpunk_(2)-10190.png)
+
+4x <br>
+![](i/framedpunk_(2)-2890@4x.png)
+![](i/framedpunk_(2)-8219@4x.png)
+![](i/framedpunk_(2)-10180@4x.png)
+![](i/framedpunk_(2)-10190@4x.png)
+
+8x <br>
+![](i/framedpunk_(2)-2890@8x.png)
+![](i/framedpunk_(2)-8219@8x.png)
+![](i/framedpunk_(2)-10180@8x.png)
+![](i/framedpunk_(2)-10190@8x.png)
+
+
+
+
+### Art Nouveau Frame
+
+Let's try the free art nouveau pixel art frame (34x32).
+
+![](i/frame_24x24_(3).png)
+
+4x <br> ![](i/frame_24x24_(3)@4x.png)
+
+
+Here we go:
+
+![](i/framedpunk_(3)-2890.png)
+![](i/framedpunk_(3)-8219.png)
+![](i/framedpunk_(3)-10180.png)
+![](i/framedpunk_(3)-10190.png)
+
+4x <br>
+![](i/framedpunk_(3)-2890@4x.png)
+![](i/framedpunk_(3)-8219@4x.png)
+![](i/framedpunk_(3)-10180@4x.png)
+![](i/framedpunk_(3)-10190@4x.png)
+
+8x <br>
+![](i/framedpunk_(3)-2890@8x.png)
+![](i/framedpunk_(3)-8219@8x.png)
+![](i/framedpunk_(3)-10180@8x.png)
+![](i/framedpunk_(3)-10190@8x.png)
+
+
 
 
 
