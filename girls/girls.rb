@@ -118,9 +118,15 @@ punk.zoom(8).save( 'i/girl_(3)@8x.png' )
 #####
 #  save the attributes for inline display in quote
 
-HOODIE.save( 'i/hoodie.png' )
+punk = Image.new( 24, 24 )
+punk.compose!( FEMALE3 )
+punk.compose!( HOODIE )
+punk.save( 'i/hoodie.png' )
 
-COWBOY_HAT.save( 'i/cowboy_hat.png' )
+punk = Image.new( 24, 24 )
+punk.compose!( FEMALE3 )
+punk.compose!( COWBOY_HAT )
+punk.save( 'i/cowboy_hat.png' )
 
 punk = Image.new( 24, 24 )
 punk.compose!( FEMALE3 )
