@@ -38,19 +38,18 @@ zoomed in and out of the images of the assorted characters and their many varied
 > that references images to more punks -
 > to greater fools raking in about 3 million dollars.
 > Congrats for pulling-off the conart fraud!
-> All in the name of a woke diverse and inclusive narrative!
->
->
->  Why not publish the new 24x24 pixel punk builing block images
->  put together in a couple of hours
->  on the internets for all to enjoy for free?
->
->  Why another super-rare exclusive set for the 0.000001% of
-> humanity? What about the rest of us - the 99.9999% of humanity?]
->
+> All in the name of a woke diverse and inclusive narrative!]
 >
 > -- [Why this Microsoft employee expanded an iconic 24x24 pixel punk token collection](https://old.reddit.com/r/CryptoPunksDev/comments/rww8gk/inside_the_million_expansion_punks_token_fraud/)
 
+
+
+Why not publish the new 24x24 pixel punk builing block images
+put together in a couple of hours
+on the internets for all to enjoy for free?
+
+Why another super-rare exclusive set for the 0.000001% of
+humanity? What about the rest of us - the 99.9999% of humanity?
 
 
 
