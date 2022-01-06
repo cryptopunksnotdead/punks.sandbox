@@ -56,6 +56,11 @@ zoomed in and out of the images of the assorted characters and their many varied
 
 
 
+## Yes, you can!  Right-click and save (for free download).
+
+
+See the [**girls script**](girls.rb) to generate your own.  Here we go:
+
 ![](i/sophia.png)
 ![](i/chloe.png)
 ![](i/veda.png)
@@ -130,9 +135,6 @@ and let's change to the gray hoodie to pink
 
 And so on.
 
-
-Yes, you can!  Right-click and save (for free download).
-See the [**girls script**](girls.rb) to generate your own.
 
 
 
