@@ -59,7 +59,7 @@ zoomed in and out of the images of the assorted characters and their many varied
 ## Yes, you can!  Right-click and save (for free download).
 
 
-See the [**girls script**](girls.rb) to generate your own.  Here we go:
+See the [**girls script**](girls.rb) to (re)generate your own free punkette girls from scratch / zero.  Here we go:
 
 ![](i/sophia.png)
 ![](i/chloe.png)
