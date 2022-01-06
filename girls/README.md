@@ -3,7 +3,7 @@
 
 > Young girls search for themselves
 >
->  Seated at his home computer before buying his punk token collection, Jeremy Posvar
+>  Seated at his home computer before buying his pixel punk token [No. 7741 ![](i/punk-7741.png) for 18.95 ETH (or $53,263)], Jeremy Posvar
 zoomed in and out of the images of the assorted characters and their many varied traits. His hobby attracted the attention of his three daughters and they wanted to play along.
 >
 > "The natural thing for them to say is, 'Let's find one that looks like me,'" Jeremy Posvar said. "And doing that was kind of eye opening because I had spent so much time looking for my punk."
