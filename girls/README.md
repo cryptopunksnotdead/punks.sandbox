@@ -14,7 +14,7 @@ zoomed in and out of the images of the assorted characters and their many varied
 > hoodies were really cool, so she wanted a punk with a hoodie ![](i/hoodie.png).
 > The middle one thought that smiles were cute,
 > so she wanted a smiling punk ![](i/smile3.png). His youngest loves horses and
-> aspires to be a vet at some point and wanted a punk with a cowboy hat (i/cowboy_hat.png).
+> aspires to be a vet at some point and wanted a punk with a cowboy hat ![](i/cowboy_hat.png).
 >
 > [...]
 >
