@@ -11,10 +11,10 @@ zoomed in and out of the images of the assorted characters and their many varied
 >
 > Jeremy Posvar's daughters searched for (crypto) pixel punks
 > that they could connect with. At the time, his oldest thought
-> hoodies were really cool, so she wanted a punk with a hoodie.
+> hoodies were really cool, so she wanted a punk with a hoodie ![](i/hoodie.png).
 > The middle one thought that smiles were cute,
-> so she wanted a smiling punk. His youngest loves horses and
-> aspires to be a vet at some point and wanted a punk with a cowboy hat.
+> so she wanted a smiling punk ![](i/smile3.png). His youngest loves horses and
+> aspires to be a vet at some point and wanted a punk with a cowboy hat (i/cowboy_hat.png).
 >
 > [...]
 >
@@ -56,7 +56,7 @@ zoomed in and out of the images of the assorted characters and their many varied
 
 
 
-## Yes, you can!  Right-click and save (for free download).
+## Yes, you can!  Right-click and save (for free download)
 
 
 See the [**girls script**](girls.rb) to (re)generate your own free punkette girls from scratch / zero.  Here we go:
@@ -103,7 +103,7 @@ and with blue-ish background:
 
 
 
-## What about the hoodie?  Yes, you can.
+## What about the hoodie?  Yes, you can
 
 ![](i/girl.png)
 
@@ -122,7 +122,7 @@ and with a smile :-):
 ![](i/girl_(2)@4x.png)
 
 
-and let's change to the gray hoodie to pink
+and let's change the gray hoodie to pink
 (or any other color):
 
 
