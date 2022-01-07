@@ -71,7 +71,7 @@ Here we go:
 
 
 
-## Bonus - More Frames - Classic Modern, Ye Olde Wood, Art Nouveau & More
+## Bonus - More Frames - Classic Modern, Ye Olde Wood, Art Nouveau, Polaroid & More
 
 
 
@@ -213,6 +213,38 @@ Here we go:
 ![](i/framedpunk_(3)-8219@8x.png)
 ![](i/framedpunk_(3)-10180@8x.png)
 ![](i/framedpunk_(3)-10190@8x.png)
+
+
+
+
+
+### Polaroid
+
+Let's try the free polaroid pixel art (34x38).
+
+![](i/polaroid24x24.png)
+
+4x <br> ![](i/polaroid24x24@4x.png)
+
+
+Here we go:
+
+![](i/polaroid-2890.png)
+![](i/polaroid-8219.png)
+![](i/polaroid-10180.png)
+![](i/polaroid-10190.png)
+
+4x <br>
+![](i/polaroid-2890@4x.png)
+![](i/polaroid-8219@4x.png)
+![](i/polaroid-10180@4x.png)
+![](i/polaroid-10190@4x.png)
+
+8x <br>
+![](i/polaroid-2890@8x.png)
+![](i/polaroid-8219@8x.png)
+![](i/polaroid-10180@8x.png)
+![](i/polaroid-10190@8x.png)
 
 
 
