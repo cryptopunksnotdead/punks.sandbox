@@ -1,5 +1,5 @@
-module Cryptopunks
 
+module Cryptopunks
 
 
 class Tool
@@ -20,6 +20,8 @@ class Opts
 
     @zoom     = options[:zoom]      if options[:zoom]
     @offset   = options[:offset]    if options[:offset]
+
+    @seed     = options[:seed]      if options[:seed]
 
     @verbose = true     if options[:verbose] == true
   end
@@ -45,6 +47,13 @@ class Opts
 
   def outdir()  @outdir || '.'; end
   def outdir?() @outdir;  end
+
+  ### use a standard (default) seed - why? why not?
+  def seed()  @seed || 4142; end
+  def seed?() @seed;  end
+
+
+
 end # class Opts
 
 
@@ -71,11 +80,20 @@ arg_name 'NUM'
 default_value opts.offset
 flag [:offset], type: Integer
 
+
+desc "Seed for random number generation / shuffle"
+arg_name 'NUM'
+default_value opts.seed
+flag [:seed], type: Integer
+
+
+
 desc "Output directory"
 arg_name 'DIR'
 default_value opts.outdir
 flag [:d, :dir,
       :o, :out, :outdir], type: String
+
 
 ### todo/check: move option to -t/--tile command only - why? why not?
 desc "True Official Genuine CryptoPunks™ all-in-one composite image"
@@ -89,6 +107,94 @@ flag [:f, :file], type: String
 ## todo: add check that path is valid?? possible?
 desc '(Debug) Show debug messages'
 switch [:verbose], negatable: false    ## todo: use -w for short form? check ruby interpreter if in use too?
+
+
+
+desc "Flip (vertically) all punk characters in all-in-one punk series composite (#{opts.file})"
+command [:f, :flip] do |c|
+  c.action do |g,o,args|
+    puts "==> reading >#{opts.file}<..."
+    punks = ImageComposite.read( opts.file )
+
+    ## note: for now always assume 24x24
+    cols = punks.width / 24
+    rows = punks.height / 24
+    tile_width = 24
+    tile_height = 24
+
+    phunks = ImageComposite.new( cols, rows,
+                                 width: tile_width,
+                                 height: tile_height )
+
+    punks.each do |punk|
+       phunks << punk.flip_vertically
+    end
+
+    ## make sure outdir exits (default is current working dir e.g. .)
+    FileUtils.mkdir_p( opts.outdir )  unless Dir.exist?( opts.outdir )
+
+    ## note: allways assume .png extension for now
+    basename = File.basename( opts.file, File.extname( opts.file ) )
+    path  = "#{opts.outdir}/#{basename}-flipped.png"
+    puts "==> saving phunks flipped one-by-one by hand to >#{path}<..."
+
+    phunks.save( path )
+    puts 'Done.'
+  end # action
+end # command flip
+
+
+desc "Shuffle all punk characters (randomly) in all-in-one punk series composite (#{opts.file})"
+command [:s, :shuffle] do |c|
+  c.action do |g,o,args|
+    puts "==> reading >#{opts.file}<..."
+    punks = ImageComposite.read( opts.file )
+
+    ## note: for now always assume 24x24
+    cols  = punks.width / 24
+    rows  = punks.height / 24
+    tile_width = 24
+    tile_height = 24
+
+    phunks = ImageComposite.new( cols, rows,
+                                 width: tile_width,
+                                 height: tile_height )
+
+    tiles = cols * rows
+    indexes = (0..tiles-1).to_a
+    srand( opts.seed )     ## note: for new reset **global** random seed and use (builtin) Array#shuffle
+    puts "   using random generation number seed >#{opts.seed}< for shuffle"
+    indexes = indexes.shuffle
+
+    ###
+    # seed 4142 ends in [..., 7566, 828, 8987, 9777]
+    #       333 ends in [..., 6067, 9635, 973, 8172]
+
+
+    indexes.each_with_index do |old_index,new_index|
+       puts "    ##{old_index} now ##{new_index}"
+       phunks << punks[old_index]
+    end
+
+    puts "    all #{tiles} old index numbers (zero-based) for reference using seed #{opts.seed}:"
+    puts indexes.inspect
+
+    ## make sure outdir exits (default is current working dir e.g. .)
+    FileUtils.mkdir_p( opts.outdir )  unless Dir.exist?( opts.outdir )
+
+    ## note: allways assume .png extension for now
+    basename = File.basename( opts.file, File.extname( opts.file ) )
+    path  = "#{opts.outdir}/#{basename}-#{opts.seed}.png"
+    puts "==> saving p(h)unks shuffled one-by-one by hand to >#{path}<..."
+
+    phunks.save( path )
+    puts 'Done.'
+  end # action
+end # command shuffle
+
+
+
+
 
 
 

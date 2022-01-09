@@ -29,6 +29,7 @@
 > -- [January 2021](https://twitter.com/larvalabs/status/1353915659453870080)
 
 
+
 # Crypto Punks
 
 cryptopunks - mint your own 24×24 pixel punk images off chain from the True Official Genuine CryptoPunks™ sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
@@ -62,7 +63,7 @@ SYNOPSIS
     punk [global options] command [command options] [arguments...]
 
 VERSION
-    2.0.0
+    2.1.0
 
 GLOBAL OPTIONS
     -d, --dir,
@@ -70,6 +71,8 @@ GLOBAL OPTIONS
     -f, --file=FILE         - True Official Genuine CryptoPunks™ all-in-one
                               composite image (default: ./punks.png)
     --offset=NUM            - Start counting at offset (default: 0)
+    --seed=NUM              - Seed for random number generation /
+                              shuffle (default: 4142)
     -z, --zoom=ZOOM         - Zoom factor x2, x4, x8, etc. (default: 1)
 
     --help                  - Show this message
@@ -86,9 +89,14 @@ COMMANDS
                        attributes by IDs - use 0 to 9999
     t, tile          - Get punk characters via image tiles from all-in-one punk
                        series composite (./punks.png) - for IDs use 0 to 9999
+    f, flip          - Flip (vertically) all punk characters in all-in-one punk
+                       series composite (./punks.png)
+    s, shuffle       - Shuffle all punk characters (randomly) in all-in-one
+                       punk series composite (./punks.png)
 
     help             - Shows a list of commands or help for one command
 ```
+
 
 ### Generate Command
 
@@ -525,6 +533,106 @@ And 4x:
 And so on.
 
 
+
+
+### Flip Command
+
+_Flip (vertically) all punk characters in all-in-one punk series composite (`./punks.png`)_
+
+
+Let's generate an all new punk series by turning all punks
+in the classic series
+from right-looking to left-looking
+by flipping vertically "one-by-one by hand [thanks to philip the intern]"
+all punks. Phree the phunks! Let's give it a try:
+
+```
+$ punk flip
+#  - same as -
+$ punk --file ./punks.png flip
+```
+
+printing:
+
+```
+==> reading >./punks.png<...
+     >ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b< SHA256 hash matching
+         ✓ True Official Genuine CryptoPunks™ verified
+   (1/10000) philip the intern flipping punk #0...
+   (2/10000) philip the intern flipping punk #1...
+   ...
+==> saving phunks flipped one-by-one by hand to >./punks-flipped.png<...
+```
+
+And voila!
+
+Yes, you can use any 24x24 composite. Use the `--file` option.
+Example - let's flip the 1000 More Punks collection:
+
+```
+$ punk --file ./morepunks.png flip
+```
+
+And so on.
+
+
+
+
+### Shuffle Command
+
+_Shuffle all punk characters (randomly) in all-in-one punk series composite (`./punks.png`)_
+
+Let's generate an all new punks series by randomly shuffling
+"one-by-one by hand [thanks to philip the intern]".
+Let's give it a try:
+
+```
+$ punk shuffle
+#  - same as -
+$ punk --file ./punks.png --seed 4142 shuffle
+```
+
+printing:
+
+```
+==> reading >./punks.png<...
+     >ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b< SHA256 hash matching
+         ✓ True Official Genuine CryptoPunks™ verified
+   using random generation number seed >4142< for shuffle
+     #1369 now #0
+     #590  now #1
+     #1635 now #2
+     #3199 now #3
+     ...
+==> saving p(h)unks shuffled one-by-one by hand to >./punks-4142.png<...
+```
+
+And voila!
+
+Note: The shuffle command also prints out
+all new index numbers for easy reference (to reuse attributes and so on):
+
+```
+All 10000 index numbers (zero-based) for reference using seed 4142:
+
+[1369,  590, 1635, 3199, 1887, 7719, 5747, 2146, 6671, 7144,
+ 1428, 7817, 1219,  163, 7186, 8488, 7191, 5240, 7226, 6574,
+ 1619, 1701, 3018, 4745, 2438, 6474, 4756, 9300, 9382, 9528,
+  102, 1847, 2848, 8369, 7825,  842,   66, 1035, 2934, 2442,
+  ...
+ 8789, 7299, 4403, 5972,  338, 5635, 7566,  828, 8987, 9777]
+```
+
+
+
+Yes, you can use any 24x24 composite. Use the `--file` option.
+Example - let's flip the 1000 More Punks collection:
+
+```
+$ punk --file ./morepunks.png shuffle
+```
+
+And so on.
 
 
 

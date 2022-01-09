@@ -18,7 +18,7 @@ Hoe.spec 'cryptopunks' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['pixelart'],
+    ['pixelart', '>= 1.2.1'],
     ['csvreader'],
     ['gli'],
   ]
