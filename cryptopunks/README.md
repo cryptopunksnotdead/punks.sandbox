@@ -566,7 +566,7 @@ printing:
 
 And voila!
 
-Yes, you can use any composite image in the 24x24 format. Use the `--file` option.
+Yes, you can.  Use any all-in-one composite image in the 24x24 format. Use the `--file` option.
 Example - let's flip the 1000 More Punks collection:
 
 ```
@@ -625,7 +625,7 @@ All 10000 index numbers (zero-based) for reference using seed 4142:
 
 
 
-Yes, you can use any composite image in the 24x24 format. Use the `--file` option.
+Yes, you can.  Use any all-in-one composite image in the 24x24 format. Use the `--file` option.
 Example - let's shuffle the 1000 More Punks collection:
 
 ```
