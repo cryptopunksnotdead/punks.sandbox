@@ -566,7 +566,7 @@ printing:
 
 And voila!
 
-Yes, you can use any 24x24 composite. Use the `--file` option.
+Yes, you can use any composite image in the 24x24 format. Use the `--file` option.
 Example - let's flip the 1000 More Punks collection:
 
 ```
@@ -583,7 +583,7 @@ And so on.
 _Shuffle all punk characters (randomly) in all-in-one punk series composite (`./punks.png`)_
 
 Let's generate an all new punks series by randomly shuffling
-"one-by-one by hand [thanks to philip the intern]".
+"one-by-one by hand [thanks to philip the intern]" all punks.
 Let's give it a try:
 
 ```
@@ -625,8 +625,8 @@ All 10000 index numbers (zero-based) for reference using seed 4142:
 
 
 
-Yes, you can use any 24x24 composite. Use the `--file` option.
-Example - let's flip the 1000 More Punks collection:
+Yes, you can use any composite image in the 24x24 format. Use the `--file` option.
+Example - let's shuffle the 1000 More Punks collection:
 
 ```
 $ punk --file ./morepunks.png shuffle
