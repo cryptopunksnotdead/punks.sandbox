@@ -5,26 +5,27 @@
 #    ruby ./phunks.rb
 
 
-require 'cryptopunks'
-
-
-## 100x100 = 10 000 punks (cols x rows); create an empty composite
-phunks = Punks::Image::Composite.new( 100, 100 )
+require 'pixelart'
 
 
 ## read in right-facing punk composite
-rootdir = "../../awesome-24px/collection"
-
 print "==> loading right-facing image..."
-punks = Punks::Image::Composite.read( "#{rootdir}/punks.png" )
+punks = ImageComposite.read( "../../awesome-24px/collection/punks.png" )
 print "OK\n"
 
 
+## 100x100 = 10 000 punks (cols x rows); create an empty composite
+phunks = ImageComposite.new( 100, 100 )
+
 (0..9999).each do |i|
   punk = punks[i]
-  punk = punk.mirror   ## mirror, that is, flip image horizontally (right-facing to left-facing)
+  phunk = punk.mirror   ## mirror, that is, flip image vertically (right-facing to left-facing)
 
-  phunks << punk
+  ## phunk with background (use solid blue-ish color for now)
+  img = Image.new( 24, 24, '#638596' )
+  img.compose!( phunk )
+
+  phunks << img
 end
 
 

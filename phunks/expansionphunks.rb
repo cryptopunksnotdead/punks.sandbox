@@ -2,23 +2,22 @@
 #   Phree the Phunks!
 #
 #  to run use:
-#    ruby ./womenphunks.rb
+#    ruby ./expansionphunks.rb
 
 
 require 'pixelart'
 
 
-
 ## read in right-facing punk composite
 print "==> loading right-facing image..."
-punks = ImageComposite.read( "../../awesome-24px/collection/womenpunks.png" )
+punks = ImageComposite.read( "../../awesome-24px/collection/expansionpunks.png" )
 print "OK\n"
 
 
-## 100x60 = 6000 punks (cols x rows); create an empty composite
-phunks = ImageComposite.new( 100, 60 )
+## 100x100 = 10000 punks (cols x rows); create an empty composite
+phunks = ImageComposite.new( 100, 100 )
 
-(0..5999).each do |i|
+(0..9999).each do |i|
   punk  = punks[i]
   phunk = punk.mirror   ## mirror, that is, flip image vertically (right-facing to left-facing)
 
@@ -31,9 +30,8 @@ end
 
 
 print "==> saving left-facing image..."
-phunks.save( "./tmp/womenphunks.png" )
+phunks.save( "./tmp/expansionphunks.png" )
 print "OK\n"
 
 
 puts "bye"
-
