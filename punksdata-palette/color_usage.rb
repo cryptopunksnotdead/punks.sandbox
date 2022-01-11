@@ -76,11 +76,12 @@ color_usage.each do |color, rec|
 
   buf << "#{'%2d' % assets.size} asset(s):\n"
   assets.each_with_index do |(key, count), i|
-     buf << "- #{'%s' % key} "
+     buf << " · "   if i > 0   ## add separator
+     buf << "#{'%s' % key} "
      buf << "![](../punksdata-assets/i/#{key.gsub(/_\((m|f)\)/, '')}.png)"
-     buf << " - #{count} pixel(s)\n"
+     buf << " - #{count} pixel(s)"
   end
-  buf << "\n"
+  buf << "\n\n"
 end
 
 puts

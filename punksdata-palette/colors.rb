@@ -24,16 +24,15 @@ end
 ## generate color palette
 ##  and color images
 
-palette = [0]+colors   ## note: (auto-)add zero-based transparent color up-front
-
-img = ImagePalette8bit.new( palette, size: 16 )
-img.save( "./i/color-palette@16x.png" )
+img = ImagePalette8bit.new( colors, size: 16 )
+img.save( "./i/color-palette.png" )
 
 
 colors.each_with_index do |color,i|
 
+  ## note: note: starts with 0 - (color #0 - black, and so on)
   img = Image.new( 24, 24, color )
-  img.save( "./i/color-#{'%03d' % (i+1)}.png")
+  img.save( "./i/color-#{'%03d' % i }.png")
 end
 
 
