@@ -1,9 +1,10 @@
 ###########
+#   Phree the Phunks!
+#
 #  to run use:
 #    ruby ./phunks.rb
 
 
-$LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
 
 
@@ -12,7 +13,7 @@ phunks = Punks::Image::Composite.new( 100, 100 )
 
 
 ## read in right-facing punk composite
-rootdir = "../../programming-cryptopunks"
+rootdir = "../../awesome-24px/collection"
 
 print "==> loading right-facing image..."
 punks = Punks::Image::Composite.read( "#{rootdir}/punks.png" )
