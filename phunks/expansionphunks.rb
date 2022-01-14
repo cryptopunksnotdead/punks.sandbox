@@ -15,17 +15,14 @@ print "OK\n"
 
 
 ## 100x100 = 10000 punks (cols x rows); create an empty composite
-phunks = ImageComposite.new( 100, 100 )
+##    phunk with background (use solid blue-ish color for now)
 
-(0..9999).each do |i|
-  punk  = punks[i]
+phunks = ImageComposite.new( 100, 100, background: '#638596' )
+
+punks.each do |punk|
   phunk = punk.mirror   ## mirror, that is, flip image vertically (right-facing to left-facing)
 
-  ## phunk with background (use solid blue-ish color for now)
-  img = Image.new( 24, 24, '#638596' )
-  img.compose!( phunk )
-
-  phunks << img
+  phunks << phunk
 end
 
 
