@@ -20,9 +20,7 @@ print "OK\n"
 phunks = ImageComposite.new( 100, 60, background: '#638596' )
 
 punks.each do |punk|
-  phunk = punk.mirror   ## mirror, that is, flip image vertically (right-facing to left-facing)
-
-  phunks << phunk
+  phunks << punk.mirror   ## mirror, that is, flip image vertically (right-facing to left-facing)
 end
 
 

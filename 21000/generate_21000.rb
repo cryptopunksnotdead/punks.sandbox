@@ -2,41 +2,28 @@
 #  21 000 Punks - The Punk Maxi Club Edition
 
 
-
-##
-## todo/add upstream:
-##   use ImageComposite.new( 100, 210, background:  '#638596' )
-##
-##  add new add_composite method or such - why? why not?
-
-
 require 'pixelart'
 
+## 100x210 (cols x rows) = 21000
+##   background (use solid blue-ish color for now)
+club = ImageComposite.new( 100, 210, background: '#638596' )
 
-club = ImageComposite.new( 100, 210 )   ## 100x210 (cols x rows) = 21000
 
 print "==> [1/3] loading punk image..."
 punks = ImageComposite.read( "../../awesome-24px/collection/punks.png" )
 print "OK\n"
 
-(0..9999).each do |i|
-  ## punk with background (use solid blue-ish color for now)
-  img = Image.new( 24, 24, '#638596' )
-  img.compose!( punks[i] )
-
-  club << img
+punks.each do |punk|
+  club << punk
 end
+
 
 print "==> [2/3] loading punk image..."
 punks = ImageComposite.read( "../../awesome-24px/collection/expansionpunks.png" )
 print "OK\n"
 
-(0..9999).each do |i|
-  ## punk with background (use solid blue-ish color for now)
-  img = Image.new( 24, 24, '#638596' )
-  img.compose!( punks[i] )
-
-  club << img
+punks.each do |punk|
+  club << punk
 end
 
 
@@ -44,12 +31,8 @@ print "==> [3/3] loading punk image..."
 punks = ImageComposite.read( "../../awesome-24px/collection/morepunks.png" )
 print "OK\n"
 
-(0..999).each do |i|
-  ## punk with background (use solid blue-ish color for now)
-  img = Image.new( 24, 24, '#638596' )
-  img.compose!( punks[i] )
-
-  club << img
+punks.each do |punk|
+  club << punk
 end
 
 
