@@ -377,6 +377,84 @@ all-caps/m/cap_330.png, u,l,  Cap 330°, Cap Red Magenta
 all-caps/f/cap_330.png, f,s,  Cap 330°, Cap Red Magenta
 
 
+###################
+# fast food caps & more - attributes
+
+fastfood/m/cap-br.png,              u,l, Cap Br,         Cap Baskin-Robbins
+fastfood/m/cap-br_flipped.png,      u,l, Cap Br Flipped, Cap Baskin-Robbins Flipped
+fastfood/f/cap-br.png,              f,s, Cap Br,         Cap Baskin-Robbins
+fastfood/f/cap-br_flipped.png,      f,s, Cap Br Flipped, Cap Baskin-Robbins Flipped
+
+fastfood/m/cap-brk.png,             u,l, Cap Brk,         Cap Burger King
+fastfood/m/cap-brk_flipped.png,     u,l  Cap Brk Flipped, Cap Burger King Flipped
+fastfood/f/cap-brk.png,             f,s, Cap Brk,         Cap Burger King
+fastfood/f/cap-brk_flipped.png,     f,s  Cap Brk Flipped, Cap Burger King Flipped
+
+fastfood/m/cap-castle.png,          u,l, Cap Castle,          Cap White Castle
+fastfood/m/cap-castle_flipped.png,  u,l, Cap Castle Flipped,  Cap White Castle Flipped
+fastfood/f/cap-castle.png,          f,s, Cap Castle,          Cap White Castle
+fastfood/f/cap-castle_flipped.png,  f,s, Cap Castle Flipped,  Cap White Castle Flipped
+
+fastfood/m/cap-dom.png,             u,l, Cap Dom,          Cap Domino's | Cap Domino's Pizza
+fastfood/m/cap-dom_flipped.png,     u,l, Cap Dom Flipped,  Cap Domino's Flipped | Cap Domino's Pizza Flipped
+fastfood/f/cap-dom.png,             f,s, Cap Dom,          Cap Domino's | Cap Domino's Pizza
+fastfood/f/cap-dom_flipped.png,     f,s, Cap Dom Flipped,  Cap Domino's Flipped | Cap Domino's Pizza Flipped
+
+fastfood/m/cap-dunk.png,            u,l, Cap Dunk,           Cap Dunkin' | Cap Dunkin' Donuts
+fastfood/m/cap-dunk_flipped.png,    u,l, Cap Dunk Flipped,   Cap Dunkin' Flipped | Cap Dunkin' Donuts Flipped
+fastfood/f/cap-dunk.png,            f,s, Cap Dunk,           Cap Dunkin' | Cap Dunkin' Donuts
+fastfood/f/cap-dunk_flipped.png,    f,s, Cap Dunk Flipped,   Cap Dunkin' Flipped | Cap Dunkin' Donuts Flipped
+
+fastfood/m/cap-hut.png,             u,l, Cap Hut,            Cap Pizza Hut
+fastfood/m/cap-hut_flipped.png,     u,l, Cap Hut Flipped,    Cap Pizza Hut Flipped
+fastfood/f/cap-hut.png,             f,s, Cap Hut,            Cap Pizza Hut
+fastfood/f/cap-hut_flipped.png,     f,s, Cap Hut Flipped,    Cap Pizza Hut Flipped
+
+fastfood/m/cap-jack.png,            u,l, Cap Jack,           Cap Jack in the Box
+fastfood/m/cap-jack_flipped.png,    u,l, Cap Jack Flipped,   Cap Jack in the Box Flipped
+fastfood/f/cap-jack.png,            f,s, Cap Jack,           Cap Jack in the Box
+fastfood/f/cap-jack_flipped.png,    f,s, Cap Jack Flipped,   Cap Jack in the Box Flipped
+
+fastfood/m/cap-kentucky.png,         u,l, Cap Kentucky,        Cap KFC | Cap Kentucky Fried Chicken
+fastfood/m/cap-kentucky_flipped.png, u,l, Cap Kentucky Flipped, Cap KFC Flipped | Cap Kentucky Fried Chicken Flipped
+fastfood/f/cap-kentucky.png,         f,s, Cap Kentucky,        Cap KFC | Cap Kentucky Fried Chicken
+fastfood/f/cap-kentucky_flipped.png, f,s, Cap Kentucky Flipped, Cap KFC Flipped | Cap Kentucky Fried Chicken Flipped
+
+fastfood/m/cap-m-red.png,            u,l, Cap M,         Cap McDonald's | Cap M Red | Cap McDonald's Red
+fastfood/m/cap-m-red_flipped.png,    u,l, Cap M Flipped,  Cap McDonald's Flipped | Cap M Red Flipped | Cap McDonald's Red Flipped
+fastfood/m/cap-m-white.png,           u,l, Cap M White,      Cap McDonald's White
+fastfood/m/cap-m-white_flipped.png,  u,l, Cap M White Flipped,  Cap McDonald's White Flipped
+fastfood/m/cap-m-gray.png,           u,l, Cap M Gray,      Cap McDonald's Gray
+fastfood/m/cap-m-gray_flipped.png,   u,l, Cap M Gray Flipped,      Cap McDonald's Gray Flipped
+fastfood/m/cap-m-black.png,          u,l, Cap M Black,      Cap McDonald's Black
+fastfood/m/cap-m-black_flipped.png,  u,l, Cap M Black Flipped,      Cap McDonald's Black Flipped
+fastfood/f/cap-m-red.png,            f,s, Cap M,         Cap McDonald's | Cap M Red | Cap McDonald's Red
+fastfood/f/cap-m-red_flipped.png,    f,s, Cap M Flipped,  Cap McDonald's Flipped | Cap M Red Flipped | Cap McDonald's Red Flipped
+fastfood/f/cap-m-white.png,           f,s, Cap M White,      Cap McDonald's White
+fastfood/f/cap-m-white_flipped.png,  f,s, Cap M White Flipped,  Cap McDonald's White Flipped
+fastfood/f/cap-m-gray.png,           f,s, Cap M Gray,      Cap McDonald's Gray
+fastfood/f/cap-m-gray_flipped.png,   f,s, Cap M Gray Flipped,      Cap McDonald's Gray Flipped
+fastfood/f/cap-m-black.png,          f,s, Cap M Black,      Cap McDonald's Black
+fastfood/f/cap-m-black_flipped.png,  f,s, Cap M Black Flipped,      Cap McDonald's Black Flipped
+
+fastfood/m/cap-sub.png,             u,l, Cap Sub,    Cap Subway
+fastfood/m/cap-sub_flipped.png,     u,l, Cap Sub Flipped,    Cap Subway Flipped
+fastfood/f/cap-sub.png,             f,s, Cap Sub,    Cap Subway
+fastfood/f/cap-sub_flipped.png,     f,s, Cap Sub Flipped,    Cap Subway Flipped
+
+fastfood/m/cap-w.png,               u,l, Cap W,    Cap Wendy's
+fastfood/m/cap-w_flipped.png,       u,l, Cap W Flipped,    Cap Wendy's Flipped
+fastfood/f/cap-w.png,               f,s, Cap W,    Cap Wendy's
+fastfood/f/cap-w_flipped.png,       f,s, Cap W Flipped,    Cap Wendy's Flipped
+
+
+fastfood/m/bucket-m-red.png,        u,l, Bucket Hat M, Bucket Hat McDonald's
+fastfood/m/cowboy-m-red.png,        u,l, Cowboy Hat M, Cowboy Hat McDonald's
+fastfood/m/crown-brk.png,           u,l, Crown Brk,    Crown Burger King | Burger King Crown
+fastfood/m/safari-kentucky.png,     u,l, Safari Hat Kentucky, Safari Hat KFC | Safari Hat Kentucky Fried Chicken
+
+
+
 ##################
 # basic hair - attributes
 
