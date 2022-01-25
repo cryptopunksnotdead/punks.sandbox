@@ -15,7 +15,7 @@ print "OK\n"
 
 
 ## 10x10 = 100 punks (cols x rows); create an empty composite
-##    punky with background (use solid blue-ish color for now)
+##    punkz with background (use solid blue-ish color for now)
 punkz = ImageComposite.new( 10, 10, background: '#638596' )
 
 punks.each_with_index do |punk,i|
