@@ -45,6 +45,10 @@ ids = [
 puts "  #{ids.size} id(s)"   #=> 104 id(s)
 
 
+##
+## note: lot includes NO 7-attribute, 6-attribut,  5-attribute punks
+##          at most 4-attribute punks
+
 
 ids.each do |id|
   values = punks.punk_attributes( id ).split( /[ ]*,[ ]*/ )
@@ -52,7 +56,7 @@ ids.each do |id|
   print id
   print ", "
   print values.join(', ')
-  print "," * (6-values.size)
+  print "," * (5-values.size)
   print "\n"
 end
 
