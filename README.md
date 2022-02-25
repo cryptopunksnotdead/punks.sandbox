@@ -1,6 +1,6 @@
 # cryptopunks libraries, tools & scripts
 
-- [**cryptopunks**](cryptopunks) - mint your own 24×24 pixel punk images off chain from the True Official Genuine CryptoPunks™ sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
+- [**cryptopunks**](cryptopunks) - mint your own 24×24 pixel punk images off chain from the True Official Genuine Matt & John's® Punks V2 sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
 - [cryptopunks-graphql](cryptopunks-graphql) - (lite) cryptopunks (http json) graphql api / client
 
 
