@@ -17,7 +17,7 @@ Glory To Ukraine! Punks with Ukraine Flag in The Background
 
 ![](i/glorytoukrainepunks.png)
 
-3x <br> ![](i/glorytoukrainepunks@4x.png)
+3x <br> ![](i/glorytoukrainepunks@3x.png)
 
 
 
@@ -26,7 +26,7 @@ Glory To Ukraine! Two-Colored Blue & Yellow Silhouette Punks in the Colors of th
 
 ![](i/glorytoukrainepunks-silhouette.png)
 
-8x <br> ![](i/glorytoukrainepunks-silhouette@4x.png)
+8x <br> ![](i/glorytoukrainepunks-silhouette@8x.png)
 
 
 
