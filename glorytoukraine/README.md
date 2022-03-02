@@ -15,18 +15,18 @@ Yes, you can. See the glorytoukraine scripts to get started with your own punks 
 Glory To Ukraine! Punks with Ukraine Flag in The Background
 
 
-![](i/glorytoukraine.png)
+![](i/glorytoukrainepunks.png)
 
-3x  ![](i/glorytoukraine@4x.png)
+3x <br> ![](i/glorytoukrainepunks@4x.png)
 
 
 
 Glory To Ukraine! Two-Colored Blue & Yellow Silhouette Punks in the Colors of the Ukraine Flag
 
 
-![](i/glorytoukraine-silhouette.png)
+![](i/glorytoukrainepunks-silhouette.png)
 
-8x  ![](i/glorytoukraine-silhouette@4x.png)
+8x <br> ![](i/glorytoukrainepunks-silhouette@4x.png)
 
 
 
