@@ -44,7 +44,7 @@ end
 
 print "==> saving left-facing image..."
 ukraine_punks.save( "./tmp/glorytoukrainepunks.png" )
-ukraine_punks.zoom(4).save( "./tmp/glorytoukrainepunks@4x.png" )
+ukraine_punks.zoom(3).save( "./tmp/glorytoukrainepunks@3x.png" )
 print "OK\n"
 
 
