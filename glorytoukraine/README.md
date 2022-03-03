@@ -3,9 +3,10 @@
 
 ---
 
-Public Service "Stop the War" Annoucement:
+Public Service "Stop the War" Announcement:
 
-The world has changed forever (and it's not the blockchain, it's war in Europe!). Send a fuck (vladimir) putin! stop the war! glory to ukraine! message to the world with your profile picture (such as your pixel punks, apes, etc.) with the flag of ukraine in the background.
+The world has changed forever on February 24th, 2022 (and it's not the blockchain, it's war in Europe!). Send a fuck (vladimir) putin! stop the war! glory to ukraine! message to the world with your profile picture (such as your pixel punks, apes, etc.) with the
+flag of ukraine ![](i/flag.png) in the background.
 
 Yes, you can. See the glorytoukraine scripts to get started with your own punks showing solidarity with the people of Ukraine.
 
