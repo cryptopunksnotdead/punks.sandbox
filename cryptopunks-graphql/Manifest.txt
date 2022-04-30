@@ -1,8 +1,0 @@
-CHANGELOG.md
-Manifest.txt
-README.md
-Rakefile
-lib/cryptopunks-graphql.rb
-lib/cryptopunks/graphql.rb
-lib/cryptopunks/graphql/query.rb
-lib/cryptopunks/graphql/version.rb
