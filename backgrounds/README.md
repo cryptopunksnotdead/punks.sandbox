@@ -37,6 +37,19 @@ Rainbow / Pride   ![](flag_rainbow-24x24.png)  (or use `Image#rainbow|pride`)
 
 
 
+
+
+
+
+
+## Samples
+
+In 4x
+
+![](i/punk-backgrounds%404x.png)
+
+
+
 ## Questions? Comments?
 
 Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
