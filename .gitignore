@@ -1,4 +1,4 @@
 #####
-# exclude all tmp directories
-/tmp/
+# exclude all tmp directories  - check if /tmp/ or /tmp works - is right syntax - why? why not?
+tmp/
 
