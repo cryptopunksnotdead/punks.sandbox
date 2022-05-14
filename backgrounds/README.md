@@ -12,15 +12,11 @@ Snowy     ![](snowy-24x24.png)
 Swamp     ![](swamp-24x24.png)
 
 
-**Matrix Series**
-
-Matrix 1  ![](matrix1-24x24.png)
+**Matrix Series** - Matrix 1  ![](matrix1-24x24.png)
 Matrix 2  ![](matrix2-24x24.png)
 Matrix 3  ![](matrix3-24x24.png)
 
-**Rainbow / Pride Series**
-
-Rainbow 1 ![](rainbow1-24x24.png)
+**Rainbow / Pride Series** - Rainbow 1 ![](rainbow1-24x24.png)
 Rainbow 2 ![](rainbow2-24x24.png)
 Rainbow 3 ![](rainbow3-24x24.png)
 Rainbow 4 ![](rainbow4-24x24.png)
