@@ -31,7 +31,7 @@ Example - Left-looking Marylin P(h)unkette (in 4x)
 ![](backgrounds/i/punk-backgrounds%404x.png)
 
 
-See [**/backgrounds**](backgrounds) for more.
+See [**/backgrounds »**](backgrounds) for more.
 
 
 
