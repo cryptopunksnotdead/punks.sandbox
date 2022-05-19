@@ -21,7 +21,7 @@ meta = []  ## output meta(data) records
 ####
 #  add archetypes first
 
-sheet << Image.read( "./i/base.png" )
+sheet << Image.read( "./attributes/base.png" )
 meta << [meta.size,
          'Base',                       ## name
          'Archetype - Cool Cat',       ## type
@@ -33,7 +33,7 @@ meta << [meta.size,
 #  add attributes
 attributes.each do |rec|
   path = rec['path']
-  sheet << Image.read( "./i/#{path}" )
+  sheet << Image.read( "./attributes/#{path}" )
 
   meta << [meta.size,
             rec['name'],

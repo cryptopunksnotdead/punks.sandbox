@@ -3,7 +3,7 @@
 
 ## Base
 
-![](i/base.png)
+![](attributes/base.png)
 4x ![](i/base@4x.png)
 8x ![](i/base@8x.png)
 

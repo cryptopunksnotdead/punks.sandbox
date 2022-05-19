@@ -5,39 +5,39 @@ path,  category, name,  more_names
 
 ## -- Faces
 
-    face-angry.png,         Face, Angry
-    face-angry_cute.png,    Face, Angry Cute
-    face-beard_brown.png,   Face, Beard Brown
-    face-derp.png,          Face, Derp
-    face-ditto.png,         Face, Ditto
-    face-dizzy.png,         Face, Dizzy
-    face-face_face.png,     Face, Face Face
-    face-glasses.png,       Face, Glasses
-    face-glasses_funny.png, Face, Glasses Funny
-    face-glossy.png,        Face, Glossy
-    face-grin.png,          Face, Grin
-    face-happy.png,         Face, Happy
-    face-happy_cute.png,    Face, Happy Cute
-    face-hearts.png,        Face, Hearts
-    face-mononoke.png,      Face, Mononoke
-    face-mummy.png,         Face, Mummy
-    face-ninja_black.png,   Face, Ninja Black
-    face-ninja_blue.png,    Face, Ninja Blue
-    face-ninja_red.png,     Face, Ninja Red
-    face-owo.png,           Face, Owo
-    face-pixel.png,           Face, Pixel
-    face-stunned.png,         Face, Stunned
-    face-sunglasses_blue.png, Face, Sunglasses Blue
-    face-sunglasses_cool.png, Face, Sunglasses Cool
-    face-sunglasses_heart.png,  Face, Sunglasses Heart
-    face-sunglasses_pixel.png,  Face, Sunglasses Pixel
-    face-tvface_404.png,        Face, TV Face 404
-    face-tvface_bobross.png,    Face, TV Face Bob Ross
-    face-tvface_nosignal.png,   Face, TV Face No Signal
-    face-tvface_xp.png,         Face, TV Face XP
-    face-unamused.png,          Face, Unamused
-    face-uwu.png,               Face, Uwu
-    face-wink.png,              Face, Wink
+    face/angry.png,         Face, Angry
+    face/angry_cute.png,    Face, Angry Cute
+    face/beard_brown.png,   Face, Beard Brown
+    face/derp.png,          Face, Derp
+    face/ditto.png,         Face, Ditto
+    face/dizzy.png,         Face, Dizzy
+    face/face_face.png,     Face, Face Face
+    face/glasses.png,       Face, Glasses
+    face/glasses_funny.png, Face, Glasses Funny
+    face/glossy.png,        Face, Glossy
+    face/grin.png,          Face, Grin
+    face/happy.png,         Face, Happy
+    face/happy_cute.png,    Face, Happy Cute
+    face/hearts.png,        Face, Hearts
+    face/mononoke.png,      Face, Mononoke
+    face/mummy.png,         Face, Mummy
+    face/ninja_black.png,   Face, Ninja Black
+    face/ninja_blue.png,    Face, Ninja Blue
+    face/ninja_red.png,     Face, Ninja Red
+    face/owo.png,           Face, Owo
+    face/pixel.png,           Face, Pixel
+    face/stunned.png,         Face, Stunned
+    face/sunglasses_blue.png, Face, Sunglasses Blue
+    face/sunglasses_cool.png, Face, Sunglasses Cool
+    face/sunglasses_heart.png,  Face, Sunglasses Heart
+    face/sunglasses_pixel.png,  Face, Sunglasses Pixel
+    face/tvface_404.png,        Face, TV Face 404
+    face/tvface_bobross.png,    Face, TV Face Bob Ross
+    face/tvface_nosignal.png,   Face, TV Face No Signal
+    face/tvface_xp.png,         Face, TV Face XP
+    face/unamused.png,          Face, Unamused
+    face/uwu.png,               Face, Uwu
+    face/wink.png,              Face, Wink
 
 ## -- Hats
 
@@ -45,46 +45,46 @@ path,  category, name,  more_names
 ##    or head prop / accessory or such (for flower or halo?)
 
 
-    hat-afro_black.png,             Hat, Afro Black
-    hat-afro_rainbow_unicorn.png,   Hat, Afro Rainbow Unicorn
-    hat-beanie_orange.png,          Hat, Beanie Orange
-    hat-beanie_red.png,             Hat, Beanie Red
-    hat-beret_red.png,              Hat, Beret Red
-    hat-bucket_hat_tan.png,         Hat, Bucket Hat Tan
-    hat-costume_dragon.png,         Hat, Costume Dragon
-    hat-costume_frog.png,           Hat, Costume Frog
-    hat-costume_gorilla.png,        Hat, Costume Gorilla
-    hat-flower_blue.png,            Hat, Flower Blue
-    hat-flower_pink.png,            Hat, Flower Pink
-    hat-flower_red.png,             Hat, Flower Red
-    hat-halo.png,                   Hat, Halo
-    hat-hat_visor_yellow.png,       Hat, Visor Yellow
-    hat-sun_hat_white.png,          Hat, Sun Hat White
-    hat-tvhead_grey.png,            Hat, TV Head Grey
-    hat-tvhead_purple.png,          Hat, TV Head Purple
-    hat-tvhead_white.png,           Hat, TV Head White
+    hat/afro_black.png,             Hat, Afro Black
+    hat/afro_rainbow_unicorn.png,   Hat, Afro Rainbow Unicorn
+    hat/beanie_orange.png,          Hat, Beanie Orange
+    hat/beanie_red.png,             Hat, Beanie Red
+    hat/beret_red.png,              Hat, Beret Red
+    hat/bucket_hat_tan.png,         Hat, Bucket Hat Tan
+    hat/costume_dragon.png,         Hat, Costume Dragon
+    hat/costume_frog.png,           Hat, Costume Frog
+    hat/costume_gorilla.png,        Hat, Costume Gorilla
+    hat/flower_blue.png,            Hat, Flower Blue
+    hat/flower_pink.png,            Hat, Flower Pink
+    hat/flower_red.png,             Hat, Flower Red
+    hat/halo.png,                   Hat, Halo
+    hat/visor_yellow.png,       Hat, Visor Yellow
+    hat/sun_hat_white.png,          Hat, Sun Hat White
+    hat/tvhead_grey.png,            Hat, TV Head Grey
+    hat/tvhead_purple.png,          Hat, TV Head Purple
+    hat/tvhead_white.png,           Hat, TV Head White
 
 ## -- Clothes
 
-    clothes-bandana_red.png,               Clothes, Bandana Red
-    clothes-buttondown_black_flannel.png,  Clothes, Buttondown Black Flannel
-    clothes-buttondown_red_flannel.png,    Clothes, Buttondown Red Flannel
-    clothes-chain.png,                     Clothes, Chain
-    clothes-gown_white.png,                Clothes, Gown White
-    clothes-overalls_blue.png,             Clothes, Overalls Blue
-    clothes-shirt_white.png,               Clothes, Shirt White
-    clothes-sweater_orange.png,            Clothes, Sweater Orange
-    clothes-tanktop_white.png,             Clothes, Tanktop White
-    clothes-tshirt_blue.png,               Clothes, T-Shirt Blue
-    clothes-work_blue.png,                 Clothes, Work Blue
+    clothes/bandana_red.png,               Clothes, Bandana Red
+    clothes/buttondown_black_flannel.png,  Clothes, Buttondown Black Flannel
+    clothes/buttondown_red_flannel.png,    Clothes, Buttondown Red Flannel
+    clothes/chain.png,                     Clothes, Chain
+    clothes/gown_white.png,                Clothes, Gown White
+    clothes/overalls_blue.png,             Clothes, Overalls Blue
+    clothes/shirt_white.png,               Clothes, Shirt White
+    clothes/sweater_orange.png,            Clothes, Sweater Orange
+    clothes/tanktop_white.png,             Clothes, Tanktop White
+    clothes/tshirt_blue.png,               Clothes, T-Shirt Blue
+    clothes/work_blue.png,                 Clothes, Work Blue
 
 
 ##############################
 # halloween - attribute
 
-    halloween-jack.png,                    Halloween, Jack
-    halloween-jason.png,                   Halloween, Jason
-    halloween-scream.png,                  Halloween, Scream
-    halloween-skull.png,                   Halloween, Skull
+    halloween/jack.png,                    Halloween, Jack
+    halloween/jason.png,                   Halloween, Jason
+    halloween/scream.png,                  Halloween, Scream
+    halloween/skull.png,                   Halloween, Skull
 
 
