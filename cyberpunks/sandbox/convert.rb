@@ -77,8 +77,8 @@ meta = []   ## output meta(data) records
 
 data.each do |rec|
   id   = rec['id']     ## int number
-  type = rec['type']
-  name = rec['name']
+  type = rec['type'].strip
+  name = rec['name'].strip     # note: remove trailing spaces
   # displayName = rec['displayName']
   #   note:  only human 1 to 10  have a differntdisplay name, that is,
   #                 a "generic" human 1 => human, human 2 => human, etc.

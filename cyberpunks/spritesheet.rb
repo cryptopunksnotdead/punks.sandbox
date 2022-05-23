@@ -39,12 +39,12 @@ attributes.each do |rec|
   name       = rec['name']
   more_names = (rec['more_names'] || '').split( '|' )
 
-  match_count = 0
+  alt_count = 0
   alt_name = name
   words.each do |rec|
      alt_name = alt_name.gsub( rec[0] ) do |_|
        alt_count += 1
-       puts "   expanding >#{rec[1]}< to >#{rec[2]}< in >#{name}< (#{match_count})"
+       puts "   expanding >#{rec[1]}< to >#{rec[2]}< in >#{name}< (#{alt_count})"
        rec[2]
      end
   end
