@@ -28,10 +28,22 @@ Free punk background patterns, flags & more incl.
 
 Example - Left-looking Marylin P(h)unkette (in 4x)
 
-![](backgrounds/i/punk-backgrounds%404x.png)
+![](backgrounds/i/punk-backgrounds@4x.png)
 
 
 For more see [**/backgrounds »**](backgrounds)
+
+
+### Punks XL
+
+Upsize "classic" 24px punks to XL using "matching" cyberpunks attributes in 32px.
+
+Example - Case Study - Female 1/2/3, Male 1/2/3 and The First Six Punks Side-By-Side (in 4x)
+
+![](cyberpunks-classic/i/punks-xl@4x.png)
+
+For more see [**/cyberpunks-classic »**](cyberpunks-classic)
+
 
 
 
