@@ -108,7 +108,7 @@ data.each do |rec|
 end
 
 
-headers = ['path', 'type', 'name', 'more_names']
+headers = ['path', 'category', 'name', 'more_names']
 File.open( "./tmp/attributes.csv", "w:utf-8" ) do |f|
    f.write( headers.join( ', '))
    f.write( "\n")

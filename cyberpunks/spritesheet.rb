@@ -16,6 +16,18 @@ sheet = ImageComposite.new( 20, (total/20)+1, width:  32,
 
 meta = []  ## output meta(data) records
 
+## auto-expand some shortcuts - note: for now doesn't generate all permutations
+##                                          if more than one match (always expands all words)
+words  = [
+  [ 'Diag', 'Diagonal' ],
+  [ 'Vert', 'Vertical' ],
+  [ 'Brwn', 'Brown' ],
+  [ 'Blk',  'Black' ],
+  [ 'Grey',  'Gray' ],        # -- allow "amercian" spelling
+].map do |rec|
+          [ %r{\b#{rec[0]}\b}, rec[0], rec[1] ]    # -- auto-convert to regex (w/ word boundary)
+      end
+
 
 ####
 #  add attributes
@@ -23,10 +35,30 @@ attributes.each do |rec|
   path = rec['path']
   sheet << Image.read( "./attributes/#{path}" )
 
+
+  name       = rec['name']
+  more_names = (rec['more_names'] || '').split( '|' )
+
+  match_count = 0
+  alt_name = name
+  words.each do |rec|
+     alt_name = alt_name.gsub( rec[0] ) do |_|
+       alt_count += 1
+       puts "   expanding >#{rec[1]}< to >#{rec[2]}< in >#{name}< (#{match_count})"
+       rec[2]
+     end
+  end
+
+  more_names  << alt_name     if alt_count > 0
+
+  ## normalize spaces in more names
+  names = [name] + more_names
+  names = names.map {|str| str.strip.gsub(/[ ]{2,}/, ' ' )}
+
   meta << [meta.size,
-            rec['category'],
-            rec['name'],
-            rec['more_names'],
+            rec['type'],
+            names[0],
+            names[1..-1].join( ' | '),
           ]
 end
 
