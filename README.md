@@ -38,13 +38,13 @@ For more see [**/backgrounds »**](backgrounds)
 
 Upsize "classic" 24px punks to XL using "matching" cyberpunks attributes in 32px.
 
-Example - Case Study - Female 1/2/3, Male 1/2/3 and The First Six Punks Side-By-Side (in 4x)
+Example - Case Study - Female 1/2/3, Male 1/2/3 and The First Six Punks Side-By-Side
 
-![](cyberpunks-classic/i/punks-xl@4x.png)
+![](cyberpunks-classic/i/punks-xl.png)
 
-Example - Case Study - Super-Rare Top Selling Million Dollar Alien Punks Side-By-Side (in 4x)
+Example - Case Study - Super-Rare Top Selling Million Dollar Alien Punks Side-By-Side
 
-![](cyberpunks-classic/i/aliens-xl@4x.png)
+![](cyberpunks-classic/i/aliens-xl.png)
 
 
 For more see [**/cyberpunks-classic »**](cyberpunks-classic)
