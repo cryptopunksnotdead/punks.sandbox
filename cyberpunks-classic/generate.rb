@@ -40,13 +40,26 @@ ATTRIBUTES = {
  'Earring'           => Image.read( "./attributes/earring.png" ),
  'Cap Forward'       => Image.read( "./attributes/cap_forward.png" ),
  'Pipe'              => Image.read( "./attributes/pipe.png" ),
+
+ 'Hood'                =>  Image.read( "../cyberpunks/attributes/12-head_above/hood.png" ),
+ 'Dom Rose'            =>  Image.read( "../cyberpunks/attributes/13-mouth_accessory/dom_rose.png" ),
+ 'Crown Long Hair Blue'=>  Image.read(  "../cyberpunks/attributes/12-head_above/crown_long_hair_blue.png" ),
+ 'Large Hoop Earrings' =>  Image.read(  "../cyberpunks/attributes/07-ear_accessory/large_hoop_earrings.png" ),
+ 'Red Dot'             =>  Image.read(  "../cyberpunks/attributes/06-eyes/skull_red_dot.png"),
+ 'Smile'               =>  Image.read(  "../cyberpunks/attributes/04-mouth/smile.png" ),
+ 'Lipstick Green'      =>  Image.read(  "../cyberpunks/attributes/04-mouth/lipstick_green.png" ),
 }
 
 
 
 
-def generate_xl( *attributes )
-  punk = Image.new( 32, 32, '#638596' )
+def generate_xl( *attributes, background: nil )
+  punk = if background
+           Image.new( 32, 32, background )
+         else
+           Image.new( 32, 32 )
+         end
+
   attributes.each do |attribute|
     punk.compose!( ATTRIBUTES[ attribute ] )
   end
@@ -86,7 +99,7 @@ punks.each_with_index do |attributes,i|
   punk_xl.compose!( punk, 4, 4 )     # center (24x24) in bigger xl (32x32) format
   composite << punk_xl
 
-  punk_xl = generate_xl( *attributes )
+  punk_xl = generate_xl( *attributes, background: '#638596' )
 
   punk_xl.save( "./tmp/punk#{i}_xl.png" )
   punk_xl.zoom(4).save( "./tmp/punk#{i}_xl@4x.png" )
@@ -96,6 +109,30 @@ end
 
 composite.save( "./tmp/punks-xl.png" )
 composite.zoom(4).save( "./tmp/punks-xl@4x.png" )
+
+
+
+###
+# try a variant with codelines ("matrix") background
+composite = ImageComposite.new( 3, 2, width: 32,
+                                      height: 32 )
+
+
+codelines = Image.read( "../cyberpunks/attributes/01-background/codelines.png" )
+
+punks[6..-1].each_with_index do |attributes,i|
+
+  base = generate_xl( *attributes )
+
+  punk = Image.new( 32, 32 )
+  punk.compose!( codelines )
+  punk.compose!( base )
+
+  composite << punk
+end
+
+composite.save( "./tmp/punks-xl_ii.png" )
+composite.zoom(4).save( "./tmp/punks-xl_ii@4x.png" )
 
 
 
@@ -131,7 +168,7 @@ aliens.each_with_index do |attributes,i|
     end
 
     pp attributes_variant
-    punk_xl = generate_xl( *attributes_variant )
+    punk_xl = generate_xl( *attributes_variant, background: '#638596' )
 
     punk_xl.save( "./tmp/alien#{i}.#{variant}_xl.png" )
     punk_xl.zoom(4).save( "./tmp/alien#{i}.#{variant}_xl@4x.png" )
@@ -142,6 +179,42 @@ end
 
 composite.save( "./tmp/aliens-xl.png" )
 composite.zoom(4).save( "./tmp/aliens-xl@4x.png" )
+
+
+
+###
+# try a variant with metropolis 2 background
+#      and with cyberpunks attributes
+
+aliens = Csv.parse( <<TXT )
+  Alien 1, Knitted Cap, Earring
+  Alien 2, Knitted Cap, Earring, Medical Mask
+  Alien 3, Crown Long Hair Blue, Large Hoop Earrings, Lipstick Green
+  Alien 1, Headband, Smile
+  Alien 2, Cap Forward, Small Shades, Pipe
+  Alien 3, Hood, Dom Rose, Red Dot
+TXT
+
+
+composite = ImageComposite.new( 3, 2, width: 32,
+                                      height: 32 )
+
+metropolis2 = Image.read( "../cyberpunks/attributes/01-background/metropolis_2.png" )
+
+aliens.each_with_index do |attributes,i|
+
+  base = generate_xl( *attributes )
+
+  punk = Image.new( 32, 32 )
+  punk.compose!( metropolis2 )
+  punk.compose!( base )
+
+  composite << punk
+end
+
+
+composite.save( "./tmp/aliens-xl_ii.png" )
+composite.zoom(4).save( "./tmp/aliens-xl_ii@4x.png" )
 
 
 puts "bye"
