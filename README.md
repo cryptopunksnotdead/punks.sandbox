@@ -42,6 +42,11 @@ Example - Case Study - Female 1/2/3, Male 1/2/3 and The First Six Punks Side-By-
 
 ![](cyberpunks-classic/i/punks-xl@4x.png)
 
+Example - Case Study - Super-Rare Top Selling Million Dollar Alien Punks Side-By-Side (in 4x)
+
+![](cyberpunks-classic/i/aliens-xl@4x.png)
+
+
 For more see [**/cyberpunks-classic »**](cyberpunks-classic)
 
 
