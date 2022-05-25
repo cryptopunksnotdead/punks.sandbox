@@ -9,10 +9,10 @@ require 'pixelart'
 
 ## build lookup map for pre-loaded attribute images
 ATTRIBUTES = [
-  ['Male 1',       'tan1'],
-  ['Male 1B',       'tan2'],    ## note:   if headwear use ("smaller" base head variant)
-  ['Male 2',       'nude1'],
-  ['Male 2B',       'nude2'],
+  ['Head 1',       'tan1'],
+  ['Head 1B',       'tan2'],    ## note:   if headwear use ("smaller" base head variant)
+  ['Head 2',       'nude1'],
+  ['Head 2B',       'nude2'],
   ['Staring',      'eyes/staring'],
   ['Raised',       'eyes/raised'],
   ['Shades Dark',  'eyewear/shades-dark'],
@@ -60,12 +60,12 @@ end
 
 
 men = Csv.parse( <<TXT )
- Male 1, Staring, Earring, Mohawk Black, Pout 1, Chain
- Male 2B, Staring, Snap Back Black, Lips, Turtleneck Rust
- Male 2, Raised, Elvish Golden, Lips, Cigarette, Turtleneck Violet
- Male 1B, Staring, Goatee Black, Dreads Black, Beanie Yellow, Turtleneck Army, Leather Jacket, Teeth
- Male 2B, Shades Dark,  Beret Rust, Shirt, Full Beard Chestnut, Moustache Chestnut
- Male 2, Daft, Turtleneck Blue
+ Head 1, Staring, Earring, Mohawk Black, Pout 1, Chain
+ Head 2B, Staring, Snap Back Black, Lips, Turtleneck Rust
+ Head 2, Raised, Elvish Golden, Lips, Cigarette, Turtleneck Violet
+ Head 1B, Staring, Goatee Black, Dreads Black, Beanie Yellow, Turtleneck Army, Leather Jacket, Teeth
+ Head 2B, Shades Dark,  Beret Rust, Shirt, Full Beard Chestnut, Moustache Chestnut
+ Head 2, Daft, Turtleneck Blue
 TXT
 
 pp men
@@ -80,15 +80,15 @@ men.each_with_index do |attributes,i|
 
   img = generate( *attributes )
 
-  img.save( "./tmp/man#{i}.png" )
-  img.zoom(4).save( "./tmp/man#{i}@4x.png" )
+  img.save( "./tmp/head#{i}.png" )
+  img.zoom(4).save( "./tmp/head#{i}@4x.png" )
 
   composite << img
 end
 
-composite.save( "./tmp/men.png" )
-composite.zoom(4).save( "./tmp/men@4x.png" )
-composite.zoom(8).save( "./tmp/men@8x.png" )
+composite.save( "./tmp/heads.png" )
+composite.zoom(4).save( "./tmp/heads@4x.png" )
+composite.zoom(8).save( "./tmp/heads@8x.png" )
 
 
 puts "bye"
