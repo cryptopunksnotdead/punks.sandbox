@@ -1,15 +1,25 @@
 path,  category, name,  more_names
 
-tan1.png,   Face,   Head 1,   Tan | Tan 1
-tan2.png,   Face,    Head 1B, Tan 2
-nude1.png,  Face,    Head 2,   Nude | Nude 1
-nude2.png,  Face,    Head 2B,  Nude 2
+tan1.png,        Face,    Head 1,   Tan | Tan 1
+plus/tan2.png,   Face,    Head 1B,  Tan 2
+nude1.png,       Face,    Head 2,   Nude | Nude 1
+plus/nude2.png,  Face,    Head 2B,  Nude 2
 
 more/daft.png
 
-
-eyes/raised.png
 eyes/staring.png
+eyes/raised.png
+
+plus/eyes_staring-brown.png, ,   Staring Brown
+plus/eyes_raised-brown.png,  ,   Raised Brown
+plus/eyes_staring_big-brown.png, , Big Staring Brown
+plus/eyes_raised_big-brown.png, ,  Big Raised Brown
+
+plus/eyes_staring-blue.png,   ,    Staring Blue
+plus/eyes_raised-blue.png,    ,    Raised Blue
+plus/eyes_staring_big-blue.png, ,  Big Staring Blue
+plus/eyes_raised_big-blue.png,  ,  Big Raised Blue
+
 
 eyewear/shades-dark.png
 eyewear/shades-yellow.png
@@ -17,10 +27,28 @@ eyewear/shades_large-dark.png
 
 more/earring.png
 
-mouth/lips.png
-mouth/pout-nude.png
-mouth/pout-tan.png
-mouth/teeth.png
+mouth/idle-tan.png,   ,  Idle 1
+mouth/idle-nude.png,  ,  Idle 2
+mouth/pout-tan.png,   ,  Pout 1
+mouth/pout-nude.png,  ,  Pout 2
+mouth/teeth-tan.png,  ,  Teeth 1
+mouth/teeth-nude.png, ,   Teeth 2
+
+plus/frown-tan.png,    ,   Frown 1
+plus/frown-nude.png,   ,  Frown 2
+plus/smile-tan.png,    ,   Smile 1
+plus/smile-nude.png,   ,   Smile 2
+plus/teeth_smile-tan.png,  , Teeth w/ Smile 1
+plus/teeth_smile-nude.png, , Teeth w/ Smile 2
+
+plus/lipstick-black.png,  ,  Black Lipstick
+plus/lipstick-pink.png,   ,  Pink Lipstick
+plus/lipstick-purple.png, ,  Purple Lipstick
+plus/lipstick-red.png,   ,   Red Lipstick, Hot Lipstick
+plus/smile_lipstick-purple.png, ,  Smile w/ Purple Lipstick
+plus/smile_lipstick-red.png, ,    Smile w/ Red Lipstick, Smile w/ Hot Lipstick
+plus/teeth_smile_lipstick-red.png, ,  Teeth w/ Smile w/ Red Lipstick, Teeth w/ Smile w/ Hot Lipstick
+
 
 more/cigarette.png
 
@@ -85,6 +113,9 @@ hair/strand-peach.png
 hair/swirl-beach.png
 hair/swirl-black.png
 hair/swirl-golden.png
+hair/top_knot-chestnut.png
+hair/top_knot-golden.png
+hair/top_knot-peach.png
 hair/under_cut-black.png
 hair/under_cut-golden.png
 hair/under_cut-peach.png
