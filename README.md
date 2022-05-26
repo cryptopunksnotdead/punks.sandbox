@@ -67,7 +67,7 @@ Example 1 - (Pixel) Heads
 ![](heads/i/heads.png)
 
 
-Example 1b - Classic (Pixel) Heads Incl. Goth, Hacker, Bell de Jour, Silver Fox, & More
+Example 1b - Classic (Pixel) Heads Incl. Goth, Hacker, Belle de Jour, Silver Fox, & More
 
 ![](heads/i/heads_vol2.png)
 
