@@ -60,6 +60,24 @@ Example 2b - Aliens w/ Metropolis Background Plus - Bonus - Two New Super-Rare  
 For more see [**/cyberpunks-classic »**](cyberpunks-classic)
 
 
+### 24px Originals Presents: (Pixel) Heads - A Free Hunks Remake in The Classic 24x24 Format
+
+Example 1 - (Pixel) Heads
+
+![](heads/i/heads.png)
+
+
+Example 1b - Classic (Pixel) Heads Incl. Goth, Hacker, Bell de Jour, Silver Fox, & More
+
+![](heads/i/heads-vol2.png)
+
+
+Example 2 - New Attributes Incl. Brown & Blue Eyes, Smile, Smile w/ Teeth, Red/Pink/Purple & Black Lipsticks, & More
+
+
+![](heads/i/heads-plus.png)
+
+For more see [**/heads »**](heads)
 
 
 
