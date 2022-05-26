@@ -69,13 +69,13 @@ Example 1 - (Pixel) Heads
 
 Example 1b - Classic (Pixel) Heads Incl. Goth, Hacker, Bell de Jour, Silver Fox, & More
 
-![](heads/i/heads-vol2.png)
+![](heads/i/heads_vol2.png)
 
 
 Example 2 - New Attributes Incl. Brown & Blue Eyes, Smile, Smile w/ Teeth, Red/Pink/Purple & Black Lipsticks, & More
 
 
-![](heads/i/heads-plus.png)
+![](heads/i/heads_plus.png)
 
 For more see [**/heads »**](heads)
 
