@@ -160,10 +160,10 @@ end
 
 zombies = Csv.parse( <<TXT )
   Zombie 2, Trunks Hair, Earring, Tongue Out
-  Zombie 1, Ninja, Leather Bandana Bald
-  Zombie 4, Messy Bun, Hot Lipstick, Large Hoop Earrings
+  Zombie 3, Messy Bun, Hot Lipstick, Large Hoop Earrings
   Zombie 4, Long Green Front Braid, Hot Lipstick, Gold Stud Cross Combo
-  Zombie 1, Full Head Bandage
+  Zombie 2, Full Head Bandage
+  Zombie 1, Ninja, Leather Bandana Bald
   Zombie 4, Divine Robe, Smile
 TXT
 
