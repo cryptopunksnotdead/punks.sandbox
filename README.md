@@ -47,7 +47,7 @@ Example 1b - The First Six Punks w/ Codelines "Matrix" Background
 ![](cyberpunks-classic/i/punks-xl_ii.png)
 
 
-Example 2 - Super-Rare Top Selling Million Dollar Alien Punks Side-By-Side
+Example 2 - Super-Rare Top Selling Million Dollar Aliens Side-By-Side
 
 ![](cyberpunks-classic/i/aliens-xl.png)
 
@@ -56,8 +56,12 @@ Example 2b - Aliens w/ Metropolis Background Plus - Bonus - Two New Super-Rare  
 ![](cyberpunks-classic/i/aliens-xl_ii.png)
 
 
+Example 3 - Super-Rare Top Selling Apes Side-By-Side Incl. New Never-Before-Seen White, Black, Gorilla, Pink, Golden & More Ape Archetypes
+
+![](cyberpunks-classic/i/apes-xl.png)
 
 For more see [**/cyberpunks-classic »**](cyberpunks-classic)
+
 
 
 ### 24px Originals Presents: (Pixel) Heads - A Free Hunks Remake in The Classic 24x24 Format

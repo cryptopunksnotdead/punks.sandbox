@@ -19,6 +19,16 @@ ATTRIBUTES = {
  'Alien 2'  => Image.read( "./attributes/alien2.png" ),
  'Alien 3'  => Image.read( "./attributes/alien3.png" ),
 
+ 'Ape 1'  => Image.read( "./attributes/ape1.png" ),
+ 'Ape 2'  => Image.read( "./attributes/ape2.png" ),
+ 'Ape 3'  => Image.read( "./attributes/ape3.png" ),
+ 'Ape 4'  => Image.read( "./attributes/ape4.png" ),
+ 'Ape 5'  => Image.read( "./attributes/ape5.png" ),
+ 'Ape 6'  => Image.read( "./attributes/ape6.png" ),
+ 'Ape 7'  => Image.read( "./attributes/ape7.png" ),
+ 'Ape 8'  => Image.read( "./attributes/ape8.png" ),
+
+
  'Blonde Bob'       => Image.read( "./attributes/blonde_bob.png" ),
  'Wild Hair'         => Image.read( "./attributes/wild_hair.png" ),
  'Half Shaved'       => Image.read( "./attributes/half_shaved.png" ),
@@ -40,6 +50,9 @@ ATTRIBUTES = {
  'Earring'           => Image.read( "./attributes/earring.png" ),
  'Cap Forward'       => Image.read( "./attributes/cap_forward.png" ),
  'Pipe'              => Image.read( "./attributes/pipe.png" ),
+ 'Hoodie'            => Image.read( "./attributes/hoodie.png" ),
+ 'Top Hat'           => Image.read( "./attributes/top_hat.png" ),
+ 'Cowboy Hat'        => Image.read( "./attributes/cowboy_hat.png" ),
 
  'Hood'                =>  Image.read( "../cyberpunks/attributes/12-head_above/hood.png" ),
  'Dom Rose'            =>  Image.read( "../cyberpunks/attributes/13-mouth_accessory/dom_rose.png" ),
@@ -66,6 +79,46 @@ def generate_xl( *attributes, background: nil )
   punk
 end
 
+
+apes = Csv.parse( <<TXT )
+  Ape
+  Ape, Headband
+  Ape, Cap Forward, Earring
+  Ape, Knitted Cap
+  Ape, Knitted Cap, Small Shades
+  Ape, Top Hat, Small Shades
+  Ape, Cowboy Hat, 3D Glasses
+  Ape, Hoodie
+TXT
+
+composite = ImageComposite.new( 9, apes.size, width: 32,
+                                              height: 32 )
+
+
+apes.each_with_index do |attributes,i|
+  punk = Punk::Image.generate( *attributes )
+  punk.save( "./tmp/ape#{i}.png" )
+  punk.zoom(4).save( "./tmp/ape#{i}@4x.png" )
+
+  punk_xl = Image.new( 32, 32, '#638596' )
+  punk_xl.compose!( punk, 4, 4 )     # center (24x24) in bigger xl (32x32) format
+  composite << punk_xl
+
+  (1..8).each do |variant|
+    ## change first attribute e.g. Ape to Ape 1/2/3 etc.
+    attributes_variant = ["#{attributes[0]} #{variant}"] + attributes[1..-1]
+
+    punk_xl = generate_xl( *attributes_variant, background: '#638596' )
+
+    punk_xl.save( "./tmp/ape#{i}.#{variant}_xl.png" )
+    punk_xl.zoom(4).save( "./tmp/ape#{i}.#{variant}_xl@4x.png" )
+    composite << punk_xl
+  end
+end
+
+
+composite.save( "./tmp/apes-xl.png" )
+composite.zoom(2).save( "./tmp/apes-xl@2x.png" )
 
 
 
