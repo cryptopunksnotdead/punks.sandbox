@@ -28,11 +28,18 @@ ATTRIBUTES = {
  'Ape 7'  => Image.read( "./attributes/ape7.png" ),
  'Ape 8'  => Image.read( "./attributes/ape8.png" ),
 
+  'Zombie 1'  =>  Image.read( "./attributes/zombie1.png" ),
+  'Zombie 2'  =>  Image.read( "./attributes/zombie2.png" ),
+  'Zombie 3'  =>  Image.read( "./attributes/zombie3.png" ),
+  'Zombie 4'  =>  Image.read( "./attributes/zombie4.png" ),
+
 
  'Blonde Bob'       => Image.read( "./attributes/blonde_bob.png" ),
  'Wild Hair'         => Image.read( "./attributes/wild_hair.png" ),
  'Half Shaved'       => Image.read( "./attributes/half_shaved.png" ),
  'Mohawk'            => Image.read( "./attributes/mohawk.png" ),
+ 'Crazy Hair'        => Image.read( "./attributes/crazy_hair.png" ),
+
 
  'Hot Lipstick'      => Image.read( "./attributes/hot_lipstick.png" ),
  'Green Eye Shadow' => Image.read( "./attributes/green_eye_shadow.png" ),
@@ -50,17 +57,40 @@ ATTRIBUTES = {
  'Earring'           => Image.read( "./attributes/earring.png" ),
  'Cap Forward'       => Image.read( "./attributes/cap_forward.png" ),
  'Pipe'              => Image.read( "./attributes/pipe.png" ),
+ 'Cigarette'         => Image.read( "./attributes/cigarette.png" ),
  'Hoodie'            => Image.read( "./attributes/hoodie.png" ),
  'Top Hat'           => Image.read( "./attributes/top_hat.png" ),
  'Cowboy Hat'        => Image.read( "./attributes/cowboy_hat.png" ),
+ 'Bandana'           => Image.read( "./attributes/bandana.png" ),
+ 'Beanie'            => Image.read( "./attributes/beanie.png" ),
+ 'Eye Patch'         => Image.read( "./attributes/eye_patch.png" ),
+ 'Smile'             => Image.read( "./attributes/smile.png" ),
+
 
  'Hood'                =>  Image.read( "../cyberpunks/attributes/12-head_above/hood.png" ),
  'Dom Rose'            =>  Image.read( "../cyberpunks/attributes/13-mouth_accessory/dom_rose.png" ),
  'Crown Long Hair Blue'=>  Image.read(  "../cyberpunks/attributes/12-head_above/crown_long_hair_blue.png" ),
  'Large Hoop Earrings' =>  Image.read(  "../cyberpunks/attributes/07-ear_accessory/large_hoop_earrings.png" ),
+ 'Gold Stud Cross Combo'  =>  Image.read(  "../cyberpunks/attributes/07-ear_accessory/gold_stud_cross_combo.png" ),
  'Red Dot'             =>  Image.read(  "../cyberpunks/attributes/06-eyes/skull_red_dot.png"),
- 'Smile'               =>  Image.read(  "../cyberpunks/attributes/04-mouth/smile.png" ),
  'Lipstick Green'      =>  Image.read(  "../cyberpunks/attributes/04-mouth/lipstick_green.png" ),
+ 'Lipstick Purple'      =>  Image.read(  "../cyberpunks/attributes/04-mouth/lipstick_purple.png" ),
+ 'Lipstick Blue'      =>  Image.read(  "../cyberpunks/attributes/04-mouth/lipstick_blue.png" ),
+ 'Frown'                =>  Image.read(  "../cyberpunks/attributes/04-mouth/frown.png" ),
+ 'Full Head Bandage'   =>  Image.read(  "../cyberpunks/attributes/09-mask/full_head_bandage.png" ),
+ 'Ninja'                =>  Image.read(  "../cyberpunks/attributes/08-face_accessory/ninja.png" ),
+ 'Leather Bandana Bald'  =>  Image.read(  "../cyberpunks/attributes/12-head_above/leather_bandana_bald.png" ),
+ 'Forehead X Tattoo'    =>  Image.read(  "../cyberpunks/attributes/03-face/forehead_x_tattoo.png" ),
+ 'Bleached Vertical Spikes' =>  Image.read(  "../cyberpunks/attributes/10-head_below/bleached_vertical_spikes.png" ),
+ 'Blue Vertical Spikes' =>  Image.read(  "../cyberpunks/attributes/10-head_below/blue_vertical_spikes.png" ),
+ 'Punker Spike Neon Pink'  =>  Image.read(  "../cyberpunks/attributes/10-head_below/punker_spike_neon_pink.png" ),
+ 'Messy Bun'           =>  Image.read(  "../cyberpunks/attributes/10-head_below/messy_bun.png" ),
+ 'Beanie Hair Green'   =>  Image.read(  "../cyberpunks/attributes/12-head_above/beanie_hair_green.png" ),
+ 'Divine Robe'   =>  Image.read(  "../cyberpunks/attributes/12-head_above/divine_robe.png" ),
+ 'Trunks Hair'   =>  Image.read(  "../cyberpunks/attributes/12-head_above/trunks_hair.png" ),
+ 'Long Pink Pigtails'   =>  Image.read(  "../cyberpunks/attributes/12-head_above/long_pink_pigtails.png" ),
+ 'Long Green Front Braid' =>  Image.read(  "../cyberpunks/attributes/12-head_above/long_green_front_braid.png" ),
+ 'Tongue Out'            =>  Image.read( "../cyberpunks/attributes/13-mouth_accessory/tongue_out.png" ),
 }
 
 
@@ -73,11 +103,81 @@ def generate_xl( *attributes, background: nil )
            Image.new( 32, 32 )
          end
 
-  attributes.each do |attribute|
-    punk.compose!( ATTRIBUTES[ attribute ] )
+  attributes.each do |attribute_name|
+    attribute =  ATTRIBUTES[ attribute_name ]
+    if attribute.nil?
+      puts "!! ERROR - attribute >#{attribute_name}< not found; sorry"
+      pp attributes
+      exit 1
+    end
+    punk.compose!( attribute )
   end
   punk
 end
+
+
+
+
+zombies = Csv.parse( <<TXT )
+  Zombie
+  Zombie, Crazy Hair, Earring
+  Zombie, Bandana, Eye Patch, Earring
+  Zombie, Knitted Cap
+  Zombie, Top Hat, Nerd Glasses, Cigarette
+  Zombie, Wild Hair, 3D Glasses, Smile
+  Zombie, Headband, Goat
+  Zombie, Cap Forward, Small Shades, Pipe
+  Zombie, Beanie, Smile
+  Zombie, Hoodie
+TXT
+
+composite = ImageComposite.new( 6, zombies.size/2+1, width: 32,
+                                                   height: 32 )
+
+
+
+zombies.each_with_index do |attributes,i|
+  punk = Punk::Image.generate( *attributes )
+  punk.save( "./tmp/zombie#{i}.png" )
+  punk.zoom(4).save( "./tmp/zombie#{i}@4x.png" )
+
+  punk_xl = Image.new( 32, 32, '#638596' )
+  punk_xl.compose!( punk, 4, 4 )     # center (24x24) in bigger xl (32x32) format
+  composite << punk_xl
+
+  (1..2).each do |variant|
+    ## change first attribute e.g. Zombie to Zombie 1/2/3 etc.
+    attributes_variant = ["#{attributes[0]} #{variant}"] + attributes[1..-1]
+
+    punk_xl = generate_xl( *attributes_variant, background: '#638596' )
+
+    punk_xl.save( "./tmp/zombie#{i}.#{variant}_xl.png" )
+    punk_xl.zoom(4).save( "./tmp/zombie#{i}.#{variant}_xl@4x.png" )
+    composite << punk_xl
+  end
+end
+
+
+zombies = Csv.parse( <<TXT )
+  Zombie 2, Trunks Hair, Earring, Tongue Out
+  Zombie 1, Ninja, Leather Bandana Bald
+  Zombie 4, Messy Bun, Hot Lipstick, Large Hoop Earrings
+  Zombie 4, Long Green Front Braid, Hot Lipstick, Gold Stud Cross Combo
+  Zombie 1, Full Head Bandage
+  Zombie 4, Divine Robe, Smile
+TXT
+
+zombies.each do |attributes|
+  punk_xl = generate_xl( *attributes, background: '#638596' )
+  composite << punk_xl
+end
+
+
+composite.save( "./tmp/zombies-xl.png" )
+composite.zoom(2).save( "./tmp/zombies-xl@2x.png" )
+composite.zoom(4).save( "./tmp/zombies-xl@4x.png" )
+
+
 
 
 apes = Csv.parse( <<TXT )
