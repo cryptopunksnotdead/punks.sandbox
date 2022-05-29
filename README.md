@@ -92,6 +92,17 @@ For more see [**/heads »**](heads)
 
 
 
+### 24px Originals Presents: Tulip Mania - Tulips, Tulips, Tulips In The Classic 24x24 Format
+
+Example 1 - Thirty Tulips in Classic Black Modern Frames
+
+![](tulips/i/tulips.png)
+
+For more see [**/tulips »**](tulips)
+
+
+
+
 ## License
 
 The `punks.sandbox` scripts are dedicated to the public domain.
