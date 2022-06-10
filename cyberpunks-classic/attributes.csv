@@ -1,0 +1,82 @@
+path,  category, name,  more_names
+
+##############
+#  base archetype(s)
+
+male1.png
+male2.png
+male3.png
+
+female1.png
+female2.png
+female3.png
+
+zombie1.png,   , Zombie 1,  Zombie
+zombie2.png
+zombie3.png
+zombie4.png
+
+ape1.png,   ,    Ape 1,    Ape
+ape2.png
+ape3.png
+ape4.png
+ape5.png
+ape6.png
+ape7.png
+ape8.png
+
+alien1.png,   ,     Alien 1,   Alien
+alien2.png
+alien3.png
+
+
+###########################
+# attributes
+
+#  ---- hair
+blonde_bob.png
+crazy_hair.png
+half_shaved.png
+mohawk.png
+wild_hair.png
+
+# --- hats / headwear
+bandana.png
+beanie.png
+cap_forward.png
+cowboy_hat.png
+headband.png
+knitted_cap.png
+top_hat.png
+
+#  ---- glasses / eyewear
+3d_glasses.png
+big_shades.png
+small_shades.png
+nerd_glasses.png
+eye_patch.png
+
+# --- beards
+goat.png
+
+# --- make-up (eyes)
+green_eye_shadow.png
+purple_eye_shadow.png
+
+# -- make-up (mouth)
+hot_lipstick.png
+
+# -- expressions / emotions (mouth)
+smile.png
+
+# --- earring(s)
+earring.png
+
+# --- more / mouth props
+cigarette.png
+medical_mask.png
+pipe.png
+
+# --- clothes
+hoodie.png
+
