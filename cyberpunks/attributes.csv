@@ -1,48 +1,5 @@
 path, type, name, more_names
-01-background/beam.png, Background, Beam,
-01-background/black_orange_diag.png, Background, Black Orange Diag,
-01-background/blue_diag.png, Background, Blue Diag,
-01-background/blue_orange_diag.png, Background, Blue Orange Diag,
-01-background/blue_solid.png, Background, Blue Solid,
-01-background/candy_stripe.png, Background, Candy Stripe,
-01-background/codelines.png, Background, Codelines,
-01-background/dark_purple_solid.png, Background, Dark Purple Solid,
-01-background/double_green.png, Background, Double Green,
-01-background/double_pink.png, Background, Double Pink,
-01-background/double_purple.png, Background, Double Purple,
-01-background/double_yellow.png, Background, Double Yellow,
-01-background/green_black_diag.png, Background, Green Black Diag,
-01-background/green_blue_vert.png, Background, Green Blue Vert,
-01-background/green_diag.png, Background, Green Diag,
-01-background/green_double_stripe.png, Background, Green Double Stripe,
-01-background/green_solid.png, Background, Green Solid,
-01-background/green_stripe.png, Background, Green Stripe,
-01-background/green_tie_dye.png, Background, Green Tie Dye,
-01-background/grey_solid.png, Background, Grey Solid,
-01-background/light_blue_solid.png, Background, Light Blue Solid,
-01-background/magenta_solid.png, Background, Magenta Solid,
-01-background/metropolis_1.png, Background, Metropolis 1,
-01-background/metropolis_2.png, Background, Metropolis 2,
-01-background/orange_solid.png, Background, Orange Solid,
-01-background/orange_tie_dye.png, Background, Orange Tie Dye,
-01-background/peach_blue_vert.png, Background, Peach Blue Vert,
-01-background/peach_solid.png, Background, Peach Solid,
-01-background/pink_diag.png, Background, Pink Diag,
-01-background/pink_solid.png, Background, Pink Solid,
-01-background/purple_green_diag.png, Background, Purple Green Diag,
-01-background/purple_orange_diag.png, Background, Purple Orange Diag,
-01-background/purple_solid.png, Background, Purple Solid,
-01-background/purple_stripe.png, Background, Purple Stripe,
-01-background/purple_tie_dye.png, Background, Purple Tie Dye,
-01-background/red_solid.png, Background, Red Solid,
-01-background/sun.png, Background, Sun,
-01-background/triple_blue.png, Background, Triple Blue,
-01-background/triple_green.png, Background, Triple Green,
-01-background/triple_pink.png, Background, Triple Pink,
-01-background/yellow_diag.png, Background, Yellow Diag,
-01-background/yellow_double_stripe.png, Background, Yellow Double Stripe,
-01-background/yellow_pink_diag.png, Background, Yellow Pink Diag,
-01-background/yellow_solid.png, Background, Yellow Solid,
+
 02-race/alien.png, Race, Alien,
 02-race/bot.png, Race, Bot,
 02-race/human_1.png, Race, Human 1,
@@ -58,6 +15,8 @@ path, type, name, more_names
 02-race/skull_blue.png, Race, Skull Blue,
 02-race/skull_gold.png, Race, Skull Gold,
 02-race/skull.png, Race, Skull,
+
+
 04-mouth/buck_teeth.png, Mouth, Buck Teeth,
 04-mouth/frown.png, Mouth, Frown,
 04-mouth/idle.png, Mouth, Idle,
@@ -72,6 +31,8 @@ path, type, name, more_names
 04-mouth/smile.png, Mouth, Smile,
 04-mouth/teeth_smile.png, Mouth, Teeth Smile,
 04-mouth/teethy_grin.png, Mouth, Teethy Grin,
+
+
 03-face/basic_mustache_black.png, Face, Basic Mustache Black,
 03-face/basic_mustache_brwn.png, Face, Basic Mustache Brwn,
 03-face/beard_black.png, Face, Beard Black,
@@ -104,6 +65,8 @@ path, type, name, more_names
 03-face/thin_curled_mustache_brown.png, Face, Thin Curled Mustache Brown,
 03-face/winged_mustache_black.png, Face, Winged Mustache Black,
 03-face/winged_mustache_brown.png, Face, Winged Mustache Brown,
+
+
 08-face_accessory/gas_mask.png, Face Accessory, Gas Mask,
 08-face_accessory/ninja.png, Face Accessory, Ninja,
 08-face_accessory/oni_mask_green.png, Face Accessory, Oni Mask Green,
@@ -111,6 +74,8 @@ path, type, name, more_names
 08-face_accessory/oni_mask_red.png, Face Accessory, Oni Mask Red,
 08-face_accessory/oxygen_mask.png, Face Accessory, Oxygen mask,
 08-face_accessory/viral_mask.png, Face Accessory, Viral Mask,
+
+
 09-mask/full_head_bandage.png, Mask, Full Head Bandage,
 09-mask/gas_tank_mask.png, Mask, Gas Tank Mask,
 09-mask/hockey_mask.png, Mask, Hockey Mask,
@@ -118,6 +83,8 @@ path, type, name, more_names
 09-mask/polygon_mask.png, Mask, Polygon Mask,
 09-mask/robo-jaw.png, Mask, Robo-Jaw,
 09-mask/squid_mask.png, Mask, Squid Mask,
+
+
 07-ear_accessory/candy_raver_earrings.png, Ear Accessory, Candy Raver Earrings,
 07-ear_accessory/chain_earring.png, Ear Accessory, Chain Earring,
 07-ear_accessory/earpiece.png, Ear Accessory, Earpiece,
@@ -128,6 +95,8 @@ path, type, name, more_names
 07-ear_accessory/silver_stud_cross_combo.png, Ear Accessory, Silver Stud Cross Combo,
 07-ear_accessory/silver_stud_earrings.png, Ear Accessory, Silver Stud Earrings,
 07-ear_accessory/small_hoop_earrings.png, Ear Accessory, Small Hoop Earrings,
+
+
 13-mouth_accessory/blunt.png, Mouth Accessory, Blunt,
 13-mouth_accessory/cig.png, Mouth Accessory, Cig,
 13-mouth_accessory/cigar.png, Mouth Accessory, Cigar,
@@ -136,6 +105,8 @@ path, type, name, more_names
 13-mouth_accessory/pipe.png, Mouth Accessory, Pipe,
 13-mouth_accessory/tongue_out.png, Mouth Accessory, Tongue Out,
 13-mouth_accessory/tongue_pill.png, Mouth Accessory, Tongue Pill,
+
+
 05-nose/bot_nose_1.png, Nose, Bot Nose 1,
 05-nose/bot_nose_2.png, Nose, Bot Nose 2,
 05-nose/bot_nose_3.png, Nose, Bot Nose 3,
@@ -147,6 +118,8 @@ path, type, name, more_names
 05-nose/prominent.png, Nose, Prominent,
 05-nose/upturned_septum_piercing.png, Nose, Upturned Septum Piercing,
 05-nose/upturned.png, Nose, Upturned,
+
+
 06-eyes/beady_variant_1.png, Eyes, Beady Variant 1,
 06-eyes/beady_variant_2.png, Eyes, Beady Variant 2,
 06-eyes/beady_variant_3.png, Eyes, Beady Variant 3,
@@ -221,6 +194,8 @@ path, type, name, more_names
 06-eyes/villian_eyes_variant_1.png, Eyes, Villian Eyes Variant 1,
 06-eyes/villian_eyes_variant_2.png, Eyes, Villian Eyes Variant 2,
 06-eyes/villian_eyes.png, Eyes, Villian Eyes,
+
+
 11-eye_accessory/aviators.png, Eye Accessory, Aviators,
 11-eye_accessory/chainspace_deck_basic.png, Eye Accessory, Chainspace Deck Basic,
 11-eye_accessory/chainspace_deck_elite_i.png, Eye Accessory, Chainspace Deck Elite I,
