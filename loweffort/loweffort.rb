@@ -21,10 +21,13 @@ phunks = ImageComposite.new( 10, 10,
 
 punks.each_with_index do |punk,i|
 
-  img = punk.save( "./tmp/punk#{i}.png" )
+  punk.save( "./tmp/punk#{i}.png" )
+  punk.zoom( 4 ).save( "./tmp/punk#{i}@4x.png" )
 
-  ## avoid overwrite with unique timestamp ("unix epoch")
+  ## avoid do you wanto to overwrite (y/n) question
+  ##    with unique timestamp ("unix epoch")
   epoch = Time.now.to_i
+
 
   cmd = "ffmpeg -i ./tmp/punk#{i}.png -filter_complex hqx=4 ./tmp/punk#{i}.#{epoch}@hq4x.png"
   puts "==> running >#{cmd}<..."
