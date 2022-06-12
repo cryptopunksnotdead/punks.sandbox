@@ -72,14 +72,14 @@ For more see [**/cyberpunks-classic »**](cyberpunks-classic)
 
 ###  "Auto-Magically" Generate Low-Effort Punks Using (Hiqh-Quality) Pixel Scaling Algorithms - Low Effort Punks, The "High Quality 4X (HQ4X) @ 96x96PX" Edition - Yes, You Can!
 
-Example - 4x Pixel Scaling Algorithms (from 24px to 96px) - Case Study - The First Six Punks Side-By-Side - 4x vs HQ4x - Spot the Difference
+Example - 4x Pixel Scaling Algorithms (from 24px to 96px) - Case Study - The First Six Punks Side-By-Side - 4x vs HQ4x vs Original "Low-Effort Hand-Drawn in 60-Seconds" - Spot the Difference
 
-![](loweffort/i/punk0.png) => ![](loweffort/i/punk0@4x.png) vs ![](loweffort/i/punk0@hq4x.png) <br>
-![](loweffort/i/punk1.png) => ![](loweffort/i/punk1@4x.png) vs ![](loweffort/i/punk1@hq4x.png) <br>
-![](loweffort/i/punk2.png) => ![](loweffort/i/punk2@4x.png) vs ![](loweffort/i/punk2@hq4x.png) <br>
-![](loweffort/i/punk3.png) => ![](loweffort/i/punk3@4x.png) vs ![](loweffort/i/punk3@hq4x.png) <br>
-![](loweffort/i/punk4.png) => ![](loweffort/i/punk4@4x.png) vs ![](loweffort/i/punk4@hq4x.png) <br>
-![](loweffort/i/punk5.png) => ![](loweffort/i/punk5@4x.png) vs ![](loweffort/i/punk5@hq4x.png) <br>
+![](loweffort/i/punk0.png) => ![](loweffort/i/punk0@4x.png) vs ![](loweffort/i/punk0@hq4x.png) vs ![](loweffort/i/loweffortpunk0-96x96.png)  <br>
+![](loweffort/i/punk1.png) => ![](loweffort/i/punk1@4x.png) vs ![](loweffort/i/punk1@hq4x.png) vs ![](loweffort/i/loweffortpunk1-96x96.png) <br>
+![](loweffort/i/punk2.png) => ![](loweffort/i/punk2@4x.png) vs ![](loweffort/i/punk2@hq4x.png) vs ![](loweffort/i/loweffortpunk2-96x96.png) <br>
+![](loweffort/i/punk3.png) => ![](loweffort/i/punk3@4x.png) vs ![](loweffort/i/punk3@hq4x.png) vs ![](loweffort/i/loweffortpunk3-96x96.png) <br>
+![](loweffort/i/punk4.png) => ![](loweffort/i/punk4@4x.png) vs ![](loweffort/i/punk4@hq4x.png) vs ![](loweffort/i/loweffortpunk4-96x96.png) <br>
+![](loweffort/i/punk5.png) => ![](loweffort/i/punk5@4x.png) vs ![](loweffort/i/punk5@hq4x.png) vs ![](loweffort/i/loweffortpunk5-96x96.png) <br>
 
 
 For more see [**/loweffort »**](loweffort)
