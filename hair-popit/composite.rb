@@ -78,7 +78,7 @@ hair1 = Image.read( "./f/blonde_short.png" )
 hair2 = Image.read( "./f/orange_side.png" ).change_colors( {  '#E65700' => '#FFF68E'} )
 hair3 = Image.read( "./f/straight_hair_blonde.png" )
 hair4 = Image.read( "./f/purple_hair.png" ).change_colors( { '#710CC7' => '#FFF68E' } )
-hair5 = Image.read( "./f/blonde_wild.png" )
+hair5 = Image.read( "./f/wild_blonde.png" )
 hair6 = Image.read( "./f/dark_hair.png" ).change_colors( { '#000000' => '#FFF68E',
                                                            '#2A2A2A' => '#FEF7B9' } )
 hair7 = Image.read( "./f/wild_white_hair.png" ).change_colors( { '#FFFFFF' => '#FFF68E',
