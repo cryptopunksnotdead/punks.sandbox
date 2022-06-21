@@ -163,4 +163,29 @@ bears.save( "./tmp/candybears-vol5.png" )
 bears.zoom(4).save( "./tmp/candybears-vol5@4x.png" )
 
 
+
+####
+#  try rainbow bear with 8 colors
+
+bears = ImageComposite.new( 8*3, 16,  width:  24+4,
+                                   height: 24+4 )
+
+hues = [ 60, 30, 0, 300, 270, 240, 150, 120 ]
+(3*16).times do
+  hues.each do |hue|
+    s = 0.28
+    l = 0.08
+    bear_new  = bear.change_colors( {
+                '#571c27' =>  [hue,         0.51+s, 0.23+l],
+                '#891e2b' =>  [(hue+4)%360, 0.64+s, 0.33+l],
+                '#c42430' =>  [(hue+6)%360, [1.0,0.69+s].min, 0.45+l],
+                '#f68187' =>  [(hue+8)%360, [1.0,0.87+s].min, 0.74+l] })
+
+    bears << make_padded( bear_new )
+ end
+end
+
+bears.save( "./tmp/candybears-vol6.png" )
+bears.zoom(2).save( "./tmp/candybears-vol6@2x.png" )
+
 puts "bye"

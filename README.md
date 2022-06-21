@@ -117,6 +117,11 @@ Example 2 - Pick Your Own Colors (Hues) For the (Sweet & Sour) Candy (Pixel) Bea
 
 ![](candybears/i/candybears-vol5.png)
 
+Example 3 - Pop Art Tableau w/ Eight Rainbow Colored (Sweet & Sour) Candy Bears In A Three X Eight Line-up
+
+![](candybears/i/candybears-vol6.png)
+
+
 For more see [**/candybears »**](candybears)
 
 
