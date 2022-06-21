@@ -86,6 +86,39 @@ For more see [**/loweffort »**](loweffort)
 
 
 
+### 32px Originals Presents: Lucky (Pixel) Cats
+
+Example 1 - Collect'em All! - Lucky (Pixel) Cats in All Nine Colors - Black, Purple, Blue, Green, Red, Pink, Orange, Yellow, White
+
+![](luckycats/i/luckycats.png)
+
+For more see [**/luckycats »**](luckycats)
+
+
+
+### AAAAAAAUUUUUGGGHHHHH! 32px Originals Presents: Doge (Much Wow) Shiba Inus X (Ugly) Goblins - The Next Million $$$ Modern Art Collection?
+
+Example 1 -  Four Doge (Much Wow) Shiba Inus X (Ugly) Goblins
+
+![](doge_x_goblins/i/doge_x_goblins.png)
+
+
+For more see [**/doge_x_goblins »**](doge_x_goblins)
+
+
+
+### 24px Originals Presents:  (Sweet & Sour) Candy Bears - The Next Million $$$ Modern Art Collection?
+
+Example 1 - Four (Sweet & Sour) Candy (Pixel) Bears
+
+![](candybears/i/candybears.png)
+
+Example 2 - Pick Your Own Colors (Hues) For the (Sweet & Sour) Candy (Pixel) Bears e.g. Raspberry, Lemon, Strawberry, Pineapple, Orange & More
+
+![](candybears/i/candybears-vol5.png)
+
+For more see [**/candybears »**](candybears)
+
 
 
 ### 24px Originals Presents: Tulip Mania - Tulips, Tulips, Tulips In The Classic 24x24 Format

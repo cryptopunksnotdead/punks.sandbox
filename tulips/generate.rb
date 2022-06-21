@@ -68,7 +68,7 @@ def make_framed( tulip )
   ## add 4px (2p on each side transparent padding/border)
   framed_with_padding = Image.new( 38+4, 38+4 )
   framed_with_padding.compose!( framed, 2, 2)
-  framed
+  framed_with_padding
 end
 
 hues.each do |hue|
