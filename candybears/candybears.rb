@@ -164,6 +164,36 @@ bears.zoom(4).save( "./tmp/candybears-vol5@4x.png" )
 
 
 
+###
+#  save a transparent collection version
+#     for artbase.server
+
+bears = ImageComposite.new( 4, 3,
+                              width: 24,
+                              height: 24 )
+
+hues = [0, 30, 60, 90,
+         120, 150, 180, 210,
+         240, 270, 300, 330]
+
+hues.each do |hue|
+  s = 0.28
+  l = 0.08
+  bear_new  = bear.change_colors( {
+                '#571c27' =>  [hue,         0.51+s, 0.23+l],
+                '#891e2b' =>  [(hue+4)%360, 0.64+s, 0.33+l],
+                '#c42430' =>  [(hue+6)%360, [1.0,0.69+s].min, 0.45+l],
+                '#f68187' =>  [(hue+8)%360, [1.0,0.87+s].min, 0.74+l] })
+
+  bears << bear_new
+end
+
+bears.save( "./tmp/candybears-24x24.png" )
+bears.zoom(4).save( "./tmp/candybears-24x24@4x.png" )
+
+
+
+
 ####
 #  try rainbow bear with 8 colors
 
