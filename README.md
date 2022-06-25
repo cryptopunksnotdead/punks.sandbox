@@ -103,6 +103,25 @@ For more see [**/blackeyedpeas »**](blackeyedpeas)
 
 
 
+### 24px Originals Presents: Weird and Not Weird (Pixel) Whales - The Punk Edition Starter Kit (Incl. Beanie, Top Hat, Headband, Cap & More)
+
+Remember  the story of the 12-year-old British teenager - [**Benyamin Ahmed aka Obi Wan Benoni**](https://github.com/Weird-Whales/images) -  pulling in a $300 000+ fortune in minutes with faux-pixel punk art - that is, 3350 weird whales [with the help of google - [**for the whale pixel art**](http://pixelartmaker.com/art/43a873c00a73712) - and his programming pro father and [**a South African (crypto) pro coder**](https://etherscan.io/address/0x96ed81c7f4406eff359e27bff6325dc3c9e042bd#code) from [**Boring Bananas Company (BBCo)**](https://www.boringbananas.co)]?
+
+To get you started with your own weird or not weird (pixel) whales for easy (re)use the
+![](whales/whale-24x24.png) whale pixel art in a 24x24 canvas / format
+
+Example 1 -  Four Weird And Not Weird Whales (in 2x)
+
+![](whales/i/whales_vol1@2x.png)
+
+Example 2 -  Four Weird And Not Weird Whales (in 2x) with "Faux-Pixel" Headwear (in 1x)
+
+![](whales/i/whales_vol2.png)
+
+
+For more see [**/whales »**](whales)
+
+
 
 ### 32px Originals Presents: Lucky (Pixel) Cats
 

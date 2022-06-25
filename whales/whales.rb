@@ -13,6 +13,7 @@ whales_i << whale.background( 'ukraine' )
 
 
 whales_i.save( "./tmp/whales_vol1.png" )
+whales_i.zoom(2).save( "./tmp/whales_vol1@2x.png" )
 whales_i.zoom(8).save( "./tmp/whales_vol1@8x.png" )
 
 
@@ -24,10 +25,10 @@ BLUE   = '#0000ff'
 
 WHALE2X = Image.read( "./whale-24x24@2x.png")
 
-TOPHAT   = Image.read( "./tophat-48x48.png" )
-BEANIE   = Image.read( "./beanie-48x48.png" )
-HEADBAND = Image.read( "./headband-48x48.png" )
-CAP      = Image.read( "./cap-48x48.png" )
+TOPHAT   = Image.read( "./attributes/tophat-48x48.png" )
+BEANIE   = Image.read( "./attributes/beanie-48x48.png" )
+HEADBAND = Image.read( "./attributes/headband-48x48.png" )
+CAP      = Image.read( "./attributes/cap-48x48.png" )
 
 
 def gen_whale2x( *attributes )
