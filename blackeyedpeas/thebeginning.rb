@@ -47,7 +47,18 @@ composite << blackeyedpeas_ii.zoom(6)  ## 6x zoom = 300x300
 composite << blackeyedpeas_i.zoom(6)
 composite << Image.read( "./thebeginning-300x300.png")
 
-composite.save( "./tmp/thebeginning.png" )
+composite.save( "./tmp/thebeginning@6x.png" )
+
+
+
+composite = ImageComposite.new( 3, 1, width: 200,
+                                      height: 200)
+composite << blackeyedpeas_ii.zoom(4)  ## 4x zoom = 200x200
+composite << blackeyedpeas_i.zoom(4)
+composite << Image.read( "./thebeginning-200x200.png")
+
+composite.save( "./tmp/thebeginning@4x.png" )
+
 
 puts "bye"
 

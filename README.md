@@ -85,6 +85,24 @@ Example - 4x Pixel Scaling Algorithms (from 24px to 96px) - Case Study - The Fir
 For more see [**/loweffort »**](loweffort)
 
 
+### 25px Originals Presents: Black Eyed Peas - The Beginning (Anno 2010) Remastered - The Punk (Pixel) Edition (Anno 2022)
+
+Four punk (pixel) characters / heads, that is,
+![](blackeyedpeas/william-25x25.png) will.i.am,
+![](blackeyedpeas/fergie-25x25.png) fergie,
+![](blackeyedpeas/taboo-25x25.png) taboo &
+![](blackeyedpeas/apldeap-25x25.png) apl.de.ap from
+the album cover artwork [**The Beginning (Anno 2010)**](https://en.wikipedia.org/wiki/The_Beginning_%28Black_Eyed_Peas_album%29) of the sixth studio album by American group Black Eyed Peas
+remastered in the 25x25px format.
+
+Example - The Beginning, The Punk Edition (Anno 2022) in 4x - Spot The Difference From the Album Artwork (Anno 2010)
+
+![](blackeyedpeas/i/thebeginning%404x.png)
+
+For more see [**/blackeyedpeas »**](blackeyedpeas)
+
+
+
 
 ### 32px Originals Presents: Lucky (Pixel) Cats
 
