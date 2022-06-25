@@ -2,8 +2,8 @@ require 'pixelart'
 require 'backgrounds'
 
 
-dino = Image.read( "./dino-24x24.png")
-
+dino          = Image.read( "./dino-24x24.png")
+dino_gameover = Image.read( "./dino_gameover-24x24.png")
 
 dinos_i = ImageComposite.new( 2, 2 )
 
@@ -25,8 +25,8 @@ BLUE   = '#0000ff'
 dinos_ii = ImageComposite.new( 2, 2, background: [YELLOW, GREEN, RED, BLUE] )
 
 dinos_ii << dino
-dinos_ii << dino
-dinos_ii << dino
+dinos_ii << dino_gameover
+dinos_ii << dino_gameover
 dinos_ii << dino
 
 dinos_ii.save( "./tmp/dinos_vol2.png" )
