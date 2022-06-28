@@ -26,8 +26,37 @@ names.each do |name|
   punks << punk
 end
 
-punks.save( "./tmp/readymades.png" )
-punks.zoom(4).save( "./tmp/readymades@4x.png" )
+punks.save( "./tmp/readymades-vol1.png" )
+punks.zoom(4).save( "./tmp/readymades-vol1@4x.png" )
+
+
+
+names =  %w[
+  oprah_winfrey
+  jane_goodall
+  joan_baez
+  mary_j_blige
+
+  diane_keaton
+  michelle_obama
+  susan_sontag
+  shonda_rhimes
+
+  toni_morrison
+  virginia_woolf
+  zora_neale_hurston
+  vanessa_redgrave
+]
+
+punks = ImageComposite.new( 4, 3, background: '#638596' )
+
+names.each do |name|
+  punk = Image.read( "./readymades-24x24/#{name}.png" )
+  punks << punk
+end
+
+punks.save( "./tmp/readymades-vol2.png" )
+punks.zoom(4).save( "./tmp/readymades-vol2@4x.png" )
 
 
 puts "bye"
