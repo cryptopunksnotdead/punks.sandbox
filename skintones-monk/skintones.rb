@@ -27,7 +27,7 @@ colors = {
 }
 
 
-composite = ImageComposite.new( 8, 4 )
+composite = ImageComposite.new( 10, 6 )
 
 
 ## first row add 8 "classic" plus two empties
@@ -36,7 +36,8 @@ composite = ImageComposite.new( 8, 4 )
   composite << Punk::Sheet.find_by( name: "Female #{type}" )
 end
 
-
+composite << Image.new( 24, 24 )
+composite << Image.new( 24, 24 )
 
 
 
@@ -45,10 +46,10 @@ base_m = Punk::Sheet.find_by( name: 'Male 4' )
 base_f = Punk::Sheet.find_by( name: 'Female 4' )
 
 
-colors.each do |name, hex|
+def derive_color_map( hex, name: )
   color = Color.from_hex( hex )
 
-  print "%-20s" % name
+  print "==> %-20s" % name
   print " - "
   print Color.format( color )
   print "\n"
@@ -88,7 +89,12 @@ colors.each do |name, hex|
      '#a58d8d'  =>   darkest,
      '#c9b2b2'  =>   darker
   }
+  color_map
+end
 
+
+colors.each do |name, hex|
+  color_map = derive_color_map( hex, name: name )
   punk = base_m.change_colors( color_map )
 
   composite << punk
@@ -96,7 +102,6 @@ colors.each do |name, hex|
   name = name.gsub( ' ', '_')
   punk.save( "./tmp/attributes/male_#{name}.png" )
   punk.zoom(4).save( "./tmp/male_#{name}@4x.png" )
-
 
 
   ## for female - change lips to all black (like in male for now) - why? why not?
@@ -109,6 +114,65 @@ colors.each do |name, hex|
   punk.save( "./tmp/attributes/female_#{name}.png" )
   punk.zoom(4).save( "./tmp/female_#{name}@4x.png" )
 end
+
+
+
+WHITE = Color.parse( '#ffffff')
+
+def patch_male( punk )
+   punk[10,12] = WHITE     # left eye dark-ish pixel to white
+   punk[15,12] = WHITE     # right exe ---
+   punk
+end
+
+def patch_female( punk )
+  punk[10,13] = WHITE     # left eye dark-ish pixel to white
+  punk[15,13] = WHITE     # right exe ---
+  punk
+end
+
+
+
+## first row add 8 "classic" plus two empties
+(1..4).to_a.reverse.each do |type|
+  punk = Punk::Sheet.find_by( name: "Male #{type}" )
+  composite << patch_male( punk )
+
+  punk = Punk::Sheet.find_by( name: "Female #{type}" )
+  composite << patch_female( punk )
+end
+
+composite << Image.new( 24, 24 )
+composite << Image.new( 24, 24 )
+
+
+
+colors.each do |name, hex|
+  color_map = derive_color_map( hex, name: name )
+  punk = base_m.change_colors( color_map )
+
+  composite << patch_male( punk )
+
+  name = name.gsub( ' ', '_')
+  punk.save( "./tmp/attributes/male_#{name}-ii.png" )
+  punk.zoom(4).save( "./tmp/male_#{name}-ii@4x.png" )
+
+
+  ## for female - change lips to all black (like in male for now) - why? why not?
+  color_map[ '#711010' ] = '#000000'
+  punk = base_f.change_colors( color_map )
+
+  composite << patch_female( punk )
+
+  name = name.gsub( ' ', '_')
+  punk.save( "./tmp/attributes/female_#{name}-ii.png" )
+  punk.zoom(4).save( "./tmp/female_#{name}-ii@4x.png" )
+end
+
+
+
+
+
 
 
 
