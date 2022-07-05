@@ -38,7 +38,7 @@ palette = gen_palette( '#536140' )
 
 
 
-frame = Image.read( "./i/dollar.png" )
+frame = Image.read( "./dollar.png" )
 puts "   #{frame.width}x#{frame.height}"
 
 
