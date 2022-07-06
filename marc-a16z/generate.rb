@@ -44,5 +44,27 @@ marcs.zoom(4).save( "./tmp/marcs@4x.png" )
 
 
 
+#####
+#   add a golden framed "museum-style" marc (a16z)
+#
+
+
+frame = Image.read( "../frame/i/frame24x24.png" )
+
+
+attributes = ['Marc', 'Luxurious Beard', 'Gold Chain' ]
+marc = Punk::Image.generate( *attributes, patch: patch )
+marc = marc.mirror
+
+framed = Image.new( 36, 36 )
+framed.compose!( frame )
+framed.compose!( Image.new( 24,24, '#afcaa1' ), 6, 6 )  ## add non-trasparent / opaque background first
+framed.compose!( marc, 6, 6 )
+
+framed.save( "./tmp/marc-golden.png" )
+framed.zoom( 8 ).save( "./tmp/marc-golden@8x.png" )
+
+
+
 
 puts "bye"
