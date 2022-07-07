@@ -12,10 +12,14 @@ patch = {
   'pinkapemarc'     => Image.read( './pink_ape_marc-24x24.png' ),
   'alienmarc'       => Image.read( './alien_marc-24x24.png' ),
   'greenalienmarc'  => Image.read( './green_alien_marc-24x24.png' ),
-  'demonmarc'       => Image.read( './demon_marc-24x24.png' ),
+  'demonmarc1'       => Image.read( './demon_marc1-24x24.png' ),
+  'demonmarc2'       => Image.read( './demon_marc2-24x24.png' ),
   'orcmarc'         => Image.read( './orc_marc-24x24.png' ),
   'skeletonmarc'    => Image.read( './skeleton_marc-24x24.png' ),
 
+  ## archetype (base) marcs variant - classic "old skool"
+  'classicmarc'    =>  Image.read( './classic_marc-24x24.png' ),
+  'classicapemarc' =>  Image.read( './classic_ape_marc-24x24.png' ),
 
   ## more attributes
   'mcdvisor'     => Image.read( './mcd_visor-24x24.png' ),
@@ -23,7 +27,9 @@ patch = {
   'unclesamhat'  => Image.read( './uncle_sam_hat-24x24.png' ),
   'redshirt'     => Image.read( './red_shirt-24x24.png' ),
   'blueshirt'    => Image.read( './blue_shirt-24x24.png' ),
+  ## adapted attributes
   'cowboyhat'    => Image.read( './cowboy_hat-24x24.png' ),
+  'capforward'   => Image.read( './cap_forward-24x24.png' ),
 }
 
 
@@ -33,7 +39,7 @@ specs = Csv.parse( <<TXT )
   Marc, McD Visor, McD Shirt, Eye Patch, Handlebars
   Marc, Uncle Sam Hat, Red Shirt
 
-  Demon Marc, Heart Shades, Smile
+  Demon Marc 1, Heart Shades, Smile
   Marc, Heart Shades, Birthday Hat, Bubble Gum
   Alien Marc, Headband, Pipe
   Ape Marc, Pipe, 3D Glasses
@@ -42,12 +48,17 @@ specs = Csv.parse( <<TXT )
   Marc, Clown Hair Green, Clown Nose, Horned Rim Glasses, Buck Teeth
   Zombie Marc, VR, Earring
   Marc, Hoodie, Clown Eyes Green, Luxurious Beard
+
+  Marc, Normal Beard, Cap Forward, Cigarette
+  Ape Marc
+  Classic Ape Marc, Luxurious Beard
+  Classic Marc,  Luxurious Beard, Gold Chain
 TXT
 
 
 pp specs
 
-marcs = ImageComposite.new( 4, 3, background: '#638596' )
+marcs = ImageComposite.new( 4, 4, background: '#638596' )
 
 specs.each do |attributes|
   marc = Punk::Image.generate( *attributes, patch: patch )
@@ -94,17 +105,22 @@ types = ['Marc',
          'Alien Marc',
          'Green Alien Marc',
          'Orc Marc',
-         'Demon Marc',
-         'Skeleton Marc']
+         'Demon Marc 1',
+         'Demon Marc 2',
+         'Skeleton Marc',
+         'Classic Marc',
+         'Classic Ape Marc']
 
 
 specs = [
   [],
+  ['Normal Beard'],
+  ['Luxurious Beard'],
   ['Small Shades', 'Blue Shirt'],
   ['Heart Shades', 'Birthday Hat', 'Bubble Gum'],
   ['Headband', 'Pipe'],
   ['McD Visor', 'McD Shirt', 'Eye Patch'],
-  ['VR', 'Earring'],
+  ['VR', 'Earring', 'Gold Chain'],
   ['Uncle Sam Hat', 'Red Shirt'],
 ]
 
