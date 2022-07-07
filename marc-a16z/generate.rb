@@ -30,6 +30,7 @@ patch = {
   ## adapted attributes
   'cowboyhat'    => Image.read( './cowboy_hat-24x24.png' ),
   'capforward'   => Image.read( './cap_forward-24x24.png' ),
+  'bandana'      => Image.read( './bandana-24x24.png' ),
 }
 
 
@@ -50,6 +51,8 @@ specs = Csv.parse( <<TXT )
   Marc, Hoodie, Clown Eyes Green, Luxurious Beard
 
   Marc, Normal Beard, Cap Forward, Cigarette
+  Marc, Bandana, Gold Chain, Earring
+
   Ape Marc
   Classic Ape Marc, Luxurious Beard
   Classic Marc,  Luxurious Beard, Gold Chain
@@ -58,7 +61,7 @@ TXT
 
 pp specs
 
-marcs = ImageComposite.new( 4, 4, background: '#638596' )
+marcs = ImageComposite.new( 4, 5, background: '#638596' )
 
 specs.each do |attributes|
   marc = Punk::Image.generate( *attributes, patch: patch )
