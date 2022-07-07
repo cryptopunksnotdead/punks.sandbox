@@ -1,5 +1,5 @@
 
-![](i/archetypes-strip3x.png)
+![](i/archetypes-strip@3x.png)
 
 
 # Inside the CryptoPunksData Contract - All 133 Assets (11 Archetypes 'n' 122 Attributes) in the 24x24px Format For Easy (Re)Use "Off-Chain"
