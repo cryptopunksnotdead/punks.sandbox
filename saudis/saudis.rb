@@ -91,5 +91,41 @@ saudis.zoom(8).save( "./tmp/saudis-vol2@8x.png" )
 
 
 
+###
+#  saudis vol. 3 - try ultra-rare sheiks w/ laser eyes
+specs = Csv.parse( <<TXT )
+  Dark 1, Luxurious Beard, White Shemagh & Agal, MAX BIDDING
+  Dark 2, Luxurious Beard, Red Shemagh & Agal,  Laser Eyes
+TXT
+
+pp specs
+
+
+
+saudis = ImageComposite.new( 2, 1, background: '#006C35' )
+
+specs.each_with_index do |attributes,i|
+   saudi = Image.new( 24, 24 )
+   attributes.each do |attribute|
+      slug = slugify( attribute )
+      saudi.compose!( Image.read( "./attributes/#{slug}.png" ))
+   end
+
+   saudi.save( "./tmp/saudi#{i}-vol3.png" )
+   saudi.zoom(8).save( "./tmp/saudi#{i}-vol3@8x.png" )
+
+   saudis << saudi
+end
+
+
+saudis.save( "./tmp/saudis-vol3.png" )
+saudis.zoom(4).save( "./tmp/saudis-vol3@4x.png" )
+saudis.zoom(8).save( "./tmp/saudis-vol3@8x.png" )
+
+
+
+
+
+
 puts "bye"
 
