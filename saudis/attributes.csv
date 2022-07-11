@@ -1,0 +1,104 @@
+path,  category, name,  more_names
+
+##############
+#  base archetype(s)
+
+
+### classic skin tones & eyes/eye brows
+##    - light 1/2, medium 1/2, dark 1/2, darker 1/2
+
+light_1.png
+light_2.png
+medium_1.png
+medium_2.png
+darker_1.png
+darker_2.png
+dark_1.png
+dark_2.png
+
+
+###########################
+# attributes
+
+   headwear/white_shemagh.png
+   headwear/white_shemagh_agal.png
+   headwear/white_shemagh_gold_agal.png
+   headwear/white_shemagh_stylish_gold_agal.png
+   headwear/white_shemagh_crown.png
+
+   headwear/brown_shemagh_agal.png
+   headwear/brown_shemagh_crown.png
+
+   headwear/red_shemagh.png
+   headwear/red_shemagh_agal.png
+   headwear/red_shemagh_crown.png
+
+
+   beard/messy_white_beard.png
+   beard/short_white_beard.png
+   beard/normal_white_beard.png
+   beard/luxurious_white_beard.png
+
+   beard/short_grey_beard.png
+
+   beard/messy_brown_beard.png
+   beard/normal_brown_beard.png
+   beard/luxurious_brown_beard.png
+
+   beard/shadow_beard.png
+   beard/shadow_beard_mustache.png
+
+   beard/light_beard.png
+
+   beard/mustache.png
+   beard/stylish_mustache.png
+   beard/sideburns.png
+   beard/sideburns_mustache.png
+   beard/normal_beard.png
+   beard/normal_brown_beard_mustache.png
+   beard/luxurious_beard.png
+
+
+   eyewear/horn_rimmed_glasses.png
+   eyewear/rimless_glasses.png
+   eyewear/nerd_glasses.png
+   eyewear/stylish_nerd_glasses.png
+
+
+   eyewear/classic_shades.png
+   eyewear/classic_green_shades.png
+   eyewear/classic_gold_shades.png
+
+   eyewear/regular_pixel_shades.png
+   eyewear/regular_reflective_shades.png
+
+   eyewear/big_green_shades.png
+   eyewear/big_pixel_shades.png
+   eyewear/big_purple_shades.png
+   eyewear/big_shades.png
+
+   eyewear/small_shades.png
+   eyewear/regular_shades.png
+
+   eyewear/round_shades.png
+   eyewear/big_round_shades.png
+
+   eyewear/square_reflective_shades.png
+   eyewear/square_shades.png
+
+   eyewear/3d_glasses.png
+   eyewear/vr.png
+   eyewear/laser_eyes.png
+   eyewear/max_bidding.png
+
+
+   mouthprop/cigarette.png
+   mouthprop/shadowless_cigarette.png
+   mouthprop/miswak.png
+   mouthprop/vape.png
+   mouthprop/shadowless_vape.png
+   mouthprop/cigar.png
+   mouthprop/pearwood_pipe.png
+   mouthprop/rosewood_pipe.png
+   mouthprop/bubble_gum.png
+
