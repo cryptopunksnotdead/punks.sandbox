@@ -3,6 +3,25 @@ path,  category, name,  more_names
 ##############
 #  base archetype(s)
 
+###
+## monk skin tones 01/02/03/04/05/06/07/08/09/10
+##
+##  hack for now - copied in place
+##       change to use "single-source-of-truth" and
+##        reference in punks.blocks/monk !!!
+##
+
+monk/male_01.png
+monk/male_02.png
+monk/male_03.png
+monk/male_04.png
+monk/male_05.png
+monk/male_06.png
+monk/male_07.png
+monk/male_08.png
+monk/male_09.png
+monk/male_10.png
+
 
 ### classic skin tones & eyes/eye brows
 ##    - light 1/2, medium 1/2, dark 1/2, darker 1/2
