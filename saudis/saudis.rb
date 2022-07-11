@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift( "../../pixelart/pixelart/lib" )
-require 'pixelart'
+require 'punks'
 
 
 
@@ -43,16 +43,29 @@ ATTRIBUTE_NAMES = %w[
    beard/sideburns_mustache
    beard/stylish_mustache
 
+   eyewear/3d_glasses
+   eyewear/big_green_shades
+   eyewear/big_pixel_shades
    eyewear/big_purple_shades
+   eyewear/big_round_shades
+   eyewear/big_shades
+   eyewear/classic_gold_shades
+   eyewear/classic_green_shades
    eyewear/classic_shades
+   eyewear/horn_rimmed_glasses
    eyewear/laser_eyes
    eyewear/max_bidding
    eyewear/nerd_glasses
    eyewear/regular_pixel_shades
+   eyewear/regular_reflective_shades
+   eyewear/regular_shades
+   eyewear/rimless_glasses
    eyewear/round_shades
+   eyewear/small_shades
    eyewear/square_reflective_shades
    eyewear/square_shades
    eyewear/stylish_nerd_glasses
+   eyewear/vr
 
    mouthprop/bubble_gum
    mouthprop/natural_cigarette
@@ -66,6 +79,9 @@ ATTRIBUTES = ATTRIBUTE_NAMES.reduce({}) do |h, name|
                              h
                             end
 
+## bonus attributes
+ATTRIBUTES['heart_shades'] = Punk::Sheet.find_by( name: 'Heart Shades', gender: 'u' )
+
 
 def slugify( name )
   ## e.g. turn Red Shemagh & Agal  => red_shemagh_agal
@@ -78,9 +94,15 @@ end
 
 def generate_saudi( *attributes )
    saudi = Image.new( 24, 24 )
-   attributes.each do |attribute|
-      slug = slugify( attribute )
-      saudi.compose!( ATTRIBUTES[ slug ] )
+   attributes.each do |attribute_name|
+      slug = slugify( attribute_name )
+      attribute = ATTRIBUTES[ slug ]
+      if attribute.nil?
+         puts "!! ERROR - attribute >#{attribute_name}< w/ slug >#{slug}< not found; sorry:"
+         pp attributes
+         exit
+      end
+      saudi.compose!( attribute )
    end
    saudi
 end
@@ -232,6 +254,62 @@ end
 
 saudis.save( "./tmp/saudis-vol4.png" )
 saudis.zoom(4).save( "./tmp/saudis-vol4@4x.png" )
+
+
+
+
+###
+#  saudis vol. 5 - try all 23 eyewear / shades & more
+
+specs = Csv.parse( <<TXT )
+ Light 1, Mustache, White Shemagh & Agal, Horn Rimmed Glasses
+ Light 1, Mustache, White Shemagh & Agal, Rimless Glasses
+ Light 1, Mustache, White Shemagh & Agal, Nerd Glasses
+ Light 1, Mustache, White Shemagh & Agal, Stylish Nerd Glasses
+ Light 1, Mustache, White Shemagh & Agal, Big Shades
+ Light 1, Mustache, White Shemagh & Agal, Big Pixel Shades
+ Light 1, Mustache, White Shemagh & Agal, Big Green Shades
+ Light 1, Mustache, White Shemagh & Agal, Big Purple Shades
+
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Small Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Regular Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Round Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Big Round Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Square Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Square Reflective Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Regular Reflective Shades
+ Medium 1, Sideburns & Mustache, White Shemagh & Agal, Regular Pixel Shades
+
+ Dark 1, Normal Beard, White Shemagh & Agal, Classic Shades
+ Dark 1, Normal Beard, White Shemagh & Agal, Classic Green Shades
+ Dark 1, Normal Beard, White Shemagh & Agal, Classic Gold Shades
+ Dark 1, Normal Beard, White Shemagh & Agal, 3D Glasses
+ Dark 1, Normal Beard, White Shemagh & Agal, VR
+ Dark 1, Normal Beard, White Shemagh & Agal, Laser Eyes
+ Dark 1, Normal Beard, White Shemagh & Agal, MAX BIDDING
+ Dark 1, Normal Beard, White Shemagh & Agal,  Heart Shades
+TXT
+
+pp specs
+
+
+
+saudis = ImageComposite.new( 8, 3, background: '#006C35' )
+
+specs.each_with_index do |attributes,i|
+   saudi = generate_saudi( *attributes )
+
+   saudi.save( "./tmp/saudi#{i}-vol5.png" )
+   saudi.zoom(8).save( "./tmp/saudi#{i}-vol5@8x.png" )
+
+   saudis << saudi
+end
+
+
+saudis.save( "./tmp/saudis-vol5.png" )
+saudis.zoom(4).save( "./tmp/saudis-vol5@4x.png" )
+
+
 
 
 puts "bye"
