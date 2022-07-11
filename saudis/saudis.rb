@@ -68,7 +68,13 @@ ATTRIBUTE_NAMES = %w[
    eyewear/vr
 
    mouthprop/bubble_gum
-   mouthprop/natural_cigarette
+   mouthprop/cigar
+   mouthprop/cigarette
+   mouthprop/miswak
+   mouthprop/pearwood_pipe
+   mouthprop/rosewood_pipe
+   mouthprop/shadowless_cigarette
+   mouthprop/shadowless_vape
    mouthprop/vape
   ]
 
@@ -79,8 +85,6 @@ ATTRIBUTES = ATTRIBUTE_NAMES.reduce({}) do |h, name|
                              h
                             end
 
-## bonus attributes
-ATTRIBUTES['heart_shades'] = Punk::Sheet.find_by( name: 'Heart Shades', gender: 'u' )
 
 
 def slugify( name )
@@ -114,7 +118,7 @@ end
 specs = Csv.parse( <<TXT )
   Light 1, Normal Brown Beard & Mustache,  Red Shemagh & Agal, Regular Pixel Shades
   Light 1, Messy White Beard,   Brown Shemagh & Agal, Big Purple Shades
-  Light 1, Red Shemagh,  Nerd Glasses, Natural Cigarette
+  Light 1, Red Shemagh,  Nerd Glasses, Shadowless Cigarette
   Light 2, Short White Beard, Red Shemagh & Agal, Stylish Nerd Glasses
   Light 2, Normal Brown Beard & Mustache, White Shemagh & Agal
   Darker 2, Stylish Mustache, Red Shemagh
@@ -151,7 +155,7 @@ specs = Csv.parse( <<TXT )
   Light 1, Red Shemagh & Agal
   Light 2, Red Shemagh & Crown
   Light 2, White Shemagh
-  Medium 1, White Shemagh & Agal, Natural Cigarette
+  Medium 1, White Shemagh & Agal, Shadowless Cigarette
   Medium 2, White Shemagh & Gold Agal
   Dark 1, White Shemagh & Stylish Gold Agal, Stylish Mustache
   Dark 2, White Shemagh & Crown
@@ -261,6 +265,10 @@ saudis.zoom(4).save( "./tmp/saudis-vol4@4x.png" )
 ###
 #  saudis vol. 5 - try all 23 eyewear / shades & more
 
+
+## bonus attributes
+ATTRIBUTES['heart_shades'] = Punk::Sheet.find_by( name: 'Heart Shades', gender: 'u' )
+
 specs = Csv.parse( <<TXT )
  Light 1, Mustache, White Shemagh & Agal, Horn Rimmed Glasses
  Light 1, Mustache, White Shemagh & Agal, Rimless Glasses
@@ -311,6 +319,43 @@ saudis.zoom(4).save( "./tmp/saudis-vol5@4x.png" )
 
 
 
+
+###
+#  saudis vol. 6 - try all 9 mouth pieces / props
+
+specs = Csv.parse( <<TXT )
+  Light 1,   White Shemagh & Agal,  Mustache, Cigarette
+  Medium 1,  Brown Shemagh & Agal, Sideburns & Mustache, Shadowless Cigarette
+  Dark 1,    Red Shemagh & Agal,   Normal Beard,  Cigar
+
+  Light 1,   Brown Shemagh & Agal,  Sideburns & Mustache,  Vape
+  Medium 1,  Red Shemagh & Agal,  Normal Beard, Shadowless Vape
+  Dark 1,    White Shemagh & Agal,  Mustache,  Miswak
+
+  Light 1,   Red Shemagh & Agal,  Normal Beard, Pearwood Pipe
+  Medium 1,  White Shemagh & Agal, Mustache, Rosewood Pipe
+  Dark 1,    Brown Shemagh & Agal, Sideburns & Mustache,  Bubble Gum
+TXT
+
+
+pp specs
+
+
+
+saudis = ImageComposite.new( 3, 3, background: '#006C35' )
+
+specs.each_with_index do |attributes,i|
+   saudi = generate_saudi( *attributes )
+
+   saudi.save( "./tmp/saudi#{i}-vol6.png" )
+   saudi.zoom(8).save( "./tmp/saudi#{i}-vol6@8x.png" )
+
+   saudis << saudi
+end
+
+
+saudis.save( "./tmp/saudis-vol6.png" )
+saudis.zoom(4).save( "./tmp/saudis-vol6@4x.png" )
 
 puts "bye"
 
