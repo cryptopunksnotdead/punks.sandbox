@@ -79,5 +79,35 @@ end
 wiiides.save( "./tmp/wiiides.png" )
 wiiides.zoom(10).save( "./tmp/wiiides@10x.png" )
 
+
+
+#########################
+### vol. 2    - Why do we like the Wiiides? Wiiides get wiiider.
+
+specs = Csv.parse( <<TXT )
+ Alien, Cap Forward, Pipe
+ Male 3, Purple Hair, 3D Glasses
+ Demon, Heart Shades
+ Ape, Top Hat, VR
+TXT
+
+
+wiiides = ImageComposite.new( 2, 2,  width: 48,
+                                     height: 15 )
+
+specs.each_with_index do |attributes,i|
+   punk = Punk::Image.generate( *attributes )
+
+   wiiide = punk.wiiide( 12, left: 10, right: 10, top: 7, bottom: 2 )
+   wiiide.save( "./tmp/wiiiiiiiiide#{i}.png" )
+   wiiide.zoom(8).save( "./tmp/wiiiiiiiiide#{i}8x.png" )
+
+   wiiides << wiiide
+end
+
+wiiides.save( "./tmp/wiiides-vol2.png" )
+wiiides.zoom(8).save( "./tmp/wiiides-vol2@8x.png" )
+
+
 puts "bye"
 
