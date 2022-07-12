@@ -1,127 +1,13 @@
-$LOAD_PATH.unshift( "../../pixelart/pixelart/lib" )
 require 'punks'
 
 
-
-ATTRIBUTE_NAMES = %w[
-   light_1
-   light_2
-   medium_1
-   medium_2
-   darker_1
-   darker_2
-   dark_1
-   dark_2
-
-   headwear/brown_shemagh_agal
-   headwear/brown_shemagh_crown
-   headwear/red_shemagh
-   headwear/red_shemagh_agal
-   headwear/red_shemagh_crown
-   headwear/white_shemagh
-   headwear/white_shemagh_agal
-   headwear/white_shemagh_crown
-   headwear/white_shemagh_gold_agal
-   headwear/white_shemagh_stylish_gold_agal
-
-   beard/light_beard
-   beard/luxurious_beard
-   beard/luxurious_brown_beard
-   beard/luxurious_white_beard
-   beard/messy_brown_beard
-   beard/messy_white_beard
-   beard/mustache
-   beard/normal_beard
-   beard/normal_brown_beard
-   beard/normal_brown_beard_mustache
-   beard/normal_white_beard
-   beard/shadow_beard
-   beard/shadow_beard_mustache
-   beard/short_grey_beard
-   beard/short_white_beard
-   beard/sideburns
-   beard/sideburns_mustache
-   beard/stylish_mustache
-
-   eyewear/3d_glasses
-   eyewear/big_green_shades
-   eyewear/big_pixel_shades
-   eyewear/big_purple_shades
-   eyewear/big_round_shades
-   eyewear/big_shades
-   eyewear/classic_gold_shades
-   eyewear/classic_green_shades
-   eyewear/classic_shades
-   eyewear/horn_rimmed_glasses
-   eyewear/laser_eyes
-   eyewear/max_bidding
-   eyewear/nerd_glasses
-   eyewear/regular_pixel_shades
-   eyewear/regular_reflective_shades
-   eyewear/regular_shades
-   eyewear/rimless_glasses
-   eyewear/round_shades
-   eyewear/small_shades
-   eyewear/square_reflective_shades
-   eyewear/square_shades
-   eyewear/stylish_nerd_glasses
-   eyewear/vr
-
-   mouthprop/bubble_gum
-   mouthprop/cigar
-   mouthprop/cigarette
-   mouthprop/miswak
-   mouthprop/pearwood_pipe
-   mouthprop/rosewood_pipe
-   mouthprop/shadowless_cigarette
-   mouthprop/shadowless_vape
-   mouthprop/vape
-  ]
-
-pp ATTRIBUTE_NAMES
-
-ATTRIBUTES = ATTRIBUTE_NAMES.reduce({}) do |h, name|
-                             h[ File.basename( name ) ] = Image.read( "./attributes/#{name}.png" )
-                             h
-                            end
-
-
-
-def slugify( name )
-  ## e.g. turn Red Shemagh & Agal  => red_shemagh_agal
-  ##           Darker 2            => darker_2
-  name = name.downcase.gsub( /[^a-zA-Z0-9 _-]/, '' )
-  name = name.gsub( /[ ]+/, '_' )
-  name
-end
-
-
-def generate_saudi( *attributes )
-   saudi = Image.new( 24, 24 )
-   attributes.each do |attribute_name|
-      slug = slugify( attribute_name )
-      attribute = ATTRIBUTES[ slug ]
-      if attribute.nil?
-         puts "!! ERROR - attribute >#{attribute_name}< w/ slug >#{slug}< not found; sorry:"
-         pp attributes
-         exit
-      end
-      saudi.compose!( attribute )
-   end
-   saudi
-end
-
-
-
-
-
 specs = Csv.parse( <<TXT )
-  Light 1, Normal Brown Beard & Mustache,  Red Shemagh & Agal, Regular Pixel Shades
-  Light 1, Messy White Beard,   Brown Shemagh & Agal, Big Purple Shades
-  Light 1, Red Shemagh,  Nerd Glasses, Shadowless Cigarette
-  Light 2, Short White Beard, Red Shemagh & Agal, Stylish Nerd Glasses
-  Light 2, Normal Brown Beard & Mustache, White Shemagh & Agal
-  Darker 2, Stylish Mustache, Red Shemagh
+  Light 1,  Normal Brown Beard & Mustache, Red Shemagh & Agal, Regular Pixel Shades
+  Light 1,  Messy White Beard, Brown Shemagh & Agal, Big Purple Shades
+  Dark 1,   Brown Shemagh & Agal, Big Pixel Shades, Shadowless Vape
+  Light 2,  Short White Beard, Red Shemagh & Agal, Stylish Nerd Glasses
+  Dark 2,   Shadow Beard, White Shemagh & Gold Agal
+  Medium 2, Luxurious Brown Beard, Brown Shemagh & Agal
 TXT
 
 pp specs
@@ -132,7 +18,7 @@ pp specs
 saudis = ImageComposite.new( 3, 2, background: '#ffbf00' )
 
 specs.each_with_index do |attributes,i|
-   saudi = generate_saudi( *attributes )
+   saudi = Saudi::Image.generate( *attributes )
 
    saudi.save( "./tmp/saudi#{i}.png" )
    saudi.zoom(8).save( "./tmp/saudi#{i}@8x.png" )
@@ -151,16 +37,16 @@ saudis.zoom(8).save( "./tmp/saudis@8x.png" )
 
 
 specs = Csv.parse( <<TXT )
-  Light 1, Red Shemagh
-  Light 1, Red Shemagh & Agal
-  Light 2, Red Shemagh & Crown
-  Light 2, White Shemagh
+  Light 1,  Red Shemagh
+  Light 1,  Red Shemagh & Agal
+  Light 2,  Red Shemagh & Crown
+  Light 2,  White Shemagh
   Medium 1, White Shemagh & Agal, Shadowless Cigarette
   Medium 2, White Shemagh & Gold Agal
-  Dark 1, White Shemagh & Stylish Gold Agal, Stylish Mustache
-  Dark 2, White Shemagh & Crown
-  Darker 1, Brown Shemagh & Agal
-  Darker 2, Brown Shemagh & Crown,  Bubble Gum
+  Dark 1,   White Shemagh & Stylish Gold Agal, Stylish Mustache
+  Dark 1,   White Shemagh & Crown
+  Dark 2,   Brown Shemagh & Agal
+  Dark 2,   Brown Shemagh & Crown,  Bubble Gum
 TXT
 
 pp specs
@@ -170,7 +56,7 @@ pp specs
 saudis = ImageComposite.new( 5, 2, background: '#006C35' )
 
 specs.each_with_index do |attributes,i|
-   saudi = generate_saudi( *attributes )
+   saudi = Saudi::Image.generate( *attributes )
 
    saudi.save( "./tmp/saudi#{i}-vol2.png" )
    saudi.zoom(8).save( "./tmp/saudi#{i}-vol2@8x.png" )
@@ -199,7 +85,7 @@ pp specs
 saudis = ImageComposite.new( 2, 1, background: '#006C35' )
 
 specs.each_with_index do |attributes,i|
-   saudi = generate_saudi( *attributes )
+   saudi = Saudi::Image.generate( *attributes )
 
    saudi.save( "./tmp/saudi#{i}-vol3.png" )
    saudi.zoom(8).save( "./tmp/saudi#{i}-vol3@8x.png" )
@@ -247,7 +133,7 @@ pp specs
 saudis = ImageComposite.new( 9, 2, background: '#006C35' )
 
 specs.each_with_index do |attributes,i|
-   saudi = generate_saudi( *attributes )
+   saudi = Saudi::Image.generate( *attributes )
 
    saudi.save( "./tmp/saudi#{i}-vol4.png" )
    saudi.zoom(8).save( "./tmp/saudi#{i}-vol4@8x.png" )
@@ -266,8 +152,6 @@ saudis.zoom(4).save( "./tmp/saudis-vol4@4x.png" )
 #  saudis vol. 5 - try all 23 eyewear / shades & more
 
 
-## bonus attributes
-ATTRIBUTES['heart_shades'] = Punk::Sheet.find_by( name: 'Heart Shades', gender: 'u' )
 
 specs = Csv.parse( <<TXT )
  Light 1, Mustache, White Shemagh & Agal, Horn Rimmed Glasses
@@ -295,17 +179,21 @@ specs = Csv.parse( <<TXT )
  Dark 1, Normal Beard, White Shemagh & Agal, VR
  Dark 1, Normal Beard, White Shemagh & Agal, Laser Eyes
  Dark 1, Normal Beard, White Shemagh & Agal, MAX BIDDING
- Dark 1, Normal Beard, White Shemagh & Agal,  Heart Shades
+ Dark 1, Normal Beard, White Shemagh & Agal
 TXT
 
 pp specs
 
 
+## bonus attribute(s) to round-up to 24 saudis
+HEART_SHADES = Punk::Sheet.find_by( name: 'Heart Shades', gender: 'u' )
 
 saudis = ImageComposite.new( 8, 3, background: '#006C35' )
 
 specs.each_with_index do |attributes,i|
-   saudi = generate_saudi( *attributes )
+   saudi = Saudi::Image.generate( *attributes )
+
+   saudi.compose!( HEART_SHADES )  if i==23
 
    saudi.save( "./tmp/saudi#{i}-vol5.png" )
    saudi.zoom(8).save( "./tmp/saudi#{i}-vol5@8x.png" )
@@ -345,7 +233,7 @@ pp specs
 saudis = ImageComposite.new( 3, 3, background: '#006C35' )
 
 specs.each_with_index do |attributes,i|
-   saudi = generate_saudi( *attributes )
+   saudi = Saudi::Image.generate( *attributes )
 
    saudi.save( "./tmp/saudi#{i}-vol6.png" )
    saudi.zoom(8).save( "./tmp/saudi#{i}-vol6@8x.png" )
