@@ -1,4 +1,45 @@
+$LOAD_PATH.unshift( "../../cryptopunks/punks/lib" )
 require 'punks'
+
+
+## try "undead saudis"  green / dark green / cyan / pink
+
+
+specs = Csv.parse( <<TXT )
+  Green,  Normal Brown Beard & Mustache, Red Shemagh & Agal, Regular Pixel Shades
+  Dark Green,  Messy White Beard, Brown Shemagh & Agal, Big Purple Shades
+  Cyan,   Brown Shemagh & Agal, Big Pixel Shades, Shadowless Vape
+
+  Pink,  Short White Beard, Red Shemagh & Agal, Stylish Nerd Glasses
+  Green,   Shadow Beard, White Shemagh & Gold Agal
+  Dark Green, Luxurious Brown Beard, Brown Shemagh & Agal
+
+  Cyan, Normal Brown Beard,White Shemagh & Agal,Square Reflective Shades
+  Pink, Luxurious White Beard,Brown Shemagh & Crown,Classic Shades,Bubble Gum
+  Green, Normal Brown Beard & Mustache,Red Shemagh,Big Purple Shades
+TXT
+
+pp specs
+
+
+saudis = ImageComposite.new( 3, 3, background: '#638596' )
+
+specs.each_with_index do |attributes,i|
+   saudi = Saudi::Image.generate( *attributes )
+
+   saudi.save( "./tmp/undeadsaudi#{i}.png" )
+   saudi.zoom(8).save( "./tmp/undeadsaudi#{i}@8x.png" )
+
+   saudis << saudi
+end
+
+saudis.save( "./tmp/undeadsaudis.png" )
+saudis.zoom(4).save( "./tmp/undeadsaudis@4x.png" )
+saudis.zoom(8).save( "./tmp/undeadsaudis@8x.png" )
+
+
+
+
 
 
 specs = Csv.parse( <<TXT )

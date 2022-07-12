@@ -1,0 +1,5 @@
+#####
+# exclude copy of monk for now -- see punks.blocks for source
+attributes/monk/
+
+
