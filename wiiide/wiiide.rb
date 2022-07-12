@@ -102,7 +102,7 @@ specs.each_with_index do |attributes,i|
    wiiide.save( "./tmp/wiiiiiiiiide#{i}.png" )
    wiiide.zoom(8).save( "./tmp/wiiiiiiiiide#{i}8x.png" )
 
-   wiiides << wiiide
+   wiiides << wiiide.mirror
 end
 
 wiiides.save( "./tmp/wiiides-vol2.png" )
