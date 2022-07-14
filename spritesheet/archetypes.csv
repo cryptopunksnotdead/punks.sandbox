@@ -153,6 +153,45 @@ unisize/scream-female.png,  Scream, f, l,  Scream,,
 more/scream-female.png,     Scream, f, s,  Scream,,
 
 
+cyborgs/cyborg-male1.png,     Cyborg,  m, l,  Cyborg, 1
+cyborgs/cyborg-male2.png,     Cyborg,  m, l,  Cyborg, 2
+cyborgs/cyborg-male3.png,     Cyborg,  m, l,  Cyborg, 3
+cyborgs/cyborg-male4.png,     Cyborg,  m, l,  Cyborg, 4
+cyborgs/cyborg-female1.png,     Cyborg,  f, s,  Cyborg, 1
+cyborgs/cyborg-female2.png,     Cyborg,  f, s,  Cyborg, 2
+cyborgs/cyborg-female3.png,     Cyborg,  f, s,  Cyborg, 3
+cyborgs/cyborg-female4.png,     Cyborg,  f, s,  Cyborg, 4
+cyborgs/cyborg-male-metal.png,     Cyborg,  m, l,  Cyborg, Metal
+cyborgs/cyborg-female-metal.png,     Cyborg,  f, s,  Cyborg, Metal
+cyborgs/cyborg-ape.png,             Cyborg,  m, l,  Cyborg, Ape
+cyborgs/cyborg-ape-metal.png,     Cyborg,  m, l,  Cyborg, Ape Metal
+
+
+##############################
+# (dr. ellis) monk skin tones
+
+monk/male_10.png,  Human, m, l, Human, M10, Male M10 | Male MST10
+monk/male_09.png,  Human, m, l, Human, M09, Male M09 | Male MST09
+monk/male_08.png,  Human, m, l, Human, M08, Male M08 | Male MST08
+monk/male_07.png,  Human, m, l, Human, M07, Male M07 | Male MST07
+monk/male_06.png,  Human, m, l, Human, M06, Male M06 | Male MST06
+monk/male_05.png,  Human, m, l, Human, M05, Male M05 | Male MST05
+monk/male_04.png,  Human, m, l, Human, M04, Male M04 | Male MST04
+monk/male_03.png,  Human, m, l, Human, M03, Male M03 | Male MST03
+monk/male_02.png,  Human, m, l, Human, M02, Male M02 | Male MST02
+monk/male_01.png,  Human, m, l, Human, M01, Male M01 | Male MST01
+
+monk/female_10.png,  Human, f, s, Human, M10, Female M10 | Female MST10
+monk/female_09.png,  Human, f, s, Human, M09, Female M09 | Female MST09
+monk/female_08.png,  Human, f, s, Human, M08, Female M08 | Female MST08
+monk/female_07.png,  Human, f, s, Human, M07, Female M07 | Female MST07
+monk/female_06.png,  Human, f, s, Human, M06, Female M06 | Female MST06
+monk/female_05.png,  Human, f, s, Human, M05, Female M05 | Female MST05
+monk/female_04.png,  Human, f, s, Human, M04, Female M04 | Female MST04
+monk/female_03.png,  Human, f, s, Human, M03, Female M03 | Female MST03
+monk/female_02.png,  Human, f, s, Human, M02, Female M02 | Female MST02
+monk/female_01.png,  Human, f, s, Human, M01, Female M01 | Female MST01
+
 
 
 ###############################
@@ -287,6 +326,29 @@ gold/skeleton-female_gold_1.png,   Skeleton, f, s, Skeleton, Gold 1 | Gold,
 gold/skeleton-female_gold_2.png,   Skeleton, f, s, Skeleton, Gold 2 | Goldenrod,
 gold/skeleton-female_gold_3.png,   Skeleton, f, s, Skeleton, Gold 3 | Dark Goldenrod,
 
+
+####################
+# (more) planet of apes - archetypes
+
+planet-apes/ape-male-black.png,         Ape, m, l, Ape, Black
+planet-apes/ape-male-gray.png,          Ape, m, l, Ape, Gray
+planet-apes/ape-male-dark_brown.png,    Ape, m, l, Ape, Dark Brown
+planet-apes/ape-male-brown.png,         Ape, m, l, Ape, Brown
+planet-apes/ape-male-golden_brown.png,  Ape, m, l, Ape, Golden Brown
+planet-apes/ape-male-cheetah.png,       Ape, m, l, Ape, Cheetah
+planet-apes/ape-male-blue.png,          Ape, m, l, Ape, Blue
+planet-apes/ape-male-dmt.png,           Ape, m, l, Ape, DMT
+planet-apes/ape-male-pink.png,          Ape, m, l, Ape, Pink
+planet-apes/ape-male-red.png,           Ape, m, l, Ape, Red
+planet-apes/ape-male-tan.png,           Ape, m, l, Ape, Tan
+planet-apes/ape-male-cream.png,         Ape, m, l, Ape, Cream
+planet-apes/ape-male-white.png,         Ape, m, l, Ape, White
+planet-apes/ape-male-trippy.png,        Ape, m, l, Ape, Trippy
+planet-apes/ape-male-noise.png,         Ape, m, l, Ape, Noise
+planet-apes/ape-male-solid_gold.png,    Ape, m, l, Ape, Solid Gold
+
+planet-apes/ape-male-bot.png,          Ape, m, l, Ape,  Bot
+planet-apes/ape-male-death_bot.png,    Ape, m, l, Ape,  Death Bot
 
 
 ######################################
