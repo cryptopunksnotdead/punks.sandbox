@@ -1,8 +1,10 @@
 ####################
-#  assemble spritesheet (all-in-one composite image with attributes)
+#  assemble spritesheet (all-in-one composite image with attributes); to run use:
+#
+#   $ ruby ./spritesheet.rb
+
 
 require 'pixelart'
-require 'csvreader'
 
 
 
@@ -16,7 +18,11 @@ puts "  #{attributes.size} record(s)"  #=> ???  - was: 133
 
 total = archetypes.size + attributes.size
 
-sheet = ImageComposite.new( 25, (total/25)+1 )
+cols = 25
+rows = (total/25)
+rows += 1    if total % 25 != 0
+
+sheet = ImageComposite.new( cols, rows )
 
 
 meta = []  ## output meta(data) records
