@@ -286,5 +286,48 @@ end
 saudis.save( "./tmp/saudis-vol6.png" )
 saudis.zoom(4).save( "./tmp/saudis-vol6@4x.png" )
 
+
+
+###
+#  saudis vol. 7- mix'n' match try bored saudi apes & desparate habibtis of saudi apes
+specs = Csv.parse( <<TXT )
+Ape,           Red Shemagh & Agal
+Ape Black,     Red Shemagh & Agal, Luxurious Beard, Laser Eyes Gold
+Ape Trippy,    Red Shemagh & Agal,  3D Glasses
+
+Cyborg Ape,     White Shemagh & Agal, Earring, Pipe
+Ape Solid Gold, White Shemagh & Agal, Laser Eyes Red
+Ape DMT,        Brown Shemagh & Agal,  Big Shades, Gold Chain
+
+Cyborg Ape Metal,  White Shemagh & Stylish Gold Agal,  Bubble Gum
+Ape Female,   Niquab Blue,   VR
+Ape Female,   Niquab Black,   Laser Eyes
+TXT
+
+pp specs
+
+saudis = ImageComposite.new( 3, 3, background: '#006C35' )
+
+specs.each_with_index do |attributes,i|
+   saudi = Punk::Image.generate( *attributes )
+
+   if attributes[0] == 'Cyborg Ape Metal'    ## quick hack: patch "missing" cyborg ear
+      saudi[5,12] = 0xffffffff   ## fill-up with white (0xfffff/ff) pixels
+      saudi[5,13] = 0xffffffff
+      saudi[5,14] = 0xffffffff
+   end
+
+   saudi.save( "./tmp/saudi#{i}-vol7.png" )
+   saudi.zoom(8).save( "./tmp/saudi#{i}-vol7@8x.png" )
+
+   saudis << saudi
+end
+
+
+saudis.save( "./tmp/saudis-vol7.png" )
+saudis.zoom(4).save( "./tmp/saudis-vol7@4x.png" )
+saudis.zoom(8).save( "./tmp/saudis-vol7@8x.png" )
+
+
 puts "bye"
 

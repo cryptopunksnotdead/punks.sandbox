@@ -43,6 +43,26 @@ specs = Csv.parse( <<TXT )
   Ape Pink,       Cap
   Ape Black,     Cap
   Ape White,     Cap
+
+  ## try saudis mix'n'match
+
+  Male M02,   Red Shemagh & Agal,  Laser Eyes Gold
+  Male M07,   White Shemagh & Agal, Luxurious Beard, Laser Eyes Red
+
+  Ape,           Red Shemagh & Agal
+  Ape Black,     Red Shemagh & Agal,  Laser Eyes Gold
+  Ape Trippy,    Red Shemagh & Agal,  3D Glasses
+  Ape Blue,      Brown Shemagh & Agal,  Big Shades
+  Ape DMT,      Brown Shemagh & Agal,  Big Shades
+  Ape Solid Gold,      White Shemagh & Agal, Laser Eyes Red
+  Cyborg Ape,    White Shemagh & Agal,  Pipe
+  Cyborg Ape Metal,  White Shemagh & Stylish Gold Agal,  Bubble Gum
+
+  Female M02,   Niquab Black
+  Female M07,   Niquab Blue
+  Ape Female,   Niquab Black,   Laser Eyes
+  Ape Female,   Niquab Black,   VR
+  Ape Female Gold, Niquab Black,  Laser Eyes Red
 TXT
 
 

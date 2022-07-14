@@ -331,6 +331,23 @@ intl/m/vikinghat.png,           m,,    Viking Hat
 intl/f/vikinghat.png,           f,,    Viking Hat
 
 
+##########################
+# int'l headwear - saudis & habibtis of saudis - attributes
+
+saudis/m/white_shemagh.png,                    m,, White Shemagh
+saudis/m/white_shemagh_agal.png,               m,, White Shemagh & Agal
+saudis/m/white_shemagh_gold_agal.png,          m,, White Shemagh & Gold Agal
+saudis/m/white_shemagh_stylish_gold_agal.png,  m,, White Shemagh & Stylish Gold Agal
+saudis/m/white_shemagh_crown.png,              m,, White Shemagh & Crown
+saudis/m/brown_shemagh_agal.png,               m,, Brown Shemagh & Agal
+saudis/m/brown_shemagh_crown.png,              m,, Brown Shemagh & Crown
+saudis/m/red_shemagh.png,                      m,, Red Shemagh
+saudis/m/red_shemagh_agal.png,                 m,, Red Shemagh & Agal
+saudis/m/red_shemagh_crown.png,                m,, Red Shemagh & Crown
+
+saudis/f/niquab-black.png,                     f,, Niquab Black
+saudis/f/niquab-blue.png,                      f,, Niquab Blue
+
 
 ###################
 # all caps - attributes
