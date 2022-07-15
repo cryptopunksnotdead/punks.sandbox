@@ -97,7 +97,7 @@ TXT
 americans = ImageComposite.new( 3, 2 )
 
 specs.each_with_index do |attributes,i|
-  punk = Punk::Image.generate( *attributes, patch: patch ).background( 'USA' )
+  punk = Punk::Image.generate( *attributes, patch: patch ).mirror.background( 'USA' )
   punk.zoom(8).save( "./tmp/american_iii#{i}@8x.png" )
 
   americans << punk
