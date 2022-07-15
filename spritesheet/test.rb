@@ -73,6 +73,13 @@ specs = Csv.parse( <<TXT )
   ## try rainbow
   Male M05,   Rainbow Hair,  Smile
   Female M05,   Rainbow Hair,  Hot Lipstick
+
+  ## try jews
+  Male M03,  Jewish Hat 1,  Chinstrap,  3D Glasses
+  Male M04,   Jewish Hat 2
+  Male M05,   Jewish Hat 3, Normal Beard Black
+  Male M06,   Jewish Hat 4,  Big Beard, Laser Eyes Blue
+  Male M07,   Jewish Hat 5, Luxurious White Beard
 TXT
 
 

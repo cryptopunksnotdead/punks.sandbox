@@ -68,6 +68,7 @@ more/m/lasereyes.png,        u,l,       Laser Eyes, Laser Eyes Red
 more/f/lasereyes.png,        f,s,       Laser Eyes, Laser Eyes Red
 more/m/lasereyesgold.png,    u,l,       Laser Eyes Gold
 more/f/lasereyesgold.png,    f,s,       Laser Eyes Gold
+more/m/lasereyes-blue.png,   u,l,       Laser Eyes Blue
 
 more/m/tears.png,    u,l,               Tears
 more/f/tears.png,    f,s,               Tears
@@ -183,11 +184,15 @@ basic/m/frontbearddark.png,    m,,  Front Beard Dark
 basic/m/goat.png,    m,,            Goat
 basic/m/handlebars.png,    m,,      Handlebars
 basic/m/luxuriousbeard.png,    m,,  Luxurious Beard
+basic/m/luxurious_white_beard.png,    m,, Luxurious Beard White,  Luxurious White Beard
+basic/m/messy_white_beard.png,    m,,  Messy Beard White,  Messy White Beard
 basic/m/mustache.png,    m,,      Mustache
 basic/m/muttonchops.png,    m,,   Muttonchops
 basic/m/normalbeard.png,    m,,  Normal Beard
 basic/m/normalbeardblack.png,    m,,  Normal Beard Black
+basic/m/normal_white_beard.png,    m,, Normal Beard White,  Normal White Beard
 basic/m/shadowbeard.png,    m,,       Shadow Beard
+basic/m/short_white_beard.png,    m,,  Short Beard White,  Short White Beard
 
 
 ## - Hat & More
@@ -348,6 +353,16 @@ saudis/m/red_shemagh_crown.png,                m,, Red Shemagh & Crown
 
 saudis/f/niquab-black.png,                     f,, Niquab Black
 saudis/f/niquab-blue.png,                      f,, Niquab Blue
+
+##########################
+# int'l headwear - jews - attributes
+
+jews/m/hat1.png,  m,, Jewish Hat 1
+jews/m/hat2.png,  m,, Jewish Hat 2
+jews/m/hat3.png,  m,, Jewish Hat 3
+jews/m/hat4.png,  m,, Jewish Hat 4
+jews/m/hat5.png,  m,, Jewish Hat 5
+
 
 
 ###################
