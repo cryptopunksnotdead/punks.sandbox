@@ -34,7 +34,7 @@ americans.zoom(8).save( "./tmp/americans@8x.png" )
 
 
 ####
-#  try new american hair styles (that, Joe Biden | Elon Musk | Donald Trump)
+#  try new american hair styles (that is, Joe Biden | Elon Musk | Donald Trump)
 
 
 patch = {
@@ -71,5 +71,39 @@ americans.save( "./tmp/americans_vol2.png" )
 americans.zoom(8).save( "./tmp/americans_vol2@8x.png" )
 
 
+
+####
+#  try more american attributes
+
+patch = {
+  'drinkingcoke'   => Image.read( './drinking_coke.png' ),
+  'footballhelmet' => Image.read( './football_helmet.png' ),
+  'libertycap'     => Image.read( './liberty_cap.png' ),
+  'militaryhelmet' => Image.read( './military_helmet.png' ),
+  'unclesamhat'    => Image.read( './uncle_sam_hat.png' ),
+}
+
+specs = Csv.parse( <<TXT )
+  Male M04,  Football Helmet
+  Male M04,  Liberty Cap,  Heart Shades
+  Male M04,  Uncle Sam Hat,  Classic Shades, Normal Beard White, Pipe
+
+  Male M04,  Military Helmet,     Regular Shades (Reflective), Cigarette
+  Male M04,  Wallstreetbets Hair, Regular Shades (Reflective), Drinking Coke
+  Male M04,  Rainbow Hair,        Regular Shades (Reflective), Earring, Smile
+TXT
+
+
+americans = ImageComposite.new( 3, 2 )
+
+specs.each_with_index do |attributes,i|
+  punk = Punk::Image.generate( *attributes, patch: patch ).background( 'USA' )
+  punk.zoom(8).save( "./tmp/american_iii#{i}@8x.png" )
+
+  americans << punk
+end
+
+americans.save( "./tmp/americans_vol3.png" )
+americans.zoom(8).save( "./tmp/americans_vol3@8x.png" )
 
 puts "bye"
