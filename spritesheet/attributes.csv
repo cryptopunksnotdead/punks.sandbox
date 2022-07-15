@@ -51,6 +51,7 @@ basic/f/hornedrimglasses.png,   f,s,  Horned Rim Glasses
 basic/m/nerdglasses.png,    u,l,   Nerd Glasses
 basic/f/nerdglasses.png,   f,s,    Nerd Glasses
 basic/m/regularshades.png,    u,l,     Regular Shades
+basic/m/regularshades-reflective.png,    u,l,     Regular Reflective Shades, Regular Shades Reflective
 basic/f/regularshades.png,   f,s,      Regular Shades
 basic/m/smallshades.png,    u,l,       Small Shades
 basic/f/smallshades.png,   f,s,        Small Shades
@@ -701,6 +702,22 @@ hair/f/black/clown.png,   f,,  Clown Hair Black
   hair/f/white/clown.png,  f,, Clown Hair White
 
 
+
+###########
+#  wallstreetbets
+
+  wallstreetbets/wallstreetbets-hair1.png,         m,, Wallstreetbets Hair 1, Wallstreetbets Hair
+  wallstreetbets/wallstreetbets-hair2.png,         m,, Wallstreetbets Hair 2, Wallstreetbets Crazy Hair
+  wallstreetbets/wallstreetbets-hair3.png,         m,, Wallstreetbets Hair 3
+  wallstreetbets/wallstreetbets-hair1_dark.png,    m,, Wallstreetbets Hair Dark 1, Wallstreetbets Hair Dark
+  wallstreetbets/wallstreetbets-hair2_dark.png,    m,, Wallstreetbets Hair Dark 2, Wallstreetbets Crazy Hair Dark
+  wallstreetbets/wallstreetbets-hair3_dark.png,    m,, Wallstreetbets Hair Dark 3
+
+###########
+#   rainbow hair
+
+  rainbow/m/rainbow-hair.png,  m,,   Rainbow Hair
+  rainbow/f/rainbow-hair.png,  f,,   Rainbow Hair
 
 
 

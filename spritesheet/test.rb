@@ -63,6 +63,16 @@ specs = Csv.parse( <<TXT )
   Ape Female,   Niquab Black,   Laser Eyes
   Ape Female,   Niquab Black,   VR
   Ape Female Gold, Niquab Black,  Laser Eyes Red
+
+  ## try wallstreetbets
+  Male M03,   Wallstreetbets Hair
+  Male M06,   Wallstreetbets Hair Dark
+  Male M04,   Wallstreetbets Hair,        Regular Shades (Reflective), Normal Beard
+  Male M07,   Wallstreetbets Hair Dark,   Regular Shades (Reflective), Luxurious Beard
+
+  ## try rainbow
+  Male M05,   Rainbow Hair,  Smile
+  Female M05,   Rainbow Hair,  Hot Lipstick
 TXT
 
 
