@@ -12,7 +12,7 @@ patch = {
   'turban1'            => Image.read( './turban1.png' ),
   'turban2'            => Image.read( './turban2.png' ),
   'turban3'            => Image.read( './turban3.png' ),
-  'redpoint'          => Image.read( './red_point.png' ),
+  'reddot'          => Image.read( './red_dot.png' ),
   'whitecurlybeard'   => Image.read( './white_curly_beard.png' ),
   'blackcurlybeard'   => Image.read( './black_curly_beard.png' ),
   'callcenter'        => Image.read( './call_center.png' ),
@@ -21,10 +21,10 @@ patch = {
 
 
 specs = Csv.parse( <<TXT )
-  Male M07,   Turban 1, Red Point, Horned-Rim Glasses, Luxurious White Beard
-  Male M09,   Turban 3, Red Point, White Curly Beard
-  Male M05,   Turban 2, Red Point, 3D Glasses, Black Curly Beard
-  Male M06,   Red Point,  Call Center, VR, Mustache
+  Male M07,   Turban 1, Red Dot, Horned-Rim Glasses, Luxurious White Beard
+  Male M09,   Turban 3, Red Dot, White Curly Beard
+  Male M05,   Turban 2, Red Dot, 3D Glasses, Black Curly Beard
+  Male M06,   Red Dot,  Call Center, VR, Mustache
 TXT
 
 
