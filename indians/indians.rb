@@ -35,7 +35,7 @@ specs.each_with_index do |attributes,i|
   ## add indian flag (three-colored horizontal stripes) background
   punk = punk.stripes( '#FF9934', '#FFFFFF', '#138708' )
 
-  punk.zoom(8).save( "./tmp/indians#{i}@8x.png" )
+  punk.zoom(8).save( "./tmp/indian#{i}@8x.png" )
 
   indians << punk
 end
