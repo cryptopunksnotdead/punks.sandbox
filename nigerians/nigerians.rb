@@ -32,7 +32,7 @@ nigerians = ImageComposite.new( 2, 2, background: '#00874C' )
 specs.each_with_index do |attributes,i|
   punk = Punk::Image.generate( *attributes, patch: patch )
 
-  punk.zoom(8).save( "./tmp/nigerians#{i}@8x.png" )
+  punk.zoom(8).save( "./tmp/nigerian#{i}@8x.png" )
 
   nigerians << punk
 end

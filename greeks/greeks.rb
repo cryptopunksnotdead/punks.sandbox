@@ -44,7 +44,7 @@ specs = Csv.parse( <<TXT )
   Male M04, Short Hair Brown, Long Beard Brown, Spartan
 
   Male M06, Curly Hair Black, Long Beard Black, 3D Glasses
-  Male M07, Old Fella Hair, Headband, Spots, Smile, Pipe
+  Male M07, Old Fella Hair, Spots, Headband, Smile, Pipe
   Male M05,  Long Hair Black, Long Beard Black, Laurel Wreath, Laser Eyes Gold
 TXT
 
