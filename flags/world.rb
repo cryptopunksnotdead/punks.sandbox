@@ -5,19 +5,21 @@
 require 'punks'
 require 'backgrounds'
 
-
 flags = %w[
-  europe
-  austria
-  germany
-  france
-  great_britain
-  greece
-  italy
-  spain
-  sweden
-  ukraine
-  usa
+  australia
+  japan
+  south_korea
+  china
+  taiwan
+  india
+
+  iran
+  israel
+  saudi_arabia
+  egypt
+  nigeria
+  south_africa
+  pirate
   rainbow
 ]
 
@@ -25,23 +27,28 @@ flags = %w[
 series = [
   ['Female 3', 'Wild Blonde', 'Big Shades', 'Smile', 'Mole'],
   ['Ape', 'Bandana', 'Bubble Gum'],
+  [],
 ]
 
-punks = ImageComposite.new( 4, 3*series.size )
+punks = ImageComposite.new( 7, 2*series.size )
 
 
 
 series.each do |attributes|
   flags.each do |name|
-   flag = Image.read( "./#{name}.png" )
+    flag = Image.read( "./#{name}.png" )
 
-    punk = Punk::Image.generate( *attributes )
-    punks << punk.background( flag )
+    if attributes.empty?
+      punks << flag
+    else
+      punk = Punk::Image.generate( *attributes )
+      punks << punk.background( flag )
+    end
   end
 end
 
-punks.save( "./tmp/flags.png" )
-punks.zoom(4).save( "./tmp/flags@4x.png" )
+punks.save( "./tmp/world_flags.png" )
+punks.zoom(4).save( "./tmp/world_flags@4x.png" )
 
 
 
