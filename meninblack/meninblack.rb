@@ -12,6 +12,13 @@ ALIEN      = Image.read( './attributes/alien.png' )
 SUIT1_BLACK = Image.read( './attributes/suit1-black.png' )
 SUIT2_BLACK = Image.read( './attributes/suit2-black.png' )
 
+HOODIE1_BLACK  = Image.read( './attributes/hoodie1-black.png' )
+HOODIE1_CREAM  = Image.read( './attributes/hoodie1-cream.png' )
+HOODIE1_SKY    = Image.read( './attributes/hoodie1-sky.png' )
+
+HOODIE2_DARK     = Image.read( './attributes/hoodie2-dark.png' )
+HOODIE2_PHAROAH  = Image.read( './attributes/hoodie2-pharoah.png' )
+
 
 
 def generate_punk( *attributes )
@@ -89,6 +96,55 @@ end
 
 men.save( "./tmp/meninblack.png" )
 men.zoom(4).save( "./tmp/meninblack@4x.png" )
+
+
+
+
+specs = [
+  [MALE1, HOODIE1_BLACK, 'Smile'],
+  [MALE2, HOODIE1_CREAM, 'Pipe', 'Horned-Rim Glasses'],
+  [MALE2, HOODIE1_SKY, 'Goat', 'Earring', 'Big Shades'],
+
+  [MALE2, HOODIE1_BLACK, 'VR'],
+  [MALE1, HOODIE1_CREAM, 'Luxurious Beard'],
+  [MALE2, HOODIE1_SKY, 'Big Beard', 'Clown Nose'],
+
+  [MALE3, HOODIE2_PHAROAH, 'Luxurious Beard'],
+  [MALE2, HOODIE1_BLACK,  'Earring', '3D Glasses'],
+  [MALE3, HOODIE1_SKY, 'Frown', 'Spots'],
+
+  [MALE2, HOODIE2_DARK, 'Muttonchops'],
+  [MALE3, HOODIE1_CREAM, 'Laser Eyes Gold'],
+  [MALE3, HOODIE1_SKY, 'Earring', 'Classic Shades'],
+
+  [ALIEN, HOODIE2_DARK, 'Bubble Gum'],
+  [ALIEN, HOODIE1_CREAM, 'Small Shades', 'Pipe'],
+  [APE,   HOODIE2_DARK],
+  [APE,   HOODIE1_BLACK, 'Gold Chain', 'Laser Eyes'],
+  [ZOMBIE, HOODIE1_CREAM, '3D Glasses'],
+  [ZOMBIE, HOODIE2_PHAROAH, 'Chinstrap', 'Smile'],
+]
+
+
+men = ImageComposite.new( 6, 3, width: 40,
+                                height: 40,
+                                background: '#638596' )
+
+
+specs.each_with_index do |attributes,i|
+  punk = generate_punk( *attributes )
+
+  punk.save( "./tmp/maninhoodie#{i}.png" )
+  punk.zoom(4).save( "./tmp/maninhoodie#{i}@4x.png" )
+
+  men << punk
+end
+
+
+men.save( "./tmp/meninhoodies.png" )
+men.zoom(4).save( "./tmp/meninhoodies@4x.png" )
+
+
 
 
 
