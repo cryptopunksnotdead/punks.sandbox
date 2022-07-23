@@ -22,7 +22,7 @@ HOODIE2_PHAROAH  = Image.read( './attributes/hoodie2-pharoah.png' )
 
 
 def generate_punk( *attributes )
-  punk = Image.new( 40, 40 )
+  punk = Image.new( 32, 32 )
   attributes.each do |attribute_name|
       attribute =  if attribute_name.is_a?( Image )
                         attribute_name
@@ -30,13 +30,14 @@ def generate_punk( *attributes )
                         Punk::Sheet.find_by( name: attribute_name, gender: 'm' )
                    end
 
-     offset = if attribute.width == 24 && attribute.height == 24
-                [6,7] ## offset x/y for classic 24x24 attributes in 40x40 canvas
-              else
-                [0,0]
-              end
-
-      punk.compose!( attribute, *offset )
+     if attribute.width == 24 && attribute.height == 24
+          ## cut-off top 1px (24x23)
+          attribute =  attribute.crop( 0, 1, 24, 23 )
+          ## offset x/y for classic 24x24 attributes in 40x40 canvas
+          punk.compose!( attribute, 6, 0 )
+     else
+          punk.compose!( attribute )
+     end
   end
   punk
 end
@@ -48,20 +49,20 @@ end
 
 specs = [
   [MALE1, SUIT1_BLACK, 'Smile', 'Mohawk'],
-  [MALE2, SUIT2_BLACK, 'Wild Hair', 'Pipe', 'Nerd Glasses'],
-  [MALE2, SUIT1_BLACK, 'Goat', 'Earring', 'Wild Hair', 'Big Shades'],
+  [MALE2, SUIT2_BLACK, 'Wild Hair', 'Horned-Rim Glasses'],
+  [MALE2, SUIT1_BLACK, 'Goat', 'Earring', 'Peak Spike', 'Big Shades'],
 
-  [MALE2, SUIT2_BLACK, 'Do-rag'],
+  [MALE2, SUIT2_BLACK, 'Shaved Head', 'Classic Shades'],
   [MALE1, SUIT1_BLACK, 'Luxurious Beard', 'Messy Hair'],
-  [MALE2, SUIT2_BLACK, 'Big Beard', 'Police Cap', 'Clown Nose'],
+  [MALE2, SUIT2_BLACK, 'Big Beard', 'Clown Hair Green', 'Clown Nose', 'Smile'],
 
   [MALE3, SUIT1_BLACK, 'Luxurious Beard', 'Wild Hair', 'Regular Shades'],
   [MALE2, SUIT2_BLACK, 'Earring', 'Stringy Hair', 'Small Shades'],
-  [MALE3, SUIT1_BLACK, 'Frown', 'Mohawk'],
+  [MALE3, SUIT1_BLACK, 'Frown', 'Mohawk', 'Spots'],
 
-  [MALE2, SUIT2_BLACK, 'Muttonchops', 'Eye Mask'],
-  [MALE3, SUIT1_BLACK, 'Crazy Hair'],
-  [MALE3, SUIT2_BLACK, 'Earring', 'Messy Hair', 'Classic Shades'],
+  [MALE2, SUIT2_BLACK, 'Muttonchops', 'Laser Eyes'],
+  [MALE3, SUIT1_BLACK, 'Crazy Hair', 'VR', 'Smile'],
+  [MALE3, SUIT2_BLACK, 'Earring', 'Frumpy Hair', 'Bubble Gum'],
 
   [ALIEN, SUIT1_BLACK, 'Headband'],
   [ALIEN, SUIT2_BLACK, 'Cap Forward', 'Small Shades', 'Pipe'],
@@ -79,8 +80,8 @@ specs = [
 ]
 
 
-men = ImageComposite.new( 6, 4, width: 40,
-                                height: 40,
+men = ImageComposite.new( 6, 4, width: 32,
+                                height: 32,
                                 background: '#638596' )
 
 
@@ -94,8 +95,8 @@ specs.each_with_index do |attributes,i|
 end
 
 
-men.save( "./tmp/meninblack.png" )
-men.zoom(4).save( "./tmp/meninblack@4x.png" )
+men.save( "./tmp/meninblack_v2.png" )
+men.zoom(4).save( "./tmp/meninblack_v2@4x.png" )
 
 
 
@@ -126,8 +127,8 @@ specs = [
 ]
 
 
-men = ImageComposite.new( 6, 3, width: 40,
-                                height: 40,
+men = ImageComposite.new( 6, 3, width: 32,
+                                height: 32,
                                 background: '#638596' )
 
 
@@ -141,8 +142,8 @@ specs.each_with_index do |attributes,i|
 end
 
 
-men.save( "./tmp/meninhoodies.png" )
-men.zoom(4).save( "./tmp/meninhoodies@4x.png" )
+men.save( "./tmp/meninhoodies_v2.png" )
+men.zoom(4).save( "./tmp/meninhoodies_v2@4x.png" )
 
 
 
