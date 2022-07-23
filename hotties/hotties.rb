@@ -42,7 +42,7 @@ DRESS_GREEN_BIG = Image.read( './attributes/big_dress1-green.png' )
 DRESS_PINK_BIG = Image.read( './attributes/big_dress2-pink.png' )
 
 
-
+TOP_HAT        = Image.read( './attributes/top_hat.png')
 BUNNY          = Image.read( './attributes/bunny.png')
 RED_TAIL    = Image.read( './attributes/hair-red_tail.png')
 RAINBOW_TAIL   = Image.read( './attributes/hair-rainbow_tail.png')
@@ -50,52 +50,23 @@ RAINBOW_TAIL   = Image.read( './attributes/hair-rainbow_tail.png')
 GAG  = Image.read( './attributes/gag.png' )
 
 
-_3D_GLASSES  = Punk::Sheet.find_by( name: '3D Glasses', gender: 'f' )
-VR  = Punk::Sheet.find_by( name: 'VR', gender: 'f' )
-BIG_SHADES   = Punk::Sheet.find_by( name: 'Big Shades', gender: 'f' )
-CLASSIC_SHADES   = Punk::Sheet.find_by( name: 'Classic Shades', gender: 'f' )
-HEART_SHADES   = Punk::Sheet.find_by( name: 'Heart Shades', gender: 'f' )
-HORNED_RIM_GLASSES = Punk::Sheet.find_by( name: 'Horned-Rim Glasses', gender: 'f' )
-LASER_EYES_GOLD = Punk::Sheet.find_by( name: 'Laser Eyes Gold', gender: 'f' )
-LASER_EYES_RED  = Punk::Sheet.find_by( name: 'Laser Eyes', gender: 'f' )
-
-GOLD_CHAIN   = Punk::Sheet.find_by( name: 'Gold Chain', gender: 'f' )
-EARRING      = Punk::Sheet.find_by( name: 'Earring',   gender: 'f' )
-CHOKER       = Punk::Sheet.find_by( name: 'Choker',   gender: 'f' )
-
-ORANGE_SIDE  = Punk::Sheet.find_by( name: 'Orange Side',   gender: 'f' )
-ORANGE_BOB   = Punk::Sheet.find_by( name: 'Orange Bob',   gender: 'f' )
-WILD_BLONDE  = Punk::Sheet.find_by( name: 'Wild Blonde',   gender: 'f' )
-CRAZY_HAIR   = Punk::Sheet.find_by( name: 'Crazy Hair',    gender: 'f' )
-HALF_SHAVED   = Punk::Sheet.find_by( name: 'Half Shaved',    gender: 'f' )
-STRAIGHT_HAIR_DARK = Punk::Sheet.find_by( name: 'Straight Hair Dark',    gender: 'f' )
-STRAIGHT_HAIR_BLONDE = Punk::Sheet.find_by( name: 'Straight Hair Blonde',    gender: 'f' )
-STRAIGHT_HAIR_BRUNETTE = Punk::Sheet.find_by( name: 'Straight Hair',    gender: 'f' )
-PIGTAILS      = Punk::Sheet.find_by( name: 'Pigtails',    gender: 'f' )
-TOP_HAT      = Punk::Sheet.find_by( name: 'Top Hat',   gender: 'f' )
-PANAMA_HAT      = Punk::Sheet.find_by( name: 'Panama Hat',   gender: 'f' )
-BANDANA      = Punk::Sheet.find_by( name: 'Bandana',   gender: 'f' )
-POLICE_CAP   = Punk::Sheet.find_by( name: 'Police Cap',   gender: 'f' )
-SOMBRERO      = Punk::Sheet.find_by( name: 'Sombrero',   gender: 'f' )
-CAP           = Punk::Sheet.find_by( name: 'Cap', gender: 'f' )
-REGULAR_SHADES = Punk::Sheet.find_by( name: 'Regular Shades',   gender: 'f' )
-
-PIPE         = Punk::Sheet.find_by( name: 'Pipe',   gender: 'f' )
-CIGARETTE    = Punk::Sheet.find_by( name: 'Cigarette',   gender: 'f' )
-BUBBLEGUM    = Punk::Sheet.find_by( name: 'Bubble Gum',   gender: 'f' )
-
-HOT_LIPSTICK    = Punk::Sheet.find_by( name: 'Hot Lipstick',   gender: 'f' )
-PURPLE_LIPSTICK = Punk::Sheet.find_by( name: 'Purple Lipstick',   gender: 'f' )
-PINK_LIPSTICK   = Punk::Sheet.find_by( name: 'Pink Lipstick',   gender: 'f' )
-
 
 def generate_punk( *attributes )
   punk = Image.new( 40, 40 )
-  attributes.each do |attribute|
+  attributes.each do |attribute_name|
+
+      attribute =  if attribute_name.is_a?( Image )
+                        attribute_name
+                   else  ## assume name as string
+                        Punk::Sheet.find_by( name: attribute_name, gender: 'f' )
+                   end
+
      offset = if attribute.width == 24 && attribute.height == 24
-                [6,7] ## offset x/y for classic 24x24 attributes in 40x40 canvas
+                  [6,7] ## offset x/y for classic 24x24 attributes in 40x40 canvas
+              elsif attribute.width == 32 && attribute.height == 32
+                  [0,8]
               else
-                [0,0]
+                  [0,0]
               end
       punk.compose!( attribute, *offset )
   end
@@ -105,25 +76,25 @@ end
 
 
 specs = [
-  [FEMALE11, DRESS_BLACK_WHITE, ORANGE_BOB, BIG_SHADES, GOLD_CHAIN, HOT_LIPSTICK],
-  [FEMALE31, DRESS_BLACK, STRAIGHT_HAIR_BLONDE, EARRING, _3D_GLASSES, HOT_LIPSTICK],
-  [ZOMBIE1,  DRESS_SHORTER_BLACK, CHOKER, CRAZY_HAIR],
-  [ALIEN1,  DRESS_SHORTEST_BLACK, PANAMA_HAT,  PURPLE_LIPSTICK, PIPE],
+  [FEMALE11, DRESS_BLACK_WHITE, 'Orange Bob', 'Big Shades', 'Gold Chain', 'Hot Lipstick'],
+  [FEMALE31, DRESS_BLACK, 'Straight Hair Blonde', 'Earring', '3D Glasses', 'Hot Lipstick'],
+  [ZOMBIE1,  DRESS_SHORTER_BLACK, 'Choker', 'Crazy Hair'],
+  [ALIEN1,  DRESS_SHORTEST_BLACK, 'Panama Hat',  'Purple Lipstick', 'Pipe'],
 
-  [FEMALE1, BRA_YELLOW, ORANGE_SIDE, CLASSIC_SHADES, HOT_LIPSTICK, GOLD_CHAIN],
-  [FEMALE3, BRA_CYAN, WILD_BLONDE, EARRING, BIG_SHADES, HOT_LIPSTICK],
-  [ZOMBIE,  BRA_BLACK,  CHOKER, RED_TAIL],
-  [ALIEN,  BRA_PINK, CAP, PURPLE_LIPSTICK],
+  [FEMALE1, BRA_YELLOW, 'Orange Side', 'Classic Shades', 'Hot Lipstick', 'Gold Chain'],
+  [FEMALE3, BRA_CYAN, 'Wild Blonde', 'Earring',  'Big Shades', 'Hot Lipstick'],
+  [ZOMBIE,  BRA_BLACK, RED_TAIL, 'Choker'],
+  [ALIEN,  BRA_PINK, 'Cap', 'Purple Lipstick'],
 
-  [FEMALE1,  RAINBOW_TAIL, PURPLE_LIPSTICK],
-  [FEMALE3,  HALF_SHAVED, EARRING, VR, HOT_LIPSTICK],
-  [ZOMBIE, STRAIGHT_HAIR_BRUNETTE, SOMBRERO, HEART_SHADES],
-  [ALIEN,  BANDANA, LASER_EYES_RED, PURPLE_LIPSTICK],
+  [FEMALE1,  RAINBOW_TAIL, 'Purple Lipstick'],
+  [FEMALE3,  'Half Shaved', 'Earring', 'VR', 'Hot Lipstick'],
+  [ZOMBIE, 'Straight Hair', 'Sombrero', 'Heart Shades'],
+  [ALIEN,  'Bandana', 'Laser Eyes', 'Purple Lipstick'],
 
-  [FEMALE1_BIG, STRAIGHT_HAIR_DARK, POLICE_CAP, LASER_EYES_GOLD,  CIGARETTE],
-  [FEMALE31_BIG,  BUNNY,    DRESS_PINK_BIG, PINK_LIPSTICK],
-  [ZOMBIE_BIG,  PIGTAILS, HORNED_RIM_GLASSES, GAG, CHOKER],
-  [ALIEN_BIG,  TOP_HAT, REGULAR_SHADES, PURPLE_LIPSTICK, BUBBLEGUM, DRESS_BLUE_BIG],
+  [FEMALE1_BIG, 'Straight Hair Dark', 'Police Cap', 'Laser Eyes Gold', 'Cigarette'],
+  [FEMALE31_BIG, DRESS_PINK_BIG, BUNNY,  'Pink Lipstick'],
+  [ZOMBIE_BIG, GAG, 'Pigtails', 'Horned-Rim Glasses', 'Choker'],
+  [ALIEN_BIG, DRESS_BLUE_BIG, TOP_HAT, 'Regular Shades', 'Purple Lipstick', 'Bubble Gum'],
 ]
 
 
