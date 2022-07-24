@@ -1,10 +1,7 @@
+$LOAD_PATH.unshift( "../../cryptopunks/punks/lib" )
 require 'punks'
 
 
-
-MALE1      = Image.read( './attributes/male1.png' )
-MALE2      = Image.read( './attributes/male2.png' )
-MALE3      = Image.read( './attributes/male3.png' )
 
 ## national (selection) team jerseys
 ARGENTINA  = Image.read( './attributes/jersey-argentina.png' )
@@ -25,49 +22,28 @@ AUSTRIA           = Image.read( './attributes/jersey-austria_wien.png' )
 RAPID              = Image.read( './attributes/jersey-rapid_wien.png' )
 
 
-def generate_punk( *attributes )
-  punk = Image.new( 32, 32 )
-  attributes.each do |attribute_name|
-      attribute =  if attribute_name.is_a?( Image )
-                        attribute_name
-                   else  ## assume name as string
-                        Punk::Sheet.find_by( name: attribute_name, gender: 'm' )
-                   end
-
-     if attribute.width == 24 && attribute.height == 24
-          ## cut-off top 1px (24x23)
-          attribute =  attribute.crop( 0, 1, 24, 23 )
-          ## offset x/y for classic 24x24 attributes in 40x40 canvas
-          punk.compose!( attribute, 6, 0 )
-     else
-          punk.compose!( attribute )
-     end
-  end
-  punk
-end
-
 
 ################
 ## let's try football punks
 
 specs = [
-   [MALE1, ARGENTINA, 'Smile', 'Mohawk'],
-   [MALE2, BRAZIL, 'Wild Hair',  'Horned-Rim Glasses'],
-   [MALE3, FRANCE, 'Goat', 'Earring', 'Peak Spike',  'Big Shades'],
-   [MALE1, PORTUGUAL, 'Shaved Head', 'Gold Chain'],
+   ['Male Mid 1', ARGENTINA, 'Smile', 'Mohawk'],
+   ['Male Mid 2', BRAZIL, 'Wild Hair',  'Horned-Rim Glasses'],
+   ['Male Mid 3', FRANCE, 'Goat', 'Earring', 'Peak Spike',  'Big Shades'],
+   ['Male Mid 1', PORTUGUAL, 'Shaved Head', 'Gold Chain'],
 
-   [MALE2, ARSENAL, 'Luxurious Beard', 'Messy Hair'],
-   [MALE3, BARCELONA, 'Clown Nose', 'Clown Hair Green', 'Smile'],
-   [MALE1, BAYERN, 'Luxurious Beard', 'Wild Hair', 'Regular Shades'],
+   ['Male Mid 2', ARSENAL, 'Luxurious Beard', 'Messy Hair'],
+   ['Male Mid 3', BARCELONA, 'Clown Nose', 'Clown Hair Green', 'Smile'],
+   ['Male Mid 1', BAYERN, 'Luxurious Beard', 'Wild Hair', 'Regular Shades'],
 
-   [MALE2, INTERNAZIONALE, 'Earring', 'Stringy Hair', 'Small Shades'],
-   [MALE3, JUVENTUS,  'Big Beard', 'Mohawk'],
-   [MALE1, LILLE, 'Muttonchops', 'Classic Shades'],
-   [MALE2, LIVERPOOL, 'Crazy Hair', 'Spots'],
+   ['Male Mid 2', INTERNAZIONALE, 'Earring', 'Stringy Hair', 'Small Shades'],
+   ['Male Mid 3', JUVENTUS,  'Big Beard', 'Mohawk'],
+   ['Male Mid 1', LILLE, 'Muttonchops', 'Classic Shades'],
+   ['Male Mid 2', LIVERPOOL, 'Crazy Hair', 'Spots'],
 
-   [MALE3, MANCHERSTER_CITY, 'Earring', 'Messy Hair', 'Classic Shades'],
-   [MALE1, AUSTRIA, 'Purple Hair', 'VR', 'Smile'],
-   [MALE2, RAPID, 'Earring', 'Frumpy Hair', 'Bubble Gum'],
+   ['Male Mid 3', MANCHERSTER_CITY, 'Earring', 'Messy Hair', 'Classic Shades'],
+   ['Male Mid 1', AUSTRIA, 'Purple Hair', 'VR', 'Smile'],
+   ['Male Mid 2', RAPID, 'Earring', 'Frumpy Hair', 'Bubble Gum'],
 ]
 
 men = ImageComposite.new( 7, 2, width: 32,
@@ -76,7 +52,7 @@ men = ImageComposite.new( 7, 2, width: 32,
 
 
 specs.each_with_index do |attributes,i|
-  punk = generate_punk( *attributes )
+  punk = Punk32::Image.generate( *attributes )
 
   punk.save( "./tmp/footballer#{i}.png" )
   punk.zoom(4).save( "./tmp/footballer#{i}@4x.png" )
