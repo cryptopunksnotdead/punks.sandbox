@@ -1,4 +1,3 @@
-$LOAD_PATH.unshift( "../../cryptopunks/punks/lib" )
 require 'punks'
 
 
