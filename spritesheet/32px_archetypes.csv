@@ -16,38 +16,52 @@ path,      type,  gender, size,  name,  name_ii,  more_names
 ##  todo/fix: auto-add Male/Female names for Humans!!!!!
 
 
-basic/human1-male.png,      Human, m, l,   Human, 1,  Male 1
-basic/human2-male.png,      Human, m, l,   Human, 2,  Male 2
-basic/human3-male.png,      Human, m, l,   Human, 3,  Male 3
+basic/human1-male-xs.png,      Human, m, l,   Human, XS 1,  Male XS 1
+basic/human2-male-xs.png,      Human, m, l,   Human, XS 2,  Male XS 2
+basic/human3-male-xs.png,      Human, m, l,   Human, XS 3,  Male XS 3
 
-basic/human1-male-mid.png,      Human, m, l,   Human,  Mid 1,  Male Mid 1
-basic/human2-male-mid.png,      Human, m, l,   Human, Mid 2,  Male Mid 2
-basic/human3-male-mid.png,      Human, m, l,   Human, Mid 3,  Male Mid 3
-
-basic/human1-female.png,      Human, f, s,   Human,    1,  Female 1
-basic/human1-female.a.png,      Human, f, s,   Human,  1A, Female 1A
-basic/human2-female.png,      Human, f, s,   Human,    2,  Female 2
-basic/human3-female.png,      Human, f, s,   Human,    3,  Female 3
-basic/human3-female.a.png,      Human, f, s,   Human,  3A, Female 3A
-
-basic/human1-female-big.png,      Human, f, s,   Human, Big 1, Female Big 1
-basic/human2-female-big.png,      Human, f, s,   Human,  Big 2, Female Big 2
-basic/human3-female-big.png,      Human, f, s,   Human,  Big 3, Female Big 3
-basic/human3-female-big.a.png,      Human, f, s,   Human,  Big 3A, Female Big 3A
+basic/human1-male-m.png,      Human, m, l,   Human, M 1 | Mid 1,  Male M 1 | Male Mid 1
+basic/human2-male-m.png,      Human, m, l,   Human, M 2 | Mid 2,  Male M 2 | Male Mid 2
+basic/human3-male-m.png,      Human, m, l,   Human, M 3 | Mid 3,  Male M 3 | Male Mid 3
 
 
-basic/zombie-male.png,     Zombie,  m, l,  Zombie,,
-basic/ape-male.png,        Ape,     m, l,  Ape,,
-basic/alien-male.png,      Alien,   m, l,  Alien,,
+basic/human1-female-m.png,      Human, f, s,   Human,    M 1 | Mid 1,  Female M 1 | Female Mid 1
+basic/human2-female-m.png,      Human, f, s,   Human,    M 2 | Mid 2,  Female M 2 | Female Mid 2
+basic/human3-female-m.png,      Human, f, s,   Human,    M 3 | Mid 3,  Female M 3 | Female Mid 3
+
+basic/human1-female-l.png,      Human, f, s,   Human,    L 1,  Female L 1
+basic/human1-female-l.a.png,      Human, f, s,   Human,  L 1A, Female L 1A
+basic/human2-female-l.png,      Human, f, s,   Human,    L 2,  Female L 2
+basic/human3-female-l.png,      Human, f, s,   Human,    L 3,  Female L 3
+basic/human3-female-l.a.png,      Human, f, s,   Human,  L 3A, Female L 3A
+
+basic/human1-female-xxl.png,      Human, f, s,   Human, XXL 1 | Big 1, Female XXL 1 | Female Big 1
+basic/human2-female-xxl.png,      Human, f, s,   Human, XXL 2 |  Big 2, Female XXL 2 | Female Big 2
+basic/human3-female-xxl.png,      Human, f, s,   Human, XXL 3 |  Big 3, Female XXL 3 | Female Big 3
+basic/human3-female-xxl.a.png,      Human, f, s,   Human, XXL 3A |  Big 3A, Female XXL 3A | Female Big 3A
 
 
-basic/zombie-female.png,     Zombie,  f, s,  Zombie,,
-basic/zombie-female.a.png,   Zombie,  f, s,  Zombie, A,
-basic/zombie-female-big.png, Zombie,  f, s,  Zombie, Big,
+basic/zombie-male-xs.png,     Zombie,  m, l,  Zombie, XS,
+basic/zombie-male-m.png,     Zombie,  m, l,  Zombie, M | Mid,
 
-basic/ape-female.png,         Ape,    f, s,   Ape,,
-basic/ape-female-big.png,     Ape,    f, s,   Ape, Big,
+basic/zombie-female-m.png,     Zombie,  f, s,  Zombie, M | Mid,
+basic/zombie-female-l.png,     Zombie,  f, s,  Zombie, L,
+basic/zombie-female-l.a.png,   Zombie,  f, s,  Zombie, L A,
+basic/zombie-female-xxl.png,   Zombie,  f, s,  Zombie, XXL | Big,
 
-basic/alien-female.png,        Alien,  f, s,   Alien,,
-basic/alien-female.a.png,      Alien,  f, s,   Alien, A,
-basic/alien-female-big.png,    Alien,  f, s,   Alien, Big,
+
+basic/ape-male-xs.png,         Ape,     m, l,  Ape,   XS,
+basic/ape-male-m.png,         Ape,     m, l,  Ape,   M | Mid,
+
+basic/ape-female-m.png,         Ape,    f, s,   Ape, M | Mid,
+basic/ape-female-l.png,         Ape,    f, s,   Ape, L,
+basic/ape-female-xxl.png,     Ape,    f, s,   Ape, XXL | Big,
+
+
+basic/alien-male-xs.png,       Alien,   m, l,  Alien, XS,
+basic/alien-male-m.png,       Alien,   m, l,  Alien, M | Mid,
+
+basic/alien-female-m.png,        Alien,  f, s,   Alien, M | Mid,
+basic/alien-female-l.png,        Alien,  f, s,   Alien, L,
+basic/alien-female-l.a.png,      Alien,  f, s,   Alien, L A,
+basic/alien-female-xxl.png,    Alien,  f, s,   Alien, XXL | Big,

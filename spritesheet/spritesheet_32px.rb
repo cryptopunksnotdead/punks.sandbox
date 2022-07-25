@@ -19,9 +19,9 @@ puts "  #{archetypes.size} record(s)"   #=> ???  - was: 64 records
 total = archetypes.size
 # total = archetypes.size + attributes.size
 
-cols = 25
-rows = (total/25)
-rows += 1    if total % 25 != 0
+cols = 10
+rows = (total/10)
+rows += 1    if total % 10 != 0
 
 sheet = ImageComposite.new( cols, rows, width: 32,
                                         height: 32 )
