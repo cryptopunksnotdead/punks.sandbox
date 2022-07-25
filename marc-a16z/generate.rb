@@ -1,6 +1,51 @@
+$LOAD_PATH.unshift( "../../cryptopunks/punks/lib" )
 require 'punks'
 
 
+#########################
+## try marcs in black (men in black w/ body & black smoking or dinner jacket suit)
+
+MARC1_XS = Image.read( './attributes/marc/marc_1-xs.png' )
+APE_XS   = Image.read( './attributes/marc/ape-xs.png' )
+ALIEN_XS = Image.read( './attributes/marc/alien-xs.png' )
+DEVIL_XS = Image.read( './attributes/marc/devil-xs.png' )
+
+
+POLARIZED   = Image.read( './attributes/eyes/polarized.png' )
+TOP_HAT     = Image.read( './attributes/head/top_hat.png' )
+KNITTED_CAP = Image.read( './attributes/head/knitted_cap.png' )
+HEADBAND    = Image.read( './attributes/head/headband.png' )
+SPOTS       = Image.read( './attributes/face/spots.png' )
+
+SUIT1_BLACK =  Image.read( '../meninblack/attributes/suit1-black.png' )
+SUIT2_BLACK =  Image.read( '../meninblack/attributes/suit2-black.png' )
+
+
+specs = [
+  [MARC1_XS, SUIT1_BLACK, POLARIZED,  'Normal Beard Black'],
+  [APE_XS, SUIT2_BLACK, KNITTED_CAP, 'Earring', 'Gold Chain'],
+  [ALIEN_XS, SUIT1_BLACK, SPOTS, HEADBAND],
+  [DEVIL_XS, SUIT2_BLACK,  TOP_HAT, 'Laser Eyes', 'Smile',],
+]
+
+marcs = ImageComposite.new( 4, 1, width: 32,
+                                  height: 32,
+                                  background: '#638596' )
+
+specs.each do |attributes|
+  marc = Punk32::Image.generate( *attributes )
+  marcs << marc
+end
+
+
+marcs.save( "./tmp/marcs_in_black.png" )
+marcs.zoom(4).save( "./tmp/marcs_in_black@4x.png" )
+
+
+
+
+
+#####################
 ## add (patch) punk generator with more archetypes & attributes
 
 patch = {
