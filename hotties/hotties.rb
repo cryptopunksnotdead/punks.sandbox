@@ -1,3 +1,4 @@
+$LOAD_PATH.unshift( "../../cryptopunks/punks/lib" )
 require 'punks'
 
 
@@ -34,20 +35,20 @@ GAG  = Image.read( './attributes/gag.png' )
 
 
 specs = [
-  ['Female 1A', DRESS_BLACK_WHITE, 'Orange Bob', 'Big Shades', 'Gold Chain', 'Hot Lipstick'],
-  ['Female 3A', DRESS_BLACK, 'Straight Hair Blonde', 'Earring', '3D Glasses', 'Hot Lipstick'],
-  ['Zombie Female',  DRESS_SHORTER_BLACK, 'Choker', 'Crazy Hair'],
-  ['Alien Female',  DRESS_SHORTEST_BLACK, 'Panama Hat',  'Purple Lipstick', 'Pipe'],
+  ['Female L 1A', DRESS_BLACK_WHITE, 'Orange Bob', 'Big Shades', 'Gold Chain', 'Hot Lipstick'],
+  ['Female L 3A', DRESS_BLACK, 'Straight Hair Blonde', 'Earring', '3D Glasses', 'Hot Lipstick'],
+  ['Zombie Female L A',  DRESS_SHORTER_BLACK, 'Choker', 'Crazy Hair'],
+  ['Alien Female L A',  DRESS_SHORTEST_BLACK, 'Panama Hat',  'Purple Lipstick', 'Pipe'],
 
-  ['Female 1', BRA_YELLOW, 'Orange Side', 'Classic Shades', 'Hot Lipstick', 'Gold Chain'],
-  ['Female 3', BRA_CYAN, 'Wild Blonde', 'Earring',  'Big Shades', 'Hot Lipstick'],
-  ['Zombie Female',  BRA_BLACK, RED_TAIL, 'Choker'],
-  ['Alien Female',  BRA_PINK, 'Cap', 'Purple Lipstick'],
+  ['Female L 1', BRA_YELLOW, 'Orange Side', 'Classic Shades', 'Hot Lipstick', 'Gold Chain'],
+  ['Female L 3', BRA_CYAN, 'Wild Blonde', 'Earring',  'Big Shades', 'Hot Lipstick'],
+  ['Zombie Female L',  BRA_BLACK, RED_TAIL, 'Choker'],
+  ['Alien Female L',  BRA_PINK, 'Cap', 'Purple Lipstick'],
 
-  ['Female 1',  RAINBOW_TAIL, 'Purple Lipstick'],
-  ['Female 3',  'Half Shaved', 'Earring', 'VR', 'Hot Lipstick'],
-  ['Zombie Female', 'Straight Hair', 'Sombrero', 'Heart Shades'],
-  ['Alien Female',  'Bandana', 'Laser Eyes', 'Purple Lipstick'],
+  ['Female L 1',  RAINBOW_TAIL, 'Purple Lipstick'],
+  ['Female L 3',  'Half Shaved', 'Earring', 'VR', 'Hot Lipstick'],
+  ['Zombie Female L ', 'Straight Hair', 'Sombrero', 'Heart Shades'],
+  ['Alien Female L',  'Bandana', 'Laser Eyes', 'Purple Lipstick'],
 
   ['Female Big 1', 'Straight Hair Dark', 'Police Cap', 'Laser Eyes Gold', 'Cigarette'],
   ['Female Big 3A', DRESS_PINK_BIG, BUNNY,  'Pink Lipstick'],
