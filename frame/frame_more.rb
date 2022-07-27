@@ -117,9 +117,6 @@ composite.zoom(8).save( "./i/framedpunks_(5)@8x.png" )
 
 
 
-__END__
-
-
 
 
 frame = Image.read( "./i/frame24x24_(4).png" ) ## "wood" frame in 38x36

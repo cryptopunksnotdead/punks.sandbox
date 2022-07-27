@@ -41,6 +41,18 @@ end
 marcs.save( "./tmp/marcs_in_black.png" )
 marcs.zoom(4).save( "./tmp/marcs_in_black@4x.png" )
 
+####
+## generate a marc in black in 110x110px (3x zoom + overflow)
+##    for museum frame
+##  32x3 => 96px
+##   - add 14px on top and 7px left/right
+
+marc = Punk32::Image.generate( MARC1_XS, SUIT1_BLACK, 'Normal Beard Black' )
+
+framed = Image.new( 110, 110, '#6A8493' )
+framed.compose!( marc.zoom(3), 7, 14 )
+framed.save( "./tmp/marcinblack-110x110.png")
+
 
 
 

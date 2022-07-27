@@ -34,6 +34,25 @@ GAG  = Image.read( './attributes/gag.png' )
 
 
 
+####
+## generate a hottie in 110x110px (3x zoom + overflow)
+##    for museum frame
+##  32x3 => 96px
+##   - add 14px on top and 7px left/right
+
+hottie = Punk32::Image.generate( 'Female L 3', BRA_PINK,
+                                 'Wild Blonde', 'Earring',
+                                 'Mole', '3D Glasses', 'Hot Lipstick' )
+
+framed = Image.new( 110, 110, '#6A8493' )
+framed.compose!( hottie.zoom(3), 7, 14 )
+framed.save( "./tmp/hottie-110x110.png")
+
+
+
+##########
+#  generate hotties
+
 specs = [
   ['Female L 1A', DRESS_BLACK_WHITE, 'Orange Bob', 'Big Shades', 'Gold Chain', 'Hot Lipstick'],
   ['Female L 3A', DRESS_BLACK, 'Straight Hair Blonde', 'Earring', '3D Glasses', 'Hot Lipstick'],

@@ -25,28 +25,23 @@ end
 
 
 
-def random_punk( punks, transform: true )
+def random_punk( punks )
   id = rand( punks.size)
 
   punk = punks[ id ]
-  punk = transform_punk( punk )
+
+  punk = case rand( 100 )
+         when 0..50   then punk         # 50% right-looking
+         when 51..99  then punk.mirror  # 50% left-looking
+         end
+
   punk
 end
-
-def transform_punk( punk )
-  case rand( 100 )
-  when 0..50    # 50% right-looking
-     punk
-  when 51..99  # 50% right-looking
-     punk.mirror
-  end
-end
-
 
 
 
 class Wallpaper < Image
-   def initialize( cols, rows, width: 24, height: 24, background: nil )
+   def initialize( cols, rows, width: 24, height: 24, background: 0x0 )
       @tile_width  = width
       @tile_height = height
       @cols = cols
@@ -65,7 +60,7 @@ class Wallpaper < Image
    end
 
 
-   def fill_random!( punks )
+   def fill_random!( punks, background: nil )
      cols = @cols / 4
      rows = @rows / 4
 
@@ -78,16 +73,16 @@ class Wallpaper < Image
                end
 
          if zoom == 4
-            add!( random_punk( punks), col, row, zoom: zoom )
+            add!( random_punk( punks ), col, row, zoom: zoom )
          elsif zoom == 2
              2.times do |x|
                2.times do |y|
                  if rand( 100 ) <= 29
-                    add!( random_punk( punks), col*2+x, row*2+y, zoom: zoom )
+                    add!( random_punk( punks ), col*2+x, row*2+y, zoom: zoom )
                  else
                     2.times do |n|
                       2.times do |m|
-                        add!( random_punk( punks), (col*2+x)*2+n, (row*2+y)*2+m, zoom: 1 )
+                        add!( random_punk( punks ), (col*2+x)*2+n, (row*2+y)*2+m, zoom: 1 )
                       end
                     end
                   end
@@ -96,7 +91,7 @@ class Wallpaper < Image
          else
              4.times do |x|
               4.times do |y|
-                  add!( random_punk( punks), col*4+x, row*4+y, zoom: zoom )
+                  add!( random_punk( punks ), col*4+x, row*4+y, zoom: zoom )
               end
              end
          end
@@ -107,18 +102,20 @@ end
 
 
 
+srand( 42 )   ## make runs deterministic / repeatable with seed for pseudo-random generator
+
+
+
+
+
 
 wallpaper = Wallpaper.new( 10*4, 5*4, width: 24,
                                       height: 24,
                                       background: '#638596' )
 
-
-srand( 42 )   ## make runs deterministic / repeatable with seed for pseudo-random generator
-
 wallpaper.fill_random!( punks )
-
-
-
 wallpaper.save( "./tmp/wallpaper-#{wallpaper.width}x#{wallpaper.height}.png" )
+
+
 
 puts "bye"
