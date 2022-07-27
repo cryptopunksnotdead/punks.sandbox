@@ -2,6 +2,43 @@ $LOAD_PATH.unshift( "../cryptopunks/lib" )
 require 'cryptopunks'
 
 
+frame = Image.read( "./i/frame24x24_(8).png" ) ## frame in 38x38
+
+frame.zoom( 4 ).save( "./i/frame24x24_(8)@4x.png" )
+
+
+composite = ImageComposite.new( 2, 2, width: 38+4, height: 38+4 )  # 2x2 = 4
+
+
+[2890, 8219, 10180, 10190].each do |id|
+
+  frameless = Image.read( "./i/punk-#{id}.png" )
+
+  punk = Image.new( 38, 38 )
+  punk.compose!( Image.new( 24,24, '#638596' ), 7, 7 )  ## add non-trasparent / opaque background first
+  punk.compose!( frame )
+  punk.compose!( frameless, 7, 7 )
+
+  punk.save( "./i/framedpunk_(8)-#{id}.png" )
+  punk.zoom(2).save( "./i/framedpunk_(8)-#{id}@2x.png" )
+  punk.zoom(4).save( "./i/framedpunk_(8)-#{id}@4x.png" )
+  punk.zoom(8).save( "./i/framedpunk_(8)-#{id}@8x.png" )
+
+  ## add 4px (2p on each side transparent padding/border)
+  punk_with_padding = Image.new( 38+4, 38+4 )
+  punk_with_padding.compose!( punk, 2, 2 )
+
+  composite << punk_with_padding
+end
+
+
+composite.save( "./i/framedpunks_(8).png" )
+composite.zoom(2).save( "./i/framedpunks_(8)@2.png" )
+composite.zoom(4).save( "./i/framedpunks_(8)@4x.png" )
+composite.zoom(8).save( "./i/framedpunks_(8)@8x.png" )
+
+
+
 
 
 frame = Image.read( "./i/frame24x24_(7).png" ) ## frame in 30x29
