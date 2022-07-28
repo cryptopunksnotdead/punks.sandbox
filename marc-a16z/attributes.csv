@@ -1,0 +1,204 @@
+path,   category,  name,  more_names
+
+
+## archetypes
+
+marc/marc-classic.png
+marc/ape-classic.png
+
+marc/marc_1.png,,            Marc 1,  Marc Dark
+marc/marc_2.png,,            Marc 2,  Marc Mid | Marc Medium
+marc/marc_3.png,,            Marc 3,  Marc | Marc Light
+marc/marc_4.png,,            Marc 4,  Marc Albino
+
+marc/gold.png,,              Marc Gold,  Gold | Marc Golden
+marc/madlad.png
+
+marc/zombie.png
+
+marc/ape.png
+marc/golden_ape.png,,         Golden Ape, Ape Gold | Ape Golden
+marc/pink_ape.png,,           Pink Ape,   Ape Pink
+
+
+marc/alien.png,,              Blue Alien,   Alien | Alien Blue
+marc/green_alien.png,,        Green Alien,  Alien Green
+
+marc/devil_1.png,,          Devil 1,  Devil | Demon | Demon 1
+marc/devil_2.png,,          Devil 2,  Demon 2
+marc/devil_3.png,,          Devil 3,  Demon 3
+
+marc/orc.png
+
+marc/skeleton.png
+marc/bot.png
+
+
+# -- face
+face/blue_eyes.png
+face/green_eyes.png
+
+face/blue_eye_shadow.png
+face/green_eye_shadow.png
+face/purple_eye_shadow.png
+
+face/bagner.png
+face/horns.png
+face/marc_tyson.png
+face/cleft.png
+face/mole.png
+face/rosy_cheeks.png
+face/shine.png
+face/spots.png
+
+
+# -- lips
+lips/black_lipstick.png
+lips/hot_lipstick.png
+lips/purple_lipstick.png
+lips/buck_teeth.png
+
+# -- nose
+nose/clown_nose.png
+nose/gold_ring.png
+
+# -- ear
+ear/diamond_earring.png
+ear/gold_earring.png
+
+ear/diamond_helix.png
+ear/gold_helix.png
+
+
+# -- emotion
+emotion/frown.png
+emotion/smile.png
+
+
+# -- facial hair / beards
+facial_hair/big_beard_white.png
+facial_hair/big_beard.png
+facial_hair/chinstrap.png
+facial_hair/front_beard.png
+facial_hair/front_beard_dark.png
+facial_hair/full_mustache.png
+facial_hair/full_mustache_dark.png
+facial_hair/goat.png
+facial_hair/goat_dark.png
+facial_hair/handlebar.png
+facial_hair/luxurious_beard.png
+facial_hair/mustache.png
+facial_hair/mutton_chop.png
+facial_hair/normal_beard.png
+facial_hair/normal_beard_black.png
+facial_hair/shadow_beard.png
+facial_hair/soul_patch.png
+
+
+# -- head / headwear
+head/bandana.png
+head/beanie.png
+head/bunny_ears.png
+head/cap.png
+head/skull_cap.png
+head/cap_forward.png
+head/police_cap.png
+head/cowboy_hat.png
+head/do_rag.png
+head/fast_food.png
+head/marcdonalds.png
+head/fedora.png
+head/headband.png
+head/roaring_headband.png
+head/hoodie.png
+head/purple_hoodie.png
+head/knitted_cap.png
+head/laurels.png
+head/shemagh.png
+head/tassle_hat.png
+head/tiarra.png
+head/top_hat.png
+head/uncle_sam.png
+head/viking.png
+head/welding_goggles.png
+
+
+
+
+head/blonde_bob.png
+head/chad.png
+head/clown_hair.png
+head/crazy_white_hair.png
+head/crazy_hair.png
+head/frumpy_hair.png
+head/marc_three.png
+head/purple_hair.png
+head/stringy_hair.png
+head/vampire_hair.png
+head/wild_blonde_hair.png
+head/wild_hair.png
+
+
+# -- eyes / eyewear
+eyes/clown_eyes_blue.png
+eyes/clown_eyes_green.png
+eyes/lasers.png
+eyes/tears.png
+
+eyes/3d_glasses.png
+eyes/aviators.png
+eyes/big_shades.png
+eyes/classic_shades.png
+eyes/deal_with_it.png
+eyes/glasses.png
+eyes/gold_glasses.png
+eyes/horned_rim_glasses.png
+eyes/monocle.png
+eyes/nerd_glasses.png
+eyes/pink_shades.png
+eyes/polarized.png
+eyes/polarized_white.png
+eyes/regular_shades.png
+eyes/small_shades.png
+eyes/vr_headset.png,,        VR Headset, VR
+
+eyes/eye_mask.png
+eyes/eye_patch.png
+
+
+
+## -- mouth (props)
+mouth/cigar.png
+mouth/cigarette.png
+mouth/hookah.png
+mouth/pipe.png
+mouth/vape.png
+mouth/medical_mask.png
+mouth/bubble_gum.png
+
+
+## -- neck
+neck/black_tie.png
+neck/blue_tie.png
+neck/red_tie.png
+
+neck/blue_shirt.png
+neck/blue_t_shirt.png
+neck/fast_food.png,,            Fast Food Shirt
+neck/green_shirt.png
+neck/grey_shirt.png
+neck/purple_t_shirt.png
+neck/white_t_shirt.png
+
+neck/jumpsuit.png
+neck/labcoat.png
+
+neck/choker.png
+neck/double_gold_chain.png
+neck/gold_chain.png
+neck/silver_chain.png
+neck/thick_chain.png
+neck/hemp.png
+neck/ice.png
+neck/medallion.png
+
