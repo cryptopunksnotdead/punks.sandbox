@@ -13,13 +13,21 @@ patch = {
   'beargold'     => Image.read( './bear-gold.png' ),
   'bearpink'     => Image.read( './bear-pink.png' ),
   'bearwhite'    => Image.read( './bear-white.png' ),
+  'beargray'    => Image.read( './bear-gray.png' ),
+  'bearorange'    => Image.read( './bear-orange.png' ),
+  'bearred'    => Image.read( './bear-red.png' ),
+  'bearblue'    => Image.read( './bear-blue.png' ),
 }
 
 
 types = ['Bear',
          'Bear Dark',
+         'Bear Gray',
          'Bear White',
+         'Bear Blue',
+         'Bear Red',
          'Bear Pink',
+         'Bear Orange',
          'Bear Gold',
          ]
 
