@@ -12,7 +12,8 @@ patch = {
   'bull2'         => Image.read( './bull2.png' ),
   'bull3'         => Image.read( './bull3.png' ),
   'bull4'         => Image.read( './bull4.png' ),
-  'bull4a'         => Image.read( './bull4.a.png' ),
+  'bull5'         => Image.read( './bull5.png' ),
+  'bull5a'         => Image.read( './bull5.a.png' ),
 
   'bull3dark'     => Image.read( './bull3-dark.png' ),
   'bull3black'     => Image.read( './bull3-black.png' ),
@@ -70,7 +71,8 @@ types = ['Bull',
          'Bull 2',
          'Bull 3',
          'Bull 4',
-         'Bull 4A',
+         'Bull 5',
+         'Bull 5A',
          ]
 
 specs = [
