@@ -47,8 +47,8 @@ types.each do |type|
   end
 end
 
-bears.save( "./tmp/bears.png" )
-bears.zoom(4).save( "./tmp/bears@4x.png" )
+bears.save( "./tmp/bears_v2.png" )
+bears.zoom(4).save( "./tmp/bears_v2@4x.png" )
 
 
 puts "bye"
