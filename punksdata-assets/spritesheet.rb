@@ -9,7 +9,7 @@ require_relative '../punksdata/punksdata'
 
 
 
-assets = ImageComposite.new( 10, 14+2 )   # use grid 10x14 = 140 attributes / tiles
+assets = ImageComposite.new( 10, 14+4 )   # use grid 10x14 = 140 attributes / tiles
 
 
 
@@ -56,31 +56,63 @@ end
 more = Csv.parse( <<TXT )
 ### more archetypes
 
+bot.png,            Bot,  m
 zombie-female.png,  Zombie Female,    f
 ape-female.png,     Ape Female,       f
 alien-female.png,   Alien Female,     f
+bot-female.png,     Bot Female,       f
+
 
 ### more hair attributes
-f/peakspike.png,   Peak Spike, f
-f/purplehair.png,    Purple Hair, f
-f/shavedhead.png,  Shaved Head,   f
-f/vampirehair.png,  Vampire Hair, f
-
-m/blondebob.png,     Blonde Bob, m
-m/blondeshort.png,   Blonde Short, m
-m/darkhair.png,      Dark Hair, m
-m/halfshaved.png,    Half Shaved, m
-m/orangeside.png,    Orange Side, m
+m/blonde_bob.png,     Blonde Bob, m
+m/blonde_short.png,   Blonde Short, m
+m/dark_hair.png,      Dark Hair, m
+m/half_shaved.png,    Half Shaved, m
+m/orange_side.png,    Orange Side, m
 m/pigtails.png,      Pigtails, m
-m/pinkwithhat.png,   Pink With Hat, m
-m/redmohawk.png,     Red Mohawk, m
-m/straighthair.png,       Straight Hair, m
-m/straighthairblonde.png, Straight Hair Blonde, m
-m/straighthairdark.png,   Straight Hair Dark, m
-m/wildblonde.png,         Wild Blonde, m
-m/wildwhitehair.png,      Wild White Hair, m
+m/pink_with_hat.png,   Pink With Hat, m
+m/red_mohawk.png,     Red Mohawk, m
+m/straight_hair.png,       Straight Hair, m
+m/straight_hair_blonde.png, Straight Hair Blonde, m
+m/straight_hair_dark.png,   Straight Hair Dark, m
+m/wild_blonde.png,         Wild Blonde, m
+m/wild_white_hair.png,      Wild White Hair, m
 
+## more eyewear attributes
+m/welding_goggles.png,  Welding Goggles,  m
+
+## more headwear attributes
+m/pilot_helmet.png,  Pilot Helmet, m
+m/tassle_hat.png,   Tassle Hat, m
+m/tiara.png,         Tiara, m
+
+## more attributs
+m/choker.png,      Choker,  m
+
+## bot attributes
+m/bot_antenna.png,    Bot Antenna, m
+
+
+## more female attributes
+f/peak_spike.png,   Peak Spike, f
+f/purple_hair.png,    Purple Hair, f
+f/shaved_head.png,  Shaved Head,   f
+f/vampire_hair.png,  Vampire Hair, f
+
+f/small_shades.png,     Small Shades, f
+
+f/cowboy_hat.png,  Cowboy Hat, f
+f/fedora.png,      Fedora, f
+f/hoodie.png,      Hoodie, f
+f/beanie.png,      Beanie, f
+f/top_hat.png,     Top Hat, f
+f/do-rag.png,       Do-rag, f
+f/police_cap.png,   Police Cap, f
+f/cap_forward.png,   Cap Forward, f
+
+f/bot_antenna.png,    Bot Antenna, f
 TXT
+
 
 pp more
 
@@ -96,8 +128,9 @@ more.each_with_index do |rec,i|
   name = rec[1]
   names = [name]
 
-  if i <= 2    ## all archetype (0..2) - 3 all-together
-    gender, size =  ['f', 's']
+  if i <= 4    ## all archetype (0..4) - 5 all-together
+    qualifier = rec[2]
+    gender, size = qualifier == 'f' ? ['f', 's'] : ['m', 'l']
     category = 'Archetype'
   else
     qualifier = rec[2]
