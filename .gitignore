@@ -15,4 +15,10 @@ o2/
 o3/
 o4/
 
+####
+# exclude all sqlite dbs
+*.db
+
+
+
 
