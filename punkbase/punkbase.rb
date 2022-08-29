@@ -188,12 +188,10 @@ end
    ## img.zoom(4).save( "./tmp/punk#{id}.png")
 
    image = "data:image/png;base64, "
-   image += Base64.encode64( img.to_blob )
+   image += Base64.strict_encode64( img.to_blob )
 
    puts "image:"
    puts image
-
-   exit
 
    rec = Database::Metadata.new( h )
    rec.image = image
