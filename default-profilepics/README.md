@@ -169,6 +169,20 @@ resulting:
 
 
 
+## Bonus: Is Circle The New Square?  Yes, You Can - Try More Shapes
+
+![](i/default4-240x240.png)
+![](i/default4-punk0@10x.png)
+![](i/default4-punk1@10x.png)
+![](i/default4-punk2@10x.png)
+![](i/default4-punk3@10x.png)
+
+
+Tip:  Use [**Image#circle**](https://github.com/learnpixelart) to turn the square image (e.g. 240×240) into a circle (that is, pixels outside the inner circle get changed to transparent in the square image).
+
+
+
+
 
 
 ## Questions? Comments?

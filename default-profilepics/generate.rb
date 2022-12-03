@@ -13,6 +13,9 @@ foreground2 = '0x4474E0'
 background3 = '0xB5C3DE'
 foreground3 = '0xFFFFFF'
 
+background4 = '0x2FB166'
+foreground4 = '0xFFFFFF'
+
 
 specs = parse_data( <<TXT )
   Female 2, Earring, Blonde Bob, Green Eye Shadow
@@ -61,6 +64,11 @@ specs.each_with_index do |attributes,i|
   profilepic.save( "./tmp/profilepic3/default3-punk#{i}.png" )
   profilepic.zoom(4).save( "./tmp/profilepic3@4x/default3-punk#{i}@4x.png" )
   profilepic.zoom(10).save( "./tmp/profilepic3@10x/default3-punk#{i}@10x.png" )
+
+  profilepic = img.silhouette( foreground4 ).background( background4 )
+  profilepic.save( "./tmp/profilepic4/default4-punk#{i}.png" )
+  profilepic.zoom(4).save( "./tmp/profilepic4@4x/default4-punk#{i}@4x.png" )
+  profilepic.zoom(10).circle.save( "./tmp/profilepic4@10x/default4-punk#{i}@10x.png" )
 end
 
 
