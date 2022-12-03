@@ -10,6 +10,8 @@ foreground1 = '0x647785'
 background2 = '0xA0C2FF'
 foreground2 = '0x4474E0'
 
+background3 = '0xB5C3DE'
+foreground3 = '0xFFFFFF'
 
 
 specs = parse_data( <<TXT )
@@ -42,6 +44,11 @@ specs.each_with_index do |attributes,i|
   profilepic.save( "./tmp/profilepic2/default2-punk#{i}.png" )
   profilepic.zoom(4).save( "./tmp/profilepic2@4x/default2-punk#{i}@4x.png" )
   profilepic.zoom(10).save( "./tmp/profilepic2@10x/default2-punk#{i}@10x.png" )
+
+  profilepic = img.silhouette( foreground3 ).background( background3 )
+  profilepic.save( "./tmp/profilepic3/default3-punk#{i}.png" )
+  profilepic.zoom(4).save( "./tmp/profilepic3@4x/default3-punk#{i}@4x.png" )
+  profilepic.zoom(10).save( "./tmp/profilepic3@10x/default3-punk#{i}@10x.png" )
 end
 
 

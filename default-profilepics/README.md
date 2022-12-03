@@ -105,9 +105,33 @@ resulting:
 ![](i/default2-punk12.png)
 
 
+---
+
+![](i/default3-240x240.png)
+![](i/default3-punk0@10x.png)
+![](i/default3-punk1@10x.png)
+![](i/default3-punk2@10x.png)
+![](i/default3-punk3@10x.png)
 
 
+Or with the new foreground color in red/green/blue (rgb) hex `0xFFFFFF` (also known as white)
+and the background color `0xB5C3DE`. Re-run the script
+resulting:
 
+![](i/default3-punk0.png)
+![](i/default3-punk1.png)
+![](i/default3-punk2.png)
+![](i/default3-punk3.png)
+![](i/default3-punk4.png)
+![](i/default3-punk5.png)
+![](i/default3-punk6.png)
+![](i/default3-punk7.png)
+![](i/default3-punk8.png)
+![](i/default3-punk9.png)
+![](i/default3-punk10.png)
+![](i/default3-punk10.png)
+![](i/default3-punk11.png)
+![](i/default3-punk12.png)
 
 
 
