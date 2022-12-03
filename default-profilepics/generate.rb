@@ -28,6 +28,18 @@ specs = parse_data( <<TXT )
   Female 1, Mohawk, Blue Eye Shadow
   Female 2, Black Lipstick, Straight Hair Dark, Clown Eyes Green
   Female 1, Purple Lipstick, Blonde Short
+  Female 3, Black Lipstick, Straight Hair Blonde, Big Shades
+  Female 1, Hot Lipstick, Pilot Helmet, Pipe
+  Male 4, Luxurious Beard, Wild Hair, Regular Shades
+  Male 2, Earring, Stringy Hair, Small Shades
+  Male 3, Frown, Mohawk
+  Male 2, Muttonchops, Eye Mask
+  Female 1, Hot Lipstick, Bandana, Horned Rim Glasses
+  Male 3, Crazy Hair
+  Male 3, Earring, Messy Hair, Classic Shades
+  Female 1, Purple Lipstick, Pilot Helmet
+  Male 3, Handlebars, Earring, Do-rag
+  Male 3, Smile, Mohawk Dark
 TXT
 
 pp specs

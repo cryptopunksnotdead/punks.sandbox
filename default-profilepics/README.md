@@ -44,6 +44,7 @@ specs = parse_data( <<TXT )
   Female 1, Mohawk, Blue Eye Shadow
   Female 2, Black Lipstick, Straight Hair Dark, Clown Eyes Green
   Female 1, Purple Lipstick, Blonde Short
+  # ...
 TXT
 
 specs.each_with_index do |attributes,i|
@@ -69,9 +70,20 @@ Resulting in:
 ![](i/default1-punk8.png)
 ![](i/default1-punk9.png)
 ![](i/default1-punk10.png)
-![](i/default1-punk10.png)
 ![](i/default1-punk11.png)
 ![](i/default1-punk12.png)
+![](i/default1-punk13.png)
+![](i/default1-punk14.png)
+![](i/default1-punk15.png)
+![](i/default1-punk16.png)
+![](i/default1-punk17.png)
+![](i/default1-punk18.png)
+![](i/default1-punk19.png)
+![](i/default1-punk20.png)
+![](i/default1-punk21.png)
+![](i/default1-punk22.png)
+![](i/default1-punk23.png)
+![](i/default1-punk24.png)
 
 
 
@@ -100,9 +112,20 @@ resulting:
 ![](i/default2-punk8.png)
 ![](i/default2-punk9.png)
 ![](i/default2-punk10.png)
-![](i/default2-punk10.png)
 ![](i/default2-punk11.png)
 ![](i/default2-punk12.png)
+![](i/default2-punk13.png)
+![](i/default2-punk14.png)
+![](i/default2-punk15.png)
+![](i/default2-punk16.png)
+![](i/default2-punk17.png)
+![](i/default2-punk18.png)
+![](i/default2-punk19.png)
+![](i/default2-punk20.png)
+![](i/default2-punk21.png)
+![](i/default2-punk22.png)
+![](i/default2-punk23.png)
+![](i/default2-punk24.png)
 
 
 ---
@@ -129,9 +152,20 @@ resulting:
 ![](i/default3-punk8.png)
 ![](i/default3-punk9.png)
 ![](i/default3-punk10.png)
-![](i/default3-punk10.png)
 ![](i/default3-punk11.png)
 ![](i/default3-punk12.png)
+![](i/default3-punk13.png)
+![](i/default3-punk14.png)
+![](i/default3-punk15.png)
+![](i/default3-punk16.png)
+![](i/default3-punk17.png)
+![](i/default3-punk18.png)
+![](i/default3-punk19.png)
+![](i/default3-punk20.png)
+![](i/default3-punk21.png)
+![](i/default3-punk22.png)
+![](i/default3-punk23.png)
+![](i/default3-punk24.png)
 
 
 
