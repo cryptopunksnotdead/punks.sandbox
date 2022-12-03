@@ -4,9 +4,11 @@ require 'punks'
 ## turn first punks into default profile pics
 
 
-background = '0xCCD5DE'
-foreground = '0x647785'
+background1 = '0xCCD5DE'
+foreground1 = '0x647785'
 
+background2 = '0xA0C2FF'
+foreground2 = '0x4474E0'
 
 
 
@@ -31,10 +33,15 @@ pp specs
 specs.each_with_index do |attributes,i|
   img = YeOldePunk::Image.generate( *attributes )
 
-  profilepic = img.silhouette( foreground ).background( background )
-  profilepic.save( "./tmp/profilepic/default1-punk#{i}.png" )
-  profilepic.zoom(4).save( "./tmp/profilepic2/default1-punk#{i}@4x.png" )
-  profilepic.zoom(10).save( "./tmp/profilepic3/default1-punk#{i}@10x.png" )
+  profilepic = img.silhouette( foreground1 ).background( background1 )
+  profilepic.save( "./tmp/profilepic1/default1-punk#{i}.png" )
+  profilepic.zoom(4).save( "./tmp/profilepic1@4x/default1-punk#{i}@4x.png" )
+  profilepic.zoom(10).save( "./tmp/profilepic1@10x/default1-punk#{i}@10x.png" )
+
+  profilepic = img.silhouette( foreground2 ).background( background2 )
+  profilepic.save( "./tmp/profilepic2/default2-punk#{i}.png" )
+  profilepic.zoom(4).save( "./tmp/profilepic2@4x/default2-punk#{i}@4x.png" )
+  profilepic.zoom(10).save( "./tmp/profilepic2@10x/default2-punk#{i}@10x.png" )
 end
 
 

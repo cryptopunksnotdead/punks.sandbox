@@ -1,18 +1,19 @@
 # Default Profile Pic(ture)s  - Default PFPs
 
 
-The idea turn punks into default profile pic(ture)s via [**Image#silhouette**](https://github.com/learnpixelart)  - credit to [@piv_piv](https://twitter.com/piv_piv/status/1577641420881543175) and [@dumbnamenumbers](https://twitter.com/dumbnamenumbers/status/1582500383355654145)
+The idea -  turn punks into default profile pic(ture)s via [**Image#silhouette**](https://github.com/learnpixelart). (Credit to [@piv_piv](https://twitter.com/piv_piv/status/1577641420881543175) and [@dumbnamenumbers](https://twitter.com/dumbnamenumbers/status/1582500383355654145).)
 
 
 ![](i/default1-240x240.png)
 ![](i/default1-punk0@10x.png)
 ![](i/default1-punk1@10x.png)
 ![](i/default1-punk2@10x.png)
-i[](i/default1-punk3@10x.png)
+![](i/default1-punk3@10x.png)
 
 
 
-## Yes, You Can - Do-It-Yourself (DIT)
+
+## Yes, You Can - Do-It-Yourself (DIY)
 
 
 Let's try the first Matt & John's® punks
@@ -71,6 +72,43 @@ Resulting in:
 ![](i/default1-punk10.png)
 ![](i/default1-punk11.png)
 ![](i/default1-punk12.png)
+
+
+
+
+## Is Blue The New Gray?  Yes, You Can - Try More Colors
+
+![](i/default2-240x240.png)
+![](i/default2-punk0@10x.png)
+![](i/default2-punk1@10x.png)
+![](i/default2-punk2@10x.png)
+![](i/default2-punk3@10x.png)
+
+
+With the new foreground color in red/green/blue (rgb) hex `0x4474E0`
+and the background color `0xA0C2FF`. Re-run the script
+resulting:
+
+![](i/default2-punk0.png)
+![](i/default2-punk1.png)
+![](i/default2-punk2.png)
+![](i/default2-punk3.png)
+![](i/default2-punk4.png)
+![](i/default2-punk5.png)
+![](i/default2-punk6.png)
+![](i/default2-punk7.png)
+![](i/default2-punk8.png)
+![](i/default2-punk9.png)
+![](i/default2-punk10.png)
+![](i/default2-punk10.png)
+![](i/default2-punk11.png)
+![](i/default2-punk12.png)
+
+
+
+
+
+
 
 
 
