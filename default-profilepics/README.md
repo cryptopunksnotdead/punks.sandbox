@@ -47,8 +47,8 @@ specs.each_with_index do |attributes,i|
   img = YeOldePunk::Image.generate( *attributes )
 
   profilepic = img.silhouette( '0x647785' ).background( '0xCCD5DE' )
-  profilepic.save( "default1-punk#{i}.png" )
-  profilepic.zoom(10).save( "default1-punk#{i}@10x.png" )
+  profilepic.save( "punk#{i}.png" )
+  profilepic.zoom(10).save( "punk#{i}@10x.png" )
 end
 ```
 
