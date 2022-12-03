@@ -1,4 +1,4 @@
-# Default Profile Pic(ture)s  - Default PFPs
+#  Yes, You Can - Generate Your Own Default Profile Pictures (PFPs)
 
 
 The idea -  turn punks into default profile pic(ture)s via [**Image#silhouette**](https://github.com/learnpixelart). (Credit to [@piv_piv](https://twitter.com/piv_piv/status/1577641420881543175) and [@dumbnamenumbers](https://twitter.com/dumbnamenumbers/status/1582500383355654145).)
