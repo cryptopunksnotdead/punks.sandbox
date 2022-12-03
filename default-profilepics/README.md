@@ -26,10 +26,6 @@ and the background color `0xCCD5DE`.
 ``` ruby
 require 'punks'
 
-background = '0xCCD5DE'
-foreground = '0x647785'
-
-
 specs = parse_data( <<TXT )
   Female 2, Earring, Blonde Bob, Green Eye Shadow
   Male 1, Smile, Mohawk
@@ -50,9 +46,9 @@ TXT
 specs.each_with_index do |attributes,i|
   img = YeOldePunk::Image.generate( *attributes )
 
-  profilepic = img.silhouette( foreground ).background( background )
-  profilepic.save( "profilepics/default1-punk#{i}.png" )
-  profilepic.zoom(10).save( "profilepics/default1-punk#{i}@10x.png" )
+  profilepic = img.silhouette( '0x647785' ).background( '0xCCD5DE' )
+  profilepic.save( "default1-punk#{i}.png" )
+  profilepic.zoom(10).save( "default1-punk#{i}@10x.png" )
 end
 ```
 
