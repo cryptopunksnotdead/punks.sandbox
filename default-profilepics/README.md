@@ -1,4 +1,4 @@
-#  Yes, You Can - Generate Your Own Default Profile Pictures (PFPs)
+# Do-It-Yourself (DIY) - Yes, You Can - Generate Your Own Default Profile Pictures (PFPs)
 
 
 The idea -  turn punk pixel heads into default profile pic(ture)s via [**Image#silhouette**](https://github.com/learnpixelart). (Credit to [@piv_piv](https://twitter.com/piv_piv/status/1577641420881543175) and [@dumbnamenumbers](https://twitter.com/dumbnamenumbers/status/1582500383355654145).)
@@ -12,11 +12,7 @@ The idea -  turn punk pixel heads into default profile pic(ture)s via [**Image#s
 
 
 
-
-## Yes, You Can - Do-It-Yourself (DIY)
-
-
-Let's try the first Matt & John's® punks
+Let's try the first Matt & John's® pixel punk heads
 (re)generated from scratch (via text-to-image attributes)
 turned into default profile pic(ture)s
 with the foreground color in red/green/blue (rgb) hex `0x647785`
