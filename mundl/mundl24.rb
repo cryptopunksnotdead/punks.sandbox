@@ -1,6 +1,6 @@
 ###############
 #  to run use:
-#    $ ruby ./mundl.rb
+#    $ ruby ./mundl24.rb
 
 $LOAD_PATH.unshift( "../../pixelart/pixelart/lib" )
 require 'pixelart'
@@ -39,6 +39,7 @@ sketch_invert.zoom(4).save( './tmp/sketch_ii-invert@4x.png' )
 sketch_color = mundl.sketch( 4, line: 1, colorize: true )
 sketch_color.save( './tmp/sketch_ii-color.png' )
 sketch_color.zoom(4).save( './tmp/sketch_ii-color@4x.png' )
+
 
 
 puts "bye"
