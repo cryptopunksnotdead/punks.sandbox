@@ -9,7 +9,7 @@ require 'pixelart'
 # try again with "original" 32x32px mundl (from wieners no. 1)
 
 
-mundl = Image.read( './mundl-32x32.png' )
+mundl = Image.read( './32x32/mundl.png' )
 
 
 mundl.zoom(4).save( './tmp/mundl32@4x.png' )

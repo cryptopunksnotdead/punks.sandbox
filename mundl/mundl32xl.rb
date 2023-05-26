@@ -6,14 +6,14 @@ $LOAD_PATH.unshift( "../../pixelart/pixelart/lib" )
 require 'pixelart'
 
 
-mundl = Image.read( './mundl_xl-32x32.png' )
+mundl = Image.read( './32x32/mundl_xl.png' )
 
 
 mundl.zoom(4).save( './tmp/mundl_xl32@4x.png' )
 mundl.zoom(8).save( './tmp/mundl_xl32@8x.png' )
 
 ## use an even bigger (+1 px height) head - why? why not?
-mundl_alt = Image.read( './mundl_xxl-32x32.png' )
+mundl_alt = Image.read( './32x32/mundl_xxl.png' )
 
 
 mundl_alt.zoom(4).save( './tmp/mundl_xxl32@4x.png' )
@@ -22,13 +22,13 @@ mundl_alt.zoom(8).save( './tmp/mundl_xxl32@8x.png' )
 
 
 ATTRIBUTES = {
- '3d glasses'     => Image.read( './3d_glasses-32x32.png' ),
- 'laser eyes'     => Image.read( './laser_eyes-32x32.png' ),
- 'noun glasses'   => Image.read( './noun_glasses-32x32.png' ),
- 'classic shades' => Image.read( './classic_shades-32x32.png' ),
- 'vr'             => Image.read( './vr-32x32.png' ),
- 'top hat'        => Image.read( './top_hat-32x32.png' ),
- 'beanie'         => Image.read( './beanie-32x32.png' ),
+ '3d glasses'     => Image.read( './32x32/3d_glasses.png' ),
+ 'laser eyes'     => Image.read( './32x32/laser_eyes.png' ),
+ 'noun glasses'   => Image.read( './32x32/noun_glasses.png' ),
+ 'classic shades' => Image.read( './32x32/classic_shades.png' ),
+ 'vr'             => Image.read( './32x32/vr.png' ),
+ 'top hat'        => Image.read( './32x32/top_hat.png' ),
+ 'beanie'         => Image.read( './32x32/beanie.png' ),
 }
 
 

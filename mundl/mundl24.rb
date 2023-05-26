@@ -6,7 +6,7 @@ $LOAD_PATH.unshift( "../../pixelart/pixelart/lib" )
 require 'pixelart'
 
 
-mundl = Image.read( './mundl-24x24.png' )
+mundl = Image.read( './24x24/mundl.png' )
 
 
 mundl.zoom(4).save( './tmp/mundl@4x.png' )
