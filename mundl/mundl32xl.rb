@@ -85,8 +85,9 @@ specs = [
 ]
 
 
-composite      = ImageComposite.new( 4,3, width: 32, height: 32 )
-composite_vol2 = ImageComposite.new( 4,3, width: 32, height: 32 )
+composite         = ImageComposite.new( 4,3, width: 32, height: 32 )
+composite_rainbow = ImageComposite.new( 4,3, width: 32, height: 32 )
+composite_vol2    = ImageComposite.new( 4,3, width: 32, height: 32 )
 
 
 specs.each_with_index do |attributes,i|
@@ -104,12 +105,23 @@ specs.each_with_index do |attributes,i|
 
   composite       << img     if i < 12
   composite_vol2  << img     if i >= 12 && i < 24
+
+  if i < 12
+    frame = Image.new( 32, 32 ).rainbow
+    frame.compose!( img )
+
+    composite_rainbow << frame
+  end
 end
 
 
 
 composite.save( "./tmp/mundls_xl.png" )
 composite.zoom(4).save( "./tmp/mundls_xl@4x.png" )
+
+composite_rainbow.save( "./tmp/mundls_xl-rainbow.png" )
+composite_rainbow.zoom(4).save( "./tmp/mundls_xl_rainbow@4x.png" )
+
 
 composite_vol2.save( "./tmp/mundls_xl-vol2.png" )
 composite_vol2.zoom(4).save( "./tmp/mundls_xl-vol2@4x.png" )
